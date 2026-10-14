@@ -1,0 +1,7 @@
+# Cloudflare Pages Redirects
+/api/go/vps-cloud https://www.digitalocean.com 302
+/api/go/gpu-rtx4090 https://www.tokopedia.com 302
+/api/go/router-wifi6 https://www.tokopedia.com 302
+/api/go/keychron-keyboard https://www.tokopedia.com 302
+/api/go/tablet-eink https://www.tokopedia.com 302
+/api/go/mac-mini-m4 https://www.apple.com 302
