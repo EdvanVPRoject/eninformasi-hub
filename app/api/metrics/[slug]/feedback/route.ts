@@ -24,9 +24,10 @@ function isRateLimited(ip: string): boolean {
 
 export async function POST(
   request: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
+    const { slug } = await params;
     // 1. Identify IP address for anti-spam rate limiting
     const ip =
       request.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
@@ -41,7 +42,6 @@ export async function POST(
     }
 
     // 2. Validate slug parameter
-    const slug = params.slug;
     if (!slug || typeof slug !== 'string' || !/^[a-z0-9-]+$/.test(slug) || slug.length > 120) {
       return NextResponse.json(
         { success: false, error: 'Slug tidak valid' },
