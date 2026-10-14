@@ -18,8 +18,7 @@ import { allArticles } from '@/lib/articles';
 import SidebarNav from '@/components/SidebarNav';
 import { useLanguage } from '@/components/LanguageContext';
 import { getCategoryLabel } from '@/lib/i18n';
-
-type SortOption = 'recommended' | 'quick-read' | 'deep-read' | 'az';
+import SortDropdown, { SortOption } from '@/components/SortDropdown';
 
 function HomeContent() {
   const { lang, t } = useLanguage();
@@ -105,6 +104,9 @@ function HomeContent() {
     });
 
     // Sorting
+    if (sortBy === 'latest') {
+      return [...filtered].sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+    }
     if (sortBy === 'quick-read') {
       return [...filtered].sort((a, b) => {
         const timeA = parseInt(a.readingTime, 10) || 0;
@@ -252,20 +254,8 @@ function HomeContent() {
             </div>
 
             <div className="flex items-center gap-2 flex-wrap">
-              {/* Sort Selector */}
-              <div className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-[var(--bg-main)] border border-[var(--border-color)]">
-                <ArrowUpDown className="w-3.5 h-3.5 text-emerald-500" />
-                <select
-                  value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value as SortOption)}
-                  className="bg-transparent text-xs font-mono text-[var(--text-main)] outline-none cursor-pointer pr-1"
-                >
-                  <option value="recommended">{lang === 'en' ? 'Featured' : 'Pilihan & Populer'}</option>
-                  <option value="quick-read">{lang === 'en' ? 'Quick Read (< 10m)' : 'Baca Cepat'}</option>
-                  <option value="deep-read">{lang === 'en' ? 'Deep Dive (> 15m)' : 'Mendalam'}</option>
-                  <option value="az">{lang === 'en' ? 'Title (A - Z)' : 'Judul (A - Z)'}</option>
-                </select>
-              </div>
+              {/* Modern Custom Sort Dropdown */}
+              <SortDropdown value={sortBy} onChange={setSortBy} />
 
               {(selectedCategory !== 'all' || selectedType !== 'all' || searchQuery || sortBy !== 'recommended') && (
                 <button

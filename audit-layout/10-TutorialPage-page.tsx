@@ -15,6 +15,7 @@ import { getTutorials } from '@/lib/articles';
 import SidebarNav from '@/components/SidebarNav';
 import { useLanguage } from '@/components/LanguageContext';
 import { getCategoryLabel } from '@/lib/i18n';
+import SortDropdown, { SortOption } from '@/components/SortDropdown';
 
 function TutorialContent() {
   const { lang, t } = useLanguage();
@@ -23,6 +24,7 @@ function TutorialContent() {
 
   const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [sortBy, setSortBy] = useState<SortOption>('recommended');
 
   React.useEffect(() => {
     setSelectedCategory(searchParams.get('category') || 'all');
@@ -46,7 +48,7 @@ function TutorialContent() {
   const tutorials = useMemo(() => getTutorials(), []);
 
   const filteredTutorials = useMemo(() => {
-    return tutorials.filter((article) => {
+    let list = tutorials.filter((article) => {
       if (selectedCategory !== 'all' && article.category !== selectedCategory) {
         return false;
       }
@@ -61,7 +63,26 @@ function TutorialContent() {
       }
       return true;
     });
-  }, [tutorials, selectedCategory, searchQuery]);
+
+    if (sortBy === 'latest') {
+      return [...list].sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+    }
+    if (sortBy === 'quick-read') {
+      return [...list].sort((a, b) => (parseInt(a.readingTime, 10) || 0) - (parseInt(b.readingTime, 10) || 0));
+    }
+    if (sortBy === 'deep-read') {
+      return [...list].sort((a, b) => (parseInt(b.readingTime, 10) || 0) - (parseInt(a.readingTime, 10) || 0));
+    }
+    if (sortBy === 'az') {
+      return [...list].sort((a, b) => {
+        const titleA = (lang === 'en' && a.en?.title) ? a.en.title : a.title;
+        const titleB = (lang === 'en' && b.en?.title) ? b.en.title : b.title;
+        return titleA.localeCompare(titleB);
+      });
+    }
+
+    return list;
+  }, [tutorials, selectedCategory, searchQuery, sortBy, lang]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
@@ -149,17 +170,22 @@ function TutorialContent() {
                 className="w-full pl-9 pr-4 py-1.5 text-xs sm:text-sm bg-transparent border-none outline-none text-[var(--text-main)] placeholder-[var(--text-muted)]"
               />
             </div>
-            {(selectedCategory !== 'all' || searchQuery) && (
-              <button
-                onClick={() => {
-                  setSelectedCategory('all');
-                  setSearchQuery('');
-                }}
-                className="px-3 py-1.5 text-xs font-mono rounded-lg bg-[var(--bg-main)] hover:bg-zinc-500/10 text-[var(--text-muted)] border border-[var(--border-color)] transition-all whitespace-nowrap"
-              >
-                Reset Filter
-              </button>
-            )}
+            <div className="flex items-center gap-2 flex-wrap">
+              <SortDropdown value={sortBy} onChange={setSortBy} />
+
+              {(selectedCategory !== 'all' || searchQuery || sortBy !== 'recommended') && (
+                <button
+                  onClick={() => {
+                    setSelectedCategory('all');
+                    setSearchQuery('');
+                    setSortBy('recommended');
+                  }}
+                  className="px-3 py-1.5 text-xs font-mono rounded-lg bg-[var(--bg-main)] hover:bg-zinc-500/10 text-[var(--text-muted)] border border-[var(--border-color)] transition-all whitespace-nowrap"
+                >
+                  Reset Filter
+                </button>
+              )}
+            </div>
             <div className="text-xs font-mono text-[var(--text-muted)] px-2">
               {lang === 'en' ? (
                 <>Showing <span className="font-bold text-emerald-500">{filteredTutorials.length}</span> tutorials</>
