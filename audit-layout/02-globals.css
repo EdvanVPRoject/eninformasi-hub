@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  :root {
+    --bg-main: #FAFAFA;
+    --card-bg: #FFFFFF;
+    --border-color: #E4E4E7;
+    --text-main: #09090B;
+    --text-muted: #71717A;
+  }
+  .dark {
+    --bg-main: #09090B;
+    --card-bg: #121215;
+    --border-color: #27272A;
+    --text-main: #FAFAFA;
+    --text-muted: #A1A1AA;
+  }
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    /* PENTING: Gunakan clip, bukan hidden, agar position: sticky tidak rusak! */
+    overflow-x: clip;
+  }
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* Custom modern thin scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10B981;
+}
+
+/* Hairline border utility */
+.hairline-border {
+  border-width: 1px;
+  border-color: var(--border-color);
+}
+
+/* Seamless Google Translate suppression */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame {
+  display: none !important;
+  visibility: hidden !important;
+}
+body {
+  top: 0px !important;
+  position: static !important;
+}
+#google_translate_element,
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}

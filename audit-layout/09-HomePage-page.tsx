@@ -1,0 +1,392 @@
+'use client';
+
+import React, { useState, useMemo, Suspense } from 'react';
+import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
+import { 
+  Zap, 
+  Search, 
+  Clock, 
+  Layers, 
+  GraduationCap, 
+  FileText, 
+  ChevronRight, 
+  CheckCircle2,
+  ArrowUpDown
+} from 'lucide-react';
+import { allArticles } from '@/lib/articles';
+import SidebarNav from '@/components/SidebarNav';
+import { useLanguage } from '@/components/LanguageContext';
+import { getCategoryLabel } from '@/lib/i18n';
+
+type SortOption = 'recommended' | 'quick-read' | 'deep-read' | 'az';
+
+function HomeContent() {
+  const { lang, t } = useLanguage();
+  const searchParams = useSearchParams();
+  const initialCategory = searchParams.get('category') || 'all';
+  const initialType = (searchParams.get('type') as 'all' | 'tutorial' | 'artikel') || 'all';
+
+  const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
+  const [selectedType, setSelectedType] = useState<'all' | 'tutorial' | 'artikel'>(initialType);
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [sortBy, setSortBy] = useState<SortOption>('recommended');
+
+  // Sinkronkan state ketika parameter URL berubah (misal diklik dari Footer atau halaman Artikel)
+  React.useEffect(() => {
+    setSelectedCategory(searchParams.get('category') || 'all');
+    const urlType = searchParams.get('type') as 'all' | 'tutorial' | 'artikel';
+    if (urlType) setSelectedType(urlType);
+    const urlQuery = searchParams.get('q');
+    if (urlQuery) setSearchQuery(urlQuery);
+  }, [searchParams]);
+
+  const handleSelectType = (type: 'all' | 'tutorial' | 'artikel') => {
+    setSelectedType(type);
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      if (type === 'all') {
+        url.searchParams.delete('type');
+      } else {
+        url.searchParams.set('type', type);
+      }
+      window.history.replaceState(null, '', url.pathname + url.search);
+    }
+  };
+
+  const handleSelectCategory = (cat: string) => {
+    setSelectedCategory(cat);
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      if (cat === 'all') {
+        url.searchParams.delete('category');
+      } else {
+        url.searchParams.set('category', cat);
+      }
+      window.history.replaceState(null, '', url.pathname + url.search);
+    }
+  };
+
+  const handleResetFilters = () => {
+    setSelectedCategory('all');
+    setSelectedType('all');
+    setSearchQuery('');
+    setSortBy('recommended');
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      url.searchParams.delete('category');
+      url.searchParams.delete('type');
+      url.searchParams.delete('q');
+      window.history.replaceState(null, '', url.pathname + url.search);
+    }
+  };
+
+  const filteredArticles = useMemo(() => {
+    const filtered = allArticles.filter((article) => {
+      // Type filter (Tutorial vs Artikel)
+      if (selectedType !== 'all' && article.postType !== selectedType) {
+        return false;
+      }
+      // Category filter
+      if (selectedCategory !== 'all' && article.category !== selectedCategory) {
+        return false;
+      }
+      // Search query
+      if (searchQuery.trim()) {
+        const q = searchQuery.toLowerCase();
+        const matchesTitle = article.title.toLowerCase().includes(q);
+        const matchesDesc = article.description.toLowerCase().includes(q);
+        const matchesTag = article.tags.some((tg) => tg.toLowerCase().includes(q));
+        if (!matchesTitle && !matchesDesc && !matchesTag) {
+          return false;
+        }
+      }
+      return true;
+    });
+
+    // Sorting
+    if (sortBy === 'quick-read') {
+      return [...filtered].sort((a, b) => {
+        const timeA = parseInt(a.readingTime, 10) || 0;
+        const timeB = parseInt(b.readingTime, 10) || 0;
+        return timeA - timeB;
+      });
+    }
+    if (sortBy === 'deep-read') {
+      return [...filtered].sort((a, b) => {
+        const timeA = parseInt(a.readingTime, 10) || 0;
+        const timeB = parseInt(b.readingTime, 10) || 0;
+        return timeB - timeA;
+      });
+    }
+    if (sortBy === 'az') {
+      return [...filtered].sort((a, b) => {
+        const titleA = (lang === 'en' && a.en?.title) ? a.en.title : a.title;
+        const titleB = (lang === 'en' && b.en?.title) ? b.en.title : b.title;
+        return titleA.localeCompare(titleB);
+      });
+    }
+
+    return filtered;
+  }, [selectedCategory, selectedType, searchQuery, sortBy, lang]);
+
+  const tutorialCount = allArticles.filter((a) => a.postType === 'tutorial').length;
+  const artikelCount = allArticles.filter((a) => a.postType === 'artikel').length;
+
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      {/* Hero Bento Header */}
+      <div className="relative mb-10 p-6 sm:p-10 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] overflow-hidden shadow-sm">
+        <div className="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="relative z-10 max-w-3xl space-y-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-mono rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
+            <Zap className="w-3.5 h-3.5 text-emerald-400" />
+            <span>{t('hero_badge')}</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-[var(--text-main)] leading-[1.15]">
+            {t('hero_title_prefix')}{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-400">
+              {t('hero_title_highlight')}
+            </span>
+          </h1>
+
+          <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed">
+            {t('hero_desc')}
+          </p>
+
+          <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-mono text-[var(--text-muted)]">
+            <div className="flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+              <span>{t('hero_pill_1')}</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+              <span>{t('hero_pill_2')}</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+              <span>{t('hero_pill_3')}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Grid: Sidebar Filters + Article Cards */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Left Column: Filter Sidebar (Sticky on Scroll) */}
+        <aside className="lg:col-span-3">
+          <div className="lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto pr-1 pb-6">
+            <SidebarNav
+              currentCategory={selectedCategory}
+              onSelectCategory={handleSelectCategory}
+              postType={selectedType}
+            />
+          </div>
+        </aside>
+
+        {/* Right Column: Content Grid */}
+        <main className="lg:col-span-9 space-y-6">
+          {/* Section Segment Tabs: Semua | Tutorial | Artikel (Sticky saat scroll) */}
+          <div className="sticky top-16 z-30 pt-3 pb-2 -mt-3 bg-[var(--bg-main)]/95 backdrop-blur-md transition-all">
+            <div className="flex items-center gap-2 p-1.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] overflow-x-auto text-xs font-mono shadow-sm">
+              <button
+                onClick={() => handleSelectType('all')}
+                className={`px-4 py-2 rounded-lg font-semibold transition-all whitespace-nowrap flex items-center gap-2 ${
+                  selectedType === 'all'
+                    ? 'bg-emerald-500 text-zinc-950 shadow-sm'
+                    : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-main)]'
+                }`}
+              >
+                <Layers className="w-3.5 h-3.5" />
+                <span>{t('tab_all')}</span>
+                <span className="px-1.5 py-0.2 rounded bg-black/20 text-[10px]">
+                  {allArticles.length}
+                </span>
+              </button>
+
+              <button
+                onClick={() => handleSelectType('tutorial')}
+                className={`px-4 py-2 rounded-lg font-semibold transition-all whitespace-nowrap flex items-center gap-2 ${
+                  selectedType === 'tutorial'
+                    ? 'bg-emerald-500 text-zinc-950 shadow-sm'
+                    : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-main)]'
+                }`}
+              >
+                <GraduationCap className="w-3.5 h-3.5" />
+                <span>{t('tab_tutorials')}</span>
+                <span className={`px-1.5 py-0.2 rounded text-[10px] ${selectedType === 'tutorial' ? 'bg-black/20' : 'bg-emerald-500/10 text-emerald-400'}`}>
+                  {tutorialCount}
+                </span>
+              </button>
+
+              <button
+                onClick={() => handleSelectType('artikel')}
+                className={`px-4 py-2 rounded-lg font-semibold transition-all whitespace-nowrap flex items-center gap-2 ${
+                  selectedType === 'artikel'
+                    ? 'bg-emerald-500 text-zinc-950 shadow-sm'
+                    : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-main)]'
+                }`}
+              >
+                <FileText className="w-3.5 h-3.5" />
+                <span>{t('tab_articles')}</span>
+                <span className={`px-1.5 py-0.2 rounded text-[10px] ${selectedType === 'artikel' ? 'bg-black/20' : 'bg-teal-500/10 text-teal-300'}`}>
+                  {artikelCount}
+                </span>
+              </button>
+            </div>
+          </div>
+
+          {/* Top Search, Sort & Counter Bar */}
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 p-3 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)]">
+            <div className="relative flex-1">
+              <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder={t('filter_search_placeholder')}
+                className="w-full pl-9 pr-4 py-1.5 text-xs sm:text-sm bg-transparent border-none outline-none text-[var(--text-main)] placeholder-[var(--text-muted)]"
+              />
+            </div>
+
+            <div className="flex items-center gap-2 flex-wrap">
+              {/* Sort Selector */}
+              <div className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-[var(--bg-main)] border border-[var(--border-color)]">
+                <ArrowUpDown className="w-3.5 h-3.5 text-emerald-500" />
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value as SortOption)}
+                  className="bg-transparent text-xs font-mono text-[var(--text-main)] outline-none cursor-pointer pr-1"
+                >
+                  <option value="recommended">{lang === 'en' ? 'Featured' : 'Pilihan & Populer'}</option>
+                  <option value="quick-read">{lang === 'en' ? 'Quick Read (< 10m)' : 'Baca Cepat'}</option>
+                  <option value="deep-read">{lang === 'en' ? 'Deep Dive (> 15m)' : 'Mendalam'}</option>
+                  <option value="az">{lang === 'en' ? 'Title (A - Z)' : 'Judul (A - Z)'}</option>
+                </select>
+              </div>
+
+              {(selectedCategory !== 'all' || selectedType !== 'all' || searchQuery || sortBy !== 'recommended') && (
+                <button
+                  onClick={handleResetFilters}
+                  className="px-3 py-1.5 text-xs font-mono rounded-lg bg-[var(--bg-main)] hover:bg-zinc-500/10 text-[var(--text-muted)] border border-[var(--border-color)] transition-all whitespace-nowrap"
+                >
+                  Reset
+                </button>
+              )}
+
+              <div className="text-xs font-mono text-[var(--text-muted)] px-1 whitespace-nowrap">
+                {lang === 'en' ? (
+                  <>Showing <span className="font-bold text-emerald-500">{filteredArticles.length}</span> items</>
+                ) : (
+                  <>Menampilkan <span className="font-bold text-emerald-500">{filteredArticles.length}</span> konten</>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Articles Grid */}
+          {filteredArticles.length === 0 ? (
+            <div className="p-12 text-center rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] space-y-3">
+              <p className="text-sm">
+                {t('no_content_found')}
+              </p>
+              <button
+                onClick={handleResetFilters}
+                className="px-4 py-2 text-xs font-mono rounded-lg bg-emerald-500 text-zinc-950 font-bold hover:bg-emerald-400 transition-all"
+              >
+                {t('no_content_reset')}
+              </button>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {filteredArticles.map((article) => {
+                const targetUrl =
+                  article.postType === 'tutorial'
+                    ? `/tutorial/${article.slug}`
+                    : `/artikel/${article.slug}`;
+
+                const displayTitle = (lang === 'en' && article.en?.title) ? article.en.title : article.title;
+                const displayDesc = (lang === 'en' && article.en?.description) ? article.en.description : article.description;
+
+                return (
+                  <article
+                    key={article.slug}
+                    className="group flex flex-col justify-between p-5 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 hover:shadow-lg transition-all duration-200"
+                  >
+                    <div className="space-y-3">
+                      {/* Meta Pill bar */}
+                      <div className="flex items-center justify-between text-[11px] font-mono">
+                        <div className="flex items-center gap-1.5">
+                          <span className={`px-2 py-0.5 rounded font-semibold ${
+                            article.postType === 'tutorial' 
+                              ? 'bg-emerald-500/10 text-emerald-500 border border-emerald-500/20' 
+                              : 'bg-teal-500/10 text-teal-400 border border-teal-500/20'
+                          }`}>
+                            {article.postType === 'tutorial' ? 'Tutorial' : (lang === 'en' ? 'EnInformation' : 'EnInformasi')}
+                          </span>
+                          <span className="text-[var(--text-muted)]">{getCategoryLabel(article.category, lang)}</span>
+                        </div>
+                        <div className="flex items-center gap-1 text-[var(--text-muted)]">
+                          <Clock className="w-3 h-3 text-emerald-500" />
+                          <span>{article.readingTime}</span>
+                        </div>
+                      </div>
+
+                      {/* Title - 100% Full Title Without Clamping */}
+                      <h3 className="font-bold text-base sm:text-lg text-[var(--text-main)] group-hover:text-emerald-500 transition-colors leading-snug">
+                        <Link href={targetUrl}>
+                          {displayTitle}
+                        </Link>
+                      </h3>
+
+                      {/* Description */}
+                      <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed line-clamp-3">
+                        {displayDesc}
+                      </p>
+                    </div>
+
+                    {/* Bottom Tags & Read CTA */}
+                    <div className="pt-4 mt-4 border-t border-[var(--border-color)] flex items-center justify-between gap-2">
+                      <div className="flex flex-wrap gap-1.5 overflow-hidden max-h-6">
+                        {article.tags.slice(0, 2).map((tag) => (
+                          <span
+                            key={tag}
+                            className="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-500/10 text-[var(--text-muted)]"
+                          >
+                            #{tag}
+                          </span>
+                        ))}
+                      </div>
+
+                      <Link
+                        href={targetUrl}
+                        className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-emerald-500 hover:text-emerald-400 group-hover:translate-x-0.5 transition-all whitespace-nowrap"
+                      >
+                        <span>
+                          {article.postType === 'tutorial'
+                            ? (lang === 'en' ? 'Start Tutorial' : 'Mulai Tutorial')
+                            : (lang === 'en' ? 'Read Article' : 'Baca EnInformasi')}
+                        </span>
+                        <ChevronRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          )}
+        </main>
+      </div>
+    </div>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <Suspense fallback={<div className="p-12 text-center text-sm font-mono text-zinc-500">Memuat katalog EnInformasi Hub...</div>}>
+      <HomeContent />
+    </Suspense>
+  );
+}

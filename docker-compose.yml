@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  netkode-hub:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: netkode-hub-app
+    restart: always
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
