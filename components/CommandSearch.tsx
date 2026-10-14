@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search, X, Sparkles, ArrowRight, CornerDownLeft, Layers } from 'lucide-react';
 import { searchArticles } from '@/lib/articles';
@@ -20,6 +20,11 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
   const [results, setResults] = useState<Article[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const navigateToArticle = useCallback((slug: string, postType: string = 'tutorial') => {
+    onClose();
+    router.push(`/${postType}/${slug}`);
+  }, [onClose, router]);
 
   useEffect(() => {
     if (isOpen) {
@@ -62,7 +67,7 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen, results, selectedIndex, onClose]);
+  }, [isOpen, results, selectedIndex, onClose, navigateToArticle]);
 
   const handleQueryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;
@@ -70,11 +75,6 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
     const searchRes = searchArticles(val);
     setResults(searchRes);
     setSelectedIndex(0);
-  };
-
-  const navigateToArticle = (slug: string, postType: string = 'tutorial') => {
-    onClose();
-    router.push(`/${postType}/${slug}`);
   };
 
   if (!isOpen) return null;
