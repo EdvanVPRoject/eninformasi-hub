@@ -17,9 +17,7 @@ export default function TableOfContents({ items }: TableOfContentsProps) {
     if (!items || items.length === 0) return;
 
     // Pastikan ID pertama aktif jika belum ada yang terpilih
-    if (!activeId) {
-      setActiveId(items[0].id);
-    }
+    setActiveId((prev) => prev || items[0].id);
 
     const handleScroll = () => {
       // 1. Jika sudah mencapai dasar halaman (misal membaca sampai checklist/footer)
