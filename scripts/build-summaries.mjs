@@ -108,16 +108,16 @@ export function searchArticleSummaries(query: string, postType?: 'tutorial' | 'a
   if (postType) {
     list = list.filter((a) => a.postType === postType);
   }
-  if (!query.trim()) return list;
-  const q = query.toLowerCase();
+  if (!query || !query.trim()) return list;
+  const q = query.toLowerCase().trim();
   return list.filter(
     (a) =>
-      a.title.toLowerCase().includes(q) ||
-      a.description.toLowerCase().includes(q) ||
+      (a.title && a.title.toLowerCase().includes(q)) ||
+      (a.description && a.description.toLowerCase().includes(q)) ||
       (a.en?.title && a.en.title.toLowerCase().includes(q)) ||
       (a.en?.description && a.en.description.toLowerCase().includes(q)) ||
-      a.categoryLabel.toLowerCase().includes(q) ||
-      a.tags.some((t) => t.toLowerCase().includes(q))
+      (a.categoryLabel && a.categoryLabel.toLowerCase().includes(q)) ||
+      (Array.isArray(a.tags) && a.tags.some((t) => typeof t === 'string' && t.toLowerCase().includes(q)))
   );
 }
 `;
