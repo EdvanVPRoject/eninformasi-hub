@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import CommandSearch from './CommandSearch';
 import MobileBottomNav from './MobileBottomNav';
+import MobileDesktopTip from './MobileDesktopTip';
 import { LanguageProvider } from './LanguageContext';
 
 export default function LayoutShell({ children }: { children: React.ReactNode }) {
@@ -26,6 +27,7 @@ export default function LayoutShell({ children }: { children: React.ReactNode })
     <LanguageProvider>
       <div className="min-h-screen flex flex-col bg-[var(--bg-main)] text-[var(--text-main)] transition-colors duration-200">
         <Navbar onOpenSearch={() => setIsSearchOpen(true)} />
+        <MobileDesktopTip />
         <main className="flex-1 pb-20 sm:pb-0">{children}</main>
         <Footer />
         <CommandSearch isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
