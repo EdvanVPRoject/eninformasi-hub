@@ -28,7 +28,7 @@ export default function Footer() {
               <div className="flex items-center gap-3 text-xs text-emerald-500">
                 <a href="https://github.com/EdvanVPRoject" target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a>
                 <span>•</span>
-                <a href="https://github.com/EdvanVPRoject" target="_blank" rel="noopener noreferrer" className="hover:underline">{lang === 'en' ? 'Portfolio' : 'Portofolio'}</a>
+                <a href="https://edvan-portofolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:underline" title="Edvan Nuriana — Sistem Komputer">{lang === 'en' ? 'Portfolio' : 'Portofolio'}</a>
               </div>
             </div>
           </div>

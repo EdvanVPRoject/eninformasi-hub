@@ -6,6 +6,11 @@ import {
   Github, 
   Globe, 
   ExternalLink, 
+  Instagram,
+  Facebook,
+  Linkedin,
+  Mail,
+  MessageCircle,
   Code2, 
   UserCheck, 
   Cpu, 
@@ -36,17 +41,17 @@ export default function AboutPage() {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-[var(--border-color)]">
           <div className="flex items-center gap-4">
             <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500 font-mono font-bold text-xl">
-              EV
+              EN
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h2 className="text-lg font-bold text-[var(--text-main)]">Edvan</h2>
+                <h2 className="text-lg font-bold text-[var(--text-main)]">Edvan Nuriana Putra Septia</h2>
                 <span className="px-2 py-0.5 text-[11px] font-mono rounded bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 font-semibold">
                   Lead Developer & Author
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-[var(--text-muted)] mt-0.5">
-                Software Engineer & Spesialis Otomasi Artificial Intelligence
+                S1 Sistem Komputer · Software Engineer & AI Automation Specialist
               </p>
             </div>
           </div>
@@ -65,10 +70,11 @@ export default function AboutPage() {
             </a>
 
             <a
-              href="https://github.com/EdvanVPRoject"
+              href="https://edvan-portofolio.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold rounded-lg bg-emerald-500 text-zinc-950 hover:bg-emerald-400 transition-all shadow-sm"
+              title="Edvan Nuriana — Sistem Komputer"
             >
               <Globe className="w-4 h-4" />
               <span>Portofolio</span>
@@ -77,8 +83,104 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* Media Sosial & Kontak Resmi dari CV */}
+        <div className="space-y-3">
+          <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)]">
+            Media Sosial & Kontak Resmi
+          </span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+            <a
+              href="https://www.linkedin.com/in/edvannuriana"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 p-3 rounded-xl bg-[var(--bg-main)] border border-[var(--border-color)] hover:border-emerald-500/40 hover:text-emerald-500 transition-all text-xs font-mono group"
+            >
+              <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-500 group-hover:bg-emerald-500/20 transition-colors">
+                <Linkedin className="w-4 h-4" />
+              </div>
+              <div className="truncate">
+                <div className="font-semibold text-[var(--text-main)] group-hover:text-emerald-500">LinkedIn</div>
+                <div className="text-[11px] text-[var(--text-muted)] truncate">in/edvannuriana</div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/edvan_nr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 p-3 rounded-xl bg-[var(--bg-main)] border border-[var(--border-color)] hover:border-emerald-500/40 hover:text-emerald-500 transition-all text-xs font-mono group"
+            >
+              <div className="p-2 rounded-lg bg-pink-500/10 text-pink-500 group-hover:bg-pink-500/20 transition-colors">
+                <Instagram className="w-4 h-4" />
+              </div>
+              <div className="truncate">
+                <div className="font-semibold text-[var(--text-main)] group-hover:text-emerald-500">Instagram</div>
+                <div className="text-[11px] text-[var(--text-muted)] truncate">@edvan_nr</div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.facebook.com/edvan.art.31"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 p-3 rounded-xl bg-[var(--bg-main)] border border-[var(--border-color)] hover:border-emerald-500/40 hover:text-emerald-500 transition-all text-xs font-mono group"
+            >
+              <div className="p-2 rounded-lg bg-blue-500/10 text-blue-500 group-hover:bg-blue-500/20 transition-colors">
+                <Facebook className="w-4 h-4" />
+              </div>
+              <div className="truncate">
+                <div className="font-semibold text-[var(--text-main)] group-hover:text-emerald-500">Facebook</div>
+                <div className="text-[11px] text-[var(--text-muted)] truncate">edvan.art.31</div>
+              </div>
+            </a>
+
+            <a
+              href="https://wa.me/6289630887748"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 p-3 rounded-xl bg-[var(--bg-main)] border border-[var(--border-color)] hover:border-emerald-500/40 hover:text-emerald-500 transition-all text-xs font-mono group"
+            >
+              <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-500 group-hover:bg-emerald-500/20 transition-colors">
+                <MessageCircle className="w-4 h-4" />
+              </div>
+              <div className="truncate">
+                <div className="font-semibold text-[var(--text-main)] group-hover:text-emerald-500">WhatsApp</div>
+                <div className="text-[11px] text-[var(--text-muted)] truncate">+62 896-3088-7748</div>
+              </div>
+            </a>
+
+            <a
+              href="mailto:septiaedvan@gmail.com"
+              className="flex items-center gap-3 p-3 rounded-xl bg-[var(--bg-main)] border border-[var(--border-color)] hover:border-emerald-500/40 hover:text-emerald-500 transition-all text-xs font-mono group"
+            >
+              <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-500 group-hover:bg-emerald-500/20 transition-colors">
+                <Mail className="w-4 h-4" />
+              </div>
+              <div className="truncate">
+                <div className="font-semibold text-[var(--text-main)] group-hover:text-emerald-500">Email</div>
+                <div className="text-[11px] text-[var(--text-muted)] truncate">septiaedvan@gmail.com</div>
+              </div>
+            </a>
+
+            <a
+              href="https://edvan-portofolio.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 p-3 rounded-xl bg-[var(--bg-main)] border border-[var(--border-color)] hover:border-emerald-500/40 hover:text-emerald-500 transition-all text-xs font-mono group"
+            >
+              <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-500 group-hover:bg-emerald-500/20 transition-colors">
+                <Globe className="w-4 h-4" />
+              </div>
+              <div className="truncate">
+                <div className="font-semibold text-[var(--text-main)] group-hover:text-emerald-500">Portofolio Web</div>
+                <div className="text-[11px] text-[var(--text-muted)] truncate">edvan-portofolio.vercel.app</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         {/* Pernyataan Hak Cipta Resmi */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between text-xs text-[var(--text-muted)] font-mono gap-2">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between text-xs text-[var(--text-muted)] font-mono gap-2 pt-4 border-t border-[var(--border-color)]">
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-4 h-4 text-emerald-500" />
             <span>Hak Cipta © 2026 <strong>Edvan</strong>. Seluruh Hak Cipta Dilindungi Undang-Undang.</span>
