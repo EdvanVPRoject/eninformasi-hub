@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Terminal, Shield, FileText, Info, Mail, Heart } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
+import EnLogo from './EnLogo';
 
 export default function Footer() {
   const { lang, t } = useLanguage();
@@ -14,10 +15,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Col */}
           <div className="space-y-3 md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 font-mono font-bold text-base text-[var(--text-main)]">
-              <div className="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 font-mono font-black text-xs">
-                EN
-              </div>
+            <Link href="/" className="flex items-center gap-2.5 font-mono font-bold text-base text-[var(--text-main)] group">
+              <EnLogo size={30} />
               <span>EnInformasi<span className="text-emerald-500">.hub</span></span>
             </Link>
             <p className="leading-relaxed">

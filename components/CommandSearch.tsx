@@ -28,7 +28,7 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
   useEffect(() => {
     if (isOpen) {
       setQuery('');
-      setResults(searchArticles(''));
+      setResults(searchArticleSummaries(''));
       setSelectedIndex(0);
       setTimeout(() => inputRef.current?.focus(), 50);
     }
@@ -79,14 +79,17 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-150">
+    <div 
+      className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-150 cursor-pointer"
+      onClick={onClose}
+    >
       <div 
-        className="w-full max-w-2xl rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] shadow-2xl overflow-hidden text-[var(--text-main)] transition-all"
+        className="w-full max-w-2xl rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] shadow-2xl overflow-hidden text-[var(--text-main)] transition-all cursor-default"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Search Input Bar */}
         <div className="flex items-center px-4 py-3.5 border-b border-[var(--border-color)] gap-3">
-          <Search className="w-5 h-5 text-emerald-500" />
+          <Search className="w-5 h-5 text-emerald-500 shrink-0" />
           <input
             ref={inputRef}
             type="text"
@@ -97,18 +100,27 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
           />
           {query && (
             <button
+              type="button"
               onClick={() => {
                 setQuery('');
                 setResults(searchArticleSummaries(''));
               }}
-              className="p-1 rounded-md text-[var(--text-muted)] hover:text-[var(--text-main)]"
+              className="p-1 rounded-md text-[var(--text-muted)] hover:text-[var(--text-main)] transition-colors"
+              title={lang === 'en' ? 'Clear' : 'Hapus'}
             >
               <X className="w-4 h-4" />
             </button>
           )}
-          <kbd className="px-2 py-0.5 text-xs font-mono rounded bg-[var(--bg-main)] border border-[var(--border-color)] text-[var(--text-muted)]">
-            ESC
-          </kbd>
+          <button
+            type="button"
+            onClick={onClose}
+            className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium rounded-lg bg-[var(--bg-main)] hover:bg-[var(--border-color)] border border-[var(--border-color)] text-[var(--text-muted)] hover:text-[var(--text-main)] transition-colors cursor-pointer shrink-0"
+            title={lang === 'en' ? 'Close search (ESC)' : 'Tutup pencarian (ESC)'}
+            aria-label={lang === 'en' ? 'Close search' : 'Tutup pencarian'}
+          >
+            <X className="w-4 h-4" />
+            <span className="text-xs">{lang === 'en' ? 'Close' : 'Tutup'}</span>
+          </button>
         </div>
 
         {/* Results List */}

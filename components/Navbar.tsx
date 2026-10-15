@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
 import { totalArticleCount } from '@/lib/data/article-summaries';
+import EnLogo from './EnLogo';
 
 interface NavbarProps {
   onOpenSearch?: () => void;
@@ -59,10 +60,8 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
     <header className="sticky top-0 z-40 w-full border-b border-[var(--border-color)] bg-[var(--bg-main)]/90 backdrop-blur-md transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-          <Link href="/" className="flex items-center gap-2 font-mono font-bold tracking-tight text-base sm:text-lg group">
-            <div className="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 group-hover:bg-emerald-500/20 transition-all font-mono font-black text-xs sm:text-sm">
-              EN
-            </div>
+          <Link href="/" className="flex items-center gap-2.5 font-mono font-bold tracking-tight text-base sm:text-lg group">
+            <EnLogo size={32} />
             <span className="text-[var(--text-main)]">
               EnInformasi<span className="text-emerald-500">.hub</span>
             </span>

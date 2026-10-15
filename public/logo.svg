@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="enGradPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F59B" />
+      <stop offset="60%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1527" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="6" y="6" width="108" height="108" rx="26" fill="url(#bgGrad)" stroke="url(#enGradPrimary)" stroke-width="2.5" stroke-opacity="0.35"/>
+
+  <!-- Subtle Circuit Grid Accents -->
+  <circle cx="24" cy="24" r="2.5" fill="#10B981" fill-opacity="0.4" />
+  <circle cx="96" cy="96" r="2.5" fill="#06B6D4" fill-opacity="0.4" />
+  <path d="M24 24 L34 24 M96 96 L86 96" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.3" />
+
+  <!-- Cybernetic 'EN' Nexus Monogram -->
+  <g filter="url(#neonGlow)">
+    <!-- Letter 'E' with futuristic prongs -->
+    <path d="M34 34 H58 C61 34 62 36 62 38 C62 40 61 42 58 42 H44 V55 H54 C56 55 57 57 57 59 C57 61 56 63 54 63 H44 V78 H60 C63 78 64 80 64 82 C64 84 63 86 60 86 H34 C31 86 30 84 30 81 V39 C30 36 31 34 34 34 Z" fill="url(#enGradPrimary)"/>
+
+    <!-- Dynamic Diagonal Cyber-Link to 'N' -->
+    <path d="M60 42 L80 78" stroke="#00F59B" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Letter 'N' Right Spine and Connector -->
+    <path d="M80 34 H86 C88 34 90 36 90 38 V82 C90 84 88 86 86 86 H80 C78 86 76 84 76 82 V48 L62 36 Z" fill="url(#enGradPrimary)"/>
+
+    <!-- Central Glowing Core Node (The "Hub") -->
+    <circle cx="70" cy="60" r="4" fill="#FFFFFF"/>
+    <circle cx="70" cy="60" r="7" stroke="#00F59B" stroke-width="2" stroke-opacity="0.8"/>
+  </g>
+</svg>
