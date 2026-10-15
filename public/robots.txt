@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://netkode.hub/sitemap.xml
+Sitemap: https://eninformasi-hub.septiaedvan.workers.dev/sitemap.xml

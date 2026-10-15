@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { allArticles } from '@/lib/articles';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://enkode.hub';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eninformasi-hub.septiaedvan.workers.dev';
 
   const articleUrls = allArticles.map((article) => {
     const route = article.postType === 'tutorial' ? 'tutorial' : 'artikel';
