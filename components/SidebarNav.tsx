@@ -151,21 +151,45 @@ function SidebarNavInner({
 
   return (
     <>
-      <div className="lg:hidden p-3.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] shadow-sm mb-4">
-        <details className="group">
-          <summary className="flex items-center justify-between cursor-pointer list-none text-xs font-mono font-semibold text-[var(--text-main)] select-none">
-            <span className="flex items-center gap-2">
-              <SlidersHorizontal className="w-4 h-4 text-emerald-500" />
-              <span>
-                {lang === 'en' ? 'Filter Category Topics' : 'Filter Kategori Topik'}
-              </span>
-            </span>
-            <span className="text-[10px] text-emerald-400 group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <div className="pt-4 mt-3 border-t border-[var(--border-color)]/60">
-            {filterContent}
-          </div>
-        </details>
+      {/* Mobile Horizontal Interactive Category Carousel */}
+      <div className="lg:hidden mb-4 space-y-2">
+        <div className="flex items-center justify-between px-1 text-xs font-mono text-[var(--text-muted)]">
+          <span className="flex items-center gap-1.5 font-bold text-[var(--text-main)]">
+            <SlidersHorizontal className="w-3.5 h-3.5 text-emerald-500" />
+            <span>{t('filter_category_title')}</span>
+          </span>
+          <span className="text-[10px] text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded-full font-bold border border-emerald-500/20">
+            {lang === 'en' ? `${totalCount} Items` : `${totalCount} Konten`}
+          </span>
+        </div>
+
+        {/* Scrollable Chips with Touch Momentum */}
+        <div className="flex items-center gap-2 overflow-x-auto pb-2 pt-0.5 no-scrollbar scroll-smooth -mx-4 px-4">
+          {categories.map((cat) => {
+            const isActive = activeCat === cat.id;
+            const displayLabel = getCategoryLabel(cat.id, lang);
+            return (
+              <button
+                key={cat.id}
+                type="button"
+                onClick={() => handleCategoryClick(cat.id)}
+                className={`shrink-0 flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-mono transition-all duration-150 active:scale-95 cursor-pointer ${
+                  isActive
+                    ? 'bg-emerald-500 text-zinc-950 font-bold shadow-[0_0_12px_rgba(16,185,129,0.35)]'
+                    : 'bg-[var(--card-bg)] text-[var(--text-muted)] border border-[var(--border-color)] hover:border-emerald-500/40 hover:text-[var(--text-main)]'
+                }`}
+              >
+                <span>{getCategoryIcon(cat.id)}</span>
+                <span className="whitespace-nowrap font-medium">{displayLabel}</span>
+                <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
+                  isActive ? 'bg-black/20 text-zinc-950' : 'bg-zinc-500/10 text-[var(--text-muted)]'
+                }`}>
+                  {cat.count}
+                </span>
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       <div className="hidden lg:block">

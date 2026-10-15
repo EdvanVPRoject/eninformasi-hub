@@ -13,10 +13,12 @@ import {
   Menu,
   X,
   Globe,
-  Home
+  Home,
+  BookOpen,
+  Zap
 } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
-import { totalArticleCount } from '@/lib/data/article-summaries';
+import { totalArticleCount, tutorialArticleCount, artikelArticleCount } from '@/lib/data/article-summaries';
 import EnLogo from './EnLogo';
 
 interface NavbarProps {
@@ -186,14 +188,45 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
           >
             <div className="flex items-center gap-2.5 text-sm">
               <Home className="w-4 h-4 text-emerald-500" />
-              <span>{lang === 'en' ? '← Back to Main Page' : '← Kembali ke Halaman Utama'}</span>
+              <span>{lang === 'en' ? 'Main Feed' : 'Halaman Utama'}</span>
             </div>
+            <span className="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">
+              {totalArticleCount}
+            </span>
+          </Link>
+
+          <Link 
+            href="/tutorial" 
+            onClick={() => setMobileMenuOpen(false)}
+            className="flex items-center justify-between p-3 rounded-xl text-[var(--text-main)] hover:bg-[var(--card-bg)] transition-colors"
+          >
+            <div className="flex items-center gap-2.5 text-sm">
+              <BookOpen className="w-4 h-4 text-emerald-500" />
+              <span>{lang === 'en' ? 'Practical Tutorials' : 'Tutorial Praktis'}</span>
+            </div>
+            <span className="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-bold">
+              {tutorialArticleCount}
+            </span>
+          </Link>
+
+          <Link 
+            href="/artikel" 
+            onClick={() => setMobileMenuOpen(false)}
+            className="flex items-center justify-between p-3 rounded-xl text-[var(--text-main)] hover:bg-[var(--card-bg)] transition-colors"
+          >
+            <div className="flex items-center gap-2.5 text-sm">
+              <Zap className="w-4 h-4 text-emerald-500" />
+              <span>{lang === 'en' ? 'EnInformation & Trends' : 'EnInformasi & Tren'}</span>
+            </div>
+            <span className="text-xs font-mono px-2 py-0.5 rounded bg-zinc-500/10 text-[var(--text-muted)] font-bold">
+              {artikelArticleCount}
+            </span>
           </Link>
 
           <Link 
             href="/tools" 
             onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center justify-between p-3 rounded-xl text-[var(--text-main)] hover:bg-[var(--card-bg)]"
+            className="flex items-center justify-between p-3 rounded-xl text-[var(--text-main)] hover:bg-[var(--card-bg)] transition-colors"
           >
             <div className="flex items-center gap-2.5 text-sm">
               <Wrench className="w-4 h-4 text-emerald-500" />
@@ -205,11 +238,11 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
           <Link 
             href="/about" 
             onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center justify-between p-3 rounded-xl text-[var(--text-main)] hover:bg-[var(--card-bg)]"
+            className="flex items-center justify-between p-3 rounded-xl text-[var(--text-main)] hover:bg-[var(--card-bg)] transition-colors"
           >
             <div className="flex items-center gap-2.5 text-sm">
               <UserCheck className="w-4 h-4 text-emerald-500" />
-              <span>{lang === 'en' ? 'About Me' : 'Tentang Saya'}</span>
+              <span>{lang === 'en' ? 'About Author' : 'Tentang Penulis'}</span>
             </div>
             <span className="text-xs font-mono text-zinc-500">Edvan</span>
           </Link>

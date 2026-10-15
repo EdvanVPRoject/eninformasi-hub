@@ -381,7 +381,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
         <button
           onClick={scrollToTop}
           aria-label="Scroll to top"
-          className="fixed bottom-6 right-6 z-40 p-3 rounded-xl bg-emerald-500 text-zinc-950 shadow-lg hover:bg-emerald-400 transition-all"
+          className="fixed bottom-20 right-4 sm:bottom-6 sm:right-6 z-40 p-3 rounded-xl bg-emerald-500 text-zinc-950 shadow-lg hover:bg-emerald-400 active:scale-90 transition-all"
         >
           <ArrowUp className="w-4 h-4 stroke-[2.5]" />
         </button>

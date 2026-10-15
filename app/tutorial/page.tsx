@@ -210,7 +210,7 @@ function TutorialContent() {
               return (
                 <article
                   key={article.slug}
-                  className="group flex flex-col justify-between p-5 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 hover:shadow-lg transition-all duration-200"
+                  className="group flex flex-col justify-between p-5 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 hover:shadow-lg active:scale-[0.98] transition-all duration-200"
                 >
                   <div className="space-y-3">
                     <div className="flex items-center justify-between text-[11px] font-mono">
