@@ -75,5 +75,5 @@ flowchart TD
 
 ### 4. Performa & Arsitektur Cloudflare Worker
 * **Status**:  **100% Live di Edge**
-* **URL Produksi**: `https://eninformasi-hub.septiaedvan.workers.dev`
+* **URL Produksi**: `https://eninformasi-hub.entehchin.workers.dev`
 * **Startup Latency**: 21 ms dengan CDN caching global.

@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://eninformasi-hub.septiaedvan.workers.dev'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://eninformasi-hub.entehchin.workers.dev'),
   title: `EnInformasi Hub — Portal ${totalArticleCount} Tutorial, Gaming & Tren Teknologi Terkini`,
   description: `Portal wawasan teknologi modern, gaming & esports, rilis game masa depan, hardware & gadget, serta ${tutorialArticleCount} tutorial praktis dan ${artikelArticleCount} EnInformasi mendalam terupdate.`,
   icons: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `EnInformasi Hub — Portal ${totalArticleCount} Tutorial & Gaming Terupdate`,
     description: `Wawasan teknologi modern, gaming & esports, rilis game masa depan, hardware & gadget, serta tutorial AI terupdate.`,
-    url: 'https://eninformasi-hub.septiaedvan.workers.dev',
+    url: 'https://eninformasi-hub.entehchin.workers.dev',
     siteName: 'EnInformasi Hub',
     images: [
       {

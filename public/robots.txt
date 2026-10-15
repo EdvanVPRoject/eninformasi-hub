@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eninformasi-hub.septiaedvan.workers.dev/sitemap.xml
+Sitemap: https://eninformasi-hub.entehchin.workers.dev/sitemap.xml
