@@ -105,7 +105,8 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
           </Link>
         </nav>
 
-        <div className="flex-1 max-w-xs sm:max-w-sm mx-1 sm:mx-4">
+        {/* Search Bar on Desktop */}
+        <div className="hidden sm:block flex-1 max-w-xs sm:max-w-sm mx-2 sm:mx-4">
           <button
             type="button"
             onClick={onOpenSearch}
@@ -124,7 +125,28 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
         </div>
 
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
-          <div className="flex items-center p-0.5 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-xs font-mono font-bold shadow-sm">
+          {/* Mobile Search Icon Button */}
+          <button
+            type="button"
+            onClick={onOpenSearch}
+            className="sm:hidden p-2 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] hover:text-emerald-400"
+            title="Cari"
+          >
+            <Search className="w-4 h-4" />
+          </button>
+
+          {/* Mobile Single Tap Lang Switch */}
+          <button
+            type="button"
+            onClick={toggleLang}
+            className="sm:hidden px-2 py-1.5 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[11px] font-mono font-bold text-emerald-400"
+            title="Ganti Bahasa / Switch Language"
+          >
+            <span>{lang === 'id' ? '🇮🇩 ID' : '🇬🇧 EN'}</span>
+          </button>
+
+          {/* Desktop Dual Lang Switch */}
+          <div className="hidden sm:flex items-center p-0.5 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-xs font-mono font-bold shadow-sm">
             <button
               type="button"
               onClick={() => setLang('id')}

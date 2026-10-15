@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo, Suspense } from 'react';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 import { 
   FileText, 
   Search, 
@@ -10,7 +10,8 @@ import {
   ChevronRight, 
   Sparkles,
   Layers,
-  GraduationCap 
+  GraduationCap,
+  ChevronDown 
 } from 'lucide-react';
 import { 
   articleSummaries, 
@@ -23,6 +24,7 @@ import { getCategoryLabel } from '@/lib/i18n';
 import SortDropdown, { SortOption } from '@/components/SortDropdown';
 
 function ArtikelContent() {
+  const router = useRouter();
   const { lang, t } = useLanguage();
   const searchParams = useSearchParams();
   const initialCategory = searchParams.get('category') || 'all';
@@ -129,9 +131,43 @@ function ArtikelContent() {
 
         {/* Right Column Grid */}
         <main className="lg:col-span-9 space-y-6">
-          {/* Section Segment Tabs: Semua | Tutorial | EnInformasi (Sticky saat scroll) */}
-          <div className="sticky top-16 z-30 pt-3 pb-2 -mt-3 bg-[var(--bg-main)]/95 backdrop-blur-md transition-all">
-            <div className="flex items-center gap-2 p-1.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] overflow-x-auto text-xs font-mono shadow-sm">
+          {/* Mobile Dropdown for Content Type */}
+          <div className="sm:hidden mb-3 space-y-1.5">
+            <label htmlFor="mobile-artikel-type-select" className="flex items-center justify-between text-xs font-mono font-semibold text-[var(--text-muted)]">
+              <span className="flex items-center gap-1.5 text-[var(--text-main)]">
+                <Layers className="w-3.5 h-3.5 text-emerald-500" />
+                <span>{lang === 'en' ? 'Content Type' : 'Pilihan Jenis Konten'}</span>
+              </span>
+              <span className="text-[10px] text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded-full font-bold border border-emerald-500/20">
+                {artikels.length} {lang === 'en' ? 'Articles' : 'Artikel'}
+              </span>
+            </label>
+            <div className="relative">
+              <select
+                id="mobile-artikel-type-select"
+                value="/artikel"
+                onChange={(e) => router.push(e.target.value)}
+                className="w-full appearance-none px-3.5 py-2.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] text-xs font-mono text-[var(--text-main)] font-semibold focus:outline-none focus:border-emerald-500/60 shadow-sm pr-9 cursor-pointer"
+              >
+                <option value="/" className="bg-zinc-900 text-zinc-100">
+                  {t('tab_all')} ({totalArticleCount})
+                </option>
+                <option value="/tutorial" className="bg-zinc-900 text-zinc-100">
+                  {t('tab_tutorials')} ({tutorialArticleCount})
+                </option>
+                <option value="/artikel" className="bg-zinc-900 text-zinc-100">
+                  {t('tab_articles')} ({artikels.length})
+                </option>
+              </select>
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-emerald-500">
+                <ChevronDown className="w-4 h-4" />
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Section Segment Tabs: Semua | Tutorial | EnInformasi (Sticky saat scroll) */}
+          <div className="hidden sm:block sticky top-16 z-30 pt-3 pb-2 -mt-3 bg-[var(--bg-main)]/95 backdrop-blur-md transition-all">
+            <div className="flex items-center gap-2 p-1.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] text-xs font-mono shadow-sm">
               <Link
                 href="/"
                 className="px-4 py-2 rounded-lg font-semibold transition-all whitespace-nowrap flex items-center gap-2 text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-main)]"

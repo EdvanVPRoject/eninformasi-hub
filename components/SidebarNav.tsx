@@ -12,7 +12,8 @@ import {
   HardDrive, 
   Wrench,
   Gamepad2,
-  Flame
+  Flame,
+  ChevronDown
 } from 'lucide-react';
 import { PostType } from '@/lib/types';
 import { getCategoriesWithCount, totalArticleCount } from '@/lib/data/article-summaries';
@@ -151,44 +152,33 @@ function SidebarNavInner({
 
   return (
     <>
-      {/* Mobile Horizontal Interactive Category Carousel */}
-      <div className="lg:hidden mb-4 space-y-2">
-        <div className="flex items-center justify-between px-1 text-xs font-mono text-[var(--text-muted)]">
-          <span className="flex items-center gap-1.5 font-bold text-[var(--text-main)]">
+      {/* Mobile Category Dropdown */}
+      <div className="lg:hidden mb-4 space-y-1.5">
+        <label htmlFor="mobile-category-select" className="flex items-center justify-between text-xs font-mono font-semibold text-[var(--text-muted)]">
+          <span className="flex items-center gap-1.5 text-[var(--text-main)]">
             <SlidersHorizontal className="w-3.5 h-3.5 text-emerald-500" />
             <span>{t('filter_category_title')}</span>
           </span>
           <span className="text-[10px] text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded-full font-bold border border-emerald-500/20">
-            {lang === 'en' ? `${totalCount} Items` : `${totalCount} Konten`}
+            {totalCount} {lang === 'en' ? 'Items' : 'Konten'}
           </span>
-        </div>
-
-        {/* Scrollable Chips with Touch Momentum */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-2 pt-0.5 no-scrollbar scroll-smooth -mx-4 px-4">
-          {categories.map((cat) => {
-            const isActive = activeCat === cat.id;
-            const displayLabel = getCategoryLabel(cat.id, lang);
-            return (
-              <button
-                key={cat.id}
-                type="button"
-                onClick={() => handleCategoryClick(cat.id)}
-                className={`shrink-0 flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-mono transition-all duration-150 active:scale-95 cursor-pointer ${
-                  isActive
-                    ? 'bg-emerald-500 text-zinc-950 font-bold shadow-[0_0_12px_rgba(16,185,129,0.35)]'
-                    : 'bg-[var(--card-bg)] text-[var(--text-muted)] border border-[var(--border-color)] hover:border-emerald-500/40 hover:text-[var(--text-main)]'
-                }`}
-              >
-                <span>{getCategoryIcon(cat.id)}</span>
-                <span className="whitespace-nowrap font-medium">{displayLabel}</span>
-                <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
-                  isActive ? 'bg-black/20 text-zinc-950' : 'bg-zinc-500/10 text-[var(--text-muted)]'
-                }`}>
-                  {cat.count}
-                </span>
-              </button>
-            );
-          })}
+        </label>
+        <div className="relative">
+          <select
+            id="mobile-category-select"
+            value={activeCat}
+            onChange={(e) => handleCategoryClick(e.target.value)}
+            className="w-full appearance-none px-3.5 py-2.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] text-xs font-mono text-[var(--text-main)] font-semibold focus:outline-none focus:border-emerald-500/60 shadow-sm pr-9 cursor-pointer"
+          >
+            {categories.map((cat) => (
+              <option key={cat.id} value={cat.id} className="bg-zinc-900 text-zinc-100 py-1">
+                {getCategoryLabel(cat.id, lang)} ({cat.count})
+              </option>
+            ))}
+          </select>
+          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-emerald-500">
+            <ChevronDown className="w-4 h-4" />
+          </div>
         </div>
       </div>
 
