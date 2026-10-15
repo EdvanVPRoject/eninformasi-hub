@@ -141,7 +141,7 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
                       <span className={`px-1.5 py-0.2 rounded font-semibold text-[10px] ${
                         article.postType === 'tutorial'
                           ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20'
-                          : 'bg-teal-500/10 text-teal-300 border border-teal-500/20'
+                          : 'bg-zinc-500/10 text-[var(--text-muted)] border border-[var(--border-color)]'
                       }`}>
                         {article.postType === 'tutorial' ? 'Tutorial' : (lang === 'en' ? 'EnInformation' : 'EnInformasi')}
                       </span>

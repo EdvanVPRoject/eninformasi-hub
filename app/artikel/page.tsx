@@ -91,8 +91,8 @@ function ArtikelContent() {
       {/* Header Banner */}
       <div className="relative mb-10 p-6 sm:p-10 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] overflow-hidden shadow-sm">
         <div className="max-w-3xl space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-mono rounded-full bg-teal-500/10 text-teal-300 border border-teal-500/20">
-            <FileText className="w-3.5 h-3.5 text-teal-400" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-mono rounded-full bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20">
+            <FileText className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400" />
             <span>{lang === 'en' ? 'Category: EnInformation, Insights & Future Tech Trends' : 'Kategori: EnInformasi, Wawasan & Tren Teknologi Masa Depan'}</span>
           </div>
 
@@ -209,7 +209,7 @@ function ArtikelContent() {
                 >
                   <div className="space-y-3">
                     <div className="flex items-center justify-between text-[11px] font-mono">
-                      <span className="text-teal-400 font-semibold px-2 py-0.5 rounded bg-teal-500/10 border border-teal-500/20">
+                      <span className="text-emerald-500 dark:text-emerald-400 font-semibold px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
                         {getCategoryLabel(article.category, lang)}
                       </span>
                       <div className="flex items-center gap-1.5 text-[var(--text-muted)]">

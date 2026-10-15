@@ -105,9 +105,9 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
   return (
     <div className="min-h-screen bg-[var(--bg-main)] relative">
       {/* Top High-Water Mark Reading Progress Bar */}
-      <div className="fixed top-16 left-0 z-40 w-full h-1 bg-zinc-800/40 pointer-events-none">
+      <div className="fixed top-16 left-0 z-40 w-full h-0.5 bg-zinc-800/40 pointer-events-none">
         <div
-          className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 transition-all duration-300 ease-out"
+          className="h-full bg-emerald-500 transition-all duration-300 ease-out"
           style={{ width: `${maxProgress}%` }}
         />
       </div>
@@ -143,8 +143,8 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                 <div className="flex items-center gap-2">
                   <span className={`px-2 py-0.5 rounded font-semibold ${
                     postType === 'tutorial'
-                      ? 'bg-emerald-500/10 text-emerald-500 border border-emerald-500/20'
-                      : 'bg-teal-500/10 text-teal-400 border border-teal-500/20'
+                      ? 'bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20'
+                      : 'bg-zinc-500/10 text-[var(--text-muted)] border border-[var(--border-color)]'
                   }`}>
                     {postType === 'tutorial' ? 'Tutorial' : (lang === 'en' ? 'EnInformation' : 'EnInformasi')}
                   </span>

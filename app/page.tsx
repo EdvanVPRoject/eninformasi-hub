@@ -139,11 +139,9 @@ function HomeContent() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
       {/* Hero Bento Header */}
       <div className="relative mb-10 p-6 sm:p-10 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] overflow-hidden shadow-sm">
-        <div className="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
-
         <div className="relative z-10 max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-mono rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
-            <Zap className="w-3.5 h-3.5 text-emerald-400" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-mono rounded-full bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20">
+            <Zap className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400" />
             <span>
               {lang === 'en'
                 ? `EnInformasi Hub — ${allArticles.length} Tutorials, Gaming & Future Tech Trends`
@@ -153,7 +151,7 @@ function HomeContent() {
 
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-[var(--text-main)] leading-[1.15]">
             {t('hero_title_prefix')}{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-400">
+            <span className="text-emerald-500 dark:text-emerald-400">
               {t('hero_title_highlight')}
             </span>
           </h1>
@@ -239,7 +237,7 @@ function HomeContent() {
               >
                 <FileText className="w-3.5 h-3.5" />
                 <span>{t('tab_articles')}</span>
-                <span className={`px-1.5 py-0.2 rounded text-[10px] ${selectedType === 'artikel' ? 'bg-black/20' : 'bg-teal-500/10 text-teal-300'}`}>
+                <span className={`px-1.5 py-0.2 rounded text-[10px] ${selectedType === 'artikel' ? 'bg-black/20' : 'bg-zinc-500/10 text-[var(--text-muted)]'}`}>
                   {artikelCount}
                 </span>
               </button>
@@ -317,8 +315,8 @@ function HomeContent() {
                         <div className="flex items-center gap-1.5">
                           <span className={`px-2 py-0.5 rounded font-semibold ${
                             article.postType === 'tutorial' 
-                              ? 'bg-emerald-500/10 text-emerald-500 border border-emerald-500/20' 
-                              : 'bg-teal-500/10 text-teal-400 border border-teal-500/20'
+                              ? 'bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20' 
+                              : 'bg-zinc-500/10 text-[var(--text-muted)] border border-[var(--border-color)]'
                           }`}>
                             {article.postType === 'tutorial' ? 'Tutorial' : (lang === 'en' ? 'EnInformation' : 'EnInformasi')}
                           </span>

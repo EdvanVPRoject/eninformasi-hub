@@ -153,7 +153,7 @@ function TutorialContent() {
               >
                 <FileText className="w-3.5 h-3.5" />
                 <span>{t('tab_articles')}</span>
-                <span className="px-1.5 py-0.2 rounded text-[10px] bg-teal-500/10 text-teal-300">
+                <span className="px-1.5 py-0.2 rounded text-[10px] bg-zinc-500/10 text-[var(--text-muted)]">
                   {artikels.length}
                 </span>
               </Link>

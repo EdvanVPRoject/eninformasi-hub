@@ -89,7 +89,7 @@ export default function ContentLayout({
                   >
                     <FileText className="w-3.5 h-3.5" />
                     <span>{t('tab_articles')}</span>
-                    <span className={`px-1.5 py-0.2 rounded text-[10px] ${activeType === 'artikel' ? 'bg-black/20' : 'bg-teal-500/10 text-teal-300'}`}>
+                    <span className={`px-1.5 py-0.2 rounded text-[10px] ${activeType === 'artikel' ? 'bg-black/20' : 'bg-zinc-500/10 text-[var(--text-muted)]'}`}>
                       {currentArtikels}
                     </span>
                   </button>
@@ -134,7 +134,7 @@ export default function ContentLayout({
                   >
                     <FileText className="w-3.5 h-3.5" />
                     <span>{t('tab_articles')}</span>
-                    <span className={`px-1.5 py-0.2 rounded text-[10px] ${activeType === 'artikel' ? 'bg-black/20' : 'bg-teal-500/10 text-teal-300'}`}>
+                    <span className={`px-1.5 py-0.2 rounded text-[10px] ${activeType === 'artikel' ? 'bg-black/20' : 'bg-zinc-500/10 text-[var(--text-muted)]'}`}>
                       {currentArtikels}
                     </span>
                   </Link>
