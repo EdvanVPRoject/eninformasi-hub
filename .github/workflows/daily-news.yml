@@ -37,8 +37,8 @@ jobs:
           git config --global user.name "EnInformasi AI Publisher"
           git config --global user.email "bot@eninformasi.id"
           git status
-          if [ -n "$(git status --porcelain lib/data/daily-news.ts)" ]; then
-            git add lib/data/daily-news.ts
+          if [ -n "$(git status --porcelain lib/data)" ]; then
+            git add lib/data/daily-news.ts lib/data/article-summaries.ts
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
             git commit -m "chore(daily-news): update 3x daily viral tech & gaming news [${TIMESTAMP}]"
             git push origin main

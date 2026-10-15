@@ -16,7 +16,7 @@ import {
   Home
 } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
-import { allArticles } from '@/lib/articles';
+import { totalArticleCount } from '@/lib/data/article-summaries';
 
 interface NavbarProps {
   onOpenSearch?: () => void;
@@ -68,7 +68,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
             </span>
           </Link>
           <span className="hidden xl:inline-flex items-center px-2 py-0.5 text-[10px] font-mono rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-bold">
-            {allArticles.length} {lang === 'en' ? 'Items' : 'Konten'}
+            {totalArticleCount} {lang === 'en' ? 'Items' : 'Konten'}
           </span>
         </div>
 
@@ -113,7 +113,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
             <span className="flex items-center gap-2 truncate">
               <Search className="w-4 h-4 group-hover:text-emerald-500 transition-colors shrink-0" />
               <span className="truncate">
-                {lang === 'en' ? `Search ${allArticles.length} items...` : `Cari ${allArticles.length} konten...`}
+                {lang === 'en' ? `Search ${totalArticleCount} items...` : `Cari ${totalArticleCount} konten...`}
               </span>
             </span>
             <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono rounded bg-[var(--bg-main)] border border-[var(--border-color)] text-[var(--text-muted)] shrink-0">

@@ -3,8 +3,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search, X, Sparkles, ArrowRight, CornerDownLeft, Layers } from 'lucide-react';
-import { searchArticles, allArticles } from '@/lib/articles';
-import { Article } from '@/lib/types';
+import { searchArticleSummaries, totalArticleCount, ArticleSummary } from '@/lib/data/article-summaries';
 import { useLanguage } from './LanguageContext';
 import { getCategoryLabel } from '@/lib/i18n';
 
@@ -17,7 +16,7 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
   const router = useRouter();
   const { lang, t } = useLanguage();
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState<Article[]>([]);
+  const [results, setResults] = useState<ArticleSummary[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -72,7 +71,7 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
   const handleQueryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;
     setQuery(val);
-    const searchRes = searchArticles(val);
+    const searchRes = searchArticleSummaries(val);
     setResults(searchRes);
     setSelectedIndex(0);
   };
@@ -93,14 +92,14 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
             type="text"
             value={query}
             onChange={handleQueryChange}
-            placeholder={lang === 'en' ? `Search ${allArticles.length} tutorials, gaming, tech & AI guides...` : `Cari ${allArticles.length} tutorial, opini, AI, & tren teknologi...`}
+            placeholder={lang === 'en' ? `Search ${totalArticleCount} tutorials, gaming, tech & AI guides...` : `Cari ${totalArticleCount} tutorial, opini, AI, & tren teknologi...`}
             className="w-full bg-transparent border-none outline-none text-sm placeholder-[var(--text-muted)] text-[var(--text-main)] font-medium"
           />
           {query && (
             <button
               onClick={() => {
                 setQuery('');
-                setResults(searchArticles(''));
+                setResults(searchArticleSummaries(''));
               }}
               className="p-1 rounded-md text-[var(--text-muted)] hover:text-[var(--text-main)]"
             >
@@ -174,7 +173,7 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
             <span>{lang === 'en' ? '↵ Open Item' : '↵ Buka Konten'}</span>
             <span>{lang === 'en' ? 'ESC Close' : 'ESC Tutup'}</span>
           </div>
-          <span>{lang === 'en' ? `${allArticles.length} Items Indexed` : `${allArticles.length} Konten Terindeks`}</span>
+          <span>{lang === 'en' ? `${totalArticleCount} Items Indexed` : `${totalArticleCount} Konten Terindeks`}</span>
         </div>
       </div>
     </div>

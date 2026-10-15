@@ -14,8 +14,8 @@ import {
   Gamepad2,
   Flame
 } from 'lucide-react';
-import { Article, PostType } from '@/lib/types';
-import { getCategoriesWithCount, allArticles } from '@/lib/articles';
+import { PostType } from '@/lib/types';
+import { getCategoriesWithCount, totalArticleCount } from '@/lib/data/article-summaries';
 import { useLanguage } from './LanguageContext';
 import { getCategoryLabel } from '@/lib/i18n';
 
@@ -36,7 +36,7 @@ function SidebarNavInner({
   const { lang, t } = useLanguage();
 
   const categories = getCategoriesWithCount(postType === 'all' ? undefined : postType);
-  const totalCount = categories.find((c) => c.id === 'all')?.count ?? allArticles.length;
+  const totalCount = categories.find((c) => c.id === 'all')?.count ?? totalArticleCount;
   const activeCat = currentCategory ?? searchParams.get('category') ?? 'all';
 
   const getTargetBasePath = () => {

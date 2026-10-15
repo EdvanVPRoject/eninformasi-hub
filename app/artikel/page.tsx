@@ -12,7 +12,11 @@ import {
   Layers,
   GraduationCap 
 } from 'lucide-react';
-import { getArtikels, getTutorials, allArticles } from '@/lib/articles';
+import { 
+  articleSummaries, 
+  totalArticleCount, 
+  tutorialArticleCount 
+} from '@/lib/data/article-summaries';
 import SidebarNav from '@/components/SidebarNav';
 import { useLanguage } from '@/components/LanguageContext';
 import { getCategoryLabel } from '@/lib/i18n';
@@ -26,15 +30,18 @@ function ArtikelContent() {
   const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [sortBy, setSortBy] = useState<SortOption>('recommended');
+  const [visibleCount, setVisibleCount] = useState<number>(18);
 
   React.useEffect(() => {
     setSelectedCategory(searchParams.get('category') || 'all');
     const urlQuery = searchParams.get('q');
     if (urlQuery) setSearchQuery(urlQuery);
+    setVisibleCount(18);
   }, [searchParams]);
 
   const handleSelectCategory = (cat: string) => {
     setSelectedCategory(cat);
+    setVisibleCount(18);
     if (typeof window !== 'undefined') {
       const url = new URL(window.location.href);
       if (cat === 'all') {
@@ -46,8 +53,7 @@ function ArtikelContent() {
     }
   };
 
-  const artikels = useMemo(() => getArtikels(), []);
-  const tutorials = useMemo(() => getTutorials(), []);
+  const artikels = useMemo(() => articleSummaries.filter((a) => a.postType === 'artikel'), []);
 
   const filteredArtikels = useMemo(() => {
     let list = artikels.filter((article) => {
@@ -133,7 +139,7 @@ function ArtikelContent() {
                 <Layers className="w-3.5 h-3.5" />
                 <span>{t('tab_all')}</span>
                 <span className="px-1.5 py-0.2 rounded bg-black/20 text-[10px]">
-                  {allArticles.length}
+                  {totalArticleCount}
                 </span>
               </Link>
 
@@ -144,7 +150,7 @@ function ArtikelContent() {
                 <GraduationCap className="w-3.5 h-3.5" />
                 <span>{t('tab_tutorials')}</span>
                 <span className="px-1.5 py-0.2 rounded text-[10px] bg-emerald-500/10 text-emerald-400">
-                  {tutorials.length}
+                  {tutorialArticleCount}
                 </span>
               </Link>
 
@@ -198,7 +204,7 @@ function ArtikelContent() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {filteredArtikels.map((article) => {
+            {filteredArtikels.slice(0, visibleCount).map((article) => {
               const displayTitle = (lang === 'en' && article.en?.title) ? article.en.title : article.title;
               const displayDesc = (lang === 'en' && article.en?.description) ? article.en.description : article.description;
 
@@ -247,6 +253,20 @@ function ArtikelContent() {
               );
             })}
           </div>
+
+          {visibleCount < filteredArtikels.length && (
+            <div className="pt-6 flex justify-center">
+              <button
+                type="button"
+                onClick={() => setVisibleCount((prev) => prev + 18)}
+                className="px-6 py-2.5 rounded-xl text-xs sm:text-sm font-mono font-semibold bg-[var(--card-bg)] hover:bg-emerald-500 hover:text-zinc-950 text-[var(--text-main)] border border-[var(--border-color)] hover:border-emerald-500 shadow-sm transition-all"
+              >
+                {lang === 'en'
+                  ? `Load More Articles (${filteredArtikels.length - visibleCount} remaining)`
+                  : `Muat Artikel Lainnya (${filteredArtikels.length - visibleCount} tersisa)`}
+              </button>
+            </div>
+          )}
         </main>
       </div>
     </div>

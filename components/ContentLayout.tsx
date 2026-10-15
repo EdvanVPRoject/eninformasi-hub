@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Layers, GraduationCap, FileText } from 'lucide-react';
 import SidebarNav from '@/components/SidebarNav';
 import { useLanguage } from '@/components/LanguageContext';
-import { allArticles, getTutorials, getArtikels } from '@/lib/articles';
+import { totalArticleCount, tutorialArticleCount, artikelArticleCount } from '@/lib/data/article-summaries';
 
 export interface ContentLayoutProps {
   headerBanner?: React.ReactNode;
@@ -31,9 +31,9 @@ export default function ContentLayout({
   children,
 }: ContentLayoutProps) {
   const { t } = useLanguage();
-  const currentTotal = totalCount ?? allArticles.length;
-  const currentTutorials = tutorialCount ?? getTutorials().length;
-  const currentArtikels = artikelCount ?? getArtikels().length;
+  const currentTotal = totalCount ?? totalArticleCount;
+  const currentTutorials = tutorialCount ?? tutorialArticleCount;
+  const currentArtikels = artikelCount ?? artikelArticleCount;
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
