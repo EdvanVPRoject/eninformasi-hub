@@ -2,6 +2,60 @@ import { Article } from '../types';
 
 export const dailyNewsArticles: Article[] = [
   {
+    "slug": "ledakan-pabrik-fab-38-intel-di-israel-picu-respo-20261015",
+    "title": "Ledakan Pabrik Fab 38 Intel di Israel Picu Respons Darurat Hazmat, Otoritas Selidiki Silinder Nitrogen Trifluoride",
+    "description": "Insiden ledakan serius di fasilitas manufaktur canggih Intel Fab 38 di Israel melibatkan tim hazmat dan melukai tiga orang pekerja. Otoritas setempat saat ini tengah menyelidiki kebocoran atau kegagalan struktural pada silinder gas Nitrogen Trifluoride yang krusial bagi produksi semikonduktor.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-15T04:09:45.511Z",
+    "updatedDate": "2026-10-15T04:09:45.511Z",
+    "readingTime": "4 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Intel",
+      "Fab 38",
+      "Hardware",
+      "Semikonduktor",
+      "Keamanan Industri"
+    ],
+    "toc": [
+      {
+        "id": "kronologi-insiden-ledakan-di-intel-fab-38",
+        "title": "1. Kronologi Insiden Ledakan di Intel Fab 38"
+      },
+      {
+        "id": "investigasi-silinder-nitrogen-trifluoride-dan-dampak-rantai-pasok",
+        "title": "2. Investigasi Silinder Nitrogen Trifluoride dan Dampak Rantai Pasok"
+      },
+      {
+        "id": "reaksi-industri-dan-masa-depan-keamanan-manufaktur-chip",
+        "title": "3. Reaksi Industri dan Masa Depan Keamanan Manufaktur Chip"
+      }
+    ],
+    "content": "### 1. Kronologi Insiden Ledakan di Intel Fab 38\nDunia industri semikonduktor diguncang oleh insiden ledakan yang terjadi di fasilitas manufaktur Intel Fab 38 di Israel, yang memaksa pengerahan delapan tim penyelamat termasuk unit khusus bahan berbahaya (Hazmat). Peristiwa darurat ini mengakibatkan tiga orang pekerja mengalami luka-luka dan harus segera mendapatkan perawatan medis intensif. Pihak berwenang dan tim investigasi internal Intel langsung mengamankan area sekitar pabrik untuk mencegah risiko kontaminasi lanjutan serta melakukan evaluasi keselamatan secara menyeluruh.\n\n### 2. Investigasi Silinder Nitrogen Trifluoride dan Dampak Rantai Pasok\nFokus utama penyelidikan saat ini mengarah pada dugaan kegagalan fungsi atau kebocoran pada silinder Nitrogen Trifluoride ($NF_3$), sebuah gas kimia yang sangat penting dalam proses pembersihan ruang reaktor kimia dan etsa silikon pada industri semikonduktor modern. Insiden semacam ini tidak hanya mengancam keselamatan pekerja di lantai pabrik, tetapi juga memicu kekhawatiran global terhadap potensi gangguan rantai pasok chip global. Mengingat Intel sedang dalam fase transisi krusial untuk memperbaiki performa finansial dan teknologi manufakturnya, hambatan operasional sekecil apa pun pada fasilitas fab utama dapat berdampak signifikan pada jadwal produksi arsitektur prosesor masa depan.\n\n### 3. Reaksi Industri dan Masa Depan Keamanan Manufaktur Chip\nKomunitas teknologi dan investor kini memantau dengan cermat bagaimana Intel menangani krisis keselamatan kerja ini di tengah persaingan ketat industri semikonduktor global bersama TSMC dan Samsung. Insiden di Fab 38 ini menjadi pengingat keras bahwa kompleksitas pembuatan chip mutakhir menuntut standar mitigasi risiko yang lebih tinggi terhadap material berbahaya. Ke depan, insiden ini diprediksi akan mendorong pengetatan regulasi keselamatan kerja serta audit ulang terhadap seluruh sistem penyimpanan gas reaktif di fasilitas manufaktur semikonduktor di seluruh dunia.",
+    "en": {
+      "title": "Intel’s Fab 38 Explosion in Israel Triggers Hazmat Response as Authorities Investigate Nitrogen Trifluoride Cylinder",
+      "description": "A serious explosion at Intel’s advanced Fab 38 manufacturing facility in Israel injured three workers and prompted a massive emergency response involving hazmat units. Local authorities and company officials are currently investigating a suspected failure involving a Nitrogen Trifluoride gas cylinder critical to semiconductor production.",
+      "content": "### 1. The Blast and Emergency Response at Intel Fab 38\nThe semiconductor industry was shaken by a sudden explosion at Intel's Fab 38 manufacturing facility in Israel, which forced the rapid deployment of eight rescue teams, including specialized hazardous materials (Hazmat) units. The emergency incident left three workers injured, who were swiftly transported for medical evaluation and treatment. Intel's internal safety teams, alongside local authorities, immediately locked down the perimeter to contain potential chemical risks and initiated a comprehensive structural safety assessment.\n\n### 2. Nitrogen Trifluoride Investigation and Supply Chain Implications\nInvestigators are currently zeroing in on a suspected malfunction or failure involving a Nitrogen Trifluoride ($NF_3$) cylinder, a chemical gas vital for chamber cleaning and silicon etching in modern chip fabrication. Beyond the immediate human toll, an incident of this scale raises urgent concerns regarding potential ripple effects on the global semiconductor supply chain. Given that Intel is navigating a critical turnaround phase to stabilize its manufacturing roadmap and financial health, any prolonged disruption at a primary fabrication site poses a severe challenge to upcoming processor architectures.\n\n### 3. Industry Fallout and Future Manufacturing Safety Standards\nThe global tech community and market analysts are closely monitoring how Intel manages this crisis amid intense competition with industry giants like TSMC and Samsung. The Fab 38 explosion serves as a stark reminder of the inherent dangers and extreme precision required when handling volatile materials in advanced chipmaking. Moving forward, this event is expected to catalyze stricter safety protocols, comprehensive audits, and enhanced containment infrastructure across high-tech manufacturing plants worldwide.",
+      "toc": [
+        {
+          "id": "the-blast-and-emergency-response-at-intel-fab-38",
+          "title": "1. The Blast and Emergency Response at Intel Fab 38"
+        },
+        {
+          "id": "nitrogen-trifluoride-investigation-and-supply-chain-implications",
+          "title": "2. Nitrogen Trifluoride Investigation and Supply Chain Implications"
+        },
+        {
+          "id": "industry-fallout-and-future-manufacturing-safety-standards",
+          "title": "3. Industry Fallout and Future Manufacturing Safety Standards"
+        }
+      ]
+    }
+  },
+  {
     "slug": "zelda-ocarina-of-time-remake-tembus-60-fps-di-sw-20261015",
     "title": "Zelda: Ocarina of Time Remake Tembus 60 FPS di Switch 2, Nintendo Pamerkan Hyrule Baru yang Megah",
     "description": "Kabar mengejutkan datang dari ranah gaming Nintendo di mana remake legendaris Ocarina of Time berjalan mulus di 60 FPS pada perangkat konsol penerus Switch. Keberhasilan teknis ini tidak hanya memukau para penggemar berat, tetapi juga menunjukkan lompatan performa grafis masif yang siap dihadirkan Nintendo.",
