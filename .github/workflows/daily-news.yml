@@ -34,8 +34,8 @@ jobs:
 
       - name: Commit and Push Latest News
         run: |
-          git config --global user.name "EnInformasi AI Publisher"
-          git config --global user.email "bot@eninformasi.id"
+          git config --global user.name "EdvanVPRoject"
+          git config --global user.email "septiaedvan@gmail.com"
           git status
           if [ -n "$(git status --porcelain lib/data)" ]; then
             git add lib/data/daily-news.ts lib/data/article-summaries.ts
