@@ -8,6 +8,7 @@ import { gamingTutorialsPart1 } from './data/gaming-1';
 import { gamingArticlesPart2 } from './data/gaming-2';
 import { upcomingTrendsArticles } from './data/upcoming-trends';
 import { futureTechArticles } from './data/future-tech';
+import { dailyNewsArticles } from './data/daily-news';
 import { englishTranslations } from './data/translations-en';
 import { enStepsMap } from './data/en-steps-map';
 import { Article, CategoryType, DifficultyType, PostType, TocItem } from './types';
@@ -118,6 +119,7 @@ export function normalizeCategory(rawCat: string): string {
 }
 
 const rawArticles: Article[] = [
+  ...dailyNewsArticles,
   ...tutorialsPart1,
   ...tutorialsPart2,
   ...tutorialsPart3,

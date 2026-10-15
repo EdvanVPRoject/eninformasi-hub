@@ -1,0 +1,48 @@
+name: 3x Daily Viral AI & Gaming News Automation
+
+on:
+  schedule:
+    # Runs 3 times a day:
+    # 00:00 UTC = 07:00 WIB (Pagi)
+    # 06:00 UTC = 13:00 WIB (Siang)
+    # 12:00 UTC = 19:00 WIB (Malam)
+    - cron: '0 0,6,12 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  generate-viral-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate Fresh Viral News Article
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          npm run generate:daily
+
+      - name: Commit and Push Latest News
+        run: |
+          git config --global user.name "EnInformasi AI Publisher"
+          git config --global user.email "bot@eninformasi.id"
+          git status
+          if [ -n "$(git status --porcelain lib/data/daily-news.ts)" ]; then
+            git add lib/data/daily-news.ts
+            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+            git commit -m "chore(daily-news): update 3x daily viral tech & gaming news [${TIMESTAMP}]"
+            git push origin main
+            echo "Successfully committed and pushed fresh viral news to main."
+          else
+            echo "No new changes detected."
+          fi
