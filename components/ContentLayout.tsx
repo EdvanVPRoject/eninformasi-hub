@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Layers, GraduationCap, FileText } from 'lucide-react';
 import SidebarNav from '@/components/SidebarNav';
 import { useLanguage } from '@/components/LanguageContext';
+import { allArticles, getTutorials, getArtikels } from '@/lib/articles';
 
 export interface ContentLayoutProps {
   headerBanner?: React.ReactNode;
@@ -24,12 +25,15 @@ export default function ContentLayout({
   onSelectType,
   selectedCategory,
   onSelectCategory,
-  tutorialCount = 65,
-  artikelCount = 85,
-  totalCount = 150,
+  tutorialCount,
+  artikelCount,
+  totalCount,
   children,
 }: ContentLayoutProps) {
   const { t } = useLanguage();
+  const currentTotal = totalCount ?? allArticles.length;
+  const currentTutorials = tutorialCount ?? getTutorials().length;
+  const currentArtikels = artikelCount ?? getArtikels().length;
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
@@ -57,7 +61,7 @@ export default function ContentLayout({
                   >
                     <Layers className="w-3.5 h-3.5" />
                     <span>{t('tab_all')}</span>
-                    <span className="px-1.5 py-0.2 rounded bg-black/20 text-[10px]">{totalCount}</span>
+                    <span className="px-1.5 py-0.2 rounded bg-black/20 text-[10px]">{currentTotal}</span>
                   </button>
 
                   <button
@@ -71,7 +75,7 @@ export default function ContentLayout({
                     <GraduationCap className="w-3.5 h-3.5" />
                     <span>{t('tab_tutorials')}</span>
                     <span className={`px-1.5 py-0.2 rounded text-[10px] ${activeType === 'tutorial' ? 'bg-black/20' : 'bg-emerald-500/10 text-emerald-400'}`}>
-                      {tutorialCount}
+                      {currentTutorials}
                     </span>
                   </button>
 
@@ -86,7 +90,7 @@ export default function ContentLayout({
                     <FileText className="w-3.5 h-3.5" />
                     <span>{t('tab_articles')}</span>
                     <span className={`px-1.5 py-0.2 rounded text-[10px] ${activeType === 'artikel' ? 'bg-black/20' : 'bg-teal-500/10 text-teal-300'}`}>
-                      {artikelCount}
+                      {currentArtikels}
                     </span>
                   </button>
                 </>
@@ -102,7 +106,7 @@ export default function ContentLayout({
                   >
                     <Layers className="w-3.5 h-3.5" />
                     <span>{t('tab_all')}</span>
-                    <span className="px-1.5 py-0.2 rounded bg-black/20 text-[10px]">{totalCount}</span>
+                    <span className="px-1.5 py-0.2 rounded bg-black/20 text-[10px]">{currentTotal}</span>
                   </Link>
 
                   <Link
@@ -116,7 +120,7 @@ export default function ContentLayout({
                     <GraduationCap className="w-3.5 h-3.5" />
                     <span>{t('tab_tutorials')}</span>
                     <span className={`px-1.5 py-0.2 rounded text-[10px] ${activeType === 'tutorial' ? 'bg-black/20' : 'bg-emerald-500/10 text-emerald-400'}`}>
-                      {tutorialCount}
+                      {currentTutorials}
                     </span>
                   </Link>
 
@@ -131,7 +135,7 @@ export default function ContentLayout({
                     <FileText className="w-3.5 h-3.5" />
                     <span>{t('tab_articles')}</span>
                     <span className={`px-1.5 py-0.2 rounded text-[10px] ${activeType === 'artikel' ? 'bg-black/20' : 'bg-teal-500/10 text-teal-300'}`}>
-                      {artikelCount}
+                      {currentArtikels}
                     </span>
                   </Link>
                 </>

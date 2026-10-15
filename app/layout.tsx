@@ -1,10 +1,15 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import LayoutShell from '@/components/LayoutShell';
+import { allArticles, getTutorials, getArtikels } from '@/lib/articles';
+
+const totalCount = allArticles.length;
+const tutorialCount = getTutorials().length;
+const artikelCount = getArtikels().length;
 
 export const metadata: Metadata = {
-  title: 'EnInformasi Hub — Portal 150 Tutorial, Gaming & Tren Teknologi Terkini (Update 14 Oktober 2026)',
-  description: 'Portal wawasan teknologi modern, gaming & esports, rilis game masa depan, hardware & gadget, serta 65 tutorial praktis dan 85 EnInformasi mendalam terupdate per 14 Oktober 2026.',
+  title: `EnInformasi Hub — Portal ${totalCount} Tutorial, Gaming & Tren Teknologi Terkini`,
+  description: `Portal wawasan teknologi modern, gaming & esports, rilis game masa depan, hardware & gadget, serta ${tutorialCount} tutorial praktis dan ${artikelCount} EnInformasi mendalam terupdate.`,
   keywords: ['EnInformasi', 'EnInformasi Hub', 'Gaming Esports', 'Mobile Legends', 'Honor of Kings', 'Valorant', 'PUBG Mobile', 'GTA 6 2026', 'NVIDIA Spark', 'Hardware 2026', 'Tutorial AI', 'DeepSeek R1', 'Claude 3.7', 'Teknologi Terupdate 2026'],
   authors: [{ name: 'Edvan' }],
 };

@@ -16,6 +16,7 @@ import {
   Home
 } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
+import { allArticles } from '@/lib/articles';
 
 interface NavbarProps {
   onOpenSearch?: () => void;
@@ -66,8 +67,8 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
               EnInformasi<span className="text-emerald-500">.hub</span>
             </span>
           </Link>
-          <span className="hidden xl:inline-flex items-center px-2 py-0.5 text-[10px] font-mono rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-            {t('brand_sub')}
+          <span className="hidden xl:inline-flex items-center px-2 py-0.5 text-[10px] font-mono rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-bold">
+            {allArticles.length} {lang === 'en' ? 'Items' : 'Konten'}
           </span>
         </div>
 
@@ -111,7 +112,9 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
           >
             <span className="flex items-center gap-2 truncate">
               <Search className="w-4 h-4 group-hover:text-emerald-500 transition-colors shrink-0" />
-              <span className="truncate">{t('nav_search_placeholder')}</span>
+              <span className="truncate">
+                {lang === 'en' ? `Search ${allArticles.length} items...` : `Cari ${allArticles.length} konten...`}
+              </span>
             </span>
             <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono rounded bg-[var(--bg-main)] border border-[var(--border-color)] text-[var(--text-muted)] shrink-0">
               Ctrl+K

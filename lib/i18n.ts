@@ -3,22 +3,22 @@ export type Language = 'id' | 'en';
 export const translations = {
   id: {
     // Brand & Header
-    brand_sub: '150 Konten',
+    brand_sub: 'Portal Konten',
     nav_tutorials: 'Tutorial Praktis',
     nav_articles: 'EnInformasi & Tren',
     nav_tools: 'Resource & Tools',
     nav_about: 'Tentang Kami',
-    nav_search_placeholder: 'Cari 150 konten...',
+    nav_search_placeholder: 'Cari konten & tutorial...',
     nav_search_kbd: 'Ctrl+K',
     nav_toggle_theme: 'Ganti Tema',
     nav_lang_switch: 'Ganti Bahasa (ID / EN)',
     nav_profile: 'Profil Edvan',
 
     // Hero Home
-    hero_badge: 'EnInformasi Hub — 150 Tutorial, Gaming & Tren Teknologi Terkini',
+    hero_badge: 'EnInformasi Hub — Tutorial, Gaming & Tren Teknologi Terkini',
     hero_title_prefix: 'Portal EnInformasi &',
     hero_title_highlight: 'Tutorial Teknologi & Gaming',
-    hero_desc: 'Eksplorasi wawasan teknologi terkini, tren gaming & esports, rilis game masa depan, inovasi hardware canggih, hingga 65 Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan 85 EnInformasi & Analisis mendalam.',
+    hero_desc: 'Eksplorasi wawasan teknologi terkini, tren gaming & esports, rilis game masa depan, inovasi hardware canggih, hingga Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan EnInformasi & Analisis mendalam.',
     hero_pill_1: 'Tutorial & EnInformasi Terpisah',
     hero_pill_2: 'Copy-Paste Syntax & Pro Tips Siap Pakai',
     hero_pill_3: 'Gaming, AI, Hardware & Tren Booming',
@@ -97,22 +97,22 @@ export const translations = {
   },
   en: {
     // Brand & Header
-    brand_sub: '150 Items',
+    brand_sub: 'Content Portal',
     nav_tutorials: 'Practical Tutorials',
     nav_articles: 'EnInformation & Trends',
     nav_tools: 'Resources & Tools',
     nav_about: 'About Us',
-    nav_search_placeholder: 'Search 150 items...',
+    nav_search_placeholder: 'Search content & tutorials...',
     nav_search_kbd: 'Ctrl+K',
     nav_toggle_theme: 'Toggle Theme',
     nav_lang_switch: 'Switch Language (EN / ID)',
     nav_profile: 'Edvan Profile',
 
     // Hero Home
-    hero_badge: 'EnInformasi Hub — 150 Tutorials, Gaming & Future Tech Trends',
+    hero_badge: 'EnInformasi Hub — Tutorials, Gaming & Future Tech Trends',
     hero_title_prefix: 'EnInformation Portal &',
     hero_title_highlight: 'Tech & Gaming Tutorials',
-    hero_desc: 'Explore cutting-edge tech insights, gaming & esports strategies, upcoming blockbuster releases, hardware breakthroughs, featuring 65 Practical Tutorials (with copy-paste code and settings) and 85 Deep-Dive Articles.',
+    hero_desc: 'Explore cutting-edge tech insights, gaming & esports strategies, upcoming blockbuster releases, hardware breakthroughs, featuring Practical Tutorials (with copy-paste code and settings) and Deep-Dive Articles.',
     hero_pill_1: 'Dedicated Tutorials & Articles',
     hero_pill_2: 'Ready-to-use Syntax & Pro Tips',
     hero_pill_3: 'Gaming, AI, Hardware & Booming Releases',

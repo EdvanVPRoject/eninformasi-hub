@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search, X, Sparkles, ArrowRight, CornerDownLeft, Layers } from 'lucide-react';
-import { searchArticles } from '@/lib/articles';
+import { searchArticles, allArticles } from '@/lib/articles';
 import { Article } from '@/lib/types';
 import { useLanguage } from './LanguageContext';
 import { getCategoryLabel } from '@/lib/i18n';
@@ -93,7 +93,7 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
             type="text"
             value={query}
             onChange={handleQueryChange}
-            placeholder={lang === 'en' ? 'Search 150 tutorials, gaming, tech & AI guides...' : 'Cari 150 tutorial, opini, AI, & tren teknologi...'}
+            placeholder={lang === 'en' ? `Search ${allArticles.length} tutorials, gaming, tech & AI guides...` : `Cari ${allArticles.length} tutorial, opini, AI, & tren teknologi...`}
             className="w-full bg-transparent border-none outline-none text-sm placeholder-[var(--text-muted)] text-[var(--text-main)] font-medium"
           />
           {query && (
@@ -174,7 +174,7 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
             <span>{lang === 'en' ? '↵ Open Item' : '↵ Buka Konten'}</span>
             <span>{lang === 'en' ? 'ESC Close' : 'ESC Tutup'}</span>
           </div>
-          <span>{lang === 'en' ? '150 Items Indexed' : '150 Konten Terindeks'}</span>
+          <span>{lang === 'en' ? `${allArticles.length} Items Indexed` : `${allArticles.length} Konten Terindeks`}</span>
         </div>
       </div>
     </div>

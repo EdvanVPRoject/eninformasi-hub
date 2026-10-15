@@ -11,7 +11,7 @@ import {
   Layers,
   FileText 
 } from 'lucide-react';
-import { getTutorials } from '@/lib/articles';
+import { getTutorials, getArtikels, allArticles } from '@/lib/articles';
 import SidebarNav from '@/components/SidebarNav';
 import { useLanguage } from '@/components/LanguageContext';
 import { getCategoryLabel } from '@/lib/i18n';
@@ -46,6 +46,7 @@ function TutorialContent() {
   };
 
   const tutorials = useMemo(() => getTutorials(), []);
+  const artikels = useMemo(() => getArtikels(), []);
 
   const filteredTutorials = useMemo(() => {
     let list = tutorials.filter((article) => {
@@ -131,7 +132,7 @@ function TutorialContent() {
                 <Layers className="w-3.5 h-3.5" />
                 <span>{t('tab_all')}</span>
                 <span className="px-1.5 py-0.2 rounded bg-black/20 text-[10px]">
-                  150
+                  {allArticles.length}
                 </span>
               </Link>
 
@@ -153,7 +154,7 @@ function TutorialContent() {
                 <FileText className="w-3.5 h-3.5" />
                 <span>{t('tab_articles')}</span>
                 <span className="px-1.5 py-0.2 rounded text-[10px] bg-teal-500/10 text-teal-300">
-                  85
+                  {artikels.length}
                 </span>
               </Link>
             </div>

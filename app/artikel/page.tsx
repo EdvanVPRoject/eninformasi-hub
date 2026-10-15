@@ -12,7 +12,7 @@ import {
   Layers,
   GraduationCap 
 } from 'lucide-react';
-import { getArtikels } from '@/lib/articles';
+import { getArtikels, getTutorials, allArticles } from '@/lib/articles';
 import SidebarNav from '@/components/SidebarNav';
 import { useLanguage } from '@/components/LanguageContext';
 import { getCategoryLabel } from '@/lib/i18n';
@@ -47,6 +47,7 @@ function ArtikelContent() {
   };
 
   const artikels = useMemo(() => getArtikels(), []);
+  const tutorials = useMemo(() => getTutorials(), []);
 
   const filteredArtikels = useMemo(() => {
     let list = artikels.filter((article) => {
@@ -132,7 +133,7 @@ function ArtikelContent() {
                 <Layers className="w-3.5 h-3.5" />
                 <span>{t('tab_all')}</span>
                 <span className="px-1.5 py-0.2 rounded bg-black/20 text-[10px]">
-                  150
+                  {allArticles.length}
                 </span>
               </Link>
 
@@ -143,7 +144,7 @@ function ArtikelContent() {
                 <GraduationCap className="w-3.5 h-3.5" />
                 <span>{t('tab_tutorials')}</span>
                 <span className="px-1.5 py-0.2 rounded text-[10px] bg-emerald-500/10 text-emerald-400">
-                  65
+                  {tutorials.length}
                 </span>
               </Link>
 

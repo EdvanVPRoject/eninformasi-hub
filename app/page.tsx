@@ -144,7 +144,11 @@ function HomeContent() {
         <div className="relative z-10 max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-mono rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
             <Zap className="w-3.5 h-3.5 text-emerald-400" />
-            <span>{t('hero_badge')}</span>
+            <span>
+              {lang === 'en'
+                ? `EnInformasi Hub — ${allArticles.length} Tutorials, Gaming & Future Tech Trends`
+                : `EnInformasi Hub — ${allArticles.length} Tutorial, Gaming & Tren Teknologi Terkini`}
+            </span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-[var(--text-main)] leading-[1.15]">
@@ -155,7 +159,9 @@ function HomeContent() {
           </h1>
 
           <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed">
-            {t('hero_desc')}
+            {lang === 'en'
+              ? `Explore cutting-edge tech insights, gaming & esports strategies, upcoming blockbuster releases, hardware breakthroughs, featuring ${tutorialCount} Practical Tutorials (with copy-paste code and settings) and ${artikelCount} Deep-Dive Articles.`
+              : `Eksplorasi wawasan teknologi terkini, tren gaming & esports, rilis game masa depan, inovasi hardware canggih, hingga ${tutorialCount} Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan ${artikelCount} EnInformasi & Analisis mendalam.`}
           </p>
 
           <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-mono text-[var(--text-muted)]">

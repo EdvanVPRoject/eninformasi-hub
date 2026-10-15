@@ -15,7 +15,7 @@ import {
   Flame
 } from 'lucide-react';
 import { Article, PostType } from '@/lib/types';
-import { getCategoriesWithCount } from '@/lib/articles';
+import { getCategoriesWithCount, allArticles } from '@/lib/articles';
 import { useLanguage } from './LanguageContext';
 import { getCategoryLabel } from '@/lib/i18n';
 
@@ -36,7 +36,7 @@ function SidebarNavInner({
   const { lang, t } = useLanguage();
 
   const categories = getCategoriesWithCount(postType === 'all' ? undefined : postType);
-  const totalCount = categories.find((c) => c.id === 'all')?.count ?? 150;
+  const totalCount = categories.find((c) => c.id === 'all')?.count ?? allArticles.length;
   const activeCat = currentCategory ?? searchParams.get('category') ?? 'all';
 
   const getTargetBasePath = () => {
