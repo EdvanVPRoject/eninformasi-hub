@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "amd-fsr-4-siap-sambangi-konsol-handheld-akhir-ta-20261016",
+    "title": "AMD FSR 4 Siap Sambangi Konsol Handheld Akhir Tahun Ini, Steam Deck Jadi Sorotan",
+    "description": "Teknologi penskalaan cerdas AMD FSR 4 dijadwalkan meluncur untuk perangkat handheld pada akhir Desember 2026, memicu antisipasi besar di kalangan pengguna Steam Deck. Terobosan ini diharapkan mampu mendongkrak performa visual game AAA di perangkat portabel tanpa mengorbankan daya tahan baterai.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-16T12:34:40.341Z",
+    "updatedDate": "2026-10-16T12:34:40.341Z",
+    "readingTime": "4 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "AMD FSR 4",
+      "Steam Deck",
+      "Handheld Gaming",
+      "GPU Tech",
+      "Gaming Hardware"
+    ],
+    "en": {
+      "title": "AMD FSR 4 Set to Hit Handhelds by Year's End, Steam Deck Fans Wait in Suspense",
+      "description": "AMD's next-generation FSR 4 upscaling technology is slated for a handheld release by December 31, 2026, promising massive performance boosts for portable gaming. The tech aims to bridge the gap between heavy AAA titles and the limited thermal envelopes of devices like the Steam Deck."
+    }
+  },
+  {
     "slug": "nvidia-rtx-5090-mendadak-hilang-dari-pasaran-rum-20261016",
     "title": "Nvidia RTX 5090 Mendadak Hilang dari Pasaran, Rumor Penghentian Produksi Bikin Panik Gamer Global",
     "description": "Kartu grafis flagship Nvidia RTX 5090 dilaporkan lenyap dari berbagai toko ritel utama dan marketplace resmi. Spekulasi liar mengenai potensi penghentian produksi mendadak memicu kekhawatiran di kalangan antusias hardware PC.",

@@ -2,6 +2,60 @@ import { Article } from '../types';
 
 export const dailyNewsArticles: Article[] = [
   {
+    "slug": "amd-fsr-4-siap-sambangi-konsol-handheld-akhir-ta-20261016",
+    "title": "AMD FSR 4 Siap Sambangi Konsol Handheld Akhir Tahun Ini, Steam Deck Jadi Sorotan",
+    "description": "Teknologi penskalaan cerdas AMD FSR 4 dijadwalkan meluncur untuk perangkat handheld pada akhir Desember 2026, memicu antisipasi besar di kalangan pengguna Steam Deck. Terobosan ini diharapkan mampu mendongkrak performa visual game AAA di perangkat portabel tanpa mengorbankan daya tahan baterai.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-16T12:34:40.341Z",
+    "updatedDate": "2026-10-16T12:34:40.341Z",
+    "readingTime": "4 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "AMD FSR 4",
+      "Steam Deck",
+      "Handheld Gaming",
+      "GPU Tech",
+      "Gaming Hardware"
+    ],
+    "toc": [
+      {
+        "id": "revolusi-visual-di-perangkat-portabel",
+        "title": "1. Revolusi Visual di Perangkat Portabel"
+      },
+      {
+        "id": "tantangan-integrasi-untuk-steam-deck",
+        "title": "2. Tantangan Integrasi untuk Steam Deck"
+      },
+      {
+        "id": "masa-depan-gaming-handheld-tanpa-kompromi",
+        "title": "3. Masa Depan Gaming Handheld Tanpa Kompromi"
+      }
+    ],
+    "content": "### 1. Revolusi Visual di Perangkat Portabel\nKabar gembira datang bagi para pecinta gaming handheld menyusul konfirmasi kehadiran teknologi AMD FidelityFX Super Resolution 4 (FSR 4) yang dijadwalkan mendarat di berbagai perangkat genggam sebelum 31 Desember 2026. Kehadiran teknologi upscaling berbasis AI ini diprediksi menjadi titik balik bagi performa grafis perangkat portabel yang selama ini kerap terbatas oleh efisiensi daya.\n\n### 2. Tantangan Integrasi untuk Steam Deck\nDi tengah antusiasme global, pertanyaan besar mengarah pada kesiapan Steam Deck besutan Valve untuk mengadopsi teknologi mutakhir ini. Meskipun perangkat genggam lain bersiap menyambut pembaruan tersebut, komunitas masih menanti kepastian optimalisasi arsitektur perangkat keras lama guna mendukung fitur canggih yang menuntut kapasitas komputasi tensor lebih tinggi.\n\n### 3. Masa Depan Gaming Handheld Tanpa Kompromi\nImplementasi FSR 4 menandai era baru di mana game kelas berat dapat berjalan mulus dengan resolusi tinggi di ekosistem portabel. Para analis industri memperkirakan langkah ini akan memicu persaingan ketat antar produsen hardware handheld untuk menghadirkan pengalaman visual kelas desktop di dalam genggaman tangan.",
+    "en": {
+      "title": "AMD FSR 4 Set to Hit Handhelds by Year's End, Steam Deck Fans Wait in Suspense",
+      "description": "AMD's next-generation FSR 4 upscaling technology is slated for a handheld release by December 31, 2026, promising massive performance boosts for portable gaming. The tech aims to bridge the gap between heavy AAA titles and the limited thermal envelopes of devices like the Steam Deck.",
+      "content": "### 1. A New Visual Standard for Portable Gaming\nHandheld PC enthusiasts have a major milestone to look forward to as AMD FSR 4 is confirmed for rollout across portable form factors by the end of December 2026. By leveraging advanced machine learning for spatial and temporal upscaling, this upcoming iteration is designed to squeeze desktop-class fidelity out of modest mobile APUs.\n\n### 2. The Steam Deck Compatibility Question\nAmidst the wave of excitement, industry watchers are keeping a close eye on Valve's Steam Deck and its capability to harness FSR 4 efficiently. While newer handheld competitors race to integrate the feature, legacy hardware constraints present fascinating engineering challenges for developers aiming for universal compatibility.\n\n### 3. Redefining Mobile Performance Expectations\nThe arrival of FSR 4 on handhelds signals a seismic shift in how portable gaming is experienced, offering high framerates without catastrophic battery drain. As the launch window approaches, the hardware community eagerly anticipates real-world benchmarks to see how much further mobile gaming can be pushed.",
+      "toc": [
+        {
+          "id": "a-new-visual-standard-for-portable-gaming",
+          "title": "1. A New Visual Standard for Portable Gaming"
+        },
+        {
+          "id": "the-steam-deck-compatibility-question",
+          "title": "2. The Steam Deck Compatibility Question"
+        },
+        {
+          "id": "redefining-mobile-performance-expectations",
+          "title": "3. Redefining Mobile Performance Expectations"
+        }
+      ]
+    }
+  },
+  {
     "slug": "nvidia-rtx-5090-mendadak-hilang-dari-pasaran-rum-20261016",
     "title": "Nvidia RTX 5090 Mendadak Hilang dari Pasaran, Rumor Penghentian Produksi Bikin Panik Gamer Global",
     "description": "Kartu grafis flagship Nvidia RTX 5090 dilaporkan lenyap dari berbagai toko ritel utama dan marketplace resmi. Spekulasi liar mengenai potensi penghentian produksi mendadak memicu kekhawatiran di kalangan antusias hardware PC.",
