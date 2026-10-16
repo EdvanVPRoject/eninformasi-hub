@@ -2,6 +2,59 @@ import { Article } from '../types';
 
 export const dailyNewsArticles: Article[] = [
   {
+    "slug": "nvidia-rtx-5090-mendadak-hilang-dari-pasaran-rum-20261016",
+    "title": "Nvidia RTX 5090 Mendadak Hilang dari Pasaran, Rumor Penghentian Produksi Bikin Panik Gamer Global",
+    "description": "Kartu grafis flagship Nvidia RTX 5090 dilaporkan lenyap dari berbagai toko ritel utama dan marketplace resmi. Spekulasi liar mengenai potensi penghentian produksi mendadak memicu kekhawatiran di kalangan antusias hardware PC.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-16T06:55:51.646Z",
+    "updatedDate": "2026-10-16T06:55:51.646Z",
+    "readingTime": "4 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Nvidia RTX 5090",
+      "GPU Gaming",
+      "Hardware PC",
+      "Rumor Teknologi"
+    ],
+    "toc": [
+      {
+        "id": "misteri-lenyapnya-raja-gpu-baru",
+        "title": "1. Misteri Lenyapnya Raja GPU Baru"
+      },
+      {
+        "id": "spekulasi-penghentian-produksi-dan-dampak-pasar",
+        "title": "2. Spekulasi Penghentian Produksi dan Dampak Pasar"
+      },
+      {
+        "id": "reaksi-komunitas-dan-masa-depan-ketersediaan-gpu",
+        "title": "3. Reaksi Komunitas dan Masa Depan Ketersediaan GPU"
+      }
+    ],
+    "content": "### 1. Misteri Lenyapnya Raja GPU Baru\nKomunitas hardware PC dihebohkan dengan hilangnya Nvidia RTX 5090 secara misterius dari sejumlah peritel besar seperti Micro Center serta marketplace resmi Nvidia. Keberadaan kartu grafis flagship generasi terbaru ini mendadak sulit ditemukan, memicu gelombang spekulasi di berbagai forum teknologi global terkait stabilitas rantai pasok dan kebijakan internal perusahaan.\n\n### 2. Spekulasi Penghentian Produksi dan Dampak Pasar\nKetidakhadiran unit ini memperkuat rumor liar tentang adanya potensi penghentian atau penundaan produksi mendadak untuk lini tertinggi seri Blackwell tersebut. Para analis hardware menduga adanya kendala teknis atau penyesuaian strategi pasokan global di tengah tingginya permintaan sektor AI dan enterprise yang kerap mendahului kebutuhan pasar konsumen gaming.\n\n### 3. Reaksi Komunitas dan Masa Depan Ketersediaan GPU\nPara gamer high-end dan enthusiast kini berada dalam ketidakpastian menanti klarifikasi resmi dari pihak Team Green. Situasi ini dikhawatirkan akan memicu lonjakan harga di pasar sekunder serta memperburuk ketersediaan komponen kelas atas bagi para perakit PC enthusiast di seluruh dunia.",
+    "en": {
+      "title": "Nvidia RTX 5090 Mysteriously Disappears From Retailers, Fueling Production Halt Rumors",
+      "description": "Nvidia's flagship RTX 5090 has abruptly vanished from major retailers and official marketplaces worldwide. Wild speculations regarding a potential sudden production halt are triggering widespread panic among PC hardware enthusiasts.",
+      "content": "### 1. The Mystery of the Missing Flagship GPU\nThe PC hardware community has been sent into a frenzy following the mysterious disappearance of the Nvidia RTX 5090 from major retailers like Micro Center and official company marketplaces. The sudden scarcity of this next-generation flagship graphics card has sparked a wave of speculation across global tech forums regarding supply chain stability and internal corporate policies.\n\n### 2. Production Halt Rumors and Market Impact\nThis sudden absence has heavily fueled rumors regarding a potential abrupt halt or delay in the production of the top-tier Blackwell lineup. Hardware analysts suspect potential technical hurdles or a strategic global supply pivot toward the high-demand AI and enterprise sectors, which frequently overshadow the consumer gaming market.\n\n### 3. Community Reaction and the Future of High-End Availability\nHigh-end gamers and enthusiasts are now left in suspense awaiting an official statement from Team Green. Industry watchers fear this scarcity could trigger secondary market price surges and severely impact high-end component availability for enthusiast PC builders worldwide.",
+      "toc": [
+        {
+          "id": "the-mystery-of-the-missing-flagship-gpu",
+          "title": "1. The Mystery of the Missing Flagship GPU"
+        },
+        {
+          "id": "production-halt-rumors-and-market-impact",
+          "title": "2. Production Halt Rumors and Market Impact"
+        },
+        {
+          "id": "community-reaction-and-the-future-of-high-end-availability",
+          "title": "3. Community Reaction and the Future of High-End Availability"
+        }
+      ]
+    }
+  },
+  {
     "slug": "ledakan-pabrik-fab-38-intel-di-israel-picu-respo-20261015",
     "title": "Ledakan Pabrik Fab 38 Intel di Israel Picu Respons Darurat Hazmat, Otoritas Selidiki Silinder Nitrogen Trifluoride",
     "description": "Insiden ledakan serius di fasilitas manufaktur canggih Intel Fab 38 di Israel melibatkan tim hazmat dan melukai tiga orang pekerja. Otoritas setempat saat ini tengah menyelidiki kebocoran atau kegagalan struktural pada silinder gas Nitrogen Trifluoride yang krusial bagi produksi semikonduktor.",

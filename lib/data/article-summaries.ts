@@ -20,6 +20,29 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "nvidia-rtx-5090-mendadak-hilang-dari-pasaran-rum-20261016",
+    "title": "Nvidia RTX 5090 Mendadak Hilang dari Pasaran, Rumor Penghentian Produksi Bikin Panik Gamer Global",
+    "description": "Kartu grafis flagship Nvidia RTX 5090 dilaporkan lenyap dari berbagai toko ritel utama dan marketplace resmi. Spekulasi liar mengenai potensi penghentian produksi mendadak memicu kekhawatiran di kalangan antusias hardware PC.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-16T06:55:51.646Z",
+    "updatedDate": "2026-10-16T06:55:51.646Z",
+    "readingTime": "4 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Nvidia RTX 5090",
+      "GPU Gaming",
+      "Hardware PC",
+      "Rumor Teknologi"
+    ],
+    "en": {
+      "title": "Nvidia RTX 5090 Mysteriously Disappears From Retailers, Fueling Production Halt Rumors",
+      "description": "Nvidia's flagship RTX 5090 has abruptly vanished from major retailers and official marketplaces worldwide. Wild speculations regarding a potential sudden production halt are triggering widespread panic among PC hardware enthusiasts."
+    }
+  },
+  {
     "slug": "ledakan-pabrik-fab-38-intel-di-israel-picu-respo-20261015",
     "title": "Ledakan Pabrik Fab 38 Intel di Israel Picu Respons Darurat Hazmat, Otoritas Selidiki Silinder Nitrogen Trifluoride",
     "description": "Insiden ledakan serius di fasilitas manufaktur canggih Intel Fab 38 di Israel melibatkan tim hazmat dan melukai tiga orang pekerja. Otoritas setempat saat ini tengah menyelidiki kebocoran atau kegagalan struktural pada silinder gas Nitrogen Trifluoride yang krusial bagi produksi semikonduktor.",
