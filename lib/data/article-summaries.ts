@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "kreator-dayz-sebut-industri-game-sedang-membusuk-20261017",
+    "title": "Kreator DayZ Sebut Industri Game Sedang 'Membusuk' Akibat AI, Siapkan Revolusi Bersama Developer Elite",
+    "description": "Pencipta game ikonik DayZ melontarkan kritik pedas terhadap industri game modern yang dinilai 'membusuk' akibat eksploitasi AI yang berlebihan. Ia berencana mengubah total cara pembuatan game di masa depan dengan menggandeng para pengembang paling cerdas di industri.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-17T00:33:37.129Z",
+    "updatedDate": "2026-10-17T00:33:37.129Z",
+    "readingTime": "4 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "DayZ",
+      "AI Gaming",
+      "Industri Game",
+      "Game Development",
+      "Gaming News"
+    ],
+    "en": {
+      "title": "DayZ Creator Declares the Gaming Industry is 'Rotting' Due to AI, Pledges a Revolution with Elite Devs",
+      "description": "The mastermind behind DayZ has launched a scathing critique against the modern gaming industry, blaming reckless AI adoption for pushing things over the edge. He is now rallying some of the industry's brightest minds to completely reinvent how video games are made."
+    }
+  },
+  {
     "slug": "amd-fsr-4-siap-sambangi-konsol-handheld-akhir-ta-20261016",
     "title": "AMD FSR 4 Siap Sambangi Konsol Handheld Akhir Tahun Ini, Steam Deck Jadi Sorotan",
     "description": "Teknologi penskalaan cerdas AMD FSR 4 dijadwalkan meluncur untuk perangkat handheld pada akhir Desember 2026, memicu antisipasi besar di kalangan pengguna Steam Deck. Terobosan ini diharapkan mampu mendongkrak performa visual game AAA di perangkat portabel tanpa mengorbankan daya tahan baterai.",
