@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "kontroversi-gatgpt-senjata-3d-printed-pertama-bu-20261017",
+    "title": "Kontroversi GatGPT: Senjata 3D-Printed Pertama Buatan AI Menggemparkan Dunia Teknologi",
+    "description": "Seorang aktivis hak kepemilikan senjata meluncurkan pistol kaliber .22 hasil cetak 3D yang sepenuhnya dirancang oleh model AI generatif bernama GatGPT. Terobosan kontroversial ini memicu perdebatan sengit mengenai regulasi kecerdasan buatan dan batasan keamanan keselamatan publik.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-17T06:29:23.790Z",
+    "updatedDate": "2026-10-17T06:29:23.790Z",
+    "readingTime": "4 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "GatGPT",
+      "AI-Generated",
+      "3D-Printed",
+      "Tech News",
+      "Artificial Intelligence"
+    ],
+    "en": {
+      "title": "GatGPT Controversy: World's First AI-Generated 3D-Printed Firearm Shocks the Tech World",
+      "description": "A gun-rights activist has unveiled the world's first .22 caliber 3D-printed handgun designed entirely by an AI model called GatGPT. This controversial breakthrough has instantly sparked intense global debates regarding artificial intelligence regulation and public safety guardrails."
+    }
+  },
+  {
     "slug": "kreator-dayz-sebut-industri-game-sedang-membusuk-20261017",
     "title": "Kreator DayZ Sebut Industri Game Sedang 'Membusuk' Akibat AI, Siapkan Revolusi Bersama Developer Elite",
     "description": "Pencipta game ikonik DayZ melontarkan kritik pedas terhadap industri game modern yang dinilai 'membusuk' akibat eksploitasi AI yang berlebihan. Ia berencana mengubah total cara pembuatan game di masa depan dengan menggandeng para pengembang paling cerdas di industri.",
