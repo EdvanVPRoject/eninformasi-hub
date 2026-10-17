@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "asus-resmi-masuk-pasar-intel-arc-luncurkan-kartu-20261017",
+    "title": "ASUS Resmi Masuk Pasar Intel Arc: Luncurkan Kartu Grafis Battlemage Pro B70 32GB",
+    "description": "ASUS akhirnya memutuskan untuk terjun ke lini kartu grafis Intel Arc setelah dua generasi absen dari pasar tersebut. Kehadiran varian Battlemage Pro B70 dengan memori masif 32GB ini langsung mencuri perhatian para builder PC dan profesional industri.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-17T12:27:11.650Z",
+    "updatedDate": "2026-10-17T12:27:11.650Z",
+    "readingTime": "4 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "ASUS",
+      "Intel Arc",
+      "GPU",
+      "Battlemage",
+      "Hardware PC"
+    ],
+    "en": {
+      "title": "ASUS Enters the Intel Arc Arena with Massive 32GB Battlemage Pro B70 GPU",
+      "description": "ASUS has finally broken its two-generation hiatus by releasing an Intel Arc graphics card. The newly unveiled Battlemage Pro B70 features a staggering 32GB of VRAM, shaking up the GPU market for both creators and gamers."
+    }
+  },
+  {
     "slug": "kontroversi-gatgpt-senjata-3d-printed-pertama-bu-20261017",
     "title": "Kontroversi GatGPT: Senjata 3D-Printed Pertama Buatan AI Menggemparkan Dunia Teknologi",
     "description": "Seorang aktivis hak kepemilikan senjata meluncurkan pistol kaliber .22 hasil cetak 3D yang sepenuhnya dirancang oleh model AI generatif bernama GatGPT. Terobosan kontroversial ini memicu perdebatan sengit mengenai regulasi kecerdasan buatan dan batasan keamanan keselamatan publik.",

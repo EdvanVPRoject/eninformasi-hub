@@ -2,6 +2,60 @@ import { Article } from '../types';
 
 export const dailyNewsArticles: Article[] = [
   {
+    "slug": "asus-resmi-masuk-pasar-intel-arc-luncurkan-kartu-20261017",
+    "title": "ASUS Resmi Masuk Pasar Intel Arc: Luncurkan Kartu Grafis Battlemage Pro B70 32GB",
+    "description": "ASUS akhirnya memutuskan untuk terjun ke lini kartu grafis Intel Arc setelah dua generasi absen dari pasar tersebut. Kehadiran varian Battlemage Pro B70 dengan memori masif 32GB ini langsung mencuri perhatian para builder PC dan profesional industri.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-17T12:27:11.650Z",
+    "updatedDate": "2026-10-17T12:27:11.650Z",
+    "readingTime": "4 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "ASUS",
+      "Intel Arc",
+      "GPU",
+      "Battlemage",
+      "Hardware PC"
+    ],
+    "toc": [
+      {
+        "id": "langkah-berani-asus-di-pasar-intel-arc",
+        "title": "1. Langkah Berani ASUS di Pasar Intel Arc"
+      },
+      {
+        "id": "spesifikasi-monster-vram-32gb-untuk-kebutuhan-profesional",
+        "title": "2. Spesifikasi Monster: VRAM 32GB untuk Kebutuhan Profesional"
+      },
+      {
+        "id": "dinamika-baru-industri-kartu-grafis",
+        "title": "3. Dinamika Baru Industri Kartu Grafis"
+      }
+    ],
+    "content": "### 1. Langkah Berani ASUS di Pasar Intel Arc\nSetelah melewatkan dua generasi awal grafis diskrit Intel, ASUS akhirnya membuat gebrakan besar dengan memperkenalkan kartu grafis berbasis arsitektur Battlemage. Keputusan ini menandai babak baru persaingan hardware, di mana raksasa motherboard tersebut memperluas portofolionya untuk mendukung ekosistem GPU Intel secara penuh demi memberikan alternatif menarik di segmen menengah hingga atas.\n\n### 2. Spesifikasi Monster: VRAM 32GB untuk Kebutuhan Profesional\nBukan sekadar merilis kartu grafis biasa, ASUS langsung menghadirkan varian penuh Arc Pro B70 dengan kapasitas VRAM sebesar 32GB. Kapasitas memori yang masif ini menempatkan kartu grafis tersebut tidak hanya sebagai opsi menarik bagi gamer enthusiast, tetapi juga sebagai solusi andal untuk workstation, rendering 3D, serta beban kerja komputasi AI yang membutuhkan alokasi memori video yang sangat besar.\n\n### 3. Dinamika Baru Industri Kartu Grafis\nKehadiran ASUS dalam jajaran mitra manufaktur resmi Intel Arc memberikan suntikan kepercayaan diri yang sangat dibutuhkan oleh arsitektur grafis tersebut. Para pengamat industri menilai langkah ini dapat mengubah peta persaingan GPU global, memaksa kompetitor untuk semakin inovatif dalam menawarkan nilai dan kapasitas VRAM yang kompetitif di masa depan.",
+    "en": {
+      "title": "ASUS Enters the Intel Arc Arena with Massive 32GB Battlemage Pro B70 GPU",
+      "description": "ASUS has finally broken its two-generation hiatus by releasing an Intel Arc graphics card. The newly unveiled Battlemage Pro B70 features a staggering 32GB of VRAM, shaking up the GPU market for both creators and gamers.",
+      "content": "### 1. A Bold Return to Intel Arc Architecture\nAfter sitting out the first two generations of Intel's discrete graphics rollout, ASUS has officially entered the fray with a custom Battlemage-based graphics card. This strategic move expands the hardware titan's portfolio and signals a stronger industry commitment to a three-way GPU market.\n\n### 2. Enterprise-Grade VRAM and Performance\nRather than dipping its toes with a baseline model, ASUS jumped straight into the deep end by launching the full 32GB Arc Pro B70 variant. This massive frame buffer positions the card as a formidable tool not just for demanding gamers, but heavily targets professional workloads, AI inferencing, and intensive 32GB video rendering pipelines.\n\n### 3. Shifting Tides in the GPU Landscape\nASUS joining the Intel Arc partner ecosystem delivers a massive wave of credibility to Intel's graphics division. Industry analysts believe this partnership will foster healthier market competition, ultimately giving consumers more robust choices and higher VRAM standards moving forward.",
+      "toc": [
+        {
+          "id": "a-bold-return-to-intel-arc-architecture",
+          "title": "1. A Bold Return to Intel Arc Architecture"
+        },
+        {
+          "id": "enterprise-grade-vram-and-performance",
+          "title": "2. Enterprise-Grade VRAM and Performance"
+        },
+        {
+          "id": "shifting-tides-in-the-gpu-landscape",
+          "title": "3. Shifting Tides in the GPU Landscape"
+        }
+      ]
+    }
+  },
+  {
     "slug": "kontroversi-gatgpt-senjata-3d-printed-pertama-bu-20261017",
     "title": "Kontroversi GatGPT: Senjata 3D-Printed Pertama Buatan AI Menggemparkan Dunia Teknologi",
     "description": "Seorang aktivis hak kepemilikan senjata meluncurkan pistol kaliber .22 hasil cetak 3D yang sepenuhnya dirancang oleh model AI generatif bernama GatGPT. Terobosan kontroversial ini memicu perdebatan sengit mengenai regulasi kecerdasan buatan dan batasan keamanan keselamatan publik.",
