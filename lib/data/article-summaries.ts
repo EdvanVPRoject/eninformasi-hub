@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "deepseek-v41-flash-guncang-industri-kalahkan-gpt-20261018",
+    "title": "DeepSeek V4.1-Flash Guncang Industri: Kalahkan GPT-5.5 dan Resmikan Era Democratized Wish-Driven Coding",
+    "description": "Model terbaru DeepSeek V4.1-Flash-1017 sukses mencetak rekor dengan melompati performa OpenAI GPT-5.5 Sol dalam uji benchmark pengkodean. Terobosan ini menandai dimulainya era baru pengembangan perangkat lunak berbasis keinginan pengguna (wish-driven coding) yang sepenuhnya demokratis dan berbiaya efisien.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Mahir",
+    "pubDate": "2026-10-18T06:29:30.137Z",
+    "updatedDate": "2026-10-18T06:29:30.137Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "DeepSeek",
+      "GPT-5.5",
+      "AI Coding",
+      "Artificial Intelligence",
+      "Large Language Models"
+    ],
+    "en": {
+      "title": "DeepSeek V4.1-Flash Shocks Tech Industry: Outperforms GPT-5.5 and Ushers in the Era of Democratized Wish-Driven Coding",
+      "description": "DeepSeek's latest V4.1-Flash-1017 model has broken records by surpassing OpenAI's GPT-5.5 Sol in coding benchmark performance. This breakthrough marks the dawn of a new era in software development driven entirely by user intent and cost-efficient democratization."
+    }
+  },
+  {
     "slug": "krisis-rtx-5090-memanas-nvidia-ngotot-gpu-flagsh-20261018",
     "title": "Krisis RTX 5090 Memanas: Nvidia Ngotot GPU Flagship Belum Mati di Tengah Kelangkaan Parah",
     "description": "Di tengah kelangkaan ekstrem dan hilangnya daftar produk dari berbagai retailer, Nvidia tetap menegaskan bahwa kartu grafis flagship RTX 5090 masih eksis di pasaran. Situasi ini memicu kepanikan di kalangan enthusiast hardware dan gamer kelas atas global.",
