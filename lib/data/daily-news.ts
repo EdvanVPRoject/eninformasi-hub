@@ -2,6 +2,59 @@ import { Article } from '../types';
 
 export const dailyNewsArticles: Article[] = [
   {
+    "slug": "krisis-rtx-5090-memanas-nvidia-ngotot-gpu-flagsh-20261018",
+    "title": "Krisis RTX 5090 Memanas: Nvidia Ngotot GPU Flagship Belum Mati di Tengah Kelangkaan Parah",
+    "description": "Di tengah kelangkaan ekstrem dan hilangnya daftar produk dari berbagai retailer, Nvidia tetap menegaskan bahwa kartu grafis flagship RTX 5090 masih eksis di pasaran. Situasi ini memicu kepanikan di kalangan enthusiast hardware dan gamer kelas atas global.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-18T00:33:32.789Z",
+    "updatedDate": "2026-10-18T00:33:32.789Z",
+    "readingTime": "4 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Nvidia",
+      "RTX 5090",
+      "GPU",
+      "Hardware Gaming"
+    ],
+    "toc": [
+      {
+        "id": "bayang-bayang-kelangkaan-ekstrem-rtx-5090",
+        "title": "1. Bayang-Bayang Kelangkaan Ekstrem RTX 5090"
+      },
+      {
+        "id": "bantahan-tegas-nvidia-dan-spekulasi-pasar",
+        "title": "2. Bantahan Tegas Nvidia dan Spekulasi Pasar"
+      },
+      {
+        "id": "dampak-jangka-panjang-bagi-ekosistem-gaming-enthusiast",
+        "title": "3. Dampak Jangka Panjang bagi Ekosistem Gaming Enthusiast"
+      }
+    ],
+    "content": "### 1. Bayang-Bayang Kelangkaan Ekstrem RTX 5090\nIndustri hardware PC kembali diguncang oleh ketidakpastian setelah kartu grafis paling diantisipasi, Nvidia RTX 5090, mengalami kelangkaan parah di tingkat global. Sejumlah retailer besar terpantau menghapus daftar produk tersebut dari katalog mereka, memicu rumor liar di komunitas bahwa produksi GPU flagship ini mungkin dihentikan secara diam-diam. Para gamer dan builder PC enthusiast dibuat cemas mengingat mahalnya investasi yang harus dikeluarkan untuk mendapatkan kartu grafis monster ini.\n\n### 2. Bantahan Tegas Nvidia dan Spekulasi Pasar\nMenanggapi kepanikan yang meluas, pihak Nvidia secara resmi menegaskan bahwa RTX 5090 tidak mati dan suplai akan terus diupayakan mengalir ke pasar. Kendati demikian, analis hardware menilai bahwa kendala rantai pasok dan tingginya permintaan dari sektor komputasi AI menjadi faktor utama mengapa ketersediaan fisik di toko-toko sangat terbatas. Modifikasi khusus seperti pelindung daya tambahan juga mulai bermunculan demi mengamankan unit berharga fantastis ini dari risiko kegagalan daya.\n\n### 3. Dampak Jangka Panjang bagi Ekosistem Gaming Enthusiast\nSituasi pelik ini tidak hanya memengaruhi ketersediaan fisik, tetapi juga mendistorsi harga pasar secara keseluruhan, di mana beberapa PC prebuilt terpaksa dibanderol hingga ribuan dolar demi mengamankan pasokan GPU. Bagi komunitas gamer hardcore, drama RTX 5090 menjadi pengingat pahit akan rapuhnya rantai pasok hardware high-end di era modern. Masa depan ketersediaan GPU kelas atas kini sangat bergantung pada kemampuan Nvidia mengatasi hambatan produksi dalam beberapa bulan ke depan.",
+    "en": {
+      "title": "RTX 5090 Crisis Deepens: Nvidia Insists Flagship GPU Isn't Dead Amid Severe Shortages",
+      "description": "Amid extreme supply shortages and disappearing retail listings, Nvidia has firmly maintained that the flagship RTX 5090 graphics card is far from dead. This ongoing saga continues to spark panic and speculation across the global hardware and enthusiast community.",
+      "content": "### 1. The Shadow of Extreme GPU Shortages\nThe high-end PC hardware market has been thrown into turmoil as Nvidia's flagship RTX 5090 faces unprecedented supply shortages worldwide. Several major retailers have abruptly removed listings for the card, triggering rampant community rumors that production of the powerhouse GPU might have stalled. Enthusiasts and high-end builders are left scrambling as they try to secure units amid skyrocketing demand and volatile market conditions.\n\n### 2. Nvidia's Official Stance and Market Realities\nAddressing the widespread panic, Nvidia representatives have strongly insisted that the RTX 5090 is not dead and that shipments continue to reach the market. However, hardware analysts point to severe supply chain bottlenecks and heavy competition from enterprise AI computing sectors as the primary culprits behind empty shelves. As a testament to the hardware's extreme value and power draw, niche safety mods—such as quad 8-pin adapters—are already becoming essential accessories for early adopters.\n\n### 3. Long-Term Implications for the Enthusiast Gaming Ecosystem\nThis turbulent situation is severely distorting pricing structures, forcing many gamers to look at high-priced prebuilt systems just to secure a single card. For the hardcore gaming community, the RTX 5090 drama highlights the ongoing fragility of the high-end hardware supply chain. How Nvidia navigates these production hurdles in the coming months will ultimately define the accessibility of bleeding-edge gaming performance.",
+      "toc": [
+        {
+          "id": "the-shadow-of-extreme-gpu-shortages",
+          "title": "1. The Shadow of Extreme GPU Shortages"
+        },
+        {
+          "id": "nvidia-s-official-stance-and-market-realities",
+          "title": "2. Nvidia's Official Stance and Market Realities"
+        },
+        {
+          "id": "long-term-implications-for-the-enthusiast-gaming-ecosystem",
+          "title": "3. Long-Term Implications for the Enthusiast Gaming Ecosystem"
+        }
+      ]
+    }
+  },
+  {
     "slug": "asus-resmi-masuk-pasar-intel-arc-luncurkan-kartu-20261017",
     "title": "ASUS Resmi Masuk Pasar Intel Arc: Luncurkan Kartu Grafis Battlemage Pro B70 32GB",
     "description": "ASUS akhirnya memutuskan untuk terjun ke lini kartu grafis Intel Arc setelah dua generasi absen dari pasar tersebut. Kehadiran varian Battlemage Pro B70 dengan memori masif 32GB ini langsung mencuri perhatian para builder PC dan profesional industri.",

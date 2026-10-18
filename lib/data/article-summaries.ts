@@ -20,6 +20,29 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "krisis-rtx-5090-memanas-nvidia-ngotot-gpu-flagsh-20261018",
+    "title": "Krisis RTX 5090 Memanas: Nvidia Ngotot GPU Flagship Belum Mati di Tengah Kelangkaan Parah",
+    "description": "Di tengah kelangkaan ekstrem dan hilangnya daftar produk dari berbagai retailer, Nvidia tetap menegaskan bahwa kartu grafis flagship RTX 5090 masih eksis di pasaran. Situasi ini memicu kepanikan di kalangan enthusiast hardware dan gamer kelas atas global.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-18T00:33:32.789Z",
+    "updatedDate": "2026-10-18T00:33:32.789Z",
+    "readingTime": "4 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Nvidia",
+      "RTX 5090",
+      "GPU",
+      "Hardware Gaming"
+    ],
+    "en": {
+      "title": "RTX 5090 Crisis Deepens: Nvidia Insists Flagship GPU Isn't Dead Amid Severe Shortages",
+      "description": "Amid extreme supply shortages and disappearing retail listings, Nvidia has firmly maintained that the flagship RTX 5090 graphics card is far from dead. This ongoing saga continues to spark panic and speculation across the global hardware and enthusiast community."
+    }
+  },
+  {
     "slug": "asus-resmi-masuk-pasar-intel-arc-luncurkan-kartu-20261017",
     "title": "ASUS Resmi Masuk Pasar Intel Arc: Luncurkan Kartu Grafis Battlemage Pro B70 32GB",
     "description": "ASUS akhirnya memutuskan untuk terjun ke lini kartu grafis Intel Arc setelah dua generasi absen dari pasar tersebut. Kehadiran varian Battlemage Pro B70 dengan memori masif 32GB ini langsung mencuri perhatian para builder PC dan profesional industri.",
