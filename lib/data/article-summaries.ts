@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "pertempuran-gpu-2026-memanas-amd-radeon-rx-9070--20261018",
+    "title": "Pertempuran GPU 2026 Memanas: AMD Radeon RX 9070 XT Hantam Telak GeForce RTX 5070 dengan Keunggulan Performa 18 Persen",
+    "description": "Persaingan kartu grafis kelas menengah-atas tahun 2026 mencapai titik didih baru setelah benchmark independen membuktikan AMD Radeon RX 9070 XT mampu mengungguli Nvidia GeForce RTX 5070 hingga 18 persen pada resolusi 1440p dan 4K. Kenaikan performa signifikan ini memaksa Nvidia mengevaluasi ulang strategi penetapan harga dan alokasi daya arsitektur Blackwell mereka di tengah tekanan pasar global.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Mahir",
+    "pubDate": "2026-10-18T12:27:31.468Z",
+    "updatedDate": "2026-10-18T12:27:31.468Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "AMD",
+      "Nvidia",
+      "RX 9070 XT",
+      "RTX 5070",
+      "GPU 2026"
+    ],
+    "en": {
+      "title": "2026 GPU War Heats Up: AMD Radeon RX 9070 XT Decisively Beats GeForce RTX 5070 by Up to 18 Percent",
+      "description": "The high-end graphics card market of 2026 reaches a boiling point after independent benchmarks prove the AMD Radeon RX 9070 XT outperforms the Nvidia GeForce RTX 5070 by up to 18 percent at 1440p and 4K resolutions. This significant performance leap forces Nvidia to reevaluate its pricing strategy and Blackwell power allocation amidst intense global market pressure."
+    }
+  },
+  {
     "slug": "deepseek-v41-flash-guncang-industri-kalahkan-gpt-20261018",
     "title": "DeepSeek V4.1-Flash Guncang Industri: Kalahkan GPT-5.5 dan Resmikan Era Democratized Wish-Driven Coding",
     "description": "Model terbaru DeepSeek V4.1-Flash-1017 sukses mencetak rekor dengan melompati performa OpenAI GPT-5.5 Sol dalam uji benchmark pengkodean. Terobosan ini menandai dimulainya era baru pengembangan perangkat lunak berbasis keinginan pengguna (wish-driven coding) yang sepenuhnya demokratis dan berbiaya efisien.",
