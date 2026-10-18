@@ -243,24 +243,26 @@ ${recentListStr}
 FORMAT JSON OUTPUT YANG WAJIB DIHASILKAN:
 {
   "title": "string (Judul Bahasa Indonesia yang memikat, tajam, viral, dan SEO-friendly, tanpa clickbait murahan)",
-  "description": "string (Ringkasan padat 2 kalimat dalam Bahasa Indonesia yang menjelaskan mengapa ini penting)",
+  "description": "string (Ringkasan komprehensif 2-3 kalimat dalam Bahasa Indonesia yang menjelaskan fakta utama, dampak teknologi, dan mengapa ini penting bagi pembaca)",
   "category": "gaming-esports ATAU tech-gadgets ATAU ai-agents ATAU hardware-setup",
-  "tags": ["Tag1", "Tag2", "Tag3", "Tag4"],
-  "readingTime": "4 min read",
+  "tags": ["Tag1", "Tag2", "Tag3", "Tag4", "Tag5"],
+  "readingTime": "7 min read",
   "difficulty": "Menengah",
-  "content": "### 1. Subjudul Pembuka\\nParagraf komprehensif mengupas kronologi dan fakta terbaru...\\n\\n### 2. Terobosan Teknis & Dampak Hardware\\nParagraf analisis mendalam tentang spesifikasi, performa, atau teknologi AI terkait...\\n\\n### 3. Reaksi Komunitas & Masa Depan Gaming\\nParagraf analisis tren ke depan bagi gamers dan industri...",
+  "content": "### 1. Kronologi & Latar Belakang Peristiwa\\nParagraf pembuka mendalam yang mengupas tuntas fakta, waktu kejadian, pihak yang terlibat, serta konteks industri di baliknya...\\n\\n### 2. Bedah Teknis & Analisis Arsitektur Mendalam\\nParagraf teknis komprehensif membedah spesifikasi hardware/software, benchmark performa, efisiensi komputasi, atau perbandingan algoritma dengan data konkret...\\n\\n### 3. Komparasi dengan Ekosistem & Pesaing Pasar\\nParagraf komparasi objektif terhadap produk/model alternatif dari kompetitor utama serta implikasi rantai pasok global...\\n\\n### 4. Respons Komunitas, Analis, & Ekosistem Industri\\nParagraf analisis reaksi para pengembang, gamer antusias, dan analis industri teknologi di forum global seperti Reddit, Hacker News, dan X...\\n\\n### 5. Panduan Praktis & Antisipasi bagi Konsumen\\nLangkah konkret, saran mitigasi, serta rekomendasi keputusan cerdas yang wajib diketahui konsumen atau profesional teknologi saat ini...\\n\\n### 6. Kesimpulan & Prospek Perkembangan ke Depan\\nProspek jangka menengah-panjang tentang bagaimana peristiwa ini akan mengubah lanskap teknologi dan gaming dalam 6-12 bulan ke depan.",
   "en": {
     "title": "string (Catchy, high-impact English title for global audience)",
-    "description": "string (Punchy 2-sentence English summary explaining the core breakthrough and impact)",
-    "content": "### 1. English Opening Heading\\nDetailed reporting paragraph...\\n\\n### 2. Technical Analysis & Hardware Implications\\nIn-depth technical breakdown...\\n\\n### 3. Community Reaction & What It Means for Gamers\\nForward-looking industry conclusion..."
+    "description": "string (Comprehensive 2-3 sentence English summary explaining the core breakthrough, architectural context, and market impact)",
+    "content": "### 1. Chronology & Background Context\\nDetailed opening paragraphs examining the verified facts, key stakeholders, and broader industry circumstances...\\n\\n### 2. Technical Deep-Dive & Architecture Breakdown\\nIn-depth technical analysis breaking down hardware/software specifications, compute throughput, benchmarks, or architectural paradigms with concrete metrics...\\n\\n### 3. Market Comparison & Competitive Landscape\\nObjective comparison against rival architectures, market alternatives, and global supply chain dynamics...\\n\\n### 4. Community Reaction & Industry Sentiment\\nComprehensive synthesis of reactions from developers, hardware enthusiasts, and market analysts across Reddit, X, and specialized engineering forums...\\n\\n### 5. Practical Consumer Advice & Strategic Takeaways\\nActionable guidance and purchasing/implementation recommendations for consumers and technical professionals...\\n\\n### 6. Strategic Outlook & Industry Trajectory\\nForward-looking prognosis detailing how this development will reshape the tech and gaming landscape over the next 6-12 months."
   }
 }
 
 Ketentuan Khusus:
 1. "category" HARUS salah satu dari: "gaming-esports", "tech-gadgets", "ai-agents", "hardware-setup".
-2. "content" dan "en.content" HARUS menggunakan format subjudul Markdown '### 1. Subjudul', '### 2. Subjudul', '### 3. Subjudul'.
-3. Bahasa Indonesia dan Bahasa Inggris harus mengalir alami, profesional, dan kaya wawasan teknis.
-4. Kembalikan HANYA JSON murni yang valid tanpa format markdown \`\`\`json atau teks pengantar lainnya.
+2. "content" dan "en.content" WAJIB panjang, padat, dan berbobot (minimal 600 - 800+ kata). DILARANG KERAS membuat paragraf ringkas/pendek satu-dua kalimat saja.
+3. Gunakan subjudul Markdown yang persis: '### 1. ...', '### 2. ...', '### 3. ...', '### 4. ...', '### 5. ...', '### 6. ...'.
+4. Sertakan data teknis konkret, angka spesifikasi, metrik performa, dan studi kasus nyata agar artikel berbobot jurnalistik kelas satu.
+5. Bahasa Indonesia dan Bahasa Inggris harus mengalir alami, profesional, tajam, dan kaya wawasan teknis.
+6. Kembalikan HANYA JSON murni yang valid tanpa format markdown \`\`\`json atau teks pengantar lainnya.
 `;
 
   let lastError = null;

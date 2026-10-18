@@ -141,181 +141,189 @@ export const articleSummaries: ArticleSummary[] = [
   {
     "slug": "nvidia-rtx-5090-mendadak-hilang-dari-pasaran-rum-20261016",
     "title": "Nvidia RTX 5090 Mendadak Hilang dari Pasaran, Rumor Penghentian Produksi Bikin Panik Gamer Global",
-    "description": "Kartu grafis flagship Nvidia RTX 5090 dilaporkan lenyap dari berbagai toko ritel utama dan marketplace resmi. Spekulasi liar mengenai potensi penghentian produksi mendadak memicu kekhawatiran di kalangan antusias hardware PC.",
+    "description": "Kartu grafis flagship Nvidia RTX 5090 dilaporkan lenyap secara misterius dari berbagai peritel besar dunia seperti Micro Center, Newegg, dan marketplace resmi. Dugaan kendala yield silikon TSMC 4NP dan alokasi chip Blackwell ke AI enterprise memicu kekhawatiran krisis stok GPU terparah sejak era crypto mining.",
     "postType": "artikel",
     "category": "hardware-setup",
     "categoryLabel": "Hardware & Local AI",
     "difficulty": "Menengah",
     "pubDate": "2026-10-16T06:55:51.646Z",
-    "updatedDate": "2026-10-16T06:55:51.646Z",
-    "readingTime": "4 min read",
+    "updatedDate": "2026-10-18T06:00:00.000Z",
+    "readingTime": "7 min read",
     "author": "EnInformasi Tech Desk",
     "tags": [
       "Nvidia RTX 5090",
       "GPU Gaming",
+      "Blackwell",
+      "TSMC",
       "Hardware PC",
-      "Rumor Teknologi"
+      "Krisis Silikon"
     ],
     "en": {
-      "title": "Nvidia RTX 5090 Mysteriously Disappears From Retailers, Fueling Production Halt Rumors",
-      "description": "Nvidia's flagship RTX 5090 has abruptly vanished from major retailers and official marketplaces worldwide. Wild speculations regarding a potential sudden production halt are triggering widespread panic among PC hardware enthusiasts."
+      "title": "Nvidia RTX 5090 Vanishes From Global Retailers, Sparking Production Halt Panic Across PC Gaming Community",
+      "description": "Nvidia's flagship GeForce RTX 5090 has mysteriously disappeared from major worldwide retailers including Micro Center, Newegg, and official marketplaces. Suspected silicon yield issues on TSMC's 4NP node and severe wafer reallocation toward enterprise Blackwell AI accelerators have triggered the most alarming GPU supply drought since the crypto mining era."
     }
   },
   {
     "slug": "ledakan-pabrik-fab-38-intel-di-israel-picu-respo-20261015",
     "title": "Ledakan Pabrik Fab 38 Intel di Israel Picu Respons Darurat Hazmat, Otoritas Selidiki Silinder Nitrogen Trifluoride",
-    "description": "Insiden ledakan serius di fasilitas manufaktur canggih Intel Fab 38 di Israel melibatkan tim hazmat dan melukai tiga orang pekerja. Otoritas setempat saat ini tengah menyelidiki kebocoran atau kegagalan struktural pada silinder gas Nitrogen Trifluoride yang krusial bagi produksi semikonduktor.",
+    "description": "Insiden ledakan serius di fasilitas manufaktur canggih Intel Fab 38 di Kiryat Gat melibatkan delapan tim darurat dan unit bahan berbahaya (Hazmat). Otoritas keselamatan kerja menyelidiki kegagalan struktural pada silinder gas Nitrogen Trifluoride yang krusial untuk pembersihan ruang reaktor fabrikasi wafer 18A Intel.",
     "postType": "artikel",
     "category": "hardware-setup",
     "categoryLabel": "Hardware & Local AI",
     "difficulty": "Menengah",
     "pubDate": "2026-10-15T04:09:45.511Z",
-    "updatedDate": "2026-10-15T04:09:45.511Z",
-    "readingTime": "4 min read",
+    "updatedDate": "2026-10-18T06:00:00.000Z",
+    "readingTime": "7 min read",
     "author": "EnInformasi Tech Desk",
     "tags": [
       "Intel",
       "Fab 38",
-      "Hardware",
       "Semikonduktor",
-      "Keamanan Industri"
+      "Keamanan Pabrik",
+      "Node 18A",
+      "Hardware"
     ],
     "en": {
-      "title": "Intel’s Fab 38 Explosion in Israel Triggers Hazmat Response as Authorities Investigate Nitrogen Trifluoride Cylinder",
-      "description": "A serious explosion at Intel’s advanced Fab 38 manufacturing facility in Israel injured three workers and prompted a massive emergency response involving hazmat units. Local authorities and company officials are currently investigating a suspected failure involving a Nitrogen Trifluoride gas cylinder critical to semiconductor production."
+      "title": "Intel Fab 38 Explosion in Israel Triggers Hazmat Emergency as Investigators Examine Nitrogen Trifluoride Cylinder Failure",
+      "description": "A high-pressure industrial blast at Intel's premier Fab 38 manufacturing site in Kiryat Gat injured three technicians and spurred a massive emergency hazmat mobilization. Investigators are scrutinizing structural integrity failures involving a Nitrogen Trifluoride gas manifold vital for advanced wafer cleanroom operations."
     }
   },
   {
     "slug": "zelda-ocarina-of-time-remake-tembus-60-fps-di-sw-20261015",
     "title": "Zelda: Ocarina of Time Remake Tembus 60 FPS di Switch 2, Nintendo Pamerkan Hyrule Baru yang Megah",
-    "description": "Kabar mengejutkan datang dari ranah gaming Nintendo di mana remake legendaris Ocarina of Time berjalan mulus di 60 FPS pada perangkat konsol penerus Switch. Keberhasilan teknis ini tidak hanya memukau para penggemar berat, tetapi juga menunjukkan lompatan performa grafis masif yang siap dihadirkan Nintendo.",
+    "description": "Proyek remake legendaris The Legend of Zelda: Ocarina of Time dilaporkan berhasil berjalan terkunci stabil di 60 FPS pada hardware Nintendo Switch 2. Mengusung engine grafis kustom berbasis arsitektur Nvidia Tegra T239 dan DLSS 3.5, Nintendo membuktikan lompatan grafis generasi baru tanpa mengorbankan portabilitas.",
     "postType": "artikel",
     "category": "gaming-esports",
     "categoryLabel": "Gaming & Esports",
     "difficulty": "Menengah",
     "pubDate": "2026-10-15T04:04:52.230Z",
-    "updatedDate": "2026-10-15T04:04:52.230Z",
-    "readingTime": "4 min read",
+    "updatedDate": "2026-10-18T06:00:00.000Z",
+    "readingTime": "7 min read",
     "author": "EnInformasi Tech Desk",
     "tags": [
       "Zelda",
       "Switch 2",
       "Nintendo",
       "Gaming News",
-      "Remake"
+      "DLSS 3.5",
+      "Hardware Konsol"
     ],
     "en": {
-      "title": "Zelda: Ocarina of Time Remake Hits Crisp 60 FPS on Switch 2, Showcasing Reimagined Hyrule",
-      "description": "Nintendo's classic masterpiece has reportedly achieved a flawless 60 FPS on the upcoming Switch 2 hardware. This technical milestone highlights a massive generational leap for Nintendo's next-gen ecosystem and revitalizes a legendary gaming world."
+      "title": "Zelda: Ocarina of Time Remake Hits Locked 60 FPS on Switch 2 Hardware, Showcasing a Reimagined Hyrule",
+      "description": "Nintendo's legendary masterpiece The Legend of Zelda: Ocarina of Time runs at a flawless, locked 60 FPS on Switch 2 test hardware. Powered by a custom Nvidia Tegra T239 SoC and DLSS 3.5 neural reconstruction, this remake demonstrates Nintendo's generational performance leap."
     }
   },
   {
     "slug": "meta-gebrak-industri-crypto-ai-muse-sukses-ranca-20261015",
     "title": "Meta Gebrak Industri Crypto: AI Muse Sukses Rancang Chip SoC RISC-V dengan Biaya Hanya $2.000",
-    "description": "Meta melalui agen AI Muse berhasil mendesain arsitektur SoC khusus crypto berbasis RISC-V secara mandiri dengan biaya yang sangat efisien. Inovasi ini menandai pergeseran radikal dalam demokratisasi desain chip semikonduktor berbasis AI.",
+    "description": "Meta merilis terobosan bersejarah di mana agen AI otonom 'Muse' berhasil merancang arsitektur chip System-on-Chip (SoC) berbasis RISC-V khusus akselerasi kriptografi Zero-Knowledge Proof dengan biaya riset hanya $2.000, memangkas biaya tim insinyur silikon konvensional hingga 99%.",
     "postType": "artikel",
     "category": "ai-agents",
     "categoryLabel": "AI Agents & Otomasi",
     "difficulty": "Menengah",
     "pubDate": "2026-10-15T04:00:56.886Z",
-    "updatedDate": "2026-10-15T04:00:56.886Z",
-    "readingTime": "4 min read",
+    "updatedDate": "2026-10-18T06:00:00.000Z",
+    "readingTime": "7 min read",
     "author": "EnInformasi Tech Desk",
     "tags": [
       "Meta AI",
+      "Muse AI",
       "RISC-V",
-      "SoC",
-      "Crypto Tech",
+      "Zero-Knowledge",
+      "Desain Semikonduktor",
       "AI Engineering"
     ],
     "en": {
-      "title": "Meta’s Muse AI Agent Disrupts Silicon Industry: Designing a RISC-V Crypto SoC for Just $2,000",
-      "description": "Meta’s Muse AI has successfully designed a custom RISC-V SoC for blockchain applications, drastically reducing development costs to a mere $2,000. This breakthrough highlights the growing capability of AI agents to autonomously handle complex hardware engineering."
+      "title": "Meta Disrupts Silicon Engineering: Autonomous Muse AI Designs Custom RISC-V Crypto SoC for Under $2,000",
+      "description": "Meta's research division has achieved an engineering milestone: its autonomous 'Muse' AI agent synthesized a functional RISC-V System-on-Chip (SoC) optimized for Zero-Knowledge Proof cryptography for just $2,000 in compute expenditure, slashing conventional design costs by over 99%."
     }
   },
   {
     "slug": "epic-games-rilis-launcher-baru-hasil-vibe-coding-20261015",
     "title": "Epic Games Rilis Launcher Baru Hasil 'Vibe Coding' AI: Diklaim 46% Lebih Cepat dari Steam, Tapi Rawan Bug",
-    "description": "Epic Games secara terbuka mengakui menggunakan kecerdasan buatan untuk membuat launcher game terbarunya karena proses pemrograman manual yang terlalu rumit. Meski diklaim meluncur 46% lebih cepat dari Steam, langkah radikal ini memicu perdebatan panas di kalangan developer dan gamer terkait stabilitas software.",
+    "description": "Epic Games secara terbuka mengakui telah merombak total launcher game resminya menggunakan pendekatan 'Vibe Coding' bertenaga AI. Klien baru berbasis Rust ini meluncur 46% lebih cepat dari Steam dan memangkas penggunaan RAM hingga 82%, namun memicu perdebatan panas mengenai risiko bug tersembunyi.",
     "postType": "artikel",
     "category": "gaming-esports",
     "categoryLabel": "Gaming & Esports",
     "difficulty": "Menengah",
     "pubDate": "2026-10-15T04:00:28.318Z",
-    "updatedDate": "2026-10-15T04:00:28.318Z",
-    "readingTime": "4 min read",
+    "updatedDate": "2026-10-18T06:00:00.000Z",
+    "readingTime": "7 min read",
     "author": "EnInformasi Tech Desk",
     "tags": [
       "Epic Games",
       "Steam",
+      "Vibe Coding",
       "AI Coding",
-      "Game Launcher",
-      "Artificial Intelligence"
+      "Rust",
+      "Software Engineering"
     ],
     "en": {
-      "title": "Epic Games Vibe-Codes New Launcher with AI: Claims 46% Faster Startup Than Steam Despite Early Bug Warnings",
-      "description": "Epic Games has openly admitted to using artificial intelligence to build its completely redesigned game launcher because manual coding is too tedious. While the new beta client boasts a 46% faster startup speed than Steam, this aggressive AI-first approach has sparked intense industry debate over software stability."
+      "title": "Epic Games Deploys AI-Authored 'Vibe Coded' Launcher: Boasting 46% Faster Startup Than Steam Amid Bug Scrutiny",
+      "description": "Epic Games has revealed that its overhauled desktop launcher was rewritten using AI-driven 'vibe coding'. Transitioning from legacy Electron bloat to an optimized Rust core, the beta client launches 46% faster than Valve's Steam and reduces idle RAM consumption by 82%, while reigniting fierce debates over generative software reliability."
     }
   },
   {
     "slug": "cara-bikin-autonomous-ai-agent-sendiri-crewai",
     "title": "Cara Bikin Autonomous AI Agent Sendiri Pake CrewAI & Python (Biar Gak Repot Ngerjain Tugas Rutin)",
-    "description": "Panduan lengkap dan praktis membangun pasukan agen AI otonom menggunakan framework CrewAI. Mempelajari struktur Agent, Task, Tool kustom, dan orkestrasi tim kerja.",
+    "description": "Panduan lengkap dan praktis membangun tim agen AI otonom menggunakan framework CrewAI. Mempelajari struktur Agent, Task, Tool kustom, penanganan error, dan orkestrasi kolaborasi multi-agent secara nyata.",
     "postType": "tutorial",
     "category": "ai-agents",
     "categoryLabel": "AI Agents & Otomasi",
     "difficulty": "Menengah",
     "pubDate": "10 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "9 min baca",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "11 min baca",
     "author": "Edvan",
     "tags": [
       "CrewAI",
       "Python",
       "Autonomous Agent",
       "Automation",
-      "LangChain"
+      "LangChain",
+      "Multi-Agent"
     ],
     "en": {
-      "title": "How to Build an Autonomous AI Agent with CrewAI & Python (Automating Tedious Workflows)",
-      "description": "Comprehensive, hands-on guide to building multi-agent AI systems with the CrewAI framework. Learn Agent roles, Tasks, custom tools, and automated crew orchestration."
+      "title": "How to Build an Autonomous AI Agent Team with CrewAI & Python (Automating Tedious Digital Workflows)",
+      "description": "Step-by-step masterclass on engineering autonomous multi-agent AI systems using CrewAI and Python. Learn role abstraction, tool integration, error resilience, and automated orchestration."
     }
   },
   {
     "slug": "tutorial-langgraph-pemula-agen-multi-langkah",
     "title": "Tutorial LangGraph Buat Pemula: Bikin Agen AI Multi-Langkah yang Anti-Halusinasi",
-    "description": "Panduan visual memahami konsep StateGraph di LangGraph. Cara merancang graf alur kerja AI deterministik dengan node koreksi diri dan memori status.",
+    "description": "Panduan teknis dan visual memahami StateGraph di LangGraph. Belajar merancang graf alur kerja AI deterministik dengan node eksekusi, conditional edges, memori status, dan mekanisme koreksi diri otomatis.",
     "postType": "tutorial",
     "category": "ai-agents",
     "categoryLabel": "AI Agents & Otomasi",
     "difficulty": "Menengah",
     "pubDate": "12 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "9 min baca",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "12 min baca",
     "author": "Edvan",
     "tags": [
       "LangGraph",
       "LangChain",
       "Python",
       "StateGraph",
-      "Deterministic AI"
+      "Deterministic AI",
+      "Self-Correction"
     ],
     "en": {
-      "title": "LangGraph Beginner Tutorial: Building Multi-Step AI Agents with Deterministic Workflows",
-      "description": "Visual guide to StateGraph concepts in LangGraph. Learn to design deterministic AI workflows with self-correction nodes and state persistence."
+      "title": "LangGraph Masterclass for Beginners: Engineering Self-Correcting, Non-Hallucinating AI Graphs",
+      "description": "Comprehensive engineering guide to LangGraph StateGraph architectures in Python. Build deterministic, multi-turn AI workflows with TypedDict state, cyclical self-correction, and human-in-the-loop controls."
     }
   },
   {
     "slug": "bikin-asisten-otomatis-pake-n8n-dan-ai-agent",
     "title": "Bikin Asisten Pribadi Otomatis Pake n8n + AI Agent Tanpa Nulis Ribuan Baris Kode",
-    "description": "Panduan visual otomasi workflow menggunakan n8n self-hosted. Mengintegrasikan node AI Agent, memori percakapan, dan koneksi webhook ke bot Telegram/WhatsApp.",
+    "description": "Panduan praktis membangun bot asisten pribadi 24 jam menggunakan n8n self-hosted di Docker. Menghubungkan Telegram bot, model AI (OpenAI / Ollama), Buffer Window Memory, dan Google Sheets untuk pencatatan otomatis.",
     "postType": "tutorial",
     "category": "tools-automation",
     "categoryLabel": "Workflow & Tooling",
     "difficulty": "Pemula",
     "pubDate": "11 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "8 min baca",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "10 min baca",
     "author": "Edvan",
     "tags": [
       "n8n",
@@ -323,24 +331,25 @@ export const articleSummaries: ArticleSummary[] = [
       "Automation",
       "AI Agent",
       "Telegram Bot",
-      "Self-Hosted"
+      "Self-Hosted",
+      "Docker"
     ],
     "en": {
-      "title": "Build Automated Assistants with n8n & AI Agents: Self-Hosted No-Code Workflow Guide",
-      "description": "Step-by-step tutorial on orchestrating autonomous AI agents with n8n. Connect webhooks, Telegram bots, and external databases without complex coding."
+      "title": "Building an Autonomous Personal Assistant with Self-Hosted n8n and AI Agents (Zero Monolithic Code)",
+      "description": "Step-by-step implementation guide to engineering an always-on personal AI assistant using self-hosted n8n in Docker. Wire Telegram bots, LLM backends, Window Buffer Memory, and Google Sheets tools."
     }
   },
   {
     "slug": "panduan-lengkap-ollama-jalanin-llm-lokal-gratis",
     "title": "Panduan Lengkap Ollama: Cara Jalanin LLM Kelas Sultan di Laptop Lokal 100% Gratis & Offline",
-    "description": "Panduan tuntas instalasi dan optimasi Ollama di Windows, macOS, dan Linux. Cara menjalankan DeepSeek-R1, Llama 3.3, dan Qwen 2.5 lokal tanpa koneksi internet.",
+    "description": "Panduan komprehensif instalasi, konfigurasi, dan optimasi Ollama di Windows, macOS, dan Linux. Cara menjalankan DeepSeek-R1, Llama 3.3, dan Qwen 2.5 secara offline, membuat Modelfile kustom, alokasi VRAM GPU, dan integrasi REST API.",
     "postType": "tutorial",
     "category": "hardware-setup",
     "categoryLabel": "Hardware & Local AI",
     "difficulty": "Pemula",
     "pubDate": "10 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "8 min baca",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "11 min baca",
     "author": "Edvan",
     "tags": [
       "Ollama",
@@ -348,24 +357,25 @@ export const articleSummaries: ArticleSummary[] = [
       "Llama 3",
       "DeepSeek",
       "Open Source",
-      "Offline LLM"
+      "Offline LLM",
+      "Hardware Setup"
     ],
     "en": {
-      "title": "Panduan Lengkap Ollama: Cara Jalanin LLM Kelas Sultan di Laptop Lokal 100% Gratis & Offline",
-      "description": "Panduan tuntas instalasi dan optimasi Ollama di Windows, macOS, dan Linux. Cara menjalankan DeepSeek-R1, Llama 3.3, dan Qwen 2.5 lokal tanpa koneksi internet."
+      "title": "The Comprehensive Ollama Master Guide: Running Frontier LLMs Locally, 100% Free & Offline",
+      "description": "Definitive architectural and deployment guide to Ollama on Windows, macOS, and Linux. Master DeepSeek-R1, Llama 3.3, and Qwen 2.5 deployments, custom Modelfile creation, VRAM optimization, and REST API integration."
     }
   },
   {
     "slug": "tutorial-browser-use-ai-agent-otomatisasi-web",
     "title": "Tutorial Bikin Browser Use AI Agent: Biar Bot yang Browsing, Belanja, & Isi Form Otomatis Buat Lu",
-    "description": "Panduan lengkap library Browser-Use Python. Cara membuat agen AI yang mampu mengontrol browser Chromium, mencari tiket pesawat, mengisi form, dan scraping web dinamis.",
+    "description": "Panduan lengkap library Browser-Use Python dan Playwright. Cara membuat agen AI multimodal yang mampu mengontrol browser Chromium, mencari harga tiket termurah, mengisi formulir kompleks, dan melewati sistem anti-bot.",
     "postType": "tutorial",
     "category": "ai-agents",
     "categoryLabel": "AI Agents & Otomasi",
     "difficulty": "Lanjutan",
     "pubDate": "12 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "8 min baca",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "11 min baca",
     "author": "Edvan",
     "tags": [
       "Browser-Use",
@@ -373,24 +383,25 @@ export const articleSummaries: ArticleSummary[] = [
       "Web Scraping",
       "AI Agent",
       "Python",
-      "Automation"
+      "Automation",
+      "Computer Vision"
     ],
     "en": {
-      "title": "Tutorial to Make a Browser Use AI Agent: Let the Bot Browse, Shop, & Fill Out Forms Automatically for You",
-      "description": "Complete guide to the Browser-Use Python library. How to create an AI agent capable of controlling the Chromium browser, searching for plane tickets, filling out forms, and dynamic web scraping."
+      "title": "Building Autonomous Browser-Use AI Agents with Python & Playwright (Hands-Free Web Automation)",
+      "description": "Complete engineering guide to Browser-Use and Playwright in Python. Build vision-driven multimodal AI agents capable of controlling Chromium, bypassing brittle CSS selectors, comparing travel fares, and persisting session cookies."
     }
   },
   {
     "slug": "cara-bikin-chatbot-rag-qdrant-llamaindex",
     "title": "Cara Bikin Chatbot RAG (Retrieval-Augmented Generation) Sendiri Pake Qdrant & LlamaIndex",
-    "description": "Panduan teknis membangun sistem RAG modern dengan Qdrant vector database dan LlamaIndex Python. Teknik chunking semantik, model embedding, dan kueri dokumen instan.",
+    "description": "Panduan teknis dan praktis membangun sistem RAG modern dengan Qdrant vector database dan LlamaIndex Python. Mempelajari teknik semantic chunking, embedding model, penyimpanan vektor berkecepatan tinggi, dan sintesis respons bebas halusinasi.",
     "postType": "tutorial",
     "category": "ai-agents",
     "categoryLabel": "AI Agents & Otomasi",
     "difficulty": "Lanjutan",
     "pubDate": "11 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "9 min baca",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "12 min baca",
     "author": "Edvan",
     "tags": [
       "RAG",
@@ -398,229 +409,242 @@ export const articleSummaries: ArticleSummary[] = [
       "LlamaIndex",
       "Vector DB",
       "Python",
-      "Embeddings"
+      "Embeddings",
+      "Semantic Search"
     ],
     "en": {
-      "title": "Cara Bikin Chatbot RAG (Retrieval-Augmented Generation) Sendiri Pake Qdrant & LlamaIndex",
-      "description": "A technical guide to building a modern RAG system with Qdrant vector database and LlamaIndex Python. Semantic chunking techniques, embedding models, and instant document query."
+      "title": "Building Enterprise RAG Systems with Qdrant Vector Database & LlamaIndex in Python",
+      "description": "Comprehensive implementation blueprint for production-grade Retrieval-Augmented Generation using Qdrant and LlamaIndex. Covers semantic chunking, high-throughput HNSW vector indexing, and zero-hallucination source attribution."
     }
   },
   {
     "slug": "tutorial-open-webui-chatgpt-pribadi-server-rumah",
     "title": "Tutorial Open WebUI: Bikin Tampilan ala ChatGPT Pribadi di Server Rumah (Self-Hosted)",
-    "description": "Panduan instalasi Open WebUI menggunakan Docker. Menghubungkan Ollama lokal, sistem akun pengguna keluarga, fitur RAG upload dokumen, dan integrasi web search.",
+    "description": "Panduan lengkap memasang dan mengonfigurasi Open WebUI menggunakan Docker. Menghubungkan antarmuka ke backend Ollama lokal, mengaktifkan fitur upload dokumen RAG, sistem multi-user, dan pencarian web daring.",
     "postType": "tutorial",
     "category": "hardware-setup",
     "categoryLabel": "Hardware & Local AI",
     "difficulty": "Pemula",
     "pubDate": "10 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "8 min baca",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "10 min baca",
     "author": "Edvan",
     "tags": [
       "Open WebUI",
-      "Self-Hosted",
       "Docker",
       "Ollama",
-      "Private ChatGPT"
+      "Self-Hosted",
+      "ChatGPT Clone",
+      "Home Server",
+      "Privacy"
     ],
     "en": {
-      "title": "Open WebUI Setup Guide: Self-Hosting a Private ChatGPT Interface on Home Servers",
-      "description": "Deploy a modern ChatGPT-like web UI on Docker with Ollama backend, multi-user accounts, file attachments, and OpenAI API integration."
+      "title": "Self-Hosting Open WebUI: Deploying a Private, Sovereign ChatGPT Alternative at Home",
+      "description": "End-to-end engineering guide to self-hosting Open WebUI with Docker Compose and local Ollama backends. Configure multi-tenant roles, embedded document RAG, and zero-trust remote access via Tailscale."
     }
   },
   {
     "slug": "tutorial-smolagents-huggingface-paling-enteng",
     "title": "Tutorial Smolagents dari Hugging Face: Library Agen AI Paling Enteng & Gampang Dikuasai",
-    "description": "Panduan lengkap library smolagents Hugging Face. Mengapa pendekatan CodeAgent berbasis aksi kode Python murni mengalahkan format JSON bertele-tele.",
+    "description": "Panduan lengkap library Smolagents dari Hugging Face. Memahami keunggulan CodeAgent dibanding JSON action agent, eksekusi Python langsung di sandbox aman, dan integrasi web search tool dalam hitungan menit.",
     "postType": "tutorial",
     "category": "ai-agents",
     "categoryLabel": "AI Agents & Otomasi",
     "difficulty": "Pemula",
     "pubDate": "12 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "7 min baca",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "10 min baca",
     "author": "Edvan",
     "tags": [
-      "smolagents",
+      "Smolagents",
       "Hugging Face",
-      "CodeAgent",
       "Python",
-      "AI Framework"
+      "CodeAgent",
+      "AI Agent",
+      "Lightweight AI"
     ],
     "en": {
-      "title": "Hugging Face Smolagents Tutorial: Lightweight & Code-First AI Agent Framework",
-      "description": "Master Smolagents from Hugging Face. Build minimal, high-efficiency Python code agents with minimal overhead and native Hugging Face Hub tools."
+      "title": "Hugging Face Smolagents Masterclass: The Featherweight, Code-First AI Agent Framework",
+      "description": "Comprehensive developer tutorial on Hugging Face's Smolagents. Master CodeAgent architectures over fragile JSON action patterns, AST-sandboxed Python execution, and custom @tool extensions."
     }
   },
   {
     "slug": "panduan-flux-1-comfyui-gambar-ai-super-realistis",
     "title": "Panduan Flux.1 & ComfyUI: Generate Gambar AI Super Realistis Tanpa Batasan Sensor",
-    "description": "Panduan lengkap merakit workflow visual ComfyUI untuk model difusi FLUX.1. Trik prompt fotorealistik, render teks sempurna di dalam gambar, dan optimasi VRAM.",
+    "description": "Panduan lengkap memasang dan menjalankan model generator gambar AI mutakhir Flux.1 (Schnell & Dev) di ComfyUI. Trik kuantisasi GGUF dan NF4 untuk kartu grafis 8GB–12GB VRAM, konfigurasi node, dan rekayasa prompt tingkat tinggi.",
     "postType": "tutorial",
     "category": "tools-automation",
     "categoryLabel": "Workflow & Tooling",
-    "difficulty": "Menengah",
-    "pubDate": "11 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "9 min baca",
+    "difficulty": "Lanjutan",
+    "pubDate": "12 Oktober 2026",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "12 min baca",
     "author": "Edvan",
     "tags": [
       "Flux.1",
       "ComfyUI",
+      "Generative AI",
       "Image Generation",
       "Diffusion Model",
-      "AI Art"
+      "Hardware Setup"
     ],
     "en": {
-      "title": "Flux.1 & ComfyUI Visual Workflow Guide: Photorealistic Open-Source AI Generation",
-      "description": "Generate photorealistic images with Flux.1 Schnell and Dev using node-based ComfyUI workflows. Prompting formulas, LoRA loading, and VRAM management."
+      "title": "Flux.1 & ComfyUI Masterclass: Generating Hyper-Realistic AI Visuals without Guardrails",
+      "description": "End-to-end deployment guide for Black Forest Labs' Flux.1 (Schnell & Dev) models within ComfyUI. Master GGUF/NF4 quantization for 8GB–12GB VRAM GPUs, dual text-encoder routing, and FlowMatch schedulers."
     }
   },
   {
     "slug": "claude-computer-use-tutorial-agen-kendali-layar",
     "title": "Claude Computer Use: Tutorial Bikin AI yang Bisa Klik Mouse & Ngetik Sendiri di Layar Komputer Lu",
-    "description": "Panduan resmi implementasi Anthropic Computer Use API. Cara mengatur virtual display X11 Docker, tool screenshot, dan agen pengendali mouse otomatis.",
+    "description": "Panduan teknis memanfaatkan kapabilitas Claude 3.5 Sonnet Computer Use API. Cara membangun agen otonom yang mampu membaca layar grafis, menggerakkan kursor mouse, mengetik teks, dan menjalankan instruksi desktop di sandbox Docker.",
     "postType": "tutorial",
     "category": "ai-agents",
     "categoryLabel": "AI Agents & Otomasi",
     "difficulty": "Lanjutan",
     "pubDate": "12 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "9 min baca",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "12 min baca",
     "author": "Edvan",
     "tags": [
-      "Claude",
+      "Claude 3.5 Sonnet",
       "Computer Use",
       "Anthropic",
-      "GUI Automation",
-      "Agentic AI"
+      "Python",
+      "Automation",
+      "GUI Agent"
     ],
     "en": {
-      "title": "Claude Computer Use Tutorial: Autonomous Screen Control, Mouse Clicks & Terminal Automation",
-      "description": "Build AI agents capable of viewing screens, moving mouse pointers, clicking UI elements, and running shell commands using Claude 3.5 Sonnet."
+      "title": "Mastering Claude 3.5 Sonnet Computer Use: Engineering Desktop GUI Autonomous Agents",
+      "description": "Technical guide to Anthropic's Computer Use API. Architect autonomous agents that visually parse desktop screens, dispatch coordinate mouse inputs, automate GUI interactions, and operate within secure Docker sandboxes."
     }
   },
   {
     "slug": "bikin-bot-telegram-ai-python-gemini-flash-gratis",
     "title": "Bikin Bot Telegram AI Pribadi Pake Python & Gemini Flash API Gratisan",
-    "description": "Tutorial praktis membuat bot Telegram cerdas berbahasa Indonesia. Menggunakan Python async, Google Gemini 2.5 Flash API gratis, dan deployment VPS 24/7.",
+    "description": "Panduan lengkap membangun bot Telegram cerdas menggunakan Python, framework modern aiogram v3, dan Google Gemini 2.0 / 1.5 Flash API. Mendukung memori riwayat chat multi-turn, format Markdown rapi, dan penanganan rate-limit.",
     "postType": "tutorial",
     "category": "tools-automation",
     "categoryLabel": "Workflow & Tooling",
     "difficulty": "Pemula",
-    "pubDate": "10 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "7 min baca",
+    "pubDate": "11 Oktober 2026",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "10 min baca",
     "author": "Edvan",
     "tags": [
       "Telegram Bot",
       "Python",
       "Gemini API",
-      "Google AI",
-      "Tutorial Pemula"
+      "aiogram",
+      "AI Assistant",
+      "Automation"
     ],
     "en": {
-      "title": "Building a Private Telegram AI Bot with Python & Free Gemini Flash API",
-      "description": "Deploy an automated Telegram AI assistant with Python and Google Gemini 2.0 Flash API. Supports image recognition, voice notes, and group chats."
+      "title": "Building a Free, High-Speed Telegram AI Assistant with Python & Google Gemini Flash API",
+      "description": "Step-by-step developer tutorial for engineering an asynchronous Telegram bot using Python, aiogram v3, and the Google Gemini 2.0 Flash API. Features conversational multi-turn memory, Markdown parsing, and systemd production deployment."
     }
   },
   {
     "slug": "fine-tuning-lora-model-lokal-pake-unsloth-hemat",
     "title": "Fine-Tuning LoRA Model Lokal Pake Unsloth: Bikin AI yang Paham Gaya Bicara Lu Sendiri",
-    "description": "Panduan lengkap fine-tuning LLM hemat VRAM dengan Unsloth. Melatih model Llama 3 atau Qwen 2.5 menggunakan dataset kustom Anda di GPU desktop.",
+    "description": "Panduan praktis fine-tuning LLM lokal (Llama 3.1 & Qwen 2.5) menggunakan library Unsloth 5x lebih cepat dan hemat memori VRAM. Cara menyiapkan dataset JSON, konfigurasi parameter LoRA, dan export bobot ke format GGUF untuk Ollama.",
     "postType": "tutorial",
     "category": "hardware-setup",
     "categoryLabel": "Hardware & Local AI",
     "difficulty": "Lanjutan",
     "pubDate": "11 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "9 min baca",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "12 min baca",
     "author": "Edvan",
     "tags": [
-      "Fine-Tuning",
       "Unsloth",
+      "Fine-Tuning",
       "LoRA",
-      "Llama 3",
-      "Open Source",
-      "Machine Learning"
+      "QLoRA",
+      "LLM",
+      "Python",
+      "Local AI",
+      "GGUF"
     ],
     "en": {
-      "title": "Local LLM Fine-Tuning with Unsloth LoRA: Train Custom Persona Models with Minimal VRAM",
-      "description": "Step-by-step guide to fine-tuning Llama 3 and Mistral using Unsloth. 5x faster training speeds and 80% lower memory consumption on single consumer GPUs."
+      "title": "Fine-Tuning Local LLMs with Unsloth: Training Custom LoRA Adapters on Consumer GPUs",
+      "description": "Step-by-step masterclass on fine-tuning Llama 3.1 and Qwen 2.5 models using Unsloth. Covers dataset preparation in Alpaca JSON format, memory-efficient 4-bit QLoRA training on 8GB VRAM, loss evaluation, and exporting GGUF weights to Ollama."
     }
   },
   {
     "slug": "tutorial-cline-dan-roo-code-agen-di-vs-code",
     "title": "Tutorial Cline & Roo Code di VS Code: Agen Software Engineer Mandiri yang Langsung di Editor Lu",
-    "description": "Panduan lengkap ekstensi open-source autonomous coding agent di VS Code: Cline dan Roo Code. Menghubungkan MCP tools, terminal execution, dan model DeepSeek-R1.",
+    "description": "Panduan lengkap memasang dan mengonfigurasi ekstensi otonom Cline dan Roo Code di VS Code. Cara merancang berkas .clinerules, mengintegrasikan Model Context Protocol (MCP), dan menghemat biaya token API.",
     "postType": "tutorial",
     "category": "tools-automation",
     "categoryLabel": "Workflow & Tooling",
     "difficulty": "Menengah",
     "pubDate": "12 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "8 min baca",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "11 min baca",
     "author": "Edvan",
     "tags": [
       "Cline",
       "Roo Code",
       "VS Code",
-      "Coding Agent",
-      "Autonomous Developer"
+      "AI Coding",
+      "MCP",
+      "Autonomous Agent",
+      "Software Engineering"
     ],
     "en": {
-      "title": "Cline & Roo Code VS Code Masterclass: Autonomous Software Engineering Agents in Your Editor",
-      "description": "Supercharge VS Code into an autonomous engineering environment. Configure Cline and Roo Code with MCP tools, terminal execution, and multi-file refactoring."
+      "title": "Mastering Autonomous In-Editor Coding Agents: Cline and Roo Code in Visual Studio Code",
+      "description": "Comprehensive implementation tutorial for autonomous VS Code extensions Cline and Roo Code. Configure architectural .clinerules, wire Model Context Protocol (MCP) servers, and manage inference token economics."
     }
   },
   {
     "slug": "membuat-voice-ai-agent-interaktif-gemini-live-api",
     "title": "Membuat Voice AI Agent Interaktif Real-Time Pake Gemini Live API & WebSockets",
-    "description": "Tutorial membangun agen suara dua arah berlatensi rendah dengan Google Gemini Multimodal Live API. Streaming audio PCM 16-bit dan penanganan interupsi percakapan.",
+    "description": "Panduan teknis membangun agen percakapan suara interaktif real-time dengan latensi rendah menggunakan Google Gemini Live API dan protokol WebSockets. Mempelajari streaming audio dua arah (bi-directional PCM), penanganan interupsi suara, dan integrasi mic.",
     "postType": "tutorial",
     "category": "tools-automation",
     "categoryLabel": "Workflow & Tooling",
     "difficulty": "Lanjutan",
     "pubDate": "13 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "9 min baca",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "12 min baca",
     "author": "Edvan",
     "tags": [
-      "Gemini Live",
+      "Gemini Live API",
       "Voice AI",
       "WebSockets",
-      "Realtime Audio",
-      "Python"
+      "Python",
+      "Real-Time AI",
+      "Audio Streaming"
     ],
     "en": {
-      "title": "Real-Time Interactive Voice AI Agent with Gemini Live API & WebSockets",
-      "description": "Build low-latency, bidirectional audio streaming voice agents using Gemini Live API. WebSockets orchestration, Voice Activity Detection, and barge-in interruptions."
+      "title": "Engineering Low-Latency Voice AI Agents with Google Gemini Live API & WebSockets",
+      "description": "Technical implementation guide to real-time, bi-directional voice streaming using the Google Gemini Live Multimodal WebSocket API. Master native speech-to-speech audio streaming, barge-in interruptions, and low-latency PCM pipelines."
     }
   },
   {
     "slug": "optimasi-mac-mini-m4-jalankan-model-70b-lokal",
     "title": "Cara Optimasi Mac Mini M4 / M4 Pro Buat Jalankan Model AI 70B Parameter Tanpa Ngelag",
-    "description": "Panduan teknis memaksimalkan Apple Silicon Unified Memory. Konfigurasi sysctl limit alokasi GPU, instalasi llama.cpp Metal, dan benchmark model 70B pada Mac Mini M4.",
+    "description": "Panduan teknis memaksimalkan Apple Silicon Mac Mini M4 dan M4 Pro dengan Unified Memory untuk inferensi model AI raksasa 70 Miliar Parameter (Llama 3.3, Qwen 2.5 72B, DeepSeek). Trik sysctl wired_mem_limit, kompilasi Metal llama.cpp, dan pilihan kuantisasi.",
     "postType": "tutorial",
     "category": "hardware-setup",
     "categoryLabel": "Hardware & Local AI",
     "difficulty": "Lanjutan",
     "pubDate": "13 Oktober 2026",
-    "updatedDate": "14 Oktober 2026",
-    "readingTime": "8 min baca",
+    "updatedDate": "18 Oktober 2026",
+    "readingTime": "12 min baca",
     "author": "Edvan",
     "tags": [
       "Mac Mini M4",
       "Apple Silicon",
-      "Unified Memory",
-      "llama.cpp",
       "Local AI",
-      "Hardware"
+      "Llama 3.3 70B",
+      "Metal",
+      "llama.cpp",
+      "Hardware Rig"
     ],
     "en": {
-      "title": "Mac Mini M4 & M4 Pro AI Optimization Guide: Running 70B Quantized LLMs Locally",
-      "description": "Unlock Apple Silicon unified memory for heavy AI workloads. Benchmark 70B parameter LLM inference speeds, Metal acceleration, and token throughput."
+      "title": "Optimizing Mac Mini M4 / M4 Pro for Local 70B Parameter LLMs: Zero-Lag Metal Acceleration",
+      "description": "Comprehensive technical tuning guide for Apple Silicon M4 and M4 Pro Unified Memory. Learn sysctl wired_mem_limit overrides, native llama.cpp Metal compilation, quantization benchmarking, and running Llama 3.3 70B locally."
     }
   },
   {

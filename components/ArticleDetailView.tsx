@@ -11,6 +11,7 @@ import {
   Sparkles, 
   Globe, 
   ListOrdered,
+  ListChecks,
   Share2,
   Check,
   ArrowUp,
@@ -227,6 +228,41 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                 {displayDesc}
               </div>
             </div>
+
+            {displaySteps && displaySteps.length > 0 && (
+              <div className="p-4 rounded-xl bg-zinc-900/60 border border-[var(--border-color)] space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="p-1 rounded-md bg-emerald-500/10 text-emerald-400">
+                      <ListChecks className="w-4 h-4" />
+                    </span>
+                    <span className="text-xs sm:text-sm font-bold text-[var(--text-main)]">
+                      {lang === 'en' ? 'Practice Roadmap & Steps' : 'Peta Tahapan Praktik'} ({displaySteps.length})
+                    </span>
+                  </div>
+                  <a
+                    href="#praktik-checklist"
+                    className="text-[11px] font-mono text-emerald-400 hover:underline flex items-center gap-1"
+                  >
+                    <span>{lang === 'en' ? 'Track Progress' : 'Catat Progres'}</span>
+                    <span>↓</span>
+                  </a>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                  {displaySteps.map((step, idx) => (
+                    <div
+                      key={step.id || idx}
+                      className="p-2.5 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)]/70 flex items-start gap-2.5 text-xs text-[var(--text-muted)]"
+                    >
+                      <span className="w-5 h-5 rounded-full bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-mono font-bold text-[10px] shrink-0 mt-0.5">
+                        {idx + 1}
+                      </span>
+                      <span className="line-clamp-2 text-[var(--text-main)] leading-snug">{step.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {displayToc && displayToc.length > 0 && (
               <div className="lg:hidden p-3.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] shadow-sm">
