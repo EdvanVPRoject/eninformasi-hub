@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "kecerdasan-buatan-claude-code-berhasil-ungkap-pe-20261019",
+    "title": "Kecerdasan Buatan Claude Code Berhasil Ungkap Penambang Kripto Tersembunyi di Mac Developer yang Overheat",
+    "description": "Sebuah insiden keamanan siber mengejutkan dunia pengembang ketika agen AI Claude Code mendeteksi proses skrip penambangan kripto tersembunyi yang menyebabkan perangkat MacBook developer mengalami overheat ekstrem. Kasus ini menandai tonggak sejarah baru di mana agen otonom berbasis AI berperan langsung sebagai garda terdepan mitigasi ancaman keamanan sistem operasi macOS.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Mahir",
+    "pubDate": "2026-10-19T12:37:04.752Z",
+    "updatedDate": "2026-10-19T12:37:04.752Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Claude Code",
+      "Artificial Intelligence",
+      "Cybersecurity",
+      "macOS",
+      "Crypto Mining"
+    ],
+    "en": {
+      "title": "Claude Code AI Agent Catches Hidden Crypto Miner Sucking Resources on an Overheating Developer's Mac",
+      "description": "A cybersecurity incident stunned the developer community when the Claude Code AI agent detected a stealthy cryptocurrency mining script causing a MacBook developer workstation to experience extreme overheating. This case marks a historic milestone where autonomous AI agents step up as the frontline defense for operating system security and system integrity."
+    }
+  },
+  {
     "slug": "revolusi-chip-ai-custom-broadcom-mengapa-raksasa-20261019",
     "title": "Revolusi Chip AI Custom Broadcom: Mengapa Raksasa Jaringan Ini Menjadi Tulang Punggung Infrastruktur LLM Global",
     "description": "Lonjakan valuasi Broadcom (NASDAQ:AVGO) minggu ini menyoroti dominasi strategis mereka dalam penyediaan chip AI custom untuk hyperscaler global. Analisis mendalam menunjukkan bagaimana arsitektur ASIC khusus ini mengancam hegemoni GPU tradisional dan mendefinisikan ulang masa depan komputasi pusat data skala masif.",
