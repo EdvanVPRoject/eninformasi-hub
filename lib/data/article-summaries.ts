@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "reolusi-npc-gta-v-mod-npctalk-hidupkan-karakter--20261019",
+    "title": "Reolusi NPC GTA V: Mod NPCTalk Hidupkan Karakter Game dengan Integrasi AI Real-Time",
+    "description": "Komunitas modding gaming kembali dikejutkan dengan peluncuran NPCTalk untuk Grand Theft Auto V, sebuah mod revolusioner yang memungkinkan pemain berbicara langsung dengan NPC menggunakan kecerdasan buatan secara real-time. Terobosan ini mengubah interaksi statis dalam game menjadi percakapan dinamis yang tak terduga, membuka era baru imersi dalam dunia open-world.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-19T00:34:04.601Z",
+    "updatedDate": "2026-10-19T00:34:04.601Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "GTA V",
+      "AI Mod",
+      "NPCTalk",
+      "Gaming News",
+      "Artificial Intelligence"
+    ],
+    "en": {
+      "title": "GTA V NPC Revolution: NPCTalk Mod Brings Characters to Life with Real-Time AI",
+      "description": "The gaming modding community is once again stunned by the release of NPCTalk for Grand Theft Auto V, a revolutionary mod enabling players to speak directly to NPCs using real-time artificial intelligence. This breakthrough transforms static in-game interactions into unpredictable dynamic conversations, ushering in a new era of open-world immersion."
+    }
+  },
+  {
     "slug": "pertempuran-gpu-2026-memanas-amd-radeon-rx-9070--20261018",
     "title": "Pertempuran GPU 2026 Memanas: AMD Radeon RX 9070 XT Hantam Telak GeForce RTX 5070 dengan Keunggulan Performa 18 Persen",
     "description": "Persaingan kartu grafis kelas menengah-atas tahun 2026 mencapai titik didih baru setelah benchmark independen membuktikan AMD Radeon RX 9070 XT mampu mengungguli Nvidia GeForce RTX 5070 hingga 18 persen pada resolusi 1440p dan 4K. Kenaikan performa signifikan ini memaksa Nvidia mengevaluasi ulang strategi penetapan harga dan alokasi daya arsitektur Blackwell mereka di tengah tekanan pasar global.",
