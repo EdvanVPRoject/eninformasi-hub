@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "revolusi-chip-ai-custom-broadcom-mengapa-raksasa-20261019",
+    "title": "Revolusi Chip AI Custom Broadcom: Mengapa Raksasa Jaringan Ini Menjadi Tulang Punggung Infrastruktur LLM Global",
+    "description": "Lonjakan valuasi Broadcom (NASDAQ:AVGO) minggu ini menyoroti dominasi strategis mereka dalam penyediaan chip AI custom untuk hyperscaler global. Analisis mendalam menunjukkan bagaimana arsitektur ASIC khusus ini mengancam hegemoni GPU tradisional dan mendefinisikan ulang masa depan komputasi pusat data skala masif.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Mahir",
+    "pubDate": "2026-10-19T06:39:17.791Z",
+    "updatedDate": "2026-10-19T06:39:17.791Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Broadcom",
+      "Custom AI Chip",
+      "ASIC",
+      "Infrastruktur AI",
+      "Data Center"
+    ],
+    "en": {
+      "title": "Broadcom’s Custom AI Chip Surge: Why the Networking Giant is Becoming the Backbone of Global LLM Infrastructure",
+      "description": "Broadcom’s (NASDAQ:AVGO) stock rally this week highlights its strategic dominance in custom AI silicon for global hyperscalers. A deep-dive analysis reveals how these custom ASIC architectures are challenging traditional GPU hegemony and redefining massive data center computing."
+    }
+  },
+  {
     "slug": "reolusi-npc-gta-v-mod-npctalk-hidupkan-karakter--20261019",
     "title": "Reolusi NPC GTA V: Mod NPCTalk Hidupkan Karakter Game dengan Integrasi AI Real-Time",
     "description": "Komunitas modding gaming kembali dikejutkan dengan peluncuran NPCTalk untuk Grand Theft Auto V, sebuah mod revolusioner yang memungkinkan pemain berbicara langsung dengan NPC menggunakan kecerdasan buatan secara real-time. Terobosan ini mengubah interaksi statis dalam game menjadi percakapan dinamis yang tak terduga, membuka era baru imersi dalam dunia open-world.",
