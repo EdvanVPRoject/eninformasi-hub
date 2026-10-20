@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-ai-minimax-m31-flash-teori-konspirasi-da-20261020",
+    "title": "Skandal AI MiniMax M3.1 Flash: Teori Konspirasi dan Dugaan 'Pencurian' Query Evaluasi yang Menggemparkan Industri",
+    "description": "Industri kecerdasan buatan diguncang oleh teori konspirasi peledak yang menuduh model MiniMax M3.1 Flash asal Tiongkok dengan sengaja 'menyadap' query evaluasi Artificial Analysis demi mendongkrak skor performa. Skandal ini memicu perdebatan sengit seputar integritas benchmark AI global, etika pengujian model bahasa besar, dan transparansi penyedia LLM.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Mahir",
+    "pubDate": "2026-10-20T06:33:32.681Z",
+    "updatedDate": "2026-10-20T06:33:32.681Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "MiniMax M3.1 Flash",
+      "Artificial Analysis",
+      "AI Benchmark Scandal",
+      "Large Language Models",
+      "AI Ethics"
+    ],
+    "en": {
+      "title": "The MiniMax M3.1 Flash AI Scandal: Conspiracy Theories and Allegations of Evaluation Query 'Sniping' Rock the Tech Industry",
+      "description": "The artificial intelligence industry has been shaken by an explosive conspiracy theory alleging that China's MiniMax M3.1 Flash language model deliberately 'sniped' Artificial Analysis evaluation queries to artificially inflate its benchmark scores. This scandal has ignited intense debates surrounding the integrity of global AI benchmarks, LLM evaluation ethics, and provider transparency."
+    }
+  },
+  {
     "slug": "manajer-xbox-akui-pemanfaatan-ai-untuk-bangun-ga-20261020",
     "title": "Manajer Xbox Akui Pemanfaatan AI untuk Bangun Game Utuh dalam 3 Jam: Era Baru Pengembangan Game Telah Dimulai?",
     "description": "Industri game global dikejutkan oleh pengakuan seorang manajer Xbox bahwa teknologi kecerdasan buatan (AI) kini mampu merancang dan mengeksekusi pembangunan game fungsional hanya dalam waktu 3 jam. Terobosan radikal ini memicu perdebatan sengit di kalangan pengembang profesional mengenai masa depan kreativitas manusia versus efisiensi otomasi algoritmik.",
