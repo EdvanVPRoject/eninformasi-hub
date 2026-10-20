@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "manajer-xbox-akui-pemanfaatan-ai-untuk-bangun-ga-20261020",
+    "title": "Manajer Xbox Akui Pemanfaatan AI untuk Bangun Game Utuh dalam 3 Jam: Era Baru Pengembangan Game Telah Dimulai?",
+    "description": "Industri game global dikejutkan oleh pengakuan seorang manajer Xbox bahwa teknologi kecerdasan buatan (AI) kini mampu merancang dan mengeksekusi pembangunan game fungsional hanya dalam waktu 3 jam. Terobosan radikal ini memicu perdebatan sengit di kalangan pengembang profesional mengenai masa depan kreativitas manusia versus efisiensi otomasi algoritmik.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-20T00:36:23.698Z",
+    "updatedDate": "2026-10-20T00:36:23.698Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Xbox",
+      "Artificial Intelligence",
+      "Game Development",
+      "AI Agents",
+      "Future of Gaming"
+    ],
+    "en": {
+      "title": "Xbox Manager Admits AI Use to Build Complete Game in 3 Hours: A New Paradigm for Game Development?",
+      "description": "The global gaming industry has been jolted by an Xbox manager's revelation that generative artificial intelligence can now design and execute a fully functional game in just three hours. This radical breakthrough has ignited fierce debates among professional developers regarding the future of human creativity versus algorithmic automation."
+    }
+  },
+  {
     "slug": "kecerdasan-buatan-claude-code-berhasil-ungkap-pe-20261019",
     "title": "Kecerdasan Buatan Claude Code Berhasil Ungkap Penambang Kripto Tersembunyi di Mac Developer yang Overheat",
     "description": "Sebuah insiden keamanan siber mengejutkan dunia pengembang ketika agen AI Claude Code mendeteksi proses skrip penambangan kripto tersembunyi yang menyebabkan perangkat MacBook developer mengalami overheat ekstrem. Kasus ini menandai tonggak sejarah baru di mana agen otonom berbasis AI berperan langsung sebagai garda terdepan mitigasi ancaman keamanan sistem operasi macOS.",
