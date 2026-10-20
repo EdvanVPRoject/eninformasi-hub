@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "revolusi-performa-gaming-gamer-oblivion-manfaatk-20261020",
+    "title": "Revolusi Performa Gaming: Gamer Oblivion Manfaatkan Claude AI untuk Dongkrak FPS hingga 48% dan Pangkas Stuttering 90%",
+    "description": "Sebuah terobosan luar biasa dicatatkan oleh komunitas modding game klasik di mana integrasi Claude AI berhasil mendongkrak frame rate gim Oblivion hingga 48 persen sekaligus mereduksi stuttering sebesar 90 persen. Fenomena ini membuka era baru optimasi perangkat lunak berbasis kecerdasan buatan untuk game-game berat era masa lalu maupun masa depan.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Mahir",
+    "pubDate": "2026-10-20T12:34:45.813Z",
+    "updatedDate": "2026-10-20T12:34:45.813Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Claude AI",
+      "Oblivion",
+      "Gaming Performance",
+      "AI Optimization",
+      "Hardware Stuttering"
+    ],
+    "en": {
+      "title": "Gaming Performance Revolution: Oblivion Gamer Uses Claude AI to Boost Average FPS by 48% and Slash Stuttering by 90%",
+      "description": "In a groundbreaking feat for retro gaming modding, a player successfully integrated Claude AI to optimize The Elder Scrolls IV: Oblivion, achieving a massive 48 percent average FPS boost and a 90 percent reduction in stuttering. This milestone heralds a new era of AI-driven software optimization for legacy and modern titles alike."
+    }
+  },
+  {
     "slug": "skandal-ai-minimax-m31-flash-teori-konspirasi-da-20261020",
     "title": "Skandal AI MiniMax M3.1 Flash: Teori Konspirasi dan Dugaan 'Pencurian' Query Evaluasi yang Menggemparkan Industri",
     "description": "Industri kecerdasan buatan diguncang oleh teori konspirasi peledak yang menuduh model MiniMax M3.1 Flash asal Tiongkok dengan sengaja 'menyadap' query evaluasi Artificial Analysis demi mendongkrak skor performa. Skandal ini memicu perdebatan sengit seputar integritas benchmark AI global, etika pengujian model bahasa besar, dan transparansi penyedia LLM.",
