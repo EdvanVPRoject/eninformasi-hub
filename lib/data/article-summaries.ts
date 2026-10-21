@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "revolusi-handheld-pc-setup-steam-machine-seharga-20261021",
+    "title": "Revolusi Handheld PC: Setup Steam Machine Seharga $1,050 Sukses Pensiunkan Desktop RTX 5090",
+    "description": "Seorang pengguna mengejutkan komunitas hardware setelah membuktikan bahwa rig Steam Machine rakitan seharga $1,050 mampu sepenuhnya menggantikan desktop high-end ber-GPU RTX 5090 miliknya selama dua bulan penuh pengujian intensif. Fenomena ini menyoroti pergeseran masif efisiensi komputasi dan optimasi ekosistem Linux/SteamOS yang semakin mengancam dominasi desktop tradisional.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-21T06:34:49.519Z",
+    "updatedDate": "2026-10-21T06:34:49.519Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Steam Machine",
+      "RTX 5090",
+      "Handheld PC",
+      "SteamOS",
+      "Hardware PC"
+    ],
+    "en": {
+      "title": "Handheld PC Revolution: $1,050 Steam Machine Successfully Retires RTX 5090 Desktop",
+      "description": "A hardware enthusiast has stunned the tech community by proving that a custom-built $1,050 Steam Machine completely replaced their high-end RTX 5090 desktop rig for two consecutive months of intense daily use. This phenomenon highlights a massive shift in computing efficiency and Linux/SteamOS ecosystem optimization that increasingly challenges traditional desktop dominance."
+    }
+  },
+  {
     "slug": "amd-bawa-fsr-41-ke-xbox-series-xs-dan-radeon-rx--20261021",
     "title": "AMD Bawa FSR 4.1 ke Xbox Series X/S dan Radeon RX 6000, Jawab Dominasi PSSR Sony",
     "description": "AMD secara resmi memperluas jangkauan teknologi Super Resolution terbarunya, FSR 4.1, ke konsol Xbox Series X dan S serta kartu grafis generasi sebelumnya seperti Radeon RX 6000. Langkah strategis ini tidak hanya memperpanjang usia perangkat keras lama, tetapi juga menjadi jawaban telak bagi teknologi PSSR milik PlayStation di ranah konsol.",
