@@ -116,8 +116,8 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 py-8">
           
-          <aside className="lg:col-span-3">
-            <div className="pr-1 pb-6">
+          <aside className="lg:col-span-3 lg:self-start lg:sticky lg:top-20">
+            <div className="pr-1 pb-6 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
               <SidebarNav currentCategory={article.category} />
             </div>
           </aside>
@@ -331,8 +331,8 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
             </div>
           </main>
 
-          <aside className="hidden lg:block lg:col-span-3">
-            <div className="space-y-5 pr-1 pb-6">
+          <aside className="hidden lg:block lg:col-span-3 lg:self-start lg:sticky lg:top-20">
+            <div className="space-y-5 pr-1 pb-6 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
               <div className="p-3.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] space-y-2">
                 <div className="flex items-center justify-between text-xs font-mono">
                   <span className="text-[var(--text-muted)] flex items-center gap-1.5">

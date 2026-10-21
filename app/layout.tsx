@@ -76,8 +76,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id" className={`dark ${inter.variable} ${geistMono.variable} overflow-x-hidden`}>
-      <body className="font-sans antialiased selection:bg-emerald-500/20 selection:text-emerald-400 overflow-x-hidden min-h-screen">
+    <html lang="id" className={`dark ${inter.variable} ${geistMono.variable} overflow-x-clip`}>
+      <body className="font-sans antialiased selection:bg-emerald-500/20 selection:text-emerald-400 overflow-x-clip min-h-screen">
         <LayoutShell>{children}</LayoutShell>
       </body>
     </html>

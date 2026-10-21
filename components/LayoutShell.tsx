@@ -25,10 +25,10 @@ export default function LayoutShell({ children }: { children: React.ReactNode })
 
   return (
     <LanguageProvider>
-      <div className="min-h-screen flex flex-col bg-[var(--bg-main)] text-[var(--text-main)] transition-colors duration-200 overflow-x-hidden w-full max-w-full">
+      <div className="min-h-screen flex flex-col bg-[var(--bg-main)] text-[var(--text-main)] transition-colors duration-200 w-full max-w-full">
         <Navbar onOpenSearch={() => setIsSearchOpen(true)} />
         <MobileDesktopTip />
-        <main className="flex-1 pb-24 sm:pb-0 overflow-x-hidden w-full max-w-full">{children}</main>
+        <main className="flex-1 pb-24 sm:pb-0 w-full max-w-full">{children}</main>
         <Footer />
         <CommandSearch isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
         <MobileBottomNav onOpenSearch={() => setIsSearchOpen(true)} />

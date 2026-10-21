@@ -147,6 +147,20 @@ function SidebarNavInner({
           {lang === 'en' ? 'Open Tools Hub →' : 'Buka Tools Hub →'}
         </Link>
       </div>
+
+      {/* Persistent Mini Footer in Sticky Sidebar */}
+      <div className="pt-2 px-1 text-[11px] font-mono text-zinc-500 space-y-1">
+        <div>© 2026 <strong>EnInformasi.hub</strong></div>
+        <div className="flex items-center gap-2 flex-wrap text-[10px] text-[var(--text-muted)]">
+          <Link href="/about" className="hover:text-emerald-400 transition-colors">{lang === 'en' ? 'About' : 'Tentang'}</Link>
+          <span>•</span>
+          <Link href="/privacy-policy" className="hover:text-emerald-400 transition-colors">{lang === 'en' ? 'Privacy' : 'Privasi'}</Link>
+          <span>•</span>
+          <Link href="/terms" className="hover:text-emerald-400 transition-colors">{lang === 'en' ? 'Terms' : 'Syarat'}</Link>
+          <span>•</span>
+          <Link href="/contact" className="hover:text-emerald-400 transition-colors">{lang === 'en' ? 'Contact' : 'Kontak'}</Link>
+        </div>
+      </div>
     </div>
   );
 
