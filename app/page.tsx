@@ -244,7 +244,7 @@ function HomeContent() {
             <div className="flex items-center gap-2 p-1.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] text-xs font-mono shadow-sm">
               <button
                 onClick={() => handleSelectType('all')}
-                className={`px-4 py-2 rounded-lg font-semibold transition-all whitespace-nowrap flex items-center gap-2 ${
+                className={`px-4 py-2 rounded-lg font-semibold transition-all duration-200 ease-out active:scale-95 whitespace-nowrap flex items-center gap-2 ${
                   selectedType === 'all'
                     ? 'bg-emerald-500 text-zinc-950 shadow-sm'
                     : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-main)]'
@@ -259,7 +259,7 @@ function HomeContent() {
 
               <button
                 onClick={() => handleSelectType('tutorial')}
-                className={`px-4 py-2 rounded-lg font-semibold transition-all whitespace-nowrap flex items-center gap-2 ${
+                className={`px-4 py-2 rounded-lg font-semibold transition-all duration-200 ease-out active:scale-95 whitespace-nowrap flex items-center gap-2 ${
                   selectedType === 'tutorial'
                     ? 'bg-emerald-500 text-zinc-950 shadow-sm'
                     : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-main)]'
@@ -274,7 +274,7 @@ function HomeContent() {
 
               <button
                 onClick={() => handleSelectType('artikel')}
-                className={`px-4 py-2 rounded-lg font-semibold transition-all whitespace-nowrap flex items-center gap-2 ${
+                className={`px-4 py-2 rounded-lg font-semibold transition-all duration-200 ease-out active:scale-95 whitespace-nowrap flex items-center gap-2 ${
                   selectedType === 'artikel'
                     ? 'bg-emerald-500 text-zinc-950 shadow-sm'
                     : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-main)]'
@@ -353,7 +353,7 @@ function HomeContent() {
                   return (
                     <article
                       key={article.slug}
-                      className="group flex flex-col justify-between p-5 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 hover:shadow-lg active:scale-[0.98] transition-all duration-200"
+                      className="group flex flex-col justify-between p-5 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 card-smooth-hover active:scale-[0.99]"
                     >
                       <div className="space-y-3">
                         {/* Meta Pill bar */}

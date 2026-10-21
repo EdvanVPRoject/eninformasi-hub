@@ -84,7 +84,7 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
       onClick={onClose}
     >
       <div 
-        className="w-full max-w-2xl rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] shadow-2xl overflow-hidden text-[var(--text-main)] transition-all cursor-default"
+        className="w-full max-w-2xl rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] shadow-2xl overflow-hidden text-[var(--text-main)] transition-all animate-in zoom-in-95 duration-200 cursor-default"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Search Input Bar */}

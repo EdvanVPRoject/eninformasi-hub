@@ -159,7 +159,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                   <button
                     type="button"
                     onClick={handleCopyLink}
-                    className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[11px] font-mono text-[var(--text-muted)] hover:text-emerald-400 hover:border-emerald-500/40 transition-all shadow-sm"
+                    className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[11px] font-mono text-[var(--text-muted)] hover:text-emerald-400 hover:border-emerald-500/40 active:scale-95 transition-all duration-200 ease-out shadow-sm"
                   >
                     {copiedUrl ? (
                       <>
@@ -178,7 +178,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                     <button
                       type="button"
                       onClick={() => setLang('id')}
-                      className={`px-2 py-1 rounded-md transition-all flex items-center gap-1 ${
+                      className={`px-2 py-1 rounded-md transition-all duration-200 ease-out active:scale-95 flex items-center gap-1 ${
                         lang === 'id'
                           ? 'bg-emerald-500 text-zinc-950 shadow-sm font-black'
                           : 'text-[var(--text-muted)] hover:text-[var(--text-main)]'
@@ -190,7 +190,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                     <button
                       type="button"
                       onClick={() => setLang('en')}
-                      className={`px-2 py-1 rounded-md transition-all flex items-center gap-1 ${
+                      className={`px-2 py-1 rounded-md transition-all duration-200 ease-out active:scale-95 flex items-center gap-1 ${
                         lang === 'en'
                           ? 'bg-emerald-500 text-zinc-950 shadow-sm font-black'
                           : 'text-[var(--text-muted)] hover:text-[var(--text-main)]'
@@ -252,7 +252,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                   {displaySteps.map((step, idx) => (
                     <div
                       key={step.id || idx}
-                      className="p-2.5 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)]/70 flex items-start gap-2.5 text-xs text-[var(--text-muted)]"
+                      className="p-2.5 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)]/70 flex items-start gap-2.5 text-xs text-[var(--text-muted)] hover:border-emerald-500/40 hover:-translate-y-0.5 transition-all duration-200 ease-out"
                     >
                       <span className="w-5 h-5 rounded-full bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-mono font-bold text-[10px] shrink-0 mt-0.5">
                         {idx + 1}
@@ -299,7 +299,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                 <Link
                   key={tag}
                   href={`/?q=${encodeURIComponent(tag)}`}
-                  className="px-2.5 py-1 text-xs font-mono rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] hover:border-emerald-500/40 hover:text-emerald-400 transition-colors"
+                  className="px-2.5 py-1 text-xs font-mono rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] hover:border-emerald-500/40 hover:text-emerald-400 hover:-translate-y-0.5 active:scale-95 transition-all duration-200 ease-out"
                 >
                   #{tag}
                 </Link>
@@ -311,7 +311,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
             <div className="pt-8 flex flex-wrap items-center justify-between gap-4">
               <Link
                 href={backUrl}
-                className="inline-flex items-center gap-2 px-4 py-2 text-xs font-mono font-medium rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-main)] hover:border-emerald-500/50 transition-all"
+                className="inline-flex items-center gap-2 px-4 py-2 text-xs font-mono font-medium rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-main)] hover:border-emerald-500/50 hover:-translate-y-0.5 active:scale-95 transition-all duration-200 ease-out"
               >
                 <ArrowLeft className="w-3.5 h-3.5" />
                 <span>
@@ -323,7 +323,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
 
               <Link
                 href="/tools"
-                className="inline-flex items-center gap-2 px-4 py-2 text-xs font-mono font-semibold rounded-lg bg-emerald-500 text-zinc-950 hover:bg-emerald-400 transition-all shadow-sm"
+                className="inline-flex items-center gap-2 px-4 py-2 text-xs font-mono font-semibold rounded-lg bg-emerald-500 text-zinc-950 hover:bg-emerald-400 hover:-translate-y-0.5 active:scale-95 transition-all duration-200 ease-out shadow-sm"
               >
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>{lang === 'en' ? 'Download Scripts & Tools' : 'Unduh Script & Tools'}</span>
@@ -370,7 +370,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
               {displaySteps && displaySteps.length > 0 && (
                 <a
                   href="#praktik-checklist"
-                  className="block p-3.5 rounded-xl bg-emerald-500/5 border border-emerald-500/20 hover:border-emerald-500/50 transition-all space-y-1"
+                  className="block p-3.5 rounded-xl bg-emerald-500/5 border border-emerald-500/20 hover:border-emerald-500/50 hover:-translate-y-0.5 active:scale-[0.99] transition-all duration-200 ease-out space-y-1"
                 >
                   <div className="text-xs font-mono font-bold text-emerald-400 flex items-center justify-between">
                     <span>✅ {lang === 'en' ? 'Practical Checklist' : 'Checklist Langkah Praktis'}</span>
@@ -384,7 +384,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                 </a>
               )}
 
-              <div className="p-4 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] space-y-3">
+              <div className="p-4 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] space-y-3 card-smooth-hover">
                 <div className="inline-flex items-center gap-1.5 px-2 py-0.5 text-[10px] font-mono rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">
                   <ShieldCheck className="w-3.5 h-3.5" />
                   <span>{lang === 'en' ? 'Recommended Resource' : 'Rekomendasi Tools & Gear'}</span>
@@ -401,7 +401,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                 </p>
                 <Link
                   href="/tools"
-                  className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-mono font-bold rounded-lg bg-emerald-500 text-zinc-950 hover:bg-emerald-400 transition-all"
+                  className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-mono font-bold rounded-lg bg-emerald-500 text-zinc-950 hover:bg-emerald-400 hover:-translate-y-0.5 active:scale-95 transition-all duration-200 ease-out shadow-sm"
                 >
                   <span>{lang === 'en' ? 'Explore Tools Hub' : 'Cek Tools & Rekomendasi'}</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -417,7 +417,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
         <button
           onClick={scrollToTop}
           aria-label="Scroll to top"
-          className="fixed bottom-20 right-4 sm:bottom-6 sm:right-6 z-40 p-3 rounded-xl bg-emerald-500 text-zinc-950 shadow-lg hover:bg-emerald-400 active:scale-90 transition-all"
+          className="fixed bottom-20 right-4 sm:bottom-6 sm:right-6 z-40 p-3 rounded-xl bg-emerald-500 text-zinc-950 shadow-lg hover:bg-emerald-400 hover:-translate-y-0.5 active:scale-90 transition-all duration-200 ease-out animate-in fade-in zoom-in-90"
         >
           <ArrowUp className="w-4 h-4 stroke-[2.5]" />
         </button>

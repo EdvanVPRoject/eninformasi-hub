@@ -67,10 +67,10 @@ export default function FeedbackWidget({ slug }: FeedbackWidgetProps) {
         <button
           onClick={() => handleFeedback('yes')}
           disabled={feedback !== null}
-          className={`px-3.5 py-1.5 text-xs font-medium rounded-lg transition-all flex items-center gap-1.5 ${
+          className={`px-3.5 py-1.5 text-xs font-medium rounded-lg transition-all duration-200 ease-out active:scale-95 flex items-center gap-1.5 ${
             feedback === 'yes'
               ? 'bg-emerald-500 text-zinc-950 font-bold'
-              : 'bg-emerald-500/10 text-emerald-500 hover:bg-emerald-500/20 border border-emerald-500/20'
+              : 'bg-emerald-500/10 text-emerald-500 hover:bg-emerald-500/20 hover:-translate-y-0.5 border border-emerald-500/20'
           }`}
         >
           <ThumbsUp className="w-3.5 h-3.5" />
@@ -80,10 +80,10 @@ export default function FeedbackWidget({ slug }: FeedbackWidgetProps) {
         <button
           onClick={() => handleFeedback('no')}
           disabled={feedback !== null}
-          className={`px-3.5 py-1.5 text-xs font-medium rounded-lg transition-all flex items-center gap-1.5 ${
+          className={`px-3.5 py-1.5 text-xs font-medium rounded-lg transition-all duration-200 ease-out active:scale-95 flex items-center gap-1.5 ${
             feedback === 'no'
               ? 'bg-amber-500 text-zinc-950 font-bold'
-              : 'bg-zinc-500/10 text-[var(--text-muted)] hover:bg-zinc-500/20 border border-[var(--border-color)]'
+              : 'bg-zinc-500/10 text-[var(--text-muted)] hover:bg-zinc-500/20 hover:-translate-y-0.5 border border-[var(--border-color)]'
           }`}
         >
           <AlertCircle className="w-3.5 h-3.5" />

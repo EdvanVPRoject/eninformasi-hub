@@ -102,20 +102,20 @@ function SidebarNavInner({
                 key={cat.id}
                 type="button"
                 onClick={() => handleCategoryClick(cat.id)}
-                className={`group w-full flex items-center justify-between px-3 py-2 rounded-lg text-left transition-all duration-150 ${
+                className={`group w-full flex items-center justify-between px-3 py-2 rounded-lg text-left transition-all duration-200 ease-out active:scale-[0.99] ${
                   isActive
-                    ? 'bg-emerald-500/10 text-emerald-500 font-semibold border border-emerald-500/30 shadow-sm'
-                    : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--card-bg)] border border-transparent hover:border-[var(--border-color)]'
+                    ? 'bg-emerald-500/10 text-emerald-500 font-semibold border border-emerald-500/30 shadow-sm translate-x-1'
+                    : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--card-bg)] border border-transparent hover:border-[var(--border-color)] hover:translate-x-0.5'
                 }`}
               >
                 <span className="flex items-center gap-2.5 truncate">
                   {getCategoryIcon(cat.id)}
-                  <span className="truncate group-hover:translate-x-0.5 transition-transform">
+                  <span className="truncate group-hover:text-emerald-400 transition-colors duration-200">
                     {displayLabel}
                   </span>
                 </span>
                 <span
-                  className={`text-xs font-mono px-1.5 py-0.5 rounded transition-colors ${
+                  className={`text-xs font-mono px-1.5 py-0.5 rounded transition-all duration-200 ${
                     isActive
                       ? 'bg-emerald-500/20 text-emerald-400 font-bold'
                       : 'bg-zinc-500/10 text-[var(--text-muted)] group-hover:text-[var(--text-main)]'
@@ -130,7 +130,7 @@ function SidebarNavInner({
       </div>
 
       {/* Free Tools Banner */}
-      <div className="p-3.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] space-y-2.5 shadow-sm">
+      <div className="p-3.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] space-y-2.5 shadow-sm card-smooth-hover">
         <div className="flex items-center gap-2 text-xs font-semibold text-emerald-500">
           <Sparkles className="w-4 h-4" />
           <span>{lang === 'en' ? 'Free Downloads' : 'Gratis Download'}</span>

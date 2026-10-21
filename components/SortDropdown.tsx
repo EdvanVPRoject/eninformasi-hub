@@ -104,7 +104,7 @@ export default function SortDropdown({ value, onChange, className = '' }: SortDr
         onClick={() => setIsOpen(!isOpen)}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
-        className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-mono transition-all duration-150 border outline-none cursor-pointer select-none ${
+        className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-mono transition-all duration-200 ease-out active:scale-[0.98] border outline-none cursor-pointer select-none ${
           isOpen
             ? 'bg-[var(--card-bg)] border-emerald-500/60 ring-2 ring-emerald-500/20 text-[var(--text-main)] shadow-md'
             : 'bg-[var(--bg-main)] hover:bg-[var(--card-bg)] border-[var(--border-color)] text-[var(--text-main)] hover:border-zinc-700 shadow-sm'
@@ -147,7 +147,7 @@ export default function SortDropdown({ value, onChange, className = '' }: SortDr
                     onChange(opt.value);
                     setIsOpen(false);
                   }}
-                  className={`w-full flex items-center justify-between px-2.5 py-2 rounded-lg text-xs font-mono transition-all text-left cursor-pointer ${
+                  className={`w-full flex items-center justify-between px-2.5 py-2 rounded-lg text-xs font-mono transition-all duration-150 ease-out active:scale-[0.99] text-left cursor-pointer ${
                     isSelected
                       ? 'bg-emerald-500/15 text-emerald-400 font-semibold border border-emerald-500/20'
                       : 'text-[var(--text-main)] hover:bg-[var(--bg-main)] hover:text-emerald-400 border border-transparent'

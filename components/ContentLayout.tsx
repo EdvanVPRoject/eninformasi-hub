@@ -53,7 +53,7 @@ export default function ContentLayout({
                 <>
                   <button
                     onClick={() => onSelectType('all')}
-                    className={`px-4 py-2 rounded-lg font-semibold transition-all whitespace-nowrap flex items-center gap-2 ${
+                    className={`px-4 py-2 rounded-lg font-semibold transition-all duration-200 ease-out active:scale-95 whitespace-nowrap flex items-center gap-2 ${
                       activeType === 'all'
                         ? 'bg-emerald-500 text-zinc-950 shadow-sm'
                         : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-main)]'
@@ -66,7 +66,7 @@ export default function ContentLayout({
 
                   <button
                     onClick={() => onSelectType('tutorial')}
-                    className={`px-4 py-2 rounded-lg font-semibold transition-all whitespace-nowrap flex items-center gap-2 ${
+                    className={`px-4 py-2 rounded-lg font-semibold transition-all duration-200 ease-out active:scale-95 whitespace-nowrap flex items-center gap-2 ${
                       activeType === 'tutorial'
                         ? 'bg-emerald-500 text-zinc-950 shadow-sm'
                         : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-main)]'
@@ -81,7 +81,7 @@ export default function ContentLayout({
 
                   <button
                     onClick={() => onSelectType('artikel')}
-                    className={`px-4 py-2 rounded-lg font-semibold transition-all whitespace-nowrap flex items-center gap-2 ${
+                    className={`px-4 py-2 rounded-lg font-semibold transition-all duration-200 ease-out active:scale-95 whitespace-nowrap flex items-center gap-2 ${
                       activeType === 'artikel'
                         ? 'bg-emerald-500 text-zinc-950 shadow-sm'
                         : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-main)]'

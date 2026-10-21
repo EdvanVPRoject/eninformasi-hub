@@ -97,7 +97,7 @@ export default function StepTracker({ steps, slug }: StepTrackerProps) {
             <div
               key={step.id}
               onClick={() => toggleStep(step.id)}
-              className={`p-2.5 rounded-lg flex items-start gap-3 cursor-pointer text-xs transition-all ${
+              className={`p-2.5 rounded-lg flex items-start gap-3 cursor-pointer text-xs transition-all duration-200 ease-out active:scale-[0.99] hover:-translate-y-0.5 ${
                 isDone
                   ? 'bg-emerald-500/5 text-[var(--text-muted)] line-through border border-emerald-500/20'
                   : 'bg-[var(--bg-main)] hover:bg-zinc-500/5 text-[var(--text-main)] border border-[var(--border-color)]'

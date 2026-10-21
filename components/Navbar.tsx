@@ -110,10 +110,10 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
           <button
             type="button"
             onClick={onOpenSearch}
-            className="w-full flex items-center justify-between px-3 py-1.5 text-xs sm:text-sm rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] hover:border-emerald-500/50 hover:text-[var(--text-main)] transition-all shadow-sm group"
+            className="w-full flex items-center justify-between px-3 py-1.5 text-xs sm:text-sm rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] hover:border-emerald-500/50 hover:text-[var(--text-main)] active:scale-[0.99] transition-all duration-200 ease-out shadow-sm group"
           >
             <span className="flex items-center gap-2 truncate">
-              <Search className="w-4 h-4 group-hover:text-emerald-500 transition-colors shrink-0" />
+              <Search className="w-4 h-4 group-hover:text-emerald-500 transition-colors duration-150 shrink-0" />
               <span className="truncate">
                 {lang === 'en' ? `Search ${totalArticleCount} items...` : `Cari ${totalArticleCount} konten...`}
               </span>
@@ -129,7 +129,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
           <button
             type="button"
             onClick={onOpenSearch}
-            className="sm:hidden p-2 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] hover:text-emerald-400"
+            className="sm:hidden p-2 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] hover:text-emerald-400 active:scale-95 transition-all duration-200 ease-out"
             title="Cari"
           >
             <Search className="w-4 h-4" />
@@ -139,7 +139,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
           <button
             type="button"
             onClick={toggleLang}
-            className="sm:hidden px-2 py-1.5 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[11px] font-mono font-bold text-emerald-400"
+            className="sm:hidden px-2 py-1.5 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[11px] font-mono font-bold text-emerald-400 active:scale-95 transition-all duration-200 ease-out"
             title="Ganti Bahasa / Switch Language"
           >
             <span>{lang === 'id' ? '🇮🇩 ID' : '🇬🇧 EN'}</span>
@@ -150,7 +150,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
             <button
               type="button"
               onClick={() => setLang('id')}
-              className={`px-2 py-1 rounded-md transition-all flex items-center gap-1 ${
+              className={`px-2 py-1 rounded-md transition-all duration-200 ease-out active:scale-95 flex items-center gap-1 ${
                 lang === 'id'
                   ? 'bg-emerald-500 text-zinc-950 shadow-sm font-black'
                   : 'text-[var(--text-muted)] hover:text-[var(--text-main)]'
@@ -162,7 +162,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
             <button
               type="button"
               onClick={() => setLang('en')}
-              className={`px-2 py-1 rounded-md transition-all flex items-center gap-1 ${
+              className={`px-2 py-1 rounded-md transition-all duration-200 ease-out active:scale-95 flex items-center gap-1 ${
                 lang === 'en'
                   ? 'bg-emerald-500 text-zinc-950 shadow-sm font-black'
                   : 'text-[var(--text-muted)] hover:text-[var(--text-main)]'
@@ -175,7 +175,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
 
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] hover:text-[var(--text-main)] hover:border-emerald-500/40 transition-all"
+            className="p-2 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] hover:text-[var(--text-main)] hover:border-emerald-500/40 active:scale-95 transition-all duration-200 ease-out"
             title={t('nav_toggle_theme')}
           >
             {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-zinc-700" />}

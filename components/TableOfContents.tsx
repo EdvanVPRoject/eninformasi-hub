@@ -103,10 +103,10 @@ export default function TableOfContents({ items }: TableOfContentsProps) {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`w-full text-left px-3 py-1.5 rounded-lg text-xs leading-relaxed transition-all block ${
+                className={`w-full text-left px-3 py-1.5 rounded-lg text-xs leading-relaxed transition-all duration-200 ease-out active:scale-[0.99] block ${
                   isActive
-                    ? 'text-emerald-500 font-semibold bg-emerald-500/10 border-l-2 border-emerald-500 pl-2.5 shadow-sm'
-                    : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--card-bg)]'
+                    ? 'text-emerald-500 font-semibold bg-emerald-500/10 border-l-2 border-emerald-500 pl-2.5 shadow-sm translate-x-1'
+                    : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--card-bg)] hover:translate-x-0.5'
                 }`}
               >
                 {item.title}
