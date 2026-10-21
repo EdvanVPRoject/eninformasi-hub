@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "amd-bawa-fsr-41-ke-xbox-series-xs-dan-radeon-rx--20261021",
+    "title": "AMD Bawa FSR 4.1 ke Xbox Series X/S dan Radeon RX 6000, Jawab Dominasi PSSR Sony",
+    "description": "AMD secara resmi memperluas jangkauan teknologi Super Resolution terbarunya, FSR 4.1, ke konsol Xbox Series X dan S serta kartu grafis generasi sebelumnya seperti Radeon RX 6000. Langkah strategis ini tidak hanya memperpanjang usia perangkat keras lama, tetapi juga menjadi jawaban telak bagi teknologi PSSR milik PlayStation di ranah konsol.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-21T00:34:40.124Z",
+    "updatedDate": "2026-10-21T00:34:40.124Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "AMD FSR 4.1",
+      "Xbox Series X",
+      "Xbox Series S",
+      "Radeon RX 6000",
+      "PSSR"
+    ],
+    "en": {
+      "title": "AMD Brings FSR 4.1 to Xbox Series X/S and Radeon RX 6000, Countering Sony's PSSR Dominance",
+      "description": "AMD has officially expanded its latest Super Resolution technology, FSR 4.1, to Xbox Series X and S consoles as well as previous-generation Radeon RX 6000 graphics cards. This strategic move extends legacy hardware lifespans while providing a direct answer to Sony's PSSR technology in the console market."
+    }
+  },
+  {
     "slug": "revolusi-performa-gaming-gamer-oblivion-manfaatk-20261020",
     "title": "Revolusi Performa Gaming: Gamer Oblivion Manfaatkan Claude AI untuk Dongkrak FPS hingga 48% dan Pangkas Stuttering 90%",
     "description": "Sebuah terobosan luar biasa dicatatkan oleh komunitas modding game klasik di mana integrasi Claude AI berhasil mendongkrak frame rate gim Oblivion hingga 48 persen sekaligus mereduksi stuttering sebesar 90 persen. Fenomena ini membuka era baru optimasi perangkat lunak berbasis kecerdasan buatan untuk game-game berat era masa lalu maupun masa depan.",
