@@ -59,7 +59,7 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
 
                 // Defensive check: if heading is merged with paragraph text
                 if (rawH3.length > 85 && (/\.\s+[A-Z]/.test(rawH3) || /:\s+[A-Z]/.test(rawH3) || /[a-z][\.\?!][A-Z]/.test(rawH3))) {
-                  const match = rawH3.match(/^((?:\d+[\.\)]\s*)?[^\.\?\!]{5,75}?(?:Context|Breakdown|Landscape|Sentiment|Takeaways|Trajectory|Overview|Peristiwa|Mendalam|Pasar|Industri|Konsumen|Depan|[A-Za-z0-9\s-]{5,60}))(?:[\.\?\!](?:\s+|$)|(?=[A-Z][a-z]{3,}))(.*)/s);
+                  const match = rawH3.match(/^((?:\d+[\.\)]\s*)?[^\.\?\!]{5,75}?(?:Context|Breakdown|Landscape|Sentiment|Takeaways|Trajectory|Overview|Peristiwa|Mendalam|Pasar|Industri|Konsumen|Depan|[A-Za-z0-9\s-]{5,60}))(?:[\.\?\!](?:\s+|$)|(?=[A-Z][a-z]{3,}))([\s\S]*)/);
                   if (match) {
                     headingText = match[1].trim();
                     extraParagraph = match[2]?.trim() || null;

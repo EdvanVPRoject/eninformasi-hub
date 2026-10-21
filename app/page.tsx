@@ -13,7 +13,11 @@ import {
   ChevronRight, 
   CheckCircle2,
   ArrowUpDown,
-  ChevronDown
+  ChevronDown,
+  TrendingUp,
+  X,
+  Wrench,
+  ArrowRight
 } from 'lucide-react';
 import { 
   articleSummaries, 
