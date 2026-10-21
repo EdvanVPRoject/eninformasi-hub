@@ -95,7 +95,7 @@ function ArtikelContent() {
   }, [artikels, selectedCategory, searchQuery, sortBy, lang]);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
       {/* Header Banner */}
       <div className="relative mb-10 p-6 sm:p-10 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] overflow-hidden shadow-sm">
         <div className="max-w-3xl space-y-3">

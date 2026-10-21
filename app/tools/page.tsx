@@ -157,7 +157,7 @@ export default function ToolsPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+    <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
       <div className="max-w-3xl mb-12 space-y-3">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-mono rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
           <Github className="w-3.5 h-3.5 text-emerald-400" />
