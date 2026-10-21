@@ -107,15 +107,15 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
     <div className="min-h-screen bg-[var(--bg-main)] relative">
 
       <div className="max-w-[1880px] mx-auto px-2 sm:px-4 lg:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 xl:gap-6 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr_260px] xl:grid-cols-[290px_1fr_290px] 2xl:grid-cols-[320px_1fr_320px] gap-5 xl:gap-6 py-8">
           
-          <aside className="lg:col-span-3 xl:col-span-2 lg:self-start lg:sticky lg:top-20">
+          <aside className="hidden lg:block lg:self-start lg:sticky lg:top-20 w-full">
             <div className="pr-1 pb-6 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
               <SidebarNav currentCategory={article.category} />
             </div>
           </aside>
 
-          <main className="lg:col-span-6 xl:col-span-7 space-y-6 min-w-0">
+          <main className="space-y-6 min-w-0 w-full">
             <nav className="flex items-center gap-1.5 text-xs font-mono text-[var(--text-muted)] flex-wrap">
               <Link href="/" className="hover:text-emerald-500 transition-colors">
                 {lang === 'en' ? 'Home' : 'Beranda'}
@@ -324,7 +324,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
             </div>
           </main>
 
-          <aside className="hidden lg:block lg:col-span-3 xl:col-span-3 lg:self-start lg:sticky lg:top-20">
+          <aside className="hidden lg:block lg:self-start lg:sticky lg:top-20 w-full">
             <div className="space-y-5 pr-1 pb-6 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
               <div className="p-3.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] space-y-2">
                 <div className="flex items-center justify-between text-xs font-mono">
