@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "industri-game-sembunyikan-fakta-ai-orang-dalam-x-20261021",
+    "title": "Industri Game Sembunyikan Fakta AI? Orang Dalam Xbox Ungkap Realitas Kelam Pengembangan Game Modern",
+    "description": "Pernyataan kontroversial dari petinggi Xbox mengungkap bahwa sebagian besar pelaku industri game secara diam-diam telah memanfaatkan kecerdasan buatan dalam skala masif sambil berpura-pura menolaknya di depan publik. Isu ini memicu perdebatan sengit terkait etika, transparansi, dan masa depan tenaga kerja kreatif di tengah gelombang otomatisasi teknologi.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-21T12:35:22.519Z",
+    "updatedDate": "2026-10-21T12:35:22.519Z",
+    "readingTime": "7 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Xbox",
+      "Artificial Intelligence",
+      "Game Industry",
+      "Tech Ethics",
+      "AI Development"
+    ],
+    "en": {
+      "title": "The Gaming Industry's AI Secret: Xbox Insider Exposes Massive Hidden Adoption",
+      "description": "A shocking statement from an Xbox staffer has revealed that major game studios are secretly utilizing artificial intelligence at scale while publicly downplaying its usage. This controversy highlights deep ethical dilemmas, industry hypocrisy, and the shifting landscape of creative labor in modern game development."
+    }
+  },
+  {
     "slug": "revolusi-handheld-pc-setup-steam-machine-seharga-20261021",
     "title": "Revolusi Handheld PC: Setup Steam Machine Seharga $1,050 Sukses Pensiunkan Desktop RTX 5090",
     "description": "Seorang pengguna mengejutkan komunitas hardware setelah membuktikan bahwa rig Steam Machine rakitan seharga $1,050 mampu sepenuhnya menggantikan desktop high-end ber-GPU RTX 5090 miliknya selama dua bulan penuh pengujian intensif. Fenomena ini menyoroti pergeseran masif efisiensi komputasi dan optimasi ekosistem Linux/SteamOS yang semakin mengancam dominasi desktop tradisional.",
