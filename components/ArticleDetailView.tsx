@@ -105,10 +105,10 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
 
   return (
     <div className="min-h-screen bg-[var(--bg-main)] relative">
-      {/* Top High-Water Mark Reading Progress Bar */}
-      <div className="fixed top-16 left-0 z-40 w-full h-0.5 bg-zinc-800/40 pointer-events-none">
+      {/* Top Reading Progress Bar (Flush at topmost edge of browser, never obstructs reading text) */}
+      <div className="fixed top-0 left-0 z-50 w-full h-[2.5px] bg-zinc-800/20 pointer-events-none">
         <div
-          className="h-full bg-emerald-500 transition-all duration-300 ease-out"
+          className="h-full bg-emerald-500 transition-all duration-150 ease-out"
           style={{ width: `${maxProgress}%` }}
         />
       </div>
@@ -117,7 +117,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 py-8">
           
           <aside className="lg:col-span-3">
-            <div className="lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto pr-1 pb-6">
+            <div className="pr-1 pb-6">
               <SidebarNav currentCategory={article.category} />
             </div>
           </aside>
@@ -332,7 +332,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
           </main>
 
           <aside className="hidden lg:block lg:col-span-3">
-            <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pr-1 pb-6">
+            <div className="space-y-5 pr-1 pb-6">
               <div className="p-3.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] space-y-2">
                 <div className="flex items-center justify-between text-xs font-mono">
                   <span className="text-[var(--text-muted)] flex items-center gap-1.5">

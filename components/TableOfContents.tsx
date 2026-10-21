@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { ListOrdered } from 'lucide-react';
 import { TocItem } from '@/lib/types';
 import { useLanguage } from './LanguageContext';
@@ -13,29 +13,42 @@ export default function TableOfContents({ items }: TableOfContentsProps) {
   const [activeId, setActiveId] = useState<string>(items[0]?.id || '');
   const { lang } = useLanguage();
 
+  const getElement = useCallback((id: string) => {
+    if (!id || typeof document === 'undefined') return null;
+    return (
+      document.getElementById(id) ||
+      document.getElementById(id.replace(/^[0-9]+-/, '')) ||
+      document.querySelector(`h3[id="${id}"]`) ||
+      document.querySelector(`[id="${id}"]`)
+    );
+  }, []);
+
   useEffect(() => {
     if (!items || items.length === 0) return;
 
-    // Pastikan ID pertama aktif jika belum ada yang terpilih
-    setActiveId((prev) => prev || items[0].id);
+    // Reset ke item pertama jika belum terpilih
+    setActiveId((prev) => (items.some((it) => it.id === prev) ? prev : items[0].id));
 
     const handleScroll = () => {
-      // 1. Jika sudah mencapai dasar halaman (misal membaca sampai checklist/footer)
       const winScroll = window.scrollY || document.documentElement.scrollTop;
-      const isAtBottom = window.innerHeight + winScroll >= document.documentElement.scrollHeight - 60;
-      if (isAtBottom && items.length > 0) {
+      const isNearBottom = window.innerHeight + winScroll >= document.documentElement.scrollHeight - 100;
+
+      // 1. Jika sudah mencapai dekat bagian paling bawah artikel/halaman
+      if (isNearBottom && items.length > 0) {
         setActiveId(items[items.length - 1].id);
         return;
       }
 
-      // 2. Viewport Scrollspy: Deteksi heading yang sedang dibaca berdasarkan posisi viewport
+      // 2. Viewport Scrollspy adaptif: heading aktif begitu masuk ke area fokus baca (sekitar 30% dari atas viewport)
+      const triggerOffset = Math.min(260, Math.max(140, window.innerHeight * 0.32));
       let currentSectionId = items[0].id;
+
       for (let i = 0; i < items.length; i++) {
         const item = items[i];
-        const el = document.getElementById(item.id);
+        const el = getElement(item.id);
         if (el) {
           const rect = el.getBoundingClientRect();
-          if (rect.top <= 180) {
+          if (rect.top <= triggerOffset) {
             currentSectionId = item.id;
           }
         }
@@ -44,18 +57,29 @@ export default function TableOfContents({ items }: TableOfContentsProps) {
       setActiveId(currentSectionId);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    let ticking = false;
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
     handleScroll();
 
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [items]);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [items, getElement]);
 
   if (!items || items.length === 0) return null;
 
   const scrollToSection = (id: string) => {
-    const el = document.getElementById(id);
+    const el = getElement(id);
     if (el) {
-      const top = el.getBoundingClientRect().top + window.scrollY - 90;
+      const top = el.getBoundingClientRect().top + window.scrollY - 80;
       window.scrollTo({ top, behavior: 'smooth' });
       setActiveId(id);
     }
