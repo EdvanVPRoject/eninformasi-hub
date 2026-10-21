@@ -15,7 +15,7 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
   let h3Count = 0;
 
   return (
-    <div className="space-y-4 text-sm sm:text-base leading-relaxed text-[var(--text-main)] font-normal">
+    <div className="space-y-4 text-sm sm:text-base leading-relaxed text-[var(--text-main)] font-normal text-justify">
       {parts.map((part, index) => {
         if (!part.trim()) return null;
 
@@ -116,7 +116,7 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
                     </div>
                     {extraParagraph && (
                       <p
-                        className="leading-relaxed text-xs sm:text-sm"
+                        className="leading-relaxed text-xs sm:text-sm text-justify"
                         dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(extraParagraph) }}
                       />
                     )}
@@ -182,7 +182,7 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
               return (
                 <p
                   key={lineIdx}
-                  className="leading-relaxed text-xs sm:text-sm"
+                  className="leading-relaxed text-xs sm:text-sm text-justify"
                   dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(trimmed) }}
                 />
               );

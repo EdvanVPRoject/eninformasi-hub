@@ -121,3 +121,9 @@ body {
   background-color: transparent !important;
   box-shadow: none !important;
 }
+
+/* Clean paragraph justification */
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}

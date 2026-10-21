@@ -147,7 +147,7 @@ function HomeContent() {
   const artikelCount = artikelArticleCount;
 
   return (
-    <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    <div className="max-w-[1880px] mx-auto px-2 sm:px-4 lg:px-6 py-8 sm:py-12">
       {/* Hero Bento Header */}
       <div className="relative mb-10 p-6 sm:p-10 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] overflow-hidden shadow-sm">
         <div className="relative z-10 max-w-3xl space-y-4">
@@ -191,9 +191,9 @@ function HomeContent() {
       </div>
 
       {/* Main Grid: Sidebar Filters + Article Cards */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 xl:gap-6">
         {/* Left Column: Filter Sidebar (Sticky on Scroll) */}
-        <aside className="lg:col-span-3 lg:self-start">
+        <aside className="lg:col-span-3 xl:col-span-2 lg:self-start">
           <div className="lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto pr-1 pb-6">
             <SidebarNav
               currentCategory={selectedCategory}
@@ -204,7 +204,7 @@ function HomeContent() {
         </aside>
 
         {/* Right Column: Content Grid */}
-        <main className="lg:col-span-9 space-y-6">
+        <main className="lg:col-span-9 xl:col-span-10 space-y-6">
           {/* Mobile Dropdown for Content Type */}
           <div className="sm:hidden mb-3 space-y-1.5">
             <label htmlFor="mobile-type-select" className="flex items-center justify-between text-xs font-mono font-semibold text-[var(--text-muted)]">

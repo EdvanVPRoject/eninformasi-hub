@@ -113,16 +113,16 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
         />
       </div>
 
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 py-8">
+      <div className="max-w-[1880px] mx-auto px-2 sm:px-4 lg:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 xl:gap-6 py-8">
           
-          <aside className="lg:col-span-3 lg:self-start lg:sticky lg:top-20">
+          <aside className="lg:col-span-3 xl:col-span-2 lg:self-start lg:sticky lg:top-20">
             <div className="pr-1 pb-6 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
               <SidebarNav currentCategory={article.category} />
             </div>
           </aside>
 
-          <main className="lg:col-span-6 space-y-6 min-w-0">
+          <main className="lg:col-span-6 xl:col-span-7 space-y-6 min-w-0">
             <nav className="flex items-center gap-1.5 text-xs font-mono text-[var(--text-muted)] flex-wrap">
               <Link href="/" className="hover:text-emerald-500 transition-colors">
                 {lang === 'en' ? 'Home' : 'Beranda'}
@@ -221,7 +221,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                 </span>
               </div>
 
-              <div className="p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 text-xs sm:text-sm text-[var(--text-main)] leading-relaxed">
+              <div className="p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 text-xs sm:text-sm text-[var(--text-main)] leading-relaxed text-justify">
                 <strong className="text-emerald-400 font-mono block mb-1">
                   {lang === 'en' ? '⚡ Quick Summary:' : '⚡ Ringkasan Cepat:'}
                 </strong>
@@ -281,7 +281,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
               </div>
             )}
 
-            <article className="prose prose-invert max-w-none text-[var(--text-main)] space-y-4 leading-relaxed">
+            <article className="prose prose-invert max-w-none text-[var(--text-main)] space-y-4 leading-relaxed text-justify">
               <ArticleBodyRenderer key={`body-${lang}`} content={displayContent} toc={displayToc} />
             </article>
 
@@ -331,7 +331,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
             </div>
           </main>
 
-          <aside className="hidden lg:block lg:col-span-3 lg:self-start lg:sticky lg:top-20">
+          <aside className="hidden lg:block lg:col-span-3 xl:col-span-3 lg:self-start lg:sticky lg:top-20">
             <div className="space-y-5 pr-1 pb-6 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
               <div className="p-3.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] space-y-2">
                 <div className="flex items-center justify-between text-xs font-mono">

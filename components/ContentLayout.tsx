@@ -36,17 +36,17 @@ export default function ContentLayout({
   const currentArtikels = artikelCount ?? artikelArticleCount;
 
   return (
-    <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    <div className="max-w-[1880px] mx-auto px-2 sm:px-4 lg:px-6 py-8 sm:py-12">
       {headerBanner && <div className="mb-10">{headerBanner}</div>}
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        <aside className="lg:col-span-3 lg:self-start">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 xl:gap-6">
+        <aside className="lg:col-span-3 xl:col-span-2 lg:self-start">
           <div className="lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto pr-1 pb-6">
             <SidebarNav currentCategory={selectedCategory} onSelectCategory={onSelectCategory} />
           </div>
         </aside>
 
-        <main className="lg:col-span-9 space-y-6">
+        <main className="lg:col-span-9 xl:col-span-10 space-y-6">
           <div className="sticky top-16 z-30 pt-3 pb-2 -mt-3 bg-[var(--bg-main)]/95 backdrop-blur-md transition-all">
             <div className="flex items-center gap-2 p-1.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] overflow-x-auto text-xs font-mono shadow-sm">
               {onSelectType ? (
