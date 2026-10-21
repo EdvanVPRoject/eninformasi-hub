@@ -260,9 +260,10 @@ Ketentuan Khusus:
 1. "category" HARUS salah satu dari: "gaming-esports", "tech-gadgets", "ai-agents", "hardware-setup".
 2. "content" dan "en.content" WAJIB panjang, padat, dan berbobot (minimal 600 - 800+ kata). DILARANG KERAS membuat paragraf ringkas/pendek satu-dua kalimat saja.
 3. Gunakan subjudul Markdown yang persis: '### 1. ...', '### 2. ...', '### 3. ...', '### 4. ...', '### 5. ...', '### 6. ...'.
-4. Sertakan data teknis konkret, angka spesifikasi, metrik performa, dan studi kasus nyata agar artikel berbobot jurnalistik kelas satu.
-5. Bahasa Indonesia dan Bahasa Inggris harus mengalir alami, profesional, tajam, dan kaya wawasan teknis.
-6. Kembalikan HANYA JSON murni yang valid tanpa format markdown \`\`\`json atau teks pengantar lainnya.
+4. WAJIB SELALU beri DUA BARIS BARU (\n\n) setelah setiap subjudul '### ...' sebelum memulai teks paragraf. DILARANG KERAS menyatukan judul dan teks paragraf dalam satu baris atau menggunakan singkatan seperti 'ln'.
+5. Sertakan data teknis konkret, angka spesifikasi, metrik performa, dan studi kasus nyata agar artikel berbobot jurnalistik kelas satu.
+6. Bahasa Indonesia dan Bahasa Inggris harus mengalir alami, profesional, tajam, dan kaya wawasan teknis.
+7. Kembalikan HANYA JSON murni yang valid tanpa format markdown \`\`\`json atau teks pengantar lainnya.
 `;
 
   let lastError = null;
@@ -336,14 +337,31 @@ function createSlug(title, dateStr) {
   return `${base}-${dateCode}`;
 }
 
+// Helper to sanitize article content defensively
+function sanitizeArticleContent(raw) {
+  if (!raw) return '';
+  return raw
+    .replace(/([a-zA-Z0-9)])(?:ln|\\n)([A-Z])/g, '$1\n\n$2')
+    .replace(/(###\s+\d+[\.\)][^\n\r]{10,75}?(?:Context|Breakdown|Landscape|Sentiment|Takeaways|Trajectory|Peristiwa|Mendalam|Pasar|Industri|Konsumen|Depan))([A-Z][a-z]{3,})/g, '$1\n\n$2');
+}
+
 // Helper to extract TOC items from content
 function extractToc(content) {
   const items = [];
-  const lines = (content || '').split('\n');
+  const clean = sanitizeArticleContent(content);
+  const lines = clean.split('\n');
   for (const line of lines) {
     const trimmed = line.trim();
     if (trimmed.startsWith('### ')) {
-      const title = trimmed.replace('### ', '').trim();
+      let title = trimmed.replace(/^###\s+/, '').trim();
+      if (title.length > 85) {
+        const dotIdx = title.search(/(?<=[^\d]\.)\s+[A-Z]/);
+        if (dotIdx !== -1) {
+          title = title.slice(0, dotIdx + 1).trim();
+        } else {
+          title = title.slice(0, 80).trim() + '...';
+        }
+      }
       const id = title
         .toLowerCase()
         .replace(/^[0-9]+\.\s*/, '')
@@ -395,8 +413,10 @@ async function run() {
     slug += `-${Math.floor(Math.random() * 8999 + 1000)}`;
   }
 
-  const tocID = extractToc(generated.content);
-  const tocEN = extractToc(generated.en?.content);
+  const cleanContentID = sanitizeArticleContent(generated.content);
+  const cleanContentEN = sanitizeArticleContent(generated.en?.content || generated.content);
+  const tocID = extractToc(cleanContentID);
+  const tocEN = extractToc(cleanContentEN);
 
   const newArticle = {
     slug,
@@ -412,11 +432,11 @@ async function run() {
     author: 'EnInformasi Tech Desk',
     tags: generated.tags || ['AI', 'Gaming', 'Hardware', 'Viral News'],
     toc: tocID,
-    content: generated.content,
+    content: cleanContentID,
     en: {
       title: generated.en?.title || generated.title,
       description: generated.en?.description || generated.description,
-      content: generated.en?.content || generated.content,
+      content: cleanContentEN,
       toc: tocEN.length > 0 ? tocEN : tocID,
     }
   };

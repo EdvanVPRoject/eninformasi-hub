@@ -16,13 +16,31 @@ import { getCategoryLabel } from './i18n';
 
 export function extractTocFromContent(content?: string, fallbackToc: TocItem[] = []): TocItem[] {
   if (!content) return fallbackToc;
-  const lines = content.split('\n');
+  // Defensively sanitize any accidental corrupted newline sequences
+  const cleanContent = content.replace(/([a-zA-Z0-9)])(?:ln|\\n)([A-Z])/g, '$1\n\n$2');
+  const lines = cleanContent.split('\n');
   const toc: TocItem[] = [];
   let idx = 0;
   for (const line of lines) {
     const trimmed = line.trim();
     if (trimmed.startsWith('### ')) {
-      const heading = trimmed.replace('### ', '').trim();
+      let heading = trimmed.replace(/^###\s+/, '').trim();
+
+      // Defensive check: if heading is merged with paragraph text
+      if (heading.length > 85 && (/\.\s+[A-Z]/.test(heading) || /:\s+[A-Z]/.test(heading) || /[a-z][\.\?!][A-Z]/.test(heading))) {
+        const match = heading.match(/^((?:\d+[\.\)]\s*)?[^\.\?\!]{5,75}?(?:Context|Breakdown|Landscape|Sentiment|Takeaways|Trajectory|Overview|Peristiwa|Mendalam|Pasar|Industri|Konsumen|Depan|[A-Za-z0-9\s-]{5,60}))(?:[\.\?\!](?:\s+|$)|(?=[A-Z][a-z]{3,}))/i);
+        if (match) {
+          heading = match[1].trim();
+        } else {
+          const dotIdx = heading.search(/(?<=[^\d]\.)\s+[A-Z]/);
+          if (dotIdx !== -1) {
+            heading = heading.slice(0, dotIdx + 1).trim();
+          } else if (heading.length > 85) {
+            heading = heading.slice(0, 80).trim() + '...';
+          }
+        }
+      }
+
       const numMatch = heading.match(/^(\d+)[\.\)]/);
       let id = '';
       if (numMatch && fallbackToc) {
