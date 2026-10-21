@@ -6,5 +6,5 @@ if (process.env.BUILDING_OPEN_NEXT === '1') {
 } else {
   console.log('🚀 [Build Step] Starting Cloudflare OpenNext build pipeline...');
   process.env.BUILDING_OPEN_NEXT = '1';
-  execSync('npx @opennextjs/cloudflare build', { stdio: 'inherit' });
+  execSync('npx @opennextjs/cloudflare build --dangerouslyUseUnsupportedNextVersion', { stdio: 'inherit' });
 }
