@@ -257,9 +257,40 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
               </div>
             )}
 
-            {displayToc && displayToc.length > 0 && (
-              <div className="lg:hidden p-3.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] shadow-sm">
-                <details className="group">
+            {/* Mobile Reading Progress & Collapsible Table of Contents */}
+            <div className="lg:hidden p-3.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] shadow-sm space-y-3">
+              <div className="flex items-center justify-between text-xs font-mono">
+                <span className="text-[var(--text-muted)] flex items-center gap-1.5">
+                  {maxProgress >= 95 ? (
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
+                  ) : null}
+                  {maxProgress >= 95
+                    ? (lang === 'en' ? 'Completed!' : 'Selesai Dibaca!')
+                    : (lang === 'en' ? 'Reading Progress' : 'Progres Baca')}
+                </span>
+                <div className="flex items-center gap-2">
+                  <span className="text-emerald-500 font-bold">{maxProgress}%</span>
+                  {maxProgress > 0 && (
+                    <button
+                      type="button"
+                      onClick={handleResetProgress}
+                      title={lang === 'en' ? 'Reset progress' : 'Ulangi progres'}
+                      className="text-[var(--text-muted)] hover:text-rose-400 transition-colors p-0.5"
+                    >
+                      <RotateCcw className="w-3 h-3" />
+                    </button>
+                  )}
+                </div>
+              </div>
+              <div className="w-full h-1.5 rounded-full bg-zinc-800 overflow-hidden">
+                <div
+                  className="h-full bg-emerald-500 transition-all duration-300"
+                  style={{ width: `${maxProgress}%` }}
+                />
+              </div>
+
+              {displayToc && displayToc.length > 0 && (
+                <details className="group pt-2 border-t border-[var(--border-color)]/60">
                   <summary className="flex items-center justify-between cursor-pointer list-none text-xs font-mono font-semibold text-[var(--text-main)] select-none">
                     <span className="flex items-center gap-2">
                       <ListOrdered className="w-4 h-4 text-emerald-500" />
@@ -271,8 +302,8 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                     <TableOfContents key={`toc-m-${lang}`} items={displayToc} />
                   </div>
                 </details>
-              </div>
-            )}
+              )}
+            </div>
 
             <article className="prose prose-invert max-w-none text-[var(--text-main)] space-y-4 leading-relaxed text-justify">
               <ArticleBodyRenderer key={`body-${lang}`} content={displayContent} toc={displayToc} />

@@ -173,7 +173,7 @@ function HomeContent() {
   return (
     <div className="max-w-[1880px] mx-auto px-2 sm:px-4 lg:px-6 py-8 sm:py-12">
       {/* Hero Bento Header */}
-      <div className="relative mb-10 p-6 sm:p-8 lg:p-10 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] shadow-sm">
+      <div className="relative mb-8 sm:mb-10 p-4 sm:p-8 lg:p-10 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] shadow-sm">
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
           {/* Left Column: Hero Title, Value Proposition & Feature Pills */}
           <div className="lg:col-span-7 xl:col-span-7 flex flex-col justify-between space-y-5">
@@ -220,26 +220,26 @@ function HomeContent() {
           {/* Right Column: Bento Hub (Interactive Stats + Trending Hot Topics + Quick Jump) */}
           <div className="lg:col-span-5 xl:col-span-5 flex flex-col justify-between gap-3.5">
             {/* Top Stats Trio */}
-            <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
+            <div className="grid grid-cols-3 gap-2 sm:gap-3">
               <button
                 type="button"
                 onClick={() => handleSelectType('all')}
-                className={`p-3.5 rounded-xl text-left border transition-all ${
+                className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all active:scale-[0.98] ${
                   selectedType === 'all'
                     ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
                     : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
                 }`}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-2xl font-bold tracking-tight text-[var(--text-main)]">
+                  <span className="text-xl sm:text-2xl font-bold tracking-tight text-[var(--text-main)]">
                     {totalArticleCount}
                   </span>
-                  <Layers className={`w-4 h-4 ${selectedType === 'all' ? 'text-emerald-500' : 'text-[var(--text-muted)]'}`} />
+                  <Layers className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${selectedType === 'all' ? 'text-emerald-500' : 'text-[var(--text-muted)]'}`} />
                 </div>
                 <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate">
                   {lang === 'en' ? 'All Content' : 'Semua Konten'}
                 </div>
-                <div className="text-xs text-[var(--text-muted)] truncate">
+                <div className="text-[11px] sm:text-xs text-[var(--text-muted)] truncate">
                   {lang === 'en' ? 'Full Database' : 'Katalog Lengkap'}
                 </div>
               </button>
@@ -247,22 +247,22 @@ function HomeContent() {
               <button
                 type="button"
                 onClick={() => handleSelectType('tutorial')}
-                className={`p-3.5 rounded-xl text-left border transition-all ${
+                className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all active:scale-[0.98] ${
                   selectedType === 'tutorial'
                     ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
                     : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
                 }`}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-2xl font-bold tracking-tight text-emerald-500">
+                  <span className="text-xl sm:text-2xl font-bold tracking-tight text-emerald-500">
                     {tutorialCount}
                   </span>
-                  <GraduationCap className={`w-4 h-4 ${selectedType === 'tutorial' ? 'text-emerald-500' : 'text-[var(--text-muted)]'}`} />
+                  <GraduationCap className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${selectedType === 'tutorial' ? 'text-emerald-500' : 'text-[var(--text-muted)]'}`} />
                 </div>
                 <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate">
                   {lang === 'en' ? 'Tutorials' : 'Tutorial'}
                 </div>
-                <div className="text-xs text-[var(--text-muted)] truncate">
+                <div className="text-[11px] sm:text-xs text-[var(--text-muted)] truncate">
                   {lang === 'en' ? 'Code & Setup' : 'Langkah & Kode'}
                 </div>
               </button>
@@ -270,22 +270,22 @@ function HomeContent() {
               <button
                 type="button"
                 onClick={() => handleSelectType('artikel')}
-                className={`p-3.5 rounded-xl text-left border transition-all ${
+                className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all active:scale-[0.98] ${
                   selectedType === 'artikel'
                     ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
                     : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
                 }`}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-2xl font-bold tracking-tight text-sky-500 dark:text-sky-400">
+                  <span className="text-xl sm:text-2xl font-bold tracking-tight text-sky-500 dark:text-sky-400">
                     {artikelCount}
                   </span>
-                  <FileText className={`w-4 h-4 ${selectedType === 'artikel' ? 'text-sky-500' : 'text-[var(--text-muted)]'}`} />
+                  <FileText className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${selectedType === 'artikel' ? 'text-sky-500' : 'text-[var(--text-muted)]'}`} />
                 </div>
                 <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate">
                   {lang === 'en' ? 'Articles' : 'EnInformasi'}
                 </div>
-                <div className="text-xs text-[var(--text-muted)] truncate">
+                <div className="text-[11px] sm:text-xs text-[var(--text-muted)] truncate">
                   {lang === 'en' ? 'Analysis & Trends' : 'Riset & Gaming'}
                 </div>
               </button>

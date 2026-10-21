@@ -3,7 +3,7 @@
 import React from 'react';
 import CodeBlock from './CodeBlock';
 import { TocItem } from '@/lib/types';
-import { Image as ImageIcon, ExternalLink, BarChart3 } from 'lucide-react';
+import { Image as ImageIcon, ExternalLink, BarChart3, ChevronRight } from 'lucide-react';
 
 interface ArticleBodyRendererProps {
   content: string;
@@ -82,18 +82,22 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
 
                 return (
                   <div key={blockIdx} className="my-6 rounded-2xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm">
-                    <div className="px-4 py-2.5 bg-emerald-500/10 border-b border-[var(--border-color)] flex items-center justify-between">
+                    <div className="px-3.5 sm:px-4 py-2.5 bg-emerald-500/10 border-b border-[var(--border-color)] flex items-center justify-between gap-2">
                       <span className="text-xs font-mono font-bold text-emerald-500 flex items-center gap-1.5 uppercase tracking-wider">
                         <BarChart3 className="w-4 h-4 shrink-0" />
-                        <span>Hasil Benchmark & Komparasi Teknis Terverifikasi</span>
+                        <span>Komparasi & Benchmark</span>
+                      </span>
+                      <span className="text-[11px] font-mono text-[var(--text-muted)] flex items-center gap-0.5 sm:hidden">
+                        <span>Geser tabel</span>
+                        <ChevronRight className="w-3 h-3 text-emerald-500" />
                       </span>
                     </div>
-                    <div className="overflow-x-auto">
-                      <table className="w-full text-left text-xs sm:text-sm border-collapse">
+                    <div className="overflow-x-auto scrollbar-thin">
+                      <table className="w-full text-left text-xs sm:text-sm border-collapse min-w-[540px]">
                         <thead>
                           <tr className="border-b border-[var(--border-color)] bg-[var(--bg-main)]">
                             {headerCells.map((header, hIdx) => (
-                              <th key={hIdx} className="px-4 py-3 font-semibold text-[var(--text-main)] font-mono text-xs whitespace-nowrap">
+                              <th key={hIdx} className="px-3.5 sm:px-4 py-3 font-semibold text-[var(--text-main)] font-mono text-xs whitespace-nowrap">
                                 {header}
                               </th>
                             ))}
@@ -103,7 +107,7 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
                           {dataRows.map((row, rIdx) => (
                             <tr key={rIdx} className="hover:bg-emerald-500/5 transition-colors">
                               {row.map((cell, cIdx) => (
-                                <td key={cIdx} className="px-4 py-3 text-[var(--text-main)] text-xs sm:text-sm">
+                                <td key={cIdx} className="px-3.5 sm:px-4 py-3 text-[var(--text-main)] text-xs sm:text-sm">
                                   <span dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(cell) }} />
                                 </td>
                               ))}
@@ -137,8 +141,8 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
                 }
 
                 return (
-                  <figure key={blockIdx} className="my-6 rounded-2xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm">
-                    <div className="relative overflow-hidden bg-black/40 flex items-center justify-center max-h-[500px]">
+                  <figure key={blockIdx} className="my-5 sm:my-6 rounded-2xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm">
+                    <div className="relative overflow-hidden bg-black/40 flex items-center justify-center max-h-[320px] sm:max-h-[500px]">
                       <img
                         src={imgSrc}
                         alt={caption}
@@ -146,13 +150,13 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
                         loading="lazy"
                       />
                     </div>
-                    <figcaption className="px-4 py-3 bg-[var(--card-bg)] border-t border-[var(--border-color)] flex flex-wrap items-center justify-between gap-2 text-xs">
+                    <figcaption className="px-3.5 py-2.5 sm:px-4 sm:py-3 bg-[var(--card-bg)] border-t border-[var(--border-color)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2 text-xs">
                       <span className="text-[var(--text-main)] font-semibold flex items-center gap-1.5">
                         <ImageIcon className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
                         <span>{caption}</span>
                       </span>
                       {source && (
-                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20 font-semibold">
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20 font-semibold self-start sm:self-auto">
                           <ExternalLink className="w-3 h-3 shrink-0" />
                           <span>Sumber: {source}</span>
                         </span>
@@ -265,12 +269,12 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
               if (/^\*(Sumber|Source|Data Source):\s*/i.test(trimmed)) {
                 const sourceText = trimmed.replace(/^\*|\*$/g, '');
                 return (
-                  <div key={blockIdx} className="my-3 p-3 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex items-center justify-between gap-3 text-xs">
+                  <div key={blockIdx} className="my-3 p-3 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs">
                     <span className="flex items-center gap-2 text-emerald-500 font-semibold font-mono">
                       <ExternalLink className="w-3.5 h-3.5 shrink-0" />
                       <span>{sourceText}</span>
                     </span>
-                    <span className="text-[10px] font-mono text-[var(--text-muted)] bg-[var(--card-bg)] px-2 py-0.5 rounded border border-[var(--border-color)]">
+                    <span className="text-[10px] font-mono text-[var(--text-muted)] bg-[var(--card-bg)] px-2 py-0.5 rounded border border-[var(--border-color)] self-start sm:self-auto">
                       Kredibilitas Terverifikasi
                     </span>
                   </div>
@@ -281,7 +285,7 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
               if (trimmed.startsWith('* ') || trimmed.startsWith('- ')) {
                 const itemContent = trimmed.replace(/^(\*|-)\s*/, '');
                 return (
-                  <div key={blockIdx} className="flex items-start gap-2.5 pl-2 text-xs sm:text-sm">
+                  <div key={blockIdx} className="flex items-start gap-2.5 pl-1 sm:pl-2 text-xs sm:text-sm">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 shrink-0" />
                     <span className="leading-relaxed" dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(itemContent) }} />
                   </div>
@@ -291,7 +295,7 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
               // Numbered items
               if (/^[0-9]+\.\s+/.test(trimmed)) {
                 return (
-                  <div key={blockIdx} className="flex items-start gap-2 pl-2 text-xs sm:text-sm">
+                  <div key={blockIdx} className="flex items-start gap-2 pl-1 sm:pl-2 text-xs sm:text-sm">
                     <span className="font-mono text-emerald-500 font-semibold shrink-0">
                       {trimmed.match(/^[0-9]+\./)?.[0]}
                     </span>
