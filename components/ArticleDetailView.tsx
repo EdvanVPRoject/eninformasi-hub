@@ -105,13 +105,6 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
 
   return (
     <div className="min-h-screen bg-[var(--bg-main)] relative">
-      {/* Top Reading Progress Bar (Flush at topmost edge of browser, never obstructs reading text) */}
-      <div className="fixed top-0 left-0 z-50 w-full h-[2.5px] bg-zinc-800/20 pointer-events-none">
-        <div
-          className="h-full bg-emerald-500 transition-all duration-150 ease-out"
-          style={{ width: `${maxProgress}%` }}
-        />
-      </div>
 
       <div className="max-w-[1880px] mx-auto px-2 sm:px-4 lg:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 xl:gap-6 py-8">

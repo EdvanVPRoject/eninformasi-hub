@@ -6,7 +6,6 @@ import Footer from './Footer';
 import CommandSearch from './CommandSearch';
 import MobileBottomNav from './MobileBottomNav';
 import MobileDesktopTip from './MobileDesktopTip';
-import RouteProgressBar from './RouteProgressBar';
 import { LanguageProvider } from './LanguageContext';
 
 export default function LayoutShell({ children }: { children: React.ReactNode }) {
@@ -27,7 +26,6 @@ export default function LayoutShell({ children }: { children: React.ReactNode })
   return (
     <LanguageProvider>
       <div className="min-h-screen flex flex-col bg-[var(--bg-main)] text-[var(--text-main)] transition-colors duration-200 w-full max-w-full">
-        <RouteProgressBar />
         <Navbar onOpenSearch={() => setIsSearchOpen(true)} />
         <MobileDesktopTip />
         <main className="flex-1 pb-24 sm:pb-0 w-full max-w-full">{children}</main>
