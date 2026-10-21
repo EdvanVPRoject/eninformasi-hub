@@ -118,8 +118,8 @@ function TutorialContent() {
       {/* Main Content Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 xl:gap-6">
         {/* Left Column Filters (Sticky on Scroll) */}
-        <aside className="lg:col-span-3 xl:col-span-2 lg:self-start">
-          <div className="lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto pr-1 pb-6">
+        <aside className="lg:col-span-3 xl:col-span-2 lg:self-start lg:sticky lg:top-20 w-full z-20">
+          <div className="pr-1 pb-6 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto scrollbar-thin">
             <SidebarNav
               currentCategory={selectedCategory}
               onSelectCategory={handleSelectCategory}
