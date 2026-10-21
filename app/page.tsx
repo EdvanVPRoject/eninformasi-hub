@@ -173,17 +173,13 @@ function HomeContent() {
   return (
     <div className="max-w-[1880px] mx-auto px-2 sm:px-4 lg:px-6 py-8 sm:py-12">
       {/* Hero Bento Header */}
-      <div className="relative mb-10 p-6 sm:p-8 lg:p-10 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] overflow-hidden shadow-sm">
-        {/* Subtle ambient background glow */}
-        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-1/3 -mb-20 w-80 h-80 bg-teal-500/5 rounded-full blur-3xl pointer-events-none" />
-
+      <div className="relative mb-10 p-6 sm:p-8 lg:p-10 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] shadow-sm">
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
           {/* Left Column: Hero Title, Value Proposition & Feature Pills */}
           <div className="lg:col-span-7 xl:col-span-7 flex flex-col justify-between space-y-5">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-mono rounded-full bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20">
-                <Zap className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold rounded-full bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20">
+                <Zap className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400 shrink-0" />
                 <span>
                   {lang === 'en'
                     ? `EnInformasi Hub — ${totalArticleCount} Tutorials, Gaming & Future Tech Trends`
@@ -205,7 +201,7 @@ function HomeContent() {
               </p>
             </div>
 
-            <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-mono text-[var(--text-muted)] border-t border-[var(--border-color)]/60 pt-4">
+            <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-medium text-[var(--text-muted)] border-t border-[var(--border-color)] pt-4">
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
                 <span>{t('hero_pill_1')}</span>
@@ -224,26 +220,26 @@ function HomeContent() {
           {/* Right Column: Bento Hub (Interactive Stats + Trending Hot Topics + Quick Jump) */}
           <div className="lg:col-span-5 xl:col-span-5 flex flex-col justify-between gap-3.5">
             {/* Top Stats Trio */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-3">
+            <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
               <button
                 type="button"
                 onClick={() => handleSelectType('all')}
-                className={`p-3 rounded-xl text-left border transition-all ${
+                className={`p-3.5 rounded-xl text-left border transition-all ${
                   selectedType === 'all'
-                    ? 'bg-emerald-500/10 border-emerald-500/50 shadow-sm'
-                    : 'bg-[var(--bg-main)]/60 border-[var(--border-color)] hover:border-emerald-500/30'
+                    ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
+                    : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
                 }`}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-xl sm:text-2xl font-black font-mono text-[var(--text-main)]">
+                  <span className="text-2xl font-bold tracking-tight text-[var(--text-main)]">
                     {totalArticleCount}
                   </span>
-                  <Layers className={`w-3.5 h-3.5 ${selectedType === 'all' ? 'text-emerald-500' : 'text-[var(--text-muted)]'}`} />
+                  <Layers className={`w-4 h-4 ${selectedType === 'all' ? 'text-emerald-500' : 'text-[var(--text-muted)]'}`} />
                 </div>
-                <div className="text-xs font-semibold text-[var(--text-main)] truncate">
+                <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate">
                   {lang === 'en' ? 'All Content' : 'Semua Konten'}
                 </div>
-                <div className="text-[10px] text-[var(--text-muted)] font-mono truncate">
+                <div className="text-xs text-[var(--text-muted)] truncate">
                   {lang === 'en' ? 'Full Database' : 'Katalog Lengkap'}
                 </div>
               </button>
@@ -251,22 +247,22 @@ function HomeContent() {
               <button
                 type="button"
                 onClick={() => handleSelectType('tutorial')}
-                className={`p-3 rounded-xl text-left border transition-all ${
+                className={`p-3.5 rounded-xl text-left border transition-all ${
                   selectedType === 'tutorial'
-                    ? 'bg-emerald-500/10 border-emerald-500/50 shadow-sm'
-                    : 'bg-[var(--bg-main)]/60 border-[var(--border-color)] hover:border-emerald-500/30'
+                    ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
+                    : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
                 }`}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-xl sm:text-2xl font-black font-mono text-emerald-500">
+                  <span className="text-2xl font-bold tracking-tight text-emerald-500">
                     {tutorialCount}
                   </span>
-                  <GraduationCap className={`w-3.5 h-3.5 ${selectedType === 'tutorial' ? 'text-emerald-500' : 'text-[var(--text-muted)]'}`} />
+                  <GraduationCap className={`w-4 h-4 ${selectedType === 'tutorial' ? 'text-emerald-500' : 'text-[var(--text-muted)]'}`} />
                 </div>
-                <div className="text-xs font-semibold text-[var(--text-main)] truncate">
+                <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate">
                   {lang === 'en' ? 'Tutorials' : 'Tutorial'}
                 </div>
-                <div className="text-[10px] text-[var(--text-muted)] font-mono truncate">
+                <div className="text-xs text-[var(--text-muted)] truncate">
                   {lang === 'en' ? 'Code & Setup' : 'Langkah & Kode'}
                 </div>
               </button>
@@ -274,31 +270,31 @@ function HomeContent() {
               <button
                 type="button"
                 onClick={() => handleSelectType('artikel')}
-                className={`p-3 rounded-xl text-left border transition-all ${
+                className={`p-3.5 rounded-xl text-left border transition-all ${
                   selectedType === 'artikel'
-                    ? 'bg-emerald-500/10 border-emerald-500/50 shadow-sm'
-                    : 'bg-[var(--bg-main)]/60 border-[var(--border-color)] hover:border-emerald-500/30'
+                    ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
+                    : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
                 }`}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-xl sm:text-2xl font-black font-mono text-sky-500 dark:text-sky-400">
+                  <span className="text-2xl font-bold tracking-tight text-sky-500 dark:text-sky-400">
                     {artikelCount}
                   </span>
-                  <FileText className={`w-3.5 h-3.5 ${selectedType === 'artikel' ? 'text-sky-500' : 'text-[var(--text-muted)]'}`} />
+                  <FileText className={`w-4 h-4 ${selectedType === 'artikel' ? 'text-sky-500' : 'text-[var(--text-muted)]'}`} />
                 </div>
-                <div className="text-xs font-semibold text-[var(--text-main)] truncate">
+                <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate">
                   {lang === 'en' ? 'Articles' : 'EnInformasi'}
                 </div>
-                <div className="text-[10px] text-[var(--text-muted)] font-mono truncate">
+                <div className="text-xs text-[var(--text-muted)] truncate">
                   {lang === 'en' ? 'Analysis & Trends' : 'Riset & Gaming'}
                 </div>
               </button>
             </div>
 
             {/* Trending Hot Topics Bento Tile */}
-            <div className="p-3.5 rounded-xl bg-[var(--bg-main)]/60 border border-[var(--border-color)] space-y-2.5">
+            <div className="p-3.5 sm:p-4 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] space-y-2.5">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold font-mono flex items-center gap-1.5 text-[var(--text-main)]">
+                <span className="text-xs font-semibold flex items-center gap-1.5 text-[var(--text-main)]">
                   <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
                   <span>{lang === 'en' ? 'Trending Topics' : 'Topik Sedang Hangat'}</span>
                 </span>
@@ -306,19 +302,19 @@ function HomeContent() {
                   <button
                     type="button"
                     onClick={() => setSearchQuery('')}
-                    className="text-[11px] font-mono text-emerald-500 hover:underline flex items-center gap-1"
+                    className="text-xs font-semibold text-emerald-500 hover:underline flex items-center gap-1"
                   >
                     <X className="w-3 h-3" />
                     <span>Reset</span>
                   </button>
                 ) : (
-                  <span className="text-[10px] font-mono text-[var(--text-muted)]">
-                    {lang === 'en' ? 'Instant filter' : 'Filter instan'}
+                  <span className="text-xs text-[var(--text-muted)]">
+                    {lang === 'en' ? 'Click to filter' : 'Klik untuk filter'}
                   </span>
                 )}
               </div>
 
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-wrap gap-2">
                 {TRENDING_TOPICS.map((topic) => {
                   const isActive = searchQuery.toLowerCase() === topic.toLowerCase();
                   return (
@@ -326,14 +322,14 @@ function HomeContent() {
                       key={topic}
                       type="button"
                       onClick={() => handleToggleTrending(topic)}
-                      className={`text-xs px-2.5 py-1 rounded-lg border font-mono transition-all flex items-center gap-1 ${
+                      className={`text-xs px-3 py-1.5 rounded-lg border font-medium transition-all flex items-center gap-1.5 ${
                         isActive
                           ? 'bg-emerald-500 text-black font-semibold border-emerald-500 shadow-sm scale-105'
-                          : 'bg-[var(--card-bg)] text-[var(--text-muted)] border-[var(--border-color)] hover:text-[var(--text-main)] hover:border-emerald-500/40'
+                          : 'bg-[var(--bg-main)] text-[var(--text-main)] border-[var(--border-color)] hover:border-emerald-500/60 hover:text-emerald-500'
                       }`}
                     >
                       <span>#{topic}</span>
-                      {isActive && <CheckCircle2 className="w-3 h-3 text-black" />}
+                      {isActive && <CheckCircle2 className="w-3.5 h-3.5 text-black" />}
                     </button>
                   );
                 })}
@@ -344,17 +340,17 @@ function HomeContent() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               <Link
                 href="/tools"
-                className="group p-2.5 sm:p-3 rounded-xl bg-gradient-to-r from-emerald-500/10 via-teal-500/5 to-transparent border border-emerald-500/20 hover:border-emerald-500/40 flex items-center justify-between transition-all"
+                className="group p-3 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 flex items-center justify-between transition-all"
               >
                 <div className="flex items-center gap-2.5 min-w-0">
-                  <div className="w-7 h-7 rounded-lg bg-emerald-500/20 flex items-center justify-center shrink-0 text-emerald-500">
-                    <Wrench className="w-3.5 h-3.5" />
+                  <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center shrink-0 text-emerald-500">
+                    <Wrench className="w-4 h-4" />
                   </div>
                   <div className="min-w-0">
-                    <div className="text-xs font-bold text-[var(--text-main)] truncate group-hover:text-emerald-500 transition-colors">
+                    <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate group-hover:text-emerald-500 transition-colors">
                       {lang === 'en' ? 'Tools & Gear' : 'Tools & Rekomendasi'}
                     </div>
-                    <div className="text-[10px] text-[var(--text-muted)] truncate font-mono">
+                    <div className="text-xs text-[var(--text-muted)] truncate">
                       {lang === 'en' ? 'Scripts & Presets' : 'Config & Script Siap Pakai'}
                     </div>
                   </div>
@@ -369,22 +365,22 @@ function HomeContent() {
                     window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', ctrlKey: true, bubbles: true }));
                   }
                 }}
-                className="group p-2.5 sm:p-3 rounded-xl bg-[var(--bg-main)]/60 border border-[var(--border-color)] hover:border-emerald-500/30 flex items-center justify-between transition-all text-left"
+                className="group p-3 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 flex items-center justify-between transition-all text-left"
               >
                 <div className="flex items-center gap-2.5 min-w-0">
-                  <div className="w-7 h-7 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] flex items-center justify-center shrink-0 text-[var(--text-muted)] group-hover:text-emerald-500">
-                    <Search className="w-3.5 h-3.5" />
+                  <div className="w-8 h-8 rounded-lg bg-[var(--bg-main)] border border-[var(--border-color)] flex items-center justify-center shrink-0 text-[var(--text-muted)] group-hover:text-emerald-500">
+                    <Search className="w-4 h-4" />
                   </div>
                   <div className="min-w-0">
-                    <div className="text-xs font-bold text-[var(--text-main)] truncate group-hover:text-emerald-500 transition-colors">
+                    <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate group-hover:text-emerald-500 transition-colors">
                       {lang === 'en' ? 'Quick Search' : 'Cari Cepat'}
                     </div>
-                    <div className="text-[10px] text-[var(--text-muted)] truncate font-mono">
+                    <div className="text-xs text-[var(--text-muted)] truncate">
                       {lang === 'en' ? 'Ctrl + K shortcut' : 'Pintasan Ctrl + K'}
                     </div>
                   </div>
                 </div>
-                <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] shrink-0 ml-2">
+                <span className="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-[var(--bg-main)] border border-[var(--border-color)] text-[var(--text-main)] shrink-0 ml-2">
                   Ctrl+K
                 </span>
               </button>
