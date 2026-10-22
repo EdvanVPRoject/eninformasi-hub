@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "solusi-revolusioner-driver-gpu-nvidia-akhiri-mas-20261022",
+    "title": "Solusi Revolusioner Driver GPU Nvidia: Akhiri Masalah Shader Compilation Stutter",
+    "description": "Nvidia resmi merilis pembaruan driver GPU mutakhir yang mengintegrasikan fitur Advanced Shader Delivery untuk mengeliminasi masalah stuttering akibat kompilasi shader. Terobosan ini menjanjikan peningkatan konsistensi frametime secara signifikan dan menjadi angin segar bagi para gamer PC di seluruh dunia.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-22T06:35:26.289Z",
+    "updatedDate": "2026-10-22T06:35:26.289Z",
+    "readingTime": "7 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Nvidia",
+      "GPU Drivers",
+      "Shader Stutter",
+      "PC Gaming",
+      "Hardware"
+    ],
+    "en": {
+      "title": "Nvidia's Groundbreaking GPU Driver Update Finally Eliminates Shader Compilation Stutter",
+      "description": "Nvidia has officially released a cutting-edge GPU driver update integrating Advanced Shader Delivery features to eliminate stuttering caused by shader compilation. This breakthrough promises significant frametime consistency improvements and serves as a major relief for PC gamers worldwide."
+    }
+  },
+  {
     "slug": "deepseek-buka-bukaan-rilis-deepinfer-open-source-20261022",
     "title": "DeepSeek Buka-Bukaan: Rilis DeepInfer Open-Source untuk Dominasi Infrastruktur AI Global",
     "description": "DeepSeek kembali mengguncang industri kecerdasan buatan global dengan merilis DeepInfer secara open-source, sebuah production inference engine mutakhir yang dirancang untuk mempercepat inferensi model skala besar secara efisien. Langkah agresif ini tidak hanya mendemokratisasi infrastruktur AI kelas enterprise, tetapi juga memaksa raksasa teknologi global untuk merombak strategi komputasi awan dan efisiensi biaya operasional mereka.",
