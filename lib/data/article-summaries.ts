@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "deepseek-buka-bukaan-rilis-deepinfer-open-source-20261022",
+    "title": "DeepSeek Buka-Bukaan: Rilis DeepInfer Open-Source untuk Dominasi Infrastruktur AI Global",
+    "description": "DeepSeek kembali mengguncang industri kecerdasan buatan global dengan merilis DeepInfer secara open-source, sebuah production inference engine mutakhir yang dirancang untuk mempercepat inferensi model skala besar secara efisien. Langkah agresif ini tidak hanya mendemokratisasi infrastruktur AI kelas enterprise, tetapi juga memaksa raksasa teknologi global untuk merombak strategi komputasi awan dan efisiensi biaya operasional mereka.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Mahir",
+    "pubDate": "2026-10-22T00:34:38.140Z",
+    "updatedDate": "2026-10-22T00:34:38.140Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "DeepSeek",
+      "DeepInfer",
+      "OpenSource",
+      "AIInference",
+      "MachineLearning"
+    ],
+    "en": {
+      "title": "DeepSeek Open-Sources DeepInfer: A Paradigm Shift for Global AI Infrastructure",
+      "description": "DeepSeek has once again disrupted the global AI landscape by open-sourcing DeepInfer, a cutting-edge production inference engine engineered to drastically accelerate large-scale model deployment. This aggressive move democratizes enterprise-grade AI infrastructure while forcing tech giants to rethink their cloud computing strategies and operational efficiency."
+    }
+  },
+  {
     "slug": "industri-game-sembunyikan-fakta-ai-orang-dalam-x-20261021",
     "title": "Industri Game Sembunyikan Fakta AI? Orang Dalam Xbox Ungkap Realitas Kelam Pengembangan Game Modern",
     "description": "Pernyataan kontroversial dari petinggi Xbox mengungkap bahwa sebagian besar pelaku industri game secara diam-diam telah memanfaatkan kecerdasan buatan dalam skala masif sambil berpura-pura menolaknya di depan publik. Isu ini memicu perdebatan sengit terkait etika, transparansi, dan masa depan tenaga kerja kreatif di tengah gelombang otomatisasi teknologi.",
