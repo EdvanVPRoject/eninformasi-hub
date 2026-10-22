@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-keamanan-kritis-kebocoran-private-key-8--20261022",
+    "title": "Skandal Keamanan Kritis: Kebocoran Private Key 8 Sertifikat CA Ancam Integritas Enkripsi Global",
+    "description": "Industri keamanan siber global dikejutkan oleh kebocoran private key dari delapan sertifikat Certificate Authority (CA) yang memungkinkan penyerang melakukan penyamaran domain secara bebas. Insiden berskala masif ini memaksa para administrator sistem dan raksasa teknologi untuk segera merombak rantai kepercayaan digital mereka demi mencegah serangan Man-in-the-Middle tingkat lanjut.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Mahir",
+    "pubDate": "2026-10-22T12:36:43.846Z",
+    "updatedDate": "2026-10-22T12:36:43.846Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Cybersecurity",
+      "Certificate Authority",
+      "SSL/TLS",
+      "Data Breach",
+      "Encryption"
+    ],
+    "en": {
+      "title": "Critical Security Scandal: 8 CA Certificate Private Key Leaks Threaten Global Encryption Integrity",
+      "description": "The global cybersecurity industry has been shaken by the exposure of private keys belonging to eight crucial Certificate Authority (CA) certificates, allowing attackers to impersonate domains freely. This massive security breach forces system administrators and tech giants to urgently overhaul their digital trust chains to prevent advanced Man-in-the-Middle attacks."
+    }
+  },
+  {
     "slug": "solusi-revolusioner-driver-gpu-nvidia-akhiri-mas-20261022",
     "title": "Solusi Revolusioner Driver GPU Nvidia: Akhiri Masalah Shader Compilation Stutter",
     "description": "Nvidia resmi merilis pembaruan driver GPU mutakhir yang mengintegrasikan fitur Advanced Shader Delivery untuk mengeliminasi masalah stuttering akibat kompilasi shader. Terobosan ini menjanjikan peningkatan konsistensi frametime secara signifikan dan menjadi angin segar bagi para gamer PC di seluruh dunia.",
