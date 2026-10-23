@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "keteledoran-epik-gpu-curian-rtx-5090-seharga-rp1-20261023",
+    "title": "Keteledoran Epik: GPU Curian RTX 5090 Seharga Rp100 Juta Dilacak Polisi Gara-gara Dijual Terbuka di Marketplace",
+    "description": "Sebuah insiden pencurian perangkat keras kelas atas di bandara Brasil berujung pada penangkapan konyol ketika pelaku mencoba menjual GPU flagship NVIDIA RTX 5090 curian di platform online seharga 6.400 dolar AS. Kasus ini menyoroti rentannya rantai logistik hardware gaming premium serta kecerobohan pelaku kejahatan siber dan fisik di era digital.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-23T12:31:50.334Z",
+    "updatedDate": "2026-10-23T12:31:50.334Z",
+    "readingTime": "7 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "RTX 5090",
+      "NVIDIA",
+      "Hardware Gaming",
+      "Pencurian GPU",
+      "Keamanan Teknologi"
+    ],
+    "en": {
+      "title": "Epic Blunder: Stolen $6,400 RTX 5090 GPU Tracked Down Easily After Being Listed on Public Marketplace",
+      "description": "A high-end hardware heist at a Brazilian airport turned into a comical arrest when a suspect foolishly attempted to sell the stolen NVIDIA flagship GPU on an open online marketplace. This incident highlights the vulnerabilities in premium gaming hardware supply chains and the sheer carelessness of modern criminals."
+    }
+  },
+  {
     "slug": "peringatan-keras-masahiro-sakurai-19000-game-ste-20261023",
     "title": "Peringatan Keras Masahiro Sakurai: 19.000 Game Steam Hadapi Ancaman Krisis Kualitas di Era AI",
     "description": "Pencipta seri Super Smash Bros., Masahiro Sakurai, mengeluarkan peringatan serius mengenai lonjakan lebih dari 19.000 game di Steam yang memanfaatkan kecerdasan buatan, memicu kekhawatiran tentang kejenuhan pasar, degradasi kualitas, dan masa depan pengembang indie. Fenomena ini memaksa industri gaming global untuk mengevaluasi ulang batasan etika, kurasi platform, dan originalitas karya seni dalam pengembangan game modern.",
