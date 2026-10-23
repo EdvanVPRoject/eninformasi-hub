@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "peringatan-keras-masahiro-sakurai-19000-game-ste-20261023",
+    "title": "Peringatan Keras Masahiro Sakurai: 19.000 Game Steam Hadapi Ancaman Krisis Kualitas di Era AI",
+    "description": "Pencipta seri Super Smash Bros., Masahiro Sakurai, mengeluarkan peringatan serius mengenai lonjakan lebih dari 19.000 game di Steam yang memanfaatkan kecerdasan buatan, memicu kekhawatiran tentang kejenuhan pasar, degradasi kualitas, dan masa depan pengembang indie. Fenomena ini memaksa industri gaming global untuk mengevaluasi ulang batasan etika, kurasi platform, dan originalitas karya seni dalam pengembangan game modern.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-23T06:34:42.156Z",
+    "updatedDate": "2026-10-23T06:34:42.156Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Masahiro Sakurai",
+      "Steam",
+      "AI Gaming",
+      "Indie Game",
+      "Game Development"
+    ],
+    "en": {
+      "title": "Masahiro Sakurai’s Stern Warning: 19,000 Steam Games Face Quality Crisis in the AI Era",
+      "description": "Legendary game creator Masahiro Sakurai has issued a serious warning regarding the surge of over 19,000 AI-utilizing games on Steam, sparking intense global debate over market saturation, artistic integrity, and the future of independent development. This phenomenon forces the global gaming industry to reevaluate platform curation and the true value of human creativity."
+    }
+  },
+  {
     "slug": "kontroversi-ai-megajam-epic-games-mengapa-komuni-20261023",
     "title": "Kontroversi AI MegaJam Epic Games: Mengapa Komunitas Unreal Engine Menolak Kewajiban AI?",
     "description": "Epic Games memicu gelombang protes setelah mengumumkan kewajiban penggunaan AI dalam kompetisi MegaJam terbaru mereka, yang kemudian segera ditarik kembali. Analisis ini membedah ketegangan antara adopsi teknologi generatif, etika kepemilikan karya, dan resistensi para pengembang game indie terhadap otomatisasi.",
