@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "kontroversi-ai-megajam-epic-games-mengapa-komuni-20261023",
+    "title": "Kontroversi AI MegaJam Epic Games: Mengapa Komunitas Unreal Engine Menolak Kewajiban AI?",
+    "description": "Epic Games memicu gelombang protes setelah mengumumkan kewajiban penggunaan AI dalam kompetisi MegaJam terbaru mereka, yang kemudian segera ditarik kembali. Analisis ini membedah ketegangan antara adopsi teknologi generatif, etika kepemilikan karya, dan resistensi para pengembang game indie terhadap otomatisasi.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-23T00:37:28.751Z",
+    "updatedDate": "2026-10-23T00:37:28.751Z",
+    "readingTime": "7 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "EpicGames",
+      "UnrealEngine",
+      "GenerativeAI",
+      "GameDev",
+      "MegaJam"
+    ],
+    "en": {
+      "title": "The Epic AI MegaJam Controversy: Why the Unreal Engine Community Pushed Back",
+      "description": "Epic Games sparked a massive outcry by initially mandating AI use in their latest MegaJam, only to backtrack shortly after. This report analyzes the growing friction between AI-driven tool adoption and the creative independence of game developers."
+    }
+  },
+  {
     "slug": "skandal-keamanan-kritis-kebocoran-private-key-8--20261022",
     "title": "Skandal Keamanan Kritis: Kebocoran Private Key 8 Sertifikat CA Ancam Integritas Enkripsi Global",
     "description": "Industri keamanan siber global dikejutkan oleh kebocoran private key dari delapan sertifikat Certificate Authority (CA) yang memungkinkan penyerang melakukan penyamaran domain secara bebas. Insiden berskala masif ini memaksa para administrator sistem dan raksasa teknologi untuk segera merombak rantai kepercayaan digital mereka demi mencegah serangan Man-in-the-Middle tingkat lanjut.",
