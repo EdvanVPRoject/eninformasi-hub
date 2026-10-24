@@ -326,7 +326,12 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
                       <span className="p-1 rounded-md bg-emerald-500/10 text-emerald-400 shrink-0">
                         <ExternalLink className="w-3.5 h-3.5" />
                       </span>
-                      <span className="leading-snug text-left [text-align:left]">{sourceText}</span>
+                      <div className="flex flex-col text-left [text-align:left]">
+                        <span className="leading-snug text-left [text-align:left]">{sourceText}</span>
+                        <a href="#daftar-pustaka" className="text-[10px] font-mono text-emerald-400/80 hover:text-emerald-300 underline underline-offset-2 pt-0.5">
+                          Tercantum dalam Daftar Pustaka &darr;
+                        </a>
+                      </div>
                     </div>
                     <a
                       href={sourceUrl}
