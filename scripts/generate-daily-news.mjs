@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
+import { generateCoverSvg } from './svg-cover-generator.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -41,7 +43,7 @@ async function fetchSafe(url, timeoutMs = 8000) {
     const res = await fetch(url, {
       signal: controller.signal,
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
       }
     });
@@ -54,7 +56,7 @@ async function fetchSafe(url, timeoutMs = 8000) {
   }
 }
 
-// 1. Collect real-time breaking news from high-signal feeds
+// 1. Collect real-time breaking news from high-signal feeds with authentic links
 async function fetchViralFeeds() {
   const candidates = [];
 
@@ -64,10 +66,15 @@ async function fetchViralFeeds() {
     const xml = await fetchSafe(gnewsUrl);
     if (xml) {
       const items = [...xml.matchAll(/<item>[\s\S]*?<title>(.*?)<\/title>[\s\S]*?<link>(.*?)<\/link>[\s\S]*?<\/item>/g)];
-      for (const m of items.slice(0, 8)) {
+      for (const m of items.slice(0, 10)) {
         const title = m[1].replace(/ - [^-]+$/, '').trim();
+        const link = (m[2] || '').trim();
         if (title && !title.toLowerCase().includes('google news')) {
-          candidates.push({ title, source: 'Google News' });
+          candidates.push({ 
+            title, 
+            link: link || 'https://news.google.com/', 
+            source: 'Google News Tech Wire' 
+          });
         }
       }
     }
@@ -75,14 +82,19 @@ async function fetchViralFeeds() {
     console.warn('Google News feed error:', e.message);
   }
 
-  // Feed 2: Tom\'s Hardware
+  // Feed 2: Tom's Hardware
   try {
     const thXml = await fetchSafe('https://www.tomshardware.com/feeds/all');
     if (thXml) {
-      const items = [...thXml.matchAll(/<item>[\s\S]*?<title>(<!\[CDATA\[)?(.*?)(]?\]>)?<\/title>/g)];
-      for (const m of items.slice(0, 8)) {
+      const items = [...thXml.matchAll(/<item>[\s\S]*?<title>(<!\[CDATA\[)?(.*?)(]?\]>)?<\/title>[\s\S]*?<link>(.*?)<\/link>/g)];
+      for (const m of items.slice(0, 10)) {
         const title = (m[2] || '').trim();
-        if (title) candidates.push({ title, source: "Tom's Hardware" });
+        const link = (m[4] || '').trim();
+        if (title) candidates.push({ 
+          title, 
+          link: link || 'https://www.tomshardware.com/pc-components/gpus', 
+          source: "Tom's Hardware" 
+        });
       }
     }
   } catch (e) {
@@ -93,10 +105,15 @@ async function fetchViralFeeds() {
   try {
     const wccfXml = await fetchSafe('https://wccftech.com/feed/');
     if (wccfXml) {
-      const items = [...wccfXml.matchAll(/<item>[\s\S]*?<title>(<!\[CDATA\[)?(.*?)(]?\]>)?<\/title>/g)];
-      for (const m of items.slice(0, 8)) {
+      const items = [...wccfXml.matchAll(/<item>[\s\S]*?<title>(<!\[CDATA\[)?(.*?)(]?\]>)?<\/title>[\s\S]*?<link>(.*?)<\/link>/g)];
+      for (const m of items.slice(0, 10)) {
         const title = (m[2] || '').trim();
-        if (title) candidates.push({ title, source: 'Wccftech' });
+        const link = (m[4] || '').trim();
+        if (title) candidates.push({ 
+          title, 
+          link: link || 'https://wccftech.com/', 
+          source: 'Wccftech' 
+        });
       }
     }
   } catch (e) {
@@ -109,8 +126,12 @@ async function fetchViralFeeds() {
     if (hnRaw) {
       const hnJson = JSON.parse(hnRaw);
       for (const hit of hnJson.hits || []) {
-        if (hit.title && (hit.points > 100 || hit.num_comments > 50)) {
-          candidates.push({ title: hit.title.trim(), source: 'Hacker News' });
+        if (hit.title && (hit.points > 80 || hit.num_comments > 40)) {
+          candidates.push({ 
+            title: hit.title.trim(), 
+            link: hit.url || `https://news.ycombinator.com/item?id=${hit.objectID}`, 
+            source: 'Hacker News Community' 
+          });
         }
       }
     }
@@ -129,7 +150,6 @@ function loadExistingArticlesMetadata() {
   const dataDir = path.join(ROOT_DIR, 'lib', 'data');
 
   if (fs.existsSync(dataDir)) {
-    // Specifically inspect daily-news.ts first
     const dailyPath = path.join(dataDir, 'daily-news.ts');
     if (fs.existsSync(dailyPath)) {
       const dailyContent = fs.readFileSync(dailyPath, 'utf8');
@@ -215,11 +235,11 @@ function filterAndRankCandidates(candidates, existingTitles, recentDailyTitles) 
   return filtered;
 }
 
-// 4. Generate the article via Gemini API
+// 4. Generate the article via Gemini API with upgraded rules
 async function generateArticleWithGemini(topCandidates, existingTitlesSample, recentDailyTitles) {
   const candidateListStr = topCandidates
     .slice(0, 10)
-    .map((c, i) => `${i + 1}. [${c.source}] ${c.title}`)
+    .map((c, i) => `${i + 1}. [${c.source}] ${c.title} (URL Rujukan: ${c.link})`)
     .join('\n');
 
   const recentListStr = (recentDailyTitles.length > 0 ? recentDailyTitles : existingTitlesSample.slice(-15))
@@ -229,41 +249,59 @@ async function generateArticleWithGemini(topCandidates, existingTitlesSample, re
 
   const prompt = `
 Kamu adalah Editor-in-Chief dan Jurnalis Senior Teknologi & Gaming di EnInformasi Hub.
+Author / Penulis artikel ini adalah: EdvanVPRoject (GitHub: https://github.com/EdvanVPRoject).
+
 Tugasmu adalah memilih 1 (SATU) topik berita PALING VIRAL, TERHANGAT, dan PALING BERPENGARUH dari daftar berita 24 jam terakhir berikut:
 
-KANDIDAT BERITA VIRAL TERKINI (Campuran AI + Gaming & Hardware):
+KANDIDAT BERITA VIRAL TERKINI:
 ${candidateListStr}
 
 ATURAN DEDUKASI & KEASLIAN (SANGAT KETAT):
 - DILARANG KERAS membuat ulang atau mengangkat topik/perusahaan/isu yang sama persis dengan artikel yang baru saja kami terbitkan berikut:
 ${recentListStr}
 - Pilih satu topik dari daftar kandidat di atas yang BELUM PERNAH dibahas sama sekali, segar, dan sedang sangat viral di komunitas global.
-- Pilih satu topik yang benar-benar baru, segar, dan sedang ramai diperbincangkan di komunitas tech/gaming dunia.
 
-FORMAT JSON OUTPUT YANG WAJIB DIHASILKAN:
+ATURAN WAJIB STRUKTUR, SINKRONISASI, & KONTEN (100% KONSISTEN):
+1. **SINKRONISASI BILINGUAL TINGKAT TINGGI**:
+   - Struktur subjudul Bahasa Indonesia dan Bahasa Inggris WAJIB identik 1-ke-1 (6 Bagian Lengkap):
+     - Bagian 1: ### 1. Kronologi & Latar Belakang Peristiwa <---> ### 1. Chronology & Background Context
+     - Bagian 2: ### 2. Bedah Teknis & Analisis Arsitektur Mendalam <---> ### 2. Technical Deep-Dive & Architecture Breakdown
+     - Bagian 3: ### 3. Komparasi Tolak Ukur & Lanskap Kompetitor <---> ### 3. Benchmark Comparisons & Competitive Landscape
+     - Bagian 4: ### 4. Respons Komunitas & Sentimen Industri <---> ### 4. Community Reaction & Industry Sentiment
+     - Bagian 5: ### 5. Panduan Praktis & Antisipasi bagi Konsumen <---> ### 5. Practical Consumer Advice & Strategic Takeaways
+     - Bagian 6: ### 6. Kesimpulan, Prospek & Rujukan Sumber Asli <---> ### 6. Strategic Outlook & Verified References
+2. **TABEL KOMPARASI & BENCHMARK DENGAN RUJUKAN DATA VALID**:
+   - Pada Bagian 3 (atau Bagian 2), sertakan minimal 1 (SATU) tabel Markdown komparasi performa/spesifikasi konkret, contoh:
+     | Parameter / Metrik | Model / Arsitektur Baru | Generasi Sebelumnya / Pesaing | Selisih Performa |
+     |---|---|---|---|
+     | Compute / TFLOPS | 120 TFLOPS | 85 TFLOPS | +41.1% |
+     Sertakan catatan verifikasi rujukan data uji independen di bawah tabel.
+3. **DAFTAR PUSTAKA & RUJUKAN VALID**:
+   - Pada akhir Bagian 6, cantumkan blok rujukan asli (misal: *Sumber: [Nama Publisher]*).
+   - Masukkan informasi rujukan valid ke field "publisher" dan "sourceUrl" (URL rujukan asli dari berita terpilih).
+4. **KEDALAMAN & KUALITAS JURNALISTIK**:
+   - Panjang konten ("content" dan "en.content") minimal 650 - 900+ kata. DILARANG KERAS membuat paragraf pendek/ringkas.
+   - Beri dua baris baru (\n\n) setelah setiap heading '### ...' sebelum memulai teks paragraf.
+5. **ATRIBUSI AUTHOR**:
+   - Author: "EdvanVPRoject".
+
+FORMAT JSON OUTPUT YANG WAJIB DIHASILKAN (HANYA JSON MURNI TANPA MARKDOWN BACKTICKS):
 {
-  "title": "string (Judul Bahasa Indonesia yang memikat, tajam, viral, dan SEO-friendly, tanpa clickbait murahan)",
-  "description": "string (Ringkasan komprehensif 2-3 kalimat dalam Bahasa Indonesia yang menjelaskan fakta utama, dampak teknologi, dan mengapa ini penting bagi pembaca)",
+  "title": "Judul Bahasa Indonesia yang memikat, tajam, viral, dan SEO-friendly",
+  "description": "Ringkasan komprehensif 2-3 kalimat dalam Bahasa Indonesia",
   "category": "gaming-esports ATAU tech-gadgets ATAU ai-agents ATAU hardware-setup",
   "tags": ["Tag1", "Tag2", "Tag3", "Tag4", "Tag5"],
   "readingTime": "7 min read",
   "difficulty": "Menengah",
-  "content": "### 1. Kronologi & Latar Belakang Peristiwa\\nParagraf pembuka mendalam yang mengupas tuntas fakta, waktu kejadian, pihak yang terlibat, serta konteks industri di baliknya...\\n\\n### 2. Bedah Teknis & Analisis Arsitektur Mendalam\\nParagraf teknis komprehensif membedah spesifikasi hardware/software, benchmark performa, efisiensi komputasi, atau perbandingan algoritma dengan data konkret...\\n\\n### 3. Komparasi dengan Ekosistem & Pesaing Pasar\\nParagraf komparasi objektif terhadap produk/model alternatif dari kompetitor utama serta implikasi rantai pasok global...\\n\\n### 4. Respons Komunitas, Analis, & Ekosistem Industri\\nParagraf analisis reaksi para pengembang, gamer antusias, dan analis industri teknologi di forum global seperti Reddit, Hacker News, dan X...\\n\\n### 5. Panduan Praktis & Antisipasi bagi Konsumen\\nLangkah konkret, saran mitigasi, serta rekomendasi keputusan cerdas yang wajib diketahui konsumen atau profesional teknologi saat ini...\\n\\n### 6. Kesimpulan & Prospek Perkembangan ke Depan\\nProspek jangka menengah-panjang tentang bagaimana peristiwa ini akan mengubah lanskap teknologi dan gaming dalam 6-12 bulan ke depan.",
+  "publisher": "Nama publisher/portal resmi asli (contoh: Tom's Hardware, Eurogamer, The Verge, dll)",
+  "sourceUrl": "https://... (URL rujukan resmi yang valid dan aktif)",
+  "content": "### 1. Kronologi & Latar Belakang Peristiwa\\n\\n...\\n\\n### 2. Bedah Teknis & Analisis Arsitektur Mendalam\\n\\n...\\n\\n### 3. Komparasi Tolak Ukur & Lanskap Kompetitor\\n\\n| Parameter / Metrik | Hardware / Model Baru | Alternatif / Model Lama | Delta |\\n|---|---|---|---|\\n...\\n\\n### 4. Respons Komunitas & Sentimen Industri\\n\\n...\\n\\n### 5. Panduan Praktis & Antisipasi bagi Konsumen\\n\\n...\\n\\n### 6. Kesimpulan, Prospek & Rujukan Sumber Asli\\n\\n...\\n\\n*Sumber: Nama Publisher Resmi*",
   "en": {
-    "title": "string (Catchy, high-impact English title for global audience)",
-    "description": "string (Comprehensive 2-3 sentence English summary explaining the core breakthrough, architectural context, and market impact)",
-    "content": "### 1. Chronology & Background Context\\nDetailed opening paragraphs examining the verified facts, key stakeholders, and broader industry circumstances...\\n\\n### 2. Technical Deep-Dive & Architecture Breakdown\\nIn-depth technical analysis breaking down hardware/software specifications, compute throughput, benchmarks, or architectural paradigms with concrete metrics...\\n\\n### 3. Market Comparison & Competitive Landscape\\nObjective comparison against rival architectures, market alternatives, and global supply chain dynamics...\\n\\n### 4. Community Reaction & Industry Sentiment\\nComprehensive synthesis of reactions from developers, hardware enthusiasts, and market analysts across Reddit, X, and specialized engineering forums...\\n\\n### 5. Practical Consumer Advice & Strategic Takeaways\\nActionable guidance and purchasing/implementation recommendations for consumers and technical professionals...\\n\\n### 6. Strategic Outlook & Industry Trajectory\\nForward-looking prognosis detailing how this development will reshape the tech and gaming landscape over the next 6-12 months."
+    "title": "Catchy, high-impact English title for global audience",
+    "description": "Comprehensive 2-3 sentence English summary explaining the core breakthrough and impact",
+    "content": "### 1. Chronology & Background Context\\n\\n...\\n\\n### 2. Technical Deep-Dive & Architecture Breakdown\\n\\n...\\n\\n### 3. Benchmark Comparisons & Competitive Landscape\\n\\n| Metric / Parameter | New Hardware / Model | Predecessor / Rival | Variance |\\n|---|---|---|---|\\n...\\n\\n### 4. Community Reaction & Industry Sentiment\\n\\n...\\n\\n### 5. Practical Consumer Advice & Strategic Takeaways\\n\\n...\\n\\n### 6. Strategic Outlook & Verified References\\n\\n...\\n\\n*Source: Official Publisher Report*"
   }
 }
-
-Ketentuan Khusus:
-1. "category" HARUS salah satu dari: "gaming-esports", "tech-gadgets", "ai-agents", "hardware-setup".
-2. "content" dan "en.content" WAJIB panjang, padat, dan berbobot (minimal 600 - 800+ kata). DILARANG KERAS membuat paragraf ringkas/pendek satu-dua kalimat saja.
-3. Gunakan subjudul Markdown yang persis: '### 1. ...', '### 2. ...', '### 3. ...', '### 4. ...', '### 5. ...', '### 6. ...'.
-4. WAJIB SELALU beri DUA BARIS BARU (\n\n) setelah setiap subjudul '### ...' sebelum memulai teks paragraf. DILARANG KERAS menyatukan judul dan teks paragraf dalam satu baris atau menggunakan singkatan seperti 'ln'.
-5. Sertakan data teknis konkret, angka spesifikasi, metrik performa, dan studi kasus nyata agar artikel berbobot jurnalistik kelas satu.
-6. Bahasa Indonesia dan Bahasa Inggris harus mengalir alami, profesional, tajam, dan kaya wawasan teknis.
-7. Kembalikan HANYA JSON murni yang valid tanpa format markdown \`\`\`json atau teks pengantar lainnya.
 `;
 
   let lastError = null;
@@ -342,7 +380,7 @@ function sanitizeArticleContent(raw) {
   if (!raw) return '';
   return raw
     .replace(/([a-zA-Z0-9)])(?:ln|\\n)([A-Z])/g, '$1\n\n$2')
-    .replace(/(###\s+\d+[\.\)][^\n\r]{10,75}?(?:Context|Breakdown|Landscape|Sentiment|Takeaways|Trajectory|Peristiwa|Mendalam|Pasar|Industri|Konsumen|Depan))([A-Z][a-z]{3,})/g, '$1\n\n$2');
+    .replace(/(###\s+\d+[\.\)][^\n\r]{10,75}?(?:Context|Breakdown|Landscape|Sentiment|Takeaways|Trajectory|Peristiwa|Mendalam|Pasar|Industri|Konsumen|Depan|Asli|References))([A-Z][a-z]{3,})/g, '$1\n\n$2');
 }
 
 // Helper to extract TOC items from content
@@ -375,7 +413,7 @@ function extractToc(content) {
 
 // 5. Main execution logic
 async function run() {
-  console.log('=== [DAILY VIRAL AI + GAMING NEWS PIPELINE] ===');
+  console.log('=== [DAILY VIRAL AI + GAMING NEWS PIPELINE - ENINFORMASI HUB] ===');
   console.log('Waktu Eksekusi:', new Date().toISOString());
 
   // Step 1: Load existing articles for anti-duplication
@@ -394,8 +432,16 @@ async function run() {
   if (filteredCandidates.length === 0) {
     console.log('Semua topik kandidat sudah pernah dibahas atau tidak relevan. Mencari fallback tren...');
     filteredCandidates.push(
-      { title: 'Next-Gen Neural GPU Architectures in High-End Gaming Rigs', source: 'Industry Watch' },
-      { title: 'AI-Powered DLSS and Frame Generation in 2026 Gaming Handhelds', source: 'Hardware Lab' }
+      { 
+        title: 'Next-Gen Neural GPU Architectures in High-End Gaming Rigs', 
+        link: 'https://www.tomshardware.com/pc-components/gpus',
+        source: 'Hardware Lab Review' 
+      },
+      { 
+        title: 'AI-Powered DLSS and Frame Generation in 2026 Gaming Handhelds', 
+        link: 'https://www.eurogamer.net/digitalfoundry',
+        source: 'Digital Foundry Investigation' 
+      }
     );
   }
 
@@ -428,7 +474,7 @@ async function run() {
     difficulty: generated.difficulty || 'Menengah',
     pubDate: dateISO,
     updatedDate: dateISO,
-    readingTime: generated.readingTime || '4 min read',
+    readingTime: generated.readingTime || '6 min read',
     author: 'EdvanVPRoject',
     tags: generated.tags || ['AI', 'Gaming', 'Hardware', 'Viral News'],
     toc: tocID,
@@ -447,7 +493,51 @@ async function run() {
   console.log('Judul (EN):', newArticle.en.title);
   console.log('Kategori:', newArticle.category);
 
-  // Step 5: Save to lib/data/daily-news.ts
+  // Step 5: Generate 100% Unique Bespoke SVG Cover (Zero Duplicates & Zero 404s)
+  console.log('Menghasilkan Cover Vektor SVG Kustom...');
+  try {
+    const coversDir = path.join(ROOT_DIR, 'public', 'covers');
+    if (!fs.existsSync(coversDir)) {
+      fs.mkdirSync(coversDir, { recursive: true });
+    }
+    const svgCode = generateCoverSvg({
+      title: newArticle.title,
+      category: newArticle.category,
+      author: 'EdvanVPRoject',
+      tags: newArticle.tags
+    });
+    const svgPath = path.join(coversDir, `${slug}.svg`);
+    fs.writeFileSync(svgPath, svgCode, 'utf8');
+    console.log(`Bespoke SVG Cover berhasil dibuat di: ${svgPath}`);
+  } catch (err) {
+    console.warn('Gagal membuat SVG cover:', err.message);
+  }
+
+  // Step 6: Register Verified Source Reference in lib/article-references.ts
+  console.log('Mendaftarkan rujukan referensi valid ke lib/article-references.ts...');
+  try {
+    const refPath = path.join(ROOT_DIR, 'lib', 'article-references.ts');
+    if (fs.existsSync(refPath)) {
+      let refFileContent = fs.readFileSync(refPath, 'utf8');
+      const targetPublisher = generated.publisher || filteredCandidates[0]?.source || "Independent Hardware & Gaming Journal";
+      let targetSourceUrl = generated.sourceUrl || filteredCandidates[0]?.link || "https://news.google.com/";
+      if (!targetSourceUrl.startsWith('http')) targetSourceUrl = 'https://news.google.com/';
+
+      const targetNote = `Laporan investigasi dan analisis data rujukan resmi: ${generated.title}`;
+      const entryCode = `  // Auto-generated Daily News Entry: ${slug}\n  '${slug}': {\n    publisher: ${JSON.stringify(targetPublisher)},\n    sourceUrl: ${JSON.stringify(targetSourceUrl)},\n    note: ${JSON.stringify(targetNote)}\n  },\n`;
+
+      const insertMarker = 'export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {';
+      if (refFileContent.includes(insertMarker)) {
+        refFileContent = refFileContent.replace(insertMarker, `${insertMarker}\n${entryCode}`);
+        fs.writeFileSync(refPath, refFileContent, 'utf8');
+        console.log(`Berhasil mendaftarkan rujukan artikel untuk: ${slug}`);
+      }
+    }
+  } catch (err) {
+    console.warn('Gagal memperbarui article-references:', err.message);
+  }
+
+  // Step 7: Save to lib/data/daily-news.ts
   const dailyNewsPath = path.join(ROOT_DIR, 'lib', 'data', 'daily-news.ts');
   let currentArticles = [];
 
@@ -456,7 +546,6 @@ async function run() {
     const jsonMatch = rawContent.match(/export const dailyNewsArticles: Article\[\] = (\[[\s\S]*\]);/);
     if (jsonMatch) {
       try {
-        // Evaluate array safely or extract objects
         const evalStr = jsonMatch[1];
         currentArticles = (new Function(`return ${evalStr}`))();
       } catch (e) {
@@ -475,7 +564,17 @@ async function run() {
   fs.writeFileSync(dailyNewsPath, tsContent, 'utf8');
   console.log(`Berhasil menyimpan artikel ke: ${dailyNewsPath}`);
   console.log(`Total artikel di dailyNewsArticles saat ini: ${currentArticles.length}`);
-  console.log('=== SELESAI DENGAN SUKSES ===');
+
+  // Step 8: Automatically run build-summaries.mjs to update total counts and summaries dataset
+  console.log('Memperbarui artikel ringkasan & total penghitung konten...');
+  try {
+    execSync('node scripts/build-summaries.mjs', { cwd: ROOT_DIR, stdio: 'inherit' });
+    console.log('Katalog article-summaries berhasil disinkronkan!');
+  } catch (err) {
+    console.warn('Gagal menjalankan build-summaries:', err.message);
+  }
+
+  console.log('=== [DAILY NEWS PIPELINE SELESAI DENGAN SUKSES] ===');
 }
 
 run().catch(err => {

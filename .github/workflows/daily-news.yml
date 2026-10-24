@@ -41,8 +41,8 @@ jobs:
           git config --global user.name "EdvanVPRoject"
           git config --global user.email "septiaedvan@gmail.com"
           git status
-          if [ -n "$(git status --porcelain lib/data)" ]; then
-            git add lib/data/daily-news.ts lib/data/article-summaries.ts
+          if [ -n "$(git status --porcelain lib/data public/covers lib/article-references.ts)" ]; then
+            git add lib/data/daily-news.ts lib/data/article-summaries.ts lib/article-references.ts public/covers/
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
             git commit -m "chore(daily-news): update 3x daily viral tech & gaming news [${TIMESTAMP}]"
             git push origin main
