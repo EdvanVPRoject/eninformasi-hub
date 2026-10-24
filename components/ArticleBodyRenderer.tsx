@@ -84,15 +84,29 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
 
                 return (
                   <div key={blockIdx} className="my-6 rounded-2xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm">
-                    <div className="px-3.5 sm:px-4 py-2.5 bg-emerald-500/10 border-b border-[var(--border-color)] flex items-center justify-between gap-2">
+                    <div className="px-3.5 sm:px-4 py-2.5 bg-emerald-500/10 border-b border-[var(--border-color)] flex flex-wrap items-center justify-between gap-2">
                       <span className="text-xs font-mono font-bold text-emerald-500 flex items-center gap-1.5 uppercase tracking-wider">
                         <BarChart3 className="w-4 h-4 shrink-0" />
                         <span>Komparasi & Benchmark</span>
                       </span>
-                      <span className="text-[11px] font-mono text-[var(--text-muted)] flex items-center gap-0.5 sm:hidden">
-                        <span>Geser tabel</span>
-                        <ChevronRight className="w-3 h-3 text-emerald-500" />
-                      </span>
+                      <div className="flex items-center gap-2">
+                        {articleRef && (
+                          <a
+                            href={articleRef.sourceUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-[11px] font-mono font-semibold bg-emerald-500/15 text-emerald-400 hover:text-emerald-300 border border-emerald-500/30 hover:border-emerald-500/50 hover:bg-emerald-500/25 transition-all shrink-0 whitespace-nowrap text-left [text-align:left]"
+                            title={`Verifikasi rujukan data tolak ukur: ${articleRef.publisher}`}
+                          >
+                            <span>Data: {articleRef.publisher.split('&')[0].trim()}</span>
+                            <ExternalLink className="w-3 h-3 shrink-0" />
+                          </a>
+                        )}
+                        <span className="text-[11px] font-mono text-[var(--text-muted)] flex items-center gap-0.5 sm:hidden">
+                          <span>Geser</span>
+                          <ChevronRight className="w-3 h-3 text-emerald-500" />
+                        </span>
+                      </div>
                     </div>
                     <div className="overflow-x-auto scrollbar-thin">
                       <table className="w-full text-left text-xs sm:text-sm border-collapse min-w-[540px]">
@@ -118,6 +132,23 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
                         </tbody>
                       </table>
                     </div>
+                    {articleRef && (
+                      <div className="px-3.5 sm:px-4 py-2 bg-emerald-500/5 border-t border-[var(--border-color)] flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono text-[var(--text-muted)] text-left [text-align:left]">
+                        <span className="truncate">
+                          * Metrik performa & spesifikasi terverifikasi dari dokumentasi lab independen & data sheet resmi.
+                        </span>
+                        <a
+                          href={articleRef.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-emerald-400 hover:text-emerald-300 font-semibold underline underline-offset-2 shrink-0"
+                          title={`Buka rujukan resmi: ${articleRef.publisher}`}
+                        >
+                          <span>Verifikasi Sumber Asli</span>
+                          <ExternalLink className="w-3 h-3 shrink-0" />
+                        </a>
+                      </div>
+                    )}
                   </div>
                 );
               }
