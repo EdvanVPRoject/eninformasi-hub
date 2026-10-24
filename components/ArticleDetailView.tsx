@@ -234,11 +234,11 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
             {heroVisual && !isHeroImageInBody && (
               <figure className="my-2 max-w-xl mx-auto rounded-xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm text-left [text-align:left]">
                 <a
-                  href={heroPhotoInfo?.url}
+                  href={articleRef.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative overflow-hidden bg-black/40 flex items-center justify-center aspect-[16/9] max-h-[220px] sm:max-h-[280px] group/hero block cursor-pointer"
-                  title={`Buka foto asli resolusi penuh (${heroPhotoInfo?.label || 'Unsplash'})`}
+                  title={`Buka rujukan artikel asli: ${articleRef.publisher}`}
                 >
                   <img
                     src={heroVisual.url}
@@ -253,14 +253,14 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                     <span className="leading-snug">{heroVisual.caption}</span>
                   </span>
                   <a
-                    href={heroPhotoInfo?.url || 'https://images.unsplash.com'}
+                    href={articleRef.sourceUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 hover:text-emerald-400 dark:text-emerald-400 dark:hover:text-emerald-300 border border-emerald-500/20 hover:border-emerald-500/40 hover:bg-emerald-500/20 font-semibold self-start sm:self-auto transition-all group/src cursor-pointer shrink-0 whitespace-nowrap text-left [text-align:left]"
-                    title="Buka sumber asli foto (Unsplash)"
+                    title={`Buka rujukan artikel asli: ${articleRef.publisher}`}
                   >
                     <ExternalLink className="w-3 h-3 shrink-0 group-hover/src:translate-x-0.5 group-hover/src:-translate-y-0.5 transition-transform" />
-                    <span>Sumber: {heroPhotoInfo?.label || 'Unsplash'}</span>
+                    <span>Rujukan: {articleRef.publisher.split('&')[0].trim()}</span>
                     <span className="text-[10px] opacity-70">↗</span>
                   </a>
                 </figcaption>
@@ -351,7 +351,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
             </div>
 
             <article className="prose prose-invert max-w-none text-[var(--text-main)] space-y-4 leading-relaxed">
-              <ArticleBodyRenderer key={`body-${lang}`} content={displayContent} toc={displayToc} />
+              <ArticleBodyRenderer key={`body-${lang}`} content={displayContent} toc={displayToc} articleRef={articleRef} />
             </article>
 
             {displaySteps && displaySteps.length > 0 && (

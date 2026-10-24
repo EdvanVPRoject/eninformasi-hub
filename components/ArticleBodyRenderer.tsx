@@ -4,14 +4,15 @@ import React from 'react';
 import CodeBlock from './CodeBlock';
 import { TocItem } from '@/lib/types';
 import { Image as ImageIcon, ExternalLink, BarChart3, ChevronRight } from 'lucide-react';
-import { resolveSourceUrl, resolvePhotoSource } from '@/lib/article-references';
+import { resolveSourceUrl, resolvePhotoSource, ArticleReference } from '@/lib/article-references';
 
 interface ArticleBodyRendererProps {
   content: string;
   toc?: TocItem[];
+  articleRef?: ArticleReference;
 }
 
-export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendererProps) {
+export default function ArticleBodyRenderer({ content, toc, articleRef }: ArticleBodyRendererProps) {
   // Split content by code blocks ```...```
   const parts = content.split(/(```[\s\S]*?```)/g);
   let h3Count = 0;
@@ -143,15 +144,17 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
 
                 const cleanSource = source ? source.replace(/^(Sumber|Source):\s*/i, '').trim() : '';
                 const photoInfo = resolvePhotoSource(imgSrc, cleanSource);
+                const targetUrl = articleRef?.sourceUrl || photoInfo.url;
+                const targetPublisher = articleRef?.publisher ? articleRef.publisher.split('&')[0].trim() : (cleanSource || 'Dokumentasi Resmi');
 
                 return (
                   <figure key={blockIdx} className="my-5 max-w-xl mx-auto rounded-xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm text-left [text-align:left]">
                     <a
-                      href={photoInfo.url}
+                      href={targetUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="relative overflow-hidden bg-black/40 flex items-center justify-center aspect-[16/9] max-h-[220px] sm:max-h-[280px] group/img block cursor-pointer"
-                      title={`Buka foto asli resolusi penuh (${photoInfo.label})`}
+                      title={`Buka rujukan artikel asli: ${targetPublisher}`}
                     >
                       <img
                         src={imgSrc}
@@ -166,14 +169,14 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
                         <span className="leading-snug">{caption}</span>
                       </span>
                       <a
-                        href={photoInfo.url}
+                        href={targetUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 hover:text-emerald-400 dark:text-emerald-400 dark:hover:text-emerald-300 border border-emerald-500/20 hover:border-emerald-500/40 hover:bg-emerald-500/20 font-semibold self-start sm:self-auto transition-all group/src cursor-pointer shrink-0 whitespace-nowrap text-left [text-align:left]"
-                        title={`Buka sumber asli foto: ${photoInfo.label}`}
+                        title={`Buka rujukan artikel asli: ${targetPublisher}`}
                       >
                         <ExternalLink className="w-3 h-3 shrink-0 group-hover/src:translate-x-0.5 group-hover/src:-translate-y-0.5 transition-transform" />
-                        <span>Sumber: {photoInfo.label}</span>
+                        <span>Rujukan: {targetPublisher}</span>
                         <span className="text-[10px] opacity-70">↗</span>
                       </a>
                     </figcaption>
@@ -284,7 +287,7 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
               if (/^\*(Sumber|Source|Data Source):\s*/i.test(trimmed)) {
                 const sourceText = trimmed.replace(/^\*|\*$/g, '');
                 const cleanQuery = sourceText.replace(/^(Sumber|Source|Data Source):\s*/i, '');
-                const sourceUrl = resolveSourceUrl(cleanQuery);
+                const sourceUrl = articleRef?.sourceUrl || resolveSourceUrl(cleanQuery);
 
                 return (
                   <div key={blockIdx} className="my-4 p-3.5 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-left [text-align:left]">
@@ -300,7 +303,7 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-mono text-[11px] font-semibold bg-emerald-500 text-zinc-950 hover:bg-emerald-400 active:scale-95 transition-all shrink-0 self-start sm:self-auto shadow-sm whitespace-nowrap text-left [text-align:left]"
                     >
-                      <span>Buka Laporan Sumber</span>
+                      <span>Buka Rujukan Artikel Asli</span>
                       <span className="text-[10px]">↗</span>
                     </a>
                   </div>
