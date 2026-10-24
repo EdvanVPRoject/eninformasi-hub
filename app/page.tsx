@@ -252,7 +252,7 @@ function HomeContent() {
                 }`}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-xl sm:text-2xl font-bold tracking-tight text-emerald-500">
+                  <span className="text-xl sm:text-2xl font-bold tracking-tight text-[var(--text-main)]">
                     {tutorialCount}
                   </span>
                   <GraduationCap className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${selectedType === 'tutorial' ? 'text-emerald-500' : 'text-[var(--text-muted)]'}`} />
@@ -275,7 +275,7 @@ function HomeContent() {
                 }`}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-xl sm:text-2xl font-bold tracking-tight text-sky-500 dark:text-sky-400">
+                  <span className="text-xl sm:text-2xl font-bold tracking-tight text-[var(--text-main)]">
                     {artikelCount}
                   </span>
                   <FileText className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${selectedType === 'artikel' ? 'text-sky-500' : 'text-[var(--text-muted)]'}`} />
