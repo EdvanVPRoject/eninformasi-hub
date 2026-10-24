@@ -19,6 +19,7 @@ import {
   tutorialArticleCount 
 } from '@/lib/data/article-summaries';
 import SidebarNav from '@/components/SidebarNav';
+import { getArticleCover } from '@/lib/cover-images';
 import { useLanguage } from '@/components/LanguageContext';
 import { getCategoryLabel } from '@/lib/i18n';
 import SortDropdown, { SortOption } from '@/components/SortDropdown';
@@ -247,32 +248,51 @@ function ArtikelContent() {
               return (
                 <article
                   key={article.slug}
-                  className="group flex flex-col justify-between p-5 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 hover:shadow-lg active:scale-[0.98] transition-all duration-200"
+                  className="group flex flex-col justify-between overflow-hidden rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 hover:shadow-lg active:scale-[0.98] transition-all duration-200"
                 >
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between text-[11px] font-mono">
-                      <span className="text-emerald-500 dark:text-emerald-400 font-semibold px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
-                        {getCategoryLabel(article.category, lang)}
-                      </span>
-                      <div className="flex items-center gap-1.5 text-[var(--text-muted)]">
-                        <Clock className="w-3 h-3 text-emerald-500" />
+                  <div>
+                    {/* Featured Image Thumbnail Header */}
+                    <Link href={`/artikel/${article.slug}`} className="block relative aspect-[16/9] w-full overflow-hidden bg-zinc-900 border-b border-[var(--border-color)]">
+                      <img
+                        src={getArticleCover(article.slug, article.category, article.tags).url}
+                        alt={displayTitle}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent pointer-events-none" />
+                      
+                      <div className="absolute top-3 left-3 flex items-center gap-1.5">
+                        <span className="px-2.5 py-1 rounded-md text-[10px] font-mono font-bold bg-black/75 text-sky-400 border border-sky-500/30 backdrop-blur-md">
+                          {lang === 'en' ? 'EnInformation' : 'EnInformasi'}
+                        </span>
+                      </div>
+
+                      <div className="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 rounded-md text-[10px] font-mono text-zinc-300 bg-black/75 backdrop-blur-md border border-white/10">
+                        <Clock className="w-3 h-3 text-emerald-400" />
                         <span>{article.readingTime}</span>
                       </div>
+
+                      <div className="absolute bottom-2.5 left-3 text-[11px] font-mono text-zinc-200 drop-shadow flex items-center gap-1.5 font-medium">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                        <span>{getCategoryLabel(article.category, lang)}</span>
+                      </div>
+                    </Link>
+
+                    <div className="p-4 sm:p-5 space-y-2.5">
+                      {/* 100% Full Title Without Clamping */}
+                      <h3 className="font-bold text-base sm:text-lg text-[var(--text-main)] group-hover:text-emerald-500 transition-colors leading-snug">
+                        <Link href={`/artikel/${article.slug}`}>
+                          {displayTitle}
+                        </Link>
+                      </h3>
+
+                      <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed line-clamp-3">
+                        {displayDesc}
+                      </p>
                     </div>
-
-                    {/* 100% Full Title Without Clamping */}
-                    <h3 className="font-bold text-base sm:text-lg text-[var(--text-main)] group-hover:text-emerald-500 transition-colors leading-snug">
-                      <Link href={`/artikel/${article.slug}`}>
-                        {displayTitle}
-                      </Link>
-                    </h3>
-
-                    <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed line-clamp-3">
-                      {displayDesc}
-                    </p>
                   </div>
 
-                  <div className="pt-4 mt-4 border-t border-[var(--border-color)] flex items-center justify-between gap-2">
+                  <div className="px-4 pb-4 sm:px-5 sm:pb-5 pt-3 border-t border-[var(--border-color)]/70 flex items-center justify-between gap-2">
                     <div className="flex items-center gap-1 text-[11px] text-[var(--text-muted)] font-mono">
                       <Sparkles className="w-3.5 h-3.5 text-amber-400" />
                       <span>{lang === 'en' ? 'Deep Dive & Insights' : 'Wawasan & Komparasi'}</span>

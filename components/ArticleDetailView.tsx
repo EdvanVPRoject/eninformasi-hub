@@ -18,9 +18,11 @@ import {
   ExternalLink,
   ShieldCheck,
   CheckCircle2,
-  RotateCcw
+  RotateCcw,
+  Image as ImageIcon
 } from 'lucide-react';
 import { Article, PostType } from '@/lib/types';
+import { getArticleCover } from '@/lib/cover-images';
 import SidebarNav from '@/components/SidebarNav';
 import TableOfContents from '@/components/TableOfContents';
 import FeedbackWidget from '@/components/FeedbackWidget';
@@ -102,6 +104,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
   const displayContent = (lang === 'en' && article.en?.content) ? article.en.content : article.content;
   const displayToc = (lang === 'en' && article.en?.toc) ? article.en.toc : article.toc;
   const displaySteps = (lang === 'en' && article.en?.steps) ? article.en.steps : article.steps;
+  const heroVisual = getArticleCover(article.slug, article.category, article.tags, displayContent);
 
   return (
     <div className="min-h-screen bg-[var(--bg-main)] relative">
@@ -221,6 +224,30 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                 {displayDesc}
               </div>
             </div>
+
+            {/* Featured Hero Visual Figure with Credible Source */}
+            {heroVisual && (
+              <figure className="rounded-2xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm">
+                <div className="relative overflow-hidden bg-black/40 flex items-center justify-center max-h-[340px] sm:max-h-[460px]">
+                  <img
+                    src={heroVisual.url}
+                    alt={heroVisual.caption}
+                    className="w-full h-full object-cover aspect-video hover:scale-[1.01] transition-transform duration-300"
+                    loading="eager"
+                  />
+                </div>
+                <figcaption className="px-3.5 py-2.5 sm:px-4 sm:py-3 bg-[var(--card-bg)] border-t border-[var(--border-color)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2 text-xs">
+                  <span className="text-[var(--text-main)] font-semibold flex items-center gap-1.5">
+                    <ImageIcon className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                    <span>{heroVisual.caption}</span>
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20 font-semibold self-start sm:self-auto">
+                    <ExternalLink className="w-3 h-3 shrink-0" />
+                    <span>Sumber: {heroVisual.source}</span>
+                  </span>
+                </figcaption>
+              </figure>
+            )}
 
             {displaySteps && displaySteps.length > 0 && (
               <div className="p-4 rounded-xl bg-zinc-900/60 border border-[var(--border-color)] space-y-3">
