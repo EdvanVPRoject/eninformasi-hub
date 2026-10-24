@@ -60,7 +60,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-[var(--border-color)] bg-[var(--bg-main)]/90 backdrop-blur-md transition-colors duration-200">
-      <div className="max-w-[1880px] mx-auto px-2 sm:px-4 lg:px-6 h-16 flex items-center justify-between gap-2">
+      <div className="max-w-[1880px] mx-auto px-2 sm:px-4 lg:px-6 h-16 flex items-center justify-between gap-4 relative">
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <Link href="/" className="flex items-center gap-2.5 font-mono font-bold tracking-tight text-base sm:text-lg group">
             <EnLogo size={32} />
@@ -73,21 +73,22 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
           </span>
         </div>
 
-        <nav className="hidden lg:flex items-center gap-5 text-sm font-medium text-[var(--text-muted)]">
+                {/* Center: Main Navigation Menu (PASKAN DI TENGAH) */}
+        <nav className="hidden md:flex items-center gap-2 lg:gap-3 text-sm font-medium absolute left-1/2 -translate-x-1/2">
           {pathname !== '/' && (
             <Link 
               href="/" 
-              className="transition-colors flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-mono text-xs bg-emerald-500/10 px-2.5 py-1.5 rounded-lg border border-emerald-500/20"
+              className="transition-all duration-200 flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-mono text-xs sm:text-sm font-semibold bg-emerald-500/10 hover:bg-emerald-500/20 px-3 py-1.5 rounded-lg border border-emerald-500/30 hover:border-emerald-500/50 shadow-sm active:scale-95"
             >
-              <Home className="w-3.5 h-3.5" /> 
+              <Home className="w-4 h-4" /> 
               <span>{lang === 'en' ? '← Main Page' : '← Halaman Utama'}</span>
             </Link>
           )}
 
           <Link 
             href="/tools" 
-            className={`transition-colors flex items-center gap-1.5 ${
-              pathname === '/tools' ? 'text-emerald-500 font-semibold' : 'hover:text-emerald-500'
+            className={`transition-all duration-200 flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:text-[var(--text-main)] hover:bg-[var(--card-bg)] ${
+              pathname === '/tools' ? 'text-emerald-400 font-semibold bg-emerald-500/10 border border-emerald-500/20' : 'text-[var(--text-muted)]'
             }`}
           >
             <Wrench className="w-4 h-4" /> 
@@ -96,8 +97,8 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
 
           <Link 
             href="/about" 
-            className={`transition-colors flex items-center gap-1.5 ${
-              pathname === '/about' ? 'text-emerald-500 font-semibold' : 'hover:text-emerald-500'
+            className={`transition-all duration-200 flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:text-[var(--text-main)] hover:bg-[var(--card-bg)] ${
+              pathname === '/about' ? 'text-emerald-400 font-semibold bg-emerald-500/10 border border-emerald-500/20' : 'text-[var(--text-muted)]'
             }`}
           >
             <UserCheck className="w-4 h-4" /> 
@@ -105,26 +106,26 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
           </Link>
         </nav>
 
-        {/* Search Bar on Desktop */}
-        <div className="hidden sm:block flex-1 max-w-xs sm:max-w-sm mx-2 sm:mx-4">
-          <button
-            type="button"
-            onClick={onOpenSearch}
-            className="w-full flex items-center justify-between px-3 py-1.5 text-xs sm:text-sm rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] hover:border-emerald-500/50 hover:text-[var(--text-main)] active:scale-[0.99] transition-all duration-200 ease-out shadow-sm group"
-          >
-            <span className="flex items-center gap-2 truncate">
-              <Search className="w-4 h-4 group-hover:text-emerald-500 transition-colors duration-150 shrink-0" />
-              <span className="truncate">
-                {lang === 'en' ? `Search ${totalArticleCount} items...` : `Cari ${totalArticleCount} konten...`}
+        {/* Right: Search Bar & Actions */}
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0 ml-auto">
+          {/* Search Bar on Desktop */}
+          <div className="hidden sm:block w-48 sm:w-56 md:w-48 lg:w-60 xl:w-72">
+            <button
+              type="button"
+              onClick={onOpenSearch}
+              className="w-full flex items-center justify-between px-3 py-1.5 text-xs sm:text-sm rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] hover:border-emerald-500/50 hover:text-[var(--text-main)] active:scale-[0.99] transition-all duration-200 ease-out shadow-sm group"
+            >
+              <span className="flex items-center gap-2 truncate">
+                <Search className="w-4 h-4 group-hover:text-emerald-500 transition-colors duration-150 shrink-0" />
+                <span className="truncate">
+                  {lang === 'en' ? `Search ${totalArticleCount} items...` : `Cari ${totalArticleCount} konten...`}
+                </span>
               </span>
-            </span>
-            <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono rounded bg-[var(--bg-main)] border border-[var(--border-color)] text-[var(--text-muted)] shrink-0">
-              Ctrl+K
-            </kbd>
-          </button>
-        </div>
-
-        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+              <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono rounded bg-[var(--bg-main)] border border-[var(--border-color)] text-[var(--text-muted)] shrink-0">
+                Ctrl+K
+              </kbd>
+            </button>
+          </div>
           {/* Mobile Search Icon Button */}
           <button
             type="button"

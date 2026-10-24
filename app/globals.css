@@ -72,24 +72,27 @@ button, a, input, select, summary {
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Snappy, ultra-smooth page entrance transition (clean opacity fade to preserve pixel-perfect DirectWrite subpixel sharpness) */
-@keyframes pageEnter {
+/* Premium, silky-smooth page entrance transition */
+@keyframes pageSlideFade {
   0% {
     opacity: 0;
+    transform: translateY(12px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.animate-page-enter {
-  animation: pageEnter 0.16s ease-out;
+.animate-smooth-page {
+  animation: pageSlideFade 0.32s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-page-enter {
+  .animate-smooth-page {
     animation: none !important;
     opacity: 1 !important;
+    transform: none !important;
   }
 }
 

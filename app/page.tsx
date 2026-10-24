@@ -438,7 +438,7 @@ function HomeContent() {
 
           {/* Desktop Section Segment Tabs: Semua | Tutorial | Artikel (Sticky saat scroll) */}
           <div className="hidden sm:block sticky top-16 z-30 pt-3 pb-2 -mt-3 bg-[var(--bg-main)]/95 backdrop-blur-md transition-all">
-            <div className="flex items-center gap-2 p-1.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] text-xs font-mono shadow-sm">
+            <div className="flex items-center justify-center gap-2 p-1.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] text-xs font-mono shadow-sm">
               <button
                 onClick={() => handleSelectType('all')}
                 className={`px-4 py-2 rounded-lg font-semibold transition-all duration-200 ease-out active:scale-95 whitespace-nowrap flex items-center gap-2 ${
