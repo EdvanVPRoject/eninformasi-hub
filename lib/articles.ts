@@ -16,8 +16,10 @@ import { getCategoryLabel } from './i18n';
 
 export function extractTocFromContent(content?: string, fallbackToc: TocItem[] = []): TocItem[] {
   if (!content) return fallbackToc;
+  // Remove code blocks ```...``` first so lines inside code blocks aren't mistaken for headings
+  const stripped = content.replace(/```[\s\S]*?```/g, '');
   // Defensively sanitize any accidental corrupted newline sequences
-  const cleanContent = content.replace(/([a-zA-Z0-9)])(?:ln|\\n)([A-Z])/g, '$1\n\n$2');
+  const cleanContent = stripped.replace(/([a-zA-Z0-9)])(?:ln|\\n)([A-Z])/g, '$1\n\n$2');
   const lines = cleanContent.split('\n');
   const toc: TocItem[] = [];
   let idx = 0;
