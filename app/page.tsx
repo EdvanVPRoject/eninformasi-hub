@@ -449,7 +449,8 @@ function HomeContent() {
               >
                 <Layers className="w-3.5 h-3.5" />
                 <span>{t('tab_all')}</span>
-                <span className="px-1.5 py-0.2 rounded bg-black/20 text-[10px]">
+                <span className={`px-1.5 py-0.2 rounded text-[10px] ${selectedType === 'all' ? 'bg-black/20 text-zinc-950 font-bold' : 'bg-zinc-800 text-[var(--text-main)]'}`}>
+
                   {totalArticleCount}
                 </span>
               </button>
@@ -464,7 +465,7 @@ function HomeContent() {
               >
                 <GraduationCap className="w-3.5 h-3.5" />
                 <span>{t('tab_tutorials')}</span>
-                <span className={`px-1.5 py-0.2 rounded text-[10px] ${selectedType === 'tutorial' ? 'bg-black/20' : 'bg-emerald-500/10 text-emerald-400'}`}>
+                <span className={`px-1.5 py-0.2 rounded text-[10px] ${selectedType === 'tutorial' ? 'bg-black/20 text-zinc-950 font-bold' : 'bg-zinc-800 text-[var(--text-main)]'}`}>
                   {tutorialCount}
                 </span>
               </button>
@@ -479,7 +480,7 @@ function HomeContent() {
               >
                 <FileText className="w-3.5 h-3.5" />
                 <span>{t('tab_articles')}</span>
-                <span className={`px-1.5 py-0.2 rounded text-[10px] ${selectedType === 'artikel' ? 'bg-black/20' : 'bg-zinc-500/10 text-[var(--text-muted)]'}`}>
+                <span className={`px-1.5 py-0.2 rounded text-[10px] ${selectedType === 'artikel' ? 'bg-black/20 text-zinc-950 font-bold' : 'bg-zinc-800 text-[var(--text-main)]'}`}>
                   {artikelCount}
                 </span>
               </button>
@@ -514,9 +515,9 @@ function HomeContent() {
 
               <div className="text-xs font-mono text-[var(--text-muted)] px-1 whitespace-nowrap">
                 {lang === 'en' ? (
-                  <>Showing <span className="font-bold text-emerald-500">{filteredArticles.length}</span> items</>
+                  <>Showing <span className="font-bold text-[var(--text-main)]">{filteredArticles.length}</span> items</>
                 ) : (
-                  <>Menampilkan <span className="font-bold text-emerald-500">{filteredArticles.length}</span> konten</>
+                  <>Menampilkan <span className="font-bold text-[var(--text-main)]">{filteredArticles.length}</span> konten</>
                 )}
               </div>
             </div>

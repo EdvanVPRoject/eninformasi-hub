@@ -233,7 +233,7 @@ function ArtikelContent() {
             </div>
             <div className="text-xs font-mono text-[var(--text-muted)] px-2">
               {lang === 'en' ? (
-                <>Showing <span className="font-bold text-emerald-500">{filteredArtikels.length}</span> articles</>
+                <>Showing <span className="font-bold text-[var(--text-main)]">{filteredArtikels.length}</span> articles</>
               ) : (
                 <>Menampilkan <span className="font-bold text-emerald-500">{filteredArtikels.length}</span> artikel</>
               )}

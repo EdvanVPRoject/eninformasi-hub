@@ -68,7 +68,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
               EnInformasi<span className="text-emerald-500">.hub</span>
             </span>
           </Link>
-          <span className="hidden xl:inline-flex items-center px-2 py-0.5 text-[10px] font-mono rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-bold">
+          <span className="hidden xl:inline-flex items-center px-2 py-0.5 text-[10px] font-mono rounded bg-emerald-500/10 text-[var(--text-main)] border border-emerald-500/20 font-bold">
             {totalArticleCount} {lang === 'en' ? 'Items' : 'Konten'}
           </span>
         </div>

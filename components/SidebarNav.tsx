@@ -88,7 +88,7 @@ function SidebarNavInner({
           <span className="font-mono text-xs font-semibold tracking-wider uppercase text-[var(--text-muted)] flex items-center gap-1.5">
             <SlidersHorizontal className="w-3.5 h-3.5" /> {t('filter_category_title')}
           </span>
-          <span className="font-mono text-[11px] text-emerald-500 bg-emerald-500/10 px-1.5 py-0.5 rounded font-bold border border-emerald-500/20">
+          <span className="font-mono text-[11px] text-[var(--text-main)] bg-emerald-500/10 px-1.5 py-0.5 rounded font-bold border border-emerald-500/20">
             {lang === 'en' ? `${totalCount} Items` : `${totalCount} Konten`}
           </span>
         </div>
@@ -117,8 +117,8 @@ function SidebarNavInner({
                 <span
                   className={`text-xs font-mono px-1.5 py-0.5 rounded transition-all duration-200 ${
                     isActive
-                      ? 'bg-emerald-500/20 text-emerald-400 font-bold'
-                      : 'bg-zinc-500/10 text-[var(--text-muted)] group-hover:text-[var(--text-main)]'
+                      ? 'bg-emerald-500/20 text-[var(--text-main)] font-bold'
+                      : 'bg-zinc-500/10 text-[var(--text-main)] group-hover:text-[var(--text-main)]'
                   }`}
                 >
                   {cat.count}
@@ -173,7 +173,7 @@ function SidebarNavInner({
             <SlidersHorizontal className="w-3.5 h-3.5 text-emerald-500" />
             <span>{t('filter_category_title')}</span>
           </span>
-          <span className="text-[10px] text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded-full font-bold border border-emerald-500/20">
+          <span className="text-[10px] text-[var(--text-main)] bg-emerald-500/10 px-2 py-0.5 rounded-full font-bold border border-emerald-500/20">
             {totalCount} {lang === 'en' ? 'Items' : 'Konten'}
           </span>
         </label>

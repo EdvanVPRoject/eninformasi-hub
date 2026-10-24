@@ -232,7 +232,7 @@ function TutorialContent() {
             </div>
             <div className="text-xs font-mono text-[var(--text-muted)] px-2">
               {lang === 'en' ? (
-                <>Showing <span className="font-bold text-emerald-500">{filteredTutorials.length}</span> tutorials</>
+                <>Showing <span className="font-bold text-[var(--text-main)]">{filteredTutorials.length}</span> tutorials</>
               ) : (
                 <>Menampilkan <span className="font-bold text-emerald-500">{filteredTutorials.length}</span> tutorial</>
               )}
