@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-industri-ai-global-ribuan-unit-gpu-rtx-5-20261024",
+    "title": "Skandal Industri AI Global: Ribuan Unit GPU RTX 5090 Dilucuti Massal di Pabrik Tiongkok untuk Server Data Center",
+    "description": "Sebuah video bocoran mengejutkan mengungkap bagaimana pabrik skala industri di Tiongkok membongkar kartu grafis flagship NVIDIA GeForce RTX 5090 secara massal demi memenuhi dahaga komputasi server kecerdasan buatan. Fenomena ini memicu kelangkaan parah di pasar konsumen global serta mengubah lanskap rantai pasok semikonduktor secara drastis.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-24T12:28:27.783Z",
+    "updatedDate": "2026-10-24T12:28:27.783Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "RTX 5090",
+      "NVIDIA",
+      "AI Servers",
+      "Hardware Gaming",
+      "Rantai Pasok Global"
+    ],
+    "en": {
+      "title": "Global AI Supply Chain Scandal: Industrial-Scale Chinese Factories Are Dismantling RTX 5090s for AI Servers",
+      "description": "A shocking leaked video reveals how industrial-scale factories in China are systematically stripping NVIDIA GeForce RTX 5090 flagship GPUs to fuel AI data center servers. This phenomenon is triggering severe global consumer shortages and reshaping the semiconductor supply chain landscape."
+    }
+  },
+  {
     "slug": "kebangkitan-rahasia-mass-effect-terungkapnya-kon-20261024",
     "title": "Kebangkitan Rahasia Mass Effect: Terungkapnya Konsep Game Berusia 600 Tahun Selepas Era Shepard",
     "description": "Bocoran terbaru dari mantan pengembang BioWare mengungkapkan detail mencengangkan mengenai proyek spin-off Mass Effect yang dibatalkan, berlatar 600 tahun setelah era Commander Shepard dengan mekanik ala Hitman. Informasi ini memberikan sudut pandang baru tentang arah kreatif studio legendaris tersebut sebelum akhirnya memilih fokus penuh pada trilogi lanjutan.",
