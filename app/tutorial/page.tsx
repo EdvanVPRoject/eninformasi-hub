@@ -239,7 +239,7 @@ function TutorialContent() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4.5 sm:gap-5">
             {filteredTutorials.slice(0, visibleCount).map((article) => {
               const displayTitle = (lang === 'en' && article.en?.title) ? article.en.title : article.title;
               const displayDesc = (lang === 'en' && article.en?.description) ? article.en.description : article.description;
@@ -277,9 +277,9 @@ function TutorialContent() {
                       </div>
                     </Link>
 
-                    <div className="p-4 sm:p-5 space-y-2.5">
+                    <div className="p-3.5 sm:p-4 space-y-2">
                       {/* 100% Full Title Without Clamping */}
-                      <h3 className="font-bold text-base sm:text-lg text-[var(--text-main)] group-hover:text-emerald-500 transition-colors leading-snug">
+                      <h3 className="font-bold text-sm sm:text-base text-[var(--text-main)] group-hover:text-emerald-500 transition-colors leading-snug">
                         <Link href={`/tutorial/${article.slug}`}>
                           {displayTitle}
                         </Link>
