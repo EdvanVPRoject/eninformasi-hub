@@ -5,56 +5,56 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
 [![Cloudflare Workers](https://img.shields.io/badge/Deploy-Cloudflare_OpenNext-F38020?style=for-the-badge&logo=cloudflare)](https://opennext.js.org/cloudflare)
 [![Total Content](https://img.shields.io/badge/Database-180_Articles-10b981?style=for-the-badge)](https://github.com/EdvanVPRoject/eninformasi-hub)
-[![Bilingual](https://img.shields.io/badge/Language-100%25_Bilingual_ID_|_EN-8b5cf6?style=for-the-badge)](#)
+[![Bilingual](https://img.shields.io/badge/Language-Bilingual_ID_|_EN-8b5cf6?style=for-the-badge)](#)
 
-> **Portal Modern 180 Konten Teknologi, AI Agents, Hardware Komputasi & Gaming Terlengkap di Indonesia.**
+> Portal Modern 180 Konten Teknologi, AI Agents, Hardware Komputasi, dan Gaming Terlengkap di Indonesia.
 
-Dikembangkan & Dikelola Secara Mandiri oleh **Edvan** ([@EdvanVPRoject](https://github.com/EdvanVPRoject))  
-*Pembaruan Katalog & Arsitektur Resmi: 25 Oktober 2026*
-
----
-
-## 🌟 Ikhtisar & Arsitektur Portal
-
-**EnInformasi Hub** adalah platform konten teknologi dan panduan komputasi generasi baru yang memisahkan secara tegas antara **Tutorial Praktis (*Hands-on Guides*)** dan **Informasi & Tren (*Deep-Dive Insights & Trends*)**:
-
-- **65 Tutorial Praktis**: Panduan teknis langkah demi langkah yang dilengkapi perintah terminal siap salin (*one-click copy*), snippet kode teruji, konfigurasi in-game/hardware, serta *Interactive Practice Checklists*.
-- **115 Informasi & Tren Analisis**: Analisis mendalam industri semikonduktor, ekosistem model LLM otonom (*Agentic AI*), arsitektur inference, serta bocoran tren industri game blockbuster generasi mendatang.
-- **375 Halaman Statis (SSG)**: Seluruh rute artikel, tutorial, halaman indeks topik, dan dokumentasi di-generate secara statis untuk kecepatan buka halaman instan (*sub-second load time*).
-- **100% Bilingual Penuh (🇮🇩 ID & 🇬🇧 EN)**: Seluruh 180 konten, daftar isi (*Table of Contents*), checklist langkah, tabel komparasi, dan antarmuka web dapat dialihkan secara instan antara Bahasa Indonesia dan English tanpa reload.
+Dikembangkan dan dikelola secara mandiri oleh **Edvan** ([@EdvanVPRoject](https://github.com/EdvanVPRoject))  
+Pembaruan Katalog dan Arsitektur Resmi: 25 Oktober 2026
 
 ---
 
-## 🤖 Otomasi Daily Viral News (AI Engine Pipeline)
+## Ikhtisar dan Arsitektur Platform
 
-Proyek ini dilengkapi pipeline otomasi konten harian cerdas yang berjalan otomatis di cloud:
+EnInformasi Hub adalah platform konten teknologi dan panduan komputasi generasi baru yang memisahkan secara tegas antara Tutorial Praktis (*Hands-on Guides*) dan Informasi & Tren (*Deep-Dive Insights & Trends*):
+
+- **65 Tutorial Praktis**: Panduan teknis langkah demi langkah yang dilengkapi perintah terminal siap salin (*one-click copy*), cuplikan kode teruji, konfigurasi in-game dan hardware, serta *Interactive Practice Checklists*.
+- **115 Informasi & Tren Analisis**: Analisis mendalam industri semikonduktor, ekosistem model LLM otonom (*Agentic AI*), arsitektur inference, serta dinamika rilis game blockbuster generasi mendatang.
+- **375 Halaman Statis (SSG)**: Seluruh rute artikel, tutorial, halaman indeks topik, dan dokumentasi di-generate secara statis untuk kecepatan akses instan (*sub-second load time*).
+- **100% Bilingual Penuh (ID dan EN)**: Seluruh 180 konten, daftar isi (*Table of Contents*), checklist langkah, tabel komparasi, dan antarmuka web dapat dialihkan secara instan antara Bahasa Indonesia dan Bahasa Inggris tanpa reload.
+
+---
+
+## Otomasi Daily Viral News (AI Engine Pipeline)
+
+Proyek ini dilengkapi pipeline otomasi konten harian yang berjalan otomatis di cloud:
 
 1. **GitHub Actions Terjadwal 3x Sehari (`.github/workflows/daily-news.yml`)**:
-   - Pagi: `07:00 WIB` (00:00 UTC)
-   - Siang: `13:00 WIB` (06:00 UTC)
-   - Malam: `19:00 WIB` (12:00 UTC)
+   - Pagi: 07:00 WIB (00:00 UTC)
+   - Siang: 13:00 WIB (06:00 UTC)
+   - Malam: 19:00 WIB (12:00 UTC)
 2. **Generasi Berbasis Google Gemini AI**:
-   - Memindai tren global teknologi & gaming paling viral.
+   - Memindai perkembangan tren global teknologi dan gaming.
    - Menghasilkan artikel bilingual dengan struktur 6 subheading simetris.
-   - Wajib menyertakan tabel komparasi / benchmark teknis Markdown.
+   - Wajib menyertakan tabel komparasi atau benchmark teknis Markdown.
 3. **Bespoke Generative SVG Covers (`public/covers/*.svg`)**:
-   - Setiap artikel baru otomatis dibuatkan cover vektor SVG beresolusi tajam (*geometricPrecision*) dengan palet warna sesuai kategori topik (bebas gambar blur / pixelated).
+   - Setiap artikel baru otomatis dibuatkan cover vektor SVG beresolusi tajam (*geometricPrecision*) dengan palet warna sesuai kategori topik (tanpa gambar blur atau pixelated).
 4. **Validasi Rujukan Faktual Terpercaya (`lib/article-references.ts`)**:
-   - Secara otomatis mendaftarkan tautan referensi publikasi kredibel (misal *The Verge, Tom's Hardware, IEEE, IGN, arXiv*) dengan validasi 0 deadlink / zero 404.
+   - Secara otomatis mendaftarkan tautan referensi publikasi kredibel (misalnya The Verge, Tom's Hardware, IEEE, IGN, arXiv) dengan jaminan zero deadlink (tanpa 404).
 5. **Auto-Rebuild Katalog Ringkas (`scripts/build-summaries.mjs`)**:
    - Menghasilkan dataset metadata ringkas `lib/data/article-summaries.ts` sehingga bundle JavaScript client tetap sangat ringan (< 180 kB First Load JS).
 
 ---
 
-## 🚀 Fitur Unggulan UI/UX
+## Fitur Utama Antarmuka dan Pengalaman Pengguna
 
-1. **HD Typography & Subpixel Clarity**:
+1. **HD Typography dan Subpixel Clarity**:
    - Menggunakan Google Variable Font **Inter** dengan konfigurasi `optimizeLegibility` dan kontras tajam.
-   - Seluruh angka metrik (180 konten, 65 tutorial, 115 artikel) diformat **full white (`text-[var(--text-main)]`)** agar tampil tegas dan mudah dibaca.
+   - Seluruh angka metrik (180 konten, 65 tutorial, 115 artikel) diformat warna putih solid (`text-[var(--text-main)]`) untuk keterbacaan optimal.
 2. **Bento Hub Dashboard**:
    - Menampilkan metrik real-time katalog, topik hangat (*Trending Topics*), dan tombol pintas filter cepat.
 3. **Transisi Halaman Mulus (*Smooth Transitions*)**:
-   - Perpindahan antar halaman dilengkapi animasi masuk yang halus (*glide & fade*), dengan unmount otomatis untuk menjaga ketajaman rendering teks statis.
+   - Perpindahan antar halaman dilengkapi animasi masuk yang halus (*glide & fade*), dengan unmount otomatis setelah transisi selesai untuk menjaga ketajaman rendering teks statis.
 4. **Navigasi Navbar Terpusat (*Centered Navigation*)**:
    - Menu utama (*Resource Tools, Tentang Saya, Halaman Utama*) terposisi presisi di titik tengah horizontal navbar.
 5. **Interactive Reading Utilities**:
@@ -66,7 +66,7 @@ Proyek ini dilengkapi pipeline otomasi konten harian cerdas yang berjalan otomat
 
 ---
 
-## 📁 Struktur Kategori Terkurasi
+## Struktur Kategori Konten
 
 | Kategori | Post Type Dominan | Fokus Pembahasan |
 |---|---|---|
@@ -80,7 +80,7 @@ Proyek ini dilengkapi pipeline otomasi konten harian cerdas yang berjalan otomat
 
 ---
 
-## 🛠️ Stack Teknologi & Alat
+## Stack Teknologi
 
 - **Framework**: [Next.js 15.5.28](https://nextjs.org/) (App Router, Static Site Generation / SSG, Server Actions)
 - **Deployment Platform**: [OpenNext Cloudflare](https://opennext.js.org/cloudflare) & Cloudflare Workers
@@ -92,7 +92,7 @@ Proyek ini dilengkapi pipeline otomasi konten harian cerdas yang berjalan otomat
 
 ---
 
-## 💻 Menjalankan Secara Lokal
+## Panduan Menjalankan Secara Lokal
 
 ```bash
 # 1. Kloning repositori
@@ -111,7 +111,7 @@ npm run dev
 
 ---
 
-## 📦 Build Produksi & Deploy
+## Build Produksi dan Deployment
 
 ```bash
 # 1. Jalankan build lengkap (rebuild summaries + OpenNext Cloudflare bundle)
@@ -123,7 +123,7 @@ npm run generate:daily
 
 ---
 
-## 📄 Hak Cipta & Lisensi
+## Hak Cipta dan Lisensi
 
 Seluruh arsitektur kode, sistem otomasi, kurasi konten, dan rancangan visual dikembangkan dan dikelola oleh **Edvan**.  
-Hak Cipta © 2026 **EnInformasi Hub**. All rights reserved.
+Hak Cipta (c) 2026 **EnInformasi Hub**. All rights reserved.
