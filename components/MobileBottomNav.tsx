@@ -81,7 +81,7 @@ export default function MobileBottomNav({ onOpenSearch }: MobileBottomNavProps) 
           </span>
         </div>
 
-        {/* 4. EnInformasi / Artikel */}
+        {/* 4. Informasi / Artikel */}
         <Link
           href="/artikel"
           className={`flex-1 flex flex-col items-center justify-center py-1 transition-all active:scale-90 ${
@@ -97,7 +97,7 @@ export default function MobileBottomNav({ onOpenSearch }: MobileBottomNavProps) 
             )}
           </div>
           <span className="text-[10px] font-mono mt-1">
-            Artikel
+            {lang === 'en' ? 'Articles' : 'Informasi'}
           </span>
         </Link>
 

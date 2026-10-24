@@ -104,7 +104,8 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
   const displayContent = (lang === 'en' && article.en?.content) ? article.en.content : article.content;
   const displayToc = (lang === 'en' && article.en?.toc) ? article.en.toc : article.toc;
   const displaySteps = (lang === 'en' && article.en?.steps) ? article.en.steps : article.steps;
-  const heroVisual = getArticleCover(article.slug, article.category, article.tags, displayContent);
+  const heroVisual = getArticleCover(article.slug, article.category, article.tags);
+  const isHeroImageInBody = Boolean(displayContent && heroVisual?.url && displayContent.includes(heroVisual.url));
 
   return (
     <div className="min-h-screen bg-[var(--bg-main)] relative">
@@ -226,7 +227,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
             </div>
 
             {/* Featured Hero Visual Figure with Credible Source */}
-            {heroVisual && (
+            {heroVisual && !isHeroImageInBody && (
               <figure className="rounded-2xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm">
                 <div className="relative overflow-hidden bg-black/40 flex items-center justify-center max-h-[340px] sm:max-h-[460px]">
                   <img
