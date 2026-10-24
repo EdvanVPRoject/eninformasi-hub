@@ -174,30 +174,31 @@ function HomeContent() {
   return (
     <div className="max-w-[1880px] mx-auto px-2 sm:px-4 lg:px-6 py-8 sm:py-12">
       {/* Hero Bento Header */}
-      <div className="relative mb-8 sm:mb-10 p-4 sm:p-8 lg:p-10 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] shadow-sm">
+      <div className="relative mb-8 sm:mb-10 p-4 sm:p-8 lg:p-10 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] shadow-sm space-y-6 sm:space-y-7">
+        {/* Full-width Hero Header: Badge & Single-Line Title */}
+        <div className="relative z-10 space-y-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold rounded-full bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20">
+            <Zap className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400 shrink-0" />
+            <span>
+              {lang === 'en'
+                ? `EnInformasi Hub — ${totalArticleCount} Tutorials, Gaming & Future Tech Trends`
+                : `EnInformasi Hub — ${totalArticleCount} Tutorial, Gaming & Tren Teknologi Terkini`}
+            </span>
+          </div>
+
+          <h1 className="text-xl sm:text-2xl md:text-[1.65rem] lg:text-[2.2rem] xl:text-[2.65rem] font-extrabold tracking-tight text-[var(--text-main)] leading-tight whitespace-normal md:whitespace-nowrap">
+            {t('hero_title_prefix')} {t('hero_title_highlight')}
+          </h1>
+        </div>
+
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
-          {/* Left Column: Hero Title, Value Proposition & Feature Pills */}
+          {/* Left Column: Value Proposition & Feature Pills */}
           <div className="lg:col-span-7 xl:col-span-7 flex flex-col justify-between space-y-5">
-            <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold rounded-full bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20">
-                <Zap className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400 shrink-0" />
-                <span>
-                  {lang === 'en'
-                    ? `EnInformasi Hub — ${totalArticleCount} Tutorials, Gaming & Future Tech Trends`
-                    : `EnInformasi Hub — ${totalArticleCount} Tutorial, Gaming & Tren Teknologi Terkini`}
-                </span>
-              </div>
-
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[var(--text-main)] leading-[1.15]">
-                {t('hero_title_prefix')} {t('hero_title_highlight')}
-              </h1>
-
-              <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed">
-                {lang === 'en'
-                  ? `Explore cutting-edge tech insights, gaming & esports strategies, upcoming blockbuster releases, hardware breakthroughs, featuring ${tutorialCount} Practical Tutorials (with copy-paste code and settings) and ${artikelCount} Deep-Dive Articles.`
-                  : `Eksplorasi wawasan teknologi terkini, tren gaming & esports, rilis game masa depan, inovasi hardware canggih, hingga ${tutorialCount} Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan ${artikelCount} Informasi & Analisis mendalam.`}
-              </p>
-            </div>
+            <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed">
+              {lang === 'en'
+                ? `Explore cutting-edge tech insights, gaming & esports strategies, upcoming blockbuster releases, hardware breakthroughs, featuring ${tutorialCount} Practical Tutorials (with copy-paste code and settings) and ${artikelCount} Deep-Dive Articles.`
+                : `Eksplorasi wawasan teknologi terkini, tren gaming & esports, rilis game masa depan, inovasi hardware canggih, hingga ${tutorialCount} Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan ${artikelCount} Informasi & Analisis mendalam.`}
+            </p>
 
             <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-medium text-[var(--text-muted)] border-t border-[var(--border-color)] pt-4">
               <div className="flex items-center gap-1.5">
