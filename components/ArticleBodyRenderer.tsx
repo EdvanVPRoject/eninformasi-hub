@@ -4,6 +4,7 @@ import React from 'react';
 import CodeBlock from './CodeBlock';
 import { TocItem } from '@/lib/types';
 import { Image as ImageIcon, ExternalLink, BarChart3, ChevronRight } from 'lucide-react';
+import { resolveSourceUrl } from '@/lib/article-references';
 
 interface ArticleBodyRendererProps {
   content: string;
@@ -140,26 +141,36 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
                   source = parts[1].replace(/^(Sumber|Source):\s*/i, '').trim();
                 }
 
+                const cleanSource = source ? source.replace(/^(Sumber|Source):\s*/i, '').trim() : '';
+                const sourceUrl = cleanSource ? resolveSourceUrl(cleanSource) : '';
+
                 return (
-                  <figure key={blockIdx} className="my-5 sm:my-6 rounded-2xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm">
-                    <div className="relative overflow-hidden bg-black/40 flex items-center justify-center max-h-[320px] sm:max-h-[500px]">
+                  <figure key={blockIdx} className="my-5 max-w-xl mx-auto rounded-xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm">
+                    <div className="relative overflow-hidden bg-black/40 flex items-center justify-center aspect-[16/9] max-h-[220px] sm:max-h-[280px]">
                       <img
                         src={imgSrc}
                         alt={caption}
-                        className="w-full h-auto object-cover transition-transform duration-300 hover:scale-[1.01]"
+                        className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                         loading="lazy"
                       />
                     </div>
-                    <figcaption className="px-3.5 py-2.5 sm:px-4 sm:py-3 bg-[var(--card-bg)] border-t border-[var(--border-color)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2 text-xs">
+                    <figcaption className="px-3 py-2 sm:px-3.5 sm:py-2.5 bg-[var(--card-bg)] border-t border-[var(--border-color)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2 text-[11px] sm:text-xs">
                       <span className="text-[var(--text-main)] font-semibold flex items-center gap-1.5">
                         <ImageIcon className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
                         <span>{caption}</span>
                       </span>
-                      {source && (
-                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20 font-semibold self-start sm:self-auto">
-                          <ExternalLink className="w-3 h-3 shrink-0" />
-                          <span>Sumber: {source}</span>
-                        </span>
+                      {cleanSource && (
+                        <a
+                          href={sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 hover:text-emerald-400 dark:text-emerald-400 dark:hover:text-emerald-300 border border-emerald-500/20 hover:border-emerald-500/40 hover:bg-emerald-500/20 font-semibold self-start sm:self-auto transition-all group/src cursor-pointer"
+                          title={`Buka rujukan sumber: ${cleanSource}`}
+                        >
+                          <ExternalLink className="w-3 h-3 shrink-0 group-hover/src:translate-x-0.5 group-hover/src:-translate-y-0.5 transition-transform" />
+                          <span>Sumber: {cleanSource}</span>
+                          <span className="text-[10px] opacity-70">↗</span>
+                        </a>
                       )}
                     </figcaption>
                   </figure>
@@ -268,15 +279,26 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
               // Verified Source Citation Callout: *Sumber: ...* or *Source: ...*
               if (/^\*(Sumber|Source|Data Source):\s*/i.test(trimmed)) {
                 const sourceText = trimmed.replace(/^\*|\*$/g, '');
+                const cleanQuery = sourceText.replace(/^(Sumber|Source|Data Source):\s*/i, '');
+                const sourceUrl = resolveSourceUrl(cleanQuery);
+
                 return (
-                  <div key={blockIdx} className="my-3 p-3 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs">
-                    <span className="flex items-center gap-2 text-emerald-500 font-semibold font-mono">
-                      <ExternalLink className="w-3.5 h-3.5 shrink-0" />
-                      <span>{sourceText}</span>
-                    </span>
-                    <span className="text-[10px] font-mono text-[var(--text-muted)] bg-[var(--card-bg)] px-2 py-0.5 rounded border border-[var(--border-color)] self-start sm:self-auto">
-                      Kredibilitas Terverifikasi
-                    </span>
+                  <div key={blockIdx} className="my-4 p-3.5 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs">
+                    <div className="flex items-center gap-2 text-[var(--text-main)] font-medium">
+                      <span className="p-1 rounded-md bg-emerald-500/10 text-emerald-400 shrink-0">
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </span>
+                      <span className="leading-snug">{sourceText}</span>
+                    </div>
+                    <a
+                      href={sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-mono text-[11px] font-semibold bg-emerald-500 text-zinc-950 hover:bg-emerald-400 active:scale-95 transition-all shrink-0 self-start sm:self-auto shadow-sm"
+                    >
+                      <span>Buka Laporan Sumber</span>
+                      <span className="text-[10px]">↗</span>
+                    </a>
                   </div>
                 );
               }

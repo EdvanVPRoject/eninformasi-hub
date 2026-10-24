@@ -19,10 +19,12 @@ import {
   ShieldCheck,
   CheckCircle2,
   RotateCcw,
-  Image as ImageIcon
+  Image as ImageIcon,
+  BookOpen
 } from 'lucide-react';
 import { Article, PostType } from '@/lib/types';
 import { getArticleCover } from '@/lib/cover-images';
+import { getArticleReference, resolveSourceUrl } from '@/lib/article-references';
 import SidebarNav from '@/components/SidebarNav';
 import TableOfContents from '@/components/TableOfContents';
 import FeedbackWidget from '@/components/FeedbackWidget';
@@ -106,6 +108,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
   const displaySteps = (lang === 'en' && article.en?.steps) ? article.en.steps : article.steps;
   const heroVisual = getArticleCover(article.slug, article.category, article.tags);
   const isHeroImageInBody = Boolean(displayContent && heroVisual?.url && displayContent.includes(heroVisual.url));
+  const articleRef = getArticleReference(article.slug, article.category, displayTitle);
 
   return (
     <div className="min-h-screen bg-[var(--bg-main)] relative">
@@ -228,24 +231,31 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
 
             {/* Featured Hero Visual Figure with Credible Source */}
             {heroVisual && !isHeroImageInBody && (
-              <figure className="rounded-2xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm">
-                <div className="relative overflow-hidden bg-black/40 flex items-center justify-center max-h-[340px] sm:max-h-[460px]">
+              <figure className="my-2 max-w-xl mx-auto rounded-xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm">
+                <div className="relative overflow-hidden bg-black/40 flex items-center justify-center aspect-[16/9] max-h-[220px] sm:max-h-[280px]">
                   <img
                     src={heroVisual.url}
                     alt={heroVisual.caption}
-                    className="w-full h-full object-cover aspect-video hover:scale-[1.01] transition-transform duration-300"
+                    className="w-full h-full object-cover aspect-video hover:scale-105 transition-transform duration-300"
                     loading="eager"
                   />
                 </div>
-                <figcaption className="px-3.5 py-2.5 sm:px-4 sm:py-3 bg-[var(--card-bg)] border-t border-[var(--border-color)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2 text-xs">
+                <figcaption className="px-3 py-2 sm:px-3.5 sm:py-2.5 bg-[var(--card-bg)] border-t border-[var(--border-color)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2 text-[11px] sm:text-xs">
                   <span className="text-[var(--text-main)] font-semibold flex items-center gap-1.5">
                     <ImageIcon className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
                     <span>{heroVisual.caption}</span>
                   </span>
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20 font-semibold self-start sm:self-auto">
-                    <ExternalLink className="w-3 h-3 shrink-0" />
+                  <a
+                    href={resolveSourceUrl(heroVisual.source)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 hover:text-emerald-400 dark:text-emerald-400 dark:hover:text-emerald-300 border border-emerald-500/20 hover:border-emerald-500/40 hover:bg-emerald-500/20 font-semibold self-start sm:self-auto transition-all group/src cursor-pointer"
+                    title={`Buka rujukan sumber gambar: ${heroVisual.source}`}
+                  >
+                    <ExternalLink className="w-3 h-3 shrink-0 group-hover/src:translate-x-0.5 group-hover/src:-translate-y-0.5 transition-transform" />
                     <span>Sumber: {heroVisual.source}</span>
-                  </span>
+                    <span className="text-[10px] opacity-70">↗</span>
+                  </a>
                 </figcaption>
               </figure>
             )}
@@ -342,6 +352,58 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                 <StepTracker key={`steps-${lang}`} slug={article.slug} steps={displaySteps} />
               </div>
             )}
+
+            {/* Verified Source & Primary Attribution */}
+            <section className="p-4 sm:p-5 rounded-2xl bg-zinc-900/60 border border-[var(--border-color)] space-y-3.5 shadow-sm">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pb-3 border-b border-[var(--border-color)]/70">
+                <div className="flex items-center gap-2">
+                  <div className="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400">
+                    <ShieldCheck className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="text-xs sm:text-sm font-bold text-[var(--text-main)] font-mono">
+                      {lang === 'en' ? 'Verified Source & Primary Attribution' : 'Rujukan Sumber & Atribusi Orisinal'}
+                    </h4>
+                    <p className="text-[11px] text-[var(--text-muted)]">
+                      {lang === 'en'
+                        ? 'Ground truth verified against official industry documentation & primary coverage.'
+                        : 'Informasi diverifikasi langsung berdasarkan dokumentasi resmi dan investigasi industri.'}
+                    </p>
+                  </div>
+                </div>
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-semibold self-start sm:self-auto">
+                  <CheckCircle2 className="w-3 h-3" />
+                  <span>{lang === 'en' ? 'Fact-Checked' : 'Terverifikasi'}</span>
+                </span>
+              </div>
+
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+                <div className="space-y-1 text-xs">
+                  <div className="text-[var(--text-muted)] font-mono text-[11px]">
+                    {lang === 'en' ? 'Primary Publisher / Authority:' : 'Penerbit & Otoritas Sumber:'}
+                  </div>
+                  <div className="text-[var(--text-main)] font-semibold flex items-center gap-2">
+                    <BookOpen className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                    <span>{articleRef.publisher}</span>
+                  </div>
+                  {articleRef.note && (
+                    <p className="text-[11px] text-[var(--text-muted)] italic leading-relaxed pt-0.5">
+                      {articleRef.note}
+                    </p>
+                  )}
+                </div>
+
+                <a
+                  href={articleRef.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-mono font-semibold bg-emerald-500 text-zinc-950 hover:bg-emerald-400 active:scale-[0.98] transition-all shadow-sm shrink-0 self-start sm:self-auto"
+                >
+                  <span>{lang === 'en' ? 'Open Original Article / Report' : 'Buka Artikel & Laporan Lengkap'}</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </section>
 
             <div className="pt-6 border-t border-[var(--border-color)] flex flex-wrap items-center gap-2">
               <span className="text-xs font-mono text-[var(--text-muted)] mr-1">
