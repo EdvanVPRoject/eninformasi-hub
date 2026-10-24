@@ -4,7 +4,7 @@ import React from 'react';
 import CodeBlock from './CodeBlock';
 import { TocItem } from '@/lib/types';
 import { Image as ImageIcon, ExternalLink, BarChart3, ChevronRight } from 'lucide-react';
-import { resolveSourceUrl } from '@/lib/article-references';
+import { resolveSourceUrl, resolvePhotoSource } from '@/lib/article-references';
 
 interface ArticleBodyRendererProps {
   content: string;
@@ -17,7 +17,7 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
   let h3Count = 0;
 
   return (
-    <div className="space-y-4 text-sm sm:text-base leading-relaxed text-[var(--text-main)] font-normal text-justify">
+    <div className="space-y-4 text-sm sm:text-base leading-relaxed text-[var(--text-main)] font-normal">
       {parts.map((part, index) => {
         if (!part.trim()) return null;
 
@@ -142,36 +142,40 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
                 }
 
                 const cleanSource = source ? source.replace(/^(Sumber|Source):\s*/i, '').trim() : '';
-                const sourceUrl = cleanSource ? resolveSourceUrl(cleanSource) : '';
+                const photoInfo = resolvePhotoSource(imgSrc, cleanSource);
 
                 return (
-                  <figure key={blockIdx} className="my-5 max-w-xl mx-auto rounded-xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm">
-                    <div className="relative overflow-hidden bg-black/40 flex items-center justify-center aspect-[16/9] max-h-[220px] sm:max-h-[280px]">
+                  <figure key={blockIdx} className="my-5 max-w-xl mx-auto rounded-xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm text-left [text-align:left]">
+                    <a
+                      href={photoInfo.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative overflow-hidden bg-black/40 flex items-center justify-center aspect-[16/9] max-h-[220px] sm:max-h-[280px] group/img block cursor-pointer"
+                      title={`Buka foto asli resolusi penuh (${photoInfo.label})`}
+                    >
                       <img
                         src={imgSrc}
                         alt={caption}
-                        className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover/img:scale-105"
                         loading="lazy"
                       />
-                    </div>
-                    <figcaption className="px-3 py-2 sm:px-3.5 sm:py-2.5 bg-[var(--card-bg)] border-t border-[var(--border-color)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2 text-[11px] sm:text-xs">
-                      <span className="text-[var(--text-main)] font-semibold flex items-center gap-1.5">
+                    </a>
+                    <figcaption className="px-3 py-2 sm:px-3.5 sm:py-2.5 bg-[var(--card-bg)] border-t border-[var(--border-color)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2 text-[11px] sm:text-xs text-left [text-align:left]">
+                      <span className="text-[var(--text-main)] font-semibold flex items-center gap-1.5 text-left [text-align:left] min-w-0">
                         <ImageIcon className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                        <span>{caption}</span>
+                        <span className="leading-snug">{caption}</span>
                       </span>
-                      {cleanSource && (
-                        <a
-                          href={sourceUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 hover:text-emerald-400 dark:text-emerald-400 dark:hover:text-emerald-300 border border-emerald-500/20 hover:border-emerald-500/40 hover:bg-emerald-500/20 font-semibold self-start sm:self-auto transition-all group/src cursor-pointer"
-                          title={`Buka rujukan sumber: ${cleanSource}`}
-                        >
-                          <ExternalLink className="w-3 h-3 shrink-0 group-hover/src:translate-x-0.5 group-hover/src:-translate-y-0.5 transition-transform" />
-                          <span>Sumber: {cleanSource}</span>
-                          <span className="text-[10px] opacity-70">↗</span>
-                        </a>
-                      )}
+                      <a
+                        href={photoInfo.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 hover:text-emerald-400 dark:text-emerald-400 dark:hover:text-emerald-300 border border-emerald-500/20 hover:border-emerald-500/40 hover:bg-emerald-500/20 font-semibold self-start sm:self-auto transition-all group/src cursor-pointer shrink-0 whitespace-nowrap text-left [text-align:left]"
+                        title={`Buka sumber asli foto: ${photoInfo.label}`}
+                      >
+                        <ExternalLink className="w-3 h-3 shrink-0 group-hover/src:translate-x-0.5 group-hover/src:-translate-y-0.5 transition-transform" />
+                        <span>Sumber: {photoInfo.label}</span>
+                        <span className="text-[10px] opacity-70">↗</span>
+                      </a>
                     </figcaption>
                   </figure>
                 );
@@ -283,18 +287,18 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
                 const sourceUrl = resolveSourceUrl(cleanQuery);
 
                 return (
-                  <div key={blockIdx} className="my-4 p-3.5 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs">
-                    <div className="flex items-center gap-2 text-[var(--text-main)] font-medium">
+                  <div key={blockIdx} className="my-4 p-3.5 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-left [text-align:left]">
+                    <div className="flex items-center gap-2 text-[var(--text-main)] font-medium text-left [text-align:left]">
                       <span className="p-1 rounded-md bg-emerald-500/10 text-emerald-400 shrink-0">
                         <ExternalLink className="w-3.5 h-3.5" />
                       </span>
-                      <span className="leading-snug">{sourceText}</span>
+                      <span className="leading-snug text-left [text-align:left]">{sourceText}</span>
                     </div>
                     <a
                       href={sourceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-mono text-[11px] font-semibold bg-emerald-500 text-zinc-950 hover:bg-emerald-400 active:scale-95 transition-all shrink-0 self-start sm:self-auto shadow-sm"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-mono text-[11px] font-semibold bg-emerald-500 text-zinc-950 hover:bg-emerald-400 active:scale-95 transition-all shrink-0 self-start sm:self-auto shadow-sm whitespace-nowrap text-left [text-align:left]"
                     >
                       <span>Buka Laporan Sumber</span>
                       <span className="text-[10px]">↗</span>
@@ -335,7 +339,7 @@ export default function ArticleBodyRenderer({ content, toc }: ArticleBodyRendere
               return (
                 <p
                   key={blockIdx}
-                  className="leading-relaxed text-xs sm:text-sm text-justify"
+                  className="leading-relaxed text-xs sm:text-sm text-left sm:text-justify [text-align-last:left] hyphens-auto break-words"
                   dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(trimmed) }}
                 />
               );

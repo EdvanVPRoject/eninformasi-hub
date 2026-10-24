@@ -24,7 +24,7 @@ import {
 } from 'lucide-react';
 import { Article, PostType } from '@/lib/types';
 import { getArticleCover } from '@/lib/cover-images';
-import { getArticleReference, resolveSourceUrl } from '@/lib/article-references';
+import { getArticleReference, resolveSourceUrl, resolvePhotoSource } from '@/lib/article-references';
 import SidebarNav from '@/components/SidebarNav';
 import TableOfContents from '@/components/TableOfContents';
 import FeedbackWidget from '@/components/FeedbackWidget';
@@ -107,6 +107,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
   const displayToc = (lang === 'en' && article.en?.toc) ? article.en.toc : article.toc;
   const displaySteps = (lang === 'en' && article.en?.steps) ? article.en.steps : article.steps;
   const heroVisual = getArticleCover(article.slug, article.category, article.tags);
+  const heroPhotoInfo = heroVisual ? resolvePhotoSource(heroVisual.url, heroVisual.source) : null;
   const isHeroImageInBody = Boolean(displayContent && heroVisual?.url && displayContent.includes(heroVisual.url));
   const articleRef = getArticleReference(article.slug, article.category, displayTitle);
 
@@ -221,7 +222,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                 </span>
               </div>
 
-              <div className="p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 text-xs sm:text-sm text-[var(--text-main)] leading-relaxed text-justify">
+              <div className="p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 text-xs sm:text-sm text-[var(--text-main)] leading-relaxed text-left sm:text-justify [text-align-last:left] hyphens-auto break-words">
                 <strong className="text-emerald-400 font-mono block mb-1">
                   {lang === 'en' ? '⚡ Quick Summary:' : '⚡ Ringkasan Cepat:'}
                 </strong>
@@ -231,29 +232,35 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
 
             {/* Featured Hero Visual Figure with Credible Source */}
             {heroVisual && !isHeroImageInBody && (
-              <figure className="my-2 max-w-xl mx-auto rounded-xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm">
-                <div className="relative overflow-hidden bg-black/40 flex items-center justify-center aspect-[16/9] max-h-[220px] sm:max-h-[280px]">
+              <figure className="my-2 max-w-xl mx-auto rounded-xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm text-left [text-align:left]">
+                <a
+                  href={heroPhotoInfo?.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative overflow-hidden bg-black/40 flex items-center justify-center aspect-[16/9] max-h-[220px] sm:max-h-[280px] group/hero block cursor-pointer"
+                  title={`Buka foto asli resolusi penuh (${heroPhotoInfo?.label || 'Unsplash'})`}
+                >
                   <img
                     src={heroVisual.url}
                     alt={heroVisual.caption}
-                    className="w-full h-full object-cover aspect-video hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover aspect-video group-hover/hero:scale-105 transition-transform duration-300"
                     loading="eager"
                   />
-                </div>
-                <figcaption className="px-3 py-2 sm:px-3.5 sm:py-2.5 bg-[var(--card-bg)] border-t border-[var(--border-color)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2 text-[11px] sm:text-xs">
-                  <span className="text-[var(--text-main)] font-semibold flex items-center gap-1.5">
+                </a>
+                <figcaption className="px-3 py-2 sm:px-3.5 sm:py-2.5 bg-[var(--card-bg)] border-t border-[var(--border-color)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2 text-[11px] sm:text-xs text-left [text-align:left]">
+                  <span className="text-[var(--text-main)] font-semibold flex items-center gap-1.5 text-left [text-align:left] min-w-0">
                     <ImageIcon className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                    <span>{heroVisual.caption}</span>
+                    <span className="leading-snug">{heroVisual.caption}</span>
                   </span>
                   <a
-                    href={resolveSourceUrl(heroVisual.source)}
+                    href={heroPhotoInfo?.url || resolveSourceUrl(heroVisual.source)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 hover:text-emerald-400 dark:text-emerald-400 dark:hover:text-emerald-300 border border-emerald-500/20 hover:border-emerald-500/40 hover:bg-emerald-500/20 font-semibold self-start sm:self-auto transition-all group/src cursor-pointer"
-                    title={`Buka rujukan sumber gambar: ${heroVisual.source}`}
+                    className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 hover:text-emerald-400 dark:text-emerald-400 dark:hover:text-emerald-300 border border-emerald-500/20 hover:border-emerald-500/40 hover:bg-emerald-500/20 font-semibold self-start sm:self-auto transition-all group/src cursor-pointer shrink-0 whitespace-nowrap text-left [text-align:left]"
+                    title={`Buka sumber asli foto: ${heroPhotoInfo?.label || heroVisual.source}`}
                   >
                     <ExternalLink className="w-3 h-3 shrink-0 group-hover/src:translate-x-0.5 group-hover/src:-translate-y-0.5 transition-transform" />
-                    <span>Sumber: {heroVisual.source}</span>
+                    <span>Sumber: {heroPhotoInfo?.label || heroVisual.source}</span>
                     <span className="text-[10px] opacity-70">↗</span>
                   </a>
                 </figcaption>
@@ -343,7 +350,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
               )}
             </div>
 
-            <article className="prose prose-invert max-w-none text-[var(--text-main)] space-y-4 leading-relaxed text-justify">
+            <article className="prose prose-invert max-w-none text-[var(--text-main)] space-y-4 leading-relaxed">
               <ArticleBodyRenderer key={`body-${lang}`} content={displayContent} toc={displayToc} />
             </article>
 
@@ -354,7 +361,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
             )}
 
             {/* Verified Source & Primary Attribution */}
-            <section className="p-4 sm:p-5 rounded-2xl bg-zinc-900/60 border border-[var(--border-color)] space-y-3.5 shadow-sm">
+            <section className="p-4 sm:p-5 rounded-2xl bg-zinc-900/60 border border-[var(--border-color)] space-y-3.5 shadow-sm text-left [text-align:left]">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pb-3 border-b border-[var(--border-color)]/70">
                 <div className="flex items-center gap-2">
                   <div className="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400">
@@ -387,7 +394,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                     <span>{articleRef.publisher}</span>
                   </div>
                   {articleRef.note && (
-                    <p className="text-[11px] text-[var(--text-muted)] italic leading-relaxed pt-0.5">
+                    <p className="text-[11px] text-[var(--text-muted)] italic leading-relaxed pt-0.5 text-left [text-align:left]">
                       {articleRef.note}
                     </p>
                   )}
