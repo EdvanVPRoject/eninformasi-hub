@@ -168,8 +168,8 @@ function HomeContent() {
     return filtered;
   }, [selectedCategory, selectedType, searchQuery, sortBy, lang]);
 
-  const tutorialCount = tutorialArticleCount;
-  const artikelCount = artikelArticleCount;
+  const tutorialCount = useMemo(() => articleSummaries.filter((a) => a.postType === 'tutorial').length, []);
+  const artikelCount = useMemo(() => articleSummaries.filter((a) => a.postType === 'artikel').length, []);
 
   return (
     <div className="max-w-[1880px] mx-auto px-2 sm:px-4 lg:px-6 py-8 sm:py-12">
@@ -195,9 +195,19 @@ function HomeContent() {
           {/* Left Column: Value Proposition & Feature Pills */}
           <div className="lg:col-span-7 xl:col-span-7 flex flex-col justify-between space-y-5">
             <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed">
-              {lang === 'en'
-                ? `Explore cutting-edge tech insights, gaming & esports strategies, upcoming blockbuster releases, hardware breakthroughs, featuring ${tutorialCount} Practical Tutorials (with copy-paste code and settings) and ${artikelCount} Deep-Dive Articles.`
-                : `Eksplorasi wawasan teknologi terkini, tren gaming & esports, rilis game masa depan, inovasi hardware canggih, hingga ${tutorialCount} Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan ${artikelCount} Informasi & Analisis mendalam.`}
+              {lang === 'en' ? (
+                <>
+                  Explore cutting-edge tech insights, gaming &amp; esports strategies, upcoming blockbuster releases, hardware breakthroughs, featuring{' '}
+                  <span className="font-bold text-[var(--text-main)]">{tutorialCount}</span> Practical Tutorials (with copy-paste code and settings) and{' '}
+                  <span className="font-bold text-[var(--text-main)]">{artikelCount}</span> Deep-Dive Articles.
+                </>
+              ) : (
+                <>
+                  Eksplorasi wawasan teknologi terkini, tren gaming &amp; esports, rilis game masa depan, inovasi hardware canggih, hingga{' '}
+                  <span className="font-bold text-[var(--text-main)]">{tutorialCount}</span> Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan{' '}
+                  <span className="font-bold text-[var(--text-main)]">{artikelCount}</span> Informasi &amp; Analisis mendalam.
+                </>
+              )}
             </p>
 
             <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-medium text-[var(--text-muted)] border-t border-[var(--border-color)] pt-4">
