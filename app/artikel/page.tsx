@@ -280,7 +280,7 @@ function ArtikelContent() {
 
                     <div className="p-3.5 sm:p-4 space-y-2">
                       {/* 100% Full Title Without Clamping */}
-                      <h3 className="font-bold text-sm sm:text-base text-[var(--text-main)] group-hover:text-emerald-500 transition-colors leading-snug">
+                      <h3 className="font-bold text-sm sm:text-base text-[var(--text-main)] group-hover:text-emerald-500 transition-colors leading-snug line-clamp-3">
                         <Link href={`/artikel/${article.slug}`}>
                           {displayTitle}
                         </Link>

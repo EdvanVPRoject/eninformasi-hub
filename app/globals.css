@@ -6,6 +6,12 @@
   html {
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
   }
   :root {
     --bg-main: #FAFAFA;
@@ -22,6 +28,7 @@
     --text-muted: #A1A1AA;
   }
   body {
+    font-family: var(--font-sans), Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: var(--bg-main);
     color: var(--text-main);
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
@@ -32,6 +39,9 @@
     display: block;
     max-width: 100%;
     overflow-x: auto;
+  }
+  img {
+    image-rendering: -webkit-optimize-contrast;
   }
 }
 
@@ -62,28 +72,24 @@ button, a, input, select, summary {
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Snappy, ultra-smooth page entrance transition */
+/* Snappy, ultra-smooth page entrance transition (clean opacity fade to preserve pixel-perfect DirectWrite subpixel sharpness) */
 @keyframes pageEnter {
   0% {
     opacity: 0;
-    transform: translateY(6px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
 .animate-page-enter {
-  animation: pageEnter 0.22s cubic-bezier(0.16, 1, 0.3, 1) both;
-  will-change: opacity, transform;
+  animation: pageEnter 0.16s ease-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .animate-page-enter {
     animation: none !important;
     opacity: 1 !important;
-    transform: none !important;
   }
 }
 

@@ -280,7 +280,7 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
                     </div>
                     {extraParagraph && (
                       <p
-                        className="leading-relaxed text-xs sm:text-sm text-justify"
+                        className="leading-relaxed sm:leading-loose text-[15px] sm:text-base text-left sm:text-justify [text-align-last:left] hyphens-auto break-words"
                         dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(extraParagraph) }}
                       />
                     )}
@@ -350,8 +350,8 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
               if (trimmed.startsWith('* ') || trimmed.startsWith('- ')) {
                 const itemContent = trimmed.replace(/^(\*|-)\s*/, '');
                 return (
-                  <div key={blockIdx} className="flex items-start gap-2.5 pl-1 sm:pl-2 text-xs sm:text-sm">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 shrink-0" />
+                  <div key={blockIdx} className="flex items-start gap-2.5 pl-1 sm:pl-2 text-[15px] sm:text-base">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2.5 shrink-0" />
                     <span className="leading-relaxed" dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(itemContent) }} />
                   </div>
                 );
@@ -360,7 +360,7 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
               // Numbered items
               if (/^[0-9]+\.\s+/.test(trimmed)) {
                 return (
-                  <div key={blockIdx} className="flex items-start gap-2 pl-1 sm:pl-2 text-xs sm:text-sm">
+                  <div key={blockIdx} className="flex items-start gap-2 pl-1 sm:pl-2 text-[15px] sm:text-base">
                     <span className="font-mono text-emerald-500 font-semibold shrink-0">
                       {trimmed.match(/^[0-9]+\./)?.[0]}
                     </span>
@@ -378,7 +378,7 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
               return (
                 <p
                   key={blockIdx}
-                  className="leading-relaxed text-xs sm:text-sm text-left sm:text-justify [text-align-last:left] hyphens-auto break-words"
+                  className="leading-relaxed sm:leading-loose text-[15px] sm:text-base text-left sm:text-justify [text-align-last:left] hyphens-auto break-words"
                   dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(trimmed) }}
                 />
               );

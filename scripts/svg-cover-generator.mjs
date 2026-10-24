@@ -45,8 +45,15 @@ export function generateCoverSvg({ title, category, author = 'EdvanVPRoject', ta
 
   const displayTags = tags.slice(0, 3).map(t => `#${t}`).join('   ');
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
   <defs>
+    <style>
+      text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        text-rendering: geometricPrecision;
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#09090b" />
       <stop offset="50%" stop-color="#111827" />

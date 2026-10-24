@@ -23,8 +23,8 @@ module.exports = {
         }
       },
       fontFamily: {
-        mono: ['JetBrains Mono', 'Geist Mono', 'ui-monospace', 'monospace'],
-        sans: ['Inter', 'Geist Sans', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-mono)', 'JetBrains Mono', 'Geist Mono', 'ui-monospace', 'monospace'],
+        sans: ['var(--font-sans)', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
       }
     },
   },

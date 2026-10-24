@@ -228,7 +228,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                 </span>
               </div>
 
-              <div className="p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 text-xs sm:text-sm text-[var(--text-main)] leading-relaxed text-left sm:text-justify [text-align-last:left] hyphens-auto break-words">
+              <div className="p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 text-sm sm:text-base text-[var(--text-main)] leading-relaxed sm:leading-loose text-left sm:text-justify [text-align-last:left] hyphens-auto break-words">
                 <strong className="text-emerald-400 font-mono block mb-1">
                   {lang === 'en' ? '⚡ Quick Summary:' : '⚡ Ringkasan Cepat:'}
                 </strong>
