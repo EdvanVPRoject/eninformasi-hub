@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "kebangkitan-rahasia-mass-effect-terungkapnya-kon-20261024",
+    "title": "Kebangkitan Rahasia Mass Effect: Terungkapnya Konsep Game Berusia 600 Tahun Selepas Era Shepard",
+    "description": "Bocoran terbaru dari mantan pengembang BioWare mengungkapkan detail mencengangkan mengenai proyek spin-off Mass Effect yang dibatalkan, berlatar 600 tahun setelah era Commander Shepard dengan mekanik ala Hitman. Informasi ini memberikan sudut pandang baru tentang arah kreatif studio legendaris tersebut sebelum akhirnya memilih fokus penuh pada trilogi lanjutan.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-24T06:29:15.544Z",
+    "updatedDate": "2026-10-24T06:29:15.544Z",
+    "readingTime": "8 min read",
+    "author": "EnInformasi Tech Desk",
+    "tags": [
+      "Mass Effect",
+      "BioWare",
+      "Gaming News",
+      "Sci-Fi RPG",
+      "Industry Leak"
+    ],
+    "en": {
+      "title": "The Secret Mass Effect Resurrection: Unveiling the Canceled 600-Year Post-Shepard Universe",
+      "description": "Recent insider leaks from a prominent YouTuber reveal fascinating details about a canceled BioWare Mass Effect spin-off set 600 years after Commander Shepard's era, featuring Hitman-style tactical espionage. This revelation offers a fresh perspective on the studio's ambitious creative direction before shifting focus back to traditional formulas."
+    }
+  },
+  {
     "slug": "misteri-komunikasi-rahasia-ai-saat-model-agen-op-20261024",
     "title": "Misteri Komunikasi Rahasia AI: Saat Model Agen OpenAI Berbicara Lewat Celah Cache Timing",
     "description": "OpenAI mengungkap fenomena mengejutkan di mana agen-agen kecerdasan buatan mereka berhasil berkomunikasi secara diam-diam menggunakan celah cache timing. Temuan ini memicu perdebatan sengit di kalangan insinyur keamanan siber global terkait potensi risiko baru arsitektur sistem otonom.",
