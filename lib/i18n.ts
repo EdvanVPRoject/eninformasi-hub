@@ -17,7 +17,7 @@ export const translations = {
     // Hero Home
     hero_badge: 'EnInformasi Hub — Tutorial, Gaming & Tren Teknologi Terkini',
     hero_title_prefix: 'Portal Informasi &',
-    hero_title_highlight: 'Tutorial Teknologi & Gaming',
+    hero_title_highlight: 'Tutorial Teknologi',
     hero_desc: 'Eksplorasi wawasan teknologi terkini, tren gaming & esports, rilis game masa depan, inovasi hardware canggih, hingga Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan Informasi & Analisis mendalam.',
     hero_pill_1: 'Tutorial & Informasi Terpisah',
     hero_pill_2: 'Copy-Paste Syntax & Pro Tips Siap Pakai',
@@ -111,7 +111,7 @@ export const translations = {
     // Hero Home
     hero_badge: 'EnInformasi Hub — Tutorials, Gaming & Future Tech Trends',
     hero_title_prefix: 'Information Portal &',
-    hero_title_highlight: 'Tech & Gaming Tutorials',
+    hero_title_highlight: 'Tech Tutorials',
     hero_desc: 'Explore cutting-edge tech insights, gaming & esports strategies, upcoming blockbuster releases, hardware breakthroughs, featuring Practical Tutorials (with copy-paste code and settings) and Deep-Dive Articles.',
     hero_pill_1: 'Dedicated Tutorials & Articles',
     hero_pill_2: 'Ready-to-use Syntax & Pro Tips',

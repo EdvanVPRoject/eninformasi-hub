@@ -186,7 +186,7 @@ function HomeContent() {
             </span>
           </div>
 
-          <h1 className="text-xl sm:text-2xl md:text-[1.65rem] lg:text-[2.2rem] xl:text-[2.65rem] font-extrabold tracking-tight text-[var(--text-main)] leading-tight whitespace-normal md:whitespace-nowrap">
+          <h1 className="text-2xl sm:text-3xl md:text-[1.85rem] lg:text-[2.35rem] xl:text-[2.85rem] font-extrabold tracking-tight text-[var(--text-main)] leading-tight whitespace-normal md:whitespace-nowrap">
             {t('hero_title_prefix')} {t('hero_title_highlight')}
           </h1>
         </div>
