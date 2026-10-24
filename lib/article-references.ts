@@ -72,19 +72,9 @@ export function resolveSourceUrl(sourceText: string): string {
  * Guarantees valid links pointing to where the photo was actually taken (Unsplash, official media, etc.)
  */
 export function resolvePhotoSource(imgSrc: string, captionSource?: string): { label: string; url: string } {
-  // 1. Unsplash photos
+  // 1. Unsplash photos (strictly links to the original full-res photo asset on Unsplash)
   if (imgSrc && imgSrc.includes('unsplash.com')) {
-    // Master uncropped photo link from Unsplash CDN (verified 200 OK)
     const cleanMasterUrl = imgSrc.split('?')[0];
-
-    // If the caption explicitly mentions a photographer or specific credit (not a news publisher)
-    if (captionSource && !/reuters|tom'?s|eurogamer|techpowerup|openai|bioware|steam|valve/i.test(captionSource) && !/unsplash/i.test(captionSource)) {
-      return {
-        label: `Unsplash (${captionSource})`,
-        url: cleanMasterUrl,
-      };
-    }
-
     return {
       label: 'Unsplash',
       url: cleanMasterUrl,
@@ -104,11 +94,10 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
     }
   }
 
-  // 3. Fallback to general authority resolver
-  const clean = captionSource || 'Dokumentasi Resmi';
+  // 3. Default fallback
   return {
-    label: clean,
-    url: resolveSourceUrl(clean),
+    label: 'Unsplash',
+    url: 'https://images.unsplash.com',
   };
 }
 

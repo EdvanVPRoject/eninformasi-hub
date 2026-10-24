@@ -253,14 +253,14 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                     <span className="leading-snug">{heroVisual.caption}</span>
                   </span>
                   <a
-                    href={heroPhotoInfo?.url || resolveSourceUrl(heroVisual.source)}
+                    href={heroPhotoInfo?.url || 'https://images.unsplash.com'}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded font-mono text-[11px] bg-emerald-500/10 text-emerald-500 hover:text-emerald-400 dark:text-emerald-400 dark:hover:text-emerald-300 border border-emerald-500/20 hover:border-emerald-500/40 hover:bg-emerald-500/20 font-semibold self-start sm:self-auto transition-all group/src cursor-pointer shrink-0 whitespace-nowrap text-left [text-align:left]"
-                    title={`Buka sumber asli foto: ${heroPhotoInfo?.label || heroVisual.source}`}
+                    title="Buka sumber asli foto (Unsplash)"
                   >
                     <ExternalLink className="w-3 h-3 shrink-0 group-hover/src:translate-x-0.5 group-hover/src:-translate-y-0.5 transition-transform" />
-                    <span>Sumber: {heroPhotoInfo?.label || heroVisual.source}</span>
+                    <span>Sumber: {heroPhotoInfo?.label || 'Unsplash'}</span>
                     <span className="text-[10px] opacity-70">↗</span>
                   </a>
                 </figcaption>
