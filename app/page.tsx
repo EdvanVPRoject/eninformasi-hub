@@ -198,7 +198,7 @@ function HomeContent() {
               <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed">
                 {lang === 'en'
                   ? `Explore cutting-edge tech insights, gaming & esports strategies, upcoming blockbuster releases, hardware breakthroughs, featuring ${tutorialCount} Practical Tutorials (with copy-paste code and settings) and ${artikelCount} Deep-Dive Articles.`
-                  : `Eksplorasi wawasan teknologi terkini, tren gaming & esports, rilis game masa depan, inovasi hardware canggih, hingga ${tutorialCount} Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan ${artikelCount} EnInformasi & Analisis mendalam.`}
+                  : `Eksplorasi wawasan teknologi terkini, tren gaming & esports, rilis game masa depan, inovasi hardware canggih, hingga ${tutorialCount} Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan ${artikelCount} Informasi & Analisis mendalam.`}
               </p>
             </div>
 
@@ -284,7 +284,7 @@ function HomeContent() {
                   <FileText className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${selectedType === 'artikel' ? 'text-sky-500' : 'text-[var(--text-muted)]'}`} />
                 </div>
                 <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate">
-                  {lang === 'en' ? 'Articles' : 'EnInformasi'}
+                  {lang === 'en' ? 'Information' : 'Informasi'}
                 </div>
                 <div className="text-[11px] sm:text-xs text-[var(--text-muted)] truncate">
                   {lang === 'en' ? 'Analysis & Trends' : 'Riset & Gaming'}
@@ -573,7 +573,7 @@ function HomeContent() {
                                 ? 'bg-emerald-950/85 text-emerald-400 border border-emerald-500/30'
                                 : 'bg-black/75 text-sky-400 border border-sky-500/30'
                             }`}>
-                              {article.postType === 'tutorial' ? 'Tutorial' : (lang === 'en' ? 'EnInformation' : 'EnInformasi')}
+                              {article.postType === 'tutorial' ? 'Tutorial' : (lang === 'en' ? 'Information' : 'Informasi')}
                             </span>
                           </div>
 
@@ -623,7 +623,7 @@ function HomeContent() {
                           <span>
                             {article.postType === 'tutorial'
                               ? (lang === 'en' ? 'Start Tutorial' : 'Mulai Tutorial')
-                              : (lang === 'en' ? 'Read Article' : 'Baca EnInformasi')}
+                              : (lang === 'en' ? 'Read Article' : 'Baca Informasi')}
                           </span>
                           <ChevronRight className="w-3.5 h-3.5" />
                         </Link>

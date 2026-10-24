@@ -12,7 +12,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-24T12:28:27.783Z",
     "updatedDate": "2026-10-24T12:28:27.783Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "RTX 5090",
       "NVIDIA",
@@ -90,7 +90,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-24T06:29:15.544Z",
     "updatedDate": "2026-10-24T06:29:15.544Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Mass Effect",
       "BioWare",
@@ -168,7 +168,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-24T00:39:52.390Z",
     "updatedDate": "2026-10-24T00:39:52.390Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "OpenAI",
       "AI Agents",
@@ -246,7 +246,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-23T12:31:50.334Z",
     "updatedDate": "2026-10-23T12:31:50.334Z",
     "readingTime": "7 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "RTX 5090",
       "NVIDIA",
@@ -324,7 +324,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-23T06:34:42.156Z",
     "updatedDate": "2026-10-23T06:34:42.156Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Masahiro Sakurai",
       "Steam",
@@ -402,7 +402,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-23T00:37:28.751Z",
     "updatedDate": "2026-10-23T00:37:28.751Z",
     "readingTime": "7 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "EpicGames",
       "UnrealEngine",
@@ -480,7 +480,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-22T12:36:43.846Z",
     "updatedDate": "2026-10-22T12:36:43.846Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Cybersecurity",
       "Certificate Authority",
@@ -558,7 +558,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-22T06:35:26.289Z",
     "updatedDate": "2026-10-22T06:35:26.289Z",
     "readingTime": "7 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Nvidia",
       "GPU Drivers",
@@ -636,7 +636,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-22T00:34:38.140Z",
     "updatedDate": "2026-10-22T00:34:38.140Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "DeepSeek",
       "DeepInfer",
@@ -714,7 +714,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-21T12:35:22.519Z",
     "updatedDate": "2026-10-21T12:35:22.519Z",
     "readingTime": "7 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Xbox",
       "Artificial Intelligence",
@@ -792,7 +792,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-21T06:34:49.519Z",
     "updatedDate": "2026-10-21T06:34:49.519Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Steam Machine",
       "RTX 5090",
@@ -870,7 +870,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-21T00:34:40.124Z",
     "updatedDate": "2026-10-21T00:34:40.124Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "AMD FSR 4.1",
       "Xbox Series X",
@@ -948,7 +948,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-20T12:34:45.813Z",
     "updatedDate": "2026-10-20T12:34:45.813Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Claude AI",
       "Oblivion",
@@ -1026,7 +1026,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-20T06:33:32.681Z",
     "updatedDate": "2026-10-20T06:33:32.681Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "MiniMax M3.1 Flash",
       "Artificial Analysis",
@@ -1104,7 +1104,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-20T00:36:23.698Z",
     "updatedDate": "2026-10-20T00:36:23.698Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Xbox",
       "Artificial Intelligence",
@@ -1182,7 +1182,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-19T12:37:04.752Z",
     "updatedDate": "2026-10-19T12:37:04.752Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Claude Code",
       "Artificial Intelligence",
@@ -1260,7 +1260,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-19T06:39:17.791Z",
     "updatedDate": "2026-10-19T06:39:17.791Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Broadcom",
       "Custom AI Chip",
@@ -1338,7 +1338,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-19T00:34:04.601Z",
     "updatedDate": "2026-10-19T00:34:04.601Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "GTA V",
       "AI Mod",
@@ -1416,7 +1416,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-18T12:27:31.468Z",
     "updatedDate": "2026-10-18T12:27:31.468Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "AMD",
       "Nvidia",
@@ -1494,7 +1494,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-18T06:29:30.137Z",
     "updatedDate": "2026-10-18T06:29:30.137Z",
     "readingTime": "8 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "DeepSeek",
       "GPT-5.5",
@@ -1572,7 +1572,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-18T00:33:32.789Z",
     "updatedDate": "2026-10-18T00:33:32.789Z",
     "readingTime": "4 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Nvidia",
       "RTX 5090",
@@ -1625,7 +1625,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-17T12:27:11.650Z",
     "updatedDate": "2026-10-17T12:27:11.650Z",
     "readingTime": "4 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "ASUS",
       "Intel Arc",
@@ -1679,7 +1679,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-17T06:29:23.790Z",
     "updatedDate": "2026-10-17T06:29:23.790Z",
     "readingTime": "4 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "GatGPT",
       "AI-Generated",
@@ -1733,7 +1733,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-17T00:33:37.129Z",
     "updatedDate": "2026-10-17T00:33:37.129Z",
     "readingTime": "4 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "DayZ",
       "AI Gaming",
@@ -1787,7 +1787,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-16T12:34:40.341Z",
     "updatedDate": "2026-10-16T12:34:40.341Z",
     "readingTime": "4 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "AMD FSR 4",
       "Steam Deck",
@@ -1841,7 +1841,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-16T06:55:51.646Z",
     "updatedDate": "2026-10-18T06:00:00.000Z",
     "readingTime": "7 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Nvidia RTX 5090",
       "GPU Gaming",
@@ -1890,7 +1890,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-15T04:09:45.511Z",
     "updatedDate": "2026-10-18T06:00:00.000Z",
     "readingTime": "7 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Intel",
       "Fab 38",
@@ -1939,7 +1939,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-15T04:04:52.230Z",
     "updatedDate": "2026-10-18T06:00:00.000Z",
     "readingTime": "7 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Zelda",
       "Switch 2",
@@ -1988,7 +1988,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-15T04:00:56.886Z",
     "updatedDate": "2026-10-18T06:00:00.000Z",
     "readingTime": "7 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Meta AI",
       "Muse AI",
@@ -2037,7 +2037,7 @@ export const dailyNewsArticles: Article[] = [
     "pubDate": "2026-10-15T04:00:28.318Z",
     "updatedDate": "2026-10-18T06:00:00.000Z",
     "readingTime": "7 min read",
-    "author": "EnInformasi Tech Desk",
+    "author": "Informasi Tech Desk",
     "tags": [
       "Epic Games",
       "Steam",

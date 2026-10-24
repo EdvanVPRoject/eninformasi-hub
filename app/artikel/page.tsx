@@ -102,11 +102,11 @@ function ArtikelContent() {
         <div className="max-w-3xl space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-mono rounded-full bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20">
             <FileText className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400" />
-            <span>{lang === 'en' ? 'Category: EnInformation, Insights & Future Tech Trends' : 'Kategori: EnInformasi, Wawasan & Tren Teknologi Masa Depan'}</span>
+            <span>{lang === 'en' ? 'Category: Information, Insights & Future Tech Trends' : 'Kategori: Informasi, Wawasan & Tren Teknologi Masa Depan'}</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[var(--text-main)]">
-            {lang === 'en' ? 'EnInformation & Tech Trends Index' : 'Indeks EnInformasi & Tren Teknologi'}
+            {lang === 'en' ? 'Information & Tech Trends Index' : 'Indeks Informasi & Tren Teknologi'}
           </h1>
 
           <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
@@ -263,7 +263,7 @@ function ArtikelContent() {
                       
                       <div className="absolute top-3 left-3 flex items-center gap-1.5">
                         <span className="px-2.5 py-1 rounded-md text-[10px] font-mono font-bold bg-black/75 text-sky-400 border border-sky-500/30 backdrop-blur-md">
-                          {lang === 'en' ? 'EnInformation' : 'EnInformasi'}
+                          {lang === 'en' ? 'Information' : 'Informasi'}
                         </span>
                       </div>
 
@@ -301,7 +301,7 @@ function ArtikelContent() {
                       href={`/artikel/${article.slug}`}
                       className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-emerald-500 hover:text-emerald-400 group-hover:translate-x-0.5 transition-all"
                     >
-                      <span>{lang === 'en' ? 'Read Article' : 'Baca EnInformasi'}</span>
+                      <span>{lang === 'en' ? 'Read Article' : 'Baca Informasi'}</span>
                       <ChevronRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -331,7 +331,7 @@ function ArtikelContent() {
 
 export default function ArtikelPage() {
   return (
-    <Suspense fallback={<div className="p-12 text-center text-sm font-mono text-zinc-500">Memuat katalog EnInformasi...</div>}>
+    <Suspense fallback={<div className="p-12 text-center text-sm font-mono text-zinc-500">Memuat katalog Informasi...</div>}>
       <ArtikelContent />
     </Suspense>
   );

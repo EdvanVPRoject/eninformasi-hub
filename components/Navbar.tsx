@@ -238,7 +238,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
           >
             <div className="flex items-center gap-2.5 text-sm">
               <Zap className="w-4 h-4 text-emerald-500" />
-              <span>{lang === 'en' ? 'EnInformation & Trends' : 'EnInformasi & Tren'}</span>
+              <span>{lang === 'en' ? 'Information & Trends' : 'Informasi & Tren'}</span>
             </div>
             <span className="text-xs font-mono px-2 py-0.5 rounded bg-zinc-500/10 text-[var(--text-muted)] font-bold">
               {artikelArticleCount}

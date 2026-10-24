@@ -154,7 +154,7 @@ export default function CommandSearch({ isOpen, onClose }: CommandSearchProps) {
                           ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20'
                           : 'bg-zinc-500/10 text-[var(--text-muted)] border border-[var(--border-color)]'
                       }`}>
-                        {article.postType === 'tutorial' ? 'Tutorial' : (lang === 'en' ? 'EnInformation' : 'EnInformasi')}
+                        {article.postType === 'tutorial' ? 'Tutorial' : (lang === 'en' ? 'Information' : 'Informasi')}
                       </span>
                       <span className="text-emerald-500 font-semibold">{getCategoryLabel(article.category, lang)}</span>
                       <span className="text-[var(--text-muted)]">•</span>

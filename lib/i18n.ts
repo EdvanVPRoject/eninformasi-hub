@@ -5,7 +5,7 @@ export const translations = {
     // Brand & Header
     brand_sub: 'Portal Konten',
     nav_tutorials: 'Tutorial Praktis',
-    nav_articles: 'EnInformasi & Tren',
+    nav_articles: 'Informasi & Tren',
     nav_tools: 'Resource & Tools',
     nav_about: 'Tentang Kami',
     nav_search_placeholder: 'Cari konten & tutorial...',
@@ -16,17 +16,17 @@ export const translations = {
 
     // Hero Home
     hero_badge: 'EnInformasi Hub — Tutorial, Gaming & Tren Teknologi Terkini',
-    hero_title_prefix: 'Portal EnInformasi &',
+    hero_title_prefix: 'Portal Informasi &',
     hero_title_highlight: 'Tutorial Teknologi & Gaming',
-    hero_desc: 'Eksplorasi wawasan teknologi terkini, tren gaming & esports, rilis game masa depan, inovasi hardware canggih, hingga Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan EnInformasi & Analisis mendalam.',
-    hero_pill_1: 'Tutorial & EnInformasi Terpisah',
+    hero_desc: 'Eksplorasi wawasan teknologi terkini, tren gaming & esports, rilis game masa depan, inovasi hardware canggih, hingga Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan Informasi & Analisis mendalam.',
+    hero_pill_1: 'Tutorial & Informasi Terpisah',
     hero_pill_2: 'Copy-Paste Syntax & Pro Tips Siap Pakai',
     hero_pill_3: 'Gaming, AI, Hardware & Tren Booming',
 
     // Tabs & Filters
     tab_all: 'Semua Konten',
     tab_tutorials: 'Tutorial Praktis',
-    tab_articles: 'EnInformasi & Tren',
+    tab_articles: 'Informasi & Tren',
     filter_search_placeholder: 'Filter judul, kata kunci, atau tag...',
     filter_difficulty_all: 'Semua Tingkat',
     filter_difficulty_pemula: 'Pemula',
@@ -51,9 +51,9 @@ export const translations = {
 
     // Article Cards & Details
     badge_tutorial: 'TUTORIAL',
-    badge_article: 'ENINFORMASI',
+    badge_article: 'INFORMASI',
     read_tutorial: 'Buka Panduan',
-    read_article: 'Baca Artikel',
+    read_article: 'Baca Informasi',
     table_of_contents: 'Daftar Isi Konten',
     step_guide: 'Langkah Panduan Praktis',
     step_checklist: 'Checklist Langkah Praktis',
@@ -66,7 +66,7 @@ export const translations = {
     share_content: 'Bagikan',
     share_copied: 'Tautan artikel tersalin ke clipboard!',
     back_to_tutorials: 'Kembali ke Indeks Tutorial',
-    back_to_articles: 'Kembali ke Indeks EnInformasi',
+    back_to_articles: 'Kembali ke Indeks Informasi',
     related_content: 'Rekomendasi Konten Terkait',
     gear_box_badge: 'Gear Rekomendasi',
     gear_box_price: 'Estimasi Harga',
@@ -99,7 +99,7 @@ export const translations = {
     // Brand & Header
     brand_sub: 'Content Portal',
     nav_tutorials: 'Practical Tutorials',
-    nav_articles: 'EnInformation & Trends',
+    nav_articles: 'Information & Trends',
     nav_tools: 'Resources & Tools',
     nav_about: 'About Us',
     nav_search_placeholder: 'Search content & tutorials...',
@@ -110,7 +110,7 @@ export const translations = {
 
     // Hero Home
     hero_badge: 'EnInformasi Hub — Tutorials, Gaming & Future Tech Trends',
-    hero_title_prefix: 'EnInformation Portal &',
+    hero_title_prefix: 'Information Portal &',
     hero_title_highlight: 'Tech & Gaming Tutorials',
     hero_desc: 'Explore cutting-edge tech insights, gaming & esports strategies, upcoming blockbuster releases, hardware breakthroughs, featuring Practical Tutorials (with copy-paste code and settings) and Deep-Dive Articles.',
     hero_pill_1: 'Dedicated Tutorials & Articles',
@@ -120,7 +120,7 @@ export const translations = {
     // Tabs & Filters
     tab_all: 'All Content',
     tab_tutorials: 'Practical Tutorials',
-    tab_articles: 'EnInformation & Trends',
+    tab_articles: 'Information & Trends',
     filter_search_placeholder: 'Filter title, keywords, or tags...',
     filter_difficulty_all: 'All Levels',
     filter_difficulty_pemula: 'Beginner',
@@ -145,7 +145,7 @@ export const translations = {
 
     // Article Cards & Details
     badge_tutorial: 'TUTORIAL',
-    badge_article: 'ENINFORMATION',
+    badge_article: 'INFORMATION',
     read_tutorial: 'Open Guide',
     read_article: 'Read Article',
     table_of_contents: 'Table of Contents',
@@ -160,7 +160,7 @@ export const translations = {
     share_content: 'Share',
     share_copied: 'Article link copied to clipboard!',
     back_to_tutorials: 'Back to Tutorials Index',
-    back_to_articles: 'Back to EnInformation Index',
+    back_to_articles: 'Back to Information Index',
     related_content: 'Recommended Related Content',
     gear_box_badge: 'Recommended Gear',
     gear_box_price: 'Estimated Price',

@@ -127,7 +127,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
               <Link href={backUrl} className="hover:text-emerald-500 transition-colors">
                 {postType === 'tutorial'
                   ? (lang === 'en' ? 'Tutorials' : 'Tutorial Praktis')
-                  : (lang === 'en' ? 'EnInformation' : 'EnInformasi')}
+                  : (lang === 'en' ? 'Information' : 'Informasi')}
               </Link>
               <ChevronRight className="w-3 h-3" />
               <Link href={`/?category=${article.category}`} className="hover:text-emerald-500 transition-colors text-emerald-500/90">
@@ -143,7 +143,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                       ? 'bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20'
                       : 'bg-zinc-500/10 text-[var(--text-muted)] border border-[var(--border-color)]'
                   }`}>
-                    {postType === 'tutorial' ? 'Tutorial' : (lang === 'en' ? 'EnInformation' : 'EnInformasi')}
+                    {postType === 'tutorial' ? 'Tutorial' : (lang === 'en' ? 'Information' : 'Informasi')}
                   </span>
                   <span className="text-[var(--text-muted)]">•</span>
                   <span className="text-emerald-400 font-medium">
@@ -368,7 +368,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                 <span>
                   {postType === 'tutorial'
                     ? (lang === 'en' ? 'Back to Tutorials' : 'Indeks Tutorial')
-                    : (lang === 'en' ? 'Back to EnInformation' : 'Indeks EnInformasi')}
+                    : (lang === 'en' ? 'Back to Information' : 'Indeks Informasi')}
                 </span>
               </Link>
 
