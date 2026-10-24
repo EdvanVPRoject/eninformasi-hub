@@ -189,10 +189,7 @@ function HomeContent() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[var(--text-main)] leading-[1.15]">
-                {t('hero_title_prefix')}{' '}
-                <span className="text-emerald-500 dark:text-emerald-400">
-                  {t('hero_title_highlight')}
-                </span>
+                {t('hero_title_prefix')} {t('hero_title_highlight')}
               </h1>
 
               <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed">
