@@ -12,7 +12,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Edge AI",
       "NPU",
@@ -76,7 +76,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Copyright",
       "Hak Cipta",
@@ -140,7 +140,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Career",
       "Future of Work",
@@ -204,7 +204,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Agentic Workflow",
       "LangGraph",
@@ -268,7 +268,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Video AI",
       "Sora",
@@ -333,7 +333,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "AI Agency",
       "AAA",
@@ -398,7 +398,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Sovereign AI",
       "Geopolitics",
@@ -462,7 +462,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Stack Overflow",
       "Developer Culture",
@@ -526,7 +526,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Healthcare",
       "MedTech",
@@ -590,7 +590,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Digital Employees",
       "Robot Tax",
@@ -654,7 +654,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "RAG",
       "Vector Database",
@@ -718,7 +718,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Psychology",
       "Neuroscience",
@@ -782,7 +782,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Passive Income",
       "Monetisasi AI",
@@ -846,7 +846,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Benchmarks",
       "MMLU",
@@ -910,7 +910,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Startup",
       "AI Moat",
@@ -974,7 +974,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "DeepSeek V3",
       "MLA",
@@ -1038,7 +1038,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Humanoid Robots",
       "Tesla Optimus",
@@ -1102,7 +1102,7 @@ export const articlesPart3: Article[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "AGI",
       "Artificial General Intelligence",

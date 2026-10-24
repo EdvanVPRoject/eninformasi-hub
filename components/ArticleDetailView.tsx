@@ -217,7 +217,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-1">
-                  <User className="w-3.5 h-3.5" /> {lang === 'en' ? 'By' : 'Oleh'} {article.author}
+                  <User className="w-3.5 h-3.5" /> {lang === 'en' ? 'By' : 'Oleh'}{' '}<a href="https://github.com/EdvanVPRoject" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 font-medium underline decoration-dotted transition-colors" title="GitHub @EdvanVPRoject">{article.author || 'EdvanVPRoject'}</a>
                 </span>
               </div>
 

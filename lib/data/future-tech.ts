@@ -11,7 +11,7 @@ export const futureTech: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "NVIDIA Rubin",
       "NVIDIA Spark",
@@ -66,7 +66,7 @@ export const futureTech: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "RTX 5090",
       "RTX 5080",
@@ -121,7 +121,7 @@ export const futureTech: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Apple M5",
       "Apple Silicon",
@@ -176,7 +176,7 @@ export const futureTech: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Starlink",
       "Direct to Cell",
@@ -231,7 +231,7 @@ export const futureTech: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Baterai Solid State",
       "Mobil Listrik",
@@ -286,7 +286,7 @@ export const futureTech: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Komputer Kuantum",
       "Quantum Computing",
@@ -341,7 +341,7 @@ export const futureTech: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Robot Humanoid",
       "Tesla Optimus",
@@ -396,7 +396,7 @@ export const futureTech: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Neuralink",
       "BCI",
@@ -451,7 +451,7 @@ export const futureTech: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Jaringan 6G",
       "5G",
@@ -506,7 +506,7 @@ export const futureTech: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Chip Fotonik",
       "Optical Computing",

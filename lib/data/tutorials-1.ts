@@ -13,7 +13,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "11 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "CrewAI",
       "Python",
@@ -95,7 +95,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "LangGraph",
       "LangChain",
@@ -177,7 +177,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "n8n",
       "No-Code",
@@ -260,7 +260,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "11 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Ollama",
       "Local AI",
@@ -343,7 +343,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "11 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Browser-Use",
       "Playwright",
@@ -426,7 +426,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "RAG",
       "Qdrant",
@@ -509,7 +509,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Open WebUI",
       "Docker",
@@ -592,7 +592,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Smolagents",
       "Hugging Face",
@@ -674,7 +674,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Flux.1",
       "ComfyUI",
@@ -756,7 +756,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Claude 3.5 Sonnet",
       "Computer Use",
@@ -838,7 +838,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Telegram Bot",
       "Python",
@@ -920,7 +920,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Unsloth",
       "Fine-Tuning",
@@ -1004,7 +1004,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "11 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Cline",
       "Roo Code",
@@ -1087,7 +1087,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Gemini Live API",
       "Voice AI",
@@ -1169,7 +1169,7 @@ export const tutorialsPart1: Article[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Mac Mini M4",
       "Apple Silicon",

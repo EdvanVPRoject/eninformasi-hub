@@ -12,7 +12,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "DeepSeek R1",
       "OpenAI",
@@ -76,7 +76,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "MCP",
       "Anthropic",
@@ -145,7 +145,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Claude 3.7",
       "Anthropic",
@@ -208,7 +208,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Cursor AI",
       "Windsurf",
@@ -272,7 +272,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Gemini",
       "Google AI",
@@ -336,7 +336,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "AutoGPT",
       "AI Agent",
@@ -400,7 +400,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Prompt Engineering",
       "LLM Hacks",
@@ -464,7 +464,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Hardware",
       "Rakit PC",
@@ -530,7 +530,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Perplexity",
       "Deep Research",
@@ -594,7 +594,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Suno AI",
       "Udio",
@@ -658,7 +658,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "v0.dev",
       "Bolt.new",
@@ -722,7 +722,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Quantization",
       "GGUF",
@@ -787,7 +787,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "NotebookLM",
       "Google",
@@ -851,7 +851,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Security",
       "Prompt Injection",
@@ -915,7 +915,7 @@ export const articlesPart1: Article[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Monetisasi AI",
       "Agensi AI",

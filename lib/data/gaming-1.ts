@@ -12,7 +12,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "PUBG Mobile",
       "Gyroscope",
@@ -87,7 +87,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Mobile Legends",
       "MLBB",
@@ -161,7 +161,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Honor of Kings",
       "HoK",
@@ -235,7 +235,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Valorant",
       "Crosshair",
@@ -310,7 +310,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "CS2",
       "Counter-Strike 2",
@@ -385,7 +385,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Free Fire",
       "FF MAX",
@@ -460,7 +460,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Mobile Legends",
       "MLBB",
@@ -534,7 +534,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Delta Force",
       "Hawk Ops",
@@ -608,7 +608,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Valorant",
       "Duelist",
@@ -684,7 +684,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Mobile Legends",
       "MLBB",
@@ -758,7 +758,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Honor of Kings",
       "HoK",
@@ -832,7 +832,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Valorant",
       "Aim Training",
@@ -906,7 +906,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "CS2",
       "Smoke Lineup",
@@ -980,7 +980,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "PUBG Mobile",
       "Ping Merah",
@@ -1055,7 +1055,7 @@ export const gamingPart1: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Genshin Impact",
       "F2P Guide",

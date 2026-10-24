@@ -30,7 +30,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-24T12:28:27.783Z",
     "updatedDate": "2026-10-24T12:28:27.783Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "RTX 5090",
       "NVIDIA",
@@ -54,7 +54,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-24T06:29:15.544Z",
     "updatedDate": "2026-10-24T06:29:15.544Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Mass Effect",
       "BioWare",
@@ -78,7 +78,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-24T00:39:52.390Z",
     "updatedDate": "2026-10-24T00:39:52.390Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "OpenAI",
       "AI Agents",
@@ -102,7 +102,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-23T12:31:50.334Z",
     "updatedDate": "2026-10-23T12:31:50.334Z",
     "readingTime": "7 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "RTX 5090",
       "NVIDIA",
@@ -126,7 +126,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-23T06:34:42.156Z",
     "updatedDate": "2026-10-23T06:34:42.156Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Masahiro Sakurai",
       "Steam",
@@ -150,7 +150,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-23T00:37:28.751Z",
     "updatedDate": "2026-10-23T00:37:28.751Z",
     "readingTime": "7 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "EpicGames",
       "UnrealEngine",
@@ -174,7 +174,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-22T12:36:43.846Z",
     "updatedDate": "2026-10-22T12:36:43.846Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Cybersecurity",
       "Certificate Authority",
@@ -198,7 +198,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-22T06:35:26.289Z",
     "updatedDate": "2026-10-22T06:35:26.289Z",
     "readingTime": "7 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Nvidia",
       "GPU Drivers",
@@ -222,7 +222,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-22T00:34:38.140Z",
     "updatedDate": "2026-10-22T00:34:38.140Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "DeepSeek",
       "DeepInfer",
@@ -246,7 +246,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-21T12:35:22.519Z",
     "updatedDate": "2026-10-21T12:35:22.519Z",
     "readingTime": "7 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Xbox",
       "Artificial Intelligence",
@@ -270,7 +270,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-21T06:34:49.519Z",
     "updatedDate": "2026-10-21T06:34:49.519Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Steam Machine",
       "RTX 5090",
@@ -294,7 +294,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-21T00:34:40.124Z",
     "updatedDate": "2026-10-21T00:34:40.124Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "AMD FSR 4.1",
       "Xbox Series X",
@@ -318,7 +318,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-20T12:34:45.813Z",
     "updatedDate": "2026-10-20T12:34:45.813Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Claude AI",
       "Oblivion",
@@ -342,7 +342,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-20T06:33:32.681Z",
     "updatedDate": "2026-10-20T06:33:32.681Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "MiniMax M3.1 Flash",
       "Artificial Analysis",
@@ -366,7 +366,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-20T00:36:23.698Z",
     "updatedDate": "2026-10-20T00:36:23.698Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Xbox",
       "Artificial Intelligence",
@@ -390,7 +390,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-19T12:37:04.752Z",
     "updatedDate": "2026-10-19T12:37:04.752Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Claude Code",
       "Artificial Intelligence",
@@ -414,7 +414,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-19T06:39:17.791Z",
     "updatedDate": "2026-10-19T06:39:17.791Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Broadcom",
       "Custom AI Chip",
@@ -438,7 +438,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-19T00:34:04.601Z",
     "updatedDate": "2026-10-19T00:34:04.601Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "GTA V",
       "AI Mod",
@@ -462,7 +462,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-18T12:27:31.468Z",
     "updatedDate": "2026-10-18T12:27:31.468Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "AMD",
       "Nvidia",
@@ -486,7 +486,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-18T06:29:30.137Z",
     "updatedDate": "2026-10-18T06:29:30.137Z",
     "readingTime": "8 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "DeepSeek",
       "GPT-5.5",
@@ -510,7 +510,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-18T00:33:32.789Z",
     "updatedDate": "2026-10-18T00:33:32.789Z",
     "readingTime": "4 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Nvidia",
       "RTX 5090",
@@ -533,7 +533,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-17T12:27:11.650Z",
     "updatedDate": "2026-10-17T12:27:11.650Z",
     "readingTime": "4 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "ASUS",
       "Intel Arc",
@@ -557,7 +557,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-17T06:29:23.790Z",
     "updatedDate": "2026-10-17T06:29:23.790Z",
     "readingTime": "4 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "GatGPT",
       "AI-Generated",
@@ -581,7 +581,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-17T00:33:37.129Z",
     "updatedDate": "2026-10-17T00:33:37.129Z",
     "readingTime": "4 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "DayZ",
       "AI Gaming",
@@ -605,7 +605,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-16T12:34:40.341Z",
     "updatedDate": "2026-10-16T12:34:40.341Z",
     "readingTime": "4 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "AMD FSR 4",
       "Steam Deck",
@@ -629,7 +629,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-16T06:55:51.646Z",
     "updatedDate": "2026-10-18T06:00:00.000Z",
     "readingTime": "7 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Nvidia RTX 5090",
       "GPU Gaming",
@@ -654,7 +654,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-15T04:09:45.511Z",
     "updatedDate": "2026-10-18T06:00:00.000Z",
     "readingTime": "7 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Intel",
       "Fab 38",
@@ -679,7 +679,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-15T04:04:52.230Z",
     "updatedDate": "2026-10-18T06:00:00.000Z",
     "readingTime": "7 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Zelda",
       "Switch 2",
@@ -704,7 +704,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-15T04:00:56.886Z",
     "updatedDate": "2026-10-18T06:00:00.000Z",
     "readingTime": "7 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Meta AI",
       "Muse AI",
@@ -729,7 +729,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "2026-10-15T04:00:28.318Z",
     "updatedDate": "2026-10-18T06:00:00.000Z",
     "readingTime": "7 min read",
-    "author": "Informasi Tech Desk",
+    "author": "EdvanVPRoject",
     "tags": [
       "Epic Games",
       "Steam",
@@ -754,7 +754,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "11 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "CrewAI",
       "Python",
@@ -779,7 +779,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "LangGraph",
       "LangChain",
@@ -804,7 +804,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "n8n",
       "No-Code",
@@ -830,7 +830,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "11 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Ollama",
       "Local AI",
@@ -856,7 +856,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "11 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Browser-Use",
       "Playwright",
@@ -882,7 +882,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "RAG",
       "Qdrant",
@@ -908,7 +908,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Open WebUI",
       "Docker",
@@ -934,7 +934,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Smolagents",
       "Hugging Face",
@@ -959,7 +959,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Flux.1",
       "ComfyUI",
@@ -984,7 +984,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Claude 3.5 Sonnet",
       "Computer Use",
@@ -1009,7 +1009,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Telegram Bot",
       "Python",
@@ -1034,7 +1034,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Unsloth",
       "Fine-Tuning",
@@ -1061,7 +1061,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "11 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Cline",
       "Roo Code",
@@ -1087,7 +1087,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Gemini Live API",
       "Voice AI",
@@ -1112,7 +1112,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "18 Oktober 2026",
     "readingTime": "12 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Mac Mini M4",
       "Apple Silicon",
@@ -1138,7 +1138,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "MCP",
       "PostgreSQL",
@@ -1163,7 +1163,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "AutoGen",
       "Microsoft",
@@ -1187,7 +1187,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Plasmo",
       "Chrome Extension",
@@ -1211,7 +1211,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "LangChain",
       "LCEL",
@@ -1236,7 +1236,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "vLLM",
       "Linux",
@@ -1262,7 +1262,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "ColPali",
       "Multimodal RAG",
@@ -1287,7 +1287,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "WhatsApp Bot",
       "Baileys",
@@ -1312,7 +1312,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Neovim",
       "Avante.nvim",
@@ -1337,7 +1337,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "SearXNG",
       "Crawl4AI",
@@ -1362,7 +1362,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "GGUF",
       "llama.cpp",
@@ -1387,7 +1387,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "F5-TTS",
       "Voice Cloning",
@@ -1412,7 +1412,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "n8n",
       "Cloudflare Tunnels",
@@ -1437,7 +1437,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Discord Bot",
       "Suno AI",
@@ -1462,7 +1462,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Dify",
       "Docker",
@@ -1487,7 +1487,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Home Assistant",
       "Smart Home",
@@ -1513,7 +1513,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Fine-Tuning",
       "Qwen2-VL",
@@ -1539,7 +1539,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Python",
       "Crypto Bot",
@@ -1564,7 +1564,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Mem0",
       "Memory AI",
@@ -1589,7 +1589,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "LivePortrait",
       "ComfyUI",
@@ -1614,7 +1614,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "LangSmith",
       "LLMOps",
@@ -1639,7 +1639,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "WebRTC",
       "Audio Streaming",
@@ -1664,7 +1664,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "11 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "DeepSeek-R1",
       "llama.cpp",
@@ -1689,7 +1689,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Scrapling",
       "Web Scraping",
@@ -1714,7 +1714,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Milvus",
       "Vector Database",
@@ -1739,7 +1739,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Phaser.js",
       "Game Dev",
@@ -1764,7 +1764,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "SGLang",
       "LLM Serving",
@@ -1789,7 +1789,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Outlook",
       "Microsoft Graph",
@@ -1814,7 +1814,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Marker PDF",
       "DeepL API",
@@ -1839,7 +1839,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Playwright",
       "QA Testing",
@@ -1864,7 +1864,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "ExLlamaV2",
       "Windows",
@@ -1890,7 +1890,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Kokoro TTS",
       "Podcast AI",
@@ -1915,7 +1915,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Supabase",
       "pgvector",
@@ -1940,7 +1940,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "GitHub Actions",
       "Code Review",
@@ -1965,7 +1965,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Kokoro-82M",
       "TTS",
@@ -1990,7 +1990,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "11 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "SaaS",
       "Next.js",
@@ -2016,7 +2016,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "PUBG Mobile",
       "Gyroscope",
@@ -2042,7 +2042,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Mobile Legends",
       "MLBB",
@@ -2067,7 +2067,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Honor of Kings",
       "HoK",
@@ -2092,7 +2092,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Valorant",
       "Crosshair",
@@ -2118,7 +2118,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "CS2",
       "Counter-Strike 2",
@@ -2144,7 +2144,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Free Fire",
       "FF MAX",
@@ -2170,7 +2170,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Mobile Legends",
       "MLBB",
@@ -2195,7 +2195,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Delta Force",
       "Hawk Ops",
@@ -2220,7 +2220,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Valorant",
       "Duelist",
@@ -2247,7 +2247,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Mobile Legends",
       "MLBB",
@@ -2272,7 +2272,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Honor of Kings",
       "HoK",
@@ -2297,7 +2297,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Valorant",
       "Aim Training",
@@ -2322,7 +2322,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "CS2",
       "Smoke Lineup",
@@ -2347,7 +2347,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "PUBG Mobile",
       "Ping Merah",
@@ -2373,7 +2373,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Genshin Impact",
       "F2P Guide",
@@ -2398,7 +2398,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "DeepSeek R1",
       "OpenAI",
@@ -2422,7 +2422,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "MCP",
       "Anthropic",
@@ -2447,7 +2447,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Claude 3.7",
       "Anthropic",
@@ -2470,7 +2470,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Cursor AI",
       "Windsurf",
@@ -2494,7 +2494,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Gemini",
       "Google AI",
@@ -2518,7 +2518,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "AutoGPT",
       "AI Agent",
@@ -2542,7 +2542,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Prompt Engineering",
       "LLM Hacks",
@@ -2566,7 +2566,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Hardware",
       "Rakit PC",
@@ -2592,7 +2592,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Perplexity",
       "Deep Research",
@@ -2616,7 +2616,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Suno AI",
       "Udio",
@@ -2640,7 +2640,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "v0.dev",
       "Bolt.new",
@@ -2664,7 +2664,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Quantization",
       "GGUF",
@@ -2689,7 +2689,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "NotebookLM",
       "Google",
@@ -2713,7 +2713,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Security",
       "Prompt Injection",
@@ -2737,7 +2737,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Monetisasi AI",
       "Agensi AI",
@@ -2761,7 +2761,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "DeepSeek",
       "Silicon Valley",
@@ -2785,7 +2785,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Career",
       "Software Engineering",
@@ -2809,7 +2809,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Vibe Coding",
       "Startup",
@@ -2833,7 +2833,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "AI Slop",
       "Google Search",
@@ -2857,7 +2857,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "NVIDIA",
       "CUDA",
@@ -2882,7 +2882,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Scaling Laws",
       "Test-Time Compute",
@@ -2906,7 +2906,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "MCP",
       "REST API",
@@ -2930,7 +2930,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Micro-SaaS",
       "Monetisasi",
@@ -2954,7 +2954,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "OpenAI",
       "o1",
@@ -2978,7 +2978,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Cybersecurity",
       "Deepfake",
@@ -3002,7 +3002,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Apple Intelligence",
       "Google Gemini",
@@ -3026,7 +3026,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "SEO",
       "GEO",
@@ -3050,7 +3050,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Data Center",
       "Energy Crisis",
@@ -3074,7 +3074,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Synthetic Data",
       "Machine Learning",
@@ -3098,7 +3098,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Local AI",
       "Cloud AI",
@@ -3122,7 +3122,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Open Source",
       "Meta Llama",
@@ -3146,7 +3146,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Security",
       "Prompt Injection",
@@ -3170,7 +3170,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Edge AI",
       "NPU",
@@ -3194,7 +3194,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Copyright",
       "Hak Cipta",
@@ -3218,7 +3218,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Career",
       "Future of Work",
@@ -3242,7 +3242,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Agentic Workflow",
       "LangGraph",
@@ -3266,7 +3266,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Video AI",
       "Sora",
@@ -3291,7 +3291,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "AI Agency",
       "AAA",
@@ -3316,7 +3316,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Sovereign AI",
       "Geopolitics",
@@ -3340,7 +3340,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Stack Overflow",
       "Developer Culture",
@@ -3364,7 +3364,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Healthcare",
       "MedTech",
@@ -3388,7 +3388,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Digital Employees",
       "Robot Tax",
@@ -3412,7 +3412,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "RAG",
       "Vector Database",
@@ -3436,7 +3436,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Psychology",
       "Neuroscience",
@@ -3460,7 +3460,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Passive Income",
       "Monetisasi AI",
@@ -3484,7 +3484,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Benchmarks",
       "MMLU",
@@ -3508,7 +3508,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Startup",
       "AI Moat",
@@ -3532,7 +3532,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "DeepSeek V3",
       "MLA",
@@ -3556,7 +3556,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Humanoid Robots",
       "Tesla Optimus",
@@ -3580,7 +3580,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "AGI",
       "Artificial General Intelligence",
@@ -3603,7 +3603,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "MLBB",
       "Honor of Kings",
@@ -3627,7 +3627,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Valorant",
       "Counter-Strike",
@@ -3651,7 +3651,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Black Myth Wukong",
       "Game Science",
@@ -3675,7 +3675,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Battle Royale",
       "PUBG",
@@ -3699,7 +3699,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Esports Psychology",
       "Mental Gaming",
@@ -3723,7 +3723,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "HP Gaming",
       "Rekomendasi HP",
@@ -3747,7 +3747,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "MLBB",
       "Meta Jungler",
@@ -3771,7 +3771,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Marvel Rivals",
       "Overwatch 2",
@@ -3795,7 +3795,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Game Gacha",
       "Psikologi Gaming",
@@ -3819,7 +3819,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Dota 2",
       "Valve",
@@ -3843,7 +3843,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Cloud Gaming",
       "GeForce NOW",
@@ -3867,7 +3867,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Gaming Audio",
       "Spatial Audio",
@@ -3892,7 +3892,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Game Indie",
       "Steam",
@@ -3916,7 +3916,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Esports Indonesia",
       "Gaji Pro Player",
@@ -3940,7 +3940,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Valorant",
       "Tier List Agent",
@@ -3964,7 +3964,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "GTA 6",
       "Grand Theft Auto VI",
@@ -3988,7 +3988,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Nintendo Switch 2",
       "NVIDIA Tegra",
@@ -4012,7 +4012,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Monster Hunter Wilds",
       "Capcom",
@@ -4036,7 +4036,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "The Witcher 4",
       "Project Polaris",
@@ -4060,7 +4060,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Ghost of Yotei",
       "Ghost of Tsushima",
@@ -4084,7 +4084,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Crimson Desert",
       "Pearl Abyss",
@@ -4108,7 +4108,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Half-Life 3",
       "Valve",
@@ -4132,7 +4132,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "PS5 Pro",
       "PlayStation 5",
@@ -4156,7 +4156,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Adaptasi Game",
       "Hollywood",
@@ -4180,7 +4180,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Kreator Gaming",
       "Algoritma YouTube",
@@ -4204,7 +4204,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "NVIDIA Rubin",
       "NVIDIA Spark",
@@ -4228,7 +4228,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "RTX 5090",
       "RTX 5080",
@@ -4252,7 +4252,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Apple M5",
       "Apple Silicon",
@@ -4276,7 +4276,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Starlink",
       "Direct to Cell",
@@ -4300,7 +4300,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Baterai Solid State",
       "Mobil Listrik",
@@ -4324,7 +4324,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Komputer Kuantum",
       "Quantum Computing",
@@ -4348,7 +4348,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Robot Humanoid",
       "Tesla Optimus",
@@ -4372,7 +4372,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Neuralink",
       "BCI",
@@ -4396,7 +4396,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Jaringan 6G",
       "5G",
@@ -4420,7 +4420,7 @@ export const articleSummaries: ArticleSummary[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Chip Fotonik",
       "Optical Computing",

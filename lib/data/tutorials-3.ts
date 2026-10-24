@@ -12,7 +12,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Mem0",
       "Memory AI",
@@ -86,7 +86,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "LivePortrait",
       "ComfyUI",
@@ -160,7 +160,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "LangSmith",
       "LLMOps",
@@ -234,7 +234,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "WebRTC",
       "Audio Streaming",
@@ -308,7 +308,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "11 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "DeepSeek-R1",
       "llama.cpp",
@@ -382,7 +382,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Scrapling",
       "Web Scraping",
@@ -456,7 +456,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Milvus",
       "Vector Database",
@@ -530,7 +530,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Phaser.js",
       "Game Dev",
@@ -604,7 +604,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "SGLang",
       "LLM Serving",
@@ -678,7 +678,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Outlook",
       "Microsoft Graph",
@@ -752,7 +752,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Marker PDF",
       "DeepL API",
@@ -826,7 +826,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "10 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Playwright",
       "QA Testing",
@@ -900,7 +900,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "ExLlamaV2",
       "Windows",
@@ -975,7 +975,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Kokoro TTS",
       "Podcast AI",
@@ -1049,7 +1049,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Supabase",
       "pgvector",
@@ -1123,7 +1123,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "9 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "GitHub Actions",
       "Code Review",
@@ -1197,7 +1197,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Kokoro-82M",
       "TTS",
@@ -1271,7 +1271,7 @@ export const tutorialsPart3: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "11 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "SaaS",
       "Next.js",

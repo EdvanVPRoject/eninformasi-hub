@@ -429,7 +429,7 @@ async function run() {
     pubDate: dateISO,
     updatedDate: dateISO,
     readingTime: generated.readingTime || '4 min read',
-    author: 'EnInformasi Tech Desk',
+    author: 'EdvanVPRoject',
     tags: generated.tags || ['AI', 'Gaming', 'Hardware', 'Viral News'],
     toc: tocID,
     content: cleanContentID,

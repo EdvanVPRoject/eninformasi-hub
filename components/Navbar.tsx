@@ -266,7 +266,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
               <UserCheck className="w-4 h-4 text-emerald-500" />
               <span>{lang === 'en' ? 'About Author' : 'Tentang Penulis'}</span>
             </div>
-            <span className="text-xs font-mono text-zinc-500">Edvan</span>
+            <span className="text-xs font-mono text-zinc-500">EdvanVPRoject</span>
           </Link>
 
           <div className="pt-2 border-t border-[var(--border-color)] flex items-center justify-between">

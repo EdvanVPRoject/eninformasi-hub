@@ -11,7 +11,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "MLBB",
       "Honor of Kings",
@@ -66,7 +66,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Valorant",
       "Counter-Strike",
@@ -122,7 +122,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Black Myth Wukong",
       "Game Science",
@@ -177,7 +177,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "8 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Battle Royale",
       "PUBG",
@@ -232,7 +232,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "8 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Esports Psychology",
       "Mental Gaming",
@@ -287,7 +287,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "HP Gaming",
       "Rekomendasi HP",
@@ -342,7 +342,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "8 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "MLBB",
       "Meta Jungler",
@@ -397,7 +397,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Marvel Rivals",
       "Overwatch 2",
@@ -452,7 +452,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Game Gacha",
       "Psikologi Gaming",
@@ -507,7 +507,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Dota 2",
       "Valve",
@@ -562,7 +562,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Cloud Gaming",
       "GeForce NOW",
@@ -617,7 +617,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Gaming Audio",
       "Spatial Audio",
@@ -673,7 +673,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Game Indie",
       "Steam",
@@ -728,7 +728,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Esports Indonesia",
       "Gaji Pro Player",
@@ -783,7 +783,7 @@ export const gamingPart2: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "09 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Valorant",
       "Tier List Agent",

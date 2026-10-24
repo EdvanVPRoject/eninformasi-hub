@@ -11,7 +11,7 @@ export const upcomingTrends: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "GTA 6",
       "Grand Theft Auto VI",
@@ -66,7 +66,7 @@ export const upcomingTrends: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Nintendo Switch 2",
       "NVIDIA Tegra",
@@ -121,7 +121,7 @@ export const upcomingTrends: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Monster Hunter Wilds",
       "Capcom",
@@ -176,7 +176,7 @@ export const upcomingTrends: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "The Witcher 4",
       "Project Polaris",
@@ -231,7 +231,7 @@ export const upcomingTrends: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Ghost of Yotei",
       "Ghost of Tsushima",
@@ -286,7 +286,7 @@ export const upcomingTrends: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Crimson Desert",
       "Pearl Abyss",
@@ -341,7 +341,7 @@ export const upcomingTrends: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Half-Life 3",
       "Valve",
@@ -396,7 +396,7 @@ export const upcomingTrends: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "PS5 Pro",
       "PlayStation 5",
@@ -451,7 +451,7 @@ export const upcomingTrends: Article[] = [
     "readingTime": "9 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Adaptasi Game",
       "Hollywood",
@@ -506,7 +506,7 @@ export const upcomingTrends: Article[] = [
     "readingTime": "8 min baca",
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Kreator Gaming",
       "Algoritma YouTube",

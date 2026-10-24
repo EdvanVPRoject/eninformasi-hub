@@ -12,7 +12,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "DeepSeek",
       "Silicon Valley",
@@ -76,7 +76,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Career",
       "Software Engineering",
@@ -140,7 +140,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Vibe Coding",
       "Startup",
@@ -204,7 +204,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "AI Slop",
       "Google Search",
@@ -268,7 +268,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "NVIDIA",
       "CUDA",
@@ -333,7 +333,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Scaling Laws",
       "Test-Time Compute",
@@ -397,7 +397,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "MCP",
       "REST API",
@@ -461,7 +461,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Micro-SaaS",
       "Monetisasi",
@@ -525,7 +525,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "OpenAI",
       "o1",
@@ -589,7 +589,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "6 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Cybersecurity",
       "Deepfake",
@@ -653,7 +653,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Apple Intelligence",
       "Google Gemini",
@@ -717,7 +717,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "SEO",
       "GEO",
@@ -781,7 +781,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Data Center",
       "Energy Crisis",
@@ -845,7 +845,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "10 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Synthetic Data",
       "Machine Learning",
@@ -909,7 +909,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "12 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Local AI",
       "Cloud AI",
@@ -973,7 +973,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "11 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "7 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Open Source",
       "Meta Llama",
@@ -1037,7 +1037,7 @@ export const articlesPart2: Article[] = [
     "pubDate": "13 Oktober 2026",
     "updatedDate": "14 Oktober 2026",
     "readingTime": "8 min baca",
-    "author": "Edvan",
+    "author": "EdvanVPRoject",
     "tags": [
       "Security",
       "Prompt Injection",
