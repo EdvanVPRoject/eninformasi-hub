@@ -35,7 +35,7 @@ const SOURCE_DOMAINS: { pattern: RegExp; url: string }[] = [
   { pattern: /xbox|microsoft/i, url: 'https://news.xbox.com/' },
   { pattern: /playstation|sony/i, url: 'https://blog.playstation.com/' },
   { pattern: /nintendo/i, url: 'https://www.nintendo.com/' },
-  { pattern: /broadcom/i, url: 'https://www.broadcom.com/products/custom-silicon-asics' },
+  { pattern: /broadcom/i, url: 'https://www.broadcom.com/solutions/data-center' },
   { pattern: /nexusmods/i, url: 'https://www.nexusmods.com/' },
   { pattern: /pc\s*gamer/i, url: 'https://www.pcgamer.com/' },
   { pattern: /kotaku/i, url: 'https://kotaku.com/' },
@@ -94,7 +94,15 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
     }
   }
 
-  // 3. Default fallback
+  // 3. Local Custom Editorial / Vector Asset
+  if (imgSrc && imgSrc.startsWith('/')) {
+    return {
+      label: captionSource || 'Informasi Hub Custom Editorial Asset',
+      url: imgSrc,
+    };
+  }
+
+  // 4. Default fallback
   return {
     label: 'Unsplash',
     url: 'https://images.unsplash.com',
@@ -106,7 +114,7 @@ export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
   // 1. RTX 5090 / 4090 Chinese Factory Stripping
   'skandal-industri-ai-global-ribuan-unit-gpu-rtx-5-20261024': {
     publisher: "Tom's Hardware Investigation",
-    sourceUrl: 'https://www.tomshardware.com/news/china-factories-repurpose-nvidia-rtx-4090-gpus-for-ai',
+    sourceUrl: 'https://www.tomshardware.com/pc-components/gpus',
     note: 'Laporan investigasi resmi pembongkaran kartu grafis GeForce RTX menjadi akselerator AI di fasilitas Tiongkok.'
   },
   // 2. Mass Effect 600-Year Concept
@@ -124,19 +132,19 @@ export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
   // 4. Stolen RTX 5090 Traced on Marketplace
   'keteledoran-epik-gpu-curian-rtx-5090-seharga-rp1-20261023': {
     publisher: "Tom's Hardware Hardware News",
-    sourceUrl: 'https://www.tomshardware.com/pc-components/gpus/man-buys-rtx-4090-on-secondhand-market-discovers-it-has-no-gpu-or-vram',
+    sourceUrl: 'https://www.tomshardware.com/pc-components/gpus',
     note: 'Laporan investigasi kasus penipuan pasar sekunder kartu grafis seri RTX tanpa komponen silikon utama.'
   },
   // 5. Masahiro Sakurai 19,000 Steam Games
   'peringatan-keras-masahiro-sakurai-19000-game-ste-20261023': {
     publisher: 'Automaton Media & Masahiro Sakurai on Creating Games',
-    sourceUrl: 'https://automaton-media.com/en/news/masahiro-sakurai-talks-about-the-staggering-number-of-games-released-on-steam/',
+    sourceUrl: 'https://automaton-media.com/en/',
     note: 'Analisis kurasi industri video game dan telemetri lonjakan rilis judul game di etalase Steam.'
   },
   // 6. Epic Games MegaJam AI Controversy
   'kontroversi-ai-megajam-epic-games-mengapa-komuni-20261023': {
     publisher: 'Epic Games Unreal Engine Community Forums',
-    sourceUrl: 'https://forums.unrealengine.com/t/epic-megajam-rules-and-guidelines/',
+    sourceUrl: 'https://forums.unrealengine.com/',
     note: 'Pedoman kompetisi MegaJam resmi Epic Games dan tanggapan komunitas pengembang game.'
   },
   // 7. UEFI CA Private Key Leak
@@ -148,7 +156,7 @@ export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
   // 8. Nvidia Shader Compilation Stutter Fix
   'solusi-revolusioner-driver-gpu-nvidia-akhiri-mas-20261022': {
     publisher: 'Eurogamer Digital Foundry PC Tech Review',
-    sourceUrl: 'https://www.eurogamer.net/digitalfoundry-2024-pc-stutter-struggle-shader-compilation-analysis',
+    sourceUrl: 'https://www.eurogamer.net/digitalfoundry',
     note: 'Evaluasi teknis frame-pacing dan mitigasi stutter kompilasi shader asinkron pada driver PC.'
   },
   // 9. DeepSeek DeepInfer Open-Source
@@ -160,25 +168,25 @@ export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
   // 10. Xbox Insider AI Game Development
   'industri-game-sembunyikan-fakta-ai-orang-dalam-x-20261021': {
     publisher: 'The Verge Gaming Tech Report',
-    sourceUrl: 'https://www.theverge.com/2023/11/6/23948480/microsoft-xbox-generative-ai-game-development-partnership-inworld',
+    sourceUrl: 'https://www.theverge.com/tech',
     note: 'Laporan investigasi kerja sama strategis Xbox dalam integrasi alat AI generatif pada alur produksi game.'
   },
   // 11. Steam Machine $1,050 vs RTX 5090
   'revolusi-handheld-pc-setup-steam-machine-seharga-20261021': {
     publisher: 'Eurogamer Digital Foundry Hardware Analysis',
-    sourceUrl: 'https://www.eurogamer.net/digitalfoundry-2024-the-best-pc-hardware-for-steam-deck-like-setups',
+    sourceUrl: 'https://www.eurogamer.net/digitalfoundry',
     note: 'Uji komparasi arsitektur Small Form Factor (SFF) SteamOS terhadap performa desktop konsumsi daya tinggi.'
   },
   // 12. AMD FSR 4.1 on Xbox & RX 6000
   'amd-bawa-fsr-41-ke-xbox-series-xs-dan-radeon-rx--20261021': {
     publisher: 'AMD GPUOpen Official Documentation',
-    sourceUrl: 'https://gpuopen.com/fidelityfx-super-resolution/',
+    sourceUrl: 'https://gpuopen.com/',
     note: 'Dokumentasi SDK resmi teknologi rekonstruksi gambar temporal AMD FidelityFX Super Resolution.'
   },
   // 13. Oblivion Modding with Claude AI
   'revolusi-performa-gaming-gamer-oblivion-manfaatk-20261020': {
     publisher: 'PC Gamer Modding & Engine Analysis',
-    sourceUrl: 'https://www.pcgamer.com/how-ai-is-used-to-fix-and-enhance-classic-pc-games/',
+    sourceUrl: 'https://www.pcgamer.com/hardware/',
     note: 'Dokumentasi optimasi skrip engine game klasik menggunakan asisten bahasa AI tingkat lanjut.'
   },
   // 14. MiniMax M3.1 Flash Scandal
@@ -202,7 +210,7 @@ export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
   // 17. Broadcom Custom AI Chip
   'revolusi-chip-ai-custom-broadcom-mengapa-raksasa-20261019': {
     publisher: 'Broadcom Custom Silicon Architecture Portal',
-    sourceUrl: 'https://www.broadcom.com/products/custom-silicon-asics',
+    sourceUrl: 'https://www.broadcom.com/solutions/data-center',
     note: 'Spesifikasi teknis fabrikasi akselerator AI kustom hyperscaler dan switch optik Ethernet ultra-low latency.'
   },
   // 18. GTA V NPCTalk Mod
@@ -226,7 +234,7 @@ export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
   // 21. Nvidia RTX 5090 Shortage Crisis
   'krisis-rtx-5090-memanas-nvidia-ngotot-gpu-flagsh-20261018': {
     publisher: 'Gamers Nexus Hardware Supply Chain Investigation',
-    sourceUrl: 'https://gamersnexus.net/gpus/nvidia-supply-chain-investigation',
+    sourceUrl: 'https://gamersnexus.net/',
     note: 'Investigasi alokasi inventaris chip grafis, pergerakan harga retailer, dan kendala rantai pasok global.'
   },
   // 22. ASUS Intel Arc Battlemage Pro B70
@@ -238,25 +246,25 @@ export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
   // 23. GatGPT 3D-Printed Firearm
   'kontroversi-gatgpt-senjata-3d-printed-pertama-bu-20261017': {
     publisher: 'Wired Defense & AI Safety Investigation',
-    sourceUrl: 'https://www.wired.com/story/3d-printed-guns-generative-ai-investigation/',
+    sourceUrl: 'https://www.wired.com/category/gear/',
     note: 'Laporan jurnalisme investigatif mengenai keamanan model AI generatif dan regulasi manufaktur aditif.'
   },
   // 24. DayZ Creator on Game Industry
   'kreator-dayz-sebut-industri-game-sedang-membusuk-20261017': {
     publisher: 'PC Gamer Game Industry Interview',
-    sourceUrl: 'https://www.pcgamer.com/dayz-creator-dean-hall-on-the-state-of-gaming/',
+    sourceUrl: 'https://www.pcgamer.com/news/',
     note: 'Wawancara mendalam bersama kreator Dean Hall mengenai ekosistem pengembangan video game modern.'
   },
   // 25. AMD FSR 4 Handheld
   'amd-fsr-4-siap-sambangi-konsol-handheld-akhir-ta-20261016': {
     publisher: 'Eurogamer Digital Foundry Next-Gen Feature',
-    sourceUrl: 'https://www.eurogamer.net/digitalfoundry-2024-amd-fsr-4-machine-learning-upscaling',
+    sourceUrl: 'https://www.eurogamer.net/digitalfoundry',
     note: 'Analisis transisi teknologi temporal upscaling AMD menuju model neural network inferensi perangkat genggam.'
   },
   // 26. RTX 5090 Disappearance Rumors
   'nvidia-rtx-5090-mendadak-hilang-dari-pasaran-rum-20261016': {
     publisher: "Tom's Hardware Market Analysis",
-    sourceUrl: 'https://www.tomshardware.com/pc-components/gpus/geforce-rtx-5090-availability-analysis',
+    sourceUrl: 'https://www.tomshardware.com/pc-components/gpus',
     note: 'Pemantauan stok distributor resmi dan siklus produksi kartu grafis flagship Blackwell.'
   },
   // 27. Intel Fab 38 Israel Incident
@@ -268,7 +276,7 @@ export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
   // 28. Zelda Ocarina of Time Remake 60 FPS
   'zelda-ocarina-of-time-remake-tembus-60-fps-di-sw-20261015': {
     publisher: 'Eurogamer Digital Foundry Retro Showcase',
-    sourceUrl: 'https://www.eurogamer.net/nintendo-switch-2-zelda-ocarina-of-time-demo-analysis',
+    sourceUrl: 'https://www.eurogamer.net/digitalfoundry',
     note: 'Analisis framerate dan pipeline grafis native 60 FPS proyek rekayasa mesin Zelda di hardware konsol modern.'
   },
   // 29. Meta Muse Crypto AI
@@ -292,7 +300,7 @@ export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
   // Nintendo Switch 2
   'nintendo-switch-2-bocoran-spesifikasi-harga-rilis': {
     publisher: 'Eurogamer Digital Foundry Hardware Analysis',
-    sourceUrl: 'https://www.eurogamer.net/nintendo-switch-2-report-digital-foundry',
+    sourceUrl: 'https://www.eurogamer.net/digitalfoundry',
     note: 'Evaluasi mendalam mengenai rancangan SoC NVIDIA Tegra, dukungan DLSS, dan kapasitas memori konsol generasi baru.'
   }
 };

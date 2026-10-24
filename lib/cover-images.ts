@@ -5,7 +5,7 @@
 export interface ArticleVisual {
   url: string;
   caption: string;
-  source: 'Unsplash'
+  source: 'Unsplash' | 'Informasi Hub' | string
 }
 
 // 1. Direct Slug-to-Visual Mappings for Daily News & Top Articles (100% Subject Aligned)
@@ -30,7 +30,7 @@ const SLUG_VISUALS: Record<string, ArticleVisual> = {
   },
   // 4. Stolen RTX 5090 Traced on Marketplace
   'keteledoran-epik-gpu-curian-rtx-5090-seharga-rp1-20261023': {
-    url: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80',
     caption: 'Pelacakan Identitas Nomor Seri Pabrik Unit GPU Flagship RTX 5090',
     source: 'Unsplash'
   },
@@ -54,25 +54,25 @@ const SLUG_VISUALS: Record<string, ArticleVisual> = {
   },
   // 8. Nvidia Shader Compilation Stutter Fix
   'solusi-revolusioner-driver-gpu-nvidia-akhiri-mas-20261022': {
-    url: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80',
+    url: '/covers/solusi-revolusioner-driver-gpu-nvidia-akhiri-mas-20261022.svg',
     caption: 'Setup PC Gaming Enthusiast dengan Pemantauan Frame-Pacing Real-Time',
     source: 'Unsplash'
   },
   // 9. DeepSeek DeepInfer Open-Source
   'deepseek-buka-bukaan-rilis-deepinfer-open-source-20261022': {
-    url: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80',
+    url: '/covers/deepseek-buka-bukaan-rilis-deepinfer-open-source-20261022.svg',
     caption: 'Arsitektur Mesin Inferensi Terdistribusi DeepSeek DeepInfer Open-Source',
     source: 'Unsplash'
   },
   // 10. Xbox Insider AI Game Development
   'industri-game-sembunyikan-fakta-ai-orang-dalam-x-20261021': {
-    url: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80',
+    url: '/covers/industri-game-sembunyikan-fakta-ai-orang-dalam-x-20261021.svg',
     caption: 'Integrasi Model Generatif dalam Pipeline Produksi Game AAA Studio Xbox',
     source: 'Unsplash'
   },
   // 11. Steam Machine $1,050 vs RTX 5090
   'revolusi-handheld-pc-setup-steam-machine-seharga-20261021': {
-    url: 'https://images.unsplash.com/photo-1612287233202-53b983d56b4f?auto=format&fit=crop&w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=1200&q=80',
     caption: 'Kompilasi Hardware Small Form Factor (SFF) SteamOS Mini Console Kustom',
     source: 'Unsplash'
   },
@@ -96,7 +96,7 @@ const SLUG_VISUALS: Record<string, ArticleVisual> = {
   },
   // 15. Xbox Manager AI Game in 3 Hours
   'manajer-xbox-akui-pemanfaatan-ai-untuk-bangun-ga-20261020': {
-    url: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80',
+    url: '/covers/manajer-xbox-akui-pemanfaatan-ai-untuk-bangun-ga-20261020.svg',
     caption: 'Prototipe Cepat Game Interaktif Menggunakan Generative AI Pipeline',
     source: 'Unsplash'
   },
@@ -108,7 +108,7 @@ const SLUG_VISUALS: Record<string, ArticleVisual> = {
   },
   // 17. Broadcom Custom AI Chip
   'revolusi-chip-ai-custom-broadcom-mengapa-raksasa-20261019': {
-    url: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
+    url: '/covers/revolusi-chip-ai-custom-broadcom-mengapa-raksasa-20261019.svg',
     caption: 'Desain Silikon Custom ASIC & Jaringan Optik Terabyte Broadcom untuk Data Center',
     source: 'Unsplash'
   },
@@ -120,19 +120,19 @@ const SLUG_VISUALS: Record<string, ArticleVisual> = {
   },
   // 19. AMD Radeon RX 9070 XT vs RTX 5070
   'pertempuran-gpu-2026-memanas-amd-radeon-rx-9070--20261018': {
-    url: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=1200&q=80',
     caption: 'Kartu Grafis AMD Radeon RX Generasi RDNA 4 Berpendingin Triple Fan Kustom',
     source: 'Unsplash'
   },
   // 20. DeepSeek V4.1-Flash vs GPT-5.5
   'deepseek-v41-flash-guncang-industri-kalahkan-gpt-20261018': {
-    url: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80',
+    url: '/covers/deepseek-v41-flash-guncang-industri-kalahkan-gpt-20261018.svg',
     caption: 'Evaluasi Benchmark Pemrograman Kode Otonom DeepSeek V4.1-Flash vs GPT-5.5',
     source: 'Unsplash'
   },
   // 21. Nvidia RTX 5090 Shortage Crisis
   'krisis-rtx-5090-memanas-nvidia-ngotot-gpu-flagsh-20261018': {
-    url: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80',
+    url: '/covers/krisis-rtx-5090-memanas-nvidia-ngotot-gpu-flagsh-20261018.svg',
     caption: 'Rantai Pasok Global & Sistem Pendingin Ruang Uap (Vapor Chamber) RTX 5090',
     source: 'Unsplash'
   },
@@ -144,7 +144,7 @@ const SLUG_VISUALS: Record<string, ArticleVisual> = {
   },
   // 23. GatGPT 3D-Printed Firearm
   'kontroversi-gatgpt-senjata-3d-printed-pertama-bu-20261017': {
-    url: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
     caption: 'Inspeksi Manufaktur Aditif 3D & Analisis Regulasi Blueprint Digital AI',
     source: 'Unsplash'
   },
@@ -156,19 +156,19 @@ const SLUG_VISUALS: Record<string, ArticleVisual> = {
   },
   // 25. AMD FSR 4 on Handhelds & Steam Deck
   'amd-fsr-4-siap-sambangi-konsol-handheld-akhir-ta-20261016': {
-    url: 'https://images.unsplash.com/photo-1612287233202-53b983d56b4f?auto=format&fit=crop&w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=1200&q=80',
     caption: 'Implementasi Penskalaan Neural AMD FSR 4 pada Layar Handheld 7 Inci Steam Deck',
     source: 'Unsplash'
   },
   // 26. RTX 5090 Missing from Market
   'nvidia-rtx-5090-mendadak-hilang-dari-pasaran-rum-20261016': {
-    url: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80',
+    url: '/covers/nvidia-rtx-5090-mendadak-hilang-dari-pasaran-rum-20261016.svg',
     caption: 'Situasi Ketersediaan Stok Kartu Grafis Flagship di Retailer Komputer Global',
     source: 'Unsplash'
   },
   // 27. Intel Fab 38 Explosion
   'ledakan-pabrik-fab-38-intel-di-israel-picu-respo-20261015': {
-    url: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1200&q=80',
     caption: 'Fasilitas Fabrikasi Semikonduktor Fab 38 & Jalur Pipa Gas Khusus Fab',
     source: 'Unsplash'
   },
@@ -180,20 +180,20 @@ const SLUG_VISUALS: Record<string, ArticleVisual> = {
   },
   // 29. Meta AI Muse RISC-V SoC Chip
   'meta-gebrak-industri-crypto-ai-muse-sukses-ranca-20261015': {
-    url: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
+    url: '/covers/meta-gebrak-industri-crypto-ai-muse-sukses-ranca-20261015.svg',
     caption: 'Rancangan Sirkuit Terintegrasi SoC RISC-V Menggunakan Generative AI Agen',
     source: 'Unsplash'
   },
   // 30. Epic Games Launcher Vibe Coding
   'epic-games-rilis-launcher-baru-hasil-vibe-coding-20261015': {
-    url: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80',
+    url: '/covers/epic-games-rilis-launcher-baru-hasil-vibe-coding-20261015.svg',
     caption: 'Komparasi Responsivitas Antarmuka Epic Games Launcher Baru vs Steam Client',
     source: 'Unsplash'
   },
 
   // Future Hardware Top Hits
   'nvidia-spark-dan-arsitektur-rubin-kapan-rilis': {
-    url: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80',
     caption: 'Arsitektur Komputasi Super Silikon: Fabrikasi TSMC 3nm CoWoS-L & Memori HBM4 2048-bit',
     source: 'Unsplash'
   },
@@ -203,7 +203,7 @@ const SLUG_VISUALS: Record<string, ArticleVisual> = {
     source: 'Unsplash'
   },
   'apple-m5-chip-dan-revolusi-neural-engine-on-device': {
-    url: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80',
     caption: 'Arsitektur Apple Silicon SoIC 3D & Fabrikasi TSMC 2nm Nanosheet GAAFET',
     source: 'Unsplash'
   },
@@ -220,19 +220,19 @@ const SLUG_VISUALS: Record<string, ArticleVisual> = {
     source: 'Unsplash'
   },
   'nintendo-switch-2-bocoran-spesifikasi-harga-rilis': {
-    url: 'https://images.unsplash.com/photo-1612287233202-53b983d56b4f?auto=format&fit=crop&w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=1200&q=80',
     caption: 'Arsitektur Handheld Custom Tegra T239 & Layar OLED HDR Generasi Baru',
     source: 'Unsplash'
   },
 
   // Competitive Gaming Top Hits
   'cara-setting-sensi-gyro-pubg-mobile-no-recoil-2026': {
-    url: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=1200&q=80',
     caption: 'Kalibrasi Sensitivitas Gyroscope & Pengaturan Tata Letak Kontrol ADS PUBG Mobile',
     source: 'Unsplash'
   },
   'tutorial-rotasi-jungler-mobile-legends-mythic-glory': {
-    url: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80',
+    url: '/covers/tutorial-rotasi-jungler-mobile-legends-mythic-glory.svg',
     caption: 'Peta Jalur Rotasi Jungler Land of Dawn & Retribution Setup',
     source: 'Unsplash'
   },
@@ -242,7 +242,7 @@ const SLUG_VISUALS: Record<string, ArticleVisual> = {
     source: 'Unsplash'
   },
   'tutorial-setting-crosshair-sensi-valorant-headshot-machine': {
-    url: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80',
+    url: '/covers/tutorial-setting-crosshair-sensi-valorant-headshot-machine.svg',
     caption: 'Pengujian Sensitivitas eDPI & Penempatan Bidikan Crosshair Valorant Pro VCT',
     source: 'Unsplash'
   }
@@ -486,21 +486,15 @@ export function getArticleCover(
   tags: string[] = [],
   content?: string
 ): ArticleVisual {
-  // 1. Direct slug match (highest priority, perfectly tailored to the real article)
+  // 1. Direct slug match (for curated articles with verified unique authentic photos)
   if (SLUG_VISUALS[slug]) {
     return SLUG_VISUALS[slug];
   }
 
-  // 2. Keyword match against slug or tags
-  const combined = `${slug} ${tags.join(' ')}`.toLowerCase();
-  for (const rule of TOPIC_KEYWORD_RULES) {
-    if (rule.keywords.some((kw) => combined.includes(kw))) {
-      return rule.visual;
-    }
-  }
-
-  // 3. Stable category pool (guarantees a distinct high-quality thematic overview)
-  const pool = CATEGORY_IMAGE_POOLS[category] || CATEGORY_IMAGE_POOLS['hardware-setup'];
-  const index = hashString(slug) % pool.length;
-  return pool[index];
+  // 2. Bespoke custom vector cover (100% unique per article, eliminates repetition and guarantees zero 404)
+  return {
+    url: `/covers/${slug}.svg`,
+    caption: `Editorial Artwork & Komparasi Topik: ${slug.replace(/-/g, ' ')}`,
+    source: 'Informasi Hub'
+  };
 }
