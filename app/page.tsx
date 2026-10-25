@@ -26,7 +26,7 @@ import {
   artikelArticleCount 
 } from '@/lib/data/article-summaries';
 import SidebarNav from '@/components/SidebarNav';
-import { getArticleCover } from '@/lib/cover-images';
+import { getArticleCover, getThumbnailUrl } from '@/lib/cover-images';
 import { useLanguage } from '@/components/LanguageContext';
 import { getCategoryLabel } from '@/lib/i18n';
 import SortDropdown, { SortOption } from '@/components/SortDropdown';
@@ -52,7 +52,7 @@ function HomeContent() {
   const [selectedType, setSelectedType] = useState<'all' | 'tutorial' | 'artikel'>(initialType);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [sortBy, setSortBy] = useState<SortOption>('recommended');
-  const [visibleCount, setVisibleCount] = useState<number>(18);
+  const [visibleCount, setVisibleCount] = useState<number>(12);
 
   // Sinkronkan state ketika parameter URL berubah (misal diklik dari Footer atau halaman Artikel)
   React.useEffect(() => {
@@ -61,12 +61,12 @@ function HomeContent() {
     if (urlType) setSelectedType(urlType);
     const urlQuery = searchParams.get('q');
     if (urlQuery) setSearchQuery(urlQuery);
-    setVisibleCount(18);
+    setVisibleCount(12);
   }, [searchParams]);
 
   const handleSelectType = (type: 'all' | 'tutorial' | 'artikel') => {
     setSelectedType(type);
-    setVisibleCount(18);
+    setVisibleCount(12);
     if (typeof window !== 'undefined') {
       const url = new URL(window.location.href);
       if (type === 'all') {
@@ -80,7 +80,7 @@ function HomeContent() {
 
   const handleSelectCategory = (cat: string) => {
     setSelectedCategory(cat);
-    setVisibleCount(18);
+    setVisibleCount(12);
     if (typeof window !== 'undefined') {
       const url = new URL(window.location.href);
       if (cat === 'all') {
@@ -97,7 +97,7 @@ function HomeContent() {
       setSearchQuery('');
     } else {
       setSearchQuery(topic);
-      setVisibleCount(18);
+      setVisibleCount(12);
     }
   };
 
@@ -106,7 +106,7 @@ function HomeContent() {
     setSelectedType('all');
     setSearchQuery('');
     setSortBy('recommended');
-    setVisibleCount(18);
+    setVisibleCount(12);
     if (typeof window !== 'undefined') {
       const url = new URL(window.location.href);
       url.searchParams.delete('category');
@@ -192,25 +192,102 @@ function HomeContent() {
         </div>
 
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
-          {/* Left Column: Value Proposition & Feature Pills */}
+          {/* Left Column: Value Proposition, Stats Trio (Semua Konten & Sampingnya) & Feature Pills */}
           <div className="lg:col-span-7 xl:col-span-7 flex flex-col justify-between space-y-5">
-            <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed">
-              {lang === 'en' ? (
-                <>
-                  Explore cutting-edge tech insights, gaming &amp; esports strategies, upcoming blockbuster releases, hardware breakthroughs, featuring{' '}
-                  <span className="font-bold text-[var(--text-main)]">{tutorialCount}</span> Practical Tutorials (with copy-paste code and settings) and{' '}
-                  <span className="font-bold text-[var(--text-main)]">{artikelCount}</span> Deep-Dive Articles.
-                </>
-              ) : (
-                <>
-                  Eksplorasi wawasan teknologi terkini, tren gaming &amp; esports, rilis game masa depan, inovasi hardware canggih, hingga{' '}
-                  <span className="font-bold text-[var(--text-main)]">{tutorialCount}</span> Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan{' '}
-                  <span className="font-bold text-[var(--text-main)]">{artikelCount}</span> Informasi &amp; Analisis mendalam.
-                </>
-              )}
-            </p>
+            <div className="space-y-4">
+              <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed">
+                {lang === 'en' ? (
+                  <>
+                    Explore cutting-edge tech insights, gaming &amp; esports strategies, upcoming blockbuster releases, hardware breakthroughs, featuring{' '}
+                    <span className="font-bold text-[var(--text-main)]">{tutorialCount}</span> Practical Tutorials (with copy-paste code and settings) and{' '}
+                    <span className="font-bold text-[var(--text-main)]">{artikelCount}</span> Deep-Dive Articles.
+                  </>
+                ) : (
+                  <>
+                    Eksplorasi wawasan teknologi terkini, tren gaming &amp; esports, rilis game masa depan, inovasi hardware canggih, hingga{' '}
+                    <span className="font-bold text-[var(--text-main)]">{tutorialCount}</span> Tutorial Praktis (langkah demi langkah dengan strategi dan kode siap pakai) dan{' '}
+                    <span className="font-bold text-[var(--text-main)]">{artikelCount}</span> Informasi &amp; Analisis mendalam.
+                  </>
+                )}
+              </p>
 
-            <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-medium text-[var(--text-muted)] border-t border-[var(--border-color)] pt-4">
+              {/* Kotak Semua Konten dan Sampingnya (Pindah ke Kiri agar tidak kosong) */}
+              <div className="grid grid-cols-3 gap-2 sm:gap-3 pt-1">
+                <button
+                  type="button"
+                  onClick={() => handleSelectType('all')}
+                  aria-label="Tampilkan semua konten"
+                  className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all active:scale-[0.98] ${
+                    selectedType === 'all'
+                      ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
+                      : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
+                  }`}
+                >
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-xl sm:text-2xl font-bold tracking-tight text-[var(--text-main)]">
+                      {totalArticleCount}
+                    </span>
+                    <Layers className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${selectedType === 'all' ? 'text-emerald-500' : 'text-[var(--text-muted)]'}`} />
+                  </div>
+                  <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate">
+                    {lang === 'en' ? 'All Content' : 'Semua Konten'}
+                  </div>
+                  <div className="text-[11px] sm:text-xs text-[var(--text-muted)] truncate">
+                    {lang === 'en' ? 'Full Database' : 'Katalog Lengkap'}
+                  </div>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => handleSelectType('tutorial')}
+                  aria-label="Tampilkan hanya tutorial"
+                  className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all active:scale-[0.98] ${
+                    selectedType === 'tutorial'
+                      ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
+                      : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
+                  }`}
+                >
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-xl sm:text-2xl font-bold tracking-tight text-[var(--text-main)]">
+                      {tutorialCount}
+                    </span>
+                    <GraduationCap className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${selectedType === 'tutorial' ? 'text-emerald-500' : 'text-[var(--text-muted)]'}`} />
+                  </div>
+                  <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate">
+                    {lang === 'en' ? 'Tutorials' : 'Tutorial'}
+                  </div>
+                  <div className="text-[11px] sm:text-xs text-[var(--text-muted)] truncate">
+                    {lang === 'en' ? 'Code & Setup' : 'Langkah & Kode'}
+                  </div>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => handleSelectType('artikel')}
+                  aria-label="Tampilkan hanya artikel informasi"
+                  className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all active:scale-[0.98] ${
+                    selectedType === 'artikel'
+                      ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
+                      : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
+                  }`}
+                >
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-xl sm:text-2xl font-bold tracking-tight text-[var(--text-main)]">
+                      {artikelCount}
+                    </span>
+                    <FileText className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${selectedType === 'artikel' ? 'text-sky-500' : 'text-[var(--text-muted)]'}`} />
+                  </div>
+                  <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate">
+                    {lang === 'en' ? 'Information' : 'Informasi'}
+                  </div>
+                  <div className="text-[11px] sm:text-xs text-[var(--text-muted)] truncate">
+                    {lang === 'en' ? 'Analysis & Trends' : 'Riset & Gaming'}
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-medium text-[var(--text-muted)] border-t border-[var(--border-color)] pt-3">
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
                 <span>{t('hero_pill_1')}</span>
@@ -226,115 +303,33 @@ function HomeContent() {
             </div>
           </div>
 
-          {/* Right Column: Bento Hub (Interactive Stats + Trending Hot Topics + Quick Jump) */}
+          {/* Right Column: Trending Hot Topics & Quick Action Tools */}
           <div className="lg:col-span-5 xl:col-span-5 flex flex-col justify-between gap-3.5">
-            {/* Top Stats Trio */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-3">
-              <button
-                type="button"
-                onClick={() => handleSelectType('all')}
-                className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all active:scale-[0.98] ${
-                  selectedType === 'all'
-                    ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
-                    : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
-                }`}
-              >
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-xl sm:text-2xl font-bold tracking-tight text-[var(--text-main)]">
-                    {totalArticleCount}
-                  </span>
-                  <Layers className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${selectedType === 'all' ? 'text-emerald-500' : 'text-[var(--text-muted)]'}`} />
-                </div>
-                <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate">
-                  {lang === 'en' ? 'All Content' : 'Semua Konten'}
-                </div>
-                <div className="text-[11px] sm:text-xs text-[var(--text-muted)] truncate">
-                  {lang === 'en' ? 'Full Database' : 'Katalog Lengkap'}
-                </div>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => handleSelectType('tutorial')}
-                className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all active:scale-[0.98] ${
-                  selectedType === 'tutorial'
-                    ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
-                    : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
-                }`}
-              >
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-xl sm:text-2xl font-bold tracking-tight text-[var(--text-main)]">
-                    {tutorialCount}
-                  </span>
-                  <GraduationCap className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${selectedType === 'tutorial' ? 'text-emerald-500' : 'text-[var(--text-muted)]'}`} />
-                </div>
-                <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate">
-                  {lang === 'en' ? 'Tutorials' : 'Tutorial'}
-                </div>
-                <div className="text-[11px] sm:text-xs text-[var(--text-muted)] truncate">
-                  {lang === 'en' ? 'Code & Setup' : 'Langkah & Kode'}
-                </div>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => handleSelectType('artikel')}
-                className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all active:scale-[0.98] ${
-                  selectedType === 'artikel'
-                    ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
-                    : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
-                }`}
-              >
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-xl sm:text-2xl font-bold tracking-tight text-[var(--text-main)]">
-                    {artikelCount}
-                  </span>
-                  <FileText className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${selectedType === 'artikel' ? 'text-sky-500' : 'text-[var(--text-muted)]'}`} />
-                </div>
-                <div className="text-xs sm:text-sm font-semibold text-[var(--text-main)] truncate">
-                  {lang === 'en' ? 'Information' : 'Informasi'}
-                </div>
-                <div className="text-[11px] sm:text-xs text-[var(--text-muted)] truncate">
-                  {lang === 'en' ? 'Analysis & Trends' : 'Riset & Gaming'}
-                </div>
-              </button>
-            </div>
-
-            {/* Trending Hot Topics Bento Tile */}
-            <div className="p-3.5 sm:p-4 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] space-y-2.5">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold flex items-center gap-1.5 text-[var(--text-main)]">
+            {/* Middle Row: Trending Topics Bento Panel */}
+            <div className="p-3.5 sm:p-4 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] flex-1 flex flex-col justify-between shadow-sm">
+              <div className="flex items-center justify-between mb-2.5">
+                <div className="flex items-center gap-1.5 text-xs font-semibold text-[var(--text-main)]">
                   <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
                   <span>{lang === 'en' ? 'Trending Topics' : 'Topik Sedang Hangat'}</span>
+                </div>
+                <span className="text-[11px] text-[var(--text-muted)] font-mono">
+                  {lang === 'en' ? 'Click to filter' : 'Klik untuk filter'}
                 </span>
-                {searchQuery ? (
-                  <button
-                    type="button"
-                    onClick={() => setSearchQuery('')}
-                    className="text-xs font-semibold text-emerald-500 hover:underline flex items-center gap-1"
-                  >
-                    <X className="w-3 h-3" />
-                    <span>Reset</span>
-                  </button>
-                ) : (
-                  <span className="text-xs text-[var(--text-muted)]">
-                    {lang === 'en' ? 'Click to filter' : 'Klik untuk filter'}
-                  </span>
-                )}
               </div>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5">
                 {TRENDING_TOPICS.map((topic) => {
                   const isActive = searchQuery.toLowerCase() === topic.toLowerCase();
                   return (
                     <button
                       key={topic}
                       type="button"
-                      onClick={() => handleToggleTrending(topic)}
-                      className={`text-xs px-3 py-1.5 rounded-lg border font-medium transition-all flex items-center gap-1.5 ${
+                      onClick={() => handleTopicClick(topic)}
+                      aria-label={`Filter topik ${topic}`}
+                      className={`px-2.5 py-1 rounded-lg text-xs font-mono font-medium border transition-all flex items-center gap-1 active:scale-95 ${
                         isActive
-                          ? 'bg-emerald-500 text-black font-semibold border-emerald-500 shadow-sm scale-105'
-                          : 'bg-[var(--bg-main)] text-[var(--text-main)] border-[var(--border-color)] hover:border-emerald-500/60 hover:text-emerald-500'
+                          ? 'bg-emerald-500 text-black border-emerald-400 font-bold shadow-sm'
+                          : 'bg-[var(--bg-main)] text-[var(--text-main)] border-[var(--border-color)] hover:border-emerald-500/50'
                       }`}
                     >
                       <span>#{topic}</span>
@@ -349,7 +344,8 @@ function HomeContent() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               <Link
                 href="/tools"
-                className="group p-3 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 flex items-center justify-between transition-all"
+                aria-label="Buka halaman Tools & Rekomendasi"
+                className="group p-3 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 flex items-center justify-between transition-all shadow-sm"
               >
                 <div className="flex items-center gap-2.5 min-w-0">
                   <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center shrink-0 text-emerald-500">
@@ -374,7 +370,8 @@ function HomeContent() {
                     window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', ctrlKey: true, bubbles: true }));
                   }
                 }}
-                className="group p-3 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 flex items-center justify-between transition-all text-left"
+                aria-label="Buka pencarian cepat dengan pintasan Ctrl+K"
+                className="group p-3 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 flex items-center justify-between transition-all text-left shadow-sm"
               >
                 <div className="flex items-center gap-2.5 min-w-0">
                   <div className="w-8 h-8 rounded-lg bg-[var(--bg-main)] border border-[var(--border-color)] flex items-center justify-center shrink-0 text-[var(--text-muted)] group-hover:text-emerald-500">
@@ -550,7 +547,7 @@ function HomeContent() {
           ) : (
             <>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4.5 sm:gap-5">
-                {filteredArticles.slice(0, visibleCount).map((article) => {
+                {filteredArticles.slice(0, visibleCount).map((article, index) => {
                   const targetUrl =
                     article.postType === 'tutorial'
                       ? `/tutorial/${article.slug}`
@@ -558,6 +555,8 @@ function HomeContent() {
 
                   const displayTitle = (lang === 'en' && article.en?.title) ? article.en.title : article.title;
                   const displayDesc = (lang === 'en' && article.en?.description) ? article.en.description : article.description;
+                  const cover = getArticleCover(article.slug, article.category, article.tags);
+                  const coverUrl = getThumbnailUrl(cover.url, 600);
 
                   return (
                     <article
@@ -566,12 +565,17 @@ function HomeContent() {
                     >
                       <div>
                         {/* Featured Image Thumbnail Header */}
-                        <Link href={targetUrl} className="block relative aspect-[16/9] w-full overflow-hidden bg-zinc-900 border-b border-[var(--border-color)]">
+                        <Link href={targetUrl} aria-label={displayTitle} className="block relative aspect-[16/9] w-full overflow-hidden bg-zinc-900 border-b border-[var(--border-color)]">
                           <img
-                            src={getArticleCover(article.slug, article.category, article.tags).url}
+                            src={coverUrl}
                             alt={displayTitle}
+                            width={400}
+                            height={225}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                            loading="lazy"
+                            loading={index < 3 ? 'eager' : 'lazy'}
+                            decoding={index < 3 ? 'sync' : 'async'}
+                            // @ts-ignore
+                            fetchPriority={index < 3 ? 'high' : 'auto'}
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent pointer-events-none" />
                           
@@ -646,7 +650,7 @@ function HomeContent() {
                 <div className="pt-6 flex justify-center">
                   <button
                     type="button"
-                    onClick={() => setVisibleCount((prev) => prev + 18)}
+                    onClick={() => setVisibleCount((prev) => prev + 12)}
                     className="px-6 py-2.5 rounded-xl text-xs sm:text-sm font-mono font-semibold bg-[var(--card-bg)] hover:bg-emerald-500 hover:text-zinc-950 text-[var(--text-main)] border border-[var(--border-color)] hover:border-emerald-500 shadow-sm transition-all"
                   >
                     {lang === 'en'

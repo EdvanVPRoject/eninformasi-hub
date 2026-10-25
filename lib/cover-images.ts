@@ -498,3 +498,10 @@ export function getArticleCover(
     source: 'Informasi Hub'
   };
 }
+
+export function getThumbnailUrl(url: string, width = 600): string {
+  if (url && url.includes('images.unsplash.com')) {
+    return url.replace(/w=\d+/, `w=${width}`).replace(/q=\d+/, 'q=75');
+  }
+  return url;
+}

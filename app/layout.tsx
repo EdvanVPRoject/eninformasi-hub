@@ -77,6 +77,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id" className={`dark ${inter.variable} ${geistMono.variable} overflow-x-clip`}>
+      <head>
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
+      </head>
       <body className="font-sans antialiased selection:bg-emerald-500/20 selection:text-emerald-400 overflow-x-clip min-h-screen">
         <LayoutShell>{children}</LayoutShell>
       </body>

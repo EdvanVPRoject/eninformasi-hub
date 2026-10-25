@@ -3,13 +3,13 @@
 import React, { useState, useEffect } from 'react';
 
 export default function Template({ children }: { children: React.ReactNode }) {
-  const [isTransitioning, setIsTransitioning] = useState(true);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
-    // 350ms ensures the 320ms smooth entrance animation completes gracefully
+    setIsTransitioning(true);
     const timer = setTimeout(() => {
       setIsTransitioning(false);
-    }, 350);
+    }, 300);
     return () => clearTimeout(timer);
   }, []);
 

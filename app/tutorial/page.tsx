@@ -18,7 +18,7 @@ import {
   artikelArticleCount 
 } from '@/lib/data/article-summaries';
 import SidebarNav from '@/components/SidebarNav';
-import { getArticleCover } from '@/lib/cover-images';
+import { getArticleCover, getThumbnailUrl } from '@/lib/cover-images';
 import { useLanguage } from '@/components/LanguageContext';
 import { getCategoryLabel } from '@/lib/i18n';
 import SortDropdown, { SortOption } from '@/components/SortDropdown';
@@ -32,18 +32,18 @@ function TutorialContent() {
   const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [sortBy, setSortBy] = useState<SortOption>('recommended');
-  const [visibleCount, setVisibleCount] = useState<number>(18);
+  const [visibleCount, setVisibleCount] = useState<number>(12);
 
   React.useEffect(() => {
     setSelectedCategory(searchParams.get('category') || 'all');
     const urlQuery = searchParams.get('q');
     if (urlQuery) setSearchQuery(urlQuery);
-    setVisibleCount(18);
+    setVisibleCount(12);
   }, [searchParams]);
 
   const handleSelectCategory = (cat: string) => {
     setSelectedCategory(cat);
-    setVisibleCount(18);
+    setVisibleCount(12);
     if (typeof window !== 'undefined') {
       const url = new URL(window.location.href);
       if (cat === 'all') {
@@ -240,9 +240,11 @@ function TutorialContent() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4.5 sm:gap-5">
-            {filteredTutorials.slice(0, visibleCount).map((article) => {
+            {filteredTutorials.slice(0, visibleCount).map((article, index) => {
               const displayTitle = (lang === 'en' && article.en?.title) ? article.en.title : article.title;
               const displayDesc = (lang === 'en' && article.en?.description) ? article.en.description : article.description;
+              const cover = getArticleCover(article.slug, article.category, article.tags);
+              const coverUrl = getThumbnailUrl(cover.url, 600);
 
               return (
                 <article
@@ -251,12 +253,17 @@ function TutorialContent() {
                 >
                   <div>
                     {/* Featured Image Thumbnail Header */}
-                    <Link href={`/tutorial/${article.slug}`} className="block relative aspect-[16/9] w-full overflow-hidden bg-zinc-900 border-b border-[var(--border-color)]">
+                    <Link href={'/' + postType + '/' + article.slug} aria-label={displayTitle} className="block relative aspect-[16/9] w-full overflow-hidden bg-zinc-900 border-b border-[var(--border-color)]">
                       <img
-                        src={getArticleCover(article.slug, article.category, article.tags).url}
+                        src={coverUrl}
                         alt={displayTitle}
+                        width={400}
+                        height={225}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
+                        loading={index < 3 ? 'eager' : 'lazy'}
+                        decoding={index < 3 ? 'sync' : 'async'}
+                        // @ts-ignore
+                        fetchPriority={index < 3 ? 'high' : 'auto'}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent pointer-events-none" />
                       
@@ -312,7 +319,7 @@ function TutorialContent() {
             <div className="pt-6 flex justify-center">
               <button
                 type="button"
-                onClick={() => setVisibleCount((prev) => prev + 18)}
+                onClick={() => setVisibleCount((prev) => prev + 12)}
                 className="px-6 py-2.5 rounded-xl text-xs sm:text-sm font-mono font-semibold bg-[var(--card-bg)] hover:bg-emerald-500 hover:text-zinc-950 text-[var(--text-main)] border border-[var(--border-color)] hover:border-emerald-500 shadow-sm transition-all"
               >
                 {lang === 'en'
