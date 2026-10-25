@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: eskalasi-konflik-modern-rusia-kerahkan-rudal-jel-20261025
+  'eskalasi-konflik-modern-rusia-kerahkan-rudal-jel-20261025': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/3d-printing/russia-deploys-3d-printed-cruise-missiles-in-ukraine-can-hit-500mph-with-a-745-mile-range-fears-high-that-cheap-filin-missile-will-be-used-for-missile-spam-tactics",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Eskalasi Konflik Modern: Rusia Kerahkan Rudal Jelajah 3D-Printed dengan Komponen Elektronik AS"
+  },
+
   // Auto-generated Daily News Entry: ancaman-keamanan-siber-global-peta-lokasi-300000-20261025
   'ancaman-keamanan-siber-global-peta-lokasi-300000-20261025': {
     publisher: "Tom's Hardware",

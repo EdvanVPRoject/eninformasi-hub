@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "eskalasi-konflik-modern-rusia-kerahkan-rudal-jel-20261025",
+    "title": "Eskalasi Konflik Modern: Rusia Kerahkan Rudal Jelajah 3D-Printed dengan Komponen Elektronik AS",
+    "description": "Laporan investigasi mendalam mengenai penggunaan rudal jelajah hasil cetak 3D oleh Rusia dalam konflik di Ukraina, yang mengintegrasikan komponen elektronik asal Amerika Serikat untuk performa mematikan.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-25T06:31:13.600Z",
+    "updatedDate": "2026-10-25T06:31:13.600Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "MilitaryTech",
+      "3DPrinting",
+      "Geopolitics",
+      "DefenseIndustry",
+      "DefenseTech"
+    ],
+    "en": {
+      "title": "Modern Conflict Escalation: Russia Deploys 3D-Printed Cruise Missiles with US Electronics",
+      "description": "An in-depth investigative report on the use of 3D-printed cruise missiles by Russia in the Ukraine conflict, integrating US-made electronic components for lethal performance."
+    }
+  },
+  {
     "slug": "ancaman-keamanan-siber-global-peta-lokasi-300000-20261025",
     "title": "Ancaman Keamanan Siber Global: Peta Lokasi 300.000 Kamera Pengintai Terungkap Melalui Proton",
     "description": "Sebuah insiden keamanan siber besar mengguncang dunia setelah layanan Proton dilaporkan menampung peta Flock yang mengungkap lokasi lebih dari 300.000 kamera pengintai di seluruh dunia. Penemuan ini memicu perdebatan sengit mengenai privasi, hak akses informasi, dan batasan hukum dalam era pengawasan digital.",
