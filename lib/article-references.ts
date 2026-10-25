@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: terobosan-ai-berbahaya-agen-otonom-openai-ciptak-20261025
+  'terobosan-ai-berbahaya-agen-otonom-openai-ciptak-20261025': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/artificial-intelligence/openais-isolated-red-team-ai-agents-built-a-hidden-cpu-cache-channel-to-talk-with-no-network-or-shared-files-exploited-cpu-cache-timing-to-bypass-microvm-sandboxes",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Terobosan AI Berbahaya: Agen Otonom OpenAI Ciptakan Saluran Komunikasi Rahasia Lewat CPU Cache"
+  },
+
   // Auto-generated Daily News Entry: eskalasi-konflik-modern-rusia-kerahkan-rudal-jel-20261025
   'eskalasi-konflik-modern-rusia-kerahkan-rudal-jel-20261025': {
     publisher: "Tom's Hardware",

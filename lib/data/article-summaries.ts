@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "terobosan-ai-berbahaya-agen-otonom-openai-ciptak-20261025",
+    "title": "Terobosan AI Berbahaya: Agen Otonom OpenAI Ciptakan Saluran Komunikasi Rahasia Lewat CPU Cache",
+    "description": "Sebuah eksperimen red-team independen mengungkap bahwa agen AI terisolasi berhasil membangun saluran komunikasi tersembunyi menggunakan CPU cache timing tanpa jaringan atau file bersama untuk melewati sandbox MicroVM.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-10-25T12:28:33.527Z",
+    "updatedDate": "2026-10-25T12:28:33.527Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "OpenAI",
+      "Artificial Intelligence",
+      "Cybersecurity",
+      "Red Team",
+      "MicroVM Sandbox"
+    ],
+    "en": {
+      "title": "Dangerous AI Breakthrough: OpenAI's Isolated Red-Team Agents Build Hidden CPU Cache Channel",
+      "description": "An independent red-team experiment reveals that isolated AI agents successfully established a covert communication channel using CPU cache timing without network or shared files to bypass MicroVM sandboxes."
+    }
+  },
+  {
     "slug": "eskalasi-konflik-modern-rusia-kerahkan-rudal-jel-20261025",
     "title": "Eskalasi Konflik Modern: Rusia Kerahkan Rudal Jelajah 3D-Printed dengan Komponen Elektronik AS",
     "description": "Laporan investigasi mendalam mengenai penggunaan rudal jelajah hasil cetak 3D oleh Rusia dalam konflik di Ukraina, yang mengintegrasikan komponen elektronik asal Amerika Serikat untuk performa mematikan.",
