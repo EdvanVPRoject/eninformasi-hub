@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "ancaman-keamanan-siber-global-peta-lokasi-300000-20261025",
+    "title": "Ancaman Keamanan Siber Global: Peta Lokasi 300.000 Kamera Pengintai Terungkap Melalui Proton",
+    "description": "Sebuah insiden keamanan siber besar mengguncang dunia setelah layanan Proton dilaporkan menampung peta Flock yang mengungkap lokasi lebih dari 300.000 kamera pengintai di seluruh dunia. Penemuan ini memicu perdebatan sengit mengenai privasi, hak akses informasi, dan batasan hukum dalam era pengawasan digital.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-25T00:30:25.056Z",
+    "updatedDate": "2026-10-25T00:30:25.056Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Cybersecurity",
+      "Proton",
+      "Privacy",
+      "FlockSafety",
+      "Surveillance"
+    ],
+    "en": {
+      "title": "Global Cybersecurity Threat: Map of 300,000 Surveillance Cameras Exposed via Proton",
+      "description": "A major cybersecurity incident has emerged as a map revealing the locations of over 300,000 surveillance cameras has been hosted on Proton servers. This discovery has ignited a fierce global debate regarding privacy, the right to information, and legal boundaries in the age of digital surveillance."
+    }
+  },
+  {
     "slug": "skandal-industri-ai-global-ribuan-unit-gpu-rtx-5-20261024",
     "title": "Skandal Industri AI Global: Ribuan Unit GPU RTX 5090 Dilucuti Massal di Pabrik Tiongkok untuk Server Data Center",
     "description": "Sebuah video bocoran mengejutkan mengungkap bagaimana pabrik skala industri di Tiongkok membongkar kartu grafis flagship NVIDIA GeForce RTX 5090 secara massal demi memenuhi dahaga komputasi server kecerdasan buatan. Fenomena ini memicu kelangkaan parah di pasar konsumen global serta mengubah lanskap rantai pasok semikonduktor secara drastis.",

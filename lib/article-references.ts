@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: ancaman-keamanan-siber-global-peta-lokasi-300000-20261025
+  'ancaman-keamanan-siber-global-peta-lokasi-300000-20261025': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/software/maps/proton-hosts-flock-map-revealing-over-300-000-cameras-defying-cease-and-desist-threats-against-creator-privacy-focused-company-hosts-site-on-swiss-servers-says-users-have-the-right-to-know-whos-recording-them",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Ancaman Keamanan Siber Global: Peta Lokasi 300.000 Kamera Pengintai Terungkap Melalui Proton"
+  },
+
   // 1. RTX 5090 / 4090 Chinese Factory Stripping
   'skandal-industri-ai-global-ribuan-unit-gpu-rtx-5-20261024': {
     publisher: "Tom's Hardware Investigation",
