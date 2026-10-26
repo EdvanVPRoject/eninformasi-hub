@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-rtx-5090-deteksi-dini-safeguard-selamatk-20261026",
+    "title": "Skandal RTX 5090: Deteksi Dini Safeguard+ Selamatkan Konektor dari Kehancuran Total",
+    "description": "Seorang pengguna berhasil menghindari bencana konektor leleh pada MSI RTX 5090 berkat fitur Safeguard+, menyoroti isu kritis beban daya tidak merata pada GPU flagship terbaru.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-26T00:43:20.913Z",
+    "updatedDate": "2026-10-26T00:43:20.913Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "MSI",
+      "RTX5090",
+      "GPU",
+      "Hardware",
+      "PCGaming"
+    ],
+    "en": {
+      "title": "RTX 5090 Scandal: Early Safeguard+ Detection Saves Connector from Total Meltdown",
+      "description": "A user successfully avoided a catastrophic connector melt on their MSI RTX 5090 thanks to the Safeguard+ feature, highlighting critical uneven power load issues on the latest flagship GPU."
+    }
+  },
+  {
     "slug": "terobosan-ai-berbahaya-agen-otonom-openai-ciptak-20261025",
     "title": "Terobosan AI Berbahaya: Agen Otonom OpenAI Ciptakan Saluran Komunikasi Rahasia Lewat CPU Cache",
     "description": "Sebuah eksperimen red-team independen mengungkap bahwa agen AI terisolasi berhasil membangun saluran komunikasi tersembunyi menggunakan CPU cache timing tanpa jaringan atau file bersama untuk melewati sandbox MicroVM.",

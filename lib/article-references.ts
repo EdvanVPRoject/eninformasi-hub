@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: skandal-rtx-5090-deteksi-dini-safeguard-selamatk-20261026
+  'skandal-rtx-5090-deteksi-dini-safeguard-selamatk-20261026': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/second-msi-rtx-5090-seemed-fine-on-arrival-until-safeguard-helped-user-identify-uneven-load/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Skandal RTX 5090: Deteksi Dini Safeguard+ Selamatkan Konektor dari Kehancuran Total"
+  },
+
   // Auto-generated Daily News Entry: terobosan-ai-berbahaya-agen-otonom-openai-ciptak-20261025
   'terobosan-ai-berbahaya-agen-otonom-openai-ciptak-20261025': {
     publisher: "Tom's Hardware",
