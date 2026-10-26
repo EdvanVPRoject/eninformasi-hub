@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "serangan-drone-ukraina-hantam-pusat-data-keuanga-20261026",
+    "title": "Serangan Drone Ukraina Hantam Pusat Data Keuangan Rusia: Ancaman Baru bagi Infrastruktur Digital Negara",
+    "description": "Serangan drone presisi yang menargetkan pusat data Kementerian Keuangan Rusia telah memicu kekhawatiran global mengenai keamanan infrastruktur data negara. Insiden ini berpotensi melumpuhkan basis data pajak dan registri penting Rusia dalam jangka waktu yang lama.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-26T06:40:01.424Z",
+    "updatedDate": "2026-10-26T06:40:01.424Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Cybersecurity",
+      "Geopolitics",
+      "DataCenter",
+      "Infrastructure",
+      "Warfare"
+    ],
+    "en": {
+      "title": "Ukrainian Drone Strikes Hit Russian Finance Ministry Data Center: A New Threat to National Digital Infrastructure",
+      "description": "A precision drone strike targeting a Russian Finance Ministry data center has raised global alarms regarding the security of national digital infrastructure. The incident potentially threatens the integrity of tax databases and critical state registries."
+    }
+  },
+  {
     "slug": "skandal-rtx-5090-deteksi-dini-safeguard-selamatk-20261026",
     "title": "Skandal RTX 5090: Deteksi Dini Safeguard+ Selamatkan Konektor dari Kehancuran Total",
     "description": "Seorang pengguna berhasil menghindari bencana konektor leleh pada MSI RTX 5090 berkat fitur Safeguard+, menyoroti isu kritis beban daya tidak merata pada GPU flagship terbaru.",

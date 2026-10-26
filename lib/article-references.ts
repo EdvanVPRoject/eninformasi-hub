@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: serangan-drone-ukraina-hantam-pusat-data-keuanga-20261026
+  'serangan-drone-ukraina-hantam-pusat-data-keuanga-20261026': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/data-centers/ukrainian-drone-attacks-hammer-russias-finance-ministry-data-center-damaged-facility-reportedly-holds-tax-databases-facility-also-holds-other-important-state-registry-data",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Serangan Drone Ukraina Hantam Pusat Data Keuangan Rusia: Ancaman Baru bagi Infrastruktur Digital Negara"
+  },
+
   // Auto-generated Daily News Entry: skandal-rtx-5090-deteksi-dini-safeguard-selamatk-20261026
   'skandal-rtx-5090-deteksi-dini-safeguard-selamatk-20261026': {
     publisher: "Wccftech",
