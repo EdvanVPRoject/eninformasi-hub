@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "bocor-cpu-epyc-zen-6c-256-core-hancurkan-perform-20261026",
+    "title": "Bocor! CPU EPYC Zen 6c 256-Core Hancurkan Performa Zen 5 dengan Lonjakan IPC 24%",
+    "description": "Kabar mengejutkan datang dari ranah hardware server dan high-performance computing di mana bocoran benchmark awal menunjukkan EPYC Zen 6c 256-core milik AMD melibas performa Zen 5 secara telak, mengindikasikan lompatan IPC masif sebesar 24 persen.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-10-26T14:42:15.434Z",
+    "updatedDate": "2026-10-26T14:42:15.434Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AMD",
+      "Zen 6c",
+      "EPYC",
+      "CPU",
+      "Hardware"
+    ],
+    "en": {
+      "title": "Leaked 256-Core Zen 6c EPYC CPU Destroys Zen 5 in Early Benchmarks, Hints at 24% IPC Gain",
+      "description": "Explosive hardware leaks reveal that AMD's upcoming 256-core Zen 6c EPYC server processor shatters Zen 5 performance benchmarks in early single-threaded tests, pointing toward a massive 24 percent IPC generational leap."
+    }
+  },
+  {
     "slug": "serangan-drone-ukraina-hantam-pusat-data-keuanga-20261026",
     "title": "Serangan Drone Ukraina Hantam Pusat Data Keuangan Rusia: Ancaman Baru bagi Infrastruktur Digital Negara",
     "description": "Serangan drone presisi yang menargetkan pusat data Kementerian Keuangan Rusia telah memicu kekhawatiran global mengenai keamanan infrastruktur data negara. Insiden ini berpotensi melumpuhkan basis data pajak dan registri penting Rusia dalam jangka waktu yang lama.",

@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: bocor-cpu-epyc-zen-6c-256-core-hancurkan-perform-20261026
+  'bocor-cpu-epyc-zen-6c-256-core-hancurkan-perform-20261026': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/pc-components/cpus/leaked-256-core-zen-6c-epyc-cpu-destroys-zen-5-in-early-single-threaded-benchmarks-hints-at-24-percent-ipc-gain-early-single-threaded-benchmarks-point-to-huge-amd-zen-6-improvements",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Bocor! CPU EPYC Zen 6c 256-Core Hancurkan Performa Zen 5 dengan Lonjakan IPC 24%"
+  },
+
   // Auto-generated Daily News Entry: serangan-drone-ukraina-hantam-pusat-data-keuanga-20261026
   'serangan-drone-ukraina-hantam-pusat-data-keuanga-20261026': {
     publisher: "Tom's Hardware",
