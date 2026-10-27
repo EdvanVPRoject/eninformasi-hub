@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "revolusi-chip-ai-cadence-maestro-siap-mengubah-m-20261027",
+    "title": "Revolusi Chip AI: Cadence Maestro Siap Mengubah Masa Depan Desain Semikonduktor di 2026",
+    "description": "Cadence mengumumkan Maestro, model AI khusus yang dirancang untuk mengotomatisasi desain chip dengan efisiensi token 5x lebih tinggi dan peningkatan kualitas desain hingga 30%. Inovasi ini menandai pergeseran besar dalam metodologi pengembangan perangkat keras masa depan.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-27T00:34:44.795Z",
+    "updatedDate": "2026-10-27T00:34:44.795Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Cadence",
+      "Maestro",
+      "AI",
+      "Semiconductor",
+      "ChipDesign"
+    ],
+    "en": {
+      "title": "The AI Chip Design Revolution: Cadence Maestro Set to Transform Semiconductor Development by 2026",
+      "description": "Cadence has unveiled Maestro, a specialized AI model suite designed to automate chip design with 5x higher token efficiency and a 30% improvement in design quality. This innovation marks a paradigm shift in the future of hardware development methodologies."
+    }
+  },
+  {
     "slug": "bocor-cpu-epyc-zen-6c-256-core-hancurkan-perform-20261026",
     "title": "Bocor! CPU EPYC Zen 6c 256-Core Hancurkan Performa Zen 5 dengan Lonjakan IPC 24%",
     "description": "Kabar mengejutkan datang dari ranah hardware server dan high-performance computing di mana bocoran benchmark awal menunjukkan EPYC Zen 6c 256-core milik AMD melibas performa Zen 5 secara telak, mengindikasikan lompatan IPC masif sebesar 24 persen.",

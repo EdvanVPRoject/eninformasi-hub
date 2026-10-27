@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: revolusi-chip-ai-cadence-maestro-siap-mengubah-m-20261027
+  'revolusi-chip-ai-cadence-maestro-siap-mengubah-m-20261027': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/semiconductors/cadence-reveals-maestro-fine-tuned-ai-models-built-to-run-specialized-chip-design-agents-with-early-access-coming-for-select-customers-in-q4-2026",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Revolusi Chip AI: Cadence Maestro Siap Mengubah Masa Depan Desain Semikonduktor di 2026"
+  },
+
   // Auto-generated Daily News Entry: bocor-cpu-epyc-zen-6c-256-core-hancurkan-perform-20261026
   'bocor-cpu-epyc-zen-6c-256-core-hancurkan-perform-20261026': {
     publisher: "Tom's Hardware",
