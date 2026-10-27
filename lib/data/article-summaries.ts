@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "krisis-biaya-infrastruktur-ai-microsoft-tawarkan-20261027",
+    "title": "Krisis Biaya Infrastruktur AI: Microsoft Tawarkan Buyout Sukarela untuk 60.000 Karyawan Global",
+    "description": "Microsoft secara mengejutkan menawarkan paket buyout sukarela kepada sekitar 60.000 karyawan di AS, Kanada, India, dan Inggris. Langkah drastis ini diambil raksasa teknologi tersebut menyusul lonjakan biaya pembangunan infrastruktur pusat data AI yang terus menggerus margin keuntungan.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-10-27T12:39:12.177Z",
+    "updatedDate": "2026-10-27T12:39:12.177Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Microsoft",
+      "Artificial Intelligence",
+      "Big Tech",
+      "Layoff",
+      "Cloud Infrastructure"
+    ],
+    "en": {
+      "title": "AI Infrastructure Cost Crisis: Microsoft Offers Voluntary Buyouts to 60,000 Global Employees",
+      "description": "Microsoft has unexpectedly offered voluntary buyout packages to approximately 60,000 employees across the US, Canada, India, and the UK. This drastic move by the tech giant follows skyrocketing AI data center infrastructure costs that continue to squeeze profit margins."
+    }
+  },
+  {
     "slug": "unreal-engine-58-resmi-hadirkan-advanced-shader--20261027",
     "title": "Unreal Engine 5.8 Resmi Hadirkan Advanced Shader Delivery untuk Basmi Stuttering Parah di PC",
     "description": "Epic Games merilis pembaruan besar Unreal Engine 5.8 yang mengintegrasikan Advanced Shader Delivery guna mengeliminasi proses pre-compilation shader yang kerap memicu stuttering parah dalam game.",

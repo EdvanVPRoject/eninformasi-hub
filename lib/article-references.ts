@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: krisis-biaya-infrastruktur-ai-microsoft-tawarkan-20261027
+  'krisis-biaya-infrastruktur-ai-microsoft-tawarkan-20261027': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/big-tech/60-000-microsoft-employees-voluntarily-buyouts-as-ai-buildout-costs-bite-program-covers-roughly-27-percent-of-workforce-across-us-canada-india-and-the-uk",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Krisis Biaya Infrastruktur AI: Microsoft Tawarkan Buyout Sukarela untuk 60.000 Karyawan Global"
+  },
+
   // Auto-generated Daily News Entry: unreal-engine-58-resmi-hadirkan-advanced-shader--20261027
   'unreal-engine-58-resmi-hadirkan-advanced-shader--20261027': {
     publisher: "Google News Tech Wire",
