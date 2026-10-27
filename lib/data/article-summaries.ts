@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "unreal-engine-58-resmi-hadirkan-advanced-shader--20261027",
+    "title": "Unreal Engine 5.8 Resmi Hadirkan Advanced Shader Delivery untuk Basmi Stuttering Parah di PC",
+    "description": "Epic Games merilis pembaruan besar Unreal Engine 5.8 yang mengintegrasikan Advanced Shader Delivery guna mengeliminasi proses pre-compilation shader yang kerap memicu stuttering parah dalam game.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-27T06:37:21.177Z",
+    "updatedDate": "2026-10-27T06:37:21.177Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Unreal Engine 5",
+      "Game Development",
+      "PC Gaming",
+      "Stuttering Fix",
+      "Advanced Shader Delivery"
+    ],
+    "en": {
+      "title": "Unreal Engine 5.8 Officially Introduces Advanced Shader Delivery to Eradicate Severe PC Stuttering",
+      "description": "Epic Games releases a major Unreal Engine 5.8 update integrating Advanced Shader Delivery to eliminate the shader pre-compilation process that frequently triggers severe in-game stuttering."
+    }
+  },
+  {
     "slug": "revolusi-chip-ai-cadence-maestro-siap-mengubah-m-20261027",
     "title": "Revolusi Chip AI: Cadence Maestro Siap Mengubah Masa Depan Desain Semikonduktor di 2026",
     "description": "Cadence mengumumkan Maestro, model AI khusus yang dirancang untuk mengotomatisasi desain chip dengan efisiensi token 5x lebih tinggi dan peningkatan kualitas desain hingga 30%. Inovasi ini menandai pergeseran besar dalam metodologi pengembangan perangkat keras masa depan.",

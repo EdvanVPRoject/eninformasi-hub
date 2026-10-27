@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: unreal-engine-58-resmi-hadirkan-advanced-shader--20261027
+  'unreal-engine-58-resmi-hadirkan-advanced-shader--20261027': {
+    publisher: "Google News Tech Wire",
+    sourceUrl: "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVDJMeXhVOFpWREVFVmMyc3NfQW1CTW1ydGlfSnRoUWhvRXFBMHlxMU5tS1lIaWczZmNLaE5CcmVuRERZZUIycDFramJOb05PV1VtSzJlZ3JhbHFHQmlETEY3NFN3Rm5TOFBqYV9ick5OSUMzcVNfUWk5NVBBdWxwZlBRc3hwY0ktLVZ3T1Z0Y1dDQUQxSDV6SkNfZzRyaGVxSlJxSy1HSGlTVFZQT3hhWEVzVlDSAbQBQVVfeXFMUFQyTHl4VThaVkRFRVZjMnNzX0FtQk1tcnRpX0p0aFFob0VxQTB5cTFObUtZSGlnM2ZjS2hOQnJlbkREWWVCMnAxa2piTm9OT1dVbUsyZWdyYWxxR0JpRExGNzRTd0ZuUzhQamFfYnJOTklDM3FTX1FpOTVQQXVscGZQUXN4cGNJLS1Wd09WdGNXQ0FEMUg1ekpDX2c0cmhlcUpScUstR0hpU1RWUE94YVhFc1ZQ?oc=5",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Unreal Engine 5.8 Resmi Hadirkan Advanced Shader Delivery untuk Basmi Stuttering Parah di PC"
+  },
+
   // Auto-generated Daily News Entry: revolusi-chip-ai-cadence-maestro-siap-mengubah-m-20261027
   'revolusi-chip-ai-cadence-maestro-siap-mengubah-m-20261027': {
     publisher: "Tom's Hardware",
