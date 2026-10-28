@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: skandal-harga-rtx-5090-tembus-7500-di-jepang-pas-20261028
+  'skandal-harga-rtx-5090-tembus-7500-di-jepang-pas-20261028': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/zotac-puts-the-rtx-5090-up-for-sale-at-7500-in-japan-even-as-board-partners-say-they-can-no-longer-buy-the-gb202-chip/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Skandal Harga RTX 5090 Tembus $7500 di Jepang: Pasokan Chip GB202 Terhenti dan Kepanikan Pasar Global"
+  },
+
   // Auto-generated Daily News Entry: krisis-biaya-infrastruktur-ai-microsoft-tawarkan-20261027
   'krisis-biaya-infrastruktur-ai-microsoft-tawarkan-20261027': {
     publisher: "Tom's Hardware",

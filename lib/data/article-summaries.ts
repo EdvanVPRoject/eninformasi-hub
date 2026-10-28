@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-harga-rtx-5090-tembus-7500-di-jepang-pas-20261028",
+    "title": "Skandal Harga RTX 5090 Tembus $7500 di Jepang: Pasokan Chip GB202 Terhenti dan Kepanikan Pasar Global",
+    "description": "ZOTAC secara mengejutkan membanderol kartu grafis flagship RTX 5090 seharga $7500 di pasar Jepang, di tengah laporan bahwa board partner mengalami hambatan pasokan chip GB202 yang memicu kelangkaan ekstrem.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-10-28T00:44:28.405Z",
+    "updatedDate": "2026-10-28T00:44:28.405Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "RTX 5090",
+      "ZOTAC",
+      "NVIDIA",
+      "GB202",
+      "Hardware GPU"
+    ],
+    "en": {
+      "title": "RTX 5090 Price Skyrockets to $7500 in Japan: GB202 Chip Shortage Triggers Global Market Panic",
+      "description": "ZOTAC has shockingly listed the flagship RTX 5090 graphics card for $7500 in Japan, amid reports that board partners can no longer secure GB202 chip supplies, sparking extreme market scarcity."
+    }
+  },
+  {
     "slug": "krisis-biaya-infrastruktur-ai-microsoft-tawarkan-20261027",
     "title": "Krisis Biaya Infrastruktur AI: Microsoft Tawarkan Buyout Sukarela untuk 60.000 Karyawan Global",
     "description": "Microsoft secara mengejutkan menawarkan paket buyout sukarela kepada sekitar 60.000 karyawan di AS, Kanada, India, dan Inggris. Langkah drastis ini diambil raksasa teknologi tersebut menyusul lonjakan biaya pembangunan infrastruktur pusat data AI yang terus menggerus margin keuntungan.",
