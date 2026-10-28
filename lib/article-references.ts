@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: skandal-layanan-asus-penolakan-garansi-rtx-5080--20261028
+  'skandal-layanan-asus-penolakan-garansi-rtx-5080--20261028': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/rtx-5080-coil-whine-asus-warranty-claim-rejected/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Skandal Layanan ASUS: Penolakan Garansi RTX 5080 Akibat 'Coil Whine' Picu Kemarahan Gamer Global"
+  },
+
   // Auto-generated Daily News Entry: skandal-harga-rtx-5090-tembus-7500-di-jepang-pas-20261028
   'skandal-harga-rtx-5090-tembus-7500-di-jepang-pas-20261028': {
     publisher: "Wccftech",

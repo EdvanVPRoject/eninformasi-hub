@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-layanan-asus-penolakan-garansi-rtx-5080--20261028",
+    "title": "Skandal Layanan ASUS: Penolakan Garansi RTX 5080 Akibat 'Coil Whine' Picu Kemarahan Gamer Global",
+    "description": "ASUS memicu kontroversi besar setelah menolak klaim garansi kartu grafis RTX 5080 TUF OC milik pelanggan dengan alasan 'coil whine' dianggap bukan cacat produksi, melainkan fitur operasional normal.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-28T06:44:00.849Z",
+    "updatedDate": "2026-10-28T06:44:00.849Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "ASUS",
+      "RTX5080",
+      "CoilWhine",
+      "GPUWarranty",
+      "TechNews"
+    ],
+    "en": {
+      "title": "ASUS Service Scandal: RTX 5080 'Coil Whine' Warranty Rejection Sparks Global Gamer Outrage",
+      "description": "ASUS faces major backlash after denying a warranty claim for a customer's RTX 5080 TUF OC, claiming 'coil whine' is not a hardware defect but a normal operational characteristic."
+    }
+  },
+  {
     "slug": "skandal-harga-rtx-5090-tembus-7500-di-jepang-pas-20261028",
     "title": "Skandal Harga RTX 5090 Tembus $7500 di Jepang: Pasokan Chip GB202 Terhenti dan Kepanikan Pasar Global",
     "description": "ZOTAC secara mengejutkan membanderol kartu grafis flagship RTX 5090 seharga $7500 di pasar Jepang, di tengah laporan bahwa board partner mengalami hambatan pasokan chip GB202 yang memicu kelangkaan ekstrem.",

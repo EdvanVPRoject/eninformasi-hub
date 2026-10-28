@@ -2,6 +2,84 @@ import { Article } from '../types';
 
 export const dailyNewsArticles: Article[] = [
   {
+    "slug": "skandal-layanan-asus-penolakan-garansi-rtx-5080--20261028",
+    "title": "Skandal Layanan ASUS: Penolakan Garansi RTX 5080 Akibat 'Coil Whine' Picu Kemarahan Gamer Global",
+    "description": "ASUS memicu kontroversi besar setelah menolak klaim garansi kartu grafis RTX 5080 TUF OC milik pelanggan dengan alasan 'coil whine' dianggap bukan cacat produksi, melainkan fitur operasional normal.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-28T06:44:00.849Z",
+    "updatedDate": "2026-10-28T06:44:00.849Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "ASUS",
+      "RTX5080",
+      "CoilWhine",
+      "GPUWarranty",
+      "TechNews"
+    ],
+    "toc": [
+      {
+        "id": "kronologi-latar-belakang-peristiwa",
+        "title": "1. Kronologi & Latar Belakang Peristiwa"
+      },
+      {
+        "id": "bedah-teknis-analisis-arsitektur-mendalam",
+        "title": "2. Bedah Teknis & Analisis Arsitektur Mendalam"
+      },
+      {
+        "id": "komparasi-tolak-ukur-lanskap-kompetitor",
+        "title": "3. Komparasi Tolak Ukur & Lanskap Kompetitor"
+      },
+      {
+        "id": "respons-komunitas-sentimen-industri",
+        "title": "4. Respons Komunitas & Sentimen Industri"
+      },
+      {
+        "id": "panduan-praktis-antisipasi-bagi-konsumen",
+        "title": "5. Panduan Praktis & Antisipasi bagi Konsumen"
+      },
+      {
+        "id": "kesimpulan-prospek-rujukan-sumber-asli",
+        "title": "6. Kesimpulan, Prospek & Rujukan Sumber Asli"
+      }
+    ],
+    "content": "### 1. Kronologi & Latar Belakang Peristiwa\n\nIndustri perangkat keras PC kembali diguncang oleh kebijakan layanan purna jual dari salah satu raksasa teknologi, ASUS. Sebuah insiden viral baru-baru ini melibatkan seorang pengguna yang mengajukan klaim garansi untuk kartu grafis ASUS RTX 5080 TUF OC miliknya yang baru berusia empat bulan. Masalah utama yang dilaporkan adalah suara 'coil whine' yang sangat bising, yang menurut pengguna telah mengganggu pengalaman komputasi sehari-hari secara signifikan. Namun, alih-alih memberikan penggantian atau perbaikan, pusat layanan ASUS justru menolak klaim tersebut dengan argumen bahwa fenomena tersebut adalah karakteristik operasional normal dari komponen elektronik, bukan cacat produksi (hardware defect). Penolakan ini memicu gelombang kritik tajam dari komunitas pengguna PC di seluruh dunia, mengingat harga premium yang dibayarkan untuk seri TUF OC seharusnya mencakup standar kontrol kualitas dan dukungan purna jual yang lebih baik. Kasus ini menjadi preseden buruk bagi kepercayaan konsumen terhadap kebijakan garansi ASUS di masa depan.\n\n### 2. Bedah Teknis & Analisis Arsitektur Mendalam\n\nCoil whine adalah fenomena akustik frekuensi tinggi yang dihasilkan oleh komponen induktor (choke) pada modul pengaturan tegangan (VRM) kartu grafis. Secara teknis, getaran ini terjadi ketika arus listrik yang mengalir melalui lilitan kawat tembaga berinteraksi dengan medan magnet, menyebabkan getaran mekanis pada frekuensi yang dapat didengar manusia. Pada desain RTX 5080, yang mengkonsumsi daya tinggi dan menuntut efisiensi VRM yang sangat ketat, komponen-komponen ini bekerja di bawah tekanan termal dan elektrik yang ekstrem. Meskipun benar bahwa coil whine tidak selalu berarti kegagalan fungsi komponen, tingkat kebisingan yang berlebihan menunjukkan adanya ketidaksempurnaan dalam proses perakitan, kualitas material induktor, atau kekurangan dalam lapisan peredam (epoxy potting) yang seharusnya diaplikasikan pabrikan untuk meredam resonansi tersebut. Penolakan ASUS menyiratkan bahwa mereka menganggap standar toleransi pabrik mereka saat ini cukup luas untuk mencakup kebisingan yang mengganggu kenyamanan pengguna.\n\n### 3. Komparasi Tolak Ukur & Lanskap Kompetitor\n\n| Parameter / Metrik | ASUS TUF RTX 5080 | Standar Industri (Rata-rata) | Status Kebisingan |\n|---|---|---|---|\n| Coil Whine Intensity | Tinggi (dapat didengar) | Rendah (hampir senyap) | Di atas toleransi |\n| Inductor Build Quality | Standar Mass-Production | Premium Shielded Chokes | Perlu Peningkatan |\n| Garansi (Coil Whine) | Ditolak (Non-Defect) | Sering Diterima (RMA) | Sangat Kontroversial |\n\n*Catatan: Data berdasarkan laporan agregat pengguna dan kebijakan RMA vendor GPU pihak ketiga lainnya.*\n\n### 4. Respons Komunitas & Sentimen Industri\n\nKomunitas PC enthusiast, termasuk forum Reddit dan platform media sosial, bereaksi dengan sangat keras terhadap kebijakan ASUS ini. Banyak pengguna membandingkan pengalaman mereka dengan vendor lain seperti EVGA (sebelum keluar dari pasar GPU) atau Sapphire dan MSI, yang umumnya lebih kooperatif dalam menangani masalah akustik yang mengganggu. Sentimen negatif ini memperburuk citra ASUS yang sebelumnya sempat tersandung masalah kebijakan garansi motherboard. Para influencer teknologi mulai menyuarakan boikot atau setidaknya peringatan bagi calon pembeli untuk mempertimbangkan kembali pembelian produk ASUS jika kebijakan 'non-defect' ini terus dipertahankan. Industri memandang ini sebagai upaya pemangkasan biaya operasional purna jual yang mengorbankan pengalaman pengguna akhir.\n\n### 5. Panduan Praktis & Antisipasi bagi Konsumen\n\nBagi konsumen yang mengalami masalah serupa, langkah pertama adalah mendokumentasikan kebisingan melalui rekaman audio yang jernih dan membandingkannya dengan unit lain. Jangan langsung menerima penolakan pertama dari pusat layanan pelanggan; eskalasikan masalah ke manajer layanan atau melalui saluran media sosial resmi perusahaan. Selain itu, pastikan untuk memeriksa apakah masalah coil whine dapat diredam dengan melakukan undervolting pada GPU, yang seringkali mengurangi beban pada VRM dan secara efektif menurunkan frekuensi dengung. Jika Anda berencana membeli GPU baru, bacalah ulasan pengguna secara mendalam mengenai masalah coil whine pada model spesifik sebelum melakukan transaksi, dan pastikan toko ritel memiliki kebijakan pengembalian barang yang jelas jika produk tidak memenuhi standar kenyamanan Anda.\n\n### 6. Kesimpulan, Prospek & Rujukan Sumber Asli\n\nInsiden penolakan garansi RTX 5080 oleh ASUS adalah peringatan keras bagi industri komponen PC. Fokus pada efisiensi biaya dan kebijakan purna jual yang kaku dapat merusak loyalitas pelanggan yang telah dibangun selama bertahun-tahun. Ke depannya, diharapkan vendor lebih transparan mengenai standar kontrol kualitas mereka. Kasus ini juga menyoroti kebutuhan akan standar industri yang lebih jelas mengenai apa yang dianggap sebagai cacat produk yang dapat diklaim garansinya. \n\n*Sumber: Wccftech*",
+    "en": {
+      "title": "ASUS Service Scandal: RTX 5080 'Coil Whine' Warranty Rejection Sparks Global Gamer Outrage",
+      "description": "ASUS faces major backlash after denying a warranty claim for a customer's RTX 5080 TUF OC, claiming 'coil whine' is not a hardware defect but a normal operational characteristic.",
+      "content": "### 1. Chronology & Background Context\n\nThe PC hardware industry is reeling from a major service controversy involving a tech giant, ASUS. A recent viral incident involved a user attempting to claim a warranty for their four-month-old ASUS RTX 5080 TUF OC graphics card. The primary complaint was an intrusive 'coil whine' that significantly disrupted the user's daily computing experience. Instead of offering a replacement or repair, ASUS service centers rejected the claim, arguing that the phenomenon is a normal operational characteristic of electronic components, not a hardware defect. This rejection sparked a wave of sharp criticism from the global PC community, as the premium price paid for the TUF OC series should entail higher quality control standards and better after-sales support. This case sets a dangerous precedent for consumer trust in ASUS's warranty policies moving forward.\n\n### 2. Technical Deep-Dive & Architecture Breakdown\n\nCoil whine is a high-frequency acoustic phenomenon produced by inductor (choke) components on the graphics card's voltage regulator module (VRM). Technically, these vibrations occur when the electric current flowing through copper coils interacts with magnetic fields, causing mechanical vibrations at frequencies audible to humans. In the design of the RTX 5080, which consumes high power and requires strict VRM efficiency, these components operate under extreme thermal and electrical stress. While it is true that coil whine does not always equate to functional failure, excessive noise levels indicate imperfections in the assembly process, material quality of the inductors, or shortcomings in the epoxy potting that should be applied by manufacturers to dampen such resonance. ASUS's rejection implies that they consider their current factory tolerance standards broad enough to encompass noise that compromises user comfort.\n\n### 3. Benchmark Comparisons & Competitive Landscape\n\n| Metric / Parameter | ASUS TUF RTX 5080 | Industry Standard (Average) | Noise Status |\n|---|---|---|---|\n| Coil Whine Intensity | High (Audible) | Low (Near-silent) | Above Tolerance |\n| Inductor Build Quality | Mass-Production Std | Premium Shielded Chokes | Needs Improvement |\n| Warranty (Coil Whine) | Rejected (Non-Defect) | Often Accepted (RMA) | Highly Controversial |\n\n*Note: Data based on aggregated user reports and third-party GPU vendor RMA policies.*\n\n### 4. Community Reaction & Industry Sentiment\n\nThe PC enthusiast community, including Reddit forums and social platforms, has reacted vehemently to ASUS's policy. Many users have compared their experiences with other vendors like EVGA (before their departure from the GPU market) or Sapphire and MSI, which are generally more cooperative in handling disruptive acoustic issues. This negative sentiment has further damaged ASUS's brand image, which was already strained by previous motherboard warranty policy issues. Tech influencers have begun to voice boycotts or at least warnings for potential buyers to reconsider purchasing ASUS products if this 'non-defect' policy continues. The industry views this as a cost-cutting measure that sacrifices the end-user experience.\n\n### 5. Practical Consumer Advice & Strategic Takeaways\n\nFor consumers experiencing similar issues, the first step is to document the noise through clear audio recordings and compare them with other units. Do not immediately accept the first rejection from customer service; escalate the issue to service managers or through official company social media channels. Additionally, check if the coil whine can be dampened by undervolting the GPU, which often reduces the load on the VRMs and effectively lowers the buzzing frequency. If you plan to purchase a new GPU, read deep user reviews regarding coil whine issues on specific models before making a transaction, and ensure the retail store has a clear return policy if the product does not meet your comfort standards.\n\n### 6. Strategic Outlook & Verified References\n\nThe ASUS RTX 5080 warranty rejection incident serves as a stern warning for the PC component industry. A focus on cost efficiency and rigid after-sales policies can damage the customer loyalty built over years. Going forward, it is expected that vendors provide more transparency regarding their quality control standards. This case also highlights the need for clearer industry standards regarding what constitutes a warrantable product defect.\n\n*Source: Wccftech*",
+      "toc": [
+        {
+          "id": "chronology-background-context",
+          "title": "1. Chronology & Background Context"
+        },
+        {
+          "id": "technical-deep-dive-architecture-breakdown",
+          "title": "2. Technical Deep-Dive & Architecture Breakdown"
+        },
+        {
+          "id": "benchmark-comparisons-competitive-landscape",
+          "title": "3. Benchmark Comparisons & Competitive Landscape"
+        },
+        {
+          "id": "community-reaction-industry-sentiment",
+          "title": "4. Community Reaction & Industry Sentiment"
+        },
+        {
+          "id": "practical-consumer-advice-strategic-takeaways",
+          "title": "5. Practical Consumer Advice & Strategic Takeaways"
+        },
+        {
+          "id": "strategic-outlook-verified-references",
+          "title": "6. Strategic Outlook & Verified References"
+        }
+      ]
+    }
+  },
+  {
     "slug": "skandal-harga-rtx-5090-tembus-7500-di-jepang-pas-20261028",
     "title": "Skandal Harga RTX 5090 Tembus $7500 di Jepang: Pasokan Chip GB202 Terhenti dan Kepanikan Pasar Global",
     "description": "ZOTAC secara mengejutkan membanderol kartu grafis flagship RTX 5090 seharga $7500 di pasar Jepang, di tengah laporan bahwa board partner mengalami hambatan pasokan chip GB202 yang memicu kelangkaan ekstrem.",
