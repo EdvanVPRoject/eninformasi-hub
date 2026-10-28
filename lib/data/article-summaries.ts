@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "superkomputer-ai-senilai-60-juta-dijual-di-ebay--20261028",
+    "title": "Superkomputer AI Senilai $60 Juta Dijual di eBay: 300 Rak GPU Bekas Picu Perbincangan Industri",
+    "description": "Sebuah vendor IT mengejutkan pasar teknologi global dengan mendaftarkan klaster superkomputer AI senilai 60 juta dolar AS di eBay, lengkap dengan ribuan GPU NVIDIA dan CPU AMD bekas pakai.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Mahir",
+    "pubDate": "2026-10-28T12:44:39.320Z",
+    "updatedDate": "2026-10-28T12:44:39.320Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AI Supercomputer",
+      "NVIDIA A100",
+      "eBay",
+      "Hardware Server",
+      "Data Center"
+    ],
+    "en": {
+      "title": "Massive $60 Million AI Supercomputer Listed on eBay Featuring 300 Decommissioned GPU Racks",
+      "description": "An IT vendor has shocked the global tech market by listing a massive enterprise AI supercomputer cluster worth $60 million directly on eBay, complete with thousands of used GPUs and CPUs."
+    }
+  },
+  {
     "slug": "skandal-layanan-asus-penolakan-garansi-rtx-5080--20261028",
     "title": "Skandal Layanan ASUS: Penolakan Garansi RTX 5080 Akibat 'Coil Whine' Picu Kemarahan Gamer Global",
     "description": "ASUS memicu kontroversi besar setelah menolak klaim garansi kartu grafis RTX 5080 TUF OC milik pelanggan dengan alasan 'coil whine' dianggap bukan cacat produksi, melainkan fitur operasional normal.",

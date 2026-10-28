@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: superkomputer-ai-senilai-60-juta-dijual-di-ebay--20261028
+  'superkomputer-ai-senilai-60-juta-dijual-di-ebay--20261028': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/desktops/servers/it-vendor-lists-massive-usd60-million-ai-cluster-on-ebay-300x-racks-of-decommissioned-gpus-includes-9-600-nvidia-a100-gpus-and-4-200-amd-epyc-cpus-plus-free-shipping",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Superkomputer AI Senilai $60 Juta Dijual di eBay: 300 Rak GPU Bekas Picu Perbincangan Industri"
+  },
+
   // Auto-generated Daily News Entry: skandal-layanan-asus-penolakan-garansi-rtx-5080--20261028
   'skandal-layanan-asus-penolakan-garansi-rtx-5080--20261028': {
     publisher: "Wccftech",
