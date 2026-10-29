@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: heboh-karyawan-raih-pengecualian-agama-pertama-d-20261029
+  'heboh-karyawan-raih-pengecualian-agama-pertama-d-20261029': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/artificial-intelligence/secular-humanist-gets-religious-exemption-from-using-ai-argues-that-offloading-his-thinking-to-llms-violates-his-beliefs-american-humanist-association-says-its-the-first-case-of-its-kind",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Heboh! Karyawan Raih Pengecualian Agama Pertama dari Kewajiban AI di Tempat Kerja"
+  },
+
   // Auto-generated Daily News Entry: google-gemini-4-carbon-guncang-industri-dominasi-20261029
   'google-gemini-4-carbon-guncang-industri-dominasi-20261029': {
     publisher: "Wccftech",

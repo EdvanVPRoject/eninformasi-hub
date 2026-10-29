@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "heboh-karyawan-raih-pengecualian-agama-pertama-d-20261029",
+    "title": "Heboh! Karyawan Raih Pengecualian Agama Pertama dari Kewajiban AI di Tempat Kerja",
+    "description": "Sebuah preseden hukum baru tercipta setelah seorang karyawan berhasil mendapatkan pengecualian religius untuk menolak penggunaan AI di tempat kerja. Kasus ini memicu debat etika mengenai otonomi berpikir manusia di tengah dominasi LLM.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-29T12:46:08.721Z",
+    "updatedDate": "2026-10-29T12:46:08.721Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AI",
+      "Etika Teknologi",
+      "Hukum AI",
+      "LLM",
+      "Tenaga Kerja"
+    ],
+    "en": {
+      "title": "Landmark Case: Employee Granted First-Ever Religious Exemption from Mandatory AI Use",
+      "description": "A historic legal precedent has been set as an employee successfully secured a religious exemption to refuse AI usage at work, sparking a global debate on human cognitive autonomy."
+    }
+  },
+  {
     "slug": "google-gemini-4-carbon-guncang-industri-dominasi-20261029",
     "title": "Google Gemini 4 Carbon Guncang Industri: Dominasi Benchmark & Lompatan Revolusioner Patch Keamanan AI",
     "description": "Google kembali menggebrak ranah kecerdasan buatan global lewat peluncuran Gemini 4 Carbon yang sukses mendominasi hampir seluruh tolok ukur industri. Model mutakhir ini mencetak skor fenomenal 88.2 persen pada SEC-bench Pro serta melampaui performa model publik hingga sepuluh kali lipat dalam pembuatan patch keamanan.",
