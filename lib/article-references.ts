@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: malaysia-sita-chip-ai-senilai-12-juta-di-dalam-3-20261029
+  'malaysia-sita-chip-ai-senilai-12-juta-di-dalam-3-20261029': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/policy/malaysia-secures-usd12-million-worth-of-advanced-ai-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Malaysia Sita Chip AI Senilai $12 Juta di Dalam 30 Server: Jaringan Penyelundupan Jadikan Transit Utama"
+  },
+
   // Auto-generated Daily News Entry: superkomputer-ai-senilai-60-juta-dijual-di-ebay--20261028
   'superkomputer-ai-senilai-60-juta-dijual-di-ebay--20261028': {
     publisher: "Tom's Hardware",

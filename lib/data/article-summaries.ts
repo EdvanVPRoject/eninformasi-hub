@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "malaysia-sita-chip-ai-senilai-12-juta-di-dalam-3-20261029",
+    "title": "Malaysia Sita Chip AI Senilai $12 Juta di Dalam 30 Server: Jaringan Penyelundupan Jadikan Transit Utama",
+    "description": "Otoritas bea cukai Malaysia berhasil menyita chip kecerdasan buatan canggih senilai $12 juta yang disembunyikan secara rapi di dalam 30 unit server. Operasi ini membongkar dugaan sindikat penyelundupan internasional yang memanfaatkan jalur logistik Asia Tenggara sebagai pusat transit komponen strategis.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-29T00:44:28.295Z",
+    "updatedDate": "2026-10-29T00:44:28.295Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AI Chips",
+      "Malaysia",
+      "Smuggling",
+      "Hardware",
+      "Tom's Hardware"
+    ],
+    "en": {
+      "title": "Malaysia Seizes $12 Million Worth of Advanced AI Chips Hidden Inside 30 Servers as Smuggling Hub Exposed",
+      "description": "Malaysian customs authorities have successfully seized advanced artificial intelligence chips valued at $12 million cleverly concealed within 30 server units, exposing an international smuggling network utilizing Southeast Asia as a primary transit hub."
+    }
+  },
+  {
     "slug": "superkomputer-ai-senilai-60-juta-dijual-di-ebay--20261028",
     "title": "Superkomputer AI Senilai $60 Juta Dijual di eBay: 300 Rak GPU Bekas Picu Perbincangan Industri",
     "description": "Sebuah vendor IT mengejutkan pasar teknologi global dengan mendaftarkan klaster superkomputer AI senilai 60 juta dolar AS di eBay, lengkap dengan ribuan GPU NVIDIA dan CPU AMD bekas pakai.",
