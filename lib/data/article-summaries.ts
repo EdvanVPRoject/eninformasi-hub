@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "google-gemini-4-carbon-guncang-industri-dominasi-20261029",
+    "title": "Google Gemini 4 Carbon Guncang Industri: Dominasi Benchmark & Lompatan Revolusioner Patch Keamanan AI",
+    "description": "Google kembali menggebrak ranah kecerdasan buatan global lewat peluncuran Gemini 4 Carbon yang sukses mendominasi hampir seluruh tolok ukur industri. Model mutakhir ini mencetak skor fenomenal 88.2 persen pada SEC-bench Pro serta melampaui performa model publik hingga sepuluh kali lipat dalam pembuatan patch keamanan.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-10-29T06:46:10.003Z",
+    "updatedDate": "2026-10-29T06:46:10.003Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Google Gemini",
+      "Gemini 4 Carbon",
+      "AI Security",
+      "Artificial Intelligence",
+      "Wccftech"
+    ],
+    "en": {
+      "title": "Google Gemini 4 Carbon Shakes the Tech Industry: Benchmark Dominance & Revolutionary AI Security Patching",
+      "description": "Google shatters global AI boundaries with the introduction of Gemini 4 Carbon, dominating nearly every industry benchmark. This state-of-the-art model achieved a phenomenal 88.2 percent score on SEC-bench Pro while outperforming public models by over tenfold in automated security patch generation."
+    }
+  },
+  {
     "slug": "malaysia-sita-chip-ai-senilai-12-juta-di-dalam-3-20261029",
     "title": "Malaysia Sita Chip AI Senilai $12 Juta di Dalam 30 Server: Jaringan Penyelundupan Jadikan Transit Utama",
     "description": "Otoritas bea cukai Malaysia berhasil menyita chip kecerdasan buatan canggih senilai $12 juta yang disembunyikan secara rapi di dalam 30 unit server. Operasi ini membongkar dugaan sindikat penyelundupan internasional yang memanfaatkan jalur logistik Asia Tenggara sebagai pusat transit komponen strategis.",

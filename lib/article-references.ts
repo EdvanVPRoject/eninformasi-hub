@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: google-gemini-4-carbon-guncang-industri-dominasi-20261029
+  'google-gemini-4-carbon-guncang-industri-dominasi-20261029': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/googles-gemini-4-carbon-mogs-every-other-model-on-nenarly-every-benchmark-performs-over-10x-better-than-any-publicly-available-model-when-generating-high-quality-security-patches/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Google Gemini 4 Carbon Guncang Industri: Dominasi Benchmark & Lompatan Revolusioner Patch Keamanan AI"
+  },
+
   // Auto-generated Daily News Entry: malaysia-sita-chip-ai-senilai-12-juta-di-dalam-3-20261029
   'malaysia-sita-chip-ai-senilai-12-juta-di-dalam-3-20261029': {
     publisher: "Tom's Hardware",
