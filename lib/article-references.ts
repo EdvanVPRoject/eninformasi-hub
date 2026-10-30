@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: krisis-pcb-global-memuncak-permintaan-ai-picu-lo-20261030
+  'krisis-pcb-global-memuncak-permintaan-ai-picu-lo-20261030': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/pc-components/ai-demand-triggers-massive-pcb-shortage-for-pc-makers-as-order-books-full-until-2030-lead-times-stretch-to-30-months-as-material-costs-surge-12x",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Krisis PCB Global Memuncak: Permintaan AI Picu Lonjakan Harga Ekstrem dan Antrean Hingga Tahun 2030"
+  },
+
   // Auto-generated Daily News Entry: heboh-karyawan-raih-pengecualian-agama-pertama-d-20261029
   'heboh-karyawan-raih-pengecualian-agama-pertama-d-20261029': {
     publisher: "Tom's Hardware",

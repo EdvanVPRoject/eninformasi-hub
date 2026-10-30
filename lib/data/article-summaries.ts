@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "krisis-pcb-global-memuncak-permintaan-ai-picu-lo-20261030",
+    "title": "Krisis PCB Global Memuncak: Permintaan AI Picu Lonjakan Harga Ekstrem dan Antrean Hingga Tahun 2030",
+    "description": "Industri perangkat keras PC global menghadapi tantangan terberatnya setelah ledakan permintaan infrastruktur AI memicu kelangkaan PCB parah, dengan waktu tunggu pemesanan membengkak hingga 30 bulan dan lonjakan biaya material hingga 12 kali lipat.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-10-30T00:45:38.345Z",
+    "updatedDate": "2026-10-30T00:45:38.345Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "PCB Shortage",
+      "Tom's Hardware",
+      "AI Infrastructure",
+      "PC Hardware",
+      "Hardware Crisis"
+    ],
+    "en": {
+      "title": "Global PCB Crisis Peaks: AI Demand Triggers Extreme Price Surges and Lead Times Through 2030",
+      "description": "The global PC hardware industry faces its toughest challenge yet as surging AI infrastructure demand triggers a severe PCB shortage, stretching order lead times up to 30 months and driving material costs up 12x."
+    }
+  },
+  {
     "slug": "heboh-karyawan-raih-pengecualian-agama-pertama-d-20261029",
     "title": "Heboh! Karyawan Raih Pengecualian Agama Pertama dari Kewajiban AI di Tempat Kerja",
     "description": "Sebuah preseden hukum baru tercipta setelah seorang karyawan berhasil mendapatkan pengecualian religius untuk menolak penggunaan AI di tempat kerja. Kasus ini memicu debat etika mengenai otonomi berpikir manusia di tengah dominasi LLM.",
