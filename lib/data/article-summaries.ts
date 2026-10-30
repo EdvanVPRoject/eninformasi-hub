@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "lonjakan-harga-gpu-global-35-dalam-tiga-bulan-gu-20261030",
+    "title": "Lonjakan Harga GPU Global 35% dalam Tiga Bulan Guncang Industri: Analisis Mendalam Krisis Pasokan Perangkat Keras",
+    "description": "Survei lintas sepuluh negara mengungkapkan kenaikan harga kartu grafis (GPU) sebesar 35% hanya dalam kurun waktu tiga bulan. Krisis ini memicu kepanikan di kalangan gamer, kreator konten, serta analis industri perangkat keras global.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-30T06:47:08.211Z",
+    "updatedDate": "2026-10-30T06:47:08.211Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "GPU",
+      "Grafik Card",
+      "Hardware PC",
+      "Pasar Global",
+      "Krisis Semikonduktor"
+    ],
+    "en": {
+      "title": "Global GPU Prices Surge 35% in Three Months, Shocking the Hardware Industry: A Deep-Dive Supply Crisis Analysis",
+      "description": "A comprehensive ten-country survey reveals a staggering 35% price hike in graphics processing units over just three months, sparking panic among gamers, content creators, and hardware analysts worldwide."
+    }
+  },
+  {
     "slug": "krisis-pcb-global-memuncak-permintaan-ai-picu-lo-20261030",
     "title": "Krisis PCB Global Memuncak: Permintaan AI Picu Lonjakan Harga Ekstrem dan Antrean Hingga Tahun 2030",
     "description": "Industri perangkat keras PC global menghadapi tantangan terberatnya setelah ledakan permintaan infrastruktur AI memicu kelangkaan PCB parah, dengan waktu tunggu pemesanan membengkak hingga 30 bulan dan lonjakan biaya material hingga 12 kali lipat.",

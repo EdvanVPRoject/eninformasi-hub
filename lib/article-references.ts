@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: lonjakan-harga-gpu-global-35-dalam-tiga-bulan-gu-20261030
+  'lonjakan-harga-gpu-global-35-dalam-tiga-bulan-gu-20261030': {
+    publisher: "Google News Tech Wire",
+    sourceUrl: "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNmQxTWhzeVhUVEdZWFBZMUw0enZqOTBGQkZVNUNPaTlWVmFYTjdIZTNNcEVvWDRXSF8xRmpqbFhVbVMzc0drZ1VXNHhmcjdWWngzOTZqMGVuZWhXY1lpbXZzM1VBYTNIV3VJQ3QxbUYzd0dDNE5zYWlfSkxHVmloYl9sYmFRNkU?oc=5",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Lonjakan Harga GPU Global 35% dalam Tiga Bulan Guncang Industri: Analisis Mendalam Krisis Pasokan Perangkat Keras"
+  },
+
   // Auto-generated Daily News Entry: krisis-pcb-global-memuncak-permintaan-ai-picu-lo-20261030
   'krisis-pcb-global-memuncak-permintaan-ai-picu-lo-20261030': {
     publisher: "Tom's Hardware",
