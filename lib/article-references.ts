@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: cisco-berikan-token-ai-tak-terbatas-ke-insinyur--20261030
+  'cisco-berikan-token-ai-tak-terbatas-ke-insinyur--20261030': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companjs-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Cisco Berikan Token AI Tak Terbatas ke Insinyur 27 Tahun untuk Tulis Ulang 98% Kode Warisan Perusahaan dalam 24 Bulan"
+  },
+
   // Auto-generated Daily News Entry: lonjakan-harga-gpu-global-35-dalam-tiga-bulan-gu-20261030
   'lonjakan-harga-gpu-global-35-dalam-tiga-bulan-gu-20261030': {
     publisher: "Google News Tech Wire",

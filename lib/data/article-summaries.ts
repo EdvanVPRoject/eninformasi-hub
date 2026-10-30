@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "cisco-berikan-token-ai-tak-terbatas-ke-insinyur--20261030",
+    "title": "Cisco Berikan Token AI Tak Terbatas ke Insinyur 27 Tahun untuk Tulis Ulang 98% Kode Warisan Perusahaan dalam 24 Bulan",
+    "description": "Langkah radikal diambil oleh eksekutif Cisco yang mempercayai seorang mantan pendiri startup berusia 27 tahun untuk merombak total hampir seluruh kode warisan perusahaan menggunakan token kecerdasan buatan tanpa batas dalam waktu dua tahun.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-30T12:45:38.540Z",
+    "updatedDate": "2026-10-30T12:45:38.540Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Cisco",
+      "Artificial Intelligence",
+      "Legacy Code",
+      "Software Engineering",
+      "Tech Industry"
+    ],
+    "en": {
+      "title": "Cisco Gives 27-Year-Old Engineer Unlimited AI Tokens to Rewrite 98% of Legacy Code in 24 Months",
+      "description": "In a radical move, Cisco executives have entrusted a 27-year-old former startup founder with unlimited artificial intelligence tokens to completely overhaul nearly the company's entire legacy codebase within two years."
+    }
+  },
+  {
     "slug": "lonjakan-harga-gpu-global-35-dalam-tiga-bulan-gu-20261030",
     "title": "Lonjakan Harga GPU Global 35% dalam Tiga Bulan Guncang Industri: Analisis Mendalam Krisis Pasokan Perangkat Keras",
     "description": "Survei lintas sepuluh negara mengungkapkan kenaikan harga kartu grafis (GPU) sebesar 35% hanya dalam kurun waktu tiga bulan. Krisis ini memicu kepanikan di kalangan gamer, kreator konten, serta analis industri perangkat keras global.",
