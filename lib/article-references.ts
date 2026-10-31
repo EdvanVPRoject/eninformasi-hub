@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: revolusi-pendinginan-ekstrem-radiator-ac-4kw-uba-20261031
+  'revolusi-pendinginan-ekstrem-radiator-ac-4kw-uba-20261031': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/4kw-ac-radiator-rtx-3080-gpu-temperatures-drop-40c-450w-power-limit/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Revolusi Pendinginan Ekstrem: Radiator AC 4KW Ubah RTX 3080 Jadi Monster 450W dengan Penurunan Suhu Nyaris 40°C"
+  },
+
   // Auto-generated Daily News Entry: bencana-pasar-semikonduktor-ambruknya-valuasi-pa-20261031
   'bencana-pasar-semikonduktor-ambruknya-valuasi-pa-20261031': {
     publisher: "Tom's Hardware",

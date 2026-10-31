@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "revolusi-pendinginan-ekstrem-radiator-ac-4kw-uba-20261031",
+    "title": "Revolusi Pendinginan Ekstrem: Radiator AC 4KW Ubah RTX 3080 Jadi Monster 450W dengan Penurunan Suhu Nyaris 40°C",
+    "description": "Seorang YouTuber terkenal berhasil menguji radiator AC 4KW pada kartu grafis RTX 3080, menghasilkan penurunan suhu dramatis hingga hampir 40 derajat Celsius dan membuka batas daya melampaui 450W. Eksperimen gila ini mendefinisikan ulang batas kemampuan pendinginan hardware PC masa kini.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Mahir",
+    "pubDate": "2026-10-31T06:44:01.798Z",
+    "updatedDate": "2026-10-31T06:44:01.798Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "RTX 3080",
+      "AC Radiator",
+      "GPU Cooling",
+      "Wccftech",
+      "Extreme Overclocking"
+    ],
+    "en": {
+      "title": "Extreme Cooling Revolution: 4KW AC Radiator Transforms RTX 3080 Into a 450W Monster With Nearly 40°C Temp Drop",
+      "description": "A prominent YouTuber successfully tested a 4KW AC radiator on an RTX 3080 graphics card, yielding dramatic temperature drops of nearly 40 degrees Celsius and unlocking power limits well past 450W. This insane experiment redefines the boundaries of modern PC hardware cooling capabilities."
+    }
+  },
+  {
     "slug": "bencana-pasar-semikonduktor-ambruknya-valuasi-pa-20261031",
     "title": "Bencana Pasar Semikonduktor: Ambruknya Valuasi Pasar Intel Guncang Industri Global Sebesar $1 Triliun dalam Sehari",
     "description": "Kejutan finansial besar melanda industri semikonduktor global setelah kemerosotan finansial Intel menghapus nilai pasar sebesar $1 triliun dalam satu hari. Krisis ini memicu kepanikan massal di sektor manufaktur perangkat keras dan rantai pasok teknologi global.",
