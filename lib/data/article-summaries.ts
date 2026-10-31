@@ -20,6 +20,31 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "bencana-pasar-semikonduktor-ambruknya-valuasi-pa-20261031",
+    "title": "Bencana Pasar Semikonduktor: Ambruknya Valuasi Pasar Intel Guncang Industri Global Sebesar $1 Triliun dalam Sehari",
+    "description": "Kejutan finansial besar melanda industri semikonduktor global setelah kemerosotan finansial Intel menghapus nilai pasar sebesar $1 triliun dalam satu hari. Krisis ini memicu kepanikan massal di sektor manufaktur perangkat keras dan rantai pasok teknologi global.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-10-31T00:51:42.712Z",
+    "updatedDate": "2026-10-31T00:51:42.712Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Intel",
+      "Semiconductor",
+      "Market Cap",
+      "Toms Hardware",
+      "CPU Market",
+      "Tech News"
+    ],
+    "en": {
+      "title": "Semiconductor Market Disaster: Intel's Market Cap Plunge Shocks Global Industry by $1 Trillion in a Single Day",
+      "description": "A massive financial shock hits the global semiconductor industry as Intel's operational slump wipes out $1 trillion in market value within a single day, triggering widespread panic across hardware manufacturing and tech supply chains."
+    }
+  },
+  {
     "slug": "cisco-berikan-token-ai-tak-terbatas-ke-insinyur--20261030",
     "title": "Cisco Berikan Token AI Tak Terbatas ke Insinyur 27 Tahun untuk Tulis Ulang 98% Kode Warisan Perusahaan dalam 24 Bulan",
     "description": "Langkah radikal diambil oleh eksekutif Cisco yang mempercayai seorang mantan pendiri startup berusia 27 tahun untuk merombak total hampir seluruh kode warisan perusahaan menggunakan token kecerdasan buatan tanpa batas dalam waktu dua tahun.",

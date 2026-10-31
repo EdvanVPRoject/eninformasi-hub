@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: bencana-pasar-semikonduktor-ambruknya-valuasi-pa-20261031
+  'bencana-pasar-semikonduktor-ambruknya-valuasi-pa-20261031': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/pc-components/cpus/intels-woes-wipe-out-usd1-trillion-of-semiconductor-market-cap-in-one-day-pc-market-bloodbath-leaves-few-chip-stocks-unscathed",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Bencana Pasar Semikonduktor: Ambruknya Valuasi Pasar Intel Guncang Industri Global Sebesar $1 Triliun dalam Sehari"
+  },
+
   // Auto-generated Daily News Entry: cisco-berikan-token-ai-tak-terbatas-ke-insinyur--20261030
   'cisco-berikan-token-ai-tak-terbatas-ke-insinyur--20261030': {
     publisher: "Tom's Hardware",
