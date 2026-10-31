@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: kontroversi-sam-altman-ram-pc-disebut-sangat-men-20261031
+  'kontroversi-sam-altman-ram-pc-disebut-sangat-men-20261031': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/sam-altman-calls-pc-ram-a-quite-terrible-use-of-limited-dram-supply-argues-cloud-data-centers-are-more-efficient/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Kontroversi Sam Altman: RAM PC Disebut 'Sangat Mengerikan', Dorong Dominasi Cloud AI"
+  },
+
   // Auto-generated Daily News Entry: revolusi-pendinginan-ekstrem-radiator-ac-4kw-uba-20261031
   'revolusi-pendinginan-ekstrem-radiator-ac-4kw-uba-20261031': {
     publisher: "Wccftech",

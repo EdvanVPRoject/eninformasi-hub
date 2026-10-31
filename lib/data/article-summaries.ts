@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "kontroversi-sam-altman-ram-pc-disebut-sangat-men-20261031",
+    "title": "Kontroversi Sam Altman: RAM PC Disebut 'Sangat Mengerikan', Dorong Dominasi Cloud AI",
+    "description": "CEO OpenAI Sam Altman memicu perdebatan sengit dengan menyebut RAM PC sebagai pemborosan pasokan DRAM yang tidak efisien, dan mengusulkan transisi radikal ke pusat data cloud untuk beban kerja AI.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-10-31T12:41:11.754Z",
+    "updatedDate": "2026-10-31T12:41:11.754Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "SamAltman",
+      "OpenAI",
+      "DRAM",
+      "CloudComputing",
+      "Hardware"
+    ],
+    "en": {
+      "title": "Sam Altman's Controversy: PC RAM Labeled a 'Quite Terrible' Use of Limited DRAM Supply",
+      "description": "OpenAI CEO Sam Altman sparked a heated debate by calling PC RAM a highly inefficient use of scarce DRAM resources, advocating for a radical shift toward centralized cloud-based AI infrastructure."
+    }
+  },
+  {
     "slug": "revolusi-pendinginan-ekstrem-radiator-ac-4kw-uba-20261031",
     "title": "Revolusi Pendinginan Ekstrem: Radiator AC 4KW Ubah RTX 3080 Jadi Monster 450W dengan Penurunan Suhu Nyaris 40°C",
     "description": "Seorang YouTuber terkenal berhasil menguji radiator AC 4KW pada kartu grafis RTX 3080, menghasilkan penurunan suhu dramatis hingga hampir 40 derajat Celsius dan membuka batas daya melampaui 450W. Eksperimen gila ini mendefinisikan ulang batas kemampuan pendinginan hardware PC masa kini.",
