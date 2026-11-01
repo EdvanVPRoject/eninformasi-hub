@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-pinjaman-mahasiswa-rp31-triliun-operasi--20261101",
+    "title": "Skandal Pinjaman Mahasiswa Rp3,1 Triliun: Operasi Ghostbusters DOJ Bongkar Jaringan AI dan Identitas Palsu",
+    "description": "Departemen Kehakiman AS (DOJ) sukses membongkar sindikat penipuan pinjaman mahasiswa senilai 200 juta dolar AS atau setara Rp3,1 triliun yang memanfaatkan kecerdasan buatan (AI) serta pencurian identitas lewat 'Ghost Students' untuk mendaftar kuliah online fiktif.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-01T00:52:36.348Z",
+    "updatedDate": "2026-11-01T00:52:36.348Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Cybersecurity",
+      "Artificial Intelligence",
+      "DOJ",
+      "Fraud Detection",
+      "Tech Crime"
+    ],
+    "en": {
+      "title": "$200M Student Loan Scam: DOJ's Operation Ghostbusters Busted AI and Stolen Identity Ring",
+      "description": "The US Department of Justice (DOJ) successfully dismantled a $200 million student loan fraud ring that utilized artificial intelligence and identity theft via 'Ghost Students' to apply for fictitious online college enrollments."
+    }
+  },
+  {
     "slug": "kontroversi-sam-altman-ram-pc-disebut-sangat-men-20261031",
     "title": "Kontroversi Sam Altman: RAM PC Disebut 'Sangat Mengerikan', Dorong Dominasi Cloud AI",
     "description": "CEO OpenAI Sam Altman memicu perdebatan sengit dengan menyebut RAM PC sebagai pemborosan pasokan DRAM yang tidak efisien, dan mengusulkan transisi radikal ke pusat data cloud untuk beban kerja AI.",

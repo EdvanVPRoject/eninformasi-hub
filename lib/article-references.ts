@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: skandal-pinjaman-mahasiswa-rp31-triliun-operasi--20261101
+  'skandal-pinjaman-mahasiswa-rp31-triliun-operasi--20261101': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/cyber-security/ghost-students-using-ai-to-apply-for-student-loans-with-stolen-identities-dojs-operation-ghostbusters-busts-usd200-million-ring-faking-online-college-attendance-unsuspecting-victims-saddled-with-student-debt-they-didnt-sign-up-for",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Skandal Pinjaman Mahasiswa Rp3,1 Triliun: Operasi Ghostbusters DOJ Bongkar Jaringan AI dan Identitas Palsu"
+  },
+
   // Auto-generated Daily News Entry: kontroversi-sam-altman-ram-pc-disebut-sangat-men-20261031
   'kontroversi-sam-altman-ram-pc-disebut-sangat-men-20261031': {
     publisher: "Wccftech",
