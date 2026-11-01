@@ -20,6 +20,31 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "krisis-pasokan-chip-ai-terparah-intel-alihkan-ka-20261101",
+    "title": "Krisis Pasokan Chip AI Terparah: Intel Alihkan Kapasitas Produksi CPU Konsumen untuk Penuhi Lonjakan Server",
+    "description": "Intel terpaksa mengalihkan kapasitas lini produksi CPU konsumen demi mengejar permintaan chip server AI yang membludak secara historis, memicu kekhawatiran kelangkaan hardware PC desktop global.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-01T06:49:55.232Z",
+    "updatedDate": "2026-11-01T06:49:55.232Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Intel",
+      "CPU",
+      "AI",
+      "Server",
+      "Hardware",
+      "Supply Chain"
+    ],
+    "en": {
+      "title": "Severe AI Chip Supply Crisis: Intel Shifts Consumer CPU Production Capacity to Meet Surging Server Demand",
+      "description": "Intel is forced to redirect manufacturing capacity from consumer CPUs to meet unprecedented server AI chip demand, triggering fears of global desktop PC hardware shortages."
+    }
+  },
+  {
     "slug": "skandal-pinjaman-mahasiswa-rp31-triliun-operasi--20261101",
     "title": "Skandal Pinjaman Mahasiswa Rp3,1 Triliun: Operasi Ghostbusters DOJ Bongkar Jaringan AI dan Identitas Palsu",
     "description": "Departemen Kehakiman AS (DOJ) sukses membongkar sindikat penipuan pinjaman mahasiswa senilai 200 juta dolar AS atau setara Rp3,1 triliun yang memanfaatkan kecerdasan buatan (AI) serta pencurian identitas lewat 'Ghost Students' untuk mendaftar kuliah online fiktif.",

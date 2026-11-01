@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: krisis-pasokan-chip-ai-terparah-intel-alihkan-ka-20261101
+  'krisis-pasokan-chip-ai-terparah-intel-alihkan-ka-20261101': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/pc-components/cpus/intel-shifts-production-capacity-from-consumer-to-server-cpus-in-face-of-unprecedented-ai-demand-company-navigating-one-of-the-most-significant-supply-shortages-in-history",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Krisis Pasokan Chip AI Terparah: Intel Alihkan Kapasitas Produksi CPU Konsumen untuk Penuhi Lonjakan Server"
+  },
+
   // Auto-generated Daily News Entry: skandal-pinjaman-mahasiswa-rp31-triliun-operasi--20261101
   'skandal-pinjaman-mahasiswa-rp31-triliun-operasi--20261101': {
     publisher: "Tom's Hardware",
