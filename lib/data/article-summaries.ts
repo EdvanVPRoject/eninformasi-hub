@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "eksperimen-gila-ai-agent-di-minecraft-gagal-tota-20261101",
+    "title": "Eksperimen Gila AI Agent di Minecraft Gagal Total: 50 Agen Cerdas Tumbang Akibat Birokrasi Macet",
+    "description": "Sebuah eksperimen ambisius yang mengerahkan 50 agen kecerdasan buatan dalam game Minecraft untuk membangun peradaban maju berakhir dengan kegagalan tragis akibat kelumpuhan birokrasi internal dan siklus keputusan yang lambat.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-01T12:41:49.340Z",
+    "updatedDate": "2026-11-01T12:41:49.340Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AI Agents",
+      "Minecraft",
+      "Artificial Intelligence",
+      "Tom's Hardware",
+      "Simulation"
+    ],
+    "en": {
+      "title": "AI Agent Swarms Fail Miserably in Minecraft: 50 Smart Agents Collapse Under Paralyzing Bureaucracy",
+      "description": "An ambitious technological experiment deploying 50 autonomous AI agents in Minecraft to build an advanced civilization ended in total failure due to internal bureaucratic paralysis and sluggish decision loops."
+    }
+  },
+  {
     "slug": "krisis-pasokan-chip-ai-terparah-intel-alihkan-ka-20261101",
     "title": "Krisis Pasokan Chip AI Terparah: Intel Alihkan Kapasitas Produksi CPU Konsumen untuk Penuhi Lonjakan Server",
     "description": "Intel terpaksa mengalihkan kapasitas lini produksi CPU konsumen demi mengejar permintaan chip server AI yang membludak secara historis, memicu kekhawatiran kelangkaan hardware PC desktop global.",

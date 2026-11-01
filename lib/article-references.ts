@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: eksperimen-gila-ai-agent-di-minecraft-gagal-tota-20261101
+  'eksperimen-gila-ai-agent-di-minecraft-gagal-tota-20261101': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Eksperimen Gila AI Agent di Minecraft Gagal Total: 50 Agen Cerdas Tumbang Akibat Birokrasi Macet"
+  },
+
   // Auto-generated Daily News Entry: krisis-pasokan-chip-ai-terparah-intel-alihkan-ka-20261101
   'krisis-pasokan-chip-ai-terparah-intel-alihkan-ka-20261101': {
     publisher: "Tom's Hardware",
