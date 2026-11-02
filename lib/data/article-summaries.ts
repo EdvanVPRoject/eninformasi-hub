@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "malware-windows-berbasis-ai-canggih-manfaatkan-c-20261102",
+    "title": "Malware Windows Berbasis AI Canggih Manfaatkan Claude untuk Menilai dan Merampok Aset Korban",
+    "description": "Ancaman siber tingkat lanjut baru saja terdeteksi menyerang sistem operasi Windows menggunakan kecerdasan buatan Claude. Malware ini secara otonom menganalisis data curian untuk memberi peringkat pada aset korban sebelum menghapus dirinya sendiri tanpa jejak.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-11-02T07:14:02.087Z",
+    "updatedDate": "2026-11-02T07:14:02.087Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Cyber Security",
+      "AI Malware",
+      "Windows Security",
+      "Claude AI",
+      "Tom's Hardware"
+    ],
+    "en": {
+      "title": "Advanced AI-Driven Windows Malware Leverages Claude to Rank and Loot Victim Assets",
+      "description": "A sophisticated new cybersecurity threat has been detected targeting Windows operating systems using Claude AI. The malware autonomously analyzes stolen data to rank victim assets by financial value before securely deleting itself without a trace."
+    }
+  },
+  {
     "slug": "terobosan-open-source-usb-tool-berhasil-jebol-ba-20261102",
     "title": "Terobosan Open-Source USB Tool Berhasil Jebol Batas Performa AI GPU Nvidia di Windows",
     "description": "Sebuah utilitas USB open-source baru sukses membuka kunci pembatas performa AI setengah kecepatan milik Nvidia pada sistem operasi Windows. Alat ini mampu mendongkrak performa matematika FP16 hingga 65 persen pada lini kartu grafis desktop maupun laptop seri RTX 20, 30, dan 40.",

@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: malware-windows-berbasis-ai-canggih-manfaatkan-c-20261102
+  'malware-windows-berbasis-ai-canggih-manfaatkan-c-20261102': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/cyber-security/new-ai-driven-windows-malware-feeds-stolen-data-to-claude-to-rank-victims-assets-by-value-then-deletes-itself-payload-builds-custom-target-assessment-can-switch-models-if-one-refuses-or-skip-the-ai-step-entirely",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Malware Windows Berbasis AI Canggih Manfaatkan Claude untuk Menilai dan Merampok Aset Korban"
+  },
+
   // Auto-generated Daily News Entry: terobosan-open-source-usb-tool-berhasil-jebol-ba-20261102
   'terobosan-open-source-usb-tool-berhasil-jebol-ba-20261102': {
     publisher: "Tom's Hardware",
