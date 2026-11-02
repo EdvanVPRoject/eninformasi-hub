@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "perang-firmware-playstation-persyaratan-firmware-20261102",
+    "title": "Perang Firmware PlayStation: Persyaratan Firmware Baru PS5 untuk GTA VI Memicu Kontroversi Jailbreak",
+    "description": "Sony dilaporkan memperketat keamanan firmware PS5 sebagai bagian dari perang melawan peretas, yang secara langsung berdampak pada persyaratan sistem untuk GTA VI. Langkah ini memicu kekhawatiran baru di komunitas modding dan jailbreak global.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-02T12:56:44.002Z",
+    "updatedDate": "2026-11-02T12:56:44.002Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "PlayStation",
+      "GTA6",
+      "Firmware",
+      "Jailbreak",
+      "Sony"
+    ],
+    "en": {
+      "title": "PlayStation Firmware War: New PS5 Requirements for GTA VI Ignite Jailbreak Controversy",
+      "description": "Sony is reportedly tightening PS5 firmware security to combat jailbreakers, directly impacting system requirements for GTA VI. This move has sparked intense debate within the global modding and hacking community."
+    }
+  },
+  {
     "slug": "malware-windows-berbasis-ai-canggih-manfaatkan-c-20261102",
     "title": "Malware Windows Berbasis AI Canggih Manfaatkan Claude untuk Menilai dan Merampok Aset Korban",
     "description": "Ancaman siber tingkat lanjut baru saja terdeteksi menyerang sistem operasi Windows menggunakan kecerdasan buatan Claude. Malware ini secara otonom menganalisis data curian untuk memberi peringkat pada aset korban sebelum menghapus dirinya sendiri tanpa jejak.",

@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: perang-firmware-playstation-persyaratan-firmware-20261102
+  'perang-firmware-playstation-persyaratan-firmware-20261102': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/playstation-firmware-war-gta-6-firmware-requirements/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Perang Firmware PlayStation: Persyaratan Firmware Baru PS5 untuk GTA VI Memicu Kontroversi Jailbreak"
+  },
+
   // Auto-generated Daily News Entry: malware-windows-berbasis-ai-canggih-manfaatkan-c-20261102
   'malware-windows-berbasis-ai-canggih-manfaatkan-c-20261102': {
     publisher: "Tom's Hardware",
