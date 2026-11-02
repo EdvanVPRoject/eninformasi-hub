@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: terobosan-open-source-usb-tool-berhasil-jebol-ba-20261102
+  'terobosan-open-source-usb-tool-berhasil-jebol-ba-20261102': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/pc-components/gpus/open-source-usb-tool-unlocks-nvidias-half-speed-gpu-ai-limiter-on-windows-lifts-gpus-fp16-math-performance-up-to-65-percent-uefi-unlocker-covers-rtx-20-30-and-40-series-desktops-and-laptops",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Terobosan Open-Source USB Tool Berhasil Jebol Batas Performa AI GPU Nvidia di Windows"
+  },
+
   // Auto-generated Daily News Entry: eksperimen-gila-ai-agent-di-minecraft-gagal-tota-20261101
   'eksperimen-gila-ai-agent-di-minecraft-gagal-tota-20261101': {
     publisher: "Tom's Hardware",

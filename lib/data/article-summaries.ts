@@ -20,6 +20,31 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "terobosan-open-source-usb-tool-berhasil-jebol-ba-20261102",
+    "title": "Terobosan Open-Source USB Tool Berhasil Jebol Batas Performa AI GPU Nvidia di Windows",
+    "description": "Sebuah utilitas USB open-source baru sukses membuka kunci pembatas performa AI setengah kecepatan milik Nvidia pada sistem operasi Windows. Alat ini mampu mendongkrak performa matematika FP16 hingga 65 persen pada lini kartu grafis desktop maupun laptop seri RTX 20, 30, dan 40.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Mahir",
+    "pubDate": "2026-11-02T00:53:29.376Z",
+    "updatedDate": "2026-11-02T00:53:29.376Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Nvidia",
+      "GPU",
+      "AI Limiter",
+      "Windows",
+      "Open-Source",
+      "RTX"
+    ],
+    "en": {
+      "title": "Open-Source USB Tool Successfully Bypasses Nvidia's GPU AI Limiter on Windows",
+      "description": "A new open-source USB utility has successfully unlocked Nvidia's half-precision AI performance limiters on Windows operating systems, boosting FP16 math performance by up to 65 percent across RTX 20, 30, and 40 series desktop and laptop GPUs."
+    }
+  },
+  {
     "slug": "eksperimen-gila-ai-agent-di-minecraft-gagal-tota-20261101",
     "title": "Eksperimen Gila AI Agent di Minecraft Gagal Total: 50 Agen Cerdas Tumbang Akibat Birokrasi Macet",
     "description": "Sebuah eksperimen ambisius yang mengerahkan 50 agen kecerdasan buatan dalam game Minecraft untuk membangun peradaban maju berakhir dengan kegagalan tragis akibat kelumpuhan birokrasi internal dan siklus keputusan yang lambat.",
