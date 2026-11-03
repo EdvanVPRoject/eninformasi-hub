@@ -102,7 +102,7 @@ function SidebarNavInner({
                 key={cat.id}
                 type="button"
                 onClick={() => handleCategoryClick(cat.id)}
-                className={`group w-full flex items-center justify-between px-3 py-2 rounded-lg text-left transition-all duration-200 ease-out active:scale-[0.99] ${
+                className={`group w-full flex items-center justify-between px-3 py-2 rounded-lg text-left transition-all duration-150 ease-out active:scale-95 ${
                   isActive
                     ? 'bg-emerald-500/10 text-emerald-500 font-semibold border border-emerald-500/30 shadow-sm translate-x-1'
                     : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--card-bg)] border border-transparent hover:border-[var(--border-color)] hover:translate-x-0.5'

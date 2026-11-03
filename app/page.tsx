@@ -217,7 +217,7 @@ function HomeContent() {
                   type="button"
                   onClick={() => handleSelectType('all')}
                   aria-label="Tampilkan semua konten"
-                  className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all active:scale-[0.98] ${
+                  className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all duration-150 active:scale-95 ${
                     selectedType === 'all'
                       ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
                       : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
@@ -241,7 +241,7 @@ function HomeContent() {
                   type="button"
                   onClick={() => handleSelectType('tutorial')}
                   aria-label="Tampilkan hanya tutorial"
-                  className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all active:scale-[0.98] ${
+                  className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all duration-150 active:scale-95 ${
                     selectedType === 'tutorial'
                       ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
                       : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
@@ -265,7 +265,7 @@ function HomeContent() {
                   type="button"
                   onClick={() => handleSelectType('artikel')}
                   aria-label="Tampilkan hanya artikel informasi"
-                  className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all active:scale-[0.98] ${
+                  className={`p-2.5 sm:p-3.5 rounded-xl text-left border transition-all duration-150 active:scale-95 ${
                     selectedType === 'artikel'
                       ? 'bg-emerald-500/10 border-emerald-500 shadow-sm'
                       : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-emerald-500/50'
@@ -326,10 +326,10 @@ function HomeContent() {
                       type="button"
                       onClick={() => handleTopicClick(topic)}
                       aria-label={`Filter topik ${topic}`}
-                      className={`px-2.5 py-1 rounded-lg text-xs font-mono font-medium border transition-all flex items-center gap-1 active:scale-95 ${
+                      className={`px-2.5 py-1 rounded-lg text-xs font-mono font-medium border transition-all duration-150 flex items-center gap-1 hover:-translate-y-0.5 hover:shadow-sm active:scale-95 ${
                         isActive
                           ? 'bg-emerald-500 text-black border-emerald-400 font-bold shadow-sm'
-                          : 'bg-[var(--bg-main)] text-[var(--text-main)] border-[var(--border-color)] hover:border-emerald-500/50'
+                          : 'bg-[var(--bg-main)] text-[var(--text-main)] border-[var(--border-color)] hover:border-emerald-500/60 hover:text-emerald-500 dark:hover:text-emerald-400'
                       }`}
                     >
                       <span>#{topic}</span>
@@ -571,7 +571,7 @@ function HomeContent() {
                             alt={displayTitle}
                             width={400}
                             height={225}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300 ease-out"
                             loading={index < 3 ? 'eager' : 'lazy'}
                             decoding={index < 3 ? 'sync' : 'async'}
                             // @ts-ignore
@@ -631,7 +631,7 @@ function HomeContent() {
 
                         <Link
                           href={targetUrl}
-                          className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-emerald-500 hover:text-emerald-400 group-hover:translate-x-0.5 transition-all whitespace-nowrap"
+                          className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-emerald-500 hover:text-emerald-400 group-hover:translate-x-1 duration-200 transition-all whitespace-nowrap"
                         >
                           <span>
                             {article.postType === 'tutorial'
@@ -651,7 +651,7 @@ function HomeContent() {
                   <button
                     type="button"
                     onClick={() => setVisibleCount((prev) => prev + 12)}
-                    className="px-6 py-2.5 rounded-xl text-xs sm:text-sm font-mono font-semibold bg-[var(--card-bg)] hover:bg-emerald-500 hover:text-zinc-950 text-[var(--text-main)] border border-[var(--border-color)] hover:border-emerald-500 shadow-sm transition-all"
+                    className="px-6 py-2.5 rounded-xl text-xs sm:text-sm font-mono font-semibold bg-[var(--card-bg)] hover:bg-emerald-500 hover:text-zinc-950 text-[var(--text-main)] border border-[var(--border-color)] hover:border-emerald-500 shadow-sm transition-all duration-150 active:scale-95"
                   >
                     {lang === 'en'
                       ? `Load More Content (${filteredArticles.length - visibleCount} remaining)`

@@ -250,7 +250,7 @@ function ArtikelContent() {
               return (
                 <article
                   key={article.slug}
-                  className="group flex flex-col justify-between overflow-hidden rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 hover:shadow-lg active:scale-[0.98] transition-all duration-200"
+                  className="group flex flex-col justify-between overflow-hidden rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] card-smooth-hover active:scale-[0.98] shadow-sm"
                 >
                   <div>
                     {/* Featured Image Thumbnail Header */}
@@ -260,7 +260,7 @@ function ArtikelContent() {
                         alt={displayTitle}
                         width={400}
                         height={225}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300 ease-out"
                         loading={index < 3 ? 'eager' : 'lazy'}
                         decoding={index < 3 ? 'sync' : 'async'}
                         // @ts-ignore
@@ -322,7 +322,7 @@ function ArtikelContent() {
               <button
                 type="button"
                 onClick={() => setVisibleCount((prev) => prev + 12)}
-                className="px-6 py-2.5 rounded-xl text-xs sm:text-sm font-mono font-semibold bg-[var(--card-bg)] hover:bg-emerald-500 hover:text-zinc-950 text-[var(--text-main)] border border-[var(--border-color)] hover:border-emerald-500 shadow-sm transition-all"
+                className="px-6 py-2.5 rounded-xl text-xs sm:text-sm font-mono font-semibold bg-[var(--card-bg)] hover:bg-emerald-500 hover:text-zinc-950 text-[var(--text-main)] border border-[var(--border-color)] hover:border-emerald-500 shadow-sm transition-all duration-150 active:scale-95"
               >
                 {lang === 'en'
                   ? `Load More Articles (${filteredArtikels.length - visibleCount} remaining)`
