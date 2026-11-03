@@ -244,7 +244,7 @@ function ArtikelContent() {
             {filteredArtikels.slice(0, visibleCount).map((article, index) => {
               const displayTitle = (lang === 'en' && article.en?.title) ? article.en.title : article.title;
               const displayDesc = (lang === 'en' && article.en?.description) ? article.en.description : article.description;
-              const cover = getArticleCover(article.slug, article.category, article.tags);
+              const cover = getArticleCover(article.slug, article.category, article.tags, article.title);
               const coverUrl = getThumbnailUrl(cover.url, 600);
 
               return (

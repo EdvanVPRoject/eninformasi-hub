@@ -555,7 +555,7 @@ function HomeContent() {
 
                   const displayTitle = (lang === 'en' && article.en?.title) ? article.en.title : article.title;
                   const displayDesc = (lang === 'en' && article.en?.description) ? article.en.description : article.description;
-                  const cover = getArticleCover(article.slug, article.category, article.tags);
+                  const cover = getArticleCover(article.slug, article.category, article.tags, article.title);
                   const coverUrl = getThumbnailUrl(cover.url, 600);
 
                   return (
@@ -578,7 +578,7 @@ function HomeContent() {
                             // @ts-ignore
                             fetchPriority={index < 3 ? 'high' : 'auto'}
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent pointer-events-none" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent pointer-events-none" />
                           
                           {/* Floating Badges */}
                           <div className="absolute top-3 left-3 flex items-center gap-1.5">

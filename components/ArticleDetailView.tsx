@@ -47,6 +47,17 @@ function formatCleanCategory(catId: string, lang: 'id' | 'en') {
     .join(' ');
 }
 
+function formatEditorialDate(dateStr: string, lang: 'id' | 'en'): string {
+  if (!dateStr) return '2026';
+  const parsed = new Date(dateStr);
+  if (isNaN(parsed.getTime())) return dateStr;
+  return parsed.toLocaleDateString(lang === 'en' ? 'en-US' : 'id-ID', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
+}
+
 export default function ArticleDetailView({ article, postType }: ArticleDetailViewProps) {
   const { lang, setLang, toggleLang } = useLanguage();
   const [maxProgress, setMaxProgress] = useState(0);
@@ -106,7 +117,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
   const displayContent = (lang === 'en' && article.en?.content) ? article.en.content : article.content;
   const displayToc = (lang === 'en' && article.en?.toc) ? article.en.toc : article.toc;
   const displaySteps = (lang === 'en' && article.en?.steps) ? article.en.steps : article.steps;
-  const heroVisual = getArticleCover(article.slug, article.category, article.tags);
+  const heroVisual = getArticleCover(article.slug, article.category, article.tags, displayTitle);
   const heroPhotoInfo = heroVisual ? resolvePhotoSource(heroVisual.url, heroVisual.source) : null;
   const isHeroImageInBody = Boolean(displayContent && heroVisual?.url && displayContent.includes(heroVisual.url));
   const articleRef = getArticleReference(article.slug, article.category, displayTitle);
@@ -129,7 +140,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
             </div>
           </aside>
 
-          <main className="space-y-6 min-w-0 w-full">
+          <main className="space-y-6 min-w-0 w-full max-w-[840px] mx-auto">
             <nav className="flex items-center gap-1.5 text-xs font-mono text-[var(--text-muted)] flex-wrap">
               <Link href="/" className="hover:text-emerald-500 transition-colors">
                 {lang === 'en' ? 'Home' : 'Beranda'}
@@ -216,7 +227,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
 
               <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-[var(--text-muted)]">
                 <span className="flex items-center gap-1">
-                  <Calendar className="w-3.5 h-3.5" /> {lang === 'en' ? 'Updated' : 'Diperbarui'}: {article.updatedDate}
+                  <Calendar className="w-3.5 h-3.5 text-emerald-500" /> {lang === 'en' ? 'Updated' : 'Diperbarui'}: {formatEditorialDate(article.updatedDate || article.pubDate, lang)}
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-1">
@@ -228,7 +239,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                 </span>
               </div>
 
-              <div className="p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 text-sm sm:text-base text-[var(--text-main)] leading-relaxed sm:leading-loose text-left sm:text-justify [text-align-last:left] hyphens-auto break-words">
+              <div className="p-4 sm:p-5 rounded-xl bg-emerald-500/[0.04] border border-emerald-500/20 border-l-4 border-l-emerald-500 text-[15px] sm:text-base text-[var(--text-main)] leading-[1.8] text-left break-words">
                 <strong className="text-emerald-400 font-mono block mb-1">
                   {lang === 'en' ? '⚡ Quick Summary:' : '⚡ Ringkasan Cepat:'}
                 </strong>
@@ -238,20 +249,21 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
 
             {/* Featured Hero Visual Figure with Credible Source */}
             {heroVisual && !isHeroImageInBody && (
-              <figure className="my-2 max-w-xl mx-auto rounded-xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm text-left [text-align:left]">
+              <figure className="my-6 w-full rounded-2xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-md text-left [text-align:left]">
                 <a
                   href={articleRef.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative overflow-hidden bg-black/40 flex items-center justify-center aspect-[16/9] max-h-[220px] sm:max-h-[280px] group/hero block cursor-pointer"
+                  className="relative overflow-hidden bg-zinc-900 flex items-center justify-center aspect-[16/9] max-h-[360px] sm:max-h-[430px] w-full group/hero block cursor-pointer"
                   title={`Buka rujukan artikel asli: ${articleRef.publisher}`}
                 >
                   <img
                     src={heroVisual.url}
                     alt={heroVisual.caption}
-                    className="w-full h-full object-cover aspect-video group-hover/hero:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover aspect-video group-hover/hero:scale-[1.03] transition-transform duration-300 ease-out"
                     loading="eager"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
                 </a>
                 <figcaption className="px-3 py-2 sm:px-3.5 sm:py-2.5 bg-[var(--card-bg)] border-t border-[var(--border-color)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2 text-[11px] sm:text-xs text-left [text-align:left]">
                   <span className="text-[var(--text-main)] font-semibold flex items-center gap-1.5 text-left [text-align:left] min-w-0">

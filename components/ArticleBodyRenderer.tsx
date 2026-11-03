@@ -18,7 +18,7 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
   let h3Count = 0;
 
   return (
-    <div className="space-y-4 text-sm sm:text-base leading-relaxed text-[var(--text-main)] font-normal">
+    <div className="space-y-5 text-[15.5px] sm:text-[17px] leading-[1.85] text-[var(--text-main)] font-normal">
       {parts.map((part, index) => {
         if (!part.trim()) return null;
 
@@ -73,7 +73,7 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
         }
 
         return (
-          <div key={index} className="space-y-3">
+          <div key={index} className="space-y-4 sm:space-y-5">
             {blocks.map((block, blockIdx) => {
               // 1. Render Table Block
               if (block.type === 'table') {
@@ -179,12 +179,12 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
                 const targetPublisher = articleRef?.publisher ? articleRef.publisher.split('&')[0].trim() : (cleanSource || 'Dokumentasi Resmi');
 
                 return (
-                  <figure key={blockIdx} className="my-5 max-w-xl mx-auto rounded-xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-sm text-left [text-align:left]">
+                  <figure key={blockIdx} className="my-6 w-full rounded-2xl overflow-hidden border border-[var(--border-color)] bg-[var(--card-bg)] shadow-md text-left [text-align:left]">
                     <a
                       href={targetUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="relative overflow-hidden bg-black/40 flex items-center justify-center aspect-[16/9] max-h-[220px] sm:max-h-[280px] group/img block cursor-pointer"
+                      className="relative overflow-hidden bg-zinc-900 flex items-center justify-center aspect-[16/9] max-h-[360px] sm:max-h-[420px] w-full group/img block cursor-pointer"
                       title={`Buka rujukan artikel asli: ${targetPublisher}`}
                     >
                       <img
@@ -273,14 +273,15 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
                       )}
                       <h3
                         id={targetId}
-                        className="text-lg sm:text-xl font-bold tracking-tight text-[var(--text-main)] pt-4 pb-1 border-b border-[var(--border-color)]/60 scroll-mt-24"
+                        className="text-lg sm:text-[21px] font-extrabold tracking-tight text-[var(--text-main)] pt-6 sm:pt-8 pb-2.5 border-b border-[var(--border-color)]/70 scroll-mt-24 flex items-center gap-2.5"
                       >
-                        {headingText}
+                        <span className="w-1.5 h-5 sm:h-6 rounded-full bg-emerald-500 shrink-0" />
+                        <span>{headingText}</span>
                       </h3>
                     </div>
                     {extraParagraph && (
                       <p
-                        className="leading-relaxed sm:leading-loose text-[15px] sm:text-base text-left sm:text-justify [text-align-last:left] hyphens-auto break-words"
+                        className="leading-[1.85] text-[15.5px] sm:text-[17px] text-[var(--text-main)]/90 text-left tracking-[0.005em] break-words"
                         dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(extraParagraph) }}
                       />
                     )}
@@ -378,7 +379,7 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
               return (
                 <p
                   key={blockIdx}
-                  className="leading-relaxed sm:leading-loose text-[15px] sm:text-base text-left sm:text-justify [text-align-last:left] hyphens-auto break-words"
+                  className="leading-[1.85] text-[15.5px] sm:text-[17px] text-[var(--text-main)]/90 text-left tracking-[0.005em] break-words"
                   dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(trimmed) }}
                 />
               );
