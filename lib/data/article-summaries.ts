@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "kejutan-besar-di-steam-hardware-survey-geforce-r-20261103",
+    "title": "Kejutan Besar di Steam Hardware Survey: GeForce RTX 3060 Rebut Kembali Tahta, Singkirkan RTX 5070 dalam Waktu Singkat",
+    "description": "Dominasi kartu grafis seri terbaru NVIDIA menghadapi ujian berat setelah GeForce RTX 3060 kembali meroket ke puncak Steam Hardware Survey, menggeser RTX 5070 yang baru sebulan menikmati posisi teratas.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-03T06:58:28.269Z",
+    "updatedDate": "2026-11-03T06:58:28.269Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "NVIDIA",
+      "RTX 3060",
+      "RTX 5070",
+      "Steam Hardware Survey",
+      "PC Gaming"
+    ],
+    "en": {
+      "title": "Steam Hardware Survey Shock: GeForce RTX 3060 Reclaims the Crown, Overtaking RTX 5070 in a Swift Reversal",
+      "description": "NVIDIA's latest-generation graphics card dominance faces a stiff reality check as the enduring GeForce RTX 3060 surges back to the top of the Steam Hardware Survey, dethroning the RTX 5070 after just a single month in the lead."
+    }
+  },
+  {
     "slug": "kecerdasan-buatan-tingkat-lanjut-model-ai-berhas-20261103",
     "title": "Kecerdasan Buatan Tingkat Lanjut: Model AI Berhasil Menanamkan CPU RISC-V 32-Bit Langsung ke Dalam Bobotnya dan Menjalankan Game DOOM",
     "description": "Sebuah terobosan revolusioner dalam kecerdasan buatan berhasil mendemonstrasikan model bahasa besar (LLM) Qwen 3.5 4B yang dikompilasi secara langsung dengan CPU RISC-V 32-bit di dalam bobot parameternya, memungkinkan eksekusi kode aritmetika hingga game klasik DOOM.",

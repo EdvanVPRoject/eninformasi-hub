@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: kejutan-besar-di-steam-hardware-survey-geforce-r-20261103
+  'kejutan-besar-di-steam-hardware-survey-geforce-r-20261103': {
+    publisher: "Google News Tech Wire",
+    sourceUrl: "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNVGZWYVVYNGhfTWc1WTlRYmk2aTNXeENiNC1JbXMwc052T3ZXZW9tTEh3UFBnVEo5TlFXRWZ6Z2JkNjJfaHlKbGtwS19pbF9pb2lpY0xfaFgwU01SaXQxcXllNFdzSmZGd0lZb0k1bjNDM0piSm9PSFNaQ1Nmc1p6bWdWQXVnVXNHdmRZbGsyYmNQbC1QLXNxSWRJSGZ5UmExQmxqSzR0aE9BS3JweWpENXdGems5dlhFOXRwY1FvM1U4ckRQX3VZcmxkS1NmUTNs?oc=5",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Kejutan Besar di Steam Hardware Survey: GeForce RTX 3060 Rebut Kembali Tahta, Singkirkan RTX 5070 dalam Waktu Singkat"
+  },
+
   // Auto-generated Daily News Entry: kecerdasan-buatan-tingkat-lanjut-model-ai-berhas-20261103
   'kecerdasan-buatan-tingkat-lanjut-model-ai-berhas-20261103': {
     publisher: "Tom's Hardware",
