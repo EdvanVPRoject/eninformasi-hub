@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "kecerdasan-buatan-tingkat-lanjut-model-ai-berhas-20261103",
+    "title": "Kecerdasan Buatan Tingkat Lanjut: Model AI Berhasil Menanamkan CPU RISC-V 32-Bit Langsung ke Dalam Bobotnya dan Menjalankan Game DOOM",
+    "description": "Sebuah terobosan revolusioner dalam kecerdasan buatan berhasil mendemonstrasikan model bahasa besar (LLM) Qwen 3.5 4B yang dikompilasi secara langsung dengan CPU RISC-V 32-bit di dalam bobot parameternya, memungkinkan eksekusi kode aritmetika hingga game klasik DOOM.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-11-03T00:52:31.171Z",
+    "updatedDate": "2026-11-03T00:52:31.171Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AI",
+      "RISC-V",
+      "DOOM",
+      "Large Language Models",
+      "Tech Innovation"
+    ],
+    "en": {
+      "title": "Advanced Artificial Intelligence: AI Model Successfully Compiles a 32-Bit RISC-V CPU Directly into Its Weights and Runs DOOM",
+      "description": "A revolutionary breakthrough in artificial intelligence demonstrates how the Qwen 3.5 4B large language model has been compiled with a 32-bit RISC-V CPU embedded directly into its parameter weights, enabling arithmetic code execution and the classic game DOOM."
+    }
+  },
+  {
     "slug": "perang-firmware-playstation-persyaratan-firmware-20261102",
     "title": "Perang Firmware PlayStation: Persyaratan Firmware Baru PS5 untuk GTA VI Memicu Kontroversi Jailbreak",
     "description": "Sony dilaporkan memperketat keamanan firmware PS5 sebagai bagian dari perang melawan peretas, yang secara langsung berdampak pada persyaratan sistem untuk GTA VI. Langkah ini memicu kekhawatiran baru di komunitas modding dan jailbreak global.",

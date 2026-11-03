@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: kecerdasan-buatan-tingkat-lanjut-model-ai-berhas-20261103
+  'kecerdasan-buatan-tingkat-lanjut-model-ai-berhas-20261103': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-engineer-successfully-compiles-a-32-bit-risc-v-cpu-in-qwen-3-5-4b-llm-inserted-directly-into-its-weights-built-in-cpu-can-run-processor-arithmetic-operations-code-and-of-course-doom",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Kecerdasan Buatan Tingkat Lanjut: Model AI Berhasil Menanamkan CPU RISC-V 32-Bit Langsung ke Dalam Bobotnya dan Menjalankan Game DOOM"
+  },
+
   // Auto-generated Daily News Entry: perang-firmware-playstation-persyaratan-firmware-20261102
   'perang-firmware-playstation-persyaratan-firmware-20261102': {
     publisher: "Wccftech",
