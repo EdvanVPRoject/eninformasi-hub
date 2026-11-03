@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: skandal-penyelundupan-chip-ai-memori-hbm-korsel--20261103
+  'skandal-penyelundupan-chip-ai-memori-hbm-korsel--20261103': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/semiconductors/ai-chip-smugglers-exploit-trade-control-loophole-to-bring-banned-hbm-from-south-korea-into-china-expensive-memory-chips-packaged-with-cheap-unsanctioned-processors-to-become-legal-exports",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Skandal Penyelundupan Chip AI: Memori HBM Korsel Disusupkan ke Tiongkok Lewat Celah Ekspor"
+  },
+
   // Auto-generated Daily News Entry: kejutan-besar-di-steam-hardware-survey-geforce-r-20261103
   'kejutan-besar-di-steam-hardware-survey-geforce-r-20261103': {
     publisher: "Google News Tech Wire",

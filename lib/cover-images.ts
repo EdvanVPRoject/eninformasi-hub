@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'skandal-penyelundupan-chip-ai-memori-hbm-korsel--20261103': {
+    url: U('1555617981-dac3880eac6e'),
+    caption: "Tumpukan wafer semikonduktor canggih dan modul memori HBM dalam fasilitas laboratorium pengujian bersih.",
+    source: 'Unsplash'
+  },
   // === Nov 2026 Daily News ===
   'kejutan-besar-di-steam-hardware-survey-geforce-r-20261103': {
     url: U('1591488320449-011701bb6704'),

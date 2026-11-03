@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-penyelundupan-chip-ai-memori-hbm-korsel--20261103",
+    "title": "Skandal Penyelundupan Chip AI: Memori HBM Korsel Disusupkan ke Tiongkok Lewat Celah Ekspor",
+    "description": "Penyelundup chip AI memanfaatkan celah kontrol perdagangan dengan mengemas memori HBM mahal asal Korea Selatan bersama prosesor murah tanpa sanksi agar lolos sebagai ekspor legal ke Tiongkok.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Mahir",
+    "pubDate": "2026-11-03T12:54:51.232Z",
+    "updatedDate": "2026-11-03T12:54:51.232Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AI Chips",
+      "HBM",
+      "Semikonduktor",
+      "Geopolitik Teknologi",
+      "Tiongkok"
+    ],
+    "en": {
+      "title": "AI Chip Smuggling Ring Exploits Trade Loophole to Funnel South Korean HBM into China",
+      "description": "Smugglers bypass trade controls by packaging expensive high-bandwidth memory chips alongside cheap, unsanctioned processors to pass them off as legal exports to China."
+    }
+  },
+  {
     "slug": "kejutan-besar-di-steam-hardware-survey-geforce-r-20261103",
     "title": "Kejutan Besar di Steam Hardware Survey: GeForce RTX 3060 Rebut Kembali Tahta, Singkirkan RTX 5070 dalam Waktu Singkat",
     "description": "Dominasi kartu grafis seri terbaru NVIDIA menghadapi ujian berat setelah GeForce RTX 3060 kembali meroket ke puncak Steam Hardware Survey, menggeser RTX 5070 yang baru sebulan menikmati posisi teratas.",
