@@ -248,8 +248,9 @@ function TutorialContent() {
 
               return (
                 <article
-                  key={article.slug}
-                  className="group flex flex-col justify-between overflow-hidden rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] card-smooth-hover active:scale-[0.98] shadow-sm"
+                  key={`${selectedCategory}-${article.slug}`}
+                  style={{ animationDelay: `${Math.min(index, 7) * 30}ms` }}
+                  className="group flex flex-col justify-between overflow-hidden rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] card-smooth-hover active:scale-[0.98] shadow-sm animate-stagger-card"
                 >
                   <div>
                     {/* Featured Image Thumbnail Header */}
@@ -304,10 +305,10 @@ function TutorialContent() {
                     </span>
                     <Link
                       href={`/tutorial/${article.slug}`}
-                      className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-emerald-500 hover:text-emerald-400 group-hover:translate-x-0.5 transition-all"
+                      className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-emerald-500 hover:text-emerald-400 transition-colors"
                     >
                       <span>{lang === 'en' ? 'Start Tutorial' : 'Mulai Tutorial'}</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
+                      <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1.5 transition-transform duration-200 ease-out" />
                     </Link>
                   </div>
                 </article>

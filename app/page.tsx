@@ -178,7 +178,7 @@ function HomeContent() {
         {/* Full-width Hero Header: Badge & Single-Line Title */}
         <div className="relative z-10 space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold rounded-full bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 border border-emerald-500/20">
-            <Zap className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400 shrink-0" />
+            <Zap className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400 shrink-0 animate-zap-tilt" />
             <span>
               {lang === 'en'
                 ? `EnInformasi Hub — ${totalArticleCount} Tutorials, Gaming & Future Tech Trends`
@@ -360,7 +360,7 @@ function HomeContent() {
                     </div>
                   </div>
                 </div>
-                <ArrowRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-all shrink-0 ml-2" />
+                <ArrowRight className="w-3.5 h-3.5 text-[var(--text-muted)] group-hover:text-emerald-500 group-hover:translate-x-1.5 transition-all duration-200 ease-out shrink-0 ml-2" />
               </Link>
 
               <button
@@ -560,8 +560,9 @@ function HomeContent() {
 
                   return (
                     <article
-                      key={article.slug}
-                      className="group flex flex-col justify-between overflow-hidden rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 card-smooth-hover active:scale-[0.99] shadow-sm"
+                      key={`${selectedType}-${selectedCategory}-${article.slug}`}
+                      style={{ animationDelay: `${Math.min(index, 7) * 30}ms` }}
+                      className="group flex flex-col justify-between overflow-hidden rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 card-smooth-hover active:scale-[0.99] shadow-sm animate-stagger-card"
                     >
                       <div>
                         {/* Featured Image Thumbnail Header */}
@@ -631,14 +632,14 @@ function HomeContent() {
 
                         <Link
                           href={targetUrl}
-                          className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-emerald-500 hover:text-emerald-400 group-hover:translate-x-1 duration-200 transition-all whitespace-nowrap"
+                          className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-emerald-500 hover:text-emerald-400 transition-colors whitespace-nowrap"
                         >
                           <span>
                             {article.postType === 'tutorial'
                               ? (lang === 'en' ? 'Start Tutorial' : 'Mulai Tutorial')
                               : (lang === 'en' ? 'Read Article' : 'Baca Informasi')}
                           </span>
-                          <ChevronRight className="w-3.5 h-3.5" />
+                          <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1.5 transition-transform duration-200 ease-out" />
                         </Link>
                       </div>
                     </article>
