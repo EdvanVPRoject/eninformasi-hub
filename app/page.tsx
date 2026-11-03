@@ -324,7 +324,7 @@ function HomeContent() {
                     <button
                       key={topic}
                       type="button"
-                      onClick={() => handleTopicClick(topic)}
+                      onClick={() => handleToggleTrending(topic)}
                       aria-label={`Filter topik ${topic}`}
                       className={`px-2.5 py-1 rounded-lg text-xs font-mono font-medium border transition-all duration-150 flex items-center gap-1 hover:-translate-y-0.5 hover:shadow-sm active:scale-95 ${
                         isActive
@@ -504,8 +504,18 @@ function HomeContent() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder={t('filter_search_placeholder')}
-                className="w-full pl-9 pr-4 py-1.5 text-xs sm:text-sm bg-transparent border-none outline-none text-[var(--text-main)] placeholder-[var(--text-muted)]"
+                className="w-full pl-9 pr-8 py-1.5 text-xs sm:text-sm bg-transparent border-none outline-none text-[var(--text-main)] placeholder-[var(--text-muted)]"
               />
+              {searchQuery && (
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery('')}
+                  aria-label="Hapus pencarian"
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 p-1 rounded-md text-[var(--text-muted)] hover:text-emerald-400 active:scale-90 transition-all"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
             </div>
 
             <div className="flex items-center gap-2 flex-wrap">
@@ -530,6 +540,45 @@ function HomeContent() {
               </div>
             </div>
           </div>
+
+          {/* Interactive Active Filter Chips Bar */}
+          {(selectedCategory !== 'all' || selectedType !== 'all' || searchQuery.trim() !== '') && (
+            <div className="flex flex-wrap items-center gap-2 px-1 animate-chip-in">
+              <span className="text-[11px] font-mono text-[var(--text-muted)]">
+                {lang === 'en' ? 'Active Filters:' : 'Filter Aktif:'}
+              </span>
+              {selectedType !== 'all' && (
+                <button
+                  type="button"
+                  onClick={() => handleSelectType('all')}
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 active:scale-95 transition-all"
+                >
+                  <span>{selectedType === 'tutorial' ? 'Tutorial' : (lang === 'en' ? 'Information' : 'Informasi')}</span>
+                  <X className="w-3 h-3" />
+                </button>
+              )}
+              {selectedCategory !== 'all' && (
+                <button
+                  type="button"
+                  onClick={() => handleSelectCategory('all')}
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 active:scale-95 transition-all"
+                >
+                  <span>{getCategoryLabel(selectedCategory, lang)}</span>
+                  <X className="w-3 h-3" />
+                </button>
+              )}
+              {searchQuery.trim() !== '' && (
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery('')}
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 active:scale-95 transition-all"
+                >
+                  <span>&ldquo;{searchQuery}&rdquo;</span>
+                  <X className="w-3 h-3" />
+                </button>
+              )}
+            </div>
+          )}
 
           {/* Articles Grid */}
           {filteredArticles.length === 0 ? (
@@ -621,12 +670,15 @@ function HomeContent() {
                       <div className="px-4 pb-4 sm:px-5 sm:pb-5 pt-3 border-t border-[var(--border-color)]/70 flex items-center justify-between gap-2">
                         <div className="flex flex-wrap gap-1.5 overflow-hidden max-h-6">
                           {article.tags.slice(0, 2).map((tag) => (
-                            <span
+                            <button
                               key={tag}
-                              className="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-500/10 text-[var(--text-muted)]"
+                              type="button"
+                              onClick={() => handleToggleTrending(tag)}
+                              title={`Filter topik #${tag}`}
+                              className="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-500/10 text-[var(--text-muted)] hover:bg-emerald-500/15 hover:text-emerald-400 border border-transparent hover:border-emerald-500/30 active:scale-95 transition-all duration-150"
                             >
                               #{tag}
-                            </span>
+                            </button>
                           ))}
                         </div>
 

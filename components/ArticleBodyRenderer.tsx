@@ -1,24 +1,47 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import CodeBlock from './CodeBlock';
 import { TocItem } from '@/lib/types';
-import { Image as ImageIcon, ExternalLink, BarChart3, ChevronRight } from 'lucide-react';
+import { Image as ImageIcon, ExternalLink, BarChart3, ChevronRight, Hash, Check } from 'lucide-react';
 import { resolveSourceUrl, resolvePhotoSource, ArticleReference } from '@/lib/article-references';
 
 interface ArticleBodyRendererProps {
   content: string;
   toc?: TocItem[];
   articleRef?: ArticleReference;
+  fontScale?: 'sm' | 'md' | 'lg';
 }
 
-export default function ArticleBodyRenderer({ content, toc, articleRef }: ArticleBodyRendererProps) {
+export default function ArticleBodyRenderer({ content, toc, articleRef, fontScale = 'md' }: ArticleBodyRendererProps) {
+  const [copiedAnchor, setCopiedAnchor] = useState<string | null>(null);
   // Split content by code blocks ```...```
   const parts = content.split(/(```[\s\S]*?```)/g);
   let h3Count = 0;
 
+  const textScaleClass =
+    fontScale === 'sm'
+      ? 'text-[14.5px] sm:text-[15.5px] leading-[1.8]'
+      : fontScale === 'lg'
+      ? 'text-[17px] sm:text-[18.5px] leading-[1.92]'
+      : 'text-[15.5px] sm:text-[17px] leading-[1.85]';
+
+  const handleCopyAnchor = (id: string) => {
+    if (typeof window !== 'undefined') {
+      const url = `${window.location.origin}${window.location.pathname}#${id}`;
+      navigator.clipboard.writeText(url);
+      setCopiedAnchor(id);
+      setTimeout(() => setCopiedAnchor(null), 1800);
+      const el = document.getElementById(id);
+      if (el) {
+        const top = el.getBoundingClientRect().top + window.scrollY - 84;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
-    <div className="space-y-5 text-[15.5px] sm:text-[17px] leading-[1.85] text-[var(--text-main)] font-normal">
+    <div className={`space-y-5 ${textScaleClass} text-[var(--text-main)] font-normal transition-all duration-200`}>
       {parts.map((part, index) => {
         if (!part.trim()) return null;
 
@@ -273,15 +296,26 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
                       )}
                       <h3
                         id={targetId}
-                        className="text-lg sm:text-[21px] font-extrabold tracking-tight text-[var(--text-main)] pt-6 sm:pt-8 pb-2.5 border-b border-[var(--border-color)]/70 scroll-mt-24 flex items-center gap-2.5"
+                        onClick={() => handleCopyAnchor(targetId)}
+                        className="group/h3 text-lg sm:text-[21px] font-extrabold tracking-tight text-[var(--text-main)] pt-6 sm:pt-8 pb-2.5 border-b border-[var(--border-color)]/70 scroll-mt-24 flex items-center justify-between gap-2.5 cursor-pointer select-none"
+                        title="Klik untuk menyalin tautan bagian ini"
                       >
-                        <span className="w-1.5 h-5 sm:h-6 rounded-full bg-emerald-500 shrink-0" />
-                        <span>{headingText}</span>
+                        <span className="flex items-center gap-2.5 min-w-0">
+                          <span className="w-1.5 h-5 sm:h-6 rounded-full bg-emerald-500 group-hover/h3:scale-y-110 group-hover/h3:shadow-[0_0_10px_rgba(16,185,129,0.6)] transition-all duration-200 shrink-0" />
+                          <span className="group-hover/h3:text-emerald-400 transition-colors duration-200">{headingText}</span>
+                        </span>
+                        <span className="p-1.5 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] opacity-0 group-hover/h3:opacity-100 group-hover/h3:border-emerald-500/40 group-hover/h3:text-emerald-400 transition-all duration-200 shrink-0">
+                          {copiedAnchor === targetId ? (
+                            <Check className="w-3.5 h-3.5 text-emerald-500" />
+                          ) : (
+                            <Hash className="w-3.5 h-3.5" />
+                          )}
+                        </span>
                       </h3>
                     </div>
                     {extraParagraph && (
                       <p
-                        className="leading-[1.85] text-[15.5px] sm:text-[17px] text-[var(--text-main)]/90 text-left tracking-[0.005em] break-words"
+                        className={`${textScaleClass} text-[var(--text-main)]/90 text-left tracking-[0.005em] break-words transition-all duration-200`}
                         dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(extraParagraph) }}
                       />
                     )}
@@ -379,7 +413,7 @@ export default function ArticleBodyRenderer({ content, toc, articleRef }: Articl
               return (
                 <p
                   key={blockIdx}
-                  className="leading-[1.85] text-[15.5px] sm:text-[17px] text-[var(--text-main)]/90 text-left tracking-[0.005em] break-words"
+                  className={`${textScaleClass} text-[var(--text-main)]/90 text-left tracking-[0.005em] break-words transition-all duration-200`}
                   dangerouslySetInnerHTML={{ __html: formatInlineMarkdown(trimmed) }}
                 />
               );

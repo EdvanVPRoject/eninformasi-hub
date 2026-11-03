@@ -295,6 +295,7 @@ FORMAT JSON OUTPUT YANG WAJIB DIHASILKAN (HANYA JSON MURNI TANPA MARKDOWN BACKTI
   "difficulty": "Menengah",
   "publisher": "Nama publisher/portal resmi asli (contoh: Tom's Hardware, Eurogamer, The Verge, dll)",
   "sourceUrl": "https://... (URL rujukan resmi yang valid dan aktif)",
+  "visualCaption": "Deskripsi visual fotografi editorial singkat (1 kalimat padat, 8-14 kata) yang menggambarkan objek fisik perangkat keras, konsol, chip silikon, atau infrastruktur AI utama berita — DILARANG KERAS mengulang kalimat judul berita",
   "content": "### 1. Kronologi & Latar Belakang Peristiwa\\n\\n...\\n\\n### 2. Bedah Teknis & Analisis Arsitektur Mendalam\\n\\n...\\n\\n### 3. Komparasi Tolak Ukur & Lanskap Kompetitor\\n\\n| Parameter / Metrik | Hardware / Model Baru | Alternatif / Model Lama | Delta |\\n|---|---|---|---|\\n...\\n\\n### 4. Respons Komunitas & Sentimen Industri\\n\\n...\\n\\n### 5. Panduan Praktis & Antisipasi bagi Konsumen\\n\\n...\\n\\n### 6. Kesimpulan, Prospek & Rujukan Sumber Asli\\n\\n...\\n\\n*Sumber: Nama Publisher Resmi*",
   "en": {
     "title": "Catchy, high-impact English title for global audience",
@@ -493,8 +494,8 @@ async function run() {
   console.log('Judul (EN):', newArticle.en.title);
   console.log('Kategori:', newArticle.category);
 
-  // Step 5: Generate 100% Unique Bespoke SVG Cover (Zero Duplicates & Zero 404s)
-  console.log('Menghasilkan Cover Vektor SVG Kustom...');
+  // Step 5: Generate 100% Unique Bespoke Text-Free SVG Cover & Register Topic Photography in lib/cover-images.ts
+  console.log('Menghasilkan Cover Vektor SVG Kustom (Bebas Teks Judul) & Mendaftarkan Fotografi Topik...');
   try {
     const coversDir = path.join(ROOT_DIR, 'public', 'covers');
     if (!fs.existsSync(coversDir)) {
@@ -508,9 +509,100 @@ async function run() {
     });
     const svgPath = path.join(coversDir, `${slug}.svg`);
     fs.writeFileSync(svgPath, svgCode, 'utf8');
-    console.log(`Bespoke SVG Cover berhasil dibuat di: ${svgPath}`);
+    console.log(`Bespoke Text-Free SVG Cover berhasil dibuat di: ${svgPath}`);
   } catch (err) {
     console.warn('Gagal membuat SVG cover:', err.message);
+  }
+
+  // Step 5b: Auto-register high-res topic-aligned Unsplash photo & editorial caption in lib/cover-images.ts
+  try {
+    const coverImagesPath = path.join(ROOT_DIR, 'lib', 'cover-images.ts');
+    if (fs.existsSync(coverImagesPath)) {
+      let coverFileContent = fs.readFileSync(coverImagesPath, 'utf8');
+      const recentIdMatches = [...coverFileContent.matchAll(/url:\s*U\(['"]([^'"]+)['"]\)/g)].slice(0, 14).map(m => m[1]);
+      const recentUsedIds = new Set(recentIdMatches);
+
+      const TOPIC_POOLS = [
+        {
+          keywords: ['rtx', 'geforce', 'nvidia', 'dlss', 'gpu', 'vram', 'gb202', 'blackwell', '5090', '5080', '5070', '3060', '4090'],
+          ids: ['1591488320449-011701bb6704', '1587202372775-e229f172b9d7', '1587202372634-32705e3bf49c', '1624705002806-5d72df19c3ad', '1597852074816-d933c7d2b988'],
+          fallbackCaption: 'Arsitektur Kartu Grafis Modern & Pengujian Performa Komputasi Rig PC Gaming'
+        },
+        {
+          keywords: ['amd', 'radeon', 'ryzen', 'fsr', 'rdna', 'udna', 'x3d', 'threadripper'],
+          ids: ['1591799264318-7e6ef8ddb7ea', '1555617981-dac3880eac6e', '1587202372775-e229f172b9d7', '1518770660439-4636190af475'],
+          fallbackCaption: 'Prosesor Multi-Core & Akselerator Grafis Arsitektur Komputasi Generasi Baru'
+        },
+        {
+          keywords: ['playstation', 'ps5', 'ps6', 'sony', 'dualsense', 'xbox', 'nintendo', 'switch', 'gta', 'rockstar', 'konsol', 'console'],
+          ids: ['1606813907291-d86efa9b94db', '1605901309584-818e25960b8f', '1612287230202-1ff1d85d1bdf', '1538481199705-c710c4e965fc', '1511512578047-dfb367046420'],
+          fallbackCaption: 'Ekosistem Konsol Gaming Generasi Terbaru & Perangkat keras Hiburan Interaktif'
+        },
+        {
+          keywords: ['steam', 'handheld', 'deck', 'rog', 'ally', 'portable', 'esports', 'valorant', 'cs2', 'dota', 'fps'],
+          ids: ['1542751371-adc38448a05e', '1538481199705-c710c4e965fc', '1560253023-3ec5d502959f', '1593305841991-05c297ba4575'],
+          fallbackCaption: 'Setup Kompetitif PC Gaming, Periferal Presisi & Perangkat Gaming Portabel'
+        },
+        {
+          keywords: ['intel', 'risc-v', 'chip', 'semiconductor', 'semikonduktor', 'tsmc', 'wafer', 'cpu', 'pcb', 'motherboard', 'ram', 'ddr5'],
+          ids: ['1518770660439-4636190af475', '1591799264318-7e6ef8ddb7ea', '1562408590-e32931084e23', '1581092160607-ee22621dd758', '1555617981-dac3880eac6e'],
+          fallbackCaption: 'Mikroarsitektur Silikon Semikonduktor & Sirkuit Papan Induk Komputasi Presisi'
+        },
+        {
+          keywords: ['malware', 'security', 'keamanan', 'siber', 'hacker', 'exploit', 'firmware', 'kernel', 'linux', 'windows'],
+          ids: ['1526374965328-7f61d4dc18c5', '1563986768609-322da13575f3', '1555066931-4365d14bab8c', '1629654297299-c8506221ca97'],
+          fallbackCaption: 'Sistem Pertahanan Keamanan Siber, Forensik Digital & Proteksi Kernel Sistem Operasi'
+        },
+        {
+          keywords: ['server', 'cloud', 'datacenter', 'data center', 'superkomputer', 'cluster', 'infrastruktur'],
+          ids: ['1558494949-ef010cbdcc31', '1558346490-a72e53ae2d4f', '1451187580459-43490279c0fa', '1597852074816-d933c7d2b988'],
+          fallbackCaption: 'Infrastruktur Kluster Server Data Center & Jaringan Komputasi Skala Enterprise'
+        },
+        {
+          keywords: ['ai', 'agent', 'llm', 'openai', 'claude', 'gemini', 'deepseek', 'qwen', 'model', 'neural'],
+          ids: ['1677442136019-21780ecad995', '1620712943543-bcc4688e7485', '1639762681485-074b7f938ba0', '1618005182384-a83a8bd57fbe', '1507146153580-69a1fe6d8aa1'],
+          fallbackCaption: 'Orkestrasi Jaringan Saraf Tiruan, Agen AI Otonom & Komputasi Model Bahasa Besar'
+        }
+      ];
+
+      const corpus = `${newArticle.slug} ${newArticle.title} ${(newArticle.tags || []).join(' ')} ${newArticle.category}`.toLowerCase();
+      let matchedPool = TOPIC_POOLS.find(p => p.keywords.some(kw => corpus.includes(kw))) || TOPIC_POOLS[0];
+
+      // Pick an ID from the matched pool that hasn't been used in the most recent 14 articles
+      let chosenId = matchedPool.ids.find(id => !recentUsedIds.has(id));
+      if (!chosenId) {
+        // Check across all pools for a fresh ID
+        for (const pool of TOPIC_POOLS) {
+          const candidate = pool.ids.find(id => !recentUsedIds.has(id));
+          if (candidate) {
+            chosenId = candidate;
+            break;
+          }
+        }
+      }
+      if (!chosenId) chosenId = matchedPool.ids[0];
+
+      // Ensure caption is descriptive and NEVER repeats the article title
+      let finalCaption = (generated.visualCaption || '').trim();
+      if (
+        !finalCaption ||
+        finalCaption.length < 15 ||
+        finalCaption.toLowerCase() === newArticle.title.toLowerCase() ||
+        calculateSimilarity(finalCaption, newArticle.title) > 0.60
+      ) {
+        finalCaption = matchedPool.fallbackCaption;
+      }
+
+      const coverMarker = 'const SLUG_VISUALS: Record<string, ArticleVisual> = {';
+      if (coverFileContent.includes(coverMarker) && !coverFileContent.includes(`'${slug}':`)) {
+        const newVisualEntry = `  '${slug}': {\n    url: U('${chosenId}'),\n    caption: ${JSON.stringify(finalCaption)},\n    source: 'Unsplash'\n  },`;
+        coverFileContent = coverFileContent.replace(coverMarker, `${coverMarker}\n${newVisualEntry}`);
+        fs.writeFileSync(coverImagesPath, coverFileContent, 'utf8');
+        console.log(`Berhasil mendaftarkan fotografi visual unik untuk ${slug} di lib/cover-images.ts`);
+      }
+    }
+  } catch (err) {
+    console.warn('Gagal memperbarui lib/cover-images.ts:', err.message);
   }
 
   // Step 6: Register Verified Source Reference in lib/article-references.ts
