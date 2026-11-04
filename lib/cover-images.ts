@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'skandal-postman-auto-install-plugin-ai-kebocoran-20261104': {
+    url: U('1581092160607-ee22621dd758'),
+    caption: "Tangkapan layar antarmuka aplikasi pengujian API dengan jendela peringatan keamanan sistem.",
+    source: 'Unsplash'
+  },
   'skandal-penyelundupan-chip-ai-memori-hbm-korsel--20261103': {
     url: U('1555617981-dac3880eac6e'),
     caption: "Tumpukan wafer semikonduktor canggih dan modul memori HBM dalam fasilitas laboratorium pengujian bersih.",

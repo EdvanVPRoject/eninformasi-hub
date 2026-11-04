@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-postman-auto-install-plugin-ai-kebocoran-20261104",
+    "title": "Skandal Postman Auto-Install Plugin AI: Kebocoran Data API Sensitif Picu Kemarahan Global",
+    "description": "Komunitas pengembang global dihebohkan oleh tindakan Postman yang secara diam-diam memasang plugin kecerdasan buatan dan mencoba membagikan seluruh data API sensitif pengguna tanpa persetujuan eksplisit.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-04T00:54:23.794Z",
+    "updatedDate": "2026-11-04T00:54:23.794Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Postman",
+      "Cybersecurity",
+      "API Development",
+      "Artificial Intelligence",
+      "Data Privacy"
+    ],
+    "en": {
+      "title": "Postman Silent AI Plugin Auto-Install Sparks Global Outrage Over Sensitive API Data Leaks",
+      "description": "The global developer community is in an uproar after discovering that Postman silently installed artificial intelligence plugins and attempted to share all sensitive API data without explicit consent."
+    }
+  },
+  {
     "slug": "skandal-penyelundupan-chip-ai-memori-hbm-korsel--20261103",
     "title": "Skandal Penyelundupan Chip AI: Memori HBM Korsel Disusupkan ke Tiongkok Lewat Celah Ekspor",
     "description": "Penyelundup chip AI memanfaatkan celah kontrol perdagangan dengan mengemas memori HBM mahal asal Korea Selatan bersama prosesor murah tanpa sanksi agar lolos sebagai ekspor legal ke Tiongkok.",

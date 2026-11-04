@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: skandal-postman-auto-install-plugin-ai-kebocoran-20261104
+  'skandal-postman-auto-install-plugin-ai-kebocoran-20261104': {
+    publisher: "Hacker News Community",
+    sourceUrl: "https://github.com/postmanlabs/postman-app-support/issues/14370",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Skandal Postman Auto-Install Plugin AI: Kebocoran Data API Sensitif Picu Kemarahan Global"
+  },
+
   // Auto-generated Daily News Entry: skandal-penyelundupan-chip-ai-memori-hbm-korsel--20261103
   'skandal-penyelundupan-chip-ai-memori-hbm-korsel--20261103': {
     publisher: "Tom's Hardware",
