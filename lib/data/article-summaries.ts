@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-energi-xai-elon-musk-gunakan-8-mesin-jet-20261104",
+    "title": "Skandal Energi xAI: Elon Musk Gunakan 8 Mesin Jet Bekas untuk Tenaga Pusat Data",
+    "description": "Terungkapnya penggunaan delapan mesin jet konversi sebagai sumber daya cadangan pusat data xAI di Mississippi memicu kekhawatiran lingkungan yang serius. Praktik kontroversial ini menyoroti ambisi besar Musk di tengah meningkatnya kebutuhan energi untuk infrastruktur AI global.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-04T07:02:54.513Z",
+    "updatedDate": "2026-11-04T07:02:54.513Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "xAI",
+      "Elon Musk",
+      "Data Center",
+      "Green Energy",
+      "Jet Engines"
+    ],
+    "en": {
+      "title": "The xAI Energy Scandal: Elon Musk Deploys 8 Converted Jet Engines to Power Data Center",
+      "description": "The revelation that xAI is using eight converted jet engines as backup power for its Mississippi data center has sparked serious environmental concerns. This controversial move highlights Musk's aggressive ambition amidst the global surge in energy demand for AI infrastructure."
+    }
+  },
+  {
     "slug": "skandal-postman-auto-install-plugin-ai-kebocoran-20261104",
     "title": "Skandal Postman Auto-Install Plugin AI: Kebocoran Data API Sensitif Picu Kemarahan Global",
     "description": "Komunitas pengembang global dihebohkan oleh tindakan Postman yang secara diam-diam memasang plugin kecerdasan buatan dan mencoba membagikan seluruh data API sensitif pengguna tanpa persetujuan eksplisit.",
