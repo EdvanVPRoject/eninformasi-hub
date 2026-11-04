@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: sejarah-baru-industri-pc-amd-diproyeksikan-salip-20261104
+  'sejarah-baru-industri-pc-amd-diproyeksikan-salip-20261104': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Sejarah Baru Industri PC: AMD Diproyeksikan Salip Penjualan Intel di Kuartal 4 dengan Panduan Pendapatan $17 Miliar"
+  },
+
   // Auto-generated Daily News Entry: skandal-energi-xai-elon-musk-gunakan-8-mesin-jet-20261104
   'skandal-energi-xai-elon-musk-gunakan-8-mesin-jet-20261104': {
     publisher: "Tom's Hardware",

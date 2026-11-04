@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "sejarah-baru-industri-pc-amd-diproyeksikan-salip-20261104",
+    "title": "Sejarah Baru Industri PC: AMD Diproyeksikan Salip Penjualan Intel di Kuartal 4 dengan Panduan Pendapatan $17 Miliar",
+    "description": "AMD mencatatkan tonggak sejarah luar biasa dengan proyeksi penjualan yang diperkirakan melampaui Intel untuk pertama kalinya dalam sejarah pada Q4, didorong oleh momentum kuat di pasar server, pusat data, dan lini prosesor konsumen.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-04T12:54:58.263Z",
+    "updatedDate": "2026-11-04T12:54:58.263Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AMD",
+      "Intel",
+      "CPU",
+      "Tom's Hardware",
+      "Hardware PC"
+    ],
+    "en": {
+      "title": "A Historic PC Industry Milestone: AMD Projected to Outsell Intel in Q4 with $17B Guidance",
+      "description": "AMD achieves a monumental industry milestone with sales projections expected to surpass Intel for the first time in history during Q4, fueled by strong momentum in server, data center, and consumer processor markets."
+    }
+  },
+  {
     "slug": "skandal-energi-xai-elon-musk-gunakan-8-mesin-jet-20261104",
     "title": "Skandal Energi xAI: Elon Musk Gunakan 8 Mesin Jet Bekas untuk Tenaga Pusat Data",
     "description": "Terungkapnya penggunaan delapan mesin jet konversi sebagai sumber daya cadangan pusat data xAI di Mississippi memicu kekhawatiran lingkungan yang serius. Praktik kontroversial ini menyoroti ambisi besar Musk di tengah meningkatnya kebutuhan energi untuk infrastruktur AI global.",

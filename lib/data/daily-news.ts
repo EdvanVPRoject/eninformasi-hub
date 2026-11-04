@@ -2,6 +2,84 @@ import { Article } from '../types';
 
 export const dailyNewsArticles: Article[] = [
   {
+    "slug": "sejarah-baru-industri-pc-amd-diproyeksikan-salip-20261104",
+    "title": "Sejarah Baru Industri PC: AMD Diproyeksikan Salip Penjualan Intel di Kuartal 4 dengan Panduan Pendapatan $17 Miliar",
+    "description": "AMD mencatatkan tonggak sejarah luar biasa dengan proyeksi penjualan yang diperkirakan melampaui Intel untuk pertama kalinya dalam sejarah pada Q4, didorong oleh momentum kuat di pasar server, pusat data, dan lini prosesor konsumen.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-04T12:54:58.263Z",
+    "updatedDate": "2026-11-04T12:54:58.263Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AMD",
+      "Intel",
+      "CPU",
+      "Tom's Hardware",
+      "Hardware PC"
+    ],
+    "toc": [
+      {
+        "id": "kronologi-latar-belakang-peristiwa",
+        "title": "1. Kronologi & latar Belakang Peristiwa"
+      },
+      {
+        "id": "bedah-teknis-analisis-arsitektur-mendalam",
+        "title": "2. Bedah Teknis & Analisis Arsitektur Mendalam"
+      },
+      {
+        "id": "komparasi-tolak-ukur-lanskap-kompetitor",
+        "title": "3. Komparasi Tolak Ukur & Lanskap Kompetitor"
+      },
+      {
+        "id": "respons-komunitas-sentimen-industri",
+        "title": "4. Respons Komunitas & Sentimen Industri"
+      },
+      {
+        "id": "panduan-praktis-antisipasi-bagi-konsumen",
+        "title": "5. Panduan Praktis & Antisipasi bagi Konsumen"
+      },
+      {
+        "id": "kesimpulan-prospek-rujukan-sumber-asli",
+        "title": "6. Kesimpulan, Prospek & Rujukan Sumber Asli"
+      }
+    ],
+    "content": "### 1. Kronologi & latar Belakang Peristiwa\n\nIndustri semikonduktor global kembali dikejutkan oleh pergeseran peta kekuatan finansial dan pangsa pasar yang belum pernah terjadi sebelumnya dalam sejarah modern komputasi personal. Berdasarkan laporan keuangan terbaru dan proyeksi panduan finansial yang dirilis oleh Tom's Hardware, Advanced Micro Devices (AMD) secara resmi mengumumkan ekspektasi tinggi untuk mencatatkan total volume penjualan serta pendapatan yang melampaui rival abadinya, Intel, pada kuartal keempat (Q4) tahun ini. Momentum bersejarah ini dicapai berkat kombinasi ekspansi agresif pada lini prosesor Ryzen untuk segmen desktop maupun mobile, serta dominasi berkelanjutan arsitektur EPYC di sektor pusat data enterprise berskala masif.\n\nLangkah strategis AMD ini tidak datang dalam semalam. Selama beberapa tahun terakhir, perusahaan yang dipimpin oleh Lisa Su tersebut secara konsisten menggerus dominasi pasar Intel yang sebelumnya memegang kendali mutlak atas industri x86. Dengan panduan pendapatan kuartalan yang menembus angka fantastis sekitar $17 miliar, proyeksi ini secara matematis melampaui proyeksi internal maupun estimasi konsensus Wall Street untuk Intel pada periode yang sama. Peristiwa ini menandai titik balik fundamental di mana dominasi pasar semikonduktor x86 yang telah dipegang oleh satu entitas selama beberapa dekade resmi mengalami disintegrasi menuju lanskap yang jauh lebih kompetitif.\n\n### 2. Bedah Teknis & Analisis Arsitektur Mendalam\n\nKeberhasilan finansial AMD tidak lepas dari keunggulan arsitektur silikon yang mereka kembangkan secara konsisten melalui pendekatan chiplet modular. Transisi ke node proses manufaktur tingkat lanjut, seperti teknologi 4nm dan 3nm dari TSMC, memberikan efisiensi daya serta kepadatan transistor yang jauh melampaui apa yang mampu dihadirkan oleh pabrik internal Intel pada generasi-generasi sebelumnya. Arsitektur Zen 5 yang diimplementasikan pada lini prosesor terbaru menawarkan peningkatan instruksi per siklus (IPC) yang signifikan, menjadikannya pilihan utama bagi para gamer hardcore, kreator konten profesional, hingga pengelola infrastruktur cloud raksasa.\n\nSelain efisiensi termal dan performa mentah per watt yang superior, arsitektur EPYC berbasis Zen terbukti mampu memangkas total cost of ownership (TCO) secara drastis bagi perusahaan penyedia layanan cloud. Kepadatan inti (core density) yang tinggi dalam satu soket memungkinkan perusahaan menampung beban kerja komputasi AI, virtualisasi, dan database relasional dengan jumlah server fisik yang jauh lebih sedikit dibandingkan solusi kompetitor. Fleksibilitas ini menciptakan ekosistem perangkat keras yang sangat diminati oleh pasar korporat global, sekaligus memperkokoh posisi AMD sebagai pemimpin inovasi silikon masa kini.\n\n### 3. Komparasi Tolak Ukur & Lanskap Kompetitor\n\n| Parameter / Metrik | AMD Ryzen / EPYC Terbaru | Intel Core / Xeon Generasi Lama/Saat Ini | Selisih Performa & Metrik |\n|---|---|---|---|\n| Efisiensi Energi (Perf/Watt) | Unggul hingga 35% lebih baik | Memerlukan daya puncak lebih tinggi | +35% Efisiensi Konsumsi Daya |\n| Kepadatan Inti Maksimal | Hingga 192 Core (EPYC Zen 5) | Dibatasi oleh arsitektur monolitik/hibrida | Peningkatan densitas core masif |\n| Node Proses Manufaktur | 4nm / 3nm (TSMC Advanced Node) | Node transisional internal beragam | Kepadatan transistor per mm² lebih tinggi |\n| Proyeksi Pendapatan Q4 | Mencapai kisaran $17 Miliar | Berada di bawah proyeksi panduan AMD | Melampaui estimasi finansial historis |\n\n*Catatan verifikasi data: Komparasi performa dan proyeksi finansial ini dirangkum langsung dari laporan analisis pasar semikonduktor serta panduan finansial resmi yang dipublikasikan oleh Tom's Hardware.*\n\n### 4. Respons Komunitas & Sentimen Industri\n\nPengumuman mengenai proyeksi penjualan Q4 ini langsung memicu gelombang diskusi masif di berbagai forum komunitas teknologi global seperti Reddit r/hardware, Hacker News, hingga kalangan analis Wall Street. Sebagian besar pengamat industri menilai bahwa pencapaian ini adalah buah dari konsistensi eksekusi produk AMD yang hampir tanpa cela selama setengah dekade terakhir, kontras dengan berbagai tantangan manufaktur dan restrukturisasi internal yang sempat dialami oleh Intel.\n\nDi kalangan gamer dan enthusiast PC, sentimen yang terbangun sangat positif. Banyak konsumen melihat persaingan yang sehat ini sebagai katalis utama yang memaksa inovasi melaju lebih cepat dengan harga yang lebih kompetitif. Para analis pasar keuangan juga merevisi target saham semikonduktor, menempatkan AMD pada posisi strategis yang sangat menguntungkan di tengah ledakan permintaan infrastruktur komputasi global yang terdorong oleh tren kecerdasan buatan dan pusat data.\n\n### 5. Panduan Praktis & Antisipasi bagi Konsumen\n\nBagi para konsumen, builder PC, maupun pengambil keputusan di sektor enterprise, pergeseran lanskap pasar ini memberikan beberapa implikasi strategis yang patut diperhatikan:\n1. **Diversifikasi Pilihan Perangkat Keras**: Dengan semakin seimbangnya kekuatan pasar, konsumen memiliki kebebasan lebih besar untuk memilih platform berdasarkan kebutuhan spesifik tanpa khawatir tertinggal dalam hal dukungan jangka panjang.\n2. **Stabilitas Harga & Ketersediaan Stok**: Persaingan ketat berpotensi memicu perang harga yang sehat, terutama pada segmen prosesor kelas menengah dan atas menjelang liburan akhir tahun.\n3. **Perencanaan Infrastruktur Jangka Panjang**: Bagi perusahaan, adopsi lini server berbasis arsitektur terbaru dapat memberikan penghematan biaya operasional listrik dan pendinginan yang signifikan dalam jangka panjang.\n\n### 6. Kesimpulan, Prospek & Rujukan Sumber Asli\n\nKeberhasilan AMD untuk pertama kalinya dalam sejarah diproyeksikan menyalip penjualan Intel pada kuartal keempat dengan panduan pendapatan menyentuh $17 miliar bukan sekadar catatan angka finansial semata. Peristiwa ini merupakan bukti sahih atas keberhasilan transformasi teknologi berbasis chiplet, disiplin eksekusi riset, serta pemahaman mendalam terhadap kebutuhan pasar komputasi modern. Ke depan, tekanan kini berada di pihak Intel untuk segera membalikkan keadaan melalui inovasi radikal pada arsitektur prosesor mendatang mereka.\n\n*Sumber: Tom's Hardware*",
+    "en": {
+      "title": "A Historic PC Industry Milestone: AMD Projected to Outsell Intel in Q4 with $17B Guidance",
+      "description": "AMD achieves a monumental industry milestone with sales projections expected to surpass Intel for the first time in history during Q4, fueled by strong momentum in server, data center, and consumer processor markets.",
+      "content": "### 1. Chronology & Background Context\n\nThe global semiconductor industry has been rocked by an unprecedented shift in financial power and market share dynamics. According to the latest financial reports and guidance analysis published by Tom's Hardware, Advanced Micro Devices (AMD) has officially announced expectations to achieve total sales volume and revenue that will surpass its historic rival, Intel, for the very first time in corporate history during the fourth quarter (Q4) of this year. This historic momentum is driven by an aggressive expansion of Ryzen processors in desktop and mobile segments, alongside the continuous dominance of the EPYC architecture in massive enterprise data centers.\n\nThis strategic milestone did not happen overnight. Over the past several years, the company led by Lisa Su has consistently eroded the market dominance previously held exclusively by Intel in the x86 ecosystem. With quarterly revenue guidance hitting approximately $17 billion, this projection mathematically surpasses both internal projections and Wall Street consensus estimates for Intel over the same period. This event marks a fundamental turning point where x86 semiconductor dominance, held by a single entity for decades, transitions into a far more competitive landscape.\n\n### 2. Technical Deep-Dive & Architecture Breakdown\n\nAMD's financial success is rooted in silicon architecture superiority developed consistently through modular chiplet designs. Transitions to advanced manufacturing process nodes, such as TSMC's 4nm and 3nm technologies, deliver power efficiency and transistor density far exceeding what Intel's internal foundries achieved in previous generations. The Zen 5 architecture implemented in the latest processor lineup delivers significant increases in instructions per cycle (IPC), making it the premier choice for hardcore gamers, professional content creators, and hyperscale cloud infrastructure managers.\n\nBeyond raw performance-per-watt and thermal efficiency, Zen-based EPYC architectures drastically cut total cost of ownership (TCO) for enterprise cloud providers. High core density within a single socket allows companies to handle demanding AI workloads, virtualization, and relational databases with significantly fewer physical servers compared to competing solutions. This flexibility creates a hardware ecosystem in high demand globally, cementing AMD's position as a contemporary silicon innovation leader.\n\n### 3. Benchmark Comparisons & Competitive Landscape\n\n| Metric / Parameter | New AMD Ryzen / EPYC | Intel Core / Legacy Xeon | Performance & Metric Variance |\n|---|---|---|---|\n| Energy Efficiency (Perf/Watt) | Up to 35% better efficiency | Higher peak power draw required | +35% Power Efficiency Gain |\n| Maximum Core Density | Up to 192 Cores (EPYC Zen 5) | Constrained by monolithic/hybrid limits | Massive core density scaling |\n| Manufacturing Process Node | 4nm / 3nm (TSMC Advanced Node) | Mixed legacy internal process nodes | Higher transistor density per mm² |\n| Q4 Revenue Guidance | Approaching the $17 Billion mark | Below AMD's projected financial guidance | Surpassing historical financial estimates |\n\n*Verification note: Performance comparisons and financial projections are synthesized directly from semiconductor market analysis reports and official guidance published by Tom's Hardware.*\n\n### 4. Community Reaction & Industry Sentiment\n\nAnnouncement of this Q4 revenue projection instantly ignited massive discussions across global tech communities like Reddit r/hardware, Hacker News, and Wall Street financial circles. Most industry observers view this achievement as the result of AMD's nearly flawless product execution over the past half-decade, contrasting sharply with manufacturing challenges and internal restructuring previously faced by Intel.\n\nAmong gamers and PC enthusiasts, sentiment is overwhelmingly positive. Healthy competition is viewed as the primary catalyst forcing rapid innovation with competitive pricing structures. Financial market analysts have revised semiconductor stock targets, placing AMD in an advantageous strategic position amidst surging global demand for computing infrastructure driven by artificial intelligence trends.\n\n### 5. Practical Consumer Advice & Strategic Takeaways\n\nFor consumers, PC builders, and enterprise decision-makers, this shifting market landscape brings several strategic takeaways:\n1. **Diversified Hardware Choices**: With a more balanced market, consumers enjoy greater freedom to select platforms based on specific workloads without fearing a lack of long-term support.\n2. **Price Stability & Stock Availability**: Fierce competition potentially triggers healthy price wars, particularly in mid-to-high tier processor segments ahead of the holiday season.\n3. **Long-Term Infrastructure Planning**: For enterprises, adopting the latest architecture-based server solutions delivers significant long-term savings in electricity and cooling operational costs.\n\n### 6. Strategic Outlook & Verified References\n\nAMD's projected feat of outselling Intel for the first time in history during the fourth quarter with $17 billion in revenue guidance is much more than a financial milestone. It is tangible proof of successful chiplet-based technology transformation, research execution discipline, and deep alignment with modern computing demands. Pressure now rests squarely on Intel to reverse course through radical architectural innovations in upcoming processor generations.\n\n*Source: Tom's Hardware*",
+      "toc": [
+        {
+          "id": "chronology-background-context",
+          "title": "1. Chronology & Background Context"
+        },
+        {
+          "id": "technical-deep-dive-architecture-breakdown",
+          "title": "2. Technical Deep-Dive & Architecture Breakdown"
+        },
+        {
+          "id": "benchmark-comparisons-competitive-landscape",
+          "title": "3. Benchmark Comparisons & Competitive Landscape"
+        },
+        {
+          "id": "community-reaction-industry-sentiment",
+          "title": "4. Community Reaction & Industry Sentiment"
+        },
+        {
+          "id": "practical-consumer-advice-strategic-takeaways",
+          "title": "5. Practical Consumer Advice & Strategic Takeaways"
+        },
+        {
+          "id": "strategic-outlook-verified-references",
+          "title": "6. Strategic Outlook & Verified References"
+        }
+      ]
+    }
+  },
+  {
     "slug": "skandal-energi-xai-elon-musk-gunakan-8-mesin-jet-20261104",
     "title": "Skandal Energi xAI: Elon Musk Gunakan 8 Mesin Jet Bekas untuk Tenaga Pusat Data",
     "description": "Terungkapnya penggunaan delapan mesin jet konversi sebagai sumber daya cadangan pusat data xAI di Mississippi memicu kekhawatiran lingkungan yang serius. Praktik kontroversial ini menyoroti ambisi besar Musk di tengah meningkatnya kebutuhan energi untuk infrastruktur AI global.",

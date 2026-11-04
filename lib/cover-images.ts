@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'sejarah-baru-industri-pc-amd-diproyeksikan-salip-20261104': {
+    url: U('1624705002806-5d72df19c3ad'),
+    caption: "Deretan chip prosesor silikon berperforma tinggi di atas papan motherboard server enterprise modern.",
+    source: 'Unsplash'
+  },
   'skandal-energi-xai-elon-musk-gunakan-8-mesin-jet-20261104': {
     url: U('1558494949-ef010cbdcc31'),
     caption: "Deretan turbin jet industri yang dimodifikasi berdiri kokoh di area fasilitas pusat data.",
