@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: krisis-antrean-review-steam-tembus-12-hari-kerja-20261105
+  'krisis-antrean-review-steam-tembus-12-hari-kerja-20261105': {
+    publisher: "Google News Tech Wire",
+    sourceUrl: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUHRwbEVYSnd1QWtyQjl3TkYwMVE2VjNmUFNXdmx2THQwcW03RDB5UEtBTi1zTnNTYWc4b0J3T0pwdERIZ0ZnZlZVbzZqeVE0TGVVbEFMTHFVY25KcHMwWFFvam80a3VLa2ZUaHdHMkMyQlpYN1dDYlRIdi1OalZvWjlyMFZqU2toR2RB?oc=5",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Krisis Antrean Review Steam Tembus 12 Hari Kerja, Developer Game Horor Terpaksa Undur Jadwal Rilis"
+  },
+
   // Auto-generated Daily News Entry: skandal-pembatalan-pesanan-pc-rtx-5090-oleh-cors-20261105
   'skandal-pembatalan-pesanan-pc-rtx-5090-oleh-cors-20261105': {
     publisher: "Wccftech",

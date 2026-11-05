@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "krisis-antrean-review-steam-tembus-12-hari-kerja-20261105",
+    "title": "Krisis Antrean Review Steam Tembus 12 Hari Kerja, Developer Game Horor Terpaksa Undur Jadwal Rilis",
+    "description": "Lonjakan pengiriman game indie dan masifnya konten berbasis AI memicu kemacetan parah di sistem moderasi Steam. Proses antrean yang memakan waktu hingga 12 hari kerja membuat sejumlah developer game horor terpaksa menunda tanggal peluncuran mereka secara beruntun.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-05T07:07:04.491Z",
+    "updatedDate": "2026-11-05T07:07:04.491Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Steam",
+      "Valve",
+      "Indie Game",
+      "Game Development",
+      "AI Slop"
+    ],
+    "en": {
+      "title": "Steam Review Queue Hits 12 Business Days, Forcing Horror Game Developers to Delay Launches",
+      "description": "A massive surge in indie game submissions and AI-generated content has caused severe bottlenecks in Steam's moderation pipeline, pushing review queues to 12 business days and forcing several horror game developers to postpone their releases."
+    }
+  },
+  {
     "slug": "skandal-pembatalan-pesanan-pc-rtx-5090-oleh-cors-20261105",
     "title": "Skandal Pembatalan Pesanan PC RTX 5090 oleh Corsair Disertai Lonjakan Harga Misterius Sebesar $2400",
     "description": "Corsair mendadak membatalkan pesanan rig PC flagship RTX 5090 milik konsumen dengan alasan adanya kendala teknis, namun secara bersamaan menaikkan harga jual unit tersebut secara senyap sebesar $2,400. Keputusan kontroversial ini memicu kemarahan komunitas gamer global serta investigasi independen terhadap praktik penetapan harga perangkat keras kelas atas.",
