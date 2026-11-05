@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: skandal-pembatalan-pesanan-pc-rtx-5090-oleh-cors-20261105
+  'skandal-pembatalan-pesanan-pc-rtx-5090-oleh-cors-20261105': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/corsair-cancelled-rtx-5090-pc-order-citing-one-or-more-issues-while-raising-the-pcs-price-by-2400-silently/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Skandal Pembatalan Pesanan PC RTX 5090 oleh Corsair Disertai Lonjakan Harga Misterius Sebesar $2400"
+  },
+
   // Auto-generated Daily News Entry: sejarah-baru-industri-pc-amd-diproyeksikan-salip-20261104
   'sejarah-baru-industri-pc-amd-diproyeksikan-salip-20261104': {
     publisher: "Tom's Hardware",

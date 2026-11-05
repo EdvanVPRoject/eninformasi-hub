@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'skandal-pembatalan-pesanan-pc-rtx-5090-oleh-cors-20261105': {
+    url: U('1597852074816-d933c7d2b988'),
+    caption: "Tampilan dekat unit kartu grafis flagship RTX 5090 terpasang di motherboard high-end dengan sistem pendingin cairan.",
+    source: 'Unsplash'
+  },
   'sejarah-baru-industri-pc-amd-diproyeksikan-salip-20261104': {
     url: U('1624705002806-5d72df19c3ad'),
     caption: "Deretan chip prosesor silikon berperforma tinggi di atas papan motherboard server enterprise modern.",

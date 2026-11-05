@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-pembatalan-pesanan-pc-rtx-5090-oleh-cors-20261105",
+    "title": "Skandal Pembatalan Pesanan PC RTX 5090 oleh Corsair Disertai Lonjakan Harga Misterius Sebesar $2400",
+    "description": "Corsair mendadak membatalkan pesanan rig PC flagship RTX 5090 milik konsumen dengan alasan adanya kendala teknis, namun secara bersamaan menaikkan harga jual unit tersebut secara senyap sebesar $2,400. Keputusan kontroversial ini memicu kemarahan komunitas gamer global serta investigasi independen terhadap praktik penetapan harga perangkat keras kelas atas.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-05T00:54:49.762Z",
+    "updatedDate": "2026-11-05T00:54:49.762Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Corsair",
+      "RTX 5090",
+      "NVIDIA",
+      "PC Gaming",
+      "Hardware Scandal"
+    ],
+    "en": {
+      "title": "Corsair Cancels RTX 5090 PC Orders While Silently Hiking Prices by $2,400 Amid Controversy",
+      "description": "Corsair abruptly cancelled pre-ordered flagship RTX 5090 PC rigs citing technical issues, while simultaneously increasing the system's price by $2,400. This controversial move has sparked widespread outrage among the global gaming community and triggered scrutiny over high-end hardware pricing practices."
+    }
+  },
+  {
     "slug": "sejarah-baru-industri-pc-amd-diproyeksikan-salip-20261104",
     "title": "Sejarah Baru Industri PC: AMD Diproyeksikan Salip Penjualan Intel di Kuartal 4 dengan Panduan Pendapatan $17 Miliar",
     "description": "AMD mencatatkan tonggak sejarah luar biasa dengan proyeksi penjualan yang diperkirakan melampaui Intel untuk pertama kalinya dalam sejarah pada Q4, didorong oleh momentum kuat di pasar server, pusat data, dan lini prosesor konsumen.",
