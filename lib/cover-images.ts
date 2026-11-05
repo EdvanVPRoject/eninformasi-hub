@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'revolusi-ai-generatif-anthropic-ubah-kebijakan-c-20261105': {
+    url: U('1677442136019-21780ecad995'),
+    caption: "Antarmuka pemrograman AI yang menampilkan kode sumber game yang sedang dikembangkan secara dinamis di layar monitor.",
+    source: 'Unsplash'
+  },
   'krisis-antrean-review-steam-tembus-12-hari-kerja-20261105': {
     url: U('1542751371-adc38448a05e'),
     caption: "Tangkapan layar dasbor developer Steam menampilkan indikator antrean moderasi game digital.",

@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: revolusi-ai-generatif-anthropic-ubah-kebijakan-c-20261105
+  'revolusi-ai-generatif-anthropic-ubah-kebijakan-c-20261105': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-loosens-game-restrictions-claude-will-now-offer-to-build-original-game-in-same-genre-if-asked-to-copy",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Revolusi AI Generatif: Anthropic Ubah Kebijakan Claude untuk Ciptakan Game Orisinal"
+  },
+
   // Auto-generated Daily News Entry: krisis-antrean-review-steam-tembus-12-hari-kerja-20261105
   'krisis-antrean-review-steam-tembus-12-hari-kerja-20261105': {
     publisher: "Google News Tech Wire",

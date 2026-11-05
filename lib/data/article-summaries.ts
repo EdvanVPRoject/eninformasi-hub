@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "revolusi-ai-generatif-anthropic-ubah-kebijakan-c-20261105",
+    "title": "Revolusi AI Generatif: Anthropic Ubah Kebijakan Claude untuk Ciptakan Game Orisinal",
+    "description": "Anthropic melakukan perombakan kebijakan besar pada model AI Claude, kini mengizinkan pembuatan game orisinal dalam genre yang diminta pengguna alih-alih sekadar mengkloning judul eksisting. Langkah ini menandai pergeseran paradigma dalam keterlibatan AI pada industri pengembangan perangkat lunak kreatif.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-05T12:59:45.542Z",
+    "updatedDate": "2026-11-05T12:59:45.542Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Anthropic",
+      "Claude AI",
+      "Game Development",
+      "Generative AI",
+      "Tech Ethics"
+    ],
+    "en": {
+      "title": "The Generative AI Revolution: Anthropic Adjusts Claude Policy to Support Original Game Creation",
+      "description": "Anthropic has overhauled its Claude AI model policy, now allowing the generation of original games within requested genres instead of cloning existing titles. This marks a paradigm shift in how AI contributes to the creative software development industry."
+    }
+  },
+  {
     "slug": "krisis-antrean-review-steam-tembus-12-hari-kerja-20261105",
     "title": "Krisis Antrean Review Steam Tembus 12 Hari Kerja, Developer Game Horor Terpaksa Undur Jadwal Rilis",
     "description": "Lonjakan pengiriman game indie dan masifnya konten berbasis AI memicu kemacetan parah di sistem moderasi Steam. Proses antrean yang memakan waktu hingga 12 hari kerja membuat sejumlah developer game horor terpaksa menunda tanggal peluncuran mereka secara beruntun.",
