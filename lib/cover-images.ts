@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'krisis-energi-pusat-data-mengapa-infrastruktur-a-20261106': {
+    url: U('1587202372775-e229f172b9d7'),
+    caption: "Deretan rak server performa tinggi dalam fasilitas data center modern dengan pendinginan cair canggih.",
+    source: 'Unsplash'
+  },
   'revolusi-ai-generatif-anthropic-ubah-kebijakan-c-20261105': {
     url: U('1677442136019-21780ecad995'),
     caption: "Antarmuka pemrograman AI yang menampilkan kode sumber game yang sedang dikembangkan secara dinamis di layar monitor.",

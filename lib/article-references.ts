@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: krisis-energi-pusat-data-mengapa-infrastruktur-a-20261106
+  'krisis-energi-pusat-data-mengapa-infrastruktur-a-20261106': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/nvidia-kyber-rubin-ultra-nvl576-600kw-power-consumption-data-center-bottleneck/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Krisis Energi Pusat Data: Mengapa Infrastruktur AI NVIDIA Kyber Jadi Ancaman Kelistrikan Global"
+  },
+
   // Auto-generated Daily News Entry: revolusi-ai-generatif-anthropic-ubah-kebijakan-c-20261105
   'revolusi-ai-generatif-anthropic-ubah-kebijakan-c-20261105': {
     publisher: "Tom's Hardware",

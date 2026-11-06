@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "krisis-energi-pusat-data-mengapa-infrastruktur-a-20261106",
+    "title": "Krisis Energi Pusat Data: Mengapa Infrastruktur AI NVIDIA Kyber Jadi Ancaman Kelistrikan Global",
+    "description": "Analisis mendalam mengenai tantangan konsumsi daya ekstrem dari rak server NVIDIA Kyber dan Rubin Ultra yang menuntut standar infrastruktur listrik baru di era AI.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-06T00:55:33.701Z",
+    "updatedDate": "2026-11-06T00:55:33.701Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "NVIDIA",
+      "AI",
+      "DataCenter",
+      "Infrastructure",
+      "EnergyCrisis"
+    ],
+    "en": {
+      "title": "Data Center Energy Crisis: Why NVIDIA's Kyber AI Infrastructure Is Challenging Global Power Grids",
+      "description": "An in-depth analysis of the extreme power consumption challenges posed by NVIDIA's Kyber and Rubin Ultra server racks and the urgent need for new infrastructure standards."
+    }
+  },
+  {
     "slug": "revolusi-ai-generatif-anthropic-ubah-kebijakan-c-20261105",
     "title": "Revolusi AI Generatif: Anthropic Ubah Kebijakan Claude untuk Ciptakan Game Orisinal",
     "description": "Anthropic melakukan perombakan kebijakan besar pada model AI Claude, kini mengizinkan pembuatan game orisinal dalam genre yang diminta pengguna alih-alih sekadar mengkloning judul eksisting. Langkah ini menandai pergeseran paradigma dalam keterlibatan AI pada industri pengembangan perangkat lunak kreatif.",
