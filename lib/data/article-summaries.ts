@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "terobosan-paten-playstation-6-berantas-smurfing--20261106",
+    "title": "Terobosan Paten PlayStation 6 Berantas Smurfing: Sony Siapkan Sistem Blokir Akun Sekunder Kompetitif",
+    "description": "Sony mematenkan teknologi inovatif untuk PlayStation 6 yang menargetkan pemberantasan praktik smurfing dan akun sekunder di game kompetitif dengan pembatasan berbasis perangkat keras dan verifikasi akun.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-06T12:55:34.666Z",
+    "updatedDate": "2026-11-06T12:55:34.666Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "PlayStation 6",
+      "Sony",
+      "Smurfing",
+      "Gaming News",
+      "Esports Security"
+    ],
+    "en": {
+      "title": "PlayStation 6 Patent Breakthrough Aimed at Ending Smurfing: Sony Prepares System to Restrict Secondary Accounts",
+      "description": "Sony has patented an innovative technology for the PlayStation 6 targeting the eradication of smurfing and secondary accounts in competitive games through hardware-based restrictions and account verification."
+    }
+  },
+  {
     "slug": "ambisi-mandiri-india-menggebrak-pasar-gpu-global-20261106",
     "title": "Ambisi Mandiri India: Menggebrak Pasar GPU Global dengan Arsitektur SHAKTI dan VEGA dalam 2 Tahun",
     "description": "India secara resmi mengumumkan rencana ambisius untuk memproduksi GPU dan prosesor domestik berbasis RISC-V dalam dua tahun ke depan. Langkah strategis ini bertujuan memutus ketergantungan pada rantai pasok global di tengah ledakan kebutuhan AI.",

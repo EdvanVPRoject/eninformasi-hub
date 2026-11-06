@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'terobosan-paten-playstation-6-berantas-smurfing--20261106': {
+    url: U('1605901309584-818e25960b8f'),
+    caption: "Ilustrasi render konsep kontroler PlayStation mutakhir di atas meja studio gaming futuristik",
+    source: 'Unsplash'
+  },
   'ambisi-mandiri-india-menggebrak-pasar-gpu-global-20261106': {
     url: U('1591799264318-7e6ef8ddb7ea'),
     caption: "Diagram skematik arsitektur chip silikon RISC-V yang sedang dikembangkan oleh para insinyur di fasilitas riset India.",

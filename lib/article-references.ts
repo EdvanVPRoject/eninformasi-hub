@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: terobosan-paten-playstation-6-berantas-smurfing--20261106
+  'terobosan-paten-playstation-6-berantas-smurfing--20261106': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/playstation-6-end-smurfing-patent-ban-secondary-accounts/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Terobosan Paten PlayStation 6 Berantas Smurfing: Sony Siapkan Sistem Blokir Akun Sekunder Kompetitif"
+  },
+
   // Auto-generated Daily News Entry: ambisi-mandiri-india-menggebrak-pasar-gpu-global-20261106
   'ambisi-mandiri-india-menggebrak-pasar-gpu-global-20261106': {
     publisher: "Tom's Hardware",
