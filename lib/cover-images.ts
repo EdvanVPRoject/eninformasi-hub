@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'ambisi-mandiri-india-menggebrak-pasar-gpu-global-20261106': {
+    url: U('1591799264318-7e6ef8ddb7ea'),
+    caption: "Diagram skematik arsitektur chip silikon RISC-V yang sedang dikembangkan oleh para insinyur di fasilitas riset India.",
+    source: 'Unsplash'
+  },
   'krisis-energi-pusat-data-mengapa-infrastruktur-a-20261106': {
     url: U('1587202372775-e229f172b9d7'),
     caption: "Deretan rak server performa tinggi dalam fasilitas data center modern dengan pendinginan cair canggih.",

@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "ambisi-mandiri-india-menggebrak-pasar-gpu-global-20261106",
+    "title": "Ambisi Mandiri India: Menggebrak Pasar GPU Global dengan Arsitektur SHAKTI dan VEGA dalam 2 Tahun",
+    "description": "India secara resmi mengumumkan rencana ambisius untuk memproduksi GPU dan prosesor domestik berbasis RISC-V dalam dua tahun ke depan. Langkah strategis ini bertujuan memutus ketergantungan pada rantai pasok global di tengah ledakan kebutuhan AI.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-06T07:05:14.775Z",
+    "updatedDate": "2026-11-06T07:05:14.775Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "India",
+      "GPU",
+      "RISC-V",
+      "Semikonduktor",
+      "Teknologi"
+    ],
+    "en": {
+      "title": "India's Bold Move: Targeting Domestic GPU Production with SHAKTI and VEGA within 2 Years",
+      "description": "India has officially announced an ambitious plan to manufacture domestic GPUs and RISC-V based processors within two years. This strategic move aims to reduce reliance on global supply chains amidst the booming demand for AI computing power."
+    }
+  },
+  {
     "slug": "krisis-energi-pusat-data-mengapa-infrastruktur-a-20261106",
     "title": "Krisis Energi Pusat Data: Mengapa Infrastruktur AI NVIDIA Kyber Jadi Ancaman Kelistrikan Global",
     "description": "Analisis mendalam mengenai tantangan konsumsi daya ekstrem dari rak server NVIDIA Kyber dan Rubin Ultra yang menuntut standar infrastruktur listrik baru di era AI.",

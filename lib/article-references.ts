@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: ambisi-mandiri-india-menggebrak-pasar-gpu-global-20261106
+  'ambisi-mandiri-india-menggebrak-pasar-gpu-global-20261106': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/semiconductors/india-targets-creating-homegrown-gpus-within-2-years-and-plans-to-commercialize-indigenous-shakti-and-vega-risc-v-processors-sees-ai-boom-as-a-potential-repeat-of-the-y2k-opportunity-for-its-it-industry",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Ambisi Mandiri India: Menggebrak Pasar GPU Global dengan Arsitektur SHAKTI dan VEGA dalam 2 Tahun"
+  },
+
   // Auto-generated Daily News Entry: krisis-energi-pusat-data-mengapa-infrastruktur-a-20261106
   'krisis-energi-pusat-data-mengapa-infrastruktur-a-20261106': {
     publisher: "Wccftech",
