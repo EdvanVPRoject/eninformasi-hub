@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: era-baru-ai-tesla-ungkap-peta-jalan-akselerator--20261107
+  'era-baru-ai-tesla-ungkap-peta-jalan-akselerator--20261107': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/artificial-intelligence/tesla-unveils-ai-accelerator-roadmap-adopts-new-si-branding-in-super-intelligence-push-si6-to-bring-80x-more-compute-performance-dojo-3-headed-to-space",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Era Baru AI: Tesla Ungkap Peta Jalan Akselerator Super Intelligence (SI) dengan Performa 80x Lipat"
+  },
+
   // Auto-generated Daily News Entry: ironi-infrastruktur-ai-produsen-rel-laci-dapur-t-20261107
   'ironi-infrastruktur-ai-produsen-rel-laci-dapur-t-20261107': {
     publisher: "Wccftech",

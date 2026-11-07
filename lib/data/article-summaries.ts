@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "era-baru-ai-tesla-ungkap-peta-jalan-akselerator--20261107",
+    "title": "Era Baru AI: Tesla Ungkap Peta Jalan Akselerator Super Intelligence (SI) dengan Performa 80x Lipat",
+    "description": "Tesla secara resmi memperkenalkan peta jalan ambisius untuk akselerator AI generasi terbaru dengan branding 'SI' (Super Intelligence). Inovasi ini menjanjikan lonjakan performa komputasi hingga 80 kali lipat dibanding sistem Dojo saat ini.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-07T06:50:20.650Z",
+    "updatedDate": "2026-11-07T06:50:20.650Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Tesla",
+      "AI",
+      "SuperIntelligence",
+      "Dojo",
+      "Hardware"
+    ],
+    "en": {
+      "title": "A New AI Era: Tesla Unveils Super Intelligence (SI) Accelerator Roadmap with 80x Performance Gains",
+      "description": "Tesla has officially announced an ambitious roadmap for its next-generation AI accelerators under the new 'SI' (Super Intelligence) branding. The innovation promises an 80-fold increase in compute performance compared to current Dojo systems."
+    }
+  },
+  {
     "slug": "ironi-infrastruktur-ai-produsen-rel-laci-dapur-t-20261107",
     "title": "Ironi Infrastruktur AI: Produsen Rel Laci Dapur Ternyata Kuasai 90 Persen Pasar Rak Server AI Global",
     "description": "Sebuah perusahaan manufaktur rel laci dapur asal Taiwan, King Slide, mendadak jadi sorotan industri teknologi global setelah terungkap menguasai hingga 90 persen pangsa pasar rel rak server AI bernilai miliaran dolar untuk mendinginkan dan menopang klaster GPU mutakhir.",

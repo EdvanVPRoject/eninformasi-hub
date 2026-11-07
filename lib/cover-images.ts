@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'era-baru-ai-tesla-ungkap-peta-jalan-akselerator--20261107': {
+    url: U('1562408590-e32931084e23'),
+    caption: "Visualisasi chip silikon canggih Tesla yang dirancang untuk komputasi saraf berkecepatan tinggi di pusat data.",
+    source: 'Unsplash'
+  },
   'ironi-infrastruktur-ai-produsen-rel-laci-dapur-t-20261107': {
     url: U('1587202372634-32705e3bf49c'),
     caption: "Rak server canggih berstandar industri dengan rel geser presisi tinggi menopang klaster GPU.",
