@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: ironi-infrastruktur-ai-produsen-rel-laci-dapur-t-20261107
+  'ironi-infrastruktur-ai-produsen-rel-laci-dapur-t-20261107': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/taiwanese-kitchen-drawer-maker-king-slide-dominates-ai-server-rails-market/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Ironi Infrastruktur AI: Produsen Rel Laci Dapur Ternyata Kuasai 90 Persen Pasar Rak Server AI Global"
+  },
+
   // Auto-generated Daily News Entry: terobosan-paten-playstation-6-berantas-smurfing--20261106
   'terobosan-paten-playstation-6-berantas-smurfing--20261106': {
     publisher: "Wccftech",

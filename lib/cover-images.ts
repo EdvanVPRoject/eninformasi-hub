@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'ironi-infrastruktur-ai-produsen-rel-laci-dapur-t-20261107': {
+    url: U('1587202372634-32705e3bf49c'),
+    caption: "Rak server canggih berstandar industri dengan rel geser presisi tinggi menopang klaster GPU.",
+    source: 'Unsplash'
+  },
   'terobosan-paten-playstation-6-berantas-smurfing--20261106': {
     url: U('1605901309584-818e25960b8f'),
     caption: "Ilustrasi render konsep kontroler PlayStation mutakhir di atas meja studio gaming futuristik",

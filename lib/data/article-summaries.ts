@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "ironi-infrastruktur-ai-produsen-rel-laci-dapur-t-20261107",
+    "title": "Ironi Infrastruktur AI: Produsen Rel Laci Dapur Ternyata Kuasai 90 Persen Pasar Rak Server AI Global",
+    "description": "Sebuah perusahaan manufaktur rel laci dapur asal Taiwan, King Slide, mendadak jadi sorotan industri teknologi global setelah terungkap menguasai hingga 90 persen pangsa pasar rel rak server AI bernilai miliaran dolar untuk mendinginkan dan menopang klaster GPU mutakhir.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-07T00:52:16.609Z",
+    "updatedDate": "2026-11-07T00:52:16.609Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AI Servers",
+      "Hardware",
+      "King Slide",
+      "Supply Chain",
+      "GPU Clusters"
+    ],
+    "en": {
+      "title": "The AI Infrastructure Irony: Kitchen Drawer Rail Manufacturer Now Controls 90 Percent of Global AI Server Rack Market",
+      "description": "Taiwanese kitchen drawer and furniture hardware maker King Slide has emerged as a dominant force in the global tech supply chain, capturing up to 90 percent of the specialized server rail market essential for housing multi-million dollar GPU clusters."
+    }
+  },
+  {
     "slug": "terobosan-paten-playstation-6-berantas-smurfing--20261106",
     "title": "Terobosan Paten PlayStation 6 Berantas Smurfing: Sony Siapkan Sistem Blokir Akun Sekunder Kompetitif",
     "description": "Sony mematenkan teknologi inovatif untuk PlayStation 6 yang menargetkan pemberantasan praktik smurfing dan akun sekunder di game kompetitif dengan pembatasan berbasis perangkat keras dan verifikasi akun.",
