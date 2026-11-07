@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: tragedi-32000-investigasi-kabel-12v-26-yang-nyar-20261107
+  'tragedi-32000-investigasi-kabel-12v-26-yang-nyar-20261107': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/dual-rtx-pro-6000-workstation-12v-2x6-cable-sleeving-degradation-seasonic-psu/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Tragedi $32,000: Investigasi Kabel 12V-2×6 yang Nyaris Membakar Workstation Kelas Atas"
+  },
+
   // Auto-generated Daily News Entry: era-baru-ai-tesla-ungkap-peta-jalan-akselerator--20261107
   'era-baru-ai-tesla-ungkap-peta-jalan-akselerator--20261107': {
     publisher: "Tom's Hardware",

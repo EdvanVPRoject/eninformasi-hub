@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "tragedi-32000-investigasi-kabel-12v-26-yang-nyar-20261107",
+    "title": "Tragedi $32,000: Investigasi Kabel 12V-2×6 yang Nyaris Membakar Workstation Kelas Atas",
+    "description": "Sebuah workstation profesional dengan dual RTX PRO 6000 hampir mengalami kehancuran total akibat degradasi kabel daya 12V-2x6, menyoroti risiko kritis pada konektor daya GPU modern.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-07T12:42:55.264Z",
+    "updatedDate": "2026-11-07T12:42:55.264Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "GPU",
+      "RTX-PRO-6000",
+      "Hardware-Failure",
+      "Workstation",
+      "12V-2x6"
+    ],
+    "en": {
+      "title": "$32,000 Tragedy: Investigation of the 12V-2×6 Cable That Nearly Fried a High-End Workstation",
+      "description": "A professional workstation featuring dual RTX PRO 6000 GPUs narrowly avoided total destruction due to 12V-2x6 power cable degradation, highlighting critical risks in modern GPU power connectors."
+    }
+  },
+  {
     "slug": "era-baru-ai-tesla-ungkap-peta-jalan-akselerator--20261107",
     "title": "Era Baru AI: Tesla Ungkap Peta Jalan Akselerator Super Intelligence (SI) dengan Performa 80x Lipat",
     "description": "Tesla secara resmi memperkenalkan peta jalan ambisius untuk akselerator AI generasi terbaru dengan branding 'SI' (Super Intelligence). Inovasi ini menjanjikan lonjakan performa komputasi hingga 80 kali lipat dibanding sistem Dojo saat ini.",
