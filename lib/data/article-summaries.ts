@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "revolusi-vr-terkini-valve-steam-frame-dibanderol-20261108",
+    "title": "Revolusi VR Terkini: Valve Steam Frame Dibanderol $1,059 dengan Spesifikasi Menggebrak Pasar 2026",
+    "description": "Industri virtual reality kembali bergejolak setelah laporan terbaru mengungkap Valve Steam Frame hadir dengan banderol harga $1,059 serta spesifikasi kelas atas yang siap menantang dominasi headset kompetitor di pasaran global.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-08T06:51:43.537Z",
+    "updatedDate": "2026-11-08T06:51:43.537Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Steam Frame",
+      "Valve",
+      "VR Headset",
+      "Virtual Reality",
+      "Gaming Hardware"
+    ],
+    "en": {
+      "title": "The Latest VR Revolution: Valve Steam Frame Priced at $1,059 with Market-Shaking Specs in 2026",
+      "description": "The global virtual reality industry is shaken once again as recent reports reveal the Valve Steam Frame arrives with a $1,059 price tag and high-end specifications ready to challenge competitors."
+    }
+  },
+  {
     "slug": "skandal-geopolitik-teknologi-ceo-nvidia-jensen-h-20261108",
     "title": "Skandal Geopolitik Teknologi: CEO Nvidia Jensen Huang Dipanggil Kongres AS Terkait Kasus Mata-Mata Tiongkok",
     "description": "Dunia teknologi dan geopolitik global diguncang oleh investigasi intelijen AS yang melibatkan CEO Nvidia Jensen Huang dalam operasi spionase dan dugaan penyelundupan chip AI senilai $2 miliar oleh jaringan mata-mata Tiongkok.",

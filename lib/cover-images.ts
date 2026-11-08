@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'revolusi-vr-terkini-valve-steam-frame-dibanderol-20261108': {
+    url: U('1538481199705-c710c4e965fc'),
+    caption: "Headset virtual reality futuristis berwarna hitam dengan lensa optik canggih dan tali pengikat ergonomis di atas meja kerja.",
+    source: 'Unsplash'
+  },
   'skandal-geopolitik-teknologi-ceo-nvidia-jensen-h-20261108': {
     url: U('1518770660439-4636190af475'),
     caption: "Ilustrasi visual konsep keamanan siber enterprise, silikon semikonduktor, dan investigasi data intelijen tingkat tinggi.",

@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: revolusi-vr-terkini-valve-steam-frame-dibanderol-20261108
+  'revolusi-vr-terkini-valve-steam-frame-dibanderol-20261108': {
+    publisher: "Google News Tech Wire",
+    sourceUrl: "https://news.google.com/rss/articles/CBMihgFBVV95cUxQbFZWSWczM3htUk5GWTNpQjVoaEpiMXZ6RU92MTV4Q0wybVhwQnd5QS1ua01sVWRkTEx6MmgzZ1F2eFhTSkJaSzhZNWxlSTRMbWFpNl84UjZiQWtOYjF3NXdUT241cTF0dF9JakpWclhPN2NyR2VWWHhESWtKaC1sTWZLN0Mxdw?oc=5",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Revolusi VR Terkini: Valve Steam Frame Dibanderol $1,059 dengan Spesifikasi Menggebrak Pasar 2026"
+  },
+
   // Auto-generated Daily News Entry: skandal-geopolitik-teknologi-ceo-nvidia-jensen-h-20261108
   'skandal-geopolitik-teknologi-ceo-nvidia-jensen-h-20261108': {
     publisher: "Tom's Hardware",
