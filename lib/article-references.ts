@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: skandal-geopolitik-teknologi-ceo-nvidia-jensen-h-20261108
+  'skandal-geopolitik-teknologi-ceo-nvidia-jensen-h-20261108': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/big-tech/nvidias-jensen-huang-officially-called-to-congress-due-to-reports-of-a-chinese-spy-plot-officials-mention-growing-concerns-over-national-security",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Skandal Geopolitik Teknologi: CEO Nvidia Jensen Huang Dipanggil Kongres AS Terkait Kasus Mata-Mata Tiongkok"
+  },
+
   // Auto-generated Daily News Entry: tragedi-32000-investigasi-kabel-12v-26-yang-nyar-20261107
   'tragedi-32000-investigasi-kabel-12v-26-yang-nyar-20261107': {
     publisher: "Wccftech",

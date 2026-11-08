@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-geopolitik-teknologi-ceo-nvidia-jensen-h-20261108",
+    "title": "Skandal Geopolitik Teknologi: CEO Nvidia Jensen Huang Dipanggil Kongres AS Terkait Kasus Mata-Mata Tiongkok",
+    "description": "Dunia teknologi dan geopolitik global diguncang oleh investigasi intelijen AS yang melibatkan CEO Nvidia Jensen Huang dalam operasi spionase dan dugaan penyelundupan chip AI senilai $2 miliar oleh jaringan mata-mata Tiongkok.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-11-08T00:53:14.824Z",
+    "updatedDate": "2026-11-08T00:53:14.824Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Nvidia",
+      "Jensen Huang",
+      "Geopolitik AI",
+      "Keamanan Nasional",
+      "Hardware Tech"
+    ],
+    "en": {
+      "title": "Tech Geopolitical Scandal: Nvidia CEO Jensen Huang Called to US Congress Over Chinese Spy Plot",
+      "description": "The global tech and geopolitical landscape is rocked by US intelligence investigations linking Nvidia CEO Jensen Huang to a honeypot operation and a multi-billion dollar illicit AI chip smuggling ring."
+    }
+  },
+  {
     "slug": "tragedi-32000-investigasi-kabel-12v-26-yang-nyar-20261107",
     "title": "Tragedi $32,000: Investigasi Kabel 12V-2×6 yang Nyaris Membakar Workstation Kelas Atas",
     "description": "Sebuah workstation profesional dengan dual RTX PRO 6000 hampir mengalami kehancuran total akibat degradasi kabel daya 12V-2x6, menyoroti risiko kritis pada konektor daya GPU modern.",

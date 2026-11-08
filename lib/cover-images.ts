@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'skandal-geopolitik-teknologi-ceo-nvidia-jensen-h-20261108': {
+    url: U('1518770660439-4636190af475'),
+    caption: "Ilustrasi visual konsep keamanan siber enterprise, silikon semikonduktor, dan investigasi data intelijen tingkat tinggi.",
+    source: 'Unsplash'
+  },
   'tragedi-32000-investigasi-kabel-12v-26-yang-nyar-20261107': {
     url: U('1606813907291-d86efa9b94db'),
     caption: "Inspeksi visual mendalam pada konektor kabel daya GPU yang menunjukkan tanda awal degradasi termal.",
