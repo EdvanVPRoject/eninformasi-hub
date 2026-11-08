@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: terobosan-ekstrem-homelabber-jalankan-model-ai-2-20261108
+  'terobosan-ekstrem-homelabber-jalankan-model-ai-2-20261108': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/artificial-intelligence/homelabber-uses-second-gen-optane-memory-sticks-to-run-a-2-8-trillion-parameter-ai-model-on-cpu-alone-warns-that-optanes-extreme-heat-can-burn-out-nearby-memory-dram-used-blower-fans-to-prevent-melting-ram",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Terobosan Ekstrem: Homelabber Jalankan Model AI 2,8 Triliun Parameter Hanya Menggunakan Memori Optane dan CPU"
+  },
+
   // Auto-generated Daily News Entry: revolusi-vr-terkini-valve-steam-frame-dibanderol-20261108
   'revolusi-vr-terkini-valve-steam-frame-dibanderol-20261108': {
     publisher: "Google News Tech Wire",

@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "terobosan-ekstrem-homelabber-jalankan-model-ai-2-20261108",
+    "title": "Terobosan Ekstrem: Homelabber Jalankan Model AI 2,8 Triliun Parameter Hanya Menggunakan Memori Optane dan CPU",
+    "description": "Seorang pegiat homelab berhasil mencetak rekor mencengangkan dengan menjalankan model kecerdasan buatan raksasa berukuran 2,8 triliun parameter murni di atas CPU menggunakan stik memori Intel Optane generasi kedua, meski harus menghadapi tantangan panas ekstrem.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Mahir",
+    "pubDate": "2026-11-08T12:42:09.815Z",
+    "updatedDate": "2026-11-08T12:42:09.815Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AI Model",
+      "Intel Optane",
+      "CPU Computing",
+      "Homelab",
+      "Hardware Modding"
+    ],
+    "en": {
+      "title": "Extreme Breakthrough: Homelabber Runs 2.8-Trillion-Parameter AI Model Using Only Optane Memory and CPU",
+      "description": "A resourceful homelab enthusiast has achieved a staggering milestone by running a massive 2.8-trillion-parameter artificial intelligence model purely on a CPU using second-generation Intel Optane memory sticks, despite battling extreme thermal hazards."
+    }
+  },
+  {
     "slug": "revolusi-vr-terkini-valve-steam-frame-dibanderol-20261108",
     "title": "Revolusi VR Terkini: Valve Steam Frame Dibanderol $1,059 dengan Spesifikasi Menggebrak Pasar 2026",
     "description": "Industri virtual reality kembali bergejolak setelah laporan terbaru mengungkap Valve Steam Frame hadir dengan banderol harga $1,059 serta spesifikasi kelas atas yang siap menantang dominasi headset kompetitor di pasaran global.",

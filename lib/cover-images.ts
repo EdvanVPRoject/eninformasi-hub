@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'terobosan-ekstrem-homelabber-jalankan-model-ai-2-20261108': {
+    url: U('1555617981-dac3880eac6e'),
+    caption: "Modifikasi pendingin blower ekstrim pada stik memori Optane server rumahan performa tinggi",
+    source: 'Unsplash'
+  },
   'revolusi-vr-terkini-valve-steam-frame-dibanderol-20261108': {
     url: U('1538481199705-c710c4e965fc'),
     caption: "Headset virtual reality futuristis berwarna hitam dengan lensa optik canggih dan tali pengikat ergonomis di atas meja kerja.",
