@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'revolusi-ai-lokal-llama-modchip-memungkinkan-inf-20261109': {
+    url: U('1591488320449-011701bb6704'),
+    caption: "Visualisasi representasi data memori sistem yang dioptimalkan untuk menjalankan model bahasa besar pada arsitektur CPU standar.",
+    source: 'Unsplash'
+  },
   'akhir-sebuah-era-linux-75-hapus-total-optimasi-i-20261109': {
     url: U('1581092160607-ee22621dd758'),
     caption: "Tampak potongan kode kernel Linux terbaru di layar monitor workstation modern beresolusi tinggi.",

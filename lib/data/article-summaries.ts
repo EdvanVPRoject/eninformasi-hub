@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "revolusi-ai-lokal-llama-modchip-memungkinkan-inf-20261109",
+    "title": "Revolusi AI Lokal: Llama-modchip Memungkinkan Inferensi DeepSeek 284B pada RAM 64GB Tanpa GPU",
+    "description": "Sebuah terobosan radikal dalam dunia AI memungkinkan model bahasa raksasa DeepSeek 284B berjalan pada sistem memori terbatas tanpa kartu grafis. Inovasi ini mengubah paradigma komputasi AI dari ketergantungan GPU mahal menuju efisiensi memori sistem.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-09T07:18:55.303Z",
+    "updatedDate": "2026-11-09T07:18:55.303Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AI",
+      "DeepSeek",
+      "Llama-modchip",
+      "Hardware",
+      "LLM"
+    ],
+    "en": {
+      "title": "Local AI Revolution: Llama-modchip Enables DeepSeek 284B Inference on 64GB RAM Without GPU",
+      "description": "A radical breakthrough in the AI world allows the massive DeepSeek 284B language model to run on systems with limited memory and no dedicated graphics card. This innovation shifts the AI computing paradigm from expensive GPU dependency toward system memory efficiency."
+    }
+  },
+  {
     "slug": "akhir-sebuah-era-linux-75-hapus-total-optimasi-i-20261109",
     "title": "Akhir Sebuah Era: Linux 7.5 Hapus Total Optimasi Intel MMX Berusia 30 Tahun Demi Efisiensi Kode Modern",
     "description": "Pengembang kernel Linux resmi membersihkan instruksi MMX era Pentium tahun 1997 yang sudah usang dalam pembaruan Linux 7.5, menandai babak baru optimalisasi arsitektur CPU masa kini.",

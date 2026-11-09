@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: revolusi-ai-lokal-llama-modchip-memungkinkan-inf-20261109
+  'revolusi-ai-lokal-llama-modchip-memungkinkan-inf-20261109': {
+    publisher: "Hacker News Community",
+    sourceUrl: "https://github.com/synchopate/llama-modchip",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Revolusi AI Lokal: Llama-modchip Memungkinkan Inferensi DeepSeek 284B pada RAM 64GB Tanpa GPU"
+  },
+
   // Auto-generated Daily News Entry: akhir-sebuah-era-linux-75-hapus-total-optimasi-i-20261109
   'akhir-sebuah-era-linux-75-hapus-total-optimasi-i-20261109': {
     publisher: "Tom's Hardware",
