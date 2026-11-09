@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: akhir-sebuah-era-linux-75-hapus-total-optimasi-i-20261109
+  'akhir-sebuah-era-linux-75-hapus-total-optimasi-i-20261109': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/software/linux/the-end-of-an-era-as-linux-7-5-purges-the-last-30-year-old-intel-mmx-optimizations-from-pentium-age-open-source-os-retires-ancient-1997-pentium-instructions-to-streamline-code",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Akhir Sebuah Era: Linux 7.5 Hapus Total Optimasi Intel MMX Berusia 30 Tahun Demi Efisiensi Kode Modern"
+  },
+
   // Auto-generated Daily News Entry: terobosan-ekstrem-homelabber-jalankan-model-ai-2-20261108
   'terobosan-ekstrem-homelabber-jalankan-model-ai-2-20261108': {
     publisher: "Tom's Hardware",

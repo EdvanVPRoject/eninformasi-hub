@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "akhir-sebuah-era-linux-75-hapus-total-optimasi-i-20261109",
+    "title": "Akhir Sebuah Era: Linux 7.5 Hapus Total Optimasi Intel MMX Berusia 30 Tahun Demi Efisiensi Kode Modern",
+    "description": "Pengembang kernel Linux resmi membersihkan instruksi MMX era Pentium tahun 1997 yang sudah usang dalam pembaruan Linux 7.5, menandai babak baru optimalisasi arsitektur CPU masa kini.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Mahir",
+    "pubDate": "2026-11-09T00:55:39.948Z",
+    "updatedDate": "2026-11-09T00:55:39.948Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Linux",
+      "Intel MMX",
+      "Pentium",
+      "Operating System",
+      "Software Optimization"
+    ],
+    "en": {
+      "title": "The End of an Era: Linux 7.5 Purges Last 30-Year-Old Intel MMX Optimizations from Pentium Age",
+      "description": "Open-source kernel developers officially clean up obsolete 1997 Pentium MMX instructions in the Linux 7.5 update, marking a new chapter in modern CPU architecture optimization."
+    }
+  },
+  {
     "slug": "terobosan-ekstrem-homelabber-jalankan-model-ai-2-20261108",
     "title": "Terobosan Ekstrem: Homelabber Jalankan Model AI 2,8 Triliun Parameter Hanya Menggunakan Memori Optane dan CPU",
     "description": "Seorang pegiat homelab berhasil mencetak rekor mencengangkan dengan menjalankan model kecerdasan buatan raksasa berukuran 2,8 triliun parameter murni di atas CPU menggunakan stik memori Intel Optane generasi kedua, meski harus menghadapi tantangan panas ekstrem.",

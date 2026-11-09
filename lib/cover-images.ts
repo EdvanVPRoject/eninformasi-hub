@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'akhir-sebuah-era-linux-75-hapus-total-optimasi-i-20261109': {
+    url: U('1581092160607-ee22621dd758'),
+    caption: "Tampak potongan kode kernel Linux terbaru di layar monitor workstation modern beresolusi tinggi.",
+    source: 'Unsplash'
+  },
   'terobosan-ekstrem-homelabber-jalankan-model-ai-2-20261108': {
     url: U('1555617981-dac3880eac6e'),
     caption: "Modifikasi pendingin blower ekstrim pada stik memori Optane server rumahan performa tinggi",
