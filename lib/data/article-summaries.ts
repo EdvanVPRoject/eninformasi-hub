@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-privasi-wearable-pelacak-tidur-ternyata--20261109",
+    "title": "Skandal Privasi Wearable: Pelacak Tidur Ternyata Memanen Gelombang Otak Tanpa Izin Pengguna",
+    "description": "Investigasi terbaru mengungkapkan bahwa perangkat wearable populer secara diam-diam menggunakan data EEG mentah untuk melatih model AI tanpa persetujuan eksplisit dari pengguna. Praktik ini memicu perdebatan etika privasi biometrik skala global yang melibatkan jutaan data pengguna.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-09T13:01:14.524Z",
+    "updatedDate": "2026-11-09T13:01:14.524Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "WearableTech",
+      "DataPrivacy",
+      "ArtificialIntelligence",
+      "CyberSecurity",
+      "BiometricData"
+    ],
+    "en": {
+      "title": "Wearable Privacy Scandal: Sleep Trackers Harvest Brainwaves to Train AI Without Consent",
+      "description": "A recent investigation has revealed that popular wearable devices are surreptitiously using raw EEG data to train AI models without explicit user consent. This practice has sparked a global debate regarding the ethics of biometric data privacy and the exploitation of user health data."
+    }
+  },
+  {
     "slug": "revolusi-ai-lokal-llama-modchip-memungkinkan-inf-20261109",
     "title": "Revolusi AI Lokal: Llama-modchip Memungkinkan Inferensi DeepSeek 284B pada RAM 64GB Tanpa GPU",
     "description": "Sebuah terobosan radikal dalam dunia AI memungkinkan model bahasa raksasa DeepSeek 284B berjalan pada sistem memori terbatas tanpa kartu grafis. Inovasi ini mengubah paradigma komputasi AI dari ketergantungan GPU mahal menuju efisiensi memori sistem.",

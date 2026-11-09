@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: skandal-privasi-wearable-pelacak-tidur-ternyata--20261109
+  'skandal-privasi-wearable-pelacak-tidur-ternyata--20261109': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/peripherals/wearable-tech/wearable-sleep-trackers-are-using-your-brainwaves-to-train-ai-models-without-explicit-user-consent-tens-of-millions-of-hours-of-eeg-data-harvested",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Skandal Privasi Wearable: Pelacak Tidur Ternyata Memanen Gelombang Otak Tanpa Izin Pengguna"
+  },
+
   // Auto-generated Daily News Entry: revolusi-ai-lokal-llama-modchip-memungkinkan-inf-20261109
   'revolusi-ai-lokal-llama-modchip-memungkinkan-inf-20261109': {
     publisher: "Hacker News Community",

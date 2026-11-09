@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'skandal-privasi-wearable-pelacak-tidur-ternyata--20261109': {
+    url: U('1624705002806-5d72df19c3ad'),
+    caption: "Sensor biometrik canggih pada perangkat wearable yang memantau aktivitas saraf pengguna saat tidur.",
+    source: 'Unsplash'
+  },
   'revolusi-ai-lokal-llama-modchip-memungkinkan-inf-20261109': {
     url: U('1591488320449-011701bb6704'),
     caption: "Visualisasi representasi data memori sistem yang dioptimalkan untuk menjalankan model bahasa besar pada arsitektur CPU standar.",
