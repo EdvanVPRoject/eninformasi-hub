@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: kebangkitan-mass-effect-mantan-co-founder-biowar-20261110
+  'kebangkitan-mass-effect-mantan-co-founder-biowar-20261110': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/trent-oster-saving-mass-effect-james-ohlen-bioware-reunion/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Kebangkitan Mass Effect: Mantan Co-Founder BioWare Ingin Reuni Tim Asli untuk Selamatkan Waralaba"
+  },
+
   // Auto-generated Daily News Entry: terobosan-pendinginan-ai-ekstrem-chip-deepx-dx-m-20261110
   'terobosan-pendinginan-ai-ekstrem-chip-deepx-dx-m-20261110': {
     publisher: "Tom's Hardware",

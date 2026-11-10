@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "kebangkitan-mass-effect-mantan-co-founder-biowar-20261110",
+    "title": "Kebangkitan Mass Effect: Mantan Co-Founder BioWare Ingin Reuni Tim Asli untuk Selamatkan Waralaba",
+    "description": "Trent Oster, salah satu pendiri BioWare dan CEO Beamdog, menyatakan ketertarikannya untuk menghidupkan kembali waralaba legendaris Mass Effect dengan merangkul kembali para pengembang veteran aslinya, dimulai dari James Ohlen.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-10T06:58:34.634Z",
+    "updatedDate": "2026-11-10T06:58:34.634Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Mass Effect",
+      "BioWare",
+      "Trent Oster",
+      "Beamdog",
+      "RPG Gaming"
+    ],
+    "en": {
+      "title": "Mass Effect Revival: Former BioWare Co-Founder Wants Original Band Back Together to Save Franchise",
+      "description": "Trent Oster, BioWare co-founder and Beamdog CEO, is actively crunching numbers and planning a dream reunion with original developers, starting with James Ohlen, to restore the legendary sci-fi RPG franchise to its former glory."
+    }
+  },
+  {
     "slug": "terobosan-pendinginan-ai-ekstrem-chip-deepx-dx-m-20261110",
     "title": "Terobosan Pendinginan AI Ekstrem: Chip DEEPX DX-M1 Tetap Dingin Tanpa Melelehkan Mentega",
     "description": "DEEPX memperkenalkan demonstrasi chip AI DX-M1 yang sangat revolusioner dan berjalan 40 derajat lebih dingin dibandingkan kompetitor, bahkan menggunakan mentega sebagai heatsink tanpa meleleh.",

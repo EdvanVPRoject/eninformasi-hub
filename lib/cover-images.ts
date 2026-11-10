@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'kebangkitan-mass-effect-mantan-co-founder-biowar-20261110': {
+    url: U('1612287230202-1ff1d85d1bdf'),
+    caption: "Tampilan layar sinematik kapal pendarat fiksi ilmiah berlatar galaksi luar angkasa luas.",
+    source: 'Unsplash'
+  },
   'terobosan-pendinginan-ai-ekstrem-chip-deepx-dx-m-20261110': {
     url: U('1597852074816-d933c7d2b988'),
     caption: "Potret close-up chip silikon DEEPX DX-M1 yang terpasang di atas motherboard khusus.",
