@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: terobosan-pendinginan-ai-ekstrem-chip-deepx-dx-m-20261110
+  'terobosan-pendinginan-ai-ekstrem-chip-deepx-dx-m-20261110': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/data-centers/deepx-ai-chip-runs-so-cool-that-a-butter-heatsink-doesnt-melt-the-dx-m1-processor-impresses-in-a-bizarre-new-dairy-based-benchmark",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Terobosan Pendinginan AI Ekstrem: Chip DEEPX DX-M1 Tetap Dingin Tanpa Melelehkan Mentega"
+  },
+
   // Auto-generated Daily News Entry: skandal-privasi-wearable-pelacak-tidur-ternyata--20261109
   'skandal-privasi-wearable-pelacak-tidur-ternyata--20261109': {
     publisher: "Tom's Hardware",

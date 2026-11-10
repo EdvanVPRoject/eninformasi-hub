@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "terobosan-pendinginan-ai-ekstrem-chip-deepx-dx-m-20261110",
+    "title": "Terobosan Pendinginan AI Ekstrem: Chip DEEPX DX-M1 Tetap Dingin Tanpa Melelehkan Mentega",
+    "description": "DEEPX memperkenalkan demonstrasi chip AI DX-M1 yang sangat revolusioner dan berjalan 40 derajat lebih dingin dibandingkan kompetitor, bahkan menggunakan mentega sebagai heatsink tanpa meleleh.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-10T00:53:59.944Z",
+    "updatedDate": "2026-11-10T00:53:59.944Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "DEEPX",
+      "DX-M1",
+      "AI Chip",
+      "Hardware Pendingin",
+      "Tom's Hardware"
+    ],
+    "en": {
+      "title": "Extreme AI Cooling Breakthrough: DEEPX DX-M1 Chip Runs So Cool It Doesn't Melt Butter",
+      "description": "DEEPX introduces a revolutionary DX-M1 AI chip demonstration running 40 degrees cooler than competitors, effortlessly passing a dairy-based butter heatsink benchmark."
+    }
+  },
+  {
     "slug": "skandal-privasi-wearable-pelacak-tidur-ternyata--20261109",
     "title": "Skandal Privasi Wearable: Pelacak Tidur Ternyata Memanen Gelombang Otak Tanpa Izin Pengguna",
     "description": "Investigasi terbaru mengungkapkan bahwa perangkat wearable populer secara diam-diam menggunakan data EEG mentah untuk melatih model AI tanpa persetujuan eksplisit dari pengguna. Praktik ini memicu perdebatan etika privasi biometrik skala global yang melibatkan jutaan data pengguna.",

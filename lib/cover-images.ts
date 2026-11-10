@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'terobosan-pendinginan-ai-ekstrem-chip-deepx-dx-m-20261110': {
+    url: U('1597852074816-d933c7d2b988'),
+    caption: "Potret close-up chip silikon DEEPX DX-M1 yang terpasang di atas motherboard khusus.",
+    source: 'Unsplash'
+  },
   'skandal-privasi-wearable-pelacak-tidur-ternyata--20261109': {
     url: U('1624705002806-5d72df19c3ad'),
     caption: "Sensor biometrik canggih pada perangkat wearable yang memantau aktivitas saraf pengguna saat tidur.",
