@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: amd-pecahkan-rekor-lewat-arsitektur-zen-6-epyc-v-20261110
+  'amd-pecahkan-rekor-lewat-arsitektur-zen-6-epyc-v-20261110': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/pc-components/cpus/amd-zen-6-epyc-venice-deep-dive-and-benchmarking-dual-epyc-9996-with-1-024-threads-delivers-up-to-93-percent-performance-gain-gen-on-gen-9686f-outclasses-nvidias-vera",
+    note: "Laporan investigasi dan analisis data rujukan resmi: AMD Pecahkan Rekor Lewat Arsitektur Zen 6 EPYC Venice: Lonjakan Performa Hingga 93% dan Kapasitas 1.024 Thread Mengguncang Pasar Server Global"
+  },
+
   // Auto-generated Daily News Entry: kebangkitan-mass-effect-mantan-co-founder-biowar-20261110
   'kebangkitan-mass-effect-mantan-co-founder-biowar-20261110': {
     publisher: "Wccftech",

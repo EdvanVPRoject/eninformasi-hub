@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "amd-pecahkan-rekor-lewat-arsitektur-zen-6-epyc-v-20261110",
+    "title": "AMD Pecahkan Rekor Lewat Arsitektur Zen 6 EPYC Venice: Lonjakan Performa Hingga 93% dan Kapasitas 1.024 Thread Mengguncang Pasar Server Global",
+    "description": "AMD kembali menggebrak industri pusat data global melalui pengumuman mendalam dan benchmark awal arsitektur Zen 6 EPYC Venice. Dual EPYC 9996 yang ditenagai hingga 1.024 thread dilaporkan mampu melesat dengan peningkatan kinerja masif hingga 93 persen dari generasi sebelumnya.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-11-10T19:32:19.047Z",
+    "updatedDate": "2026-11-10T19:32:19.047Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AMD",
+      "Zen 6",
+      "EPYC Venice",
+      "CPU Server",
+      "High Performance Computing"
+    ],
+    "en": {
+      "title": "AMD Shatters Records with Zen 6 EPYC Venice Architecture: Up to 93% Performance Surge and 1,024 Threads Rock Global Server Market",
+      "description": "AMD makes massive waves in the global data center industry with deep-dive reports and initial benchmarks of its upcoming Zen 6 EPYC Venice architecture, featuring a dual EPYC 9996 setup with 1,024 threads and up to a 93 percent generation-on-generation performance leap."
+    }
+  },
+  {
     "slug": "kebangkitan-mass-effect-mantan-co-founder-biowar-20261110",
     "title": "Kebangkitan Mass Effect: Mantan Co-Founder BioWare Ingin Reuni Tim Asli untuk Selamatkan Waralaba",
     "description": "Trent Oster, salah satu pendiri BioWare dan CEO Beamdog, menyatakan ketertarikannya untuk menghidupkan kembali waralaba legendaris Mass Effect dengan merangkul kembali para pengembang veteran aslinya, dimulai dari James Ohlen.",

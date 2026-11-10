@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'amd-pecahkan-rekor-lewat-arsitektur-zen-6-epyc-v-20261110': {
+    url: U('1511512578047-dfb367046420'),
+    caption: "Tampak dekat modul prosesor server AMD EPYC Venice dengan arsitektur chiplet mutakhir.",
+    source: 'Unsplash'
+  },
   'kebangkitan-mass-effect-mantan-co-founder-biowar-20261110': {
     url: U('1612287230202-1ff1d85d1bdf'),
     caption: "Tampilan layar sinematik kapal pendarat fiksi ilmiah berlatar galaksi luar angkasa luas.",
