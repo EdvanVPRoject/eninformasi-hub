@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: claude-fable-52-bikin-kopi-darat-gears-of-war-e--20261111
+  'claude-fable-52-bikin-kopi-darat-gears-of-war-e--20261111': {
+    publisher: "Google News Tech Wire",
+    sourceUrl: "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQ2o1eWZkRHkzSUFBTjZua3B0a3BCazBORmh6U2JRTnZ0LUhab2JtUlptLWIxWmxQbkYyWWk1WmlLY0Y4Y2JkWks5NW15SHZPaWNYTW5fMUVsdy1yWXJvek52TzRPc1JOTUZDTjN3N3BNVkFUSVpiOHlka0R2VTRET0d4d0VBUTY0SDVFbXpBXzdtSFh0SnRjRHFZUzg3X2RzS3h3X1JybmJzLW1ScVhrQWVQaHVHUDB6X2RSU1dlTzV2QThTTno3aXVmR2x0eEpE0gHWAUFVX3lxTE96RUloNVFYRHlIU1RXU1dQWW9aLXpFbVVVMEZwT0pEZ0F0TlY4VGtmMm83bE95dnpwWlBlTUxHcEJUN1NxWTBfTXl4YUZsSDRacVZhSmZkN1VicHRMajZ2VzFkSWxYLXhqNW84dVlPQ1VtNkRFWlNIWnFuTjhZbHZlRngtb0hUY1U0c2ZkS09jbk9zMkc5d0RoSVlCODY2NmwyS01DcjdPdG9oUkE3RGtkS0JxVnZLS2Z2TGd5OGJBNjlOakhZZ1lfeTE5MjFpMGF2a20yVmc?oc=5",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Claude Fable 5.2 Bikin Kopi Darat Gears of War: E-Day dari Tiga Kalimat Saja, Tapi Biaya Tembus $15.000"
+  },
+
   // Auto-generated Daily News Entry: amd-pecahkan-rekor-lewat-arsitektur-zen-6-epyc-v-20261110
   'amd-pecahkan-rekor-lewat-arsitektur-zen-6-epyc-v-20261110': {
     publisher: "Tom's Hardware",

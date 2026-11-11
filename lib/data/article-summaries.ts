@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "claude-fable-52-bikin-kopi-darat-gears-of-war-e--20261111",
+    "title": "Claude Fable 5.2 Bikin Kopi Darat Gears of War: E-Day dari Tiga Kalimat Saja, Tapi Biaya Tembus $15.000",
+    "description": "Eksperimen AI terbaru memperlihatkan Claude Fable 5.2 mampu merancang klon playable Gears of War: E-Day hanya dari perintah tiga baris teks. Namun, di balik kecepatan pembuatannya, estimasi biaya komputasi yang fantastis memicu perdebatan serius di industri pengembangan game.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-11-11T05:40:25.019Z",
+    "updatedDate": "2026-11-11T05:40:25.019Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Claude Fable 5.2",
+      "Gears of War",
+      "AI Development",
+      "Generative AI",
+      "Gaming Industry"
+    ],
+    "en": {
+      "title": "Claude Fable 5.2 Builds Playable Gears of War: E-Day Clone From Three-Line Prompt, But Estimated Cost Reaches $15,000",
+      "description": "Recent AI experiments reveal that Claude Fable 5.2 can engineer a playable Gears of War: E-Day clone from just a three-line text prompt. However, behind its rapid creation speed, the staggering estimated compute cost has ignited serious debate across the industry."
+    }
+  },
+  {
     "slug": "amd-pecahkan-rekor-lewat-arsitektur-zen-6-epyc-v-20261110",
     "title": "AMD Pecahkan Rekor Lewat Arsitektur Zen 6 EPYC Venice: Lonjakan Performa Hingga 93% dan Kapasitas 1.024 Thread Mengguncang Pasar Server Global",
     "description": "AMD kembali menggebrak industri pusat data global melalui pengumuman mendalam dan benchmark awal arsitektur Zen 6 EPYC Venice. Dual EPYC 9996 yang ditenagai hingga 1.024 thread dilaporkan mampu melesat dengan peningkatan kinerja masif hingga 93 persen dari generasi sebelumnya.",
