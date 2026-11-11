@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "guncangan-di-balik-tembok-nvidia-anthropic-berha-20261111",
+    "title": "Guncangan di Balik 'Tembok' NVIDIA: Anthropic Berhasil Dobrak Dominasi CUDA dalam 3 Hari di MI355X",
+    "description": "Anthropic membuat gebrakan industri dengan menggunakan model Claude Mythos untuk mengoptimasi eksekusi model AI pada GPU AMD MI355X hanya dalam waktu tiga hari. Keberhasilan ini menjadi ancaman serius bagi dominasi ekosistem CUDA milik NVIDIA yang selama ini dianggap tak tergoyahkan.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-11T13:55:47.766Z",
+    "updatedDate": "2026-11-11T13:55:47.766Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Anthropic",
+      "NVIDIA",
+      "AMD",
+      "CUDA",
+      "Artificial Intelligence"
+    ],
+    "en": {
+      "title": "Anthropic Challenges NVIDIA's CUDA Moat: Claude Mythos Masters AMD MI355X in Record 3 Days",
+      "description": "Anthropic's Claude Mythos model has successfully optimized AI model execution on AMD's MI355X GPUs in just three days, signaling a major threat to NVIDIA's long-standing CUDA ecosystem dominance."
+    }
+  },
+  {
     "slug": "claude-fable-52-bikin-kopi-darat-gears-of-war-e--20261111",
     "title": "Claude Fable 5.2 Bikin Kopi Darat Gears of War: E-Day dari Tiga Kalimat Saja, Tapi Biaya Tembus $15.000",
     "description": "Eksperimen AI terbaru memperlihatkan Claude Fable 5.2 mampu merancang klon playable Gears of War: E-Day hanya dari perintah tiga baris teks. Namun, di balik kecepatan pembuatannya, estimasi biaya komputasi yang fantastis memicu perdebatan serius di industri pengembangan game.",

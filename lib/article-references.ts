@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: guncangan-di-balik-tembok-nvidia-anthropic-berha-20261111
+  'guncangan-di-balik-tembok-nvidia-anthropic-berha-20261111': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/anthropic-jeopardizes-nvidias-cuda-moat-as-its-claude-mythos-model-took-only-3-days-to-figure-out-how-to-run-another-model-on-amds-mi355x-gpus/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Guncangan di Balik 'Tembok' NVIDIA: Anthropic Berhasil Dobrak Dominasi CUDA dalam 3 Hari di MI355X"
+  },
+
   // Auto-generated Daily News Entry: claude-fable-52-bikin-kopi-darat-gears-of-war-e--20261111
   'claude-fable-52-bikin-kopi-darat-gears-of-war-e--20261111': {
     publisher: "Google News Tech Wire",

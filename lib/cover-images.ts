@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'guncangan-di-balik-tembok-nvidia-anthropic-berha-20261111': {
+    url: U('1587202372775-e229f172b9d7'),
+    caption: "Diagram arsitektur komputasi GPU AMD MI355X yang sedang memproses beban kerja AI kompleks.",
+    source: 'Unsplash'
+  },
   'claude-fable-52-bikin-kopi-darat-gears-of-war-e--20261111': {
     url: U('1677442136019-21780ecad995'),
     caption: "Tampilan kode pemrograman kompleks dan antarmuka model bahasa besar di layar monitor kerja.",
