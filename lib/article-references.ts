@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: revolusi-ai-google-gemini-4-hydrogen-mengguncang-20261112
+  'revolusi-ai-google-gemini-4-hydrogen-mengguncang-20261112': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/googles-flash-class-gemini-4-hydrogen-is-now-the-cheapest-fastest-model-in-vals-ais-top-6-as-sundar-pichai-touts-its-2-5x-faster-response-times/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Revolusi AI Google: Gemini 4 Hydrogen Mengguncang Pasar dengan Performa 2.5x Lebih Cepat"
+  },
+
   // Auto-generated Daily News Entry: bencana-firmware-asrock-mengapa-gpu-radeon-rx-79-20261112
   'bencana-firmware-asrock-mengapa-gpu-radeon-rx-79-20261112': {
     publisher: "Tom's Hardware",

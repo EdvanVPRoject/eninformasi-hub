@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "revolusi-ai-google-gemini-4-hydrogen-mengguncang-20261112",
+    "title": "Revolusi AI Google: Gemini 4 Hydrogen Mengguncang Pasar dengan Performa 2.5x Lebih Cepat",
+    "description": "Google resmi memperkenalkan model Flash-Class Gemini 4 Hydrogen yang menetapkan standar baru sebagai model AI tercepat dan paling efisien biaya di industri saat ini. Inovasi ini menandai pergeseran signifikan dalam strategi infrastruktur komputasi AI Google untuk mendukung agen cerdas masa depan.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-12T19:45:12.247Z",
+    "updatedDate": "2026-11-12T19:45:12.247Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Google",
+      "Gemini 4",
+      "Artificial Intelligence",
+      "AI Agents",
+      "Tech News"
+    ],
+    "en": {
+      "title": "Google's AI Revolution: Gemini 4 Hydrogen Disrupts Market with 2.5x Faster Performance",
+      "description": "Google has officially unveiled the Flash-Class Gemini 4 Hydrogen, setting a new industry benchmark for speed and cost-efficiency in AI models. This innovation marks a major shift in Google's infrastructure strategy to support the next generation of autonomous AI agents."
+    }
+  },
+  {
     "slug": "bencana-firmware-asrock-mengapa-gpu-radeon-rx-79-20261112",
     "title": "Bencana Firmware ASRock: Mengapa GPU Radeon RX 7900 Anda Berisiko 'Mati Suri'?",
     "description": "ASRock merilis firmware darurat setelah pembaruan sebelumnya menyebabkan kegagalan sistem fatal pada jajaran GPU Radeon RX 7000. Artikel ini mengulas akar permasalahan teknis dan langkah mitigasi bagi pemilik kartu grafis terdampak.",

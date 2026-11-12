@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'revolusi-ai-google-gemini-4-hydrogen-mengguncang-20261112': {
+    url: U('1542751371-adc38448a05e'),
+    caption: "Diagram arsitektur chip TPU 8i yang menunjukkan integrasi dual-chip untuk pemrosesan data AI skala besar.",
+    source: 'Unsplash'
+  },
   'bencana-firmware-asrock-mengapa-gpu-radeon-rx-79-20261112': {
     url: U('1591799264318-7e6ef8ddb7ea'),
     caption: "Tampilan close-up papan sirkuit kartu grafis dengan pendingin logam yang terpapar cahaya laboratorium.",
