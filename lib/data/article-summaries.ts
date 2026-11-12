@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "bencana-firmware-asrock-mengapa-gpu-radeon-rx-79-20261112",
+    "title": "Bencana Firmware ASRock: Mengapa GPU Radeon RX 7900 Anda Berisiko 'Mati Suri'?",
+    "description": "ASRock merilis firmware darurat setelah pembaruan sebelumnya menyebabkan kegagalan sistem fatal pada jajaran GPU Radeon RX 7000. Artikel ini mengulas akar permasalahan teknis dan langkah mitigasi bagi pemilik kartu grafis terdampak.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-12T06:45:55.261Z",
+    "updatedDate": "2026-11-12T06:45:55.261Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "ASRock",
+      "Radeon",
+      "GPU",
+      "TechNews",
+      "FirmwareUpdate"
+    ],
+    "en": {
+      "title": "ASRock Firmware Disaster: Why Your Radeon RX 7900 GPU Is at Risk of Being 'Bricked'",
+      "description": "ASRock has rolled out emergency firmware following a previous update that caused fatal system failures in its Radeon RX 7000 series GPUs. This article examines the technical root causes and mitigation steps for affected graphics card owners."
+    }
+  },
+  {
     "slug": "guncangan-di-balik-tembok-nvidia-anthropic-berha-20261111",
     "title": "Guncangan di Balik 'Tembok' NVIDIA: Anthropic Berhasil Dobrak Dominasi CUDA dalam 3 Hari di MI355X",
     "description": "Anthropic membuat gebrakan industri dengan menggunakan model Claude Mythos untuk mengoptimasi eksekusi model AI pada GPU AMD MI355X hanya dalam waktu tiga hari. Keberhasilan ini menjadi ancaman serius bagi dominasi ekosistem CUDA milik NVIDIA yang selama ini dianggap tak tergoyahkan.",

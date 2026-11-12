@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: bencana-firmware-asrock-mengapa-gpu-radeon-rx-79-20261112
+  'bencana-firmware-asrock-mengapa-gpu-radeon-rx-79-20261112': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/pc-components/gpus/asrock-attempts-to-correct-botched-radeon-rx-7000-firmware-release-with-new-version-revised-release-should-work-ok-but-company-provides-no-explanation-for-bricked-cards",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Bencana Firmware ASRock: Mengapa GPU Radeon RX 7900 Anda Berisiko 'Mati Suri'?"
+  },
+
   // Auto-generated Daily News Entry: guncangan-di-balik-tembok-nvidia-anthropic-berha-20261111
   'guncangan-di-balik-tembok-nvidia-anthropic-berha-20261111': {
     publisher: "Wccftech",

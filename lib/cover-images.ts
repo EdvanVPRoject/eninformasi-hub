@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'bencana-firmware-asrock-mengapa-gpu-radeon-rx-79-20261112': {
+    url: U('1591799264318-7e6ef8ddb7ea'),
+    caption: "Tampilan close-up papan sirkuit kartu grafis dengan pendingin logam yang terpapar cahaya laboratorium.",
+    source: 'Unsplash'
+  },
   'guncangan-di-balik-tembok-nvidia-anthropic-berha-20261111': {
     url: U('1587202372775-e229f172b9d7'),
     caption: "Diagram arsitektur komputasi GPU AMD MI355X yang sedang memproses beban kerja AI kompleks.",
