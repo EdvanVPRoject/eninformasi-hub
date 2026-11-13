@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "terobosan-ai-notebook-kurt-gdel-terpecahkan-meng-20261113",
+    "title": "Terobosan AI: Notebook Kurt Gödel Terpecahkan, Mengungkap Ratusan Teorema Matematika yang Hilang",
+    "description": "Kecerdasan buatan berhasil mendekripsi catatan tangan Kurt Gödel yang legendaris, mengungkap ratusan bukti teorema matematika yang selama ini tersembunyi. Penemuan ini menandai era baru kolaborasi antara historiografi sains dan komputasi tingkat lanjut.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-13T19:27:23.019Z",
+    "updatedDate": "2026-11-13T19:27:23.019Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AI",
+      "Matematika",
+      "Kurt Gödel",
+      "Sains",
+      "Sejarah"
+    ],
+    "en": {
+      "title": "AI Breakthrough: Kurt Gödel's Notebooks Deciphered, Revealing Hundreds of Lost Mathematical Theorems",
+      "description": "Artificial intelligence has successfully decrypted the legendary Kurt Gödel's handwritten notes, unveiling hundreds of previously hidden mathematical theorems. This discovery marks a new era of collaboration between historical science and advanced computing."
+    }
+  },
+  {
     "slug": "terobosan-thermal-noctua-bantalan-karbon-nanotub-20261113",
     "title": "Terobosan Thermal Noctua: Bantalan Karbon Nanotube Siap Gantikan Pasta Termal Tradisional",
     "description": "Noctua memperkenalkan solusi termal revolusioner berbasis karbon nanotube yang menawarkan performa jangka panjang bebas perawatan untuk prosesor AMD AM4 dan AM5. Teknologi ini menjanjikan efisiensi transfer panas kelas luar angkasa dengan durabilitas yang melampaui masa pakai komponen PC standar.",

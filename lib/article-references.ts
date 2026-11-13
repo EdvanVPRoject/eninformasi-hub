@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: terobosan-ai-notebook-kurt-gdel-terpecahkan-meng-20261113
+  'terobosan-ai-notebook-kurt-gdel-terpecahkan-meng-20261113': {
+    publisher: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Terobosan AI: Notebook Kurt Gödel Terpecahkan, Mengungkap Ratusan Teorema Matematika yang Hilang"
+  },
+
   // Auto-generated Daily News Entry: terobosan-thermal-noctua-bantalan-karbon-nanotub-20261113
   'terobosan-thermal-noctua-bantalan-karbon-nanotub-20261113': {
     publisher: "Tom's Hardware",
