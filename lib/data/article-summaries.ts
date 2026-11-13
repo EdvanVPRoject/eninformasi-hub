@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "terobosan-thermal-noctua-bantalan-karbon-nanotub-20261113",
+    "title": "Terobosan Thermal Noctua: Bantalan Karbon Nanotube Siap Gantikan Pasta Termal Tradisional",
+    "description": "Noctua memperkenalkan solusi termal revolusioner berbasis karbon nanotube yang menawarkan performa jangka panjang bebas perawatan untuk prosesor AMD AM4 dan AM5. Teknologi ini menjanjikan efisiensi transfer panas kelas luar angkasa dengan durabilitas yang melampaui masa pakai komponen PC standar.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-13T06:02:44.634Z",
+    "updatedDate": "2026-11-13T06:02:44.634Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Noctua",
+      "ThermalPad",
+      "AMD",
+      "PCBuilding",
+      "CoolingSolution"
+    ],
+    "en": {
+      "title": "Noctua's Thermal Breakthrough: Carbon Nanotube Pads Set to Replace Traditional Paste",
+      "description": "Noctua unveils a revolutionary carbon nanotube-based thermal pad, offering maintenance-free, long-term cooling performance for AMD AM4 and AM5 processors. This innovation promises space-grade thermal efficiency with durability that far exceeds standard PC component lifespans."
+    }
+  },
+  {
     "slug": "revolusi-ai-google-gemini-4-hydrogen-mengguncang-20261112",
     "title": "Revolusi AI Google: Gemini 4 Hydrogen Mengguncang Pasar dengan Performa 2.5x Lebih Cepat",
     "description": "Google resmi memperkenalkan model Flash-Class Gemini 4 Hydrogen yang menetapkan standar baru sebagai model AI tercepat dan paling efisien biaya di industri saat ini. Inovasi ini menandai pergeseran signifikan dalam strategi infrastruktur komputasi AI Google untuk mendukung agen cerdas masa depan.",

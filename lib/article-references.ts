@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: terobosan-thermal-noctua-bantalan-karbon-nanotub-20261113
+  'terobosan-thermal-noctua-bantalan-karbon-nanotub-20261113': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/pc-components/thermal-paste/noctua-brings-space-grade-carbon-nanotube-thermal-pad-to-amd-am5-and-am4-processors-promises-years-of-maintenance-free-performance-for-usd24-95",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Terobosan Thermal Noctua: Bantalan Karbon Nanotube Siap Gantikan Pasta Termal Tradisional"
+  },
+
   // Auto-generated Daily News Entry: revolusi-ai-google-gemini-4-hydrogen-mengguncang-20261112
   'revolusi-ai-google-gemini-4-hydrogen-mengguncang-20261112': {
     publisher: "Wccftech",

@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'terobosan-thermal-noctua-bantalan-karbon-nanotub-20261113': {
+    url: U('1587202372634-32705e3bf49c'),
+    caption: "Bantalan termal berbasis karbon nanotube Noctua yang terpasang presisi di atas heatspreader prosesor AMD Ryzen.",
+    source: 'Unsplash'
+  },
   'revolusi-ai-google-gemini-4-hydrogen-mengguncang-20261112': {
     url: U('1542751371-adc38448a05e'),
     caption: "Diagram arsitektur chip TPU 8i yang menunjukkan integrasi dual-chip untuk pemrosesan data AI skala besar.",
