@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "krisis-lalu-lintas-udara-as-seluruh-bandara-meng-20261114",
+    "title": "Krisis Lalu Lintas Udara AS: Seluruh Bandara Mengalami Ground Stop Massal",
+    "description": "Seluruh bandara di Amerika Serikat dilaporkan mengalami ground stop massal, memicu kekacauan logistik global dan perhatian otoritas keamanan penerbangan internasional.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-14T05:50:43.559Z",
+    "updatedDate": "2026-11-14T05:50:43.559Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Aviation",
+      "USAirports",
+      "BreakingNews",
+      "FlightRadar24",
+      "Logistics"
+    ],
+    "en": {
+      "title": "US Air Traffic Crisis: Massive Ground Stop Across All Airports",
+      "description": "All airports in the United States have been placed under a massive ground stop, triggering global logistics chaos and drawing intense scrutiny from international aviation security authorities."
+    }
+  },
+  {
     "slug": "terobosan-ai-notebook-kurt-gdel-terpecahkan-meng-20261113",
     "title": "Terobosan AI: Notebook Kurt Gödel Terpecahkan, Mengungkap Ratusan Teorema Matematika yang Hilang",
     "description": "Kecerdasan buatan berhasil mendekripsi catatan tangan Kurt Gödel yang legendaris, mengungkap ratusan bukti teorema matematika yang selama ini tersembunyi. Penemuan ini menandai era baru kolaborasi antara historiografi sains dan komputasi tingkat lanjut.",

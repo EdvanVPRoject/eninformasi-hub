@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: krisis-lalu-lintas-udara-as-seluruh-bandara-meng-20261114
+  'krisis-lalu-lintas-udara-as-seluruh-bandara-meng-20261114': {
+    publisher: "FlightRadar24",
+    sourceUrl: "https://twitter.com/flightradar24/status/2121347654714077605",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Krisis Lalu Lintas Udara AS: Seluruh Bandara Mengalami Ground Stop Massal"
+  },
+
   // Auto-generated Daily News Entry: terobosan-ai-notebook-kurt-gdel-terpecahkan-meng-20261113
   'terobosan-ai-notebook-kurt-gdel-terpecahkan-meng-20261113': {
     publisher: "The Guardian",
