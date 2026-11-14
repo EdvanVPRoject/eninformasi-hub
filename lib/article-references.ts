@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: kebangkitan-seri-legendaris-ubisoft-montral-gara-20261114
+  'kebangkitan-seri-legendaris-ubisoft-montral-gara-20261114': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/ubisoft-montreal-three-new-projects-rainbow-six-vegas/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Kebangkitan Seri Legendaris: Ubisoft Montréal Garap Tiga Proyek Baru Termasuk Rainbow Six Vegas 3"
+  },
+
   // Auto-generated Daily News Entry: krisis-lalu-lintas-udara-as-seluruh-bandara-meng-20261114
   'krisis-lalu-lintas-udara-as-seluruh-bandara-meng-20261114': {
     publisher: "FlightRadar24",

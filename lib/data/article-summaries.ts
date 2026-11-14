@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "kebangkitan-seri-legendaris-ubisoft-montral-gara-20261114",
+    "title": "Kebangkitan Seri Legendaris: Ubisoft Montréal Garap Tiga Proyek Baru Termasuk Rainbow Six Vegas 3",
+    "description": "Ubisoft Montréal dikabarkan tengah mengembangkan tiga proyek video game baru yang sangat dinantikan, termasuk kembalinya franchise ikonik tactical shooter Rainbow Six Vegas melalui iterasi ketiga yang menjanjikan.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-14T13:18:11.253Z",
+    "updatedDate": "2026-11-14T13:18:11.253Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Ubisoft",
+      "Rainbow Six Vegas",
+      "Gaming",
+      "Tom Henderson",
+      "FPS"
+    ],
+    "en": {
+      "title": "Legendary Series Revival: Ubisoft Montréal Developing Three New Projects Including Rainbow Six Vegas 3",
+      "description": "Ubisoft Montréal is reportedly developing three highly anticipated new video games, featuring the triumphant return of the iconic tactical shooter franchise Rainbow Six Vegas."
+    }
+  },
+  {
     "slug": "krisis-lalu-lintas-udara-as-seluruh-bandara-meng-20261114",
     "title": "Krisis Lalu Lintas Udara AS: Seluruh Bandara Mengalami Ground Stop Massal",
     "description": "Seluruh bandara di Amerika Serikat dilaporkan mengalami ground stop massal, memicu kekacauan logistik global dan perhatian otoritas keamanan penerbangan internasional.",

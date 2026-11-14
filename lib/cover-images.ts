@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'kebangkitan-seri-legendaris-ubisoft-montral-gara-20261114': {
+    url: U('1538481199705-c710c4e965fc'),
+    caption: "Tampilan layar menu taktis futuristik dari game shooter bertema urban operation.",
+    source: 'Unsplash'
+  },
   'krisis-lalu-lintas-udara-as-seluruh-bandara-meng-20261114': {
     url: U('1639762681485-074b7f938ba0'),
     caption: "Peta radar penerbangan digital menunjukkan ruang udara Amerika Serikat yang kosong dari aktivitas komersial.",
