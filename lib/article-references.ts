@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: wintoys-30-mengubah-permainan-windows-11-penghem-20261115
+  'wintoys-30-mengubah-permainan-windows-11-penghem-20261115': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/wintoys-3-0-takes-aim-at-windows-11s-ai-memory-usage-developer-reports-up-to-6gb-ram-savings/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Wintoys 3.0 Mengubah Permainan Windows 11: Penghematan RAM hingga 6GB demi Performa Gaming Ekstrem"
+  },
+
   // Auto-generated Daily News Entry: skandal-keamanan-global-pentagon-kehilangan-jeja-20261115
   'skandal-keamanan-global-pentagon-kehilangan-jeja-20261115': {
     publisher: "Tom's Hardware",

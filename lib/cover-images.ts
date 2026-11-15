@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'wintoys-30-mengubah-permainan-windows-11-penghem-20261115': {
+    url: U('1518770660439-4636190af475'),
+    caption: "Tangkapan layar antarmuka aplikasi Wintoys 3.0 menampilkan metrik penggunaan memori sistem secara real-time.",
+    source: 'Unsplash'
+  },
   'skandal-keamanan-global-pentagon-kehilangan-jeja-20261115': {
     url: U('1526374965328-7f61d4dc18c5'),
     caption: "Jet tempur F-35 Lightning II terparkir di landasan pacu militer berteknologi tinggi.",

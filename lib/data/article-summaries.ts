@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "wintoys-30-mengubah-permainan-windows-11-penghem-20261115",
+    "title": "Wintoys 3.0 Mengubah Permainan Windows 11: Penghematan RAM hingga 6GB demi Performa Gaming Ekstrem",
+    "description": "Wintoys versi 3.0 hadir dengan optimalisasi revolusioner yang dirancang khusus untuk memangkas konsumsi RAM AI Windows 11 hingga 6GB, membawa angin segar bagi para gamer dan kreator konten yang mendambakan sistem bebas lag.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-15T13:46:06.242Z",
+    "updatedDate": "2026-11-15T13:46:06.242Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Wintoys 3.0",
+      "Windows 11",
+      "RAM Optimization",
+      "AI Memory",
+      "PC Performance"
+    ],
+    "en": {
+      "title": "Wintoys 3.0 Reshapes Windows 11: Up to 6GB RAM Savings for Extreme Gaming Performance",
+      "description": "Wintoys version 3.0 arrives with revolutionary optimizations designed specifically to cut Windows 11 AI memory consumption by up to 6GB, bringing a breath of fresh air to gamers and content creators craving a lag-free system."
+    }
+  },
+  {
     "slug": "skandal-keamanan-global-pentagon-kehilangan-jeja-20261115",
     "title": "Skandal Keamanan Global: Pentagon Kehilangan Jejak Suku Cadang F-35 Senilai $31 Miliar Akibat Peretasan Rantai Pasok",
     "description": "Laporan pengawas independen mengungkap Pentagon kesulitan melacak suku cadang jet tempur F-35 senilai $31 miliar yang hilang setelah pengirimannya disusupi pihak asing, memicu krisis keamanan siber dan rantai pasok global.",
