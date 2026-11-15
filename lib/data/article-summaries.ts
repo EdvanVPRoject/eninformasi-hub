@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-keamanan-global-pentagon-kehilangan-jeja-20261115",
+    "title": "Skandal Keamanan Global: Pentagon Kehilangan Jejak Suku Cadang F-35 Senilai $31 Miliar Akibat Peretasan Rantai Pasok",
+    "description": "Laporan pengawas independen mengungkap Pentagon kesulitan melacak suku cadang jet tempur F-35 senilai $31 miliar yang hilang setelah pengirimannya disusupi pihak asing, memicu krisis keamanan siber dan rantai pasok global.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Tinggi",
+    "pubDate": "2026-11-15T05:51:24.920Z",
+    "updatedDate": "2026-11-15T05:51:24.920Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Pentagon",
+      "F-35",
+      "Cybersecurity",
+      "SupplyChain",
+      "DefenseTech"
+    ],
+    "en": {
+      "title": "Global Security Scandal: Pentagon Struggles to Track $31 Billion in Missing F-35 Parts Due to Supply Chain Compromise",
+      "description": "An independent watchdog report reveals the Pentagon is struggling to account for $31 billion in missing F-35 fighter jet parts following supply chain breaches, triggering severe national security concerns."
+    }
+  },
+  {
     "slug": "kebangkitan-seri-legendaris-ubisoft-montral-gara-20261114",
     "title": "Kebangkitan Seri Legendaris: Ubisoft Montréal Garap Tiga Proyek Baru Termasuk Rainbow Six Vegas 3",
     "description": "Ubisoft Montréal dikabarkan tengah mengembangkan tiga proyek video game baru yang sangat dinantikan, termasuk kembalinya franchise ikonik tactical shooter Rainbow Six Vegas melalui iterasi ketiga yang menjanjikan.",

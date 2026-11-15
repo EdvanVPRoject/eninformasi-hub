@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: skandal-keamanan-global-pentagon-kehilangan-jeja-20261115
+  'skandal-keamanan-global-pentagon-kehilangan-jeja-20261115': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/pentagon-struggles-to-account-for-usd31-billion-in-missing-f-35-aircraft-parts-weeks-after-shipment-was-swiped-by-china-tracking-of-estimated-26-million-parts-is-outdated-inaccurate-and-incomplete-says-watchdog",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Skandal Keamanan Global: Pentagon Kehilangan Jejak Suku Cadang F-35 Senilai $31 Miliar Akibat Peretasan Rantai Pasok"
+  },
+
   // Auto-generated Daily News Entry: kebangkitan-seri-legendaris-ubisoft-montral-gara-20261114
   'kebangkitan-seri-legendaris-ubisoft-montral-gara-20261114': {
     publisher: "Wccftech",
