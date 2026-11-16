@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: eksploitasi-zero-day-signdrop-ancaman-kritis-win-20261116
+  'eksploitasi-zero-day-signdrop-ancaman-kritis-win-20261116': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/windows-11-signdrop-zero-day-exploit-turns-microsofts-own-security-fix-against-itself-grants-system-privileges/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Eksploitasi Zero-Day 'SignDrop': Ancaman Kritis Windows 11 yang Memanfaatkan Patch Keamanan Microsoft"
+  },
+
   // Auto-generated Daily News Entry: wintoys-30-mengubah-permainan-windows-11-penghem-20261115
   'wintoys-30-mengubah-permainan-windows-11-penghem-20261115': {
     publisher: "Wccftech",

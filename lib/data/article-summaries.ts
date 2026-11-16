@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "eksploitasi-zero-day-signdrop-ancaman-kritis-win-20261116",
+    "title": "Eksploitasi Zero-Day 'SignDrop': Ancaman Kritis Windows 11 yang Memanfaatkan Patch Keamanan Microsoft",
+    "description": "Sebuah celah keamanan kritis bernama SignDrop ditemukan pada Windows 11, memungkinkan penyerang mendapatkan hak akses SYSTEM dengan memanipulasi pembaruan keamanan Microsoft sendiri. Temuan ini memicu kekhawatiran besar di kalangan pakar keamanan siber terkait integritas protokol validasi digital Windows.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-16T05:51:53.333Z",
+    "updatedDate": "2026-11-16T05:51:53.333Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Windows 11",
+      "Cybersecurity",
+      "SignDrop",
+      "Zero-Day",
+      "Microsoft"
+    ],
+    "en": {
+      "title": "The 'SignDrop' Zero-Day Exploit: Critical Windows 11 Threat Turns Microsoft's Security Against Itself",
+      "description": "A critical zero-day vulnerability dubbed 'SignDrop' has been discovered in Windows 11, allowing attackers to gain SYSTEM-level privileges by manipulating Microsoft's own security update mechanisms. This discovery has sparked global concern among cybersecurity experts regarding the integrity of Windows' digital signature validation protocols."
+    }
+  },
+  {
     "slug": "wintoys-30-mengubah-permainan-windows-11-penghem-20261115",
     "title": "Wintoys 3.0 Mengubah Permainan Windows 11: Penghematan RAM hingga 6GB demi Performa Gaming Ekstrem",
     "description": "Wintoys versi 3.0 hadir dengan optimalisasi revolusioner yang dirancang khusus untuk memangkas konsumsi RAM AI Windows 11 hingga 6GB, membawa angin segar bagi para gamer dan kreator konten yang mendambakan sistem bebas lag.",
