@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: gugatan-masif-intel-krisis-kepercayaan-investor--20261116
+  'gugatan-masif-intel-krisis-kepercayaan-investor--20261116': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/pc-components/cpus/intel-sued-by-shareholders-for-misleading-investors-after-stock-plunges-29-percent-class-action-claims-the-company-downplayed-the-severity-of-pc-market-headwinds",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Gugatan Masif Intel: Krisis Kepercayaan Investor dan Dampak Strategis bagi Raksasa Semikonduktor"
+  },
+
   // Auto-generated Daily News Entry: eksploitasi-zero-day-signdrop-ancaman-kritis-win-20261116
   'eksploitasi-zero-day-signdrop-ancaman-kritis-win-20261116': {
     publisher: "Wccftech",

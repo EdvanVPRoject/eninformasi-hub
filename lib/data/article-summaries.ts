@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "gugatan-masif-intel-krisis-kepercayaan-investor--20261116",
+    "title": "Gugatan Masif Intel: Krisis Kepercayaan Investor dan Dampak Strategis bagi Raksasa Semikonduktor",
+    "description": "Intel kini menghadapi tantangan hukum serius setelah harga sahamnya terjun bebas sebesar 29%. Analisis mendalam mengenai tuduhan penyesatan investor dan implikasi jangka panjang bagi dominasi pasar prosesor global.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-16T15:24:11.290Z",
+    "updatedDate": "2026-11-16T15:24:11.290Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Intel",
+      "Saham",
+      "Teknologi",
+      "Semikonduktor",
+      "Analisis Pasar"
+    ],
+    "en": {
+      "title": "Massive Intel Shareholder Lawsuit: Crisis of Confidence and Strategic Impact on the Semiconductor Giant",
+      "description": "Intel faces a serious legal challenge following a 29% plunge in stock value. This deep dive analyzes the allegations of misleading investors and the long-term implications for the company's global processor market dominance."
+    }
+  },
+  {
     "slug": "eksploitasi-zero-day-signdrop-ancaman-kritis-win-20261116",
     "title": "Eksploitasi Zero-Day 'SignDrop': Ancaman Kritis Windows 11 yang Memanfaatkan Patch Keamanan Microsoft",
     "description": "Sebuah celah keamanan kritis bernama SignDrop ditemukan pada Windows 11, memungkinkan penyerang mendapatkan hak akses SYSTEM dengan memanipulasi pembaruan keamanan Microsoft sendiri. Temuan ini memicu kekhawatiran besar di kalangan pakar keamanan siber terkait integritas protokol validasi digital Windows.",
