@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: skandal-ai-claude-opus-55-ketika-algoritma-salah-20261117
+  'skandal-ai-claude-opus-55-ketika-algoritma-salah-20261117': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/anthropics-claude-opus-5-5-identified-irans-elementary-school-in-minab-as-a-military-target-69-percent-of-the-time-even-when-satellite-images-showed-a-playground-with-children/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Skandal AI Claude Opus 5.5: Ketika Algoritma Salah Mengidentifikasi Sekolah Sebagai Target Militer"
+  },
+
   // Auto-generated Daily News Entry: krisis-chip-ai-china-harga-pasar-gelap-meroket-t-20261117
   'krisis-chip-ai-china-harga-pasar-gelap-meroket-t-20261117': {
     publisher: "Wccftech",

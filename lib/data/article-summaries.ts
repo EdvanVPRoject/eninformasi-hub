@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-ai-claude-opus-55-ketika-algoritma-salah-20261117",
+    "title": "Skandal AI Claude Opus 5.5: Ketika Algoritma Salah Mengidentifikasi Sekolah Sebagai Target Militer",
+    "description": "Sebuah insiden mengkhawatirkan mencuat saat model AI Anthropic, Claude Opus 5.5, secara konsisten melabeli sekolah dasar di Iran sebagai target militer. Temuan ini memicu perdebatan sengit mengenai etika, bias algoritma, dan keamanan penggunaan AI dalam pengawasan kritis.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-17T20:42:15.700Z",
+    "updatedDate": "2026-11-17T20:42:15.700Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Anthropic",
+      "Claude Opus 5.5",
+      "AI Bias",
+      "Etika AI",
+      "Keamanan Siber"
+    ],
+    "en": {
+      "title": "The Claude Opus 5.5 AI Scandal: When Algorithms Mistake Schools for Military Targets",
+      "description": "A concerning incident has emerged as Anthropic's Claude Opus 5.5 model consistently misidentified an Iranian elementary school as a military target. This finding has sparked intense debate regarding AI ethics, algorithmic bias, and the dangers of using AI for critical surveillance."
+    }
+  },
+  {
     "slug": "krisis-chip-ai-china-harga-pasar-gelap-meroket-t-20261117",
     "title": "Krisis Chip AI China: Harga Pasar Gelap Meroket Tiga Kali Lipat Akibat Pembekuan Impor",
     "description": "Laporan terbaru mengungkap bahwa pembekuan impor dan kontrol ketat telah melumpuhkan pasokan chip AI di China, memicu lonjakan harga pasar gelap yang fantastis hingga mencapai ratusan ribu dolar per server.",

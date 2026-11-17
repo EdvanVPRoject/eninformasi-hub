@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'skandal-ai-claude-opus-55-ketika-algoritma-salah-20261117': {
+    url: U('1555066931-4365d14bab8c'),
+    caption: "Visualisasi abstrak antarmuka pemrosesan citra satelit yang menyoroti kegagalan klasifikasi objek oleh kecerdasan buatan.",
+    source: 'Unsplash'
+  },
   'krisis-chip-ai-china-harga-pasar-gelap-meroket-t-20261117': {
     url: U('1591488320449-011701bb6704'),
     caption: "Gudang logistik modern dengan tumpukan server AI berperforma tinggi yang tertahan.",
