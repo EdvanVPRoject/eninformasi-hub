@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "krisis-chip-ai-china-harga-pasar-gelap-meroket-t-20261117",
+    "title": "Krisis Chip AI China: Harga Pasar Gelap Meroket Tiga Kali Lipat Akibat Pembekuan Impor",
+    "description": "Laporan terbaru mengungkap bahwa pembekuan impor dan kontrol ketat telah melumpuhkan pasokan chip AI di China, memicu lonjakan harga pasar gelap yang fantastis hingga mencapai ratusan ribu dolar per server.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-17T07:29:29.390Z",
+    "updatedDate": "2026-11-17T07:29:29.390Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "NVIDIA",
+      "AI Chips",
+      "China",
+      "Hardware",
+      "Semiconductor"
+    ],
+    "en": {
+      "title": "China's AI Chip Gray Market Prices Triple Amid Import Freeze; NVIDIA H200 Servers Hit $900K",
+      "description": "Recent reports reveal that strict import freezes and trade controls have severely restricted AI chip supplies in China, driving gray market prices to astronomical heights."
+    }
+  },
+  {
     "slug": "gugatan-masif-intel-krisis-kepercayaan-investor--20261116",
     "title": "Gugatan Masif Intel: Krisis Kepercayaan Investor dan Dampak Strategis bagi Raksasa Semikonduktor",
     "description": "Intel kini menghadapi tantangan hukum serius setelah harga sahamnya terjun bebas sebesar 29%. Analisis mendalam mengenai tuduhan penyesatan investor dan implikasi jangka panjang bagi dominasi pasar prosesor global.",

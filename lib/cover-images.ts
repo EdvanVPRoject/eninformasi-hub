@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'krisis-chip-ai-china-harga-pasar-gelap-meroket-t-20261117': {
+    url: U('1591488320449-011701bb6704'),
+    caption: "Gudang logistik modern dengan tumpukan server AI berperforma tinggi yang tertahan.",
+    source: 'Unsplash'
+  },
   'gugatan-masif-intel-krisis-kepercayaan-investor--20261116': {
     url: U('1562408590-e32931084e23'),
     caption: "Tampilan visual gedung pusat operasional Intel dengan latar belakang fluktuasi grafik pasar saham digital.",

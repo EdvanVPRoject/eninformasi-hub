@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: krisis-chip-ai-china-harga-pasar-gelap-meroket-t-20261117
+  'krisis-chip-ai-china-harga-pasar-gelap-meroket-t-20261117': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/china-gray-market-prices-nvidia-8-gpu-h200-server-900000-600k-stranded-warehouses/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Krisis Chip AI China: Harga Pasar Gelap Meroket Tiga Kali Lipat Akibat Pembekuan Impor"
+  },
+
   // Auto-generated Daily News Entry: gugatan-masif-intel-krisis-kepercayaan-investor--20261116
   'gugatan-masif-intel-krisis-kepercayaan-investor--20261116': {
     publisher: "Tom's Hardware",
