@@ -1,5 +1,24 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
+import { SITE_NAME, SITE_URL } from '@/lib/seo';
+
+export const metadata: Metadata = {
+  title: `Tentang ${SITE_NAME} & Pengembang (Edvan Nuriana)`,
+  description:
+    'Profil platform EnInformasi Hub, visi redaksi independen, dan portofolio pengembang Edvan Nuriana Putra Septia (EdvanVPRoject).',
+  alternates: {
+    canonical: '/about',
+  },
+  openGraph: {
+    title: `Tentang ${SITE_NAME} & Pengembang`,
+    description:
+      'Profil platform EnInformasi Hub dan pengembang Edvan Nuriana Putra Septia.',
+    url: `${SITE_URL}/about`,
+    siteName: SITE_NAME,
+    type: 'website',
+  },
+};
 import { 
   Terminal, 
   ShieldCheck, 

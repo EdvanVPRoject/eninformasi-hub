@@ -1,6 +1,24 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { FileText } from 'lucide-react';
+import { SITE_NAME, SITE_URL } from '@/lib/seo';
+
+export const metadata: Metadata = {
+  title: `Syarat & Ketentuan (Terms of Service) — ${SITE_NAME}`,
+  description:
+    'Syarat dan ketentuan penggunaan kode sumber, skrip AI, dan materi edukasi di portal EnInformasi Hub.',
+  alternates: {
+    canonical: '/terms',
+  },
+  openGraph: {
+    title: `Syarat & Ketentuan — ${SITE_NAME}`,
+    description: 'Syarat dan ketentuan penggunaan platform EnInformasi Hub.',
+    url: `${SITE_URL}/terms`,
+    siteName: SITE_NAME,
+    type: 'website',
+  },
+};
 
 export default function TermsPage() {
   return (

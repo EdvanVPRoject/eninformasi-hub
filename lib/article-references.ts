@@ -97,7 +97,7 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
   // 3. Local Custom Editorial / Vector Asset
   if (imgSrc && imgSrc.startsWith('/')) {
     return {
-      label: captionSource || 'Informasi Hub Custom Editorial Asset',
+      label: captionSource || 'EnInformasi Hub Editorial Asset',
       url: imgSrc,
     };
   }

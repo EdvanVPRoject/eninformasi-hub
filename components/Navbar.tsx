@@ -176,6 +176,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
 
           <button
             onClick={toggleTheme}
+            aria-label={t('nav_toggle_theme')}
             className="p-2 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] hover:text-[var(--text-main)] hover:border-emerald-500/40 active:scale-95 transition-all duration-200 ease-out"
             title={t('nav_toggle_theme')}
           >
@@ -186,6 +187,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
             href="https://github.com/EdvanVPRoject"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub EdvanVPRoject"
             className="hidden sm:flex p-2 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-muted)] hover:text-[var(--text-main)] hover:border-emerald-500/40 transition-all"
             title="GitHub Edvan"
           >
@@ -194,6 +196,8 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
 
           <button
             type="button"
+            aria-label={mobileMenuOpen ? 'Tutup menu navigasi' : 'Buka menu navigasi'}
+            aria-expanded={mobileMenuOpen}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="lg:hidden p-2 rounded-lg bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-main)] hover:border-emerald-500/40 transition-all"
           >

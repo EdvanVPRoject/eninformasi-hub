@@ -1,6 +1,24 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield } from 'lucide-react';
+import { SITE_NAME, SITE_URL } from '@/lib/seo';
+
+export const metadata: Metadata = {
+  title: `Kebijakan Privasi (Privacy Policy) — ${SITE_NAME}`,
+  description:
+    'Kebijakan privasi, pengelolaan cookie, serta standar transparansi pengunjung di portal teknologi dan gaming EnInformasi Hub.',
+  alternates: {
+    canonical: '/privacy-policy',
+  },
+  openGraph: {
+    title: `Kebijakan Privasi — ${SITE_NAME}`,
+    description: 'Kebijakan privasi resmi EnInformasi Hub.',
+    url: `${SITE_URL}/privacy-policy`,
+    siteName: SITE_NAME,
+    type: 'website',
+  },
+};
 
 export default function PrivacyPolicyPage() {
   return (

@@ -1,6 +1,24 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { AlertTriangle } from 'lucide-react';
+import { SITE_NAME, SITE_URL } from '@/lib/seo';
+
+export const metadata: Metadata = {
+  title: `Disclaimer & Transparansi Informasi — ${SITE_NAME}`,
+  description:
+    'Pernyataan penyangkalan, independensi redaksi, dan keterbukaan informasi benchmark teknologi AI di EnInformasi Hub.',
+  alternates: {
+    canonical: '/disclaimer',
+  },
+  openGraph: {
+    title: `Disclaimer — ${SITE_NAME}`,
+    description: 'Pernyataan penyangkalan resmi portal EnInformasi Hub.',
+    url: `${SITE_URL}/disclaimer`,
+    siteName: SITE_NAME,
+    type: 'website',
+  },
+};
 
 export default function DisclaimerPage() {
   return (

@@ -1,24 +1,25 @@
 'use client';
 
-import React, { Suspense } from 'react';
+import React, { useState, useCallback } from 'react';
 import Link from 'next/link';
-import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { 
-  Bot, 
-  Cpu, 
-  Layers, 
-  SlidersHorizontal, 
-  Sparkles, 
-  HardDrive, 
+import { usePathname } from 'next/navigation';
+import {
+  Bot,
+  Cpu,
+  Layers,
+  SlidersHorizontal,
+  Sparkles,
+  HardDrive,
   Wrench,
   Gamepad2,
   Flame,
-  ChevronDown
+  ChevronDown,
 } from 'lucide-react';
 import { PostType } from '@/lib/types';
 import { getCategoriesWithCount, totalArticleCount } from '@/lib/data/article-summaries';
 import { useLanguage } from './LanguageContext';
 import { getCategoryLabel } from '@/lib/i18n';
+import SearchParamsSync, { SyncedParams } from './SearchParamsSync';
 
 interface SidebarNavProps {
   currentCategory?: string;
@@ -26,19 +27,22 @@ interface SidebarNavProps {
   postType?: PostType | 'all';
 }
 
-function SidebarNavInner({
+export default function SidebarNav({
   currentCategory,
   onSelectCategory,
   postType,
 }: SidebarNavProps) {
-  const router = useRouter();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
+  const [urlCategory, setUrlCategory] = useState<string | null>(null);
   const { lang, t } = useLanguage();
+
+  const handleSync = useCallback((params: SyncedParams) => {
+    setUrlCategory(params.category);
+  }, []);
 
   const categories = getCategoriesWithCount(postType === 'all' ? undefined : postType);
   const totalCount = categories.find((c) => c.id === 'all')?.count ?? totalArticleCount;
-  const activeCat = currentCategory ?? searchParams.get('category') ?? 'all';
+  const activeCat = currentCategory ?? urlCategory ?? 'all';
 
   const getTargetBasePath = () => {
     if (pathname === '/tutorial') return '/tutorial';
@@ -46,16 +50,10 @@ function SidebarNavInner({
     return '/';
   };
 
-  const handleCategoryClick = (id: string) => {
-    if (onSelectCategory) {
-      onSelectCategory(id);
-    } else {
-      const basePath = getTargetBasePath();
-      const params = new URLSearchParams();
-      if (id !== 'all') params.set('category', id);
-      const queryStr = params.toString();
-      router.push(`${basePath}${queryStr ? `?${queryStr}` : ''}`);
-    }
+  const getCategoryHref = (id: string) => {
+    const basePath = getTargetBasePath();
+    if (id === 'all') return basePath;
+    return `${basePath}?category=${encodeURIComponent(id)}`;
   };
 
   const getCategoryIcon = (id: string) => {
@@ -83,7 +81,7 @@ function SidebarNavInner({
 
   const filterContent = (
     <div className="space-y-6 text-sm">
-      <div>
+      <nav aria-label={lang === 'en' ? 'Topic Categories' : 'Kategori Topik'}>
         <div className="flex items-center justify-between pb-2 mb-3 border-b border-[var(--border-color)]">
           <span className="font-mono text-xs font-semibold tracking-wider uppercase text-[var(--text-muted)] flex items-center gap-1.5">
             <SlidersHorizontal className="w-3.5 h-3.5" /> {t('filter_category_title')}
@@ -98,10 +96,15 @@ function SidebarNavInner({
             const isActive = activeCat === cat.id;
             const displayLabel = getCategoryLabel(cat.id, lang);
             return (
-              <button
+              <Link
                 key={cat.id}
-                type="button"
-                onClick={() => handleCategoryClick(cat.id)}
+                href={getCategoryHref(cat.id)}
+                onClick={(e) => {
+                  if (onSelectCategory) {
+                    e.preventDefault();
+                    onSelectCategory(cat.id);
+                  }
+                }}
                 className={`group w-full flex items-center justify-between px-3 py-2 rounded-lg text-left transition-all duration-150 ease-out active:scale-95 ${
                   isActive
                     ? 'bg-emerald-500/10 text-emerald-500 font-semibold border border-emerald-500/30 shadow-sm translate-x-1'
@@ -123,11 +126,11 @@ function SidebarNavInner({
                 >
                   {cat.count}
                 </span>
-              </button>
+              </Link>
             );
           })}
         </div>
-      </div>
+      </nav>
 
       {/* Free Tools Banner */}
       <div className="p-3.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] space-y-2.5 shadow-sm card-smooth-hover">
@@ -140,7 +143,7 @@ function SidebarNavInner({
             ? 'Collection of prompts, n8n templates, and AI agent scripts ready to use for free.'
             : 'Kumpulan prompt sakti, template n8n, dan skrip agen AI siap pakai tanpa bayar.'}
         </p>
-        <Link 
+        <Link
           href="/tools"
           className="inline-block w-full text-center px-3 py-1.5 text-xs font-mono font-semibold rounded-lg bg-[var(--bg-main)] border border-[var(--border-color)] text-[var(--text-main)] hover:border-emerald-500/50 hover:text-emerald-400 transition-all"
         >
@@ -150,15 +153,25 @@ function SidebarNavInner({
 
       {/* Persistent Mini Footer in Sticky Sidebar */}
       <div className="pt-2 px-1 text-[11px] font-mono text-zinc-500 space-y-1">
-        <div>© 2026 <strong>EnInformasi.hub</strong></div>
+        <div>
+          © 2026 <strong>EnInformasi Hub</strong>
+        </div>
         <div className="flex items-center gap-2 flex-wrap text-[10px] text-[var(--text-muted)]">
-          <Link href="/about" className="hover:text-emerald-400 transition-colors">{lang === 'en' ? 'About' : 'Tentang'}</Link>
+          <Link href="/about" className="hover:text-emerald-400 transition-colors">
+            {lang === 'en' ? 'About' : 'Tentang'}
+          </Link>
           <span>•</span>
-          <Link href="/privacy-policy" className="hover:text-emerald-400 transition-colors">{lang === 'en' ? 'Privacy' : 'Privasi'}</Link>
+          <Link href="/privacy-policy" className="hover:text-emerald-400 transition-colors">
+            {lang === 'en' ? 'Privacy' : 'Privasi'}
+          </Link>
           <span>•</span>
-          <Link href="/terms" className="hover:text-emerald-400 transition-colors">{lang === 'en' ? 'Terms' : 'Syarat'}</Link>
+          <Link href="/terms" className="hover:text-emerald-400 transition-colors">
+            {lang === 'en' ? 'Terms' : 'Syarat'}
+          </Link>
           <span>•</span>
-          <Link href="/contact" className="hover:text-emerald-400 transition-colors">{lang === 'en' ? 'Contact' : 'Kontak'}</Link>
+          <Link href="/contact" className="hover:text-emerald-400 transition-colors">
+            {lang === 'en' ? 'Contact' : 'Kontak'}
+          </Link>
         </div>
       </div>
     </div>
@@ -166,9 +179,14 @@ function SidebarNavInner({
 
   return (
     <>
+      <SearchParamsSync onChange={handleSync} />
+
       {/* Mobile Category Dropdown */}
       <div className="lg:hidden mb-4 space-y-1.5">
-        <label htmlFor="mobile-category-select" className="flex items-center justify-between text-xs font-mono font-semibold text-[var(--text-muted)]">
+        <label
+          htmlFor="mobile-category-select"
+          className="flex items-center justify-between text-xs font-mono font-semibold text-[var(--text-muted)]"
+        >
           <span className="flex items-center gap-1.5 text-[var(--text-main)]">
             <SlidersHorizontal className="w-3.5 h-3.5 text-emerald-500" />
             <span>{t('filter_category_title')}</span>
@@ -181,7 +199,14 @@ function SidebarNavInner({
           <select
             id="mobile-category-select"
             value={activeCat}
-            onChange={(e) => handleCategoryClick(e.target.value)}
+            onChange={(e) => {
+              const id = e.target.value;
+              if (onSelectCategory) {
+                onSelectCategory(id);
+              } else if (typeof window !== 'undefined') {
+                window.location.href = getCategoryHref(id);
+              }
+            }}
             className="w-full appearance-none px-3.5 py-2.5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] text-xs font-mono text-[var(--text-main)] font-semibold focus:outline-none focus:border-emerald-500/60 shadow-sm pr-9 cursor-pointer"
           >
             {categories.map((cat) => (
@@ -196,17 +221,7 @@ function SidebarNavInner({
         </div>
       </div>
 
-      <div className="hidden lg:block">
-        {filterContent}
-      </div>
+      <div className="hidden lg:block">{filterContent}</div>
     </>
-  );
-}
-
-export default function SidebarNav(props: SidebarNavProps) {
-  return (
-    <Suspense fallback={<div className="p-4 text-xs font-mono text-zinc-500">Memuat kategori...</div>}>
-      <SidebarNavInner {...props} />
-    </Suspense>
   );
 }

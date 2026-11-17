@@ -2,7 +2,19 @@ import type { Metadata, Viewport } from 'next';
 import { Inter, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import LayoutShell from '@/components/LayoutShell';
-import { totalArticleCount, tutorialArticleCount, artikelArticleCount } from '@/lib/data/article-summaries';
+import {
+  totalArticleCount,
+  tutorialArticleCount,
+  artikelArticleCount,
+} from '@/lib/data/article-summaries';
+import {
+  SITE_URL,
+  SITE_NAME,
+  OWNER_NAME,
+  OWNER_PORTFOLIO,
+  getWebsiteSchema,
+  getOrganizationSchema,
+} from '@/lib/seo';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,9 +29,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://eninformasi-hub.entehchin.workers.dev'),
-  title: `EnInformasi Hub — Portal ${totalArticleCount} Tutorial, Gaming & Tren Teknologi Terkini`,
-  description: `Portal wawasan teknologi modern, gaming & esports, rilis game masa depan, hardware & gadget, serta ${tutorialArticleCount} tutorial praktis dan ${artikelArticleCount} Informasi mendalam terupdate.`,
+  metadataBase: new URL(SITE_URL),
+  applicationName: SITE_NAME,
+  title: `${SITE_NAME} — Portal ${totalArticleCount} Tutorial, Gaming & Tren Teknologi Terkini`,
+  description: `EnInformasi Hub adalah portal wawasan teknologi modern, gaming & esports, rilis game masa depan, hardware & gadget, serta ${tutorialArticleCount} tutorial praktis dan ${artikelArticleCount} informasi mendalam terupdate.`,
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -29,29 +42,44 @@ export const metadata: Metadata = {
     apple: '/icon-192.png',
   },
   openGraph: {
-    title: `EnInformasi Hub — Portal ${totalArticleCount} Tutorial & Gaming Terupdate`,
-    description: `Wawasan teknologi modern, gaming & esports, rilis game masa depan, hardware & gadget, serta tutorial AI terupdate.`,
-    url: 'https://eninformasi-hub.entehchin.workers.dev',
-    siteName: 'EnInformasi Hub',
+    title: `${SITE_NAME} — Portal ${totalArticleCount} Tutorial, Gaming & Tren Teknologi`,
+    description: `Wawasan teknologi modern, gaming & esports, rilis game masa depan, hardware & gadget, serta tutorial AI terupdate di EnInformasi Hub.`,
+    url: SITE_URL,
+    siteName: SITE_NAME,
     images: [
       {
         url: '/logo-full.png',
         width: 1024,
         height: 571,
-        alt: 'EnInformasi Hub Logo',
+        alt: `${SITE_NAME} Logo`,
       },
     ],
     locale: 'id_ID',
+    alternateLocale: ['en_US'],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'EnInformasi Hub',
-    description: 'Portal wawasan teknologi modern, gaming & esports, serta tutorial praktis.',
+    title: `${SITE_NAME} — Portal Informasi & Tutorial Teknologi`,
+    description:
+      'Portal wawasan teknologi modern, gaming & esports, AI agents, serta tutorial praktis terupdate.',
     images: ['/logo-full.png'],
   },
-  keywords: ['EnInformasi', 'EnInformasi Hub', 'Gaming Esports', 'Mobile Legends', 'Honor of Kings', 'Valorant', 'PUBG Mobile', 'GTA 6 2026', 'NVIDIA Spark', 'Hardware 2026', 'Tutorial AI', 'DeepSeek R1', 'Claude 3.7', 'Teknologi Terupdate 2026'],
-  authors: [{ name: 'Edvan' }],
+  keywords: [
+    'EnInformasi Hub',
+    'EnInformasi',
+    'EnInformasi.hub',
+    'Portal Teknologi Indonesia',
+    'Gaming Esports',
+    'Tutorial AI Agent',
+    'Hardware & GPU',
+    'LLM & Model Open Source',
+    'Automasi Workflow',
+  ],
+  authors: [{ name: OWNER_NAME, url: OWNER_PORTFOLIO }],
+  creator: OWNER_NAME,
+  publisher: SITE_NAME,
+  category: 'technology',
   robots: {
     index: true,
     follow: true,
@@ -75,11 +103,22 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const websiteSchema = getWebsiteSchema();
+  const orgSchema = getOrganizationSchema();
+
   return (
     <html lang="id" className={`dark ${inter.variable} ${geistMono.variable} overflow-x-clip`}>
       <head>
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
       </head>
       <body className="font-sans antialiased selection:bg-emerald-500/20 selection:text-emerald-400 overflow-x-clip min-h-screen">
         <LayoutShell>{children}</LayoutShell>

@@ -465,6 +465,7 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
             )}
 
             <article className="prose prose-invert max-w-none text-[var(--text-main)] space-y-4 leading-relaxed">
+              <h2 className="sr-only">{displayTitle}</h2>
               <ArticleBodyRenderer key={`body-${lang}`} content={displayContent} toc={finalToc} articleRef={articleRef} fontScale={fontScale} />
             </article>
 
@@ -619,10 +620,10 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
                       </span>
                       <div className="space-y-1.5">
                         <div className="font-medium text-[var(--text-main)] leading-relaxed">
-                          <span className="font-semibold text-emerald-400">EdvanVPRoject</span> ({publishedYear}). &ldquo;<em>Sintesis Teknis, Rangkuman Dwibahasa, dan Analisis Komparatif Ekosistem Digital</em>&rdquo;. Informasi Hub.
+                          <span className="font-semibold text-emerald-400">EdvanVPRoject</span> ({publishedYear}). &ldquo;<em>Sintesis Teknis, Rangkuman Dwibahasa, dan Analisis Komparatif Ekosistem Digital</em>&rdquo;. EnInformasi Hub.
                         </div>
                         <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
-                          <strong>Atribusi Perangkuman:</strong> Dirangkum, diverifikasi, dan diterbitkan secara mandiri oleh <a href="https://github.com/EdvanVPRoject" target="_blank" rel="noopener noreferrer" className="text-emerald-400 underline underline-offset-2 font-medium">EdvanVPRoject</a> untuk portal Informasi Hub.
+                          <strong>Atribusi Perangkuman:</strong> Dirangkum, diverifikasi, dan diterbitkan secara mandiri oleh <a href="https://github.com/EdvanVPRoject" target="_blank" rel="noopener noreferrer" className="text-emerald-400 underline underline-offset-2 font-medium">EdvanVPRoject</a> untuk portal EnInformasi Hub.
                         </p>
                       </div>
                     </div>
