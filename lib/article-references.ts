@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: krisis-performa-gta-vi-mengapa-ps5-pro-gagal-men-20261118
+  'krisis-performa-gta-vi-mengapa-ps5-pro-gagal-men-20261118': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/playstation-5-pro-grand-theft-auto-vi-60-fps-most-stable/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Krisis Performa GTA VI: Mengapa PS5 Pro Gagal Mencapai 60 FPS dan Dilema Resolusi Series S"
+  },
+
   // Auto-generated Daily News Entry: amd-gemparkan-industri-hpc-di-sc26-kecam-emulasi-20261118
   'amd-gemparkan-industri-hpc-di-sc26-kecam-emulasi-20261118': {
     publisher: "Tom's Hardware",

@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "krisis-performa-gta-vi-mengapa-ps5-pro-gagal-men-20261118",
+    "title": "Krisis Performa GTA VI: Mengapa PS5 Pro Gagal Mencapai 60 FPS dan Dilema Resolusi Series S",
+    "description": "Analisis mendalam mengenai performa teknis Grand Theft Auto VI di berbagai konsol generasi saat ini. Temuan terbaru mengungkap keterbatasan frame rate pada PS5 Pro dan tantangan resolusi ekstrem pada Xbox Series S.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-18T20:17:50.460Z",
+    "updatedDate": "2026-11-18T20:17:50.460Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "GTA6",
+      "RockstarGames",
+      "PS5Pro",
+      "XboxSeriesS",
+      "GamingHardware"
+    ],
+    "en": {
+      "title": "GTA VI Performance Crisis: Why PS5 Pro Falls Short of 60 FPS and the Series S Resolution Dilemma",
+      "description": "A deep dive into the technical performance of Grand Theft Auto VI across current-gen consoles, revealing the struggle for 60 FPS on PS5 Pro and the resolution compromises on Xbox Series S."
+    }
+  },
+  {
     "slug": "amd-gemparkan-industri-hpc-di-sc26-kecam-emulasi-20261118",
     "title": "AMD Gemparkan Industri HPC di SC26: Kecam Emulasi FP64 Nvidia dan Pamerkan Instinct MI430X Native Double-Precision",
     "description": "AMD melancarkan kritik tajam terhadap pendekatan emulasi FP64 Nvidia pada ajang Supercomputing 2026, sekaligus memamerkan keunggulan arsitektur native double-precision pada akselerator Instinct MI430X yang diklaim jauh lebih efisien untuk beban kerja ilmiah skala masif.",

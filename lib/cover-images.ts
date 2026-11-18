@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'krisis-performa-gta-vi-mengapa-ps5-pro-gagal-men-20261118': {
+    url: U('1606813907291-d86efa9b94db'),
+    caption: "Tampilan visual konsol PlayStation 5 Pro bersanding dengan perangkat keras Xbox Series S terkini.",
+    source: 'Unsplash'
+  },
   'amd-gemparkan-industri-hpc-di-sc26-kecam-emulasi-20261118': {
     url: U('1624705002806-5d72df19c3ad'),
     caption: "Rak server pusat data berperforma tinggi dengan chip akselerator AMD Instinct menyala terang",
