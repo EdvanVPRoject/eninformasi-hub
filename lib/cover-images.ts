@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'amd-gemparkan-industri-hpc-di-sc26-kecam-emulasi-20261118': {
+    url: U('1624705002806-5d72df19c3ad'),
+    caption: "Rak server pusat data berperforma tinggi dengan chip akselerator AMD Instinct menyala terang",
+    source: 'Unsplash'
+  },
   'skandal-ai-claude-opus-55-ketika-algoritma-salah-20261117': {
     url: U('1555066931-4365d14bab8c'),
     caption: "Visualisasi abstrak antarmuka pemrosesan citra satelit yang menyoroti kegagalan klasifikasi objek oleh kecerdasan buatan.",

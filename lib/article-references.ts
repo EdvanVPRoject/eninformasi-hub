@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: amd-gemparkan-industri-hpc-di-sc26-kecam-emulasi-20261118
+  'amd-gemparkan-industri-hpc-di-sc26-kecam-emulasi-20261118': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/pc-components/gpus/amd-attacks-nvidias-fp64-emulation-at-sc26-touts-native-double-precision-on-instinct-mi430x-says-ozaki-schemes-fit-less-than-10-percent-of-hpc-workloads-and-triple-memory-use-and-emulated-fp64-is-a-poor-fit-for-many-hpc-workloads",
+    note: "Laporan investigasi dan analisis data rujukan resmi: AMD Gemparkan Industri HPC di SC26: Kecam Emulasi FP64 Nvidia dan Pamerkan Instinct MI430X Native Double-Precision"
+  },
+
   // Auto-generated Daily News Entry: skandal-ai-claude-opus-55-ketika-algoritma-salah-20261117
   'skandal-ai-claude-opus-55-ketika-algoritma-salah-20261117': {
     publisher: "Wccftech",

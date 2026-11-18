@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "amd-gemparkan-industri-hpc-di-sc26-kecam-emulasi-20261118",
+    "title": "AMD Gemparkan Industri HPC di SC26: Kecam Emulasi FP64 Nvidia dan Pamerkan Instinct MI430X Native Double-Precision",
+    "description": "AMD melancarkan kritik tajam terhadap pendekatan emulasi FP64 Nvidia pada ajang Supercomputing 2026, sekaligus memamerkan keunggulan arsitektur native double-precision pada akselerator Instinct MI430X yang diklaim jauh lebih efisien untuk beban kerja ilmiah skala masif.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Mahir",
+    "pubDate": "2026-11-18T06:52:29.723Z",
+    "updatedDate": "2026-11-18T06:52:29.723Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AMD",
+      "Nvidia",
+      "Instinct MI430X",
+      "HPC",
+      "SC26"
+    ],
+    "en": {
+      "title": "AMD Shakes Up HPC Industry at SC26: Attacks Nvidia's FP64 Emulation and Unveils Native Double-Precision Instinct MI430X",
+      "description": "AMD launched a scathing critique of Nvidia's FP64 emulation approach at Supercomputing 2026, while showcasing the architectural superiority of native double-precision on the Instinct MI430X accelerator for massive-scale scientific workloads."
+    }
+  },
+  {
     "slug": "skandal-ai-claude-opus-55-ketika-algoritma-salah-20261117",
     "title": "Skandal AI Claude Opus 5.5: Ketika Algoritma Salah Mengidentifikasi Sekolah Sebagai Target Militer",
     "description": "Sebuah insiden mengkhawatirkan mencuat saat model AI Anthropic, Claude Opus 5.5, secara konsisten melabeli sekolah dasar di Iran sebagai target militer. Temuan ini memicu perdebatan sengit mengenai etika, bias algoritma, dan keamanan penggunaan AI dalam pengawasan kritis.",
