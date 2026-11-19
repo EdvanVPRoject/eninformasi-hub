@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: kebangkitan-intel-18a-strategi-berisiko-tinggi-m-20261119
+  'kebangkitan-intel-18a-strategi-berisiko-tinggi-m-20261119': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/semiconductors/intel-18a-yields-hit-70-percent-as-company-signs-microsoft-as-emib-customer-the-first-company-to-publicly-commit-to-intels-new-packaging-technology",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Kebangkitan Intel 18A: Strategi Berisiko Tinggi Microsoft Mengubah Lanskap Manufaktur Chip Global"
+  },
+
   // Auto-generated Daily News Entry: drama-loves-gamers-cuitan-kontroversial-amd-diha-20261119
   'drama-loves-gamers-cuitan-kontroversial-amd-diha-20261119': {
     publisher: "Tom's Hardware",

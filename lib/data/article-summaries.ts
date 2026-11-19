@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "kebangkitan-intel-18a-strategi-berisiko-tinggi-m-20261119",
+    "title": "Kebangkitan Intel 18A: Strategi Berisiko Tinggi Microsoft Mengubah Lanskap Manufaktur Chip Global",
+    "description": "Intel resmi menggandeng Microsoft sebagai pelanggan utama untuk teknologi pengemasan EMIB dan proses 18A, menandai titik balik krusial dalam ambisi Foundry perusahaan setelah mencapai yield produksi 70%. Inovasi ini diprediksi akan mengubah peta kekuatan manufaktur semikonduktor dunia menghadapi dominasi TSMC.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-19T20:20:44.611Z",
+    "updatedDate": "2026-11-19T20:20:44.611Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Intel",
+      "Microsoft",
+      "Semikonduktor",
+      "18A",
+      "Foundry"
+    ],
+    "en": {
+      "title": "The Intel 18A Breakthrough: Microsoft's High-Stakes Bet Reshapes Global Chip Manufacturing",
+      "description": "Intel has officially secured Microsoft as a major customer for its 18A process and EMIB packaging technology, hitting a critical 70% yield milestone. This strategic partnership marks a pivotal turning point in Intel's foundry ambitions to challenge TSMC's industry dominance."
+    }
+  },
+  {
     "slug": "drama-loves-gamers-cuitan-kontroversial-amd-diha-20261119",
     "title": "Drama 'Loves Gamers': Cuitan Kontroversial AMD Dihantam Community Note Telak Terkait AI",
     "description": "Cuitan Twitter AMD yang menyatakan kecintaannya kepada para gamer menuai hujatan dan disambar Community Note telak karena dianggap hipokrit di tengah pergeseran masif perusahaan ke sektor kecerdasan buatan.",
