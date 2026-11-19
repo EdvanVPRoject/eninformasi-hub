@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "drama-loves-gamers-cuitan-kontroversial-amd-diha-20261119",
+    "title": "Drama 'Loves Gamers': Cuitan Kontroversial AMD Dihantam Community Note Telak Terkait AI",
+    "description": "Cuitan Twitter AMD yang menyatakan kecintaannya kepada para gamer menuai hujatan dan disambar Community Note telak karena dianggap hipokrit di tengah pergeseran masif perusahaan ke sektor kecerdasan buatan.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-19T06:53:50.653Z",
+    "updatedDate": "2026-11-19T06:53:50.653Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AMD",
+      "Community Note",
+      "GPU",
+      "Gaming",
+      "AI"
+    ],
+    "en": {
+      "title": "AMD's 'Loves Gamers' Twitter Brag Smashed by Savage Community Note Over AI Pivot",
+      "description": "AMD's corporate tweet proclaiming its love for gamers backfired spectacularly after being hit with a brutal Community Note highlighting the company's aggressive business shift toward artificial intelligence."
+    }
+  },
+  {
     "slug": "krisis-performa-gta-vi-mengapa-ps5-pro-gagal-men-20261118",
     "title": "Krisis Performa GTA VI: Mengapa PS5 Pro Gagal Mencapai 60 FPS dan Dilema Resolusi Series S",
     "description": "Analisis mendalam mengenai performa teknis Grand Theft Auto VI di berbagai konsol generasi saat ini. Temuan terbaru mengungkap keterbatasan frame rate pada PS5 Pro dan tantangan resolusi ekstrem pada Xbox Series S.",

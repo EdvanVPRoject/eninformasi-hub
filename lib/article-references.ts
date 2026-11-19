@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: drama-loves-gamers-cuitan-kontroversial-amd-diha-20261119
+  'drama-loves-gamers-cuitan-kontroversial-amd-diha-20261119': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/pc-components/amds-twitter-brag-that-loses-gamers-met-with-savage-community-note-post-met-with-backlash-over-the-companys-pivot-to-ai",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Drama 'Loves Gamers': Cuitan Kontroversial AMD Dihantam Community Note Telak Terkait AI"
+  },
+
   // Auto-generated Daily News Entry: krisis-performa-gta-vi-mengapa-ps5-pro-gagal-men-20261118
   'krisis-performa-gta-vi-mengapa-ps5-pro-gagal-men-20261118': {
     publisher: "Wccftech",

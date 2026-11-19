@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'drama-loves-gamers-cuitan-kontroversial-amd-diha-20261119': {
+    url: U('1587202372775-e229f172b9d7'),
+    caption: "Tangkapan layar cuitan Twitter AMD bersama catatan komunitas transparan yang menyoroti pergeseran fokus AI perusahaan.",
+    source: 'Unsplash'
+  },
   'krisis-performa-gta-vi-mengapa-ps5-pro-gagal-men-20261118': {
     url: U('1606813907291-d86efa9b94db'),
     caption: "Tampilan visual konsol PlayStation 5 Pro bersanding dengan perangkat keras Xbox Series S terkini.",
