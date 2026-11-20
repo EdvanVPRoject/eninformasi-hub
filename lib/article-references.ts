@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: operasi-rahasia-inggris-ribuan-kulkas-pintar-dir-20261120
+  'operasi-rahasia-inggris-ribuan-kulkas-pintar-dir-20261120': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/cyber-security/thousands-of-vulnerable-fridges-patched-against-cyberattacks-in-secret-operation-uk-takes-action-following-hacks-that-destroyed-food-supplies-with-50-degree-defrosting-hijack",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Operasi Rahasia Inggris: Ribuan Kulkas Pintar Diretas dan Ditambal untuk Cegah Serangan Siber Skala Besar"
+  },
+
   // Auto-generated Daily News Entry: path-of-exile-2-membidik-takhta-1-juta-pemain-am-20261120
   'path-of-exile-2-membidik-takhta-1-juta-pemain-am-20261120': {
     publisher: "Wccftech",

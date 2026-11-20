@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "operasi-rahasia-inggris-ribuan-kulkas-pintar-dir-20261120",
+    "title": "Operasi Rahasia Inggris: Ribuan Kulkas Pintar Diretas dan Ditambal untuk Cegah Serangan Siber Skala Besar",
+    "description": "Pemerintah Inggris dan otoritas keamanan siber meluncurkan operasi rahasia untuk menambal ribuan kulkas pintar yang rentan setelah eksploitasi peretasan menyebabkan pembusukan makanan massal akibat kenaikan suhu ekstrem.",
+    "postType": "artikel",
+    "category": "tech-gadgets",
+    "categoryLabel": "Teknologi & Hardware",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-20T19:51:43.897Z",
+    "updatedDate": "2026-11-20T19:51:43.897Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Cybersecurity",
+      "Smart Fridges",
+      "IoT Security",
+      "Tom's Hardware",
+      "Vulnerability Patches"
+    ],
+    "en": {
+      "title": "Secret UK Operation Patches Thousands of Vulnerable Smart Fridges Against Large-Scale Cyberattacks",
+      "description": "The UK government and cybersecurity authorities launched a secret operation to patch thousands of vulnerable smart refrigerators after exploitation led to mass food spoilage from extreme temperature manipulation."
+    }
+  },
+  {
     "slug": "path-of-exile-2-membidik-takhta-1-juta-pemain-am-20261120",
     "title": "Path of Exile 2 Membidik Takhta 1 Juta Pemain: Ambisi Grinding Gear Games Melampaui Raksasa Genre RPG",
     "description": "Path of Exile 2 bersiap meluncurkan versi 1.0 dengan target ambisius menembus 1 juta pemain serentak di Steam, menantang dominasi legendaris Elden Ring dan Cyberpunk 2077. Artikel ini membedah strategi teknis dan ekspektasi komunitas di balik peluncuran RPG paling dinanti tahun ini.",
