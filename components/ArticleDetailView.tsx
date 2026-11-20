@@ -8,6 +8,7 @@ import {
   Calendar, 
   User, 
   ArrowLeft, 
+  ArrowRight,
   Sparkles, 
   Globe, 
   ListOrdered,
@@ -20,9 +21,19 @@ import {
   CheckCircle2,
   RotateCcw,
   Image as ImageIcon,
-  BookOpen
+  BookOpen,
+  MessageCircle,
+  Send,
+  Copy
 } from 'lucide-react';
-import { Article, PostType, TocItem } from '@/lib/types';
+import {
+  Article,
+  PostType,
+  TocItem,
+  RelatedArticleSummary,
+  AdjacentArticleLink,
+} from '@/lib/types';
+import { SITE_URL } from '@/lib/seo';
 import { getArticleCover } from '@/lib/cover-images';
 import { getArticleReference, resolveSourceUrl, resolvePhotoSource } from '@/lib/article-references';
 import SidebarNav from '@/components/SidebarNav';
@@ -36,6 +47,11 @@ import { getCategoryLabel } from '@/lib/i18n';
 interface ArticleDetailViewProps {
   article: Article;
   postType: PostType;
+  relatedArticles?: RelatedArticleSummary[];
+  adjacentArticles?: {
+    prev: AdjacentArticleLink | null;
+    next: AdjacentArticleLink | null;
+  };
 }
 
 function formatCleanCategory(catId: string, lang: 'id' | 'en') {
@@ -58,7 +74,12 @@ function formatEditorialDate(dateStr: string, lang: 'id' | 'en'): string {
   });
 }
 
-export default function ArticleDetailView({ article, postType }: ArticleDetailViewProps) {
+export default function ArticleDetailView({
+  article,
+  postType,
+  relatedArticles = [],
+  adjacentArticles,
+}: ArticleDetailViewProps) {
   const { lang, setLang, toggleLang } = useLanguage();
   const [maxProgress, setMaxProgress] = useState(0);
   const [liveScrollPct, setLiveScrollPct] = useState(0);
@@ -122,6 +143,21 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
     }
   };
 
+  const handleNativeShare = async (shareTitle: string, shareUrl: string) => {
+    if (typeof navigator !== 'undefined' && navigator.share) {
+      try {
+        await navigator.share({
+          title: shareTitle,
+          url: shareUrl,
+        });
+        return;
+      } catch {
+        // Fallback to clipboard copy if user cancels or share fails
+      }
+    }
+    handleCopyLink();
+  };
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -144,6 +180,10 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
   };
   const finalToc = displayToc ? [...displayToc, bibliographyTocItem] : [bibliographyTocItem];
   const publishedYear = new Date(article.publishedAt || '2026-10-24').getFullYear() || 2026;
+
+  const canonicalShareUrl = `${SITE_URL}/${postType}/${article.slug}`;
+  const encodedShareUrl = encodeURIComponent(canonicalShareUrl);
+  const encodedShareText = encodeURIComponent(`${displayTitle} — EnInformasi Hub`);
 
   return (
     <div className="min-h-screen bg-[var(--bg-main)] relative">
@@ -658,7 +698,221 @@ export default function ArticleDetailView({ article, postType }: ArticleDetailVi
               ))}
             </div>
 
-            <FeedbackWidget slug={article.slug} />
+            {/* Interactive Social Share Bar */}
+            <div className="p-4 sm:p-5 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 shadow-sm">
+              <div className="flex items-center gap-2 text-xs font-mono font-semibold text-[var(--text-main)]">
+                <Share2 className="w-4 h-4 text-emerald-500 shrink-0" />
+                <span>
+                  {lang === 'en'
+                    ? 'Share this article with friends & community:'
+                    : 'Bagikan artikel ini ke teman & komunitas:'}
+                </span>
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                <a
+                  href={`https://wa.me/?text=${encodedShareText}%20${encodedShareUrl}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 hover:bg-emerald-500/20 hover:-translate-y-0.5 active:scale-95 transition-all"
+                  title="Bagikan ke WhatsApp"
+                >
+                  <MessageCircle className="w-3.5 h-3.5" />
+                  <span>WhatsApp</span>
+                </a>
+                <a
+                  href={`https://twitter.com/intent/tweet?text=${encodedShareText}&url=${encodedShareUrl}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-semibold bg-zinc-500/10 text-[var(--text-main)] border border-[var(--border-color)] hover:border-emerald-500/40 hover:text-emerald-400 hover:-translate-y-0.5 active:scale-95 transition-all"
+                  title="Bagikan ke X (Twitter)"
+                >
+                  <span>𝕏</span>
+                  <span>Post</span>
+                </a>
+                <a
+                  href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedShareUrl}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/25 hover:bg-sky-500/20 hover:-translate-y-0.5 active:scale-95 transition-all"
+                  title="Bagikan ke LinkedIn"
+                >
+                  <span>in</span>
+                  <span>LinkedIn</span>
+                </a>
+                <a
+                  href={`https://t.me/share/url?url=${encodedShareUrl}&text=${encodedShareText}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/25 hover:bg-cyan-500/20 hover:-translate-y-0.5 active:scale-95 transition-all"
+                  title="Bagikan ke Telegram"
+                >
+                  <Send className="w-3.5 h-3.5" />
+                  <span>Telegram</span>
+                </a>
+                <button
+                  type="button"
+                  onClick={() => handleNativeShare(displayTitle, canonicalShareUrl)}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-semibold bg-[var(--bg-main)] text-[var(--text-muted)] border border-[var(--border-color)] hover:border-emerald-500/40 hover:text-emerald-400 hover:-translate-y-0.5 active:scale-95 transition-all"
+                  title={lang === 'en' ? 'Copy or share link' : 'Salin atau bagikan tautan'}
+                >
+                  {copiedUrl ? (
+                    <>
+                      <Check className="w-3.5 h-3.5 text-emerald-500" />
+                      <span className="text-emerald-500">{lang === 'en' ? 'Copied!' : 'Tersalin!'}</span>
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="w-3.5 h-3.5" />
+                      <span>{lang === 'en' ? 'Copy Link' : 'Salin Link'}</span>
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+
+            <FeedbackWidget slug={article.slug} articleTitle={displayTitle} />
+
+            {/* Previous / Next Navigation */}
+            {adjacentArticles && (adjacentArticles.prev || adjacentArticles.next) && (
+              <nav
+                aria-label={lang === 'en' ? 'Adjacent articles' : 'Navigasi artikel terkait urutan'}
+                className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4"
+              >
+                {adjacentArticles.prev ? (
+                  <Link
+                    href={`/${adjacentArticles.prev.postType}/${adjacentArticles.prev.slug}`}
+                    className="group p-4 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 card-smooth-hover flex flex-col justify-between gap-1.5 text-left"
+                  >
+                    <span className="text-[11px] font-mono text-[var(--text-muted)] flex items-center gap-1 group-hover:text-emerald-400 transition-colors">
+                      <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-1 transition-transform" />
+                      <span>{lang === 'en' ? 'Previous Reading' : 'Bacaan Sebelumnya'}</span>
+                    </span>
+                    <span className="text-xs sm:text-sm font-bold text-[var(--text-main)] group-hover:text-emerald-400 transition-colors line-clamp-2 leading-snug">
+                      {lang === 'en' && adjacentArticles.prev.enTitle
+                        ? adjacentArticles.prev.enTitle
+                        : adjacentArticles.prev.title}
+                    </span>
+                  </Link>
+                ) : (
+                  <div className="hidden sm:block" />
+                )}
+
+                {adjacentArticles.next && (
+                  <Link
+                    href={`/${adjacentArticles.next.postType}/${adjacentArticles.next.slug}`}
+                    className="group p-4 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 card-smooth-hover flex flex-col justify-between gap-1.5 text-left sm:text-right sm:items-end"
+                  >
+                    <span className="text-[11px] font-mono text-[var(--text-muted)] flex items-center gap-1 group-hover:text-emerald-400 transition-colors">
+                      <span>{lang === 'en' ? 'Next Reading' : 'Bacaan Selanjutnya'}</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                    <span className="text-xs sm:text-sm font-bold text-[var(--text-main)] group-hover:text-emerald-400 transition-colors line-clamp-2 leading-snug">
+                      {lang === 'en' && adjacentArticles.next.enTitle
+                        ? adjacentArticles.next.enTitle
+                        : adjacentArticles.next.title}
+                    </span>
+                  </Link>
+                )}
+              </nav>
+            )}
+
+            {/* Related Articles & Tutorials (Contextual Internal Linking) */}
+            {relatedArticles.length > 0 && (
+              <section
+                aria-labelledby="related-articles-heading"
+                className="pt-8 mt-6 border-t border-[var(--border-color)] space-y-4"
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <h2
+                    id="related-articles-heading"
+                    className="text-base sm:text-lg font-extrabold tracking-tight text-[var(--text-main)] flex items-center gap-2"
+                  >
+                    <span className="w-1.5 h-5 rounded-full bg-emerald-500 shrink-0" />
+                    <span>
+                      {lang === 'en'
+                        ? 'Related Articles & Guides'
+                        : 'Artikel & Panduan Terkait Lainnya'}
+                    </span>
+                  </h2>
+                  <Link
+                    href={`/?category=${article.category}`}
+                    className="text-xs font-mono text-emerald-500 hover:text-emerald-400 hover:underline shrink-0"
+                  >
+                    {lang === 'en' ? 'View Topic →' : 'Lihat Semua Topik →'}
+                  </Link>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {relatedArticles.map((rel) => {
+                    const relUrl = `/${rel.postType}/${rel.slug}`;
+                    const relTitle = lang === 'en' && rel.en?.title ? rel.en.title : rel.title;
+                    const relDesc =
+                      lang === 'en' && rel.en?.description ? rel.en.description : rel.description;
+
+                    return (
+                      <article
+                        key={rel.slug}
+                        className="group flex flex-col justify-between overflow-hidden rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-emerald-500/50 card-smooth-hover shadow-sm"
+                      >
+                        <div>
+                          <Link
+                            href={relUrl}
+                            aria-label={relTitle}
+                            className="block relative aspect-[16/9] w-full overflow-hidden bg-zinc-900 border-b border-[var(--border-color)]"
+                          >
+                            <img
+                              src={rel.coverUrl}
+                              alt={rel.coverCaption || relTitle}
+                              width={400}
+                              height={225}
+                              loading="lazy"
+                              className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-300 ease-out"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none" />
+                            <span
+                              className={`absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-mono font-bold backdrop-blur-md ${
+                                rel.postType === 'tutorial'
+                                  ? 'bg-emerald-950/85 text-emerald-400 border border-emerald-500/30'
+                                  : 'bg-black/75 text-sky-400 border border-sky-500/30'
+                              }`}
+                            >
+                              {rel.postType === 'tutorial'
+                                ? 'Tutorial'
+                                : lang === 'en'
+                                ? 'Information'
+                                : 'Informasi'}
+                            </span>
+                            <span className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded text-[10px] font-mono text-zinc-200 bg-black/70 backdrop-blur-md border border-white/10">
+                              {rel.readingTime}
+                            </span>
+                          </Link>
+                          <div className="p-3.5 space-y-1.5">
+                            <h3 className="text-sm font-bold text-[var(--text-main)] group-hover:text-emerald-400 transition-colors leading-snug line-clamp-2">
+                              <Link href={relUrl}>{relTitle}</Link>
+                            </h3>
+                            <p className="text-xs text-[var(--text-muted)] leading-relaxed line-clamp-2">
+                              {relDesc}
+                            </p>
+                          </div>
+                        </div>
+                        <div className="px-3.5 pb-3 pt-2 border-t border-[var(--border-color)]/60 flex items-center justify-between text-[11px] font-mono">
+                          <span className="text-[var(--text-muted)] truncate pr-2">
+                            {formatCleanCategory(rel.category, lang)}
+                          </span>
+                          <Link
+                            href={relUrl}
+                            className="inline-flex items-center gap-1 text-emerald-500 hover:text-emerald-400 font-semibold shrink-0"
+                          >
+                            <span>{lang === 'en' ? 'Read' : 'Baca'}</span>
+                            <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                          </Link>
+                        </div>
+                      </article>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
 
             <div className="pt-8 flex flex-wrap items-center justify-between gap-4">
               <Link

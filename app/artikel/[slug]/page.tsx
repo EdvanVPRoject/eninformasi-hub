@@ -1,7 +1,13 @@
 import React from 'react';
 import { notFound, permanentRedirect } from 'next/navigation';
 import { Metadata } from 'next';
-import { getArtikels, getArticleBySlug } from '@/lib/articles';
+import {
+  getArtikels,
+  getArticleBySlug,
+  getRelatedArticles,
+  getAdjacentArticles,
+  isDailyNewsSlug,
+} from '@/lib/articles';
 import { getArticleCover } from '@/lib/cover-images';
 import {
   SITE_NAME,
@@ -88,8 +94,13 @@ export default async function ArtikelDetailPage({ params }: PageProps) {
   }
 
   const cover = getArticleCover(article.slug, article.category, article.tags, article.title);
-  const articleSchema = getArticleSchema(article, cover.url);
+  const articleSchema = getArticleSchema(article, cover.url, {
+    isNewsArticle: isDailyNewsSlug(article.slug),
+    imageCaption: cover.caption,
+  });
   const breadcrumbSchema = getBreadcrumbSchema(article);
+  const relatedArticles = getRelatedArticles(article.slug, 4);
+  const adjacentArticles = getAdjacentArticles(article.slug);
 
   return (
     <>
@@ -101,7 +112,12 @@ export default async function ArtikelDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <ArticleDetailView article={article} postType="artikel" />
+      <ArticleDetailView
+        article={article}
+        postType="artikel"
+        relatedArticles={relatedArticles}
+        adjacentArticles={adjacentArticles}
+      />
     </>
   );
 }

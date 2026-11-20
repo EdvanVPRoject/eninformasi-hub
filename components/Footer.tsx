@@ -28,6 +28,8 @@ export default function Footer() {
                 <a href="https://github.com/EdvanVPRoject" target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a>
                 <span>•</span>
                 <a href="https://edvan-portofolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:underline" title="Edvan Nuriana — Sistem Komputer">{lang === 'en' ? 'Portfolio' : 'Portofolio'}</a>
+                <span>•</span>
+                <a href="/feed.xml" className="hover:underline" title="RSS Feed EnInformasi Hub">RSS Feed</a>
               </div>
             </div>
           </div>

@@ -1,7 +1,12 @@
 import React from 'react';
 import { notFound, permanentRedirect } from 'next/navigation';
 import { Metadata } from 'next';
-import { getTutorials, getArticleBySlug } from '@/lib/articles';
+import {
+  getTutorials,
+  getArticleBySlug,
+  getRelatedArticles,
+  getAdjacentArticles,
+} from '@/lib/articles';
 import { getArticleCover } from '@/lib/cover-images';
 import {
   SITE_NAME,
@@ -88,8 +93,13 @@ export default async function TutorialDetailPage({ params }: PageProps) {
   }
 
   const cover = getArticleCover(article.slug, article.category, article.tags, article.title);
-  const articleSchema = getArticleSchema(article, cover.url);
+  const articleSchema = getArticleSchema(article, cover.url, {
+    isNewsArticle: false,
+    imageCaption: cover.caption,
+  });
   const breadcrumbSchema = getBreadcrumbSchema(article);
+  const relatedArticles = getRelatedArticles(article.slug, 4);
+  const adjacentArticles = getAdjacentArticles(article.slug);
 
   return (
     <>
@@ -101,7 +111,12 @@ export default async function TutorialDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <ArticleDetailView article={article} postType="tutorial" />
+      <ArticleDetailView
+        article={article}
+        postType="tutorial"
+        relatedArticles={relatedArticles}
+        adjacentArticles={adjacentArticles}
+      />
     </>
   );
 }

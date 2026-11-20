@@ -11,8 +11,10 @@ import { futureTechArticles } from './data/future-tech';
 import { dailyNewsArticles } from './data/daily-news';
 import { englishTranslations } from './data/translations-en';
 import { enStepsMap } from './data/en-steps-map';
-import { Article, CategoryType, DifficultyType, PostType, TocItem } from './types';
+import { Article, CategoryType, DifficultyType, PostType, TocItem, RelatedArticleSummary, AdjacentArticleLink } from './types';
 import { getCategoryLabel } from './i18n';
+import { getArticleCover, getThumbnailUrl } from './cover-images';
+import { parseArticleDate } from './seo';
 
 export function extractTocFromContent(content?: string, fallbackToc: TocItem[] = []): TocItem[] {
   if (!content) return fallbackToc;
@@ -253,4 +255,95 @@ export function searchArticles(query: string, postType?: PostType): Article[] {
       a.categoryLabel.toLowerCase().includes(q) ||
       a.tags.some((t) => t.toLowerCase().includes(q))
   );
+}
+
+const dailyNewsSlugSet = new Set(dailyNewsArticles.map((a) => a.slug));
+
+export function isDailyNewsSlug(slug: string): boolean {
+  return dailyNewsSlugSet.has(slug) || /-\d{8}(-\d+)?$/.test(slug);
+}
+
+export function getRelatedArticles(currentSlug: string, limit = 4): RelatedArticleSummary[] {
+  const current = getArticleBySlug(currentSlug);
+  if (!current) return [];
+
+  const currentTags = new Set((current.tags || []).map((t) => t.toLowerCase()));
+
+  const scored = allArticles
+    .filter((a) => a.slug !== currentSlug)
+    .map((candidate) => {
+      let score = 0;
+      if (candidate.category === current.category) score += 6;
+      if (candidate.postType === current.postType) score += 2;
+
+      for (const tg of candidate.tags || []) {
+        if (currentTags.has(tg.toLowerCase())) {
+          score += 3;
+        }
+      }
+
+      const timestamp = parseArticleDate(candidate.updatedDate || candidate.pubDate).getTime();
+      return { candidate, score, timestamp };
+    })
+    .sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      return b.timestamp - a.timestamp;
+    })
+    .slice(0, limit);
+
+  return scored.map(({ candidate }) => {
+    const cover = getArticleCover(candidate.slug, candidate.category, candidate.tags, candidate.title);
+    return {
+      slug: candidate.slug,
+      title: candidate.title,
+      description: candidate.description,
+      postType: candidate.postType,
+      category: candidate.category,
+      categoryLabel: candidate.categoryLabel,
+      readingTime: candidate.readingTime,
+      pubDate: candidate.pubDate,
+      coverUrl: getThumbnailUrl(cover.url, 600),
+      coverCaption: cover.caption,
+      en: candidate.en
+        ? {
+            title: candidate.en.title,
+            description: candidate.en.description,
+          }
+        : undefined,
+    };
+  });
+}
+
+export function getAdjacentArticles(currentSlug: string): {
+  prev: AdjacentArticleLink | null;
+  next: AdjacentArticleLink | null;
+} {
+  const current = getArticleBySlug(currentSlug);
+  if (!current) return { prev: null, next: null };
+
+  const pool = allArticles.filter((a) => a.postType === current.postType);
+  const idx = pool.findIndex((a) => a.slug === currentSlug);
+  if (idx === -1) return { prev: null, next: null };
+
+  const newer = idx > 0 ? pool[idx - 1] : null;
+  const older = idx < pool.length - 1 ? pool[idx + 1] : null;
+
+  return {
+    prev: older
+      ? {
+          slug: older.slug,
+          title: older.title,
+          postType: older.postType,
+          enTitle: older.en?.title,
+        }
+      : null,
+    next: newer
+      ? {
+          slug: newer.slug,
+          title: newer.title,
+          postType: newer.postType,
+          enTitle: newer.en?.title,
+        }
+      : null,
+  };
 }

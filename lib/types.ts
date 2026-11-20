@@ -44,3 +44,27 @@ export interface Article {
   };
   [key: string]: any;
 }
+
+export interface RelatedArticleSummary {
+  slug: string;
+  title: string;
+  description: string;
+  postType: PostType;
+  category: CategoryType;
+  categoryLabel: string;
+  readingTime: string;
+  pubDate: string;
+  coverUrl: string;
+  coverCaption: string;
+  en?: {
+    title?: string;
+    description?: string;
+  };
+}
+
+export interface AdjacentArticleLink {
+  slug: string;
+  title: string;
+  postType: PostType;
+  enTitle?: string;
+}

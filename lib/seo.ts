@@ -157,15 +157,30 @@ export function getCollectionSchema(params: {
   };
 }
 
-export function getArticleSchema(article: Article, imageUrl: string) {
+export function getArticleSchema(
+  article: Article,
+  imageUrl: string,
+  options?: { isNewsArticle?: boolean; imageCaption?: string }
+) {
   const route = article.postType === 'tutorial' ? 'tutorial' : 'artikel';
   const canonicalUrl = `${SITE_URL}/${route}/${article.slug}`;
   const publishedIso = toIsoDateString(article.pubDate);
   const modifiedIso = toIsoDateString(article.updatedDate || article.pubDate);
+  const resolvedImage = resolveAbsoluteUrl(imageUrl);
+  const isNews =
+    article.postType !== 'tutorial' &&
+    Boolean(options?.isNewsArticle || /-\d{8}(-\d+)?$/.test(article.slug));
+
+  const schemaType =
+    article.postType === 'tutorial'
+      ? 'TechArticle'
+      : isNews
+      ? 'NewsArticle'
+      : 'Article';
 
   return {
     '@context': 'https://schema.org',
-    '@type': article.postType === 'tutorial' ? 'TechArticle' : 'Article',
+    '@type': schemaType,
     '@id': `${canonicalUrl}#article`,
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -173,10 +188,19 @@ export function getArticleSchema(article: Article, imageUrl: string) {
     },
     headline: article.title,
     description: article.description,
-    image: [resolveAbsoluteUrl(imageUrl)],
+    image: [
+      {
+        '@type': 'ImageObject',
+        url: resolvedImage,
+        width: 1200,
+        height: 675,
+        caption: options?.imageCaption || article.title,
+      },
+    ],
     datePublished: publishedIso,
     dateModified: modifiedIso,
     inLanguage: 'id-ID',
+    isAccessibleForFree: true,
     articleSection: article.categoryLabel || article.category,
     keywords: Array.isArray(article.tags) ? article.tags.join(', ') : '',
     author: {
