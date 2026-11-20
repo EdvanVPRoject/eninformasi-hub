@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "path-of-exile-2-membidik-takhta-1-juta-pemain-am-20261120",
+    "title": "Path of Exile 2 Membidik Takhta 1 Juta Pemain: Ambisi Grinding Gear Games Melampaui Raksasa Genre RPG",
+    "description": "Path of Exile 2 bersiap meluncurkan versi 1.0 dengan target ambisius menembus 1 juta pemain serentak di Steam, menantang dominasi legendaris Elden Ring dan Cyberpunk 2077. Artikel ini membedah strategi teknis dan ekspektasi komunitas di balik peluncuran RPG paling dinanti tahun ini.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-20T06:44:04.984Z",
+    "updatedDate": "2026-11-20T06:44:04.984Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Path of Exile 2",
+      "Grinding Gear Games",
+      "Steam",
+      "Gaming",
+      "ARPG"
+    ],
+    "en": {
+      "title": "Path of Exile 2 Targets 1 Million Player Milestone: Grinding Gear Games' Ambition to Topple RPG Giants",
+      "description": "Path of Exile 2 is gearing up for its 1.0 launch with an ambitious goal of hitting 1 million concurrent players on Steam, challenging the records held by Elden Ring and Cyberpunk 2077. This article examines the technical strategies and community expectations surrounding the year's most anticipated ARPG."
+    }
+  },
+  {
     "slug": "kebangkitan-intel-18a-strategi-berisiko-tinggi-m-20261119",
     "title": "Kebangkitan Intel 18A: Strategi Berisiko Tinggi Microsoft Mengubah Lanskap Manufaktur Chip Global",
     "description": "Intel resmi menggandeng Microsoft sebagai pelanggan utama untuk teknologi pengemasan EMIB dan proses 18A, menandai titik balik krusial dalam ambisi Foundry perusahaan setelah mencapai yield produksi 70%. Inovasi ini diprediksi akan mengubah peta kekuatan manufaktur semikonduktor dunia menghadapi dominasi TSMC.",

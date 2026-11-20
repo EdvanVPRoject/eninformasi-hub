@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'path-of-exile-2-membidik-takhta-1-juta-pemain-am-20261120': {
+    url: U('1542751371-adc38448a05e'),
+    caption: "Visual sinematik karakter Path of Exile 2 yang sedang menghadapi gerombolan musuh dalam lingkungan gelap.",
+    source: 'Unsplash'
+  },
   'kebangkitan-intel-18a-strategi-berisiko-tinggi-m-20261119': {
     url: U('1591799264318-7e6ef8ddb7ea'),
     caption: "Visualisasi wafer silikon canggih dengan arsitektur pengemasan EMIB yang sedang diproses di fasilitas manufaktur.",

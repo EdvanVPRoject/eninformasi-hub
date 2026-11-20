@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: path-of-exile-2-membidik-takhta-1-juta-pemain-am-20261120
+  'path-of-exile-2-membidik-takhta-1-juta-pemain-am-20261120': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/path-of-exile-2-concurrent-steam-players-1-million-1-0/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Path of Exile 2 Membidik Takhta 1 Juta Pemain: Ambisi Grinding Gear Games Melampaui Raksasa Genre RPG"
+  },
+
   // Auto-generated Daily News Entry: kebangkitan-intel-18a-strategi-berisiko-tinggi-m-20261119
   'kebangkitan-intel-18a-strategi-berisiko-tinggi-m-20261119': {
     publisher: "Tom's Hardware",
