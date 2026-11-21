@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: konsol-klasik-berusia-35-tahun-jalankan-chatgpt--20261121
+  'konsol-klasik-berusia-35-tahun-jalankan-chatgpt--20261121': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/tech-industry/artificial-intelligence/35-year-old-snes-runs-chatgpt-accelerated-with-super-fx-2-chip-21-mhz-of-risc-muscle-speeds-2-2m-parameter-chatbot-replies",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Konsol Klasik Berusia 35 Tahun Jalankan ChatGPT Berkat Chip Super FX 2 Berkecepatan 21 MHz"
+  },
+
   // Auto-generated Daily News Entry: revolusi-penyimpanan-ai-phison-mengintegrasikan--20261121
   'revolusi-penyimpanan-ai-phison-mengintegrasikan--20261121': {
     publisher: "Tom's Hardware",

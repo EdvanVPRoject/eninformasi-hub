@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "konsol-klasik-berusia-35-tahun-jalankan-chatgpt--20261121",
+    "title": "Konsol Klasik Berusia 35 Tahun Jalankan ChatGPT Berkat Chip Super FX 2 Berkecepatan 21 MHz",
+    "description": "Sebuah eksperimen modifikasi perangkat keras yang luar biasa berhasil membuat konsol Super Nintendo Entertainment System (SNES) keluaran masa lalu mampu memproses kecerdasan buatan ChatGPT menggunakan prosesor grafis ikonik Super FX 2.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-11-21T18:58:00.036Z",
+    "updatedDate": "2026-11-21T18:58:00.036Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "SNES",
+      "ChatGPT",
+      "Super FX 2",
+      "Retro Gaming",
+      "AI Integration"
+    ],
+    "en": {
+      "title": "35-Year-Old SNES Runs ChatGPT Accelerated with a Super FX 2 Chip at 21 MHz",
+      "description": "An extraordinary hardware modification experiment successfully enabled a legacy Super Nintendo Entertainment System (SNES) console to process artificial intelligence queries using the iconic Super FX 2 coprocessor."
+    }
+  },
+  {
     "slug": "revolusi-penyimpanan-ai-phison-mengintegrasikan--20261121",
     "title": "Revolusi Penyimpanan AI: Phison Mengintegrasikan NPU dan RAM 64GB Langsung ke dalam SSD",
     "description": "Phison memperkenalkan inovasi radikal dengan menyematkan NPU dan memori 64GB ke dalam SSD untuk menjalankan model AI besar secara lokal di drive. Terobosan ini diprediksi akan mengubah lanskap infrastruktur penyimpanan data untuk beban kerja AI berat.",
