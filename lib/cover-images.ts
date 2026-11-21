@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'revolusi-penyimpanan-ai-phison-mengintegrasikan--20261121': {
+    url: U('1581092160607-ee22621dd758'),
+    caption: "Komponen silikon SSD mutakhir dengan modul NPU terintegrasi yang dirancang untuk komputasi AI lokal.",
+    source: 'Unsplash'
+  },
   'operasi-rahasia-inggris-ribuan-kulkas-pintar-dir-20261120': {
     url: U('1629654297299-c8506221ca97'),
     caption: "Deretan perangkat kulkas pintar modern di laboratorium pengujian keamanan siber jaringan rumah tangga.",

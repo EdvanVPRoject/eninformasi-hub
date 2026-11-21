@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "revolusi-penyimpanan-ai-phison-mengintegrasikan--20261121",
+    "title": "Revolusi Penyimpanan AI: Phison Mengintegrasikan NPU dan RAM 64GB Langsung ke dalam SSD",
+    "description": "Phison memperkenalkan inovasi radikal dengan menyematkan NPU dan memori 64GB ke dalam SSD untuk menjalankan model AI besar secara lokal di drive. Terobosan ini diprediksi akan mengubah lanskap infrastruktur penyimpanan data untuk beban kerja AI berat.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-21T06:37:14.944Z",
+    "updatedDate": "2026-11-21T06:37:14.944Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Phison",
+      "SSD",
+      "NPU",
+      "AI-Hardware",
+      "Storage-Innovation"
+    ],
+    "en": {
+      "title": "The AI Storage Revolution: Phison Integrates NPU and 64GB RAM Directly into SSD",
+      "description": "Phison unveils a radical innovation by embedding an NPU and 64GB of memory into an SSD to run large AI models locally on the drive. This breakthrough is set to redefine the infrastructure landscape for heavy AI workloads."
+    }
+  },
+  {
     "slug": "operasi-rahasia-inggris-ribuan-kulkas-pintar-dir-20261120",
     "title": "Operasi Rahasia Inggris: Ribuan Kulkas Pintar Diretas dan Ditambal untuk Cegah Serangan Siber Skala Besar",
     "description": "Pemerintah Inggris dan otoritas keamanan siber meluncurkan operasi rahasia untuk menambal ribuan kulkas pintar yang rentan setelah eksploitasi peretasan menyebabkan pembusukan makanan massal akibat kenaikan suhu ekstrem.",

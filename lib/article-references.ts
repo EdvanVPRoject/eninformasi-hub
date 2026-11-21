@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: revolusi-penyimpanan-ai-phison-mengintegrasikan--20261121
+  'revolusi-penyimpanan-ai-phison-mengintegrasikan--20261121': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/pc-components/ssds/phison-details-ssd-with-a-built-in-npu-and-64gb-of-memory-that-supports-pytorch-and-llama-cpp-running-on-the-drive-second-design-merges-fast-pslc-cache-and-qlc-capacity-behind-one-controller",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Revolusi Penyimpanan AI: Phison Mengintegrasikan NPU dan RAM 64GB Langsung ke dalam SSD"
+  },
+
   // Auto-generated Daily News Entry: operasi-rahasia-inggris-ribuan-kulkas-pintar-dir-20261120
   'operasi-rahasia-inggris-ribuan-kulkas-pintar-dir-20261120': {
     publisher: "Tom's Hardware",
