@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: terobosan-ai-lokal-inkling-2-mini-26b-bawa-kekua-20261122
+  'terobosan-ai-lokal-inkling-2-mini-26b-bawa-kekua-20261122': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/thinking-machines-unveils-inkling-2-mini-a-powerful-26b-ai-model-that-runs-locally-on-macbooks-with-just-32gb-ram/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Terobosan AI Lokal: Inkling 2 Mini 26B Bawa Kekuatan Model Bahasa Besar ke MacBook M-Series dengan RAM 32GB"
+  },
+
   // Auto-generated Daily News Entry: konsol-klasik-berusia-35-tahun-jalankan-chatgpt--20261121
   'konsol-klasik-berusia-35-tahun-jalankan-chatgpt--20261121': {
     publisher: "Tom's Hardware",

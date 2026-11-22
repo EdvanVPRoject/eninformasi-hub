@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'terobosan-ai-lokal-inkling-2-mini-26b-bawa-kekua-20261122': {
+    url: U('1555617981-dac3880eac6e'),
+    caption: "Tampilan antarmuka baris perintah mengeksekusi model bahasa lokal pada layar MacBook Pro",
+    source: 'Unsplash'
+  },
   'konsol-klasik-berusia-35-tahun-jalankan-chatgpt--20261121': {
     url: U('1605901309584-818e25960b8f'),
     caption: "Papan sirkuit Super Nintendo termodifikasi dengan chip koprosesor grafis Super FX 2.",

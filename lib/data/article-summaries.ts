@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "terobosan-ai-lokal-inkling-2-mini-26b-bawa-kekua-20261122",
+    "title": "Terobosan AI Lokal: Inkling 2 Mini 26B Bawa Kekuatan Model Bahasa Besar ke MacBook M-Series dengan RAM 32GB",
+    "description": "Industri kecerdasan buatan kembali dihebohkan dengan kehadiran Inkling 2 Mini, model 26B parameter dari Thinking Machines yang dirancang khusus untuk berjalan secara lokal pada komputer MacBook berbekal RAM 32GB tanpa memerlukan koneksi cloud.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-11-22T06:04:33.740Z",
+    "updatedDate": "2026-11-22T06:04:33.740Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Inkling 2 Mini",
+      "Thinking Machines",
+      "MacBook",
+      "AI Lokal",
+      "Hardware AI"
+    ],
+    "en": {
+      "title": "Local AI Breakthrough: Inkling 2 Mini 26B Brings Large Language Model Power to 32GB RAM MacBooks",
+      "description": "The artificial intelligence industry is abuzz with the arrival of Inkling 2 Mini, a 26-billion parameter model from Thinking Machines designed specifically to run locally on MacBook computers equipped with 32GB of RAM without requiring a cloud connection."
+    }
+  },
+  {
     "slug": "konsol-klasik-berusia-35-tahun-jalankan-chatgpt--20261121",
     "title": "Konsol Klasik Berusia 35 Tahun Jalankan ChatGPT Berkat Chip Super FX 2 Berkecepatan 21 MHz",
     "description": "Sebuah eksperimen modifikasi perangkat keras yang luar biasa berhasil membuat konsol Super Nintendo Entertainment System (SNES) keluaran masa lalu mampu memproses kecerdasan buatan ChatGPT menggunakan prosesor grafis ikonik Super FX 2.",
