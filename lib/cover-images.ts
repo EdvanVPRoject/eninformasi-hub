@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'ironis-kontes-pemrograman-epic-ai-megajam-justru-20261122': {
+    url: U('1538481199705-c710c4e965fc'),
+    caption: "Pengembang indie fokus menatap layar monitor komputer saat menulis kode game secara manual.",
+    source: 'Unsplash'
+  },
   'terobosan-ai-lokal-inkling-2-mini-26b-bawa-kekua-20261122': {
     url: U('1555617981-dac3880eac6e'),
     caption: "Tampilan antarmuka baris perintah mengeksekusi model bahasa lokal pada layar MacBook Pro",

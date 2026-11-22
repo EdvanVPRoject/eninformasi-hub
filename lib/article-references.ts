@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: ironis-kontes-pemrograman-epic-ai-megajam-justru-20261122
+  'ironis-kontes-pemrograman-epic-ai-megajam-justru-20261122': {
+    publisher: "Google News Tech Wire",
+    sourceUrl: "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOG9jWFNYYzBUc05EQmtQQ3ZJcGdxcTNvZXBRc1UxWE95SFluUmdCcEZlWGlvd1NQTjZYZncyc2xpS1AyZC1yby1EdWdDNzk4QmZTS3g4MXM4SHJPdkVLZTZjV0VucjdKM2x5dTI3QS1zMHVodkhIbE1jMWRlVU42ZkhqSU5yVWE1V1FsOVdIRWRzeUFnVDVDdXFLeUhGM3F3b3R2UjhVUXNiN2NHN2NFSUEtLUVpNVdnSk5sOS1CSmZLQllobkE?oc=5",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Ironis! Kontes Pemrograman Epic AI MegaJam Justru Dikuasai oleh Game Tanpa Bantuan AI"
+  },
+
   // Auto-generated Daily News Entry: terobosan-ai-lokal-inkling-2-mini-26b-bawa-kekua-20261122
   'terobosan-ai-lokal-inkling-2-mini-26b-bawa-kekua-20261122': {
     publisher: "Wccftech",

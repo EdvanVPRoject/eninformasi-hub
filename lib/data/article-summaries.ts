@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "ironis-kontes-pemrograman-epic-ai-megajam-justru-20261122",
+    "title": "Ironis! Kontes Pemrograman Epic AI MegaJam Justru Dikuasai oleh Game Tanpa Bantuan AI",
+    "description": "Sebuah ironi besar terjadi dalam kontes Epic AI MegaJam di mana game juara pertama berhasil dibangun sepenuhnya secara manual tanpa sentuhan kecerdasan buatan, memicu diskusi hangat di industri game.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-22T19:19:11.676Z",
+    "updatedDate": "2026-11-22T19:19:11.676Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Epic Games",
+      "AI MegaJam",
+      "Game Development",
+      "Artificial Intelligence",
+      "Indie Games"
+    ],
+    "en": {
+      "title": "Ironic Twist: Epic's AI MegaJam Contest Dominated by a Game Made Entirely Without AI",
+      "description": "In a surprising ironic twist during the Epic AI MegaJam contest, the first-place winning game was built entirely manually without any artificial intelligence assistance, sparking massive industry-wide discussions."
+    }
+  },
+  {
     "slug": "terobosan-ai-lokal-inkling-2-mini-26b-bawa-kekua-20261122",
     "title": "Terobosan AI Lokal: Inkling 2 Mini 26B Bawa Kekuatan Model Bahasa Besar ke MacBook M-Series dengan RAM 32GB",
     "description": "Industri kecerdasan buatan kembali dihebohkan dengan kehadiran Inkling 2 Mini, model 26B parameter dari Thinking Machines yang dirancang khusus untuk berjalan secara lokal pada komputer MacBook berbekal RAM 32GB tanpa memerlukan koneksi cloud.",
