@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "skandal-musik-ai-di-the-binding-of-isaac-dlc-bar-20261123",
+    "title": "Skandal Musik AI di The Binding of Isaac: DLC Baru Tuai Review Bombing dan Ditarik Dari Steam",
+    "description": "Pembaruan terbaru untuk DLC The Binding of Isaac memicu kemarahan komunitas setelah memasukkan trek musik buatan AI tanpa pengungkapan yang transparan, mengakibatkan rating Steam jatuh drastis dan musiknya segera ditarik.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-23T06:56:54.272Z",
+    "updatedDate": "2026-11-23T06:56:54.272Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "The Binding of Isaac",
+      "Steam",
+      "AI Music",
+      "Controversy",
+      "Game Development"
+    ],
+    "en": {
+      "title": "AI Music Controversy Hits The Binding of Isaac: New DLC Suffers Review Bombing and Quick Removal",
+      "description": "The latest update for The Binding of Isaac DLC sparked widespread community outrage after featuring AI-generated background tracks without transparent disclosure, causing Steam reviews to plummet and the music to be swiftly pulled."
+    }
+  },
+  {
     "slug": "ironis-kontes-pemrograman-epic-ai-megajam-justru-20261122",
     "title": "Ironis! Kontes Pemrograman Epic AI MegaJam Justru Dikuasai oleh Game Tanpa Bantuan AI",
     "description": "Sebuah ironi besar terjadi dalam kontes Epic AI MegaJam di mana game juara pertama berhasil dibangun sepenuhnya secara manual tanpa sentuhan kecerdasan buatan, memicu diskusi hangat di industri game.",

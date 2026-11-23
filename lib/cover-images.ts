@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'skandal-musik-ai-di-the-binding-of-isaac-dlc-bar-20261123': {
+    url: U('1560253023-3ec5d502959f'),
+    caption: "Tampilan layar komputer menampilkan halaman ulasan Steam yang berubah drastis menjadi negatif.",
+    source: 'Unsplash'
+  },
   'ironis-kontes-pemrograman-epic-ai-megajam-justru-20261122': {
     url: U('1538481199705-c710c4e965fc'),
     caption: "Pengembang indie fokus menatap layar monitor komputer saat menulis kode game secara manual.",

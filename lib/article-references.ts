@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: skandal-musik-ai-di-the-binding-of-isaac-dlc-bar-20261123
+  'skandal-musik-ai-di-the-binding-of-isaac-dlc-bar-20261123': {
+    publisher: "Google News Tech Wire",
+    sourceUrl: "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNa1FFNXk1Rm9hLW54eWhYRjA0bmU1SWo5S2pYUGxENGliTUZVYjdoTnVPNU1DaGlkMFNBRHhYZW9lRk5DRm94VkZDMUNsTzlkRmw5bTdzbFR4OElCMG1BeUYxelhnbjhOOTU0ODEwbFRpei0xZVFZekxxZ0VBS1A3X1U1R0VTRHI2ZEk3VzVTVlU1cXhLT3YzdktNdFJSS0lQTGVWM1BheFZEbkt6Nl9TWWdPeXJGLUpJNUxCWXFtQ19laWowS09NTzNzZUppTzJ5d2VDdGJsb0NkZ3ZlLU5JTFNWTFJTZzZKZkllTlRTVkdJajVhYVdQY05GTFlnTE9NVHJrLUtuVlloTGMzM0Z1dzdIS2J1S0hFZEVIOGhXOEJTbEZiTUxiZg?oc=5",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Skandal Musik AI di The Binding of Isaac: DLC Baru Tuai Review Bombing dan Ditarik Dari Steam"
+  },
+
   // Auto-generated Daily News Entry: ironis-kontes-pemrograman-epic-ai-megajam-justru-20261122
   'ironis-kontes-pemrograman-epic-ai-megajam-justru-20261122': {
     publisher: "Google News Tech Wire",
