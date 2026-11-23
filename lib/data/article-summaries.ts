@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "revolusi-arsitektur-looped-transformer-zai-glm-5-20261123",
+    "title": "Revolusi Arsitektur Looped Transformer: Z.ai GLM-5.4 Mengubah Paradigma AI Tanpa Benchmark",
+    "description": "Z.ai membuat gebrakan mengejutkan di industri kecerdasan buatan dengan merilis model GLM-5.4 yang menggunakan arsitektur 'Looped Transformer' inovatif. Langkah berani perusahaan ini untuk melewati semua tolok ukur standar memicu perdebatan sengit mengenai transparansi dan efisiensi model bahasa besar di masa depan.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-23T23:41:20.996Z",
+    "updatedDate": "2026-11-23T23:41:20.996Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AI",
+      "Z.ai",
+      "GLM-5.4",
+      "Looped Transformer",
+      "Deep Learning"
+    ],
+    "en": {
+      "title": "The Looped Transformer Revolution: Z.ai GLM-5.4 Challenges AI Benchmarking Paradigms",
+      "description": "Z.ai has sent shockwaves through the AI industry by unveiling the GLM-5.4 model, utilizing a groundbreaking 'Looped Transformer' architecture. Their bold decision to bypass all standard benchmarks has sparked intense debate regarding model transparency and future efficiency in large language models."
+    }
+  },
+  {
     "slug": "skandal-musik-ai-di-the-binding-of-isaac-dlc-bar-20261123",
     "title": "Skandal Musik AI di The Binding of Isaac: DLC Baru Tuai Review Bombing dan Ditarik Dari Steam",
     "description": "Pembaruan terbaru untuk DLC The Binding of Isaac memicu kemarahan komunitas setelah memasukkan trek musik buatan AI tanpa pengungkapan yang transparan, mengakibatkan rating Steam jatuh drastis dan musiknya segera ditarik.",

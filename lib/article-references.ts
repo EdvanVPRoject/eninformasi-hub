@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: revolusi-arsitektur-looped-transformer-zai-glm-5-20261123
+  'revolusi-arsitektur-looped-transformer-zai-glm-5-20261123': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/z-ai-debuts-glm-5-4-with-a-novel-looped-transformer-architecture-skipping-ai-benchmarks-entirely/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Revolusi Arsitektur Looped Transformer: Z.ai GLM-5.4 Mengubah Paradigma AI Tanpa Benchmark"
+  },
+
   // Auto-generated Daily News Entry: skandal-musik-ai-di-the-binding-of-isaac-dlc-bar-20261123
   'skandal-musik-ai-di-the-binding-of-isaac-dlc-bar-20261123': {
     publisher: "Google News Tech Wire",
