@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: cd-projekt-red-umumkan-aliansi-strategis-dengan--20261124
+  'cd-projekt-red-umumkan-aliansi-strategis-dengan--20261124': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/cd-projekt-red-sony-deal-the-witcher-4-marketing-playstation-plus/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: CD Projekt RED Umumkan Aliansi Strategis dengan Sony untuk Pemasaran The Witcher 4 dan Integrasi PlayStation Plus"
+  },
+
   // Auto-generated Daily News Entry: revolusi-arsitektur-looped-transformer-zai-glm-5-20261123
   'revolusi-arsitektur-looped-transformer-zai-glm-5-20261123': {
     publisher: "Wccftech",

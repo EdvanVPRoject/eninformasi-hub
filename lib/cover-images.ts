@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'cd-projekt-red-umumkan-aliansi-strategis-dengan--20261124': {
+    url: U('1612287230202-1ff1d85d1bdf'),
+    caption: "Logo studio game dan konsol generasi terbaru dalam tata letak sinematik gelap",
+    source: 'Unsplash'
+  },
   'revolusi-arsitektur-looped-transformer-zai-glm-5-20261123': {
     url: U('1677442136019-21780ecad995'),
     caption: "Visualisasi abstrak arsitektur saraf dengan loop berulang yang memancarkan cahaya biru neon.",

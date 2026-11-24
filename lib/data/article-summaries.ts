@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "cd-projekt-red-umumkan-aliansi-strategis-dengan--20261124",
+    "title": "CD Projekt RED Umumkan Aliansi Strategis dengan Sony untuk Pemasaran The Witcher 4 dan Integrasi PlayStation Plus",
+    "description": "Langkah monumental diambil oleh CD Projekt RED melalui penandatanganan kemitraan strategis dengan Sony, memfokuskan pemasaran The Witcher 4 serta integrasi ekosistem PlayStation Plus pasca-kesuksesan masa lalu mereka bersama Xbox.",
+    "postType": "artikel",
+    "category": "gaming-esports",
+    "categoryLabel": "Gaming & Esports",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-24T22:12:20.167Z",
+    "updatedDate": "2026-11-24T22:12:20.167Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "CD Projekt RED",
+      "The Witcher 4",
+      "Sony",
+      "PlayStation Plus",
+      "Gaming Industry"
+    ],
+    "en": {
+      "title": "CD Projekt RED Announces Strategic Alliance with Sony for The Witcher 4 Marketing and PlayStation Plus Integration",
+      "description": "A monumental shift occurs as CD Projekt RED signs a comprehensive partnership with Sony, focusing marketing efforts for The Witcher 4 and integrating PlayStation Plus services following their historical ties with Xbox."
+    }
+  },
+  {
     "slug": "revolusi-arsitektur-looped-transformer-zai-glm-5-20261123",
     "title": "Revolusi Arsitektur Looped Transformer: Z.ai GLM-5.4 Mengubah Paradigma AI Tanpa Benchmark",
     "description": "Z.ai membuat gebrakan mengejutkan di industri kecerdasan buatan dengan merilis model GLM-5.4 yang menggunakan arsitektur 'Looped Transformer' inovatif. Langkah berani perusahaan ini untuk melewati semua tolok ukur standar memicu perdebatan sengit mengenai transparansi dan efisiensi model bahasa besar di masa depan.",
