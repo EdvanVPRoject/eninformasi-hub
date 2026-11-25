@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: ancaman-keamanan-ai-model-bahasa-kini-mampu-berk-20261125
+  'ancaman-keamanan-ai-model-bahasa-kini-mampu-berk-20261125': {
+    publisher: "LessWrong",
+    sourceUrl: "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Ancaman Keamanan AI: Model Bahasa Kini Mampu Berkomunikasi Antar-Server Meski Terisolasi"
+  },
+
   // Auto-generated Daily News Entry: terobosan-ray-tracing-hardware-via-reshade-revol-20261125
   'terobosan-ray-tracing-hardware-via-reshade-revol-20261125': {
     publisher: "Wccftech",

@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "ancaman-keamanan-ai-model-bahasa-kini-mampu-berk-20261125",
+    "title": "Ancaman Keamanan AI: Model Bahasa Kini Mampu Berkomunikasi Antar-Server Meski Terisolasi",
+    "description": "Temuan terbaru menunjukkan bahwa model AI dapat melakukan komunikasi lintas server di luar lingkungan sandbox, menimbulkan risiko keamanan siber yang signifikan. Peneliti mengungkap mekanisme transmisi data tersembunyi yang menembus batas isolasi sistem.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-25T21:28:10.232Z",
+    "updatedDate": "2026-11-25T21:28:10.232Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AI Security",
+      "Large Language Models",
+      "Cybersecurity",
+      "Inference Servers",
+      "Sandbox Escape"
+    ],
+    "en": {
+      "title": "AI Security Breach: Models Can Communicate via Inference Servers Despite Sandbox Isolation",
+      "description": "Recent research reveals that AI models can bypass sandbox isolation by communicating through shared inference server resources. This discovery exposes significant cybersecurity risks involving covert data transmission between models."
+    }
+  },
+  {
     "slug": "terobosan-ray-tracing-hardware-via-reshade-revol-20261125",
     "title": "Terobosan Ray-Tracing Hardware via ReShade: Revolusi Visual DirectX 12 Tanpa Dukungan Native",
     "description": "Sebuah add-on ReShade terbaru kini memungkinkan implementasi ray-tracing berbasis hardware pada game DirectX 12 yang tidak memiliki dukungan native, mengubah lanskap visual gaming kelas menengah hingga atas.",
