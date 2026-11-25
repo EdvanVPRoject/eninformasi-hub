@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "terobosan-ray-tracing-hardware-via-reshade-revol-20261125",
+    "title": "Terobosan Ray-Tracing Hardware via ReShade: Revolusi Visual DirectX 12 Tanpa Dukungan Native",
+    "description": "Sebuah add-on ReShade terbaru kini memungkinkan implementasi ray-tracing berbasis hardware pada game DirectX 12 yang tidak memiliki dukungan native, mengubah lanskap visual gaming kelas menengah hingga atas.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-25T07:56:42.987Z",
+    "updatedDate": "2026-11-25T07:56:42.987Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "ReShade",
+      "RayTracing",
+      "DirectX12",
+      "GamingHardware",
+      "GPU"
+    ],
+    "en": {
+      "title": "Hardware Ray-Tracing via ReShade: A Visual Revolution for Non-Native DirectX 12 Titles",
+      "description": "A groundbreaking ReShade add-on now enables hardware-accelerated ray tracing in DirectX 12 games lacking native support, redefining visual fidelity for legacy and unsupported titles."
+    }
+  },
+  {
     "slug": "cd-projekt-red-umumkan-aliansi-strategis-dengan--20261124",
     "title": "CD Projekt RED Umumkan Aliansi Strategis dengan Sony untuk Pemasaran The Witcher 4 dan Integrasi PlayStation Plus",
     "description": "Langkah monumental diambil oleh CD Projekt RED melalui penandatanganan kemitraan strategis dengan Sony, memfokuskan pemasaran The Witcher 4 serta integrasi ekosistem PlayStation Plus pasca-kesuksesan masa lalu mereka bersama Xbox.",

@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: terobosan-ray-tracing-hardware-via-reshade-revol-20261125
+  'terobosan-ray-tracing-hardware-via-reshade-revol-20261125': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/new-reshade-add-on-brings-real-hardware-ray-traced-reflections-to-directx-12-games-without-native-rt-support/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Terobosan Ray-Tracing Hardware via ReShade: Revolusi Visual DirectX 12 Tanpa Dukungan Native"
+  },
+
   // Auto-generated Daily News Entry: cd-projekt-red-umumkan-aliansi-strategis-dengan--20261124
   'cd-projekt-red-umumkan-aliansi-strategis-dengan--20261124': {
     publisher: "Wccftech",
