@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'amd-ryzen-7-9800x3d-anjlok-drastis-harga-terjun--20261126': {
+    url: U('1518770660439-4636190af475'),
+    caption: "Kotak ritel prosesor AMD Ryzen terbaru dengan heatsink pendingin CPU berkinerja tinggi",
+    source: 'Unsplash'
+  },
   'rig-penambangan-kripto-tua-berfungsi-kembali-pci-20261126': {
     url: U('1587202372634-32705e3bf49c'),
     caption: "Papan sirkuit rig penambangan kripto lama dengan kartu grafis terpasang",

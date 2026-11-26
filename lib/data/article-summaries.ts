@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "amd-ryzen-7-9800x3d-anjlok-drastis-harga-terjun--20261126",
+    "title": "AMD Ryzen 7 9800X3D Anjlok Drastis: Harga Terjun Bebas ke Angka $369 Bikin Pasar Gaming Geger",
+    "description": "Prosesor gaming legendaris AMD Ryzen 7 9800X3D mengalami pemangkasan harga signifikan hingga menyentuh level $369, memicu gelombang adopsi masif di kalangan builder PC global menjelang musim liburan.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-26T21:15:36.023Z",
+    "updatedDate": "2026-11-26T21:15:36.023Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "AMD",
+      "Ryzen 7 9800X3D",
+      "CPU Gaming",
+      "Wccftech",
+      "Hardware PC"
+    ],
+    "en": {
+      "title": "AMD Ryzen 7 9800X3D Price Drops Even Harder: Now At Just $369 For A Limited Time",
+      "description": "AMD's legendary gaming processor has plummeted to an unprecedented $369 price point, triggering massive adoption waves across the global PC building community ahead of the holiday season."
+    }
+  },
+  {
     "slug": "rig-penambangan-kripto-tua-berfungsi-kembali-pci-20261126",
     "title": "Rig Penambangan Kripto Tua Berfungsi Kembali: PCIe x1 Riser Buktikan Inferensi AI Lokal Tanpa Hambatan Performa",
     "description": "Rig penambangan kripto lama menemukan fungsi baru yang sangat mengejutkan di era kecerdasan buatan, di mana penggunaan PCIe x1 riser terbukti tidak memperlambat inferensi AI lokal saat menjalankan model Qwen3-8B pada kartu grafis Quadro RTX 4000.",

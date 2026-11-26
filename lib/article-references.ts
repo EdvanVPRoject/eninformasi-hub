@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: amd-ryzen-7-9800x3d-anjlok-drastis-harga-terjun--20261126
+  'amd-ryzen-7-9800x3d-anjlok-drastis-harga-terjun--20261126': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/amd-ryzen-7-9800X3D-price-drops-even-hardware-at-just-369/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: AMD Ryzen 7 9800X3D Anjlok Drastis: Harga Terjun Bebas ke Angka $369 Bikin Pasar Gaming Geger"
+  },
+
   // Auto-generated Daily News Entry: rig-penambangan-kripto-tua-berfungsi-kembali-pci-20261126
   'rig-penambangan-kripto-tua-berfungsi-kembali-pci-20261126': {
     publisher: "Wccftech",
