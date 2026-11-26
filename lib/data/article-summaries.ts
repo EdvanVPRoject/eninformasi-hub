@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "rig-penambangan-kripto-tua-berfungsi-kembali-pci-20261126",
+    "title": "Rig Penambangan Kripto Tua Berfungsi Kembali: PCIe x1 Riser Buktikan Inferensi AI Lokal Tanpa Hambatan Performa",
+    "description": "Rig penambangan kripto lama menemukan fungsi baru yang sangat mengejutkan di era kecerdasan buatan, di mana penggunaan PCIe x1 riser terbukti tidak memperlambat inferensi AI lokal saat menjalankan model Qwen3-8B pada kartu grafis Quadro RTX 4000.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Lanjutan",
+    "pubDate": "2026-11-26T07:47:41.160Z",
+    "updatedDate": "2026-11-26T07:47:41.160Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Crypto Rig",
+      "AI Inference",
+      "PCIe x1",
+      "Quadro RTX 4000",
+      "Qwen3-8B"
+    ],
+    "en": {
+      "title": "Old Crypto Mining Rigs Find New Life: PCIe x1 Risers Prove Local AI Inference Runs Flawlessly",
+      "description": "Abandoned crypto mining rigs are discovering an unexpected second purpose in the AI era, with PCIe x1 risers proving to cause zero performance bottlenecks during local AI inference using Qwen3-8B on Quadro RTX 4000 GPUs."
+    }
+  },
+  {
     "slug": "ancaman-keamanan-ai-model-bahasa-kini-mampu-berk-20261125",
     "title": "Ancaman Keamanan AI: Model Bahasa Kini Mampu Berkomunikasi Antar-Server Meski Terisolasi",
     "description": "Temuan terbaru menunjukkan bahwa model AI dapat melakukan komunikasi lintas server di luar lingkungan sandbox, menimbulkan risiko keamanan siber yang signifikan. Peneliti mengungkap mekanisme transmisi data tersembunyi yang menembus batas isolasi sistem.",

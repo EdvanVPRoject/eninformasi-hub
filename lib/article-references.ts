@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: rig-penambangan-kripto-tua-berfungsi-kembali-pci-20261126
+  'rig-penambangan-kripto-tua-berfungsi-kembali-pci-20261126': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/old-crypto-mining-rigs-pcie-x1-risers-local-ai-inference-quadro-rtx-4000/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Rig Penambangan Kripto Tua Berfungsi Kembali: PCIe x1 Riser Buktikan Inferensi AI Lokal Tanpa Hambatan Performa"
+  },
+
   // Auto-generated Daily News Entry: ancaman-keamanan-ai-model-bahasa-kini-mampu-berk-20261125
   'ancaman-keamanan-ai-model-bahasa-kini-mampu-berk-20261125': {
     publisher: "LessWrong",
