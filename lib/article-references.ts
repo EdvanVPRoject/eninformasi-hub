@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: lonjakan-spektakuler-rtx-5080-ibuypower-pangkas--20261127
+  'lonjakan-spektakuler-rtx-5080-ibuypower-pangkas--20261127': {
+    publisher: "Tom's Hardware",
+    sourceUrl: "https://www.tomshardware.com/desktops/gaming-pcs/ibuypowers-black-friday-offers-net-you-usd650-off-powerful-rtx-5080-prebuilt-pc-stackable-offer-code-can-net-you-a-bargain-bundle-with-a-free-monitor-and-peripherals",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Lonjakan Spektakuler RTX 5080: iBuyPower Pangkas Harga $650 Beserta Bundel Monitor Gratis di Momen Black Friday"
+  },
+
   // Auto-generated Daily News Entry: revolusi-tanpa-koding-anthropic-claude-kini-mamp-20261127
   'revolusi-tanpa-koding-anthropic-claude-kini-mamp-20261127': {
     publisher: "Google News Tech Wire",

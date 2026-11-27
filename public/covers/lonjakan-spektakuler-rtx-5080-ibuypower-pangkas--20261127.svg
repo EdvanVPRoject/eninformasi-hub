@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" shape-rendering="geometricPrecision">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#040608" />
+    </linearGradient>
+    <linearGradient id="accGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  
+    <!-- Next-Gen Gaming Engine & HUD Geometry -->
+    <g transform="translate(600, 315)">
+      <circle cx="0" cy="0" r="210" fill="none" stroke="url(#accGrad)" stroke-width="1.5" stroke-dasharray="10 8" opacity="0.35" />
+      <circle cx="0" cy="0" r="160" fill="none" stroke="url(#accGrad)" stroke-width="2" opacity="0.5" />
+      <polygon points="0,-130 112,65 -112,65" fill="url(#accGrad)" opacity="0.15" stroke="url(#accGrad)" stroke-width="2.5" />
+      <polygon points="0,130 112,-65 -112,-65" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="42" fill="#090d16" stroke="url(#accGrad)" stroke-width="3" />
+      <circle cx="0" cy="0" r="14" fill="url(#accGrad)" />
+    </g>
+</svg>

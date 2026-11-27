@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'lonjakan-spektakuler-rtx-5080-ibuypower-pangkas--20261127': {
+    url: U('1587202372775-e229f172b9d7'),
+    caption: "Rig gaming transparan dengan pencahayaan RGB menyala di dalam ruangan gelap.",
+    source: 'Unsplash'
+  },
   'revolusi-tanpa-koding-anthropic-claude-kini-mamp-20261127': {
     url: U('1563986768609-322da13575f3'),
     caption: "Tampilan antarmuka berbasis AI yang sedang memproses pembuatan kode aplikasi desktop modern.",

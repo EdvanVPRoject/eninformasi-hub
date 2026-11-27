@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "lonjakan-spektakuler-rtx-5080-ibuypower-pangkas--20261127",
+    "title": "Lonjakan Spektakuler RTX 5080: iBuyPower Pangkas Harga $650 Beserta Bundel Monitor Gratis di Momen Black Friday",
+    "description": "Pasar PC prebuilt gaming diguncang diskon besar-besaran saat Black Friday. iBuyPower memangkas harga sistem bertenaga GeForce RTX 5080 hingga $650 lengkap dengan bundel bonus monitor dan periferal gratis.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-27T20:57:53.941Z",
+    "updatedDate": "2026-11-27T20:57:53.941Z",
+    "readingTime": "8 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "RTX 5080",
+      "iBuyPower",
+      "Black Friday Deals",
+      "Gaming PC",
+      "Hardware PC"
+    ],
+    "en": {
+      "title": "Spectacular RTX 5080 Surge: iBuyPower Cuts $650 Plus Free Monitor Bundle for Black Friday",
+      "description": "The prebuilt gaming PC market is shaken by aggressive Black Friday discounts as iBuyPower slashes up to $650 off powerful GeForce RTX 5080 systems complete with free monitor and peripheral bundles."
+    }
+  },
+  {
     "slug": "revolusi-tanpa-koding-anthropic-claude-kini-mamp-20261127",
     "title": "Revolusi Tanpa Koding: Anthropic Claude Kini Mampu Ciptakan Aplikasi Windows & Mac Secara Instan",
     "description": "Anthropic membuat terobosan besar dengan memungkinkan pengguna membuat aplikasi desktop yang dapat diinstal langsung dari Claude, bahkan melalui paket gratis. Inovasi ini menandai pergeseran paradigma dalam pengembangan perangkat lunak yang kini bisa diakses siapa saja tanpa keahlian pemrograman.",
