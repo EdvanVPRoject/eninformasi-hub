@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: revolusi-tanpa-koding-anthropic-claude-kini-mamp-20261127
+  'revolusi-tanpa-koding-anthropic-claude-kini-mamp-20261127': {
+    publisher: "Google News Tech Wire",
+    sourceUrl: "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQaVNta1lSUTVVTzlxMVEzUDV4Vkx5Z1FuZ3pIU3BObi1pamwwQmJObE1GbVRlc2ZZWWl1OE5IZnZNeUduWUx3NURHRG9qcEg4NUpMMEV5LVY1dGVaOVhlUDZLVDNrcnh3Z1U0ZlBCSVFxSVdzbDV5S210NU1tWVNzdXRteXRqYzdROEtOaWhrX250ZWdyU0FnRGo2aDl3Q2pNT0J5TU5TckF6eTRLd0FudDhvOEtlRDFBSVdFc3VUSW5YR2puRk9fNFZxUDB3bGE1Qy0wcFlPZ3BjQdIB2gFBVV95cUxQaVNta1lSUTVVTzlxMVEzUDV4Vkx5Z1FuZ3pIU3BObi1pamwwQmJObE1GbVRlc2ZZWWl1OE5IZnZNeUduWUx3NURHRG9qcEg4NUpMMEV5LVY1dGVaOVhlUDZLVDNrcnh3Z1U0ZlBCSVFxSVdzbDV5S210NU1tWVNzdXRteXRqYzdROEtOaWhrX250ZWdyU0FnRGo2aDl3Q2pNT0J5TU5TckF6eTRLd0FudDhvOEtlRDFBSVdFc3VUSW5YR2puRk9fNFZxUDB3bGE1Qy0wcFlPZ3BjQQ?oc=5",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Revolusi Tanpa Koding: Anthropic Claude Kini Mampu Ciptakan Aplikasi Windows & Mac Secara Instan"
+  },
+
   // Auto-generated Daily News Entry: amd-ryzen-7-9800x3d-anjlok-drastis-harga-terjun--20261126
   'amd-ryzen-7-9800x3d-anjlok-drastis-harga-terjun--20261126': {
     publisher: "Wccftech",

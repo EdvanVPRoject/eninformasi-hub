@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "revolusi-tanpa-koding-anthropic-claude-kini-mamp-20261127",
+    "title": "Revolusi Tanpa Koding: Anthropic Claude Kini Mampu Ciptakan Aplikasi Windows & Mac Secara Instan",
+    "description": "Anthropic membuat terobosan besar dengan memungkinkan pengguna membuat aplikasi desktop yang dapat diinstal langsung dari Claude, bahkan melalui paket gratis. Inovasi ini menandai pergeseran paradigma dalam pengembangan perangkat lunak yang kini bisa diakses siapa saja tanpa keahlian pemrograman.",
+    "postType": "artikel",
+    "category": "ai-agents",
+    "categoryLabel": "AI Agents & Otomasi",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-27T07:47:04.684Z",
+    "updatedDate": "2026-11-27T07:47:04.684Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "AI Development",
+      "No-Code",
+      "Software Engineering"
+    ],
+    "en": {
+      "title": "Zero-Code Revolution: Anthropic Claude Now Builds Installable Windows & Mac Apps Instantly",
+      "description": "Anthropic has made a major breakthrough by allowing users to build and install desktop applications directly from Claude, even on the free tier. This innovation marks a paradigm shift in software development, making it accessible to everyone regardless of their coding skills."
+    }
+  },
+  {
     "slug": "amd-ryzen-7-9800x3d-anjlok-drastis-harga-terjun--20261126",
     "title": "AMD Ryzen 7 9800X3D Anjlok Drastis: Harga Terjun Bebas ke Angka $369 Bikin Pasar Gaming Geger",
     "description": "Prosesor gaming legendaris AMD Ryzen 7 9800X3D mengalami pemangkasan harga signifikan hingga menyentuh level $369, memicu gelombang adopsi masif di kalangan builder PC global menjelang musim liburan.",
