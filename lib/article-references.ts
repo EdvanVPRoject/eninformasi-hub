@@ -111,6 +111,13 @@ export function resolvePhotoSource(imgSrc: string, captionSource?: string): { la
 
 // 2. Direct Slug-to-Reference Mappings for Daily News & Highlighted Articles
 export const ARTICLE_REFERENCES: Record<string, ArticleReference> = {
+  // Auto-generated Daily News Entry: lonjakan-wear-ssd-mengerikan-razer-audio-utility-20261128
+  'lonjakan-wear-ssd-mengerikan-razer-audio-utility-20261128': {
+    publisher: "Wccftech",
+    sourceUrl: "https://wccftech.com/razer-audio-utility-wearing-down-ssds-3-2gb-io-write-bytes/",
+    note: "Laporan investigasi dan analisis data rujukan resmi: Lonjakan Wear SSD Mengerikan: Razer Audio Utility Tulis Data 3.2GB dalam Waktu Kurang dari Dua Jam"
+  },
+
   // Auto-generated Daily News Entry: lonjakan-spektakuler-rtx-5080-ibuypower-pangkas--20261127
   'lonjakan-spektakuler-rtx-5080-ibuypower-pangkas--20261127': {
     publisher: "Tom's Hardware",

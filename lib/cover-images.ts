@@ -12,6 +12,11 @@ const U = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&f
 
 // 1. Direct Slug-to-Visual Mappings for Featured & Recent Daily News Articles (100% Subject Aligned)
 const SLUG_VISUALS: Record<string, ArticleVisual> = {
+  'lonjakan-wear-ssd-mengerikan-razer-audio-utility-20261128': {
+    url: U('1624705002806-5d72df19c3ad'),
+    caption: "Tangkapan layar utilitas diagnostik SSD menunjukkan aktivitas penulisan data sistem yang tidak wajar",
+    source: 'Unsplash'
+  },
   'lonjakan-spektakuler-rtx-5080-ibuypower-pangkas--20261127': {
     url: U('1587202372775-e229f172b9d7'),
     caption: "Rig gaming transparan dengan pencahayaan RGB menyala di dalam ruangan gelap.",

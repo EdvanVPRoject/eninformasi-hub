@@ -20,6 +20,30 @@ export interface ArticleSummary {
 
 export const articleSummaries: ArticleSummary[] = [
   {
+    "slug": "lonjakan-wear-ssd-mengerikan-razer-audio-utility-20261128",
+    "title": "Lonjakan Wear SSD Mengerikan: Razer Audio Utility Tulis Data 3.2GB dalam Waktu Kurang dari Dua Jam",
+    "description": "Sebuah investigasi pengguna mengungkapkan bahwa utilitas audio Razer memicu aktivitas I/O write bytes yang masif hingga 3.2GB dalam waktu kurang dari dua jam. Fenomena ini memicu kekhawatiran baru di kalangan gamer terkait degradasi umur pakai komponen penyimpanan SSD NVMe berkecepatan tinggi.",
+    "postType": "artikel",
+    "category": "hardware-setup",
+    "categoryLabel": "Hardware & Local AI",
+    "difficulty": "Menengah",
+    "pubDate": "2026-11-28T07:15:38.837Z",
+    "updatedDate": "2026-11-28T07:15:38.837Z",
+    "readingTime": "7 min read",
+    "author": "EdvanVPRoject",
+    "tags": [
+      "Razer",
+      "SSD Wear",
+      "Tech News",
+      "Hardware",
+      "Storage"
+    ],
+    "en": {
+      "title": "Severe SSD Wear Issue: Razer Audio Utility Writes 3.2GB of Data in Less Than Two Hours",
+      "description": "A user investigation reveals that Razer's audio utility triggers massive I/O write activity reaching 3.2GB in under two hours. This phenomenon raises fresh concerns among gamers regarding the accelerated degradation of high-speed NVMe storage components."
+    }
+  },
+  {
     "slug": "lonjakan-spektakuler-rtx-5080-ibuypower-pangkas--20261127",
     "title": "Lonjakan Spektakuler RTX 5080: iBuyPower Pangkas Harga $650 Beserta Bundel Monitor Gratis di Momen Black Friday",
     "description": "Pasar PC prebuilt gaming diguncang diskon besar-besaran saat Black Friday. iBuyPower memangkas harga sistem bertenaga GeForce RTX 5080 hingga $650 lengkap dengan bundel bonus monitor dan periferal gratis.",
